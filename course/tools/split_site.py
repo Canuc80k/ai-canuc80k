@@ -52,6 +52,16 @@ def main():
             for ch in x.get('chapters', []):
                 practice_by_phase.setdefault(ch, []).append(x['code'])
 
+    # Đề thật luyện đúng từng bài (content/practice/lessons.json), giữ thứ tự Light -> Ultra.
+    drill_map = json.loads((ROOT / 'content' / 'practice' / 'lessons.json').read_text(encoding='utf-8'))
+    order = [x['code'] for t in practice['tiers'] for x in t['tasks']]
+    unknown = [c for c in drill_map if c != '_' and c not in order]
+    assert not unknown, f'lessons.json có mã không có trong Thực hành: {unknown}'
+    drill_by_lesson = {}
+    for code in order:
+        for lid in drill_map.get(code, []):
+            drill_by_lesson.setdefault(lid, []).append(code)
+
     out_dir = UI / 'data' / 'l'
     out_dir.mkdir(parents=True, exist_ok=True)
     keep = set()
@@ -78,6 +88,7 @@ def main():
             'quiz': quiz_by_lesson.get(lid, 0),
             'homework': len(l.get('homework') or []) or sum(len(m.get('homework') or []) for m in l.get('parts') or []),
             'practice': practice_by_phase.get(l['phase'], []),
+            'drill': drill_by_lesson.get(lid, []),
             'colab': f'https://colab.research.google.com/github/{REPO}/blob/main/{nb_path}' if nb_path else None,
             'kaggle': f'https://www.kaggle.com/kernels/welcome?src=https://github.com/{REPO}/blob/main/{nb_path}' if nb_path else None,
         }

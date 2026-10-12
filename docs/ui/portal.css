@@ -1090,3 +1090,19 @@ html.side-anim .side, html.side-anim .shell { transition: transform .5s var(--ea
 .vid video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--line); border: 1px solid var(--line-strong); border-radius: 14px; }
 .vid figcaption { display: grid; gap: 2px; margin-top: 10px; font-size: 15px; }
 .vid figcaption span { color: var(--muted); font-size: 14px; }
+
+/* Đề thật luyện đúng bài (cuối vòng học) và dòng "Dùng bài …" ở trang Thực hành */
+.drill { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); }
+.drill-head { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font: 600 14px/1.3 var(--sans); color: var(--text); }
+.drill-head .i { width: 16px; height: 16px; color: var(--accent-ink); }
+.drill-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.drill-chip { position: relative; display: grid; grid-template-columns: auto 1fr; column-gap: 10px; row-gap: 2px; align-items: baseline; padding: 12px 34px 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: inherit; }
+.drill-chip:hover { transform: translateY(-2px); border-color: var(--line-strong); box-shadow: var(--lift); }
+.drill-tier { grid-row: 1 / 3; align-self: center; padding: 3px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-ink); font: 600 11.5px/1.2 var(--sans); }
+.drill-name { font: 600 14px/1.35 var(--sans); color: var(--text); }
+.drill-src { font-size: 12.5px; color: var(--muted); }
+.drill-chip > .i { position: absolute; top: 14px; right: 12px; width: 14px; height: 14px; color: var(--faint); }
+.pr-body { display: grid; min-width: 0; }
+.pr-uses { margin: -2px 0 4px; font-size: 12px; color: var(--faint); }
+.pr-uses a { color: var(--accent-ink); }
+.pr-uses a:hover { text-decoration: underline; }

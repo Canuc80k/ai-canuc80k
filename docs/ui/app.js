@@ -479,9 +479,13 @@
       cards.push(card(`#/practice/ch/${l.phase}`, 'flag', n++, 'Đề thật cùng chương', `${k.practice.length} đề: ${names}${k.practice.length > 3 ? '…' : ''}`));
     }
     if (next) cards.push(card(lessonHref(next.id), 'arrow', n++, `Học tiếp ${nameLabel(next)}`, esc(next.title)));
+    const drill = (k.drill || []).map(practiceTask).filter(Boolean);
+    const drillHtml = drill.length ? `<div class="drill reveal"><p class="drill-head">${icon('flag')}Đề thật luyện đúng bài này</p><div class="drill-list">${drill.map(x =>
+      a(x.url, `<span class="drill-tier">${esc(x.tier.title)}</span><span class="drill-name">${esc(x.name)}</span><span class="drill-src">${esc(x.source)}</span>${icon('external')}`,
+        `class="drill-chip" target="_blank" rel="noopener" title="${x.status === 'link' ? 'Nộp tại nguồn' : 'Mở đề trên LQDOJ'}"`)).join('')}</div></div>` : '';
     return `<section class="loop" aria-label="Sau khi đọc bài">
       <h2 class="loop-head reveal">Học xong phần đọc? <span>Làm tiếp theo thứ tự này.</span></h2>
-      <div class="loop-grid">${cards.join('')}</div></section>`;
+      <div class="loop-grid">${cards.join('')}</div>${drillHtml}</section>`;
   }
 
   function renderLesson(r) {
@@ -881,6 +885,11 @@
     try { localStorage.setItem(PKEY, JSON.stringify([...PS])); } catch (_) { canStore = false; }
   }
   const pDone = t => t.tasks.filter(x => PS.has(x.code)).length;
+  // Mã đề -> các bài học dùng nhiều nhất (đảo từ LESSON_LINKS[bài].drill).
+  const DRILL_OF = {};
+  Object.entries(LINKS).forEach(([lid, k]) => (k.drill || []).forEach(c => (DRILL_OF[c] = DRILL_OF[c] || []).push(lid)));
+  const usesLine = x => (DRILL_OF[x.code] || []).length ? `<span class="pr-uses">Dùng bài ${DRILL_OF[x.code].sort((p, q) => D.lessons.findIndex(l => l.id === p) - D.lessons.findIndex(l => l.id === q))
+    .map(lid => a(lessonHref(lid), lid, 'data-nav')).join(', ')}</span>` : '';
   function practiceCrumbs(r) {
     const t = practiceTier(r.id), here = text => `<span aria-current="page">${esc(text)}</span>`;
     if (r.id === 'ch') return [a('#/practice', 'Thực hành', 'data-nav'), here(`Phase ${r.sub}`)];
@@ -917,7 +926,7 @@
       const data = x.data ? a(x.data, `${icon('download')}<span class="sr">Tải dữ liệu ${esc(x.name)}</span>`, 'class="icon-btn" target="_blank" rel="noopener" title="Tải dữ liệu"') : '';
       return `<div class="pr${done ? ' is-done' : ''}${x.status === 'soon' ? ' is-soon' : ''}">
         <button class="pr-check" type="button" data-action="pr-done" data-code="${x.code}" aria-pressed="${done}" aria-label="Đã làm ${esc(x.name)}" title="${done ? 'Bỏ đánh dấu' : 'Đánh dấu đã làm'}">${icon(done ? 'done' : 'circle')}</button>
-        <span class="pr-num">${k + 1}</span>${main}<span class="pr-tail">${data}${tail}</span></div>`;
+        <span class="pr-num">${k + 1}</span><div class="pr-body">${main}${usesLine(x)}</div><span class="pr-tail">${data}${tail}</span></div>`;
     }).join('');
     return `<div class="page">
       <header class="page-head"><p class="kicker">${a('#/practice', 'Thực hành', 'data-nav')}</p><h1>${esc(t.title)}</h1>
@@ -932,7 +941,7 @@
       const done = PS.has(x.code);
       return `<div class="pr${done ? ' is-done' : ''}">
         <button class="pr-check" type="button" data-action="pr-done" data-code="${x.code}" aria-pressed="${done}" aria-label="Đã làm ${esc(x.name)}">${icon(done ? 'done' : 'circle')}</button>
-        <span class="pr-num">${k + 1}</span>${a(x.url, `<span class="pr-name">${esc(x.name)}</span><span class="pr-src">${esc(x.tier.title)} · ${esc(x.source)}</span>`, 'class="pr-main" target="_blank" rel="noopener"')}
+        <span class="pr-num">${k + 1}</span><div class="pr-body">${a(x.url, `<span class="pr-name">${esc(x.name)}</span><span class="pr-src">${esc(x.tier.title)} · ${esc(x.source)}</span>`, 'class="pr-main" target="_blank" rel="noopener"')}${usesLine(x)}</div>
         <span class="pr-tail">${x.data ? a(x.data, `${icon('download')}<span class="sr">Tải dữ liệu</span>`, 'class="icon-btn" target="_blank" rel="noopener" title="Tải dữ liệu"') : ''}${a(x.url, `<span>${x.status === 'link' ? 'Nộp tại nguồn' : 'LQDOJ'}</span>${icon('external')}`, 'class="pr-go" target="_blank" rel="noopener"')}</span></div>`;
     }).join('');
     return `<div class="page">
