@@ -97,6 +97,16 @@ Mỗi bài có một notebook ở [`docs/giao_trinh/notebook`](docs/giao_trinh/n
 `https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/<mã bài>.ipynb`, ví dụ
 [Bài 0.1]({nb('0.1')}) · [Bài 2.7]({nb('2.7')}) · [Bài 6.3]({nb('6.3')}). Trên website, nút **Mở trên Colab** / **Mở trên Kaggle** nằm ngay dưới tên bài.
 
+Kaggle chỉ mở GPU và Internet cho tài khoản đã xác minh số điện thoại (*kaggle.com/settings → Phone verification*).
+Các bước có trong mục “Chạy notebook trên Colab và Kaggle” của Bài 0.1.
+
+## Video
+
+| | |
+|---|---|
+| [<img src="docs/giao_trinh/video/huong-dan-kaggle.jpg" width="360" alt="Chạy notebook trên Kaggle">](docs/giao_trinh/video/huong-dan-kaggle.mp4) | [<img src="docs/giao_trinh/video/web-truoc-sau.jpg" width="360" alt="Website trước và sau">](docs/giao_trinh/video/web-truoc-sau.mp4) |
+| **Chạy notebook trên Kaggle** · 25 giây | **Website trước và sau** · 1 phút |
+
 ## Cấu trúc
 
 | Thư mục | Nội dung |

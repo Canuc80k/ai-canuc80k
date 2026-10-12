@@ -35,6 +35,16 @@ Mỗi bài có một notebook ở [`docs/giao_trinh/notebook`](docs/giao_trinh/n
 `https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/<mã bài>.ipynb`, ví dụ
 [Bài 0.1](https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/0.1.ipynb) · [Bài 2.7](https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/2.7.ipynb) · [Bài 6.3](https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/6.3.ipynb). Trên website, nút **Mở trên Colab** / **Mở trên Kaggle** nằm ngay dưới tên bài.
 
+Kaggle chỉ mở GPU và Internet cho tài khoản đã xác minh số điện thoại (*kaggle.com/settings → Phone verification*).
+Các bước có trong mục “Chạy notebook trên Colab và Kaggle” của Bài 0.1.
+
+## Video
+
+| | |
+|---|---|
+| [<img src="docs/giao_trinh/video/huong-dan-kaggle.jpg" width="360" alt="Chạy notebook trên Kaggle">](docs/giao_trinh/video/huong-dan-kaggle.mp4) | [<img src="docs/giao_trinh/video/web-truoc-sau.jpg" width="360" alt="Website trước và sau">](docs/giao_trinh/video/web-truoc-sau.mp4) |
+| **Chạy notebook trên Kaggle** · 25 giây | **Website trước và sau** · 1 phút |
+
 ## Cấu trúc
 
 | Thư mục | Nội dung |

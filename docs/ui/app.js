@@ -775,9 +775,15 @@
     const sources = D.sources.map(s => a(s.url,
       `<span class="res-title">${esc(s.title)}</span>${icon('external')}`,
       'class="res-main res-ext" target="_blank" rel="noopener"')).join('');
+    const vid = (f, title, note) => `<figure class="vid"><video controls preload="none" playsinline poster="giao_trinh/video/${f}.jpg" src="giao_trinh/video/${f}.mp4"></video>
+      <figcaption><b>${title}</b><span>${note}</span></figcaption></figure>`;
     return `<div class="page">
       <header class="page-head"><h1>Tài liệu</h1></header>
       <div class="res-list">${docs}</div>
+      <section class="block"><h2 class="block-title">Video</h2><div class="vid-grid">
+        ${vid('huong-dan-kaggle', 'Chạy notebook trên Kaggle', 'Mở notebook, xác minh số điện thoại, bật GPU, lưu phiên bản · 25 giây')}
+        ${vid('web-truoc-sau', 'Website trước và sau', 'Tải nhanh hơn, nút Chạy, hình động, bài tập, trắc nghiệm theo bài · 1 phút')}
+      </div></section>
       <section class="block"><h2 class="block-title">Học thêm</h2><div class="res-list">${sources}</div></section>
       ${footer()}</div>`;
   }

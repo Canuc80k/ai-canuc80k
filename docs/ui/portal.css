@@ -1083,3 +1083,10 @@ html.side-anim .side, html.side-anim .shell { transition: transform .5s var(--ea
 .ch-chip span { color: var(--faint); font-variant-numeric: tabular-nums; }
 .page-head .strip { margin-top: 20px; }
 .lead code { font: .85em var(--mono); }
+
+/* Video trên trang Tài liệu */
+.vid-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.vid { margin: 0; }
+.vid video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--line); border: 1px solid var(--line-strong); border-radius: 14px; }
+.vid figcaption { display: grid; gap: 2px; margin-top: 10px; font-size: 15px; }
+.vid figcaption span { color: var(--muted); font-size: 14px; }
