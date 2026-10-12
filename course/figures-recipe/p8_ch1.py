@@ -698,24 +698,22 @@ def box11():
     lab = (pts[:, 0] >= 20) & (pts[:, 0] <= 65) & (pts[:, 1] >= 30) & (pts[:, 1] <= 80)
     pos = pts[lab]
     bx = pos[:, 0].min(), pos[:, 0].max(), pos[:, 1].min(), pos[:, 1].max()
-    s = Fig(640, 236)
-    x0, y0, side = 110, 14, 208
-    X = lambda v: x0 + v / 100 * side
-    Y = lambda v: y0 + side - v / 100 * side
-    s.box(x0, y0, side, side, SOFT_LINE, 'none', r=2, width=1)
+    s = Fig(640, 224)
+    x0, y0, side, pad = 152, 12, 200, 8
+    X = lambda v: x0 + pad + v / 100 * (side - 2 * pad)
+    Y = lambda v: y0 + side - pad - v / 100 * (side - 2 * pad)
+    s.box(x0, y0, side, side, SOFT_LINE, 'none', r=4, width=1)
     s.box(X(20), Y(80), X(65) - X(20), Y(30) - Y(80), MUTED, 'none', r=0, width=1.3, dash='5 4')
-    s.box(X(bx[0]), Y(bx[3]), X(bx[1]) - X(bx[0]), Y(bx[2]) - Y(bx[3]), CLAY, ACCENT_SOFT, r=0, width=1.8, opacity=.9)
+    s.box(X(bx[0]), Y(bx[3]), X(bx[1]) - X(bx[0]), Y(bx[2]) - Y(bx[3]), CLAY, ACCENT_SOFT, r=0, width=1.6, opacity=.9)
     for (px, py), l in zip(pts, lab):
         if l:
-            s.circle(X(px), Y(py), 4.5, CLAY)
+            s.circle(X(px), Y(py), 4.2, CLAY)
         else:
-            s.circle(X(px), Y(py), 4, FAINT, 'none', 1.3)
+            s.circle(X(px), Y(py), 3.6, FAINT, 'none', 1.2)
     lx = x0 + side + 28
-    s.box(lx, 40, 22, 14, MUTED, 'none', r=0, width=1.3, dash='5 4'); s.label(lx + 32, 47, 'hộp thật', 13, 'start', MUTED)
-    s.box(lx, 72, 22, 14, CLAY, ACCENT_SOFT, r=0, width=1.8); s.label(lx + 32, 79, 'hộp nhỏ nhất · accuracy 0.917', 13, 'start', CLAY, 600)
-    s.circle(lx + 11, 111, 4.5, CLAY); s.label(lx + 32, 111, 'nhãn 1', 13, 'start', MUTED)
-    s.circle(lx + 11, 135, 4, FAINT, 'none', 1.3); s.label(lx + 32, 135, 'nhãn 0', 13, 'start', MUTED)
-    s.save('1-1-box', 'Hộp nhỏ nhất chứa năm điểm nhãn 1 nằm gọn trong hộp thật, nên chỉ sai ở dải sát biên.')
+    s.box(lx, 86, 20, 13, MUTED, 'none', r=0, width=1.3, dash='5 4'); s.label(lx + 30, 93, 'hộp thật', 13, 'start', MUTED)
+    s.box(lx, 116, 20, 13, CLAY, ACCENT_SOFT, r=0, width=1.6); s.label(lx + 30, 123, 'hộp học được', 13, 'start', CLAY)
+    s.save('1-1-box', 'Hộp học được luôn nằm trong hộp thật.')
 
 
 FIGS = {'1-7-grid-log': gridlog17, '1-7-search': search17, '1-7-cost': cost17, '1-7-nested': nested17,

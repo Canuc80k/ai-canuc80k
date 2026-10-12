@@ -33,15 +33,11 @@
     sun: '<circle cx="12" cy="12" r="3.75"/><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/>',
     play: '<path d="M8 5.8v12.4a.8.8 0 0 0 1.2.7l10-6.2a.8.8 0 0 0 0-1.4l-10-6.2A.8.8 0 0 0 8 5.8z"/>',
     replay: '<path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v3.8h3.8"/>',
-    eye: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/>',
     notebook: '<rect x="5" y="3.5" width="14" height="17" rx="2.5"/><path d="M9 3.5v17M12.5 8h3M12.5 11.5h3"/>',
-    flag: '<path d="M5.5 21V4.5m0 0h11l-2 4 2 4h-11"/>',
-    layers: '<path d="m12 4 8.5 4.5L12 13 3.5 8.5z"/><path d="m3.5 12.5 8.5 4.5 8.5-4.5"/>',
-    target: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/>',
-    spark: '<path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4M6 6l2.6 2.6M15.4 15.4 18 18M6 18l2.6-2.6M15.4 8.6 18 6"/>'
+    flag: '<path d="M5.5 21V4.5m0 0h11l-2 4 2 4h-11"/>'
   };
-  // Logo: mèo Canuc80k (đầu mèo đất nung, hai mắt tròn nhìn hai hướng).
-  const MARK = `<svg class="mark-cat" viewBox="0 0 64 64" aria-hidden="true"><path class="cat-head" d="M12.5 27.5 9.6 9.4c-.2-1.4 1.3-2.4 2.5-1.6l13 8.6c2.2-.7 4.5-1 6.9-1s4.7.3 6.9 1l13-8.6c1.2-.8 2.7.2 2.5 1.6l-2.9 18.1c1.9 3.1 3 6.8 3 10.6C54.5 49.6 44.4 57 32 57S9.5 49.6 9.5 38.1c0-3.8 1.1-7.5 3-10.6z"/><g class="cat-eye"><circle class="cat-white" cx="22.6" cy="36.4" r="8.4"/><circle class="cat-pupil" cx="25" cy="38.6" r="3.9"/></g><g class="cat-eye"><circle class="cat-white" cx="41.4" cy="36.4" r="8.4"/><circle class="cat-pupil" cx="39.2" cy="33.8" r="3.9"/></g></svg>`;
+  // Logo: cá nục Canuc80k.
+  const MARK = `<svg class="logo" viewBox="2 17 60 30" aria-hidden="true"><path d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2L58.8 18c1-.9 2.6-.1 2.3 1.2L56 32l5.1 12.8c.3 1.3-1.3 2.1-2.3 1.2L46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#D97757"/><circle cx="12.4" cy="30.4" r="4.3" fill="#FAF9F5"/><circle cx="11.8" cy="30.6" r="2.2" fill="#1F1E1C"/><path d="M20 29.2c5-2.3 10-1.3 13.6 1.4 3.2 2.3 7.4 2.3 12 1.7" fill="none" stroke="#FAF9F5" stroke-width="1.6" stroke-linecap="round" opacity=".7"/></svg>`;
   const icon = name => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
   const a = (href, html, attrs = '') => `<a href="${esc(href)}" ${attrs}>${html}</a>`;
   const lessonHref = (id, tab = 'learn', task = 1, part = 0) => {
@@ -85,14 +81,6 @@
   const ensureLesson = id => lessonReady(id) ? Promise.resolve() : loadScript(`ui/data/l/${id}.js`);
   const quizReady = () => !!window.QUIZ_BANK;
   const ensureQuiz = () => quizReady() ? Promise.resolve() : loadScript('ui/quiz-bank.js').then(() => initQuiz());
-  // Thanh tiến độ mảnh ở mép trên khi đang nạp (kiểu Safari).
-  function loading(on) {
-    const bar = $('#load-bar');
-    if (!bar) return;
-    clearTimeout(loading.t);
-    if (on) { bar.classList.remove('done'); bar.classList.add('on'); }
-    else { bar.classList.add('done'); loading.t = setTimeout(() => bar.classList.remove('on', 'done'), 420); }
-  }
   const hasWork = l => l.parts.length > 0;
   // Bài tập: ưu tiên bộ soạn mới (l.homework, dựng từ content/phase-N/homework/<id>/), nếu chưa có thì dùng bài tập cũ trong parts.
   const homeworkOf = (l, m) => l.homework?.length ? {tasks: l.homework, fresh: true} : m?.homework?.length ? {tasks: m.homework, folder: m.folder, fresh: false} : null;
@@ -115,7 +103,6 @@
     theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
     side: saved.side === 'closed' ? 'closed' : 'open',
     wrap: false,
-    showOut: saved.showOut === true,
     filter: 'all',
     open: new Set((saved.open || []).filter(id => Number.isInteger(id)))
   };
@@ -130,7 +117,7 @@
   applySide();
   function persist() {
     if (!canStore) return;
-    try { localStorage.setItem(KEY, JSON.stringify({done: [...S.done], last: S.last, theme: S.theme, open: [...S.open], side: S.side, showOut: S.showOut})); }
+    try { localStorage.setItem(KEY, JSON.stringify({done: [...S.done], last: S.last, theme: S.theme, open: [...S.open], side: S.side})); }
     catch (_) { canStore = false; }
   }
   const doneIn = phase => phaseLessons(phase).filter(l => !isCheck(l) && S.done.has(l.id)).length;
@@ -154,7 +141,7 @@
     <a class="skip" href="#main" data-scroll="main">Đến nội dung chính</a>
     <aside class="side" id="side" aria-label="Điều hướng">
       <div class="side-head">
-        <a class="wordmark" href="#/" data-nav aria-label="AI Canuc80k — trang chủ">${MARK}<span class="wordmark-name">Canuc80k</span><span class="wordmark-sub">AI</span></a>
+        <a class="wordmark" href="#/" data-nav>${MARK}Canuc80k<span class="wordmark-sub">AI</span></a>
         <button class="icon-btn side-collapse" data-action="sidebar" aria-label="Ẩn thanh bên" title="Ẩn thanh bên">${icon('panel')}</button>
         <button class="icon-btn side-close" data-action="menu-close" aria-label="Đóng menu">${icon('close')}</button>
       </div>
@@ -180,10 +167,8 @@
       </header>
       <main class="main" id="main" tabindex="-1"></main>
     </div>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <div class="load-bar" id="load-bar" aria-hidden="true"></div>`;
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>`;
   const NO_MOTION = !!navigator.webdriver || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
-  if (NO_MOTION) document.documentElement.classList.add('no-motion');
 
   let toastTimer;
   function toast(text) {
@@ -277,7 +262,6 @@
   }
 
   // ---------- pages ----------
-  const STATS = window.SITE_STATS || {};
   function renderHome() {
     if (S.q.trim()) {
       const hits = D.lessons.filter(matches);
@@ -289,39 +273,25 @@
     const last = findLesson(S.last);
     const resume = last && ready(last) && !S.done.has(last.id) ? last : firstOpen;
     const started = S.done.size > 0 || S.last;
-    const cta = resume ? a(lessonHref(resume.id),
-      `<span>${started ? 'Học tiếp' : 'Bắt đầu học'}</span><small>${resume.id ? `${nameLabel(resume)} · ` : ''}${esc(resume.title)}</small>${icon('arrow')}`,
-      'class="cta" data-nav') : '';
-    const stat = (n, label) => n ? `<div class="stat reveal"><b data-count="${n}">${n}</b><span>${label}</span></div>` : '';
-    const steps = [['book', 'Đọc', 'Ví dụ tính tay, hình và hình động'], ['play', 'Chạy code', 'Bấm Chạy, xem chương trình in ra gì'],
-      ['quiz', 'Hỏi nhanh', 'Câu hỏi ngay giữa bài, có lời giải'], ['pencil', 'Bài tập', 'Tự chấm trên LQDOJ'],
-      ['layers', 'Trắc nghiệm', 'Câu từ đề thi, sai thì ôn lại đúng mục'], ['flag', 'Đề thật', 'Đề VOAI, IOAI, ROAI theo chương']];
-    const how = steps.map(([ic, t, d], k) => `<div class="how-step reveal" style="--d:${k * 60}ms"><span class="how-ico">${icon(ic)}</span><b>${t}</b><span>${d}</span></div>`).join('');
-    const phaseCard = p => {
-      const ls = phaseLessons(p.id), n = doneIn(p.id), tot = ls.filter(l => !isCheck(l)).length;
-      const dots = ls.map(l => `<i class="dot${S.done.has(l.id) ? ' is-done' : ''}${isCheck(l) ? ' is-check' : ''}${resume && l.id === resume.id ? ' is-next' : ''}" title="${esc(nameLabel(l))} · ${esc(l.title)}"></i>`).join('');
+    const resumeBlock = resume ? a(lessonHref(resume.id),
+      `<span class="resume-label">${started ? 'Học tiếp' : 'Bắt đầu'}</span>
+       <span class="resume-title"><span class="resume-id">${resume.id}</span>${esc(resume.title)}</span>
+       ${icon('arrow')}`,
+      'class="resume" data-nav') : '';
+    const phaseRow = p => {
+      const n = doneIn(p.id);
       return a(`#/phase/${p.id}`,
-        `<span class="pc-num">${p.id}</span><span class="pc-body"><span class="pc-title">${esc(p.title)}</span><span class="pc-text">${esc(p.description)}</span>
-         <span class="pc-dots" aria-hidden="true">${dots}</span></span><span class="pc-meta">${n ? `${n}/${tot}` : `${tot} bài`}${icon('arrow')}</span>`,
-        'class="pc reveal" data-nav');
+        `<span class="phase-num">${p.id}</span><span class="phase-title">${esc(p.title)}</span>${n ? `<span class="phase-progress">${meter(n, p.count)}</span>` : ''}${icon('arrow')}`,
+        'class="phase" data-nav');
     };
-    const courses = D.courses.map((k, i) => `<section class="road-course">
-        <div class="road-side reveal"><span class="road-k">Khóa ${k.id.slice(1)}</span><h3>${esc(k.title)}</h3><p>${esc(k.result || '')}</p></div>
-        <div class="road-phases">${k.phases.map(id => phaseCard(D.phases[id])).join('')}</div>
+    const courses = D.courses.map(k => `<section class="course">
+        <h2 class="course-head">Khóa ${k.id.slice(1)} · ${esc(k.title)}</h2>
+        <div class="phases">${k.phases.map(id => phaseRow(D.phases[id])).join('')}</div>
       </section>`).join('');
-    const tile = (href, ic, t, d) => a(href, `<span class="tile-ico">${icon(ic)}</span><b>${t}</b><span>${d}</span>${icon('arrow')}`, 'class="tile reveal" data-nav');
     return `<div class="page page-home">
-      <section class="hero">
-        <div class="hero-mark" aria-hidden="true">${MARK}</div>
-        <p class="hero-kicker">Giáo trình AI cho học sinh lập trình thi đấu</p>
-        <h1 class="hero-title">Từ dòng Python đầu tiên<br><em>tới đề thi IOAI.</em></h1>
-        <p class="hero-lead">Mỗi bài đi từ một câu hỏi thật, tính tay trước, rồi chạy code thấy kết quả. Học xong là làm được bài tập tự chấm và đề thi thật.</p>
-        <div class="hero-cta">${cta}${a('#roadmap', 'Xem lộ trình', 'class="cta-ghost" data-scroll="roadmap"')}</div>
-      </section>
-      <section class="stats">${stat(STATS.lessons, 'bài học')}${stat(STATS.inline, 'câu hỏi trong bài')}${stat(STATS.bank, 'câu trắc nghiệm')}${stat(STATS.homework, 'bài tập tự chấm')}${stat(STATS.practice, 'đề thi thật')}</section>
-      <section class="how"><h2 class="sec-title reveal">Một bài học, sáu bước</h2><div class="how-grid">${how}</div></section>
-      <section class="road" id="roadmap"><h2 class="sec-title reveal">Lộ trình</h2><p class="sec-lead reveal">Bốn khóa, mười phase, đi lần lượt. Mỗi chấm là một bài; chấm đậm là bài đã học.</p>${courses}</section>
-      <section class="tiles">${tile('#/quiz', 'quiz', 'Trắc nghiệm', 'Sáu mức, chế độ thi có giờ')}${tile('#/practice', 'practice', 'Thực hành', 'Đề thi thật trên LQDOJ')}${tile('#/exercises', 'pencil', 'Bài tập', 'Mọi bài tập theo bài học')}</section>
+      <h1 class="home-title">AI Canuc80k</h1>
+      ${resumeBlock}
+      <div class="courses" id="roadmap">${courses}</div>
       ${footer()}</div>`;
   }
 
@@ -336,9 +306,6 @@
         <h1>${esc(p.title)}</h1>
         <p class="lead">${esc(p.description)}</p>
         ${n ? `<p class="page-meta"><span>${n}/${p.count} đã học</span>${meter(n, p.count)}</p>` : ''}
-        ${(() => { const k = PB.tiers.reduce((x, t) => x + t.tasks.filter(y => y.chapters.includes(p.id)).length, 0);
-          const q = phaseLessons(p.id).reduce((x, l) => x + ((LINKS[l.id] || {}).quiz || 0), 0);
-          return `<div class="strip">${k ? a(`#/practice/ch/${p.id}`, `${icon('flag')}${k} đề thật phase ${p.id}`, 'class="strip-chip" data-nav') : ''}${q ? a('#/quiz', `${icon('quiz')}${q} câu trắc nghiệm theo bài`, 'class="strip-chip" data-nav') : ''}</div>`; })()}
       </header>
       ${T.phases[p.id] && !S.q.trim() ? `<article class="prose theory phase-intro">${T.phases[p.id].html}</article>` : ''}
       <div class="rows">${lessons.map(lessonRow).join('') || empty()}</div>
@@ -452,42 +419,17 @@
     return `<nav class="pager" aria-label="Bài học liền kề">${prev ? a(lessonHref(prev.id), `<small>${icon('back')} ${nameLabel(prev)}</small><span>${esc(prev.title)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(lessonHref(next.id), `<small>${nameLabel(next)} ${icon('arrow')}</small><span>${esc(next.title)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>`;
   }
 
-  // ---------- vòng học của một bài: đọc → chạy → hỏi nhanh → bài tập → trắc nghiệm → đề thật ----------
   const practiceTask = code => { for (const t of PB.tiers) { const x = t.tasks.find(y => y.code === code); if (x) return {...x, tier: t}; } return null; };
-  function lessonStrip(l) {
-    const k = LINKS[l.id] || {}, chips = [];
-    if (k.colab) chips.push(a(k.colab, `${icon('notebook')}Mở trên Colab`, 'class="strip-chip" target="_blank" rel="noopener" title="Chạy notebook của bài trên Google Colab"'));
-    if (k.kaggle) chips.push(a(k.kaggle, `${icon('notebook')}Mở trên Kaggle`, 'class="strip-chip" target="_blank" rel="noopener" title="Chạy notebook của bài trên Kaggle"'));
-    if (k.homework) chips.push(a(lessonHref(l.id, 'homework'), `${icon('pencil')}${k.homework} bài tập`, 'class="strip-chip"'));
-    if (k.quiz) chips.push(a(`#/quiz/L-${l.id}`, `${icon('quiz')}${k.quiz} câu trắc nghiệm`, 'class="strip-chip" data-nav'));
-    if (k.practice?.length) chips.push(a(`#/practice/ch/${l.phase}`, `${icon('flag')}${k.practice.length} đề thật chương ${l.phase}`, 'class="strip-chip" data-nav'));
-    return chips.length ? `<div class="strip" aria-label="Tài nguyên của bài">${chips.join('')}</div>` : '';
+  // Liên kết phụ của bài: tải về, mở notebook trên Colab/Kaggle, trắc nghiệm và đề thật của bài.
+  function lessonLinks(l) {
+    const k = LINKS[l.id] || {}, ext = 'target="_blank" rel="noopener"';
+    return {
+      get: [l.lessonPdf ? a(l.lessonPdf, 'PDF bài học', 'download') : '', l.notebook ? a(l.notebook, 'Notebook', 'download') : ''].filter(Boolean),
+      run: [k.colab ? a(k.colab, 'Colab', ext) : '', k.kaggle ? a(k.kaggle, 'Kaggle', ext) : ''].filter(Boolean),
+      more: [k.quiz ? a(`#/quiz/L-${l.id}`, `Trắc nghiệm <span>${k.quiz}</span>`, 'data-nav') : '',
+        k.drill?.length ? a(`#/practice/bai/${l.id}`, `Đề thật <span>${k.drill.length}</span>`, 'data-nav') : ''].filter(Boolean)
+    };
   }
-  function nextSteps(l) {
-    const k = LINKS[l.id] || {};
-    const i = D.lessons.indexOf(l), next = D.lessons.slice(i + 1).find(ready);
-    const card = (href, ico, step, title, text, attrs = 'data-nav') =>
-      a(href, `<span class="loop-step">${step}</span><span class="loop-ico">${icon(ico)}</span><span class="loop-title">${title}</span><span class="loop-text">${text}</span>`, `class="loop-card reveal" ${attrs}`);
-    const cards = [];
-    let n = 1;
-    if ((theoryOf(l)?.html || '').includes('is-check')) cards.push(`<button class="loop-card reveal" data-action="goto-check"><span class="loop-step">${n++}</span><span class="loop-ico">${icon('target')}</span><span class="loop-title">Kiểm tra cuối bài</span><span class="loop-text">10 câu, có lời giải từng phương án</span></button>`);
-    if (k.homework) cards.push(card(lessonHref(l.id, 'homework'), 'pencil', n++, 'Bài tập tự chấm', `${k.homework} bài, nộp trên LQDOJ`, ''));
-    if (k.quiz) cards.push(card(`#/quiz/L-${l.id}`, 'quiz', n++, 'Trắc nghiệm theo bài', `${k.quiz} câu từ đề thi, ôn lại đúng mục`));
-    if (k.colab) cards.push(card(k.colab, 'notebook', n++, 'Tự chạy notebook', 'Mở trên Colab hoặc Kaggle, sửa code và chạy', 'target="_blank" rel="noopener"'));
-    if (k.practice?.length) {
-      const names = k.practice.slice(0, 3).map(practiceTask).filter(Boolean).map(x => esc(x.name)).join(', ');
-      cards.push(card(`#/practice/ch/${l.phase}`, 'flag', n++, 'Đề thật cùng chương', `${k.practice.length} đề: ${names}${k.practice.length > 3 ? '…' : ''}`));
-    }
-    if (next) cards.push(card(lessonHref(next.id), 'arrow', n++, `Học tiếp ${nameLabel(next)}`, esc(next.title)));
-    const drill = (k.drill || []).map(practiceTask).filter(Boolean);
-    const drillHtml = drill.length ? `<div class="drill reveal"><p class="drill-head">${icon('flag')}Đề thật luyện đúng bài này</p><div class="drill-list">${drill.map(x =>
-      a(x.url, `<span class="drill-tier">${esc(x.tier.title)}</span><span class="drill-name">${esc(x.name)}</span><span class="drill-src">${esc(x.source)}</span>${icon('external')}`,
-        `class="drill-chip" target="_blank" rel="noopener" title="${x.status === 'link' ? 'Nộp tại nguồn' : 'Mở đề trên LQDOJ'}"`)).join('')}</div></div>` : '';
-    return `<section class="loop" aria-label="Sau khi đọc bài">
-      <h2 class="loop-head reveal">Học xong phần đọc? <span>Làm tiếp theo thứ tự này.</span></h2>
-      <div class="loop-grid">${cards.join('')}</div>${drillHtml}</section>`;
-  }
-
   function renderLesson(r) {
     const l = findLesson(r.id);
     if (!l) return notFound();
@@ -511,14 +453,14 @@
 
     if (tab === 'learn') {
       const doc = th || m;
-      const pdf = th && l.lessonPdf ? a(l.lessonPdf, `${icon('download')}PDF bài học`, 'class="toc-nb" download') : '';
-      const nb = th && l.notebook ? a(l.notebook, `${icon('download')}Notebook của bài`, 'class="toc-nb" download') : '';
-      body = `${pdf || nb ? `<div class="actions learn-actions">${pdf.replace('toc-nb', 'btn')}${nb.replace('toc-nb', 'btn').replace('Notebook của bài', 'Notebook')}</div>` : ''}
+      const k = th ? lessonLinks(l) : {get: [], run: [], more: []};
+      const group = (label, xs) => xs.length ? `<p class="toc-links"><span>${label}</span>${xs.join('')}</p>` : '';
+      const side = group('Tải', k.get) + group('Chạy trên', k.run) + group('Luyện', k.more);
+      body = `${side ? `<div class="learn-links">${side}</div>` : ''}
         <div class="learn">
         <article class="prose${th ? ' theory' : ''}" id="lesson-doc">${doc.html}</article>
-        <aside class="toc" aria-label="Mục lục bài"><p class="toc-title">Trong bài này</p>${doc.headings.filter(h => h !== INTERNAL).map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}
-          ${pdf || nb ? `<div class="toc-dl">${pdf}${nb}</div>` : ''}</aside>
-      </div>${th && !isCheck(l) ? nextSteps(l) : ''}`;
+        <aside class="toc" aria-label="Mục lục bài">${side ? `<div class="toc-dl">${side}</div>` : ''}${doc.headings.filter(h => h !== INTERNAL).map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}</aside>
+      </div>`;
     }
     if (ownDeck) {
       body = `<div class="actions">
@@ -577,7 +519,6 @@
         <h1>${esc(l.title)}</h1>
         ${m || th ? `<button class="mark${done ? ' is-done' : ''}" data-action="complete" aria-pressed="${done}">${icon(done ? 'done' : 'circle')}<span>${done ? 'Đã học' : 'Đánh dấu đã học'}</span></button>` : ''}
         <p class="lead">${esc(l.summary)}</p>
-        ${m || th ? lessonStrip(l) : ''}
       </header>
       ${m || th ? `${parts}${tabs ? `<nav class="tabs" aria-label="Nội dung bài">${tabs}</nav>` : ''}<div class="tab-body">${body}</div>` : draft}
       ${lessonPager(l)}${footer()}</div>`;
@@ -618,12 +559,6 @@
       fig.appendChild(pre);
       if (fig.nextElementSibling?.classList.contains('out')) { fig.classList.add('has-out'); prepRun(fig); }
     });
-    const runnable = $$('#lesson-doc figure.can-run').length;
-    const runAnchor = $('#lesson-doc .callout-goal');
-    if (runnable > 1) (runAnchor || $('#lesson-doc')).insertAdjacentHTML(runAnchor ? 'afterend' : 'afterbegin', `<div class="run-bar">
-      <span class="run-bar-text">${icon('play')}Bài có ${runnable} đoạn code. Bấm <b>Chạy</b> ở mỗi đoạn để xem chương trình in ra gì.</span>
-      <span class="run-bar-tools"><button class="btn btn-sm" data-action="run-all">${icon('eye')}Hiện mọi kết quả</button>
-      <button class="tool" data-action="out-pref" aria-pressed="${S.showOut}" title="Luôn hiện sẵn kết quả">${icon('check')}</button></span></div>`);
     $$('#lesson-doc pre:not(.out):not(.code-body)').forEach(pre => {
       const text = pre.textContent;
       if (looksJSON(text)) pre.textContent = compactJSON(text);
@@ -639,7 +574,6 @@
         x.target = '_blank'; x.rel = 'noopener';
       }
     });
-    $$('#lesson-doc > .t-sec > figure.fig, #lesson-doc > .t-sec > .quiz, #lesson-doc > .t-sec > .callout, #lesson-doc > .t-sec > figure.code').forEach(x => x.classList.add('reveal'));
     $$('#lesson-doc.theory a[href^="http"]').forEach(x => { x.target = '_blank'; x.rel = 'noopener'; });
     $$('#lesson-doc .t-sec.is-check').forEach(sec => {
       sec.insertAdjacentHTML('beforeend', '<div class="quiz-score" aria-live="polite"><span></span><button class="btn" data-action="quiz-reset">Làm lại</button></div>');
@@ -647,96 +581,29 @@
     });
     fitMath();
   }
-  // ---------- “Chạy” code: kết quả đã được chạy thật lúc soạn bài, nút Chạy diễn lại quá trình ----------
-  // Một vệt sáng đi qua từng dòng code, rồi kết quả hiện ra từng dòng như đang in. Không chạy Python trên trình duyệt.
+  // ---------- nút Chạy: kết quả đã chạy thật lúc soạn bài, bấm Chạy thì in ra ----------
   const sleep = ms => new Promise(ok => setTimeout(ok, ms));
   function prepRun(fig) {
     const out = fig.nextElementSibling, code = out.querySelector('code');
-    if (!code) return;
+    if (!code || NO_MOTION) return;
     fig.classList.add('can-run');
     out.dataset.text = code.textContent.replace(/\n$/, '');
-    fig.querySelector('.code-tools').insertAdjacentHTML('afterbegin',
-      `<button class="run-btn" data-action="run" title="Chạy đoạn code"><span class="run-ico">${icon('play')}</span><span class="run-txt">Chạy</span></button>`);
-    if (!S.showOut && !NO_MOTION) idleOutput(fig);
-  }
-  function idleOutput(fig) {
-    const out = fig.nextElementSibling;
-    out.classList.add('is-idle'); out.classList.remove('is-done');
-    out.querySelector('code').hidden = true;
-    if (!out.querySelector('.out-idle')) out.insertAdjacentHTML('beforeend', `<button class="out-idle" data-action="run">${icon('play')}<span>Chạy để xem kết quả</span></button>`);
-  }
-  function showOutput(fig) {
-    const out = fig.nextElementSibling, code = out.querySelector('code');
-    out.classList.remove('is-idle', 'is-streaming');
-    out.querySelector('.out-idle')?.remove();
-    code.hidden = false; code.textContent = out.dataset.text;
+    out.hidden = true;
+    fig.querySelector('.code-tools').insertAdjacentHTML('afterbegin', `<button class="run-btn" data-action="run">${icon('play')}Chạy</button>`);
   }
   async function runBlock(fig) {
     if (!fig || fig.classList.contains('is-running')) return;
-    const out = fig.nextElementSibling, code = out.querySelector('code'), body = fig.querySelector('.code-body');
-    const btn = fig.querySelector('.run-btn'), label = btn.querySelector('.run-txt');
-    fig.classList.add('is-running'); label.textContent = 'Đang chạy';
-    out.classList.remove('is-done');
-    // 1. vệt sáng chạy qua các dòng có lệnh
-    const lines = body.textContent.replace(/\n$/, '').split('\n');
-    const cs = getComputedStyle(body), lh = parseFloat(cs.lineHeight) || 22, top = parseFloat(cs.paddingTop) || 0;
-    const live = lines.map((t, i) => [t, i]).filter(([t]) => t.trim() && !t.trim().startsWith('#'));
-    const sweep = document.createElement('i');
-    sweep.className = 'run-sweep';
-    sweep.style.cssText = `height:${lh}px;width:${body.scrollWidth}px;transform:translateY(${top}px)`;
-    body.appendChild(sweep);
-    const step = Math.max(28, Math.min(90, 1300 / Math.max(live.length, 1)));
-    for (const [, i] of live) {
-      if (!sweep.isConnected) return;
-      sweep.style.transform = `translateY(${top + i * lh}px)`;
-      await sleep(step);
-    }
-    sweep.classList.add('is-out');
-    setTimeout(() => sweep.remove(), 300);
-    // 2. kết quả in ra từng dòng
-    out.classList.remove('is-idle'); out.classList.add('is-streaming');
-    out.querySelector('.out-idle')?.remove();
-    code.hidden = false; code.textContent = '';
-    const rows = out.dataset.text.split('\n');
-    const per = Math.max(14, Math.min(70, 900 / rows.length));
+    const out = fig.nextElementSibling, code = out.querySelector('code');
+    fig.classList.add('is-running');
+    out.hidden = false; code.textContent = '';
+    await sleep(180);
+    const rows = out.dataset.text.split('\n'), per = Math.min(40, 400 / rows.length);
     for (let k = 0; k < rows.length; k++) {
       if (!code.isConnected) return;
       code.textContent += (k ? '\n' : '') + rows[k];
-      await sleep(per);
+      if (per >= 4) await sleep(per);
     }
-    out.classList.remove('is-streaming'); out.classList.add('is-done');
-    fig.classList.remove('is-running'); fig.dataset.ran = '1';
-    label.textContent = 'Chạy lại';
-    btn.querySelector('.run-ico').innerHTML = icon('replay');
-  }
-  // Bài tập: ví dụ input → output. Nút “Chạy ví dụ” diễn lại: đọc input, mũi tên chạy, output in ra từng dòng.
-  function tidyHomework() {
-    $$('.hw-doc .hw-io').forEach(io => {
-      if (io.dataset.ready || io.children.length < 2) return;
-      io.dataset.ready = '1';
-      io.insertBefore(Object.assign(document.createElement('div'), {className: 'hw-arrow', innerHTML: `<span>${icon('arrow')}</span><small>solve</small>`}), io.children[1]);
-      io.insertAdjacentHTML('beforebegin', `<div class="hw-run"><button class="run-btn" data-action="hw-run"><span class="run-ico">${icon('play')}</span><span class="run-txt">Chạy ví dụ</span></button><span>Xem chương trình nhận input mẫu và trả ra output mẫu</span></div>`);
-    });
-  }
-  async function hwRun(btn) {
-    const io = btn.closest('.hw-run')?.nextElementSibling;
-    if (!io || io.classList.contains('is-running')) return;
-    const [inBox, arrow, outBox] = io.children, outPre = outBox.querySelector('pre');
-    const text = outPre.dataset.text || (outPre.dataset.text = outPre.textContent);
-    io.classList.add('is-running'); btn.querySelector('.run-txt').textContent = 'Đang chạy';
-    inBox.classList.add('is-reading'); await sleep(NO_MOTION ? 0 : 750);
-    inBox.classList.remove('is-reading'); arrow.classList.add('is-flow'); await sleep(NO_MOTION ? 0 : 550);
-    outBox.classList.add('is-writing'); outPre.textContent = '';
-    const rows = text.split('\n'), per = NO_MOTION ? 0 : Math.max(12, Math.min(60, 800 / rows.length));
-    for (let k = 0; k < rows.length; k++) { outPre.textContent += (k ? '\n' : '') + rows[k]; if (per) await sleep(per); }
-    outBox.classList.remove('is-writing'); arrow.classList.remove('is-flow'); outBox.classList.add('is-done');
-    setTimeout(() => outBox.classList.remove('is-done'), 1200);
-    io.classList.remove('is-running'); btn.querySelector('.run-txt').textContent = 'Chạy lại';
-    btn.querySelector('.run-ico').innerHTML = icon('replay');
-  }
-  function runAll() {
-    $$('#lesson-doc figure.can-run').forEach(f => { showOutput(f); f.dataset.ran = '1'; f.querySelector('.run-txt').textContent = 'Chạy lại'; f.querySelector('.run-ico').innerHTML = icon('replay'); });
-    toast('Đã hiện mọi kết quả');
+    fig.classList.remove('is-running');
   }
 
   function quizScore(sec) {
@@ -775,7 +642,7 @@
           : l.parts.map((m, k) => `${l.parts.length > 1 ? `<p class="ex-part">${esc(m.title)}</p>` : ''}<div class="ex-list">${m.homework.map(item(l, k)).join('')}</div>`).join('')}
       </section>`).join('');
     return `<div class="page">
-      <header class="page-head"><h1>Bài tập</h1><p class="lead">Mỗi bài học có bài tập tự chấm: đọc đề, tải bộ kit, viết hàm <code>solve</code>, nộp trên LQDOJ. Trong đề có ví dụ input → output, bấm Chạy ví dụ để xem.</p></header>
+      <header class="page-head"><h1>Bài tập</h1></header>
       <div class="chips" role="group" aria-label="Lọc theo phase">${chips}</div>
       ${groups || empty()}${footer()}</div>`;
   }
@@ -788,15 +655,9 @@
     const sources = D.sources.map(s => a(s.url,
       `<span class="res-title">${esc(s.title)}</span>${icon('external')}`,
       'class="res-main res-ext" target="_blank" rel="noopener"')).join('');
-    const vid = (f, title, note) => `<figure class="vid"><video controls preload="none" playsinline poster="giao_trinh/video/${f}.jpg" src="giao_trinh/video/${f}.mp4"></video>
-      <figcaption><b>${title}</b><span>${note}</span></figcaption></figure>`;
     return `<div class="page">
       <header class="page-head"><h1>Tài liệu</h1></header>
       <div class="res-list">${docs}</div>
-      <section class="block"><h2 class="block-title">Video</h2><div class="vid-grid">
-        ${vid('huong-dan-kaggle', 'Chạy notebook trên Kaggle', 'Mở notebook, xác minh số điện thoại, bật GPU, lưu phiên bản · 25 giây')}
-        ${vid('web-truoc-sau', 'Website trước và sau', 'Tải nhanh hơn, nút Chạy, hình động, bài tập, trắc nghiệm theo bài · 1 phút')}
-      </div></section>
       <section class="block"><h2 class="block-title">Học thêm</h2><div class="res-list">${sources}</div></section>
       ${footer()}</div>`;
   }
@@ -893,6 +754,7 @@
   function practiceCrumbs(r) {
     const t = practiceTier(r.id), here = text => `<span aria-current="page">${esc(text)}</span>`;
     if (r.id === 'ch') return [a('#/practice', 'Thực hành', 'data-nav'), here(`Phase ${r.sub}`)];
+    if (r.id === 'bai') return [a('#/practice', 'Thực hành', 'data-nav'), here(`Bài ${r.sub}`)];
     return t ? [a('#/practice', 'Thực hành', 'data-nav'), here(t.title)] : [here('Thực hành')];
   }
   function renderPracticeHome() {
@@ -907,7 +769,7 @@
     const byCh = D.phases.map(p => { const n = PB.tiers.reduce((x, t) => x + t.tasks.filter(y => y.chapters.includes(p.id)).length, 0);
       return n ? a(`#/practice/ch/${p.id}`, `<b>${p.id}</b>${esc(p.short)}<span>${n}</span>`, 'class="qz-lchip ch-chip" data-nav') : ''; }).join('');
     return `<div class="page">
-      <header class="page-head"><h1>Thực hành</h1><p class="lead">Đề thi thật từ ROAI, OJIA, AIIS, IOAI và các kỳ thi thử, chấm trên LQDOJ. Đi từ Light tới Ultra, hoặc chọn theo phase vừa học.</p></header>
+      <header class="page-head"><h1>Thực hành</h1></header>
       <div class="phases">${rows}</div>
       <section class="block"><h2 class="block-title">Theo phase</h2><div class="qz-lessons-chips">${byCh}</div></section>${footer()}</div>`;
   }
@@ -933,25 +795,35 @@
         ${d ? `<div class="page-meta"><span class="phase-progress">${meter(d, n)}${d}/${n} bài</span></div>` : ''}</header>
       <div class="pr-list">${rows}</div>${footer()}</div>`;
   }
+  function practiceList(rows, uses = true) {
+    return rows.map((x, k) => {
+      const done = PS.has(x.code);
+      return `<div class="pr${done ? ' is-done' : ''}">
+        <button class="pr-check" type="button" data-action="pr-done" data-code="${x.code}" aria-pressed="${done}" aria-label="Đã làm ${esc(x.name)}">${icon(done ? 'done' : 'circle')}</button>
+        <span class="pr-num">${k + 1}</span><div class="pr-body">${a(x.url, `<span class="pr-name">${esc(x.name)}</span><span class="pr-src">${esc(x.tier.title)} · ${esc(x.source)}</span>`, 'class="pr-main" target="_blank" rel="noopener"')}${uses ? usesLine(x) : ''}</div>
+        <span class="pr-tail">${x.data ? a(x.data, `${icon('download')}<span class="sr">Tải dữ liệu</span>`, 'class="icon-btn" target="_blank" rel="noopener" title="Tải dữ liệu"') : ''}${a(x.url, `<span>${x.status === 'link' ? 'Nộp tại nguồn' : 'LQDOJ'}</span>${icon('external')}`, 'class="pr-go" target="_blank" rel="noopener"')}</span></div>`;
+    }).join('');
+  }
   function renderPracticeChapter(ch) {
     const p = D.phases[ch];
     if (!p) return notFound();
     const rows = PB.tiers.flatMap(t => t.tasks.filter(x => x.chapters.includes(ch)).map(x => ({...x, tier: t})));
-    const list = rows.map((x, k) => {
-      const done = PS.has(x.code);
-      return `<div class="pr${done ? ' is-done' : ''}">
-        <button class="pr-check" type="button" data-action="pr-done" data-code="${x.code}" aria-pressed="${done}" aria-label="Đã làm ${esc(x.name)}">${icon(done ? 'done' : 'circle')}</button>
-        <span class="pr-num">${k + 1}</span><div class="pr-body">${a(x.url, `<span class="pr-name">${esc(x.name)}</span><span class="pr-src">${esc(x.tier.title)} · ${esc(x.source)}</span>`, 'class="pr-main" target="_blank" rel="noopener"')}${usesLine(x)}</div>
-        <span class="pr-tail">${x.data ? a(x.data, `${icon('download')}<span class="sr">Tải dữ liệu</span>`, 'class="icon-btn" target="_blank" rel="noopener" title="Tải dữ liệu"') : ''}${a(x.url, `<span>${x.status === 'link' ? 'Nộp tại nguồn' : 'LQDOJ'}</span>${icon('external')}`, 'class="pr-go" target="_blank" rel="noopener"')}</span></div>`;
-    }).join('');
     return `<div class="page">
-      <header class="page-head"><p class="kicker">${a('#/practice', 'Thực hành', 'data-nav')}</p><h1>Đề thật · Phase ${p.id}</h1>
-        <p class="lead">${esc(p.title)}: ${rows.length} đề thi thật dùng kiến thức phase này, xếp từ dễ tới khó. Dữ liệu tải ở nút bên phải, nộp bài trên LQDOJ.</p></header>
-      <div class="pr-list">${list || '<p class="empty">Chưa có đề cho phase này.</p>'}</div>${footer()}</div>`;
+      <header class="page-head"><p class="kicker">${a('#/practice', 'Thực hành', 'data-nav')}</p><h1>Phase ${p.id} · ${esc(p.title)}</h1></header>
+      <div class="pr-list">${practiceList(rows) || empty()}</div>${footer()}</div>`;
+  }
+  function renderPracticeLesson(id) {
+    const l = findLesson(id);
+    if (!l) return notFound();
+    const rows = ((LINKS[id] || {}).drill || []).map(practiceTask).filter(Boolean);
+    return `<div class="page">
+      <header class="page-head"><p class="kicker">${a('#/practice', 'Thực hành', 'data-nav')}</p><h1>${nameLabel(l)} · ${esc(l.title)}</h1></header>
+      <div class="pr-list">${practiceList(rows, false) || empty()}</div>${footer()}</div>`;
   }
   function renderPractice(r) {
     if (!r.id) return renderPracticeHome();
     if (r.id === 'ch') return renderPracticeChapter(Number(r.sub));
+    if (r.id === 'bai') return renderPracticeLesson(r.sub);
     const t = practiceTier(r.id);
     return t && !r.sub ? renderPracticeTier(t) : notFound();
   }
@@ -1109,9 +981,9 @@
       }).join('')}</div></div>`;
     }).join('');
     return `<div class="page">
-      <header class="page-head"><h1>Trắc nghiệm</h1><p class="lead">Sáu mức từ dễ tới khó, câu phỏng theo đề NOAI, USAAIO và đề luyện CMU, MIT. Sai câu nào, bấm “Ôn lại” để mở đúng đoạn lý thuyết.</p></header>
+      <header class="page-head"><h1>Trắc nghiệm</h1></header>
       <div class="phases qz-levels">${levels}</div>
-      <section class="block"><h2 class="block-title">Theo bài học</h2><p class="block-lead">Mọi câu của sáu mức có liên quan tới một bài, gom lại để ôn ngay sau khi học bài đó.</p>
+      <section class="block"><h2 class="block-title">Theo bài</h2>
         <div class="qz-lessons">${byLesson}</div></section>
       ${footer()}</div>`;
   }
@@ -1423,51 +1295,9 @@
     return wait;
   }
   function skeleton() {
-    return `<div class="page page-wide skel" aria-busy="true"><div class="skel-k"></div><div class="skel-h"></div><div class="skel-l"></div><div class="skel-l short"></div>
-      <div class="skel-b"></div><div class="skel-l"></div><div class="skel-l"></div><div class="skel-l short"></div></div>`;
+    setTimeout(() => { const x = $('#main .loading'); if (x) x.hidden = false; }, 400);
+    return '<div class="page" aria-busy="true"><p class="loading" hidden>Đang tải…</p></div>';
   }
-  // ---------- chuyển động: trang trượt vào, phần tử hiện dần khi cuộn tới, số đếm lên ----------
-  let revealObs = null;
-  const ease = t => 1 - Math.pow(1 - t, 4);
-  function countUp(el) {
-    const end = Number(el.dataset.count), t0 = performance.now(), dur = 1100;
-    const tick = now => { const k = Math.min(1, (now - t0) / dur); el.textContent = Math.round(end * ease(k)).toLocaleString('vi-VN'); if (k < 1) requestAnimationFrame(tick); };
-    requestAnimationFrame(tick);
-  }
-  function motion() {
-    const main = $('#main');
-    $$('#main [data-count]').forEach(x => { x.textContent = Number(x.dataset.count).toLocaleString('vi-VN'); });
-    // Tab đang ẩn thì trình duyệt hoãn hiệu ứng: hiện nội dung ngay, không chờ.
-    if (NO_MOTION || document.hidden) { main.classList.remove('page-in'); $$('#main .reveal').forEach(e => e.classList.add('in')); return; }
-    main.classList.remove('page-in'); void main.offsetWidth; main.classList.add('page-in');
-    revealObs?.disconnect();
-    if (!('IntersectionObserver' in window)) { $$('#main .reveal').forEach(e => e.classList.add('in')); return; }
-    revealObs = new IntersectionObserver(entries => entries.forEach(en => {
-      if (!en.isIntersecting) return;
-      en.target.classList.add('in');
-      en.target.querySelectorAll('[data-count]').forEach(countUp);
-      revealObs.unobserve(en.target);
-    }), {rootMargin: '0px 0px -6% 0px', threshold: .06});
-    $$('#main .reveal').forEach(e => revealObs.observe(e));
-  }
-  // Mắt mèo trên trang chủ nhìn theo con trỏ.
-  let eyeTick = false, eyeAt = null;
-  window.addEventListener('pointermove', e => {
-    eyeAt = [e.clientX, e.clientY];
-    if (eyeTick || NO_MOTION) return;
-    eyeTick = true;
-    requestAnimationFrame(() => {
-      eyeTick = false;
-      $$('.hero-mark .cat-eye, .wordmark:hover .cat-eye').forEach(g => {
-        const w = g.querySelector('.cat-white'), p = g.querySelector('.cat-pupil'), r = w.getBoundingClientRect();
-        const cx = r.left + r.width / 2, cy = r.top + r.height / 2, dx = eyeAt[0] - cx, dy = eyeAt[1] - cy, d = Math.hypot(dx, dy) || 1;
-        const k = Math.min(1, d / 260) * 3.6, bx = +w.getAttribute('cx'), by = +w.getAttribute('cy');
-        const px = +p.getAttribute('cx'), py = +p.getAttribute('cy');
-        p.style.transform = `translate(${bx + dx / d * k - px}px, ${by + dy / d * k - py}px)`;
-      });
-    });
-  }, {passive: true});
-
   render.token = 0;
   function render() {
     const r = route();
@@ -1476,14 +1306,11 @@
       const token = ++render.token;
       renderChrome(r);
       $('#main').innerHTML = skeleton();
-      loading(true);
       Promise.all(wait).then(() => {
-        loading(false);
         if (token !== render.token) return;
         render();
         goSection(route());
       }, () => {
-        loading(false);
         if (token === render.token) $('#main').innerHTML = `<div class="page"><div class="empty"><p>Không tải được nội dung. Kiểm tra mạng rồi thử lại.</p><button class="btn" data-action="reload">Thử lại</button></div></div>`;
       });
       return;
@@ -1501,10 +1328,9 @@
     if (r.type === 'exam' && exActive()) exTick.start(); else exTick.stop();
     document.title = l ? `${l.title} — AI Canuc80k` : r.type === 'exam' && exSet() ? `Kiểm tra ${exSet().title} — AI Canuc80k` : r.type === 'quiz' ? `Trắc nghiệm${qs ? ' ' + qs.title : ''} — AI Canuc80k`
       : r.type === 'practice' ? `Thực hành${pt ? ' ' + pt.title : ''} — AI Canuc80k` : 'AI Canuc80k';
-    if (l) { tidyLessonDoc(); tidyHomework(); renderChrome(r); spy(); }
+    if (l) { tidyLessonDoc(); renderChrome(r); spy(); }
     window.Anim?.scan($('#main'));
     wrapTables('.phase-intro');
-    motion();
   }
 
   function goSection(r) {
@@ -1713,17 +1539,7 @@
       }
       case 'menu-close': closeMenu(); break;
       case 'reload': render(); break;
-      case 'goto-check': { const c = $('#lesson-doc .t-sec.is-check'); if (c) c.scrollIntoView({behavior: NO_MOTION ? 'auto' : 'smooth', block: 'start'}); break; }
-      case 'run': runBlock(act.closest('figure.t-code') || act.closest('pre.out')?.previousElementSibling); break;
-      case 'run-all': runAll(); break;
-      case 'hw-run': hwRun(act); break;
-      case 'out-pref': {
-        S.showOut = !S.showOut; persist();
-        $$('figure.t-code.can-run').forEach(f => S.showOut ? showOutput(f) : f.dataset.ran !== '1' && idleOutput(f));
-        act.setAttribute('aria-pressed', S.showOut);
-        toast(S.showOut ? 'Luôn hiện sẵn kết quả' : 'Bấm Chạy để xem kết quả');
-        break;
-      }
+      case 'run': runBlock(act.closest('figure.t-code')); break;
       case 'theme': {
         S.theme = effectiveTheme() === 'dark' ? 'light' : 'dark'; applyTheme(); persist(); renderChrome(r);
         const f = $('#slide-frame');

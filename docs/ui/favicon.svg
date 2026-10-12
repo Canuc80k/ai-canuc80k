@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <path fill="#D97757" stroke="#D97757" stroke-width="2.4" stroke-linejoin="round" d="M12.5 27.5 9.6 9.4c-.2-1.4 1.3-2.4 2.5-1.6l13 8.6c2.2-.7 4.5-1 6.9-1s4.7.3 6.9 1l13-8.6c1.2-.8 2.7.2 2.5 1.6l-2.9 18.1c1.9 3.1 3 6.8 3 10.6C54.5 49.6 44.4 57 32 57S9.5 49.6 9.5 38.1c0-3.8 1.1-7.5 3-10.6z"/>
-  <circle cx="22.6" cy="36.4" r="8.4" fill="#FAF9F5"/>
-  <circle cx="41.4" cy="36.4" r="8.4" fill="#FAF9F5"/>
-  <circle cx="25" cy="38.6" r="3.9" fill="#1F1E1C"/>
-  <circle cx="39.2" cy="33.8" r="3.9" fill="#1F1E1C"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><title>Canuc80k</title><rect width="64" height="64" rx="14" fill="#D97757"/><g transform="translate(1.6 -.6) scale(.95)"><path d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2L58.8 18c1-.9 2.6-.1 2.3 1.2L56 32l5.1 12.8c.3 1.3-1.3 2.1-2.3 1.2L46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#FAF9F5"/><circle cx="12.2" cy="30.5" r="2.7" fill="#D97757"/></g></svg>

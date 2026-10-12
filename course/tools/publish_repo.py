@@ -67,62 +67,38 @@ def readme():
         for pid in k['phases']:
             p = phases[pid]
             ls = [l for l in lessons if l['phase'] == pid and not str(l['id']).startswith('kt')]
-            rows.append(f"| {k['title']} | {pid} · {p['title']} | {len(ls)} | {p.get('description', '')} |")
+            rows.append(f"| {k['id'][1:]} · {k['title']} | {pid} · {p['title']} | {len(ls)} |")
     nb = lambda i: f"https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/{i}.ipynb"
-    return f"""<p align="center"><img src="docs/ui/brand/social.png" alt="AI Canuc80k" width="720"></p>
+    return f"""# AI Canuc80k
 
-<h3 align="center">Từ dòng Python đầu tiên tới đề thi IOAI.</h3>
+Giáo trình AI hướng VOAI và IOAI cho học sinh lập trình thi đấu.
 
-<p align="center">Giáo trình AI cho học sinh lập trình thi đấu, hướng tới VOAI và IOAI.<br>
-<a href="{LIVE}"><b>Mở website</b></a> · <a href="docs/giao_trinh/notebook">Notebook</a> · <a href="course/content">Nguồn bài học</a></p>
-
----
-
-## Có gì ở đây
-
-- **63 bài học + 4 bài kiểm tra.** Mỗi bài đi từ một câu hỏi thật, tính tay trước, rồi chạy code thấy kết quả (nút **Chạy** trên web).
-- **2700+ câu hỏi.** Câu hỏi nhanh giữa bài, 10 câu cuối bài và sáu bộ trắc nghiệm Light → Ultra phỏng theo đề NOAI, USAAIO, CMU, MIT. Sai câu nào, bấm “Ôn lại” để mở đúng đoạn lý thuyết.
-- **Bài tập tự chấm** cho từng bài (nộp trên LQDOJ) và **71 đề thi thật** (ROAI, OJIA, AIIS, IOAI…) xếp theo mức và theo chương.
-- **Slide, PDF, notebook** cho mọi bài. Notebook mở thẳng trên Colab hoặc Kaggle.
+Website: {LIVE}
 
 ## Lộ trình
 
-| Khóa | Phase | Số bài | Nội dung |
-|---|---|---|---|
+| Khóa | Phase | Số bài |
+|---|---|---|
 {chr(10).join(rows)}
 
-## Chạy notebook
+## Notebook
 
-Mỗi bài có một notebook ở [`docs/giao_trinh/notebook`](docs/giao_trinh/notebook). Mở trên Colab bằng đường dẫn
-`https://colab.research.google.com/github/Canuc80k/ai-canuc80k/blob/main/docs/giao_trinh/notebook/<mã bài>.ipynb`, ví dụ
-[Bài 0.1]({nb('0.1')}) · [Bài 2.7]({nb('2.7')}) · [Bài 6.3]({nb('6.3')}). Trên website, nút **Mở trên Colab** / **Mở trên Kaggle** nằm ngay dưới tên bài.
+Mỗi bài có một notebook trong `docs/giao_trinh/notebook`. Mở trên Colab: [Bài 0.1]({nb('0.1')}), [Bài 2.7]({nb('2.7')}).
+Kaggle chỉ cho dùng GPU và Internet khi tài khoản đã xác minh số điện thoại (*Settings → Phone verification*).
 
-Kaggle chỉ mở GPU và Internet cho tài khoản đã xác minh số điện thoại (*kaggle.com/settings → Phone verification*).
-Các bước có trong mục “Chạy notebook trên Colab và Kaggle” của Bài 0.1.
-
-## Video
-
-| | |
-|---|---|
-| [<img src="docs/giao_trinh/video/huong-dan-kaggle.jpg" width="360" alt="Chạy notebook trên Kaggle">](docs/giao_trinh/video/huong-dan-kaggle.mp4) | [<img src="docs/giao_trinh/video/web-truoc-sau.jpg" width="360" alt="Website trước và sau">](docs/giao_trinh/video/web-truoc-sau.mp4) |
-| **Chạy notebook trên Kaggle** · 25 giây | **Website trước và sau** · 1 phút |
-
-## Cấu trúc
+## Thư mục
 
 | Thư mục | Nội dung |
 |---|---|
-| `docs/` | Website tĩnh (mở `docs/index.html`). Bật GitHub Pages: *Settings → Pages → Deploy from branch → main / docs*. |
+| `docs/` | Website tĩnh. |
 | `docs/giao_trinh/` | Slide, PDF, notebook, code mẫu, đề bài tập. |
-| `course/content/` | Nguồn bài học (`phase-N/<mã>.md`), slide, hình SVG, hình động, bài tập, trắc nghiệm. |
-| `course/tools/` | Công cụ dựng từng bài, kiểm code, QA trình duyệt, xuất PDF, dựng web (`split_site.py`), đẩy repo (`publish_repo.py`). |
-| `course/figures-recipe/` | Script vẽ lại hình và hình động. |
+| `course/content/` | Nguồn bài học, slide, hình, bài tập, trắc nghiệm. |
+| `course/tools/` | Công cụ dựng và kiểm. |
+| `course/figures-recipe/` | Script vẽ hình. |
 
-Xem web ở máy: `python -m http.server -d docs 8000` rồi mở `http://localhost:8000`.
+Xem ở máy: `python -m http.server -d docs 8000`.
 
-## Nguồn và giấy phép
-
-Câu hỏi phỏng theo đề thi ghi nguồn ngay dưới câu. Phông chữ Lora, Inter, JetBrains Mono theo SIL Open Font License (`docs/ui/fonts/OFL.txt`).
-Ảnh mẫu lấy từ scikit-learn, scikit-image (ghi ở cuối mỗi bài). Nội dung giáo trình © Canuc80k.
+Phông Lora, Inter, JetBrains Mono theo SIL Open Font License. Ảnh mẫu từ scikit-learn, scikit-image.
 """
 
 

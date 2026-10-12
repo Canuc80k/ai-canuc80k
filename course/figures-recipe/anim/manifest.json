@@ -18,25 +18,6 @@
    "0-1-count.anim.json": "b1ba307aab3c6b062936add18153f4344c73e7c8c2f02db52b28efd3ac82e8a6"
   }
  },
- "0-1-kaggle": {
-  "name": "0-1-kaggle",
-  "caption": "Mở notebook trên Kaggle và bật GPU (vẽ lại giao diện, tên nút giữ như trên Kaggle).",
-  "frames": 7,
-  "size": [
-   960,
-   440
-  ],
-  "bytes": {
-   "0-1-kaggle.anim.webp": 31552,
-   "0-1-kaggle.anim.dark.webp": 31220,
-   "0-1-kaggle.anim.json": 604
-  },
-  "sha256": {
-   "0-1-kaggle.anim.webp": "ff588f216b092b4373d1f2887e3f6ac7ef517dba86b53246b19ae2a1d91f8db3",
-   "0-1-kaggle.anim.dark.webp": "65f09411121cee5b5948db6d333001c38186f7fdf39910e9357824c21db8499c",
-   "0-1-kaggle.anim.json": "c933140d6f7f2da4055bd707987f8d860344f783c3be50288edf04a67fe68a50"
-  }
- },
  "0-2-photo": {
   "name": "0-2-photo",
   "caption": "Một ảnh thật (320, 480, 3) qua mười dòng NumPy: lát cắt, chọn kênh, gộp trục, broadcast, và cái bẫy tràn số uint8.",

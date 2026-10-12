@@ -180,7 +180,7 @@ def class_fig():
             s.arrow(x0, y, x0 + 34, y, CLAY, 1.4)
             s.code(x0 + 44, y, right, 14, color=CLAY)
         s.pill(596, y, tag, BLUE if tag == 'Dataset' else CLAY, 12.5)
-    s.save('0-1-class', 'Cú pháp quen thuộc gọi tới hàm đặc biệt của class, và PyTorch dùng lại đúng ba hàm này.')
+    s.save('0-1-class', 'Ba cú pháp và hàm đặc biệt mà chúng gọi.')
 
 
 def traceback_fig():
@@ -497,7 +497,7 @@ def argsort_fig():
     for j, i in enumerate(order):
         s.curve(cx(i), 66, cx(j), 132, .0, CLAY, 1.1)
         s.mono(cx(j), 194, str(i), 12, 'middle', CLAY)
-    s.save('0-2-argsort', 'argsort(-scores) trả về order: lấy scores theo các chỉ số ấy được dãy giảm dần.')
+    s.save('0-2-argsort', 'Đọc scores theo order được dãy giảm dần.')
 
 
 def rng_fig():

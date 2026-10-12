@@ -1205,7 +1205,7 @@ def oof27():
     for c in range(5):
         s.box(x0 + c * (w + g), y, w, h, CLAY, ACCENT_SOFT, r=5, width=1.4)
     s.mono(x0 + 5 * (w + g) + 10, y + h / 2 + 4, 'AUC 0.917', 12.5, 'start', CLAY, weight=600)
-    s.save('2-7-oof', 'Mỗi fold học trên bốn phần, chấm phần tô màu; ghép năm phần ấy được dự đoán out-of-fold cho cả tập train.')
+    s.save('2-7-oof', 'Mỗi fold chấm một phần; ghép năm phần được dự đoán out-of-fold.')
 
 
 FIGS27 = {'2-7-fit-stages': fitstages27, '2-7-stages': stages27, '2-7-hand': hand27, '2-7-rf-vs-boost': rfboost27,
