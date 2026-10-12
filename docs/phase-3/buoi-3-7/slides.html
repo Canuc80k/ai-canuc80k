@@ -1,0 +1,66 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dropout, weight decay, early stopping và normalization</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 3.7</small><h1>Buổi 3.7: Dropout, weight decay, early stopping và normalization</h1><p>Tại sao dropout cần tắt khi predict?</p></section><section class="slide"><small>Buổi 3.7</small><h1>Ý tưởng chính</h1><p>best checkpoint = validation loss thấp nhất theo rule đã chốt</p><ul><li>Dropout ngẫu nhiên ở train; eval dùng toàn bộ tín hiệu theo quy ước layer.</li><li>Early stopping chọn best checkpoint bằng validation, không last epoch.</li><li>BatchNorm dùng statistics train/eval khác nhau; normalization cần đúng axes.</li></ul></section><section class="slide"><small>Buổi 3.7</small><h1>Ví dụ</h1><pre>{
+  &quot;losses&quot;: [
+    0.8,
+    0.6,
+    0.65,
+    0.7
+  ],
+  &quot;patience&quot;: 2,
+  &quot;min_delta&quot;: 0
+}</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;best&quot;: 1,
+  &quot;stop&quot;: 3
+}</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Code minh họa (1)</h1><pre>import torch
+from torch import nn
+torch.manual_seed(42)
+
+dropout = nn.Dropout(p=.5)
+X = torch.ones(1,8)
+dropout.train(); a = dropout(X)
+dropout.eval(); b = dropout(X)
+print(&quot;train dropout:&quot;,a.tolist())
+print(&quot;eval dropout:&quot;,b.tolist())
+losses = [.8,.6,.65,.7]
+best=float(&quot;inf&quot;); patience=2; bad=0; best_epoch=None
+for epoch,loss in enumerate(losses,1):
+    if loss&lt;best: best=loss; best_epoch=epoch; bad=0
+    else: bad+=1</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Code minh họa (2)</h1><pre>    if bad&gt;=patience:
+        print(&quot;stop&quot;,epoch,&quot;restore best epoch&quot;,best_epoch); break
+assert torch.equal(b,X) and best_epoch==2</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Kết quả</h1><pre>train dropout: [[2.0, 2.0, 2.0, 2.0, 0.0, 2.0, 0.0, 0.0]]
+eval dropout: [[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]]
+stop 4 restore best epoch 2</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Điểm dễ nhầm</h1><ul><li>Không cập nhật BatchNorm từ test và không dùng test để early-stop.</li><li>Đọc loss0.8,0.6,0.65,0.7 với patience2, chỉ ra best vàstop.</li></ul></section><section class="slide"><small>Buổi 3.7</small><h1>Bài trên lớp 1</h1><p>Theo losses, patience, min_delta; improvement strict loss&lt;best-min_delta; best/stop zero-based.</p><pre>{
+  &quot;losses&quot;: [
+    0.8,
+    0.6,
+    0.65,
+    0.7
+  ],
+  &quot;patience&quot;: 2,
+  &quot;min_delta&quot;: 0
+}</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Bài trên lớp 2</h1><p>Layer normalization từng row với population variance và epsilon; gamma=1, beta=0.</p><pre>{
+  &quot;rows&quot;: [
+    [
+      1,
+      3
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  &quot;eps&quot;: 0.00001
+}</pre></section><section class="slide"><small>Buổi 3.7</small><h1>Bài tập về nhà 1</h1><p>Theo losses, patience, min_delta; improvement strict loss&lt;best-min_delta; best/stop zero-based.</p><ul><li>Input: losses: không rỗng số; patience&gt;=1; min_delta&gt;=0.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 3.7</small><h1>Bài tập về nhà 2</h1><p>Layer normalization từng row với population variance và epsilon; gamma=1, beta=0.</p><ul><li>Input: rows: nxd; eps&gt;0.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 3.7</small><h1>Bài tập về nhà 3</h1><p>Regularization và best checkpoint</p><ul><li>Data: digits</li><li>Metric: Accuracy, labels từ 0 đến 9.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 3.7</small><h1>Tổng kết</h1><p>Đọc loss0.8,0.6,0.65,0.7 với patience2, chỉ ra best vàstop.</p><ul><li>KHTN chương 9; AIO chương 31–32.</li><li>AIO 31.2 phần liên quan và32.2 chương trình gradient vanishing;32.3 trắc nghiệm; đọc/check checkpoint trong tutorial PyTorch.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

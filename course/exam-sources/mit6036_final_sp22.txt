@@ -1,0 +1,690 @@
+
+=== PAGE 1 ===
+6.036: Final Exam: Spring 2022
+Please leave exam stapled together!
+• This is a closed book exam. Calculators not permitted.
+• The problems are not necessarily in any order of diﬃculty.
+• Record all your answers in the places provided. If you run out of room for an answer, continue
+on the back of the page. Show your work neatly.
+• If a question seems vague or under-speciﬁed to you, make an assumption, write it down, and
+solve the problem given your assumption. Try not to ask for clariﬁcation.
+• Write your initials on every piece of paper.
+Name:
+MIT email:
+Question
+Points
+Score
+1
+6
+2
+8
+3
+12
+4
+18
+5
+18
+6
+10
+7
+8
+8
+10
+9
+10
+Total:
+100
+1
+
+=== PAGE 2 ===
+Name:
+1
+A single sigmoid
+1. (6 points) Consider the simplest of all neural networks, consisting of a single unit with a sigmoid
+activation function:
+h(x; w) = σ(w0 + w1x)
+where σ(z) = (1 + exp(−z))−1 is the sigmoid function.
+(a) Let’s start with a classiﬁer deﬁned by w0 = 0 and w1 = 1. Which range of input values x
+are classiﬁed as positive? Which as negative?
+(b) If you change w1 to have value 2, which range of input values x are classiﬁed as positive?
+If the answer is the same as in part 1, what, if anything, about the output of the network
+has changed?
+(c) If you leave w1 = 1 and set w0 = −1, which range of input values x are classiﬁed as
+positive? If the answer is the same as in part 1, what, if anything, about the output of
+the classiﬁcation model has changed?
+Page 2
+
+=== PAGE 3 ===
+Name:
+2
+A DARC and stormy night
+2. (8 points) A recent paper gives us reason to think that, rather than regularizing the weights
+used in a deep network that is used for classiﬁcation, it is good to regularize the z values, before
+the activation function is applied, in the last layer.
+Consider a neural network with one hidden layer and a single output unit where the activation
+function f is a sigmoid, as shown below.
+We can specify the darc objective function J(θ, λ), where the parameters θ = (w11, w12, w21, w22, v1, v2),
+which depends on data set D = {(x(i), y(i))}N
+i=1 as
+J(θ, λ) =
+X
+i
+Lnll(f(z(i)), y(i)) + λ
+X
+i
+(z(i))2
+where z(i) is the value of the output unit on example i before it goes into the activation function.
+(a) What is the partial derivative of this unusual regularization term with respect to the
+weight w11, for a single (x, y) training point?
+∂
+∂w11
+λ (z)2
+Write it in terms of x, y, z1, z2, z, w and v values. You can use f′ for derivative of f.
+Page 3
+
+=== PAGE 4 ===
+Name:
+(b) What is the derivative with respect to w11 of the typical regularization term, which pe-
+nalizes the squares of the weights? How do these two regularizers diﬀer?
+(c) Describe a situation in which it is possible for w11 to be extremely large, but for z to have
+small magnitude.
+(d) Would the darc strategy of regularizing z be good if we were, instead, doing regression
+and f(x) = x? Explain why or why not.
+Page 4
+
+=== PAGE 5 ===
+Name:
+3
+Kopy Kat
+3. (12 points) Consider the following data. Clearly, the points are not linearly separable, so we
+will try three alternative approaches to solving the problem.
+-4
+-2
+2
+4
+-4
+-2
+2
+4
+Approach 1: Nested linear classiﬁers
+Let w =
++1
+−1
+
+and
+a1 = sign(wT x + 4)
+a2 = sign(wT x −4)
+h(x; v0, v1, v2) = sign(v1a1 + v2a2 + v0)
+where
+sign(x) =
+(
++1
+if x > 0
+−1
+otherwise
+(a) Draw the classiﬁers corresponding to a1 and a2 on the axes above. Label them clearly,
+including their normal vectors.
+(b) Select values of the following parameters so that the nested classiﬁer correctly predicts the
+values in the data set.
+i. v1
+ii. v2
+iii. v0
+Page 5
+
+=== PAGE 6 ===
+Name:
+-4
+-2
+2
+4
+-4
+-2
+2
+4
+Approach 2: Data-driven features
+We’ll deﬁne a new feature transformation φ that maps a point x ∈R2 into a four-dimensional
+vector:
+(K(x, (−4, 4)), K(x, (−1, −1)), K(x, (1, 1)), K(x, (4, −4)))
+where K is a function of two points: K(x, x′) = e−∥x−x′∥2. Intuitively, feature i of φ(x) has
+value 1 if x is equal to point pi and its value decreases as x moves away from pi.
+(c) We ﬁnd a classiﬁer in the transformed space with parameters θ = (1, −1, −1, 1)
+h(x; θ) = sign(θT φ(x))
+i. What fraction of the training data does this classiﬁer predict correctly?
+ii. What prediction does it make for point (0, 0)?
+Page 6
+
+=== PAGE 7 ===
+Name:
+-4
+-2
+2
+4
+-4
+-2
+2
+4
+Approach 3: Neural nets
+Suppose we use a neural network with one hidden layer to classify the points.
+(d) We can classify the points correctly if f (in both layers) is sigmoid. Provide the weights
+so this network will correctly classify the given points.
+Page 7
+
+=== PAGE 8 ===
+Name:
+4
+Regression residuals
+4. (18 points) We’re given a data set D = {(x(i), y(i))}n
+i=1, where x(i) ∈Rd and y(i) ∈R. Let X
+be a d × n matrix in which the x(i) are the columns and let Y be a 1 × n vector containing the
+values of y(i). Using the analytical regression (ordinary least-squares) formula, we can compute
+Wols = (XXT )−1XY T
+Using ridge regression, we can compute
+Wridge = (XXT + λI)−1XY T
+We decide to try to use these methods to initialize a single-unit “neural network” with a linear
+activation function and no oﬀset:
+h(x; W) = W T x .
+Assume that XXT is invertible and not equal to the identity matrix, and that neither Wols nor
+Wridge is equal to (0, 0, . . . , 0). Note also that we are not using an explicit oﬀset/bias term.
+(a) If we initialized our unit with Wols and did batch gradient descent (summing the error
+over all the data points) with squared loss, no regularization, and a ﬁxed small step size,
+which of the following would most typically happen:
+⃝The weights would change substantially at the beginning, but then converge
+back to the values we initialized it with.
+⃝The weights would not change.
+⃝The weights would make small oscillations around the initial weights.
+⃝The weights would converge to a diﬀerent value.
+⃝Something else would happen.
+(b) Explain why.
+(c) If we initialized our unit with Wols and did stochastic gradient descent (one data point at
+a time) with squared loss, no regularization, and a ﬁxed small step size, many diﬀerent
+things could happen. For each of the results below, explain brieﬂy the circumstances in
+which it might occur, or explain why it is unlikely.
+i. The weights would not change.
+Page 8
+
+=== PAGE 9 ===
+Name:
+ii. The weights would make small oscillations around the initial weights.
+iii. The weights would converge to a diﬀerent value.
+(d) Consider a neural-network unit initialized with Wridge.
+Provide an objective function
+J(W) that depends on the data, such that batch gradient descent to minimize J will have
+no eﬀect on the weights, or argue that one does not exist.
+(e) Rory has solved many problems from this particular domain before and the solution has
+typically been close to W ∗= (1, ..., 1)T . Deﬁne an objective function J(W) that we could
+minimize in order to obtain good estimates for Rory’s next problem, even with very little
+data.
+Page 9
+
+=== PAGE 10 ===
+Name:
+(f) Ryo thinks they can get a better hypothesis by using knowledge about neural networks,
+and considers the hypothesis class
+g = waσ(wbx + wc) + wd
+Assume that the inputs x are 1-dimensional and recall σ(z) = 1/(1 + e−z).
+Provide a data set with 3 points for which Ryo’s hypothesis class can reach a lower MSE
+than the original OLS solution or argue that one does not exist.
+(g) Provide a data set with 3 points for which the original OLS hypothesis class can reach a
+substantially lower MSE than Ryo’s hypothesis class or argue that one does not exist.
+Page 10
+
+=== PAGE 11 ===
+Name:
+(h) Ryu thinks getting initial parameters from Ryo’s hypothesis might be a good way to
+initialize a two-layer neural network. Consider the case where we have a simple neural
+network with
+• Two units in the hidden layer
+• Sigmoid activation function in the hidden layer
+• Linear activation function on the output unit
+So, the hypothesis is:
+g = waσ(wbx + wc) + weσ(wfx + wg) + wd
+If Ryu ﬁrst trained Ryo’s hypothesis to reach a local optimum using gradient descent to
+obtain wa, wb, wc, wd, then initialized the more complex network above using we = wa,
+wf = wb, and wg = wc, with wd as before, and did batch gradient descent with squared
+loss and a ﬁxed small step size, which of the following would most typically happen:
+⃝The weights would change substantially at the beginning, but then converge
+back to the original values.
+⃝The weights would not change.
+⃝The weights would make small oscillations around the initial weights.
+⃝The weights would converge to a diﬀerent value, with a lower loss than we could
+achieve with Ryo’s hypothesis class.
+⃝The weights would converge to a diﬀerent value, with the same loss as we would
+obtain with Ryo’s hypothesis class.
+(i) Explain why.
+(j) Does your answer to the previous question change if we set we, wf, and wg randomly
+instead? Why or why not?
+Page 11
+
+=== PAGE 12 ===
+Name:
+5
+A Concerted Eﬀort
+5. (18 points) You are hired by an event-planning company to build some machine-learning pre-
+dictors. One of them, for predicting the number of attendees of a concert, takes as input x,
+a vector of aspects of the event (day of the week, start time, city size, music genre (classical,
+folk, rock, pop, rap), number of attendees at last concert, if known).
+(a) What would be a good encoding strategy for each attribute of concert? Select a choice,
+and explain your choice very brieﬂy. If you think more than one are reasonable it’s ﬁne
+to pick them and explain. By discretized numeric we mean dividing a numeric range into
+bins and using one-hot encoding on the bins.
+• music genre
+⃝numeric (standardized)
+⃝one-hot
+⃝discretized numeric
+⃝other
+Explain brieﬂy.
+• number of attendees at last concert, if known
+⃝numeric (standardized)
+⃝one-hot
+⃝discretized numeric
+⃝other
+Explain brieﬂy.
+• start time
+⃝numeric (standardized)
+⃝one-hot
+⃝discretized numeric
+⃝other
+Explain brieﬂy.
+Page 12
+
+=== PAGE 13 ===
+Name:
+(b) If you didn’t know anything more about this problem, what would be a reasonable loss
+function to use?
+It turns out that the losses in this problem might be asymmetric, in that it might be worse to
+over-estimate the crowd size than to under-estimate the crowd size, or vice versa. Cody decides
+to use a loss function of the following form
+Lcody(g, a) =
+(
+λ(g −a)2
+if g > a
+(g −a)2
+otherwise
+where g is the guessed value and a is the actual value, and λ is an adjustable parameter.
+(c) Jody thinks this loss function is not suﬃciently general and suggests that we should use a
+version with two parameters:
+Ljody(g, a) =
+(
+λ1(g −a)2
+if g > a
+λ2(g −a)2
+otherwise
+Assuming that λ, λ1 and λ2 are all constrained to be strictly greater than 0, is Jody’s loss
+function actually able to capture a larger class of losses? Either
+1. Show that for any λ1 and λ2 there is a value of λ such that choosing g to minimize
+Ljody with λ1, λ2 yields the same result as choosing g to minimize Lcody with λ.
+2. Give a counterexample: provide values of λ1, λ2 such that there is no value of λ such
+that choosing g to minimize Ljody with λ1, λ2 is equivalent to choosing g to minimize
+Lcody with λ.
+Page 13
+
+=== PAGE 14 ===
+Name:
+We talk to Bodie, who really knows the concert business and says a better model for the total
+loss is:
+Lbodie(g, a) = αg + β max(0, a −g) .
+This loss has two terms. The ﬁrst part of the loss comes from the cost of renting a venue: if
+we guess that there will be g attendees, we have to rent a place with g seats, and we assume
+that such a rental costs α per seat. The second part of the loss comes from the loss of potential
+ticket sales: if a people really wanted to attend but we can only seat g, then we lose β for each
+of the g −a people we have to turn away. Note that it is safe to assume that α < β (otherwise,
+we should not bother holding the concert!).
+(d) We would like to train a linear regression model to minimize this loss. Let g = θT x be the
+prediction given input x and parameters θ, and let y be the target training value for that
+x. Provide an expression for ∂Lbodie(g, y)/∂θ.
+Note that this loss is not everywhere diﬀerentiable, which we have seen before with ReLU
+units. Don’t worry about the what the value should be at that one point.
+Please write your answer in terms of x, y, α, β, and θ.
+Page 14
+
+=== PAGE 15 ===
+Name:
+But Bodie isn’t really sure how to set the α and β parameters, so we still have a problem!
+However, they are able to ﬁnd a set of data of the form (s, p, l) where s describes the number
+of seats in the venue rented, p describes the actual number of people who attempted to attend
+(including the number of people who were turned away) and l describes the actual loss value.
+(e) Bodie wants to use this data to estimate α and β in Lbodie by ﬁnding values of these
+parameters that predict the loss the most accurately in the mean-squared-error sense.
+Describe how to use the (s, p, l) data to formulate a linear regression problem that will
+recover good estimates of α and β.
+i. What are the inputs, x?
+ii. What are the target outputs, y?
+Page 15
+
+=== PAGE 16 ===
+Name:
+Roadie decides Bodie’s strategy is too complicated.
+Roadie has a very complicated economic simulator that can be used to evaluate the quality of
+a prediction, but it is too complicated to diﬀerentiate and use directly as a loss in a gradient
+optimization approach.
+Instead, Roadie wants to adopt Cody’s original simple loss function
+Lcody(g, a) =
+(
+λ(g −a)2
+if g > a
+(g −a)2
+otherwise
+which captures asymmetric loss and has free parameter λ.
+(f) Given a true loss function Ltrue, which is not diﬀerentiable, how could you use it to ﬁnd
+a good value of λ so that you can use Lcody with that λ to construct a good predictive
+hypothesis? Assume you have a dataset D and that you are given a set lambdas of plausible
+values for λ. Let’s write out a strategy in very abstract pseudo-code, using the following
+basic procedures:
+• train(data, lossfn) : trains a regression model to minimize lossfn on data, re-
+turns parameters theta
+• subpart(data, j, K) : divides data into K equal parts and returns the jth subpart
+• allbutsubpart(data, j, K) : divides data into K equal parts and returns all except
+the jth subpart
+• eval(theta, data, lossfn) : returns average loss of hypothesis with weights theta
+on data according to lossfn
+• L true : the true loss function that maps a guess and an actual value into a cost
+• L cody(lambda) : returns Lcody for this value of lambda, which is itself a loss function
+that maps a guess and an actual value into a cost
+Fill in the blanks in the code below, for a process in which we perform 10-fold cross-
+validation to ﬁnd the best lambda value.
+best lambda = None; best loss = None
+for lambda in lambdas do
+for k in range(
+) do
+hypoth = train(
+,
+)
+loss = eval(
+,
+,
+)
+if best lambda is None or loss < best loss then
+best lambda = lambda
+best loss = loss
+return best lambda
+Page 16
+
+=== PAGE 17 ===
+Name:
+6
+ABBA!
+6. (10 points)
+S0
+S2
+S1
+S5
+S4
+S3
+S6
+B / 1.0
+A/0.9
+A/0.1
+B/1.0
+A/1.0
+A/1.0
+B/0.5
+B/0.5
+{A,B}/1.0
+{A,B}/1.0
+{A,B}/1.0
+{A,B}/1.0
+R = 0
+R = 10
+R = 2
+R = 1
+R = 0
+R = 0
+R = 0
+Consider the MDP shown above. It has states S0, . . . , S6 and actions A, B. Each arrow is
+labeled with one or more actions, and a probability value: this means that if any of those
+actions is chosen from the state at the start of the arrow, then it will make a transition to the
+state at the end of the arrow with the associated probability.
+Rewards are associated with states, and independent, in this example, from the action that
+is taken in that state. Remember that with horizon H = 1, the agent can collect the reward
+associated with the state it is in, and then terminates.
+(a) Consider the policy π that takes action B in S0 and action A in S2. If the system starts
+in S0 or S2, then under that policy, only those two states (S0 and S2) are reachable.
+Recall that, for a ﬁxed policy π,
+Vπ(s) = R(s, π(s)) + γ
+X
+s′
+P(St+1 = s′ | St = s, At = π(s))Vπ(s′) .
+Assuming the discount factor γ = 0.8, what are the inﬁnite-horizon values Vπ(S0) and
+Vπ(S2)? It is suﬃcient to write out a small system of linear equations involving just those
+two variables; you do not have to take the time to solve them numerically.
+Page 17
+
+=== PAGE 18 ===
+Name:
+(b) What is the optimal value Vh=1(s) = maxa Qh=1(s, a) for each state for horizon H = 1
+with no discounting?
+i. Vh=1(S0)
+ii. Vh=1(S1)
+iii. Vh=1(S2)
+(c) What is the optimal action and value Vh=2(s) for each state for horizon H = 2 with no
+discounting? (If the actions are tied in value, list both).
+i. S0 : A:
+Vh=2:
+ii. S1 : A:
+Vh=2:
+iii. S2 : A:
+Vh=2:
+(d) What is the optimal action and value V (s) for each state for horizon H = 3 with no
+discounting? (If the actions are tied in value, list both).
+i. S0 : A:
+Vh=3:
+ii. S1 : A:
+Vh=3:
+iii. S2 : A:
+Vh=3:
+(e) If we increase the horizon beyond 3, will the optimal action in state S0 ever change?
+Explain.
+Page 18
+
+=== PAGE 19 ===
+Name:
+7
+ABCs of RL
+7. (8 points) Consider an MDP with four states, called A, B, C, and D, and with two actions
+called Move and Stay, but you don’t know anything about what these actions really do. The
+discount factor γ = 0.9.
+Here is a reminder of the Q-learning update formula, based on experience tuple (st, at, rt, st+1):
+Q(st, at) := (1 −α)Q(st, at) + α
+
+rt + γ max
+a′
+Q(st+1, a′)
+
+.
+In the following, let α = 1.
+Assume we see the following state-action-reward sequence:
+A, Move, 0
+B, Move, 0
+C, Move, 1
+A, Move, 0
+B, Move, 0
+C
+With Q-values all starting at 0, we run the Q-learning algorithm on that state-action sequence.
+(a) Specify each of the ﬁve updates to the Q table by saying which entry or entries are updated,
+and with which values. Please include an update even if the value is 0.
+i. Q(
+,
+) =
+ii. Q(
+,
+) =
+iii. Q(
+,
+) =
+iv. Q(
+,
+) =
+v. Q(
+,
+) =
+Page 19
+
+=== PAGE 20 ===
+Name:
+(b) This example illustrates a key weakness of Q-learning that would be even worse if the
+problem had 103 states, A, B1, . . . , B100, C, D, and the state-action-reward sequence
+were
+(A, Move, 0), (B1, Move, 0), (B2, Move, 0), . . . , (B100, Move, 0), (C, Move, 1), (A, Move, 0) .
+Very brieﬂy describe the weakness and a strategy for overcoming this weakness.
+(c) Suppose, for the original 4-state (A, B, C, D), that we continue acting (using the Q func-
+tion we arrived at, at the end of the part (a), and with α = 1) and receive the following
+additional state-action-reward sequence:
+A, Move, 0
+B, Move, 0
+D
+What additional updates would occur?
+i. Q(
+,
+) =
+ii. Q(
+,
+) =
+(d) What problem with our choice of parameters for the learning method is revealed by this
+example? Very brieﬂy explain a small change that will solve this problem.
+Page 20
+
+=== PAGE 21 ===
+Name:
+8
+The deep end of the pool
+8. (10 points) We are going to consider two diﬀerent simple convolutional networks over one
+dimensional (vector) inputs. Each network has a single convolutional layer with a single ﬁlter
+of size 3 and stride 1.
+Let (z1, . . . , zd) be the output of this convolutional layer, so that
+zj = wT [xj−1; xj; xj+1] where w are the ﬁlter parameters. Our two networks diﬀer in terms of
+how the feature map values are pooled to a single output value. Assume zero-padding of size
+1 at each end of the image.
+Network A has a single max-pooling layer with input size d, so that the output of the network
+g = σ(max(z1, . . . , zd)) where σ(·) is the sigmoid function.
+Network B has a single min-pooling layer with input size d, so that the output of the network
+g = σ(min(z1, . . . , zd)).
+When the ﬁlter’s output value is high it represents a positive detection of some pattern of
+interest.
+(a) For which network does a high output value correspond, qualitatively, to “every location
+in x corresponds to an instance of the desired pattern”?
+⃝A
+⃝B
+⃝None
+(b) For which network does a high output value correspond, qualitatively, to “at least half of
+the locations in x correspond to an instance of the desired pattern”?
+⃝A
+⃝B
+⃝None
+(c) For which network does a high output value correspond, qualitatively, to “there is at least
+one instance of the desired pattern in this image”?
+⃝A
+⃝B
+⃝None
+(d) Assume for simplicity that all z1, . . . , zd have distinct values (we can ignore the corner
+cases where some of the values are equal). What is ∂g/∂zi for network A? Feel free to
+make use of the fact that ∂σ(z)/∂z = σ(z)(1 −σ(z)).
+Page 21
+
+=== PAGE 22 ===
+Name:
+(e) Now, suppose we are just given a single training pair (x, y) where the target y is binary
+0/1. The loss that we are minimizing is again just
+Lnll(g, y) = −y log g −(1 −y) log(1 −g)
+which is minimized when g matches the target y. We are interested in understanding
+qualitatively how the ﬁlter parameters w get updated in the two networks if we use simple
+gradient descent to minimize Lnll(y, g). For each of the four qualitative behaviors of this
+process described below, specify the situation in which it would occur:
+• Which network (A, B, or it doesn’t matter)
+• Target y (1, 0, or it doesn’t matter)
+The behaviors are:
+1. After each step of gradient descent, the ﬁlter weights w change so that their dot prod-
+uct with the values of one particular sub-region [xj−1; xj; xj+1] of the image increases.
+i. Network:
+⃝A
+⃝B
+⃝irrelevant
+ii. Target y:
+⃝1
+⃝0
+⃝irrelevant
+2. After each step of gradient descent, the ﬁlter weights w change so that their dot prod-
+uct with the values of one particular sub-region [xj−1; xj; xj+1] of the image decreases.
+i. Network:
+⃝A
+⃝B
+⃝irrelevant
+ii. Target y:
+⃝1
+⃝0
+⃝irrelevant
+3. After each step of gradient descent, the ﬁlter weights w change so that their dot
+product with the values of some image sub-region increases, but the speciﬁc region
+may change from one step to another.
+i. Network:
+⃝A
+⃝B
+⃝irrelevant
+ii. Target y:
+⃝1
+⃝0
+⃝irrelevant
+4. After each step of gradient descent, the ﬁlter weights w change so that their dot
+product with the values of some image sub-region decreases, but the speciﬁc region
+may change from one step to another.
+i. Network:
+⃝A
+⃝B
+⃝irrelevant
+ii. Target y:
+⃝1
+⃝0
+⃝irrelevant
+Page 22
+
+=== PAGE 23 ===
+Name:
+9
+RNN
+9. (10 points) Consider three RNN variants:
+1. The basic RNN architecture we studied was
+st = f(W ssst−1 + W sxxt)
+yt = W ost
+where W ss is m × m, W sx is m × d, and f is an activation function to be speciﬁed later.
+We omit the oﬀset parameters for simplicity (set them to zero).
+2. Nora thinks the basic RNN is representationally weak, and it would be better not to
+decompose the state update in this way. Nora’s proposal is to instead
+st = f(W ssxconcat(st−1, xt))
+yt = W ost
+where concat(st−1, xt) is a vector of length m + d obtained by concatenating st−1 and xt,
+so W ssx has dimensions m × (m + d).
+3. Rina wants to try yet another model, of the form:
+st = f(W ssst−1) + f(W sxxt)
+yt = W ost
+Lets try to understand these models a bit better, and how they might relate.
+(a) Select the correct claim and answer the associated question.
+(1) Claim: The three models are all equivalent when f(z) = z. In this case, deﬁne W ssx
+in terms of W ss and W sx so that the equivalence holds.
+(2) Claim: The three models are not all equivalent when f(z) = z. In this case, assume
+m = d = 1 and provide one setting of W ssx in Nora’s model such that W ss and W sx
+cannot be chosen to make the basic model and Rina’s model the same as Nora’s.
+Page 23
+
+=== PAGE 24 ===
+Name:
+(b) Here is Rina’s model again:
+st = f(W ssst−1) + f(W sxxt)
+yt = W ost
+Something interesting might happen with this model when f(z) is not the identity. Specif-
+ically, it supposedly corresponds to the architecture shown in the ﬁgure below, which
+includes an additional hidden layer. Specify what W, W ′, and m′ are so that this archi-
+tecture indeed corresponds to Rina’s model. Specify your answers in terms of m, W ss,
+W sx, and W O.
+i. m′
+ii. W
+iii. W ′
+Page 24
+
+=== PAGE 25 ===
+Name:
+Scratch paper
+Page 25
+
+=== PAGE 26 ===
+Name:
+Scratch paper
+Page 26

@@ -1,0 +1,30 @@
+{
+ "w": 900,
+ "h": 440,
+ "n": 11,
+ "cols": 3,
+ "dur": 1000,
+ "hold": 2600,
+ "labels": [
+  "giữ 1 thành phần: 769 số thay cho 65 536; phương sai giữ lại 54.8%",
+  "giữ 2 thành phần: 1 282 số thay cho 65 536; phương sai giữ lại 71.4%",
+  "giữ 3 thành phần: 1 795 số thay cho 65 536; phương sai giữ lại 75.2%",
+  "giữ 5 thành phần: 2 821 số thay cho 65 536; phương sai giữ lại 80.3%",
+  "giữ 8 thành phần: 4 360 số thay cho 65 536; phương sai giữ lại 84.7%",
+  "giữ 12 thành phần: 6 412 số thay cho 65 536; phương sai giữ lại 88.4%",
+  "giữ 20 thành phần: 10 516 số thay cho 65 536; phương sai giữ lại 92.3%",
+  "giữ 30 thành phần: 15 646 số thay cho 65 536; phương sai giữ lại 94.8%",
+  "giữ 50 thành phần: 25 906 số thay cho 65 536; phương sai giữ lại 97.3%",
+  "giữ 80 thành phần: 41 296 số thay cho 65 536; phương sai giữ lại 98.9%",
+  "giữ 128 thành phần: 65 920 số thay cho 65 536; phương sai giữ lại 99.8%"
+ ],
+ "key": [
+  0,
+  4,
+  6,
+  9
+ ],
+ "dark": false,
+ "dw": 600,
+ "pcols": 4
+}

@@ -1,0 +1,399 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="465.545681pt" height="234.008081pt" viewBox="0 0 465.545681 234.008081" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-7-boosting-figure_1">
+  <g id="fig-2-7-boosting-patch_1">
+   <path d="M 0 234.008081 
+L 465.545681 234.008081 
+L 465.545681 0 
+L 0 0 
+L 0 234.008081 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-7-boosting-axes_1">
+   <g id="fig-2-7-boosting-patch_2">
+    <path d="M 44.677109 192.405424 
+L 460.505681 192.405424 
+L 460.505681 32.434139 
+L 44.677109 32.434139 
+L 44.677109 192.405424 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-7-boosting-matplotlib.axis_1">
+    <g id="fig-2-7-boosting-xtick_1">
+     <g id="fig-2-7-boosting-line2d_1">
+      <defs>
+       <path id="fig-2-7-boosting-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="59.759964" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="59.759964" y="206.577924" transform="rotate(-0 59.759964 206.577924)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-xtick_2">
+     <g id="fig-2-7-boosting-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="136.128848" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="136.128848" y="206.577924" transform="rotate(-0 136.128848 206.577924)">20</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-xtick_3">
+     <g id="fig-2-7-boosting-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="212.497731" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="212.497731" y="206.577924" transform="rotate(-0 212.497731 206.577924)">40</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-xtick_4">
+     <g id="fig-2-7-boosting-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="288.866615" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="288.866615" y="206.577924" transform="rotate(-0 288.866615 206.577924)">60</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-xtick_5">
+     <g id="fig-2-7-boosting-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="365.235498" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="365.235498" y="206.577924" transform="rotate(-0 365.235498 206.577924)">80</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-xtick_6">
+     <g id="fig-2-7-boosting-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="441.604382" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="441.604382" y="206.577924" transform="rotate(-0 441.604382 206.577924)">100</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="252.591395" y="225.987768" transform="rotate(-0 252.591395 225.987768)">số cây</text>
+    </g>
+   </g>
+   <g id="fig-2-7-boosting-matplotlib.axis_2">
+    <g id="fig-2-7-boosting-ytick_1">
+     <g id="fig-2-7-boosting-line2d_7">
+      <defs>
+       <path id="fig-2-7-boosting-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="164.626372" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="168.212622" transform="rotate(-0 37.677109 168.212622)">0.1</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-ytick_2">
+     <g id="fig-2-7-boosting-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="135.470124" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="139.056374" transform="rotate(-0 37.677109 139.056374)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-ytick_3">
+     <g id="fig-2-7-boosting-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="106.313876" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="109.900126" transform="rotate(-0 37.677109 109.900126)">0.3</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-ytick_4">
+     <g id="fig-2-7-boosting-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="77.157628" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="80.743878" transform="rotate(-0 37.677109 80.743878)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-ytick_5">
+     <g id="fig-2-7-boosting-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="48.00138" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-boosting-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="51.58763" transform="rotate(-0 37.677109 51.58763)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-boosting-text_13">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="112.419781" transform="rotate(-90 13.345 112.419781)">MSE</text>
+    </g>
+   </g>
+   <g id="fig-2-7-boosting-line2d_12">
+    <path d="M 63.578408 46.901826 
+L 67.396852 69.836996 
+L 71.215296 88.510806 
+L 75.033741 104.031492 
+L 78.852185 116.608333 
+L 82.670629 126.887886 
+L 86.489073 135.547224 
+L 90.307517 142.476341 
+L 94.125962 148.365556 
+L 97.944406 153.148352 
+L 101.76285 156.994876 
+L 105.581294 160.239354 
+L 109.399738 163.011097 
+L 113.218182 165.237138 
+L 117.036627 167.163982 
+L 120.855071 168.830465 
+L 124.673515 170.149026 
+L 128.491959 171.263338 
+L 132.310403 172.28762 
+L 136.128848 173.146404 
+L 139.947292 173.883165 
+L 143.765736 174.517678 
+L 147.58418 175.13517 
+L 151.402624 175.656452 
+L 155.221068 176.213366 
+L 159.039513 176.670315 
+L 162.857957 177.05991 
+L 166.676401 177.406013 
+L 170.494845 177.750417 
+L 174.313289 178.169798 
+L 178.131734 178.427469 
+L 181.950178 178.691376 
+L 185.768622 179.044409 
+L 189.587066 179.258048 
+L 193.40551 179.520469 
+L 197.223954 179.757908 
+L 201.042399 179.898866 
+L 204.860843 180.053641 
+L 208.679287 180.255057 
+L 212.497731 180.408735 
+L 216.316175 180.535661 
+L 220.13462 180.753707 
+L 223.953064 180.891988 
+L 227.771508 181.188744 
+L 231.589952 181.35095 
+L 235.408396 181.425993 
+L 239.22684 181.576861 
+L 243.045285 181.810379 
+L 246.863729 181.92185 
+L 250.682173 182.110832 
+L 254.500617 182.232009 
+L 258.319061 182.34818 
+L 262.137506 182.436969 
+L 265.95595 182.519239 
+L 269.774394 182.612227 
+L 273.592838 182.760411 
+L 277.411282 182.855304 
+L 281.229726 182.902994 
+L 285.048171 182.965381 
+L 288.866615 183.122769 
+L 292.685059 183.232926 
+L 296.503503 183.271075 
+L 300.321947 183.295826 
+L 304.140392 183.367892 
+L 307.958836 183.401621 
+L 311.77728 183.510369 
+L 315.595724 183.528612 
+L 319.414168 183.585524 
+L 323.232612 183.673329 
+L 327.051057 183.701207 
+L 330.869501 183.804752 
+L 334.687945 183.818475 
+L 338.506389 183.889538 
+L 342.324833 183.934765 
+L 346.143278 184.019321 
+L 349.961722 184.047925 
+L 353.780166 184.106268 
+L 357.59861 184.156128 
+L 361.417054 184.192512 
+L 365.235498 184.261039 
+L 369.053943 184.272312 
+L 372.872387 184.292115 
+L 376.690831 184.32807 
+L 380.509275 184.376749 
+L 384.327719 184.432504 
+L 388.146164 184.454673 
+L 391.964608 184.493626 
+L 395.783052 184.545542 
+L 399.601496 184.57488 
+L 403.41994 184.583999 
+L 407.238384 184.629296 
+L 411.056829 184.661776 
+L 414.875273 184.746407 
+L 418.693717 184.781768 
+L 422.512161 184.795571 
+L 426.330605 184.859055 
+L 430.14905 184.951292 
+L 433.967494 184.981456 
+L 437.785938 185.005233 
+L 441.604382 185.134002 
+" clip-path="url(#fig-2-7-boosting-pd6c25b7f76)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-boosting-line2d_13">
+    <path d="M 63.578408 39.705561 
+L 67.396852 60.754021 
+L 71.215296 78.207313 
+L 75.033741 92.471272 
+L 78.852185 103.940235 
+L 82.670629 113.417074 
+L 86.489073 120.89213 
+L 90.307517 127.29079 
+L 94.125962 132.412141 
+L 97.944406 136.748224 
+L 101.76285 140.54371 
+L 105.581294 143.542329 
+L 109.399738 146.05347 
+L 113.218182 148.112446 
+L 117.036627 149.773081 
+L 120.855071 151.506232 
+L 124.673515 152.759165 
+L 128.491959 153.781644 
+L 132.310403 154.740428 
+L 136.128848 155.685933 
+L 139.947292 156.159033 
+L 143.765736 156.99174 
+L 147.58418 157.693007 
+L 151.402624 158.325492 
+L 155.221068 158.70802 
+L 159.039513 159.001379 
+L 162.857957 159.326492 
+L 166.676401 159.51793 
+L 170.494845 159.745692 
+L 174.313289 160.092537 
+L 178.131734 160.28301 
+L 181.950178 160.444111 
+L 185.768622 160.668299 
+L 189.587066 160.675738 
+L 193.40551 160.756591 
+L 197.223954 160.983587 
+L 201.042399 161.13778 
+L 204.860843 161.201193 
+L 208.679287 161.339855 
+L 212.497731 161.342695 
+L 216.316175 161.297729 
+L 220.13462 161.304735 
+L 223.953064 161.43878 
+L 227.771508 161.559578 
+L 231.589952 161.629521 
+L 235.408396 161.685127 
+L 239.22684 161.6393 
+L 243.045285 161.707895 
+L 246.863729 161.658623 
+L 250.682173 161.605834 
+L 254.500617 161.54896 
+L 258.319061 161.589104 
+L 262.137506 161.423967 
+L 265.95595 161.591336 
+L 269.774394 161.519666 
+L 273.592838 161.52806 
+L 277.411282 161.546376 
+L 281.229726 161.422605 
+L 285.048171 161.488479 
+L 288.866615 161.480848 
+L 292.685059 161.596315 
+L 296.503503 161.479527 
+L 300.321947 161.491136 
+L 304.140392 161.490314 
+L 307.958836 161.414463 
+L 311.77728 161.31651 
+L 315.595724 161.32633 
+L 319.414168 161.325604 
+L 323.232612 161.230408 
+L 327.051057 161.156952 
+L 330.869501 161.179859 
+L 334.687945 161.18802 
+L 338.506389 161.096524 
+L 342.324833 161.095785 
+L 346.143278 161.096226 
+L 349.961722 161.083289 
+L 353.780166 161.002755 
+L 357.59861 160.925513 
+L 361.417054 160.924977 
+L 365.235498 160.913176 
+L 369.053943 160.920422 
+L 372.872387 160.851553 
+L 376.690831 160.783829 
+L 380.509275 160.701289 
+L 384.327719 160.677104 
+L 388.146164 160.662985 
+L 391.964608 160.70187 
+L 395.783052 160.572552 
+L 399.601496 160.57222 
+L 403.41994 160.57839 
+L 407.238384 160.548804 
+L 411.056829 160.486231 
+L 414.875273 160.56532 
+L 418.693717 160.488298 
+L 422.512161 160.468626 
+L 426.330605 160.499166 
+L 430.14905 160.354383 
+L 433.967494 160.391005 
+L 437.785938 160.390736 
+L 441.604382 160.374809 
+" clip-path="url(#fig-2-7-boosting-pd6c25b7f76)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-boosting-patch_3">
+    <path d="M 44.677109 192.405424 
+L 44.677109 32.434139 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-boosting-patch_4">
+    <path d="M 44.677109 192.405424 
+L 460.505681 192.405424 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-boosting-legend_1">
+    <g id="fig-2-7-boosting-line2d_14">
+     <path d="M 159.910731 12.7125 
+L 169.910731 12.7125 
+L 179.910731 12.7125 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-7-boosting-text_14">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="187.910731" y="16.2125" transform="rotate(-0 187.910731 16.2125)">train MSE</text>
+    </g>
+    <g id="fig-2-7-boosting-line2d_15">
+     <path d="M 251.55284 12.7125 
+L 261.55284 12.7125 
+L 271.55284 12.7125 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-7-boosting-text_15">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="279.55284" y="16.2125" transform="rotate(-0 279.55284 16.2125)">validation MSE</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-7-boosting-pd6c25b7f76">
+   <rect x="44.677109" y="32.434139" width="415.828571" height="159.971286"/>
+  </clipPath>
+ </defs>
+</svg>

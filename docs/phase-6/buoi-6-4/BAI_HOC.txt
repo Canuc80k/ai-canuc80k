@@ -1,0 +1,73 @@
+BUỔI 6.4 — Audio-language và multimodal
+
+HỌC SINH CẦN HIỂU
+- Multimodal inputs cầnalignment vàtaskoutput rõ.
+- Latefusion weightedprobs chỉ là một phương pháp; audiolanguagemodel dùng processor/model chuyênbiệt.
+- Qwen/Voxtral có ví dụ Inference; kiểm cache, resource vàrules trước chạy.
+
+CÂU HỎI MỞ BÀI
+Kết hợp audio và text có tự động giải được mọi audio question?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+fused=alpha×text_prob+(1-alpha)×audio_prob
+
+CẦN PHÂN BIỆT
+Không gọi fixture late fusion là Qwen/Voxtral đãinfer trên audio thật.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Fused=alpha*a+(1-alpha)*b; trả prob và label argmax index nhỏ khi hòa.
+Input:
+{
+  "a": [
+    0.8,
+    0.2
+  ],
+  "b": [
+    0.3,
+    0.7
+  ],
+  "alpha": 0.6
+}
+Output để đối chiếu sau khi làm:
+{
+  "prob": [
+    0.6,
+    0.39999999999999997
+  ],
+  "label": 0
+}
+
+Bài trên lớp 2: Check parsedobjects: dictđúngduynhất keylabel và label trongallowed; invalid→false.
+Input:
+{
+  "objects": [
+    {
+      "label": "weather"
+    },
+    {
+      "label": "music"
+    },
+    "weather"
+  ],
+  "allowed": [
+    "weather",
+    "sport"
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  true,
+  false,
+  false
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Fused=alpha*a+(1-alpha)*b; trả prob và label argmax index nhỏ khi hòa.; xem BTVN_01.txt.
+- BTVN 2: Check parsedobjects: dictđúngduynhất keylabel và label trongallowed; invalid→false.; xem BTVN_02.txt.
+- BTVN 3: Audio và câu hỏi định lượng; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+Hugging Face Qwen2Audio/Voxtral; AIO39 VQA.
+Phần Inference của Qwen2Audio có audio mẫu tiếng kính vỡ và code sinh mô tả; Voxtral có ví dụ Transcription/Audio Understanding. Chạy hoặc đọc code theo nguồn trên môi trường đủ tài nguyên; AIO39.2/39.3 cho bài image-text.

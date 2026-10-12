@@ -1,0 +1,2 @@
+Samples: 800 duration: 0.1
+Peak frequency: 440.0

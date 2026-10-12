@@ -1,0 +1,497 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="494.148906pt" height="227.486094pt" viewBox="0 0 494.148906 227.486094" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-3-loss-figure_1">
+  <g id="fig-2-3-loss-patch_1">
+   <path d="M 0 227.486094 
+L 494.148906 227.486094 
+L 494.148906 0 
+L 0 0 
+L 0 227.486094 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-3-loss-axes_1">
+   <g id="fig-2-3-loss-patch_2">
+    <path d="M 37.048906 186.27875 
+L 234.818906 186.27875 
+L 234.818906 5.04 
+L 37.048906 5.04 
+L 37.048906 186.27875 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-3-loss-matplotlib.axis_1">
+    <g id="fig-2-3-loss-xtick_1">
+     <g id="fig-2-3-loss-line2d_1">
+      <defs>
+       <path id="fig-2-3-loss-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="45.130417" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="45.130417" y="200.45125" transform="rotate(-0 45.130417 200.45125)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_2">
+     <g id="fig-2-3-loss-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="81.451813" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="81.451813" y="200.45125" transform="rotate(-0 81.451813 200.45125)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_3">
+     <g id="fig-2-3-loss-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="117.773208" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="117.773208" y="200.45125" transform="rotate(-0 117.773208 200.45125)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_4">
+     <g id="fig-2-3-loss-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="154.094604" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="154.094604" y="200.45125" transform="rotate(-0 154.094604 200.45125)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_5">
+     <g id="fig-2-3-loss-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="190.416" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="190.416" y="200.45125" transform="rotate(-0 190.416 200.45125)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_6">
+     <g id="fig-2-3-loss-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="226.737396" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="226.737396" y="200.45125" transform="rotate(-0 226.737396 200.45125)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="135.933906" y="219.641094" transform="rotate(-0 135.933906 219.641094)">p đoán cho email spam</text>
+    </g>
+   </g>
+   <g id="fig-2-3-loss-matplotlib.axis_2">
+    <g id="fig-2-3-loss-ytick_1">
+     <g id="fig-2-3-loss-line2d_7">
+      <defs>
+       <path id="fig-2-3-loss-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="37.048906" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="189.865" transform="rotate(-0 30.048906 189.865)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_2">
+     <g id="fig-2-3-loss-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="37.048906" y="152.082759" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="155.669009" transform="rotate(-0 30.048906 155.669009)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_3">
+     <g id="fig-2-3-loss-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="37.048906" y="117.886769" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="121.473019" transform="rotate(-0 30.048906 121.473019)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_4">
+     <g id="fig-2-3-loss-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="37.048906" y="83.690778" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="87.277028" transform="rotate(-0 30.048906 87.277028)">3</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_5">
+     <g id="fig-2-3-loss-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="37.048906" y="49.494788" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="53.081038" transform="rotate(-0 30.048906 53.081038)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_6">
+     <g id="fig-2-3-loss-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="37.048906" y="15.298797" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="18.885047" transform="rotate(-0 30.048906 18.885047)">5</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-text_14">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="95.659375" transform="rotate(-90 13.345 95.659375)">loss</text>
+    </g>
+   </g>
+   <g id="fig-2-3-loss-line2d_13">
+    <path d="M 46.038452 5.097539 
+L 46.639759 22.474111 
+L 47.241066 33.940772 
+L 47.842374 42.512843 
+L 49.044989 55.063983 
+L 50.247603 64.225049 
+L 51.450218 71.443241 
+L 52.652833 77.400169 
+L 53.855448 82.47173 
+L 55.65937 88.898281 
+L 57.463292 94.30602 
+L 59.267214 98.974206 
+L 61.071136 103.080997 
+L 62.875059 106.747039 
+L 65.280288 111.093838 
+L 67.685518 114.949892 
+L 70.090747 118.414854 
+L 73.097284 122.304057 
+L 76.103821 125.795755 
+L 79.110358 128.963722 
+L 82.718202 132.414397 
+L 86.326047 135.548563 
+L 90.535198 138.875328 
+L 94.74435 141.90695 
+L 99.554809 145.071472 
+L 104.365268 147.967791 
+L 109.777035 150.9574 
+L 115.790109 153.998774 
+L 121.803183 156.791605 
+L 128.417564 159.621243 
+L 135.633253 162.462484 
+L 143.450249 165.295436 
+L 151.868552 168.10473 
+L 160.888163 170.878747 
+L 170.509081 173.608916 
+L 181.332614 176.440414 
+L 192.757454 179.194852 
+L 205.38491 182.001455 
+L 218.613672 184.713811 
+L 225.829361 186.107341 
+L 225.829361 186.107341 
+" clip-path="url(#fig-2-3-loss-p9ad20a4f4e)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-line2d_14">
+    <path d="M 46.038452 152.423864 
+L 56.861985 156.35809 
+L 67.685518 160.049388 
+L 78.509051 163.497758 
+L 89.332584 166.703199 
+L 100.156117 169.665711 
+L 110.97965 172.385295 
+L 121.201875 174.730732 
+L 131.424101 176.859483 
+L 141.646326 178.771548 
+L 151.868552 180.466927 
+L 162.090778 181.94562 
+L 172.313003 183.207626 
+L 182.535229 184.252947 
+L 192.757454 185.081581 
+L 202.97968 185.69353 
+L 213.201906 186.088792 
+L 223.424131 186.267368 
+L 225.829361 186.277895 
+L 225.829361 186.277895 
+" clip-path="url(#fig-2-3-loss-p9ad20a4f4e)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-patch_3">
+    <path d="M 37.048906 186.27875 
+L 37.048906 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-patch_4">
+    <path d="M 37.048906 186.27875 
+L 234.818906 186.27875 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-legend_1">
+    <g id="fig-2-3-loss-line2d_15">
+     <path d="M 106.803906 17.1625 
+L 115.803906 17.1625 
+L 124.803906 17.1625 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.4; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-3-loss-text_15">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="132.003906" y="20.3125" transform="rotate(-0 132.003906 20.3125)">cross-entropy  −log p</text>
+    </g>
+    <g id="fig-2-3-loss-line2d_16">
+     <path d="M 106.803906 31.532109 
+L 115.803906 31.532109 
+L 124.803906 31.532109 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.4; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-3-loss-text_16">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="132.003906" y="34.682109" transform="rotate(-0 132.003906 34.682109)">bình phương  (1−p)²</text>
+    </g>
+   </g>
+  </g>
+  <g id="fig-2-3-loss-axes_2">
+   <g id="fig-2-3-loss-patch_5">
+    <path d="M 291.338906 186.27875 
+L 489.108906 186.27875 
+L 489.108906 5.04 
+L 291.338906 5.04 
+L 291.338906 186.27875 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-3-loss-matplotlib.axis_3">
+    <g id="fig-2-3-loss-xtick_7">
+     <g id="fig-2-3-loss-line2d_17">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="299.420417" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="299.420417" y="200.45125" transform="rotate(-0 299.420417 200.45125)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_8">
+     <g id="fig-2-3-loss-line2d_18">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="335.741813" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_18">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="335.741813" y="200.45125" transform="rotate(-0 335.741813 200.45125)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_9">
+     <g id="fig-2-3-loss-line2d_19">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="372.063208" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_19">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="372.063208" y="200.45125" transform="rotate(-0 372.063208 200.45125)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_10">
+     <g id="fig-2-3-loss-line2d_20">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="408.384604" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_20">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="408.384604" y="200.45125" transform="rotate(-0 408.384604 200.45125)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_11">
+     <g id="fig-2-3-loss-line2d_21">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="444.706" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_21">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="444.706" y="200.45125" transform="rotate(-0 444.706 200.45125)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-xtick_12">
+     <g id="fig-2-3-loss-line2d_22">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m04e37d9cc8" x="481.027396" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_22">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="481.027396" y="200.45125" transform="rotate(-0 481.027396 200.45125)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-text_23">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="390.223906" y="219.641094" transform="rotate(-0 390.223906 219.641094)">p đoán cho email spam</text>
+    </g>
+   </g>
+   <g id="fig-2-3-loss-matplotlib.axis_4">
+    <g id="fig-2-3-loss-ytick_7">
+     <g id="fig-2-3-loss-line2d_23">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="291.338906" y="186.27875" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_24">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="284.338906" y="189.865" transform="rotate(-0 284.338906 189.865)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_8">
+     <g id="fig-2-3-loss-line2d_24">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="291.338906" y="151.757083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_25">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="284.338906" y="155.343333" transform="rotate(-0 284.338906 155.343333)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_9">
+     <g id="fig-2-3-loss-line2d_25">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="291.338906" y="117.235417" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_26">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="284.338906" y="120.821667" transform="rotate(-0 284.338906 120.821667)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_10">
+     <g id="fig-2-3-loss-line2d_26">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="291.338906" y="82.71375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_27">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="284.338906" y="86.3" transform="rotate(-0 284.338906 86.3)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_11">
+     <g id="fig-2-3-loss-line2d_27">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="291.338906" y="48.192083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_28">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="284.338906" y="51.778333" transform="rotate(-0 284.338906 51.778333)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-ytick_12">
+     <g id="fig-2-3-loss-line2d_28">
+      <g>
+       <use xlink:href="#fig-2-3-loss-m9fce3a8e10" x="291.338906" y="13.670417" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-loss-text_29">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="284.338906" y="17.256667" transform="rotate(-0 284.338906 17.256667)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-loss-text_30">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="259.224375" y="95.659375" transform="rotate(-90 259.224375 95.659375)">|gradient theo z|</text>
+    </g>
+   </g>
+   <g id="fig-2-3-loss-line2d_29">
+    <path d="M 300.328452 14.533458 
+L 480.119361 185.415708 
+L 480.119361 185.415708 
+" clip-path="url(#fig-2-3-loss-pfc1fbf3240)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-line2d_30">
+    <path d="M 300.328452 184.569884 
+L 303.936296 178.116123 
+L 307.54414 172.187017 
+L 310.550677 167.635156 
+L 313.557214 163.426963 
+L 316.563751 159.553039 
+L 319.570288 156.003986 
+L 322.576825 152.770406 
+L 325.583362 149.8429 
+L 328.589899 147.212071 
+L 331.596436 144.868521 
+L 334.602973 142.80285 
+L 337.60951 141.005661 
+L 340.616047 139.467555 
+L 343.622584 138.179135 
+L 346.629121 137.131002 
+L 349.635658 136.313758 
+L 352.642194 135.718005 
+L 355.648731 135.334345 
+L 358.655268 135.153378 
+L 361.661805 135.165708 
+L 365.26965 135.422422 
+L 368.877494 135.927709 
+L 372.485338 136.665329 
+L 376.093183 137.619041 
+L 380.302334 138.983157 
+L 384.511486 140.593506 
+L 389.321945 142.702332 
+L 394.132404 145.060591 
+L 399.544171 147.96385 
+L 405.557245 151.436139 
+L 413.374241 156.218045 
+L 437.426536 171.157677 
+L 443.43961 174.551181 
+L 448.851377 177.362148 
+L 453.661836 179.621362 
+L 457.870987 181.381747 
+L 462.080139 182.913116 
+L 466.289291 184.189681 
+L 469.897135 185.061528 
+L 473.50498 185.710984 
+L 477.112824 186.121811 
+L 480.119361 186.270163 
+L 480.119361 186.270163 
+" clip-path="url(#fig-2-3-loss-pfc1fbf3240)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-patch_6">
+    <path d="M 291.338906 186.27875 
+L 291.338906 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-patch_7">
+    <path d="M 291.338906 186.27875 
+L 489.108906 186.27875 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-loss-legend_2">
+    <g id="fig-2-3-loss-line2d_31">
+     <path d="M 392.690313 17.1625 
+L 401.690313 17.1625 
+L 410.690313 17.1625 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.4; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-3-loss-text_31">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="417.890313" y="20.3125" transform="rotate(-0 417.890313 20.3125)">cross-entropy</text>
+    </g>
+    <g id="fig-2-3-loss-line2d_32">
+     <path d="M 392.690313 31.532109 
+L 401.690313 31.532109 
+L 410.690313 31.532109 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.4; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-3-loss-text_32">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="417.890313" y="34.682109" transform="rotate(-0 417.890313 34.682109)">bình phương</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-3-loss-p9ad20a4f4e">
+   <rect x="37.048906" y="5.04" width="197.77" height="181.23875"/>
+  </clipPath>
+  <clipPath id="fig-2-3-loss-pfc1fbf3240">
+   <rect x="291.338906" y="5.04" width="197.77" height="181.23875"/>
+  </clipPath>
+ </defs>
+</svg>

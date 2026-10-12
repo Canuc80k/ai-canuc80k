@@ -1,0 +1,61 @@
+AI CANUC80K — HƯỚNG DẪN SỬ DỤNG
+
+BẮT ĐẦU
+Giải nén toàn bộ gói học sinh và mở START_HERE.html. Chọn phase, rồi chọn buổi học.
+Mỗi buổi có:
+- slides.pptx: bộ slide PowerPoint có thể sửa; slides.html: bản trình chiếu trên trình duyệt.
+- BAI_HOC.html / BAI_HOC.txt: kiến thức, hai bài trên lớp, dữ liệu mẫu và đáp án đối chiếu.
+- code_minh_hoa.py / code_minh_hoa.ipynb: code có chú thích và output đã chạy.
+- GIAO_AN.txt: trình tự gợi ý cho giáo viên.
+- BTVN_01/02/03.txt, starter và sample: ba bài về nhà.
+
+55 bộ bài học thuộc 7 phase đã được duyệt. Một bộ có thể dạy trong nhiều buổi nếu học sinh
+cần thêm thực hành. Số bộ và số trang slide không phải cam kết về thời lượng hay trình độ IOAI.
+
+CHẠY DEMO
+Mở terminal trong thư mục buổi học:
+  python -X utf8 code_minh_hoa.py
+Notebook mở bằng Jupyter hoặc Colab; cần giữ đường dẫn dữ liệu khi chuyển lên Colab.
+Slide chia code dài thành các đoạn và có xuống dòng để đọc trên màn hình; dùng file .py/.ipynb
+kèm theo làm bản code chạy. Output được lưu trong ket_qua_code.txt.
+
+LÀM BTVN
+Bài tính toán đọc một JSON object từ stdin và in một JSON value ra stdout. Hoàn thiện starter.
+Ví dụ Windows PowerShell, tại thư mục buổi học:
+  cmd /c "python -X utf8 BTVN_01_starter.py < BTVN_01_sample.in > output.json"
+  python -X utf8 ../../utils/check_json.py BTVN_01_sample.out output.json
+Đọc yêu cầu riêng của từng bài: thứ tự, positive class, tie, shape và sai số đều có ý nghĩa.
+
+Bài ML đọc thư mục dữ liệu được chỉ rõ trong BTVN_03.txt. Đọc DATA_NOTE.json và sample_submission.
+Học bằng train; chọn phương án bằng validation; tạo output cho test sau khi chốt phương án.
+Giáo viên chấm cả phương pháp/code và predictions. Điểm predictions không chứng minh đã dùng
+đúng thuật toán của buổi. Mỗi bài có lệnh chấm validation riêng ở cuối đề.
+
+DỮ LIỆU VÀ BÀI THỰC TẾ
+41 bộ dữ liệu đi kèm: mỗi bài thực hành có thư mục riêng. Dữ liệu tổng hợp được ghi rõ;
+Digits là ảnh chữ số thật, ASR có 15 bản ghi LibriSpeech. Các bộ nhỏ dùng để luyện thao tác.
+Bài LQDOJ/IOAI và tutorial được dẫn ở cuối mỗi bài để chuyển sang dữ liệu và nhiệm vụ lớn hơn;
+dùng đề, rules, metric và dữ liệu của bài gốc khi làm những bài này.
+Nhãn test và lời giải giáo viên nằm trong gói giáo viên riêng, không nằm trong gói học sinh.
+
+MÔI TRƯỜNG
+Python 3; NumPy, Pandas, scikit-learn, Matplotlib, SciPy; các demo Deep Learning cần PyTorch,
+torchvision. 55 demo nhỏ đã được chạy bằng CPU tại máy soạn tài liệu.
+Môi trường kiểm tra: Python 3.13, scikit-learn 1.7.2, torch 2.9.1+cpu, torchvision 0.24.1+cpu.
+Phiên bản khác có thể cho số thực hoặc kết quả ngẫu nhiên khác; giữ seed và đọc phần quy ước.
+
+9 script bổ sung cho UMAP/pretrained/PEFT/diffusion/ASR/audio-language có hướng dẫn riêng trong
+CODE_BO_SUNG.txt của buổi. Đã kiểm cú pháp; chưa chạy với các checkpoint lớn. Model weights,
+GPU runtime và một số thư viện bổ sung không được đóng kèm. Giáo viên chuẩn bị checkpoint đúng
+phiên bản và chạy thử script này trên môi trường dạy trước buổi thực hành tương ứng.
+
+LQDOJ
+KE_HOACH_CONTEST.txt gom BTVN theo phase, đích nhóm:
+https://lqdoj.edu.vn/organization/3727-aicanuc80k
+Mã contest/problem hiện chỉ là đề xuất local; chưa kiểm trùng mã, chưa tạo hay upload.
+Checker JSON và scorer predictions trong gói dùng local. Cần adapter, chạy pilot và kiểm tra
+readback trên LQDOJ trước khi dùng contest để phân hạng. Không coi kiểm tra local là live AC.
+
+NGUỒN
+Ba file note giáo trình nằm trong giao_trinh/. Danh mục nguồn sách/tài liệu viết trong các file
+note và từng bài. DATA_SOURCES.txt ghi nguồn dữ liệu và cách chọn subset.

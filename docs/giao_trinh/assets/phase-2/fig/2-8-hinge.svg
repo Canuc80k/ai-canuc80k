@@ -1,0 +1,234 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="465.685246pt" height="241.737634pt" viewBox="0 0 465.685246 241.737634" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-8-hinge-figure_1">
+  <g id="fig-2-8-hinge-patch_1">
+   <path d="M 0 241.737634 
+L 465.685246 241.737634 
+L 465.685246 0 
+L 0 0 
+L 0 241.737634 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-8-hinge-axes_1">
+   <g id="fig-2-8-hinge-patch_2">
+    <path d="M 45.459531 200.762321 
+L 460.645246 200.762321 
+L 460.645246 5.04 
+L 45.459531 5.04 
+L 45.459531 200.762321 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-8-hinge-matplotlib.axis_1">
+    <g id="fig-2-8-hinge-xtick_1">
+     <g id="fig-2-8-hinge-line2d_1">
+      <defs>
+       <path id="fig-2-8-hinge-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="64.331609" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="64.331609" y="214.934821" transform="rotate(-0 64.331609 214.934821)">−1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_2">
+     <g id="fig-2-8-hinge-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="111.511804" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="111.511804" y="214.934821" transform="rotate(-0 111.511804 214.934821)">−1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_3">
+     <g id="fig-2-8-hinge-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="158.691999" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="158.691999" y="214.934821" transform="rotate(-0 158.691999 214.934821)">−0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_4">
+     <g id="fig-2-8-hinge-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="205.872194" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="205.872194" y="214.934821" transform="rotate(-0 205.872194 214.934821)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_5">
+     <g id="fig-2-8-hinge-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="253.052388" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="253.052388" y="214.934821" transform="rotate(-0 253.052388 214.934821)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_6">
+     <g id="fig-2-8-hinge-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="300.232583" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="300.232583" y="214.934821" transform="rotate(-0 300.232583 214.934821)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_7">
+     <g id="fig-2-8-hinge-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="347.412778" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="347.412778" y="214.934821" transform="rotate(-0 347.412778 214.934821)">1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_8">
+     <g id="fig-2-8-hinge-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="394.592973" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="394.592973" y="214.934821" transform="rotate(-0 394.592973 214.934821)">2.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-xtick_9">
+     <g id="fig-2-8-hinge-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m04e37d9cc8" x="441.773168" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="441.773168" y="214.934821" transform="rotate(-0 441.773168 214.934821)">2.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-text_10">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="253.052388" y="233.717321" transform="rotate(-0 253.052388 233.717321)">signed margin  y f(x)</text>
+    </g>
+   </g>
+   <g id="fig-2-8-hinge-matplotlib.axis_2">
+    <g id="fig-2-8-hinge-ytick_1">
+     <g id="fig-2-8-hinge-line2d_10">
+      <defs>
+       <path id="fig-2-8-hinge-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m9fce3a8e10" x="45.459531" y="197.328596" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.459531" y="200.914846" transform="rotate(-0 38.459531 200.914846)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-ytick_2">
+     <g id="fig-2-8-hinge-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m9fce3a8e10" x="45.459531" y="162.991347" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.459531" y="166.577597" transform="rotate(-0 38.459531 166.577597)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-ytick_3">
+     <g id="fig-2-8-hinge-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m9fce3a8e10" x="45.459531" y="128.654098" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.459531" y="132.240348" transform="rotate(-0 38.459531 132.240348)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-ytick_4">
+     <g id="fig-2-8-hinge-line2d_13">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m9fce3a8e10" x="45.459531" y="94.316848" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.459531" y="97.903098" transform="rotate(-0 38.459531 97.903098)">1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-ytick_5">
+     <g id="fig-2-8-hinge-line2d_14">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m9fce3a8e10" x="45.459531" y="59.979599" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.459531" y="63.565849" transform="rotate(-0 38.459531 63.565849)">2.0</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-ytick_6">
+     <g id="fig-2-8-hinge-line2d_15">
+      <g>
+       <use xlink:href="#fig-2-8-hinge-m9fce3a8e10" x="45.459531" y="25.64235" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-8-hinge-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.459531" y="29.2286" transform="rotate(-0 38.459531 29.2286)">2.5</text>
+     </g>
+    </g>
+    <g id="fig-2-8-hinge-text_17">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="102.901161" transform="rotate(-90 13.345 102.901161)">hinge loss</text>
+    </g>
+   </g>
+   <g id="fig-2-8-hinge-line2d_16">
+    <path d="M 64.331609 25.64235 
+L 298.72454 196.231059 
+L 300.448018 197.328596 
+L 441.773168 197.328596 
+L 441.773168 197.328596 
+" clip-path="url(#fig-2-8-hinge-pf0c882b5d4)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.6; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-8-hinge-line2d_17">
+    <path d="M 205.872194 200.762321 
+L 205.872194 5.04 
+" clip-path="url(#fig-2-8-hinge-pf0c882b5d4)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 0.8"/>
+   </g>
+   <g id="fig-2-8-hinge-line2d_18">
+    <path d="M 300.232583 200.762321 
+L 300.232583 5.04 
+" clip-path="url(#fig-2-8-hinge-pf0c882b5d4)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: var(--t-n, #3b6ea8)"/>
+   </g>
+   <g id="fig-2-8-hinge-patch_3">
+    <path d="M 45.459531 200.762321 
+L 45.459531 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-8-hinge-patch_4">
+    <path d="M 45.459531 200.762321 
+L 460.645246 200.762321 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-8-hinge-text_18">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="332.315116" y="188.400912" transform="rotate(-0 332.315116 188.400912)">loss = 0</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-8-hinge-pf0c882b5d4">
+   <rect x="45.459531" y="5.04" width="415.185714" height="195.722321"/>
+  </clipPath>
+ </defs>
+</svg>

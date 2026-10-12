@@ -1,0 +1,6 @@
+Group folds:
+train [0, 1, 4, 5] valid [2, 3, 6, 7]
+train [2, 3, 6, 7] valid [0, 1, 4, 5]
+Stratified giữ tỉ lệ lớp, không tự giữ group:
+groups trùng: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]
+groups trùng: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]

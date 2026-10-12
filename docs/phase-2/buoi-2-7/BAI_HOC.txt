@@ -1,0 +1,72 @@
+BUỔI 2.7 — SVM
+
+HỌC SINH CẦN HIỂU
+- SVM tìm ranh giới với margin; support vectors quyết định ranh giới.
+- Kernel cho cách so mẫu phi tuyến; C/gamma cần tuning hợp lý.
+- Scale ảnh hưởng khoảng cách và kernel; decision score chưa phải probability.
+
+CÂU HỎI MỞ BÀI
+Hai đường đều phân loại đúng train, đường nào có margin tốt hơn?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+margin_i = y_i(w·x_i+b)
+
+CẦN PHÂN BIỆT
+Không dùng RBF với gamma rất lớn mà chỉ kiểm train accuracy.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính y*(dot(x, w)+b) từng mẫu với y∈{-1,+1}.
+Input:
+{
+  "X": [
+    [
+      1,
+      0
+    ],
+    [
+      -1,
+      0
+    ]
+  ],
+  "y": [
+    1,
+    -1
+  ],
+  "w": [
+    2,
+    0
+  ],
+  "b": 0
+}
+Output để đối chiếu sau khi làm:
+[
+  2,
+  2
+]
+
+Bài trên lớp 2: RBF kernel exp(-gamma*||a-b||^2).
+Input:
+{
+  "a": [
+    0,
+    0
+  ],
+  "b": [
+    1,
+    1
+  ],
+  "gamma": 0.5
+}
+Output để đối chiếu sau khi làm:
+0.36787944117144233
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính y*(dot(x, w)+b) từng mẫu với y∈{-1,+1}.; xem BTVN_01.txt.
+- BTVN 2: RBF kernel exp(-gamma*||a-b||^2).; xem BTVN_02.txt.
+- BTVN 3: SVM và scale của features; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+KHTN chương 4; NT 7.2 và phụ lục A.
+NT 9.6 phần SVC(probability=True), trong cùng pipeline/CV của bài.

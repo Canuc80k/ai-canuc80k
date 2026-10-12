@@ -1,0 +1,239 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="472.433377pt" height="242.646538pt" viewBox="0 0 472.433377 242.646538" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-8-4-correlation-figure_1">
+  <g id="fig-8-4-correlation-patch_1">
+   <path d="M 0 242.646538 
+L 472.433377 242.646538 
+L 472.433377 0 
+L 0 0 
+L 0 242.646538 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-8-4-correlation-axes_1">
+   <g id="fig-8-4-correlation-patch_2">
+    <path d="M 45.514531 201.901538 
+L 467.393377 201.901538 
+L 467.393377 5.04 
+L 45.514531 5.04 
+L 45.514531 201.901538 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-8-4-correlation-matplotlib.axis_1">
+    <g id="fig-8-4-correlation-xtick_1">
+     <g id="fig-8-4-correlation-line2d_1">
+      <defs>
+       <path id="fig-8-4-correlation-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m04e37d9cc8" x="45.514531" y="201.901538" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="45.514531" y="216.074038" transform="rotate(-0 45.514531 216.074038)">1</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-xtick_2">
+     <g id="fig-8-4-correlation-line2d_2">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m04e37d9cc8" x="113.927317" y="201.901538" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="113.927317" y="216.074038" transform="rotate(-0 113.927317 216.074038)">4</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-xtick_3">
+     <g id="fig-8-4-correlation-line2d_3">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m04e37d9cc8" x="205.144365" y="201.901538" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="205.144365" y="216.074038" transform="rotate(-0 205.144365 216.074038)">8</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-xtick_4">
+     <g id="fig-8-4-correlation-line2d_4">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m04e37d9cc8" x="296.361413" y="201.901538" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="296.361413" y="216.074038" transform="rotate(-0 296.361413 216.074038)">12</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-xtick_5">
+     <g id="fig-8-4-correlation-line2d_5">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m04e37d9cc8" x="387.578461" y="201.901538" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="387.578461" y="216.074038" transform="rotate(-0 387.578461 216.074038)">16</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-text_6">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="256.453954" y="234.801538" transform="rotate(-0 256.453954 234.801538)">Số model K</text>
+    </g>
+   </g>
+   <g id="fig-8-4-correlation-matplotlib.axis_2">
+    <g id="fig-8-4-correlation-ytick_1">
+     <g id="fig-8-4-correlation-line2d_6">
+      <defs>
+       <path id="fig-8-4-correlation-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m9fce3a8e10" x="45.514531" y="201.901538" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="205.487788" transform="rotate(-0 38.514531 205.487788)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-ytick_2">
+     <g id="fig-8-4-correlation-line2d_7">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m9fce3a8e10" x="45.514531" y="166.747692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="170.333942" transform="rotate(-0 38.514531 170.333942)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-ytick_3">
+     <g id="fig-8-4-correlation-line2d_8">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m9fce3a8e10" x="45.514531" y="131.593846" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="135.180096" transform="rotate(-0 38.514531 135.180096)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-ytick_4">
+     <g id="fig-8-4-correlation-line2d_9">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m9fce3a8e10" x="45.514531" y="96.44" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="100.02625" transform="rotate(-0 38.514531 100.02625)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-ytick_5">
+     <g id="fig-8-4-correlation-line2d_10">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m9fce3a8e10" x="45.514531" y="61.286154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="64.872404" transform="rotate(-0 38.514531 64.872404)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-ytick_6">
+     <g id="fig-8-4-correlation-line2d_11">
+      <g>
+       <use xlink:href="#fig-8-4-correlation-m9fce3a8e10" x="45.514531" y="26.132308" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-correlation-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="29.718558" transform="rotate(-0 38.514531 29.718558)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-8-4-correlation-text_13">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.4" y="103.470769" transform="rotate(-90 13.4 103.470769)">Var(mean error) / σ²</text>
+    </g>
+   </g>
+   <g id="fig-8-4-correlation-line2d_12">
+    <path d="M 45.514531 26.132308 
+L 68.318793 114.016923 
+L 91.123055 143.311795 
+L 113.927317 157.959231 
+L 136.731579 166.747692 
+L 159.535841 172.606667 
+L 182.340103 176.791648 
+L 205.144365 179.930385 
+L 227.948627 182.371624 
+L 250.752889 184.324615 
+L 273.557151 185.922517 
+L 296.361413 187.254103 
+L 319.165675 188.380828 
+L 341.969937 189.346593 
+L 364.774199 190.18359 
+L 387.578461 190.915962 
+" clip-path="url(#fig-8-4-correlation-p789ae821bf)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-correlation-line2d_13">
+    <path d="M 45.514531 26.132308 
+L 68.318793 70.074615 
+L 91.123055 84.722051 
+L 113.927317 92.045769 
+L 136.731579 96.44 
+L 159.535841 99.369487 
+L 182.340103 101.461978 
+L 205.144365 103.031346 
+L 227.948627 104.251966 
+L 250.752889 105.228462 
+L 273.557151 106.027413 
+L 296.361413 106.693205 
+L 319.165675 107.256568 
+L 341.969937 107.739451 
+L 364.774199 108.157949 
+L 387.578461 108.524135 
+" clip-path="url(#fig-8-4-correlation-p789ae821bf)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-correlation-line2d_14">
+    <path d="M 45.514531 26.132308 
+L 68.318793 26.132308 
+L 91.123055 26.132308 
+L 113.927317 26.132308 
+L 136.731579 26.132308 
+L 159.535841 26.132308 
+L 182.340103 26.132308 
+L 205.144365 26.132308 
+L 227.948627 26.132308 
+L 250.752889 26.132308 
+L 273.557151 26.132308 
+L 296.361413 26.132308 
+L 319.165675 26.132308 
+L 341.969937 26.132308 
+L 364.774199 26.132308 
+L 387.578461 26.132308 
+" clip-path="url(#fig-8-4-correlation-p789ae821bf)" style="fill: none; stroke: #b8892b; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-correlation-patch_3">
+    <path d="M 45.514531 201.901538 
+L 45.514531 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-correlation-patch_4">
+    <path d="M 45.514531 201.901538 
+L 467.393377 201.901538 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-correlation-text_14">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="394.419739" y="193.540962" transform="rotate(-0 394.419739 193.540962)">ρ = 0</text>
+   </g>
+   <g id="fig-8-4-correlation-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="394.419739" y="111.149135" transform="rotate(-0 394.419739 111.149135)">ρ = 0.5</text>
+   </g>
+   <g id="fig-8-4-correlation-text_16">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="394.419739" y="28.757308" transform="rotate(-0 394.419739 28.757308)">ρ = 1</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-8-4-correlation-p789ae821bf">
+   <rect x="45.514531" y="5.04" width="421.878846" height="196.861538"/>
+  </clipPath>
+ </defs>
+</svg>

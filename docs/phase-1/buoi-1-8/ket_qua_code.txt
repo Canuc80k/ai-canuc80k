@@ -1,0 +1,5 @@
+Mean: 26.5 Median: 2.5
+Std population: 42.4411
+P(canh bao|loi): 0.9
+P(loi|canh bao): 0.692308
+Hai xác suất có điều kiện này không bằng nhau.

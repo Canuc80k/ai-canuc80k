@@ -1,0 +1,64 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Autoencoders</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 3.9</small><h1>Buổi 3.9: Autoencoders</h1><p>Nếu không có nhãn, autoencoder học mục tiêu nào?</p></section><section class="slide"><small>Buổi 3.9</small><h1>Ý tưởng chính</h1><p>loss = mean((reconstruction-input)²)</p><ul><li>Encoder nén input; decoder tái tạo input từ latent.</li><li>Reconstruction loss dùng chính input làm mục tiêu; không phải class accuracy.</li><li>Bottleneck/denoising giúp học biểu diễn; VAE thêm mô hình hóa distribution.</li></ul></section><section class="slide"><small>Buổi 3.9</small><h1>Ví dụ</h1><pre>{
+  &quot;n&quot;: 128,
+  &quot;d&quot;: 64,
+  &quot;k&quot;: 4
+}</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;latent&quot;: 512,
+  &quot;reconstruction&quot;: 8192
+}</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Code minh họa (1)</h1><pre>import torch
+from torch import nn
+from sklearn.datasets import load_digits
+torch.manual_seed(42)
+torch.set_num_threads(1)
+
+X = torch.tensor(load_digits().data[:128]/16,dtype=torch.float32)
+encoder = nn.Sequential(nn.Linear(64,16),nn.ReLU(),nn.Linear(16,4))
+decoder = nn.Sequential(nn.Linear(4,16),nn.ReLU(),nn.Linear(16,64),nn.Sigmoid())
+optimizer = torch.optim.Adam(list(encoder.parameters())+list(decoder.parameters()),
+lr=.01)
+for step in range(20):
+    optimizer.zero_grad(); latent=encoder(X); reconstruction=decoder(latent)
+    loss=((reconstruction-X)**2).mean(); loss.backward(); optimizer.step()
+print(&quot;input&quot;,tuple(X.shape),&quot;latent&quot;,tuple(latent.shape),&quot;reconstruction&quot;,tuple(re</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Code minh họa (2)</h1><pre>construction.shape))
+print(&quot;Training reconstruction loss:&quot;,round(loss.item(),5))
+# Không có nhãn chữ số đi vào loss; loss tái tạo không phải accuracy phân loại.</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Kết quả</h1><pre>input (128, 64) latent (128, 4) reconstruction (128, 64)
+Training reconstruction loss: 0.0761</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Điểm dễ nhầm</h1><ul><li>Loss tái tạo tốt không tự chứng minh latent tốt cho mọi task.</li><li>Ghi shapes của input128× 64, latent128× 4 và reconstruction128× 64.</li></ul></section><section class="slide"><small>Buổi 3.9</small><h1>Bài trên lớp 1</h1><p>Số giá trịlatent=n*k và reconstruction=n*d; không phải parameters.</p><pre>{
+  &quot;n&quot;: 128,
+  &quot;d&quot;: 64,
+  &quot;k&quot;: 4
+}</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Bài trên lớp 2</h1><p>MSE giữainput/reconstruction theo tất cả phần tử.</p><pre>{
+  &quot;X&quot;: [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  &quot;reconstruction&quot;: [
+    [
+      0.2,
+      0.8
+    ],
+    [
+      0.8,
+      0.2
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.9</small><h1>Bài tập về nhà 1</h1><p>Số giá trịlatent=n*k và reconstruction=n*d; không phải parameters.</p><ul><li>Input: n, d, k: số nguyên dương.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 3.9</small><h1>Bài tập về nhà 2</h1><p>MSE giữainput/reconstruction theo tất cả phần tử.</p><ul><li>Input: X/reconstruction: same rectangular shape.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 3.9</small><h1>Bài tập về nhà 3</h1><p>Autoencoder khử nhiễu chữ số</p><ul><li>Data: denoise</li><li>Metric: RMSE tất cả pixels; score=exp(-RMSE).</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 3.9</small><h1>Tổng kết</h1><p>Ghi shapes của input128× 64, latent128× 4 và reconstruction128× 64.</p><ul><li>KHTN chương 15; AIO 51.1 về VAE.</li><li>AIO 51.3 câu hỏi về VAE; dùng ví dụ autoencoder của KHTN15 cho reconstruction. VAE là mở rộng, không gọi đồng nhất với autoencoder thường.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

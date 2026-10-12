@@ -1,0 +1,87 @@
+BUỔI 5.3 — BERT và pretrained text encoders
+
+HỌC SINH CẦN HIỂU
+- BERT pretrained encoder cần đúng tokenizer, attentionmask và head.
+- Frozen features khác fine-tune; labelmap thuộcdata/task.
+- Padding/truncation ảnh hưởng information; không nhầm hidden states với logits.
+
+CÂU HỎI MỞ BÀI
+Tokenizer khác checkpoint có thể dùng cùng token IDs không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+IDs→embedding→encoder→pooling/head→logits
+
+CẦN PHÂN BIỆT
+TinyTransformer demo có weights ngẫu nhiên, không phải BERT pretrained.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Mask bằng 1 nếu token!=pad_id; bằng 0 nếu là padding.
+Input:
+{
+  "ids": [
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ]
+  ],
+  "pad_id": 0
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    1,
+    1,
+    0
+  ],
+  [
+    1,
+    0,
+    0
+  ]
+]
+
+Bài trên lớp 2: Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.
+Input:
+{
+  "tokens": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  "mask": [
+    1,
+    1,
+    0
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  0.5,
+  0.5
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Mask bằng 1 nếu token!=pad_id; bằng 0 nếu là padding.; xem BTVN_01.txt.
+- BTVN 2: Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.; xem BTVN_02.txt.
+- BTVN 3: Text encoder và head; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO37.2.
+AIO37.2 Text classification using BERT và37.4 câu hỏi liên quan.

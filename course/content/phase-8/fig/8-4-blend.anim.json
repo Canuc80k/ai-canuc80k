@@ -1,0 +1,24 @@
+{
+ "w": 960,
+ "h": 660,
+ "n": 5,
+ "cols": 2,
+ "dur": 1900,
+ "hold": 1600,
+ "labels": [
+  "logistic regression: log loss tune 0.3229",
+  "random forest: log loss tune 0.2240",
+  "kNN 15 láng giềng: log loss tune 0.4201",
+  "trung bình đều ba model: log loss tune 0.2190",
+  "trọng số đã chọn trên tune (0.0, 0.25, 0.75): log loss tune 0.1687"
+ ],
+ "key": [
+  0,
+  1,
+  2,
+  4
+ ],
+ "dark": true,
+ "dw": 560,
+ "pcols": 2
+}

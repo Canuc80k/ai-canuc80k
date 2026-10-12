@@ -1,0 +1,25 @@
+{
+ "w": 960,
+ "h": 200,
+ "n": 6,
+ "cols": 2,
+ "dur": 1600,
+ "hold": 1800,
+ "labels": [
+  "nhánh ảnh: đúng 20/25 (ô đặc)",
+  "nhánh chữ: đúng 19/25 (ô đặc)",
+  "nhánh fusion: đúng 21/25 (ô đặc)",
+  "fusion sửa: ID [3, 11, 17]",
+  "fusion làm sai: ID [8, 21]",
+  "cả ba cùng sai: ID [5, 14]"
+ ],
+ "key": [
+  2,
+  3,
+  4,
+  5
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 1
+}

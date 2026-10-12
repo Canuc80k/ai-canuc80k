@@ -1,0 +1,46 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dataset và DataLoader — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/3.4?part=1">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 3.2: Dataset và DataLoader</h1><p>Batch cuối ít mẫu hơn có bị mất khỏi dữ liệu không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Dataset trả sample; DataLoader tạo batch và có thể shuffle.</li><li>drop_last quyết định có loại batch cuối thiếu phần tử.</li><li>Inference phải giữ IDs để ghép predictions đúng mẫu.</li></ul><p class="note">n_batches = ceil(n_samples/batch_size)</p><h2>Code minh họa</h2><pre>import torch
+from torch.utils.data import TensorDataset,DataLoader
+torch.manual_seed(42)
+X = torch.arange(18,dtype=torch.float32).reshape(9,2)
+y = torch.arange(9)%2
+ids = torch.arange(9)
+dataset = TensorDataset(X,y,ids)
+loader = DataLoader(dataset,batch_size=4,shuffle=False,drop_last=False)
+seen = []
+for features,labels,batch_ids in loader:
+    print(&quot;batch shape&quot;,tuple(features.shape),&quot;ids&quot;,batch_ids.tolist())
+    seen.extend(batch_ids.tolist())
+assert seen==list(range(9))
+# Khi shuffle inference, phải sắp output lại theo ID, không theo thứ tự batch.
+</pre><h3>Kết quả</h3><pre>batch shape (4, 2) ids [0, 1, 2, 3]
+batch shape (4, 2) ids [4, 5, 6, 7]
+batch shape (1, 2) ids [8]
+</pre><p class="note">Shuffle output mà quên IDs làm nhãn đúng bị gán sang mẫu khác.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả kích thước từng batch; drop_last loại batch cuối không đủ.</p><pre>{
+  &quot;n&quot;: 9,
+  &quot;batch_size&quot;: 4,
+  &quot;drop_last&quot;: false
+}</pre><details><summary>Đáp án</summary><pre>[
+  4,
+  4,
+  1
+]</pre></details><h3>Bài 2</h3><p>Trả predictions theo ids_order; batch_ids/pred có thể bị shuffle.</p><pre>{
+  &quot;ids_order&quot;: [
+    1,
+    2,
+    3
+  ],
+  &quot;batch_ids&quot;: [
+    3,
+    1,
+    2
+  ],
+  &quot;pred&quot;: [
+    8,
+    6,
+    7
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  6,
+  7,
+  8
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả kích thước từng batch; drop_last loại batch cuối không đủ.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Trả predictions theo ids_order; batch_ids/pred có thể bị shuffle.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>DataLoader giữ đúng IDs</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>PyTorch Learn the Basics: Datasets &amp; DataLoaders, Transforms.</p><p>Thực hành FashionMNIST của tutorial và xem batch theo hướng dẫn.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-1/BAI_HOC.html">← PyTorch tensors và autograd</a><a href="../../phase-3/buoi-3-3/BAI_HOC.html">Perceptron, MLP và backpropagation →</a></nav></body></html>

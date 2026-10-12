@@ -1,0 +1,1 @@
+[{"x": 114, "y": 24.0, "text": "conv 3×3, 4 lớp", "size": 12, "anchor": "middle"}, {"x": 319, "y": 24.0, "text": "conv 3×3, 13 lớp", "size": 12, "anchor": "middle"}, {"x": 524, "y": 24.0, "text": "attention, 1 lớp", "size": 12, "anchor": "middle"}, {"x": 320, "y": 228.0, "text": "vùng ô (0, 0) đọc được trên lưới 14×14 patch", "size": 11.5, "anchor": "middle"}]

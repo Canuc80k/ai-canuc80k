@@ -1,0 +1,64 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Convolution và pooling — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/5.1?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 4.1: Convolution và pooling</h1><p>Kernel2× 2 nhìn một phần ảnh3× 3 ra sao?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Convolution/cross-correlation kết hợp vùng cục bộ; stride/padding đổi shape.</li><li>Channels là loại thông tin, không cùng ý nghĩa với batch dimension.</li><li>Pooling gom vùng; max và average giữ thông tin khác nhau.</li></ul><p class="note">Hout=floor((H+2P-K)/S)+1</p><h2>Code minh họa</h2><pre>import torch
+from torch import nn
+X = torch.arange(1,10,dtype=torch.float32).reshape(1,1,3,3)
+conv = nn.Conv2d(1,1,kernel_size=2,bias=False)
+with torch.no_grad(): conv.weight.copy_(torch.tensor([[[[1.,0.],[0.,-1.]]]]))
+output = conv(X)
+print(&quot;Input:&quot;,X[0,0].tolist())
+print(&quot;Kernel:&quot;,conv.weight[0,0].detach().tolist())
+print(&quot;Output:&quot;,output[0,0].detach().tolist())
+print(&quot;MaxPool2x2:&quot;,nn.MaxPool2d(2)(X)[0,0].tolist())
+assert torch.equal(output,torch.full((1,1,2,2),-4.))
+# Conv2d thực hiện cross-correlation; không lật kernel ở ví dụ này.
+</pre><h3>Kết quả</h3><pre>Input: [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0], [7.0, 8.0, 9.0]]
+Kernel: [[1.0, 0.0], [0.0, -1.0]]
+Output: [[-4.0, -4.0], [-4.0, -4.0]]
+MaxPool2x2: [[5.0]]
+</pre><p class="note">Conv2d của PyTorch không lật kernel trong thao tác cross-correlation.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Output floor((input+2padding-kernel)/stride)+1 cho H/W, không dilation.</p><pre>{
+  &quot;h&quot;: 5,
+  &quot;w&quot;: 5,
+  &quot;kh&quot;: 3,
+  &quot;kw&quot;: 3,
+  &quot;stride&quot;: 1,
+  &quot;padding&quot;: 0
+}</pre><details><summary>Đáp án</summary><pre>[
+  3,
+  3
+]</pre></details><h3>Bài 2</h3><p>2D valid cross-correlation, stride1, padding0; KHÔNG lật kernel.</p><pre>{
+  &quot;image&quot;: [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ],
+    [
+      7,
+      8,
+      9
+    ]
+  ],
+  &quot;kernel&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      -1
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    -4,
+    -4
+  ],
+  [
+    -4,
+    -4
+  ]
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Output floor((input+2padding-kernel)/stride)+1 cho H/W, không dilation.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>2D valid cross-correlation, stride1, padding0; KHÔNG lật kernel.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Đọc ảnh và dùng filters</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO 34.1; KHTN chương 12.</p><p>AIO 34.2 Thực hành và34.3 trắc nghiệm.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-10/BAI_HOC.html">← Fine-tuning đầy đủ và PEFT</a><a href="../../phase-4/buoi-4-2/BAI_HOC.html">CNN và image classification →</a></nav></body></html>

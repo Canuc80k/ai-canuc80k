@@ -1,0 +1,27 @@
+{
+ "w": 960,
+ "h": 330,
+ "n": 8,
+ "cols": 2,
+ "dur": 1300,
+ "hold": 2200,
+ "labels": [
+  "từ “mèo”: khóa mới, đặt bằng 1",
+  "từ “chó”: khóa mới, đặt bằng 1",
+  "từ “mèo”: đã có khóa, tăng 1 → 2",
+  "từ “gà”: khóa mới, đặt bằng 1",
+  "từ “mèo”: đã có khóa, tăng 2 → 3",
+  "từ “chó”: đã có khóa, tăng 1 → 2",
+  "hết câu: dict có 3 khóa",
+  "`most_common(2)` sắp theo số lần giảm dần: mèo 3, chó 2"
+ ],
+ "key": [
+  0,
+  2,
+  4,
+  7
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

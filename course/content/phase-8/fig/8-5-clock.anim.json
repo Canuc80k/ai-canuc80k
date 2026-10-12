@@ -1,0 +1,45 @@
+{
+ "w": 960,
+ "h": 300,
+ "n": 13,
+ "cols": 3,
+ "dur": [
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  800
+ ],
+ "hold": 3000,
+ "labels": [
+  "phút 0",
+  "phút 30",
+  "phút 60",
+  "phút 90",
+  "phút 120",
+  "phút 150",
+  "phút 180",
+  "phút 210",
+  "phút 240",
+  "phút 270",
+  "phút 300",
+  "phút 330",
+  "hết 360 phút: buổi 1 dồn 225 phút cho cải tiến, không chạy lại; buổi 2 dành 70 phút chạy lại trước khi kiểm"
+ ],
+ "key": [
+  4,
+  8,
+  12
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 1
+}

@@ -1,0 +1,56 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Text processing và baseline NLP</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 5.1</small><h1>Buổi 5.1: Text processing và baseline NLP</h1><p>Máy biến một câu thành features mà không đọc nghĩa như người ra sao?</p></section><section class="slide"><small>Buổi 5.1</small><h1>Ý tưởng chính</h1><p>TF-IDF dùng term frequency và inverse document frequency</p><ul><li>Tokenization/vocabulary biến text thành indices/đếm; TF-IDF weighted features.</li><li>Sparse baseline thường nhanh và cần fit vocab trên train.</li><li>Giữ Unicode/negation; tránh duplicate qua split.</li></ul></section><section class="slide"><small>Buổi 5.1</small><h1>Ví dụ</h1><pre>{
+  &quot;texts&quot;: [
+    &quot;AI học AI&quot;,
+    &quot;học máy&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.1</small><h1>Đáp án ví dụ</h1><pre>[
+  &quot;ai&quot;,
+  &quot;học&quot;,
+  &quot;máy&quot;
+]</pre></section><section class="slide"><small>Buổi 5.1</small><h1>Code minh họa</h1><pre>from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import make_pipeline
+
+texts=[&quot;rain floods city&quot;,&quot;storm damages bridge&quot;,&quot;team wins match&quot;, &quot;player scores
+goal&quot;]
+y=[1,1,0,0]  # Fixture: 1 thời tiết, 0 thể thao.
+model=make_pipeline(TfidfVectorizer(),LogisticRegression(random_state=42))
+model.fit(texts,y)
+print(&quot;Vocabulary:&quot;,sorted(model[0].vocabulary_))
+query=[&quot;rain storm&quot;,&quot;team player&quot;]
+print(&quot;Labels:&quot;,model.predict(query).tolist())
+print(&quot;Probs:&quot;,model.predict_proba(query).round(4).tolist())
+assert model.predict(query).tolist()==[1,0]
+# Fit vocabulary/IDF chỉ trên train; fixture ít câu chỉ để đọc thao tác.</pre></section><section class="slide"><small>Buổi 5.1</small><h1>Kết quả</h1><pre>Vocabulary: [&#39;bridge&#39;, &#39;city&#39;, &#39;damages&#39;, &#39;floods&#39;, &#39;goal&#39;, &#39;match&#39;, &#39;player&#39;,
+&#39;rain&#39;, &#39;scores&#39;, &#39;storm&#39;, &#39;team&#39;, &#39;wins&#39;]
+Labels: [1, 0]
+Probs: [[0.4189, 0.5811], [0.5811, 0.4189]]</pre></section><section class="slide"><small>Buổi 5.1</small><h1>Điểm dễ nhầm</h1><ul><li>Không fit IDF/vocabulary trên cảlabeled test rồi báo validation độc lập.</li><li>Đọc vocabulary trongdemo và dự đoán haiqueries thời tiết/thể thao.</li></ul></section><section class="slide"><small>Buổi 5.1</small><h1>Bài trên lớp 1</h1><p>Tokenize bằng lower()+split(); sorted vocab. Không thay Unicode.</p><pre>{
+  &quot;texts&quot;: [
+    &quot;AI học AI&quot;,
+    &quot;học máy&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.1</small><h1>Bài trên lớp 2</h1><p>Đếm các vocabulary tokens trong mỗi văn bản lower()+split().</p><pre>{
+  &quot;texts&quot;: [
+    &quot;AI học AI&quot;,
+    &quot;máy học&quot;
+  ],
+  &quot;vocab&quot;: [
+    &quot;ai&quot;,
+    &quot;học&quot;,
+    &quot;máy&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.1</small><h1>Bài tập về nhà 1</h1><p>Tokenize bằng lower()+split(); sorted vocab. Không thay Unicode.</p><ul><li>Input: texts: list chuỗi.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 5.1</small><h1>Bài tập về nhà 2</h1><p>Đếm các vocabulary tokens trong mỗi văn bản lower()+split().</p><ul><li>Input: texts: list chuỗi; vocab: chuỗi khác nhau lowercase.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 5.1</small><h1>Bài tập về nhà 3</h1><p>Phân loại văn bản lớp</p><ul><li>Data: text</li><li>Metric: Macro F1 theo đúng classes 0/1/2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 5.1</small><h1>Tổng kết</h1><p>Đọc vocabulary trongdemo và dự đoán haiqueries thời tiết/thể thao.</p><ul><li>AIO14,27.5; KHTN19.</li><li>AIO27.5 Twitter Sentiment Analysis và27.6 trắc nghiệm; bank K04 Disaster Tweets để luyện thêm.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

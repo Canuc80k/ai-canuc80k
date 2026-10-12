@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 0.3 — NumPy
+
+TRÌNH TỰ DẠY
+1. Hỏi: Ma trận 3× 4× 5 có ba mẫu hay ba features?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Ý nghĩa mỗi axis do ta quy định. Trong ví dụ: axis0 là mẫu.
+- reshape giữ số phần tử; transpose đổi thứ tự các trục.
+- keepdims giữ chiều để phép broadcasting trừ đúng thống kê theo mẫu.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Shape hợp lệ không bảo đảm axis có đúng ý nghĩa.
+
+CÂU HỎI CHỐT
+So mean(axis=0) với mean(axis=(1,2)); ghi shape trước khi chạy.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

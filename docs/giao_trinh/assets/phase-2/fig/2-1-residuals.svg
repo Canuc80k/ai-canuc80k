@@ -1,0 +1,339 @@
+<svg   xmlns:xlink="http://www.w3.org/1999/xlink" width="384.696172pt" height="228.955219pt" viewBox="0 0 384.696172 228.955219" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  
+ </defs>
+ <g id="fig-2-1-residuals-figure_1">
+  <g id="fig-2-1-residuals-patch_1">
+   <path d="M 0 228.955219 
+L 384.696172 228.955219 
+L 384.696172 0 
+L 0 0 
+L 0 228.955219 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-1-residuals-axes_1">
+   <g id="fig-2-1-residuals-patch_2">
+    <path d="M 35.856172 191.376 
+L 381.816172 191.376 
+L 381.816172 2.88 
+L 35.856172 2.88 
+L 35.856172 191.376 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-1-residuals-matplotlib.axis_1">
+    <g id="fig-2-1-residuals-xtick_1">
+     <g id="fig-2-1-residuals-line2d_1">
+      <defs>
+       <path id="fig-2-1-residuals-md9450040d9" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9450040d9" x="51.581626" y="191.376" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_1">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="51.581626" y="207.5635" transform="rotate(-0 51.581626 207.5635)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-xtick_2">
+     <g id="fig-2-1-residuals-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9450040d9" x="114.483445" y="191.376" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_2">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="114.483445" y="207.5635" transform="rotate(-0 114.483445 207.5635)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-xtick_3">
+     <g id="fig-2-1-residuals-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9450040d9" x="177.385263" y="191.376" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_3">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="177.385263" y="207.5635" transform="rotate(-0 177.385263 207.5635)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-xtick_4">
+     <g id="fig-2-1-residuals-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9450040d9" x="240.287081" y="191.376" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_4">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="240.287081" y="207.5635" transform="rotate(-0 240.287081 207.5635)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-xtick_5">
+     <g id="fig-2-1-residuals-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9450040d9" x="303.188899" y="191.376" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_5">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="303.188899" y="207.5635" transform="rotate(-0 303.188899 207.5635)">8</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-xtick_6">
+     <g id="fig-2-1-residuals-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9450040d9" x="366.090717" y="191.376" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_6">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="366.090717" y="207.5635" transform="rotate(-0 366.090717 207.5635)">10</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-text_7">
+     <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="208.836172" y="223.663109" transform="rotate(-0 208.836172 223.663109)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-1-residuals-matplotlib.axis_2">
+    <g id="fig-2-1-residuals-ytick_1">
+     <g id="fig-2-1-residuals-line2d_7">
+      <defs>
+       <path id="fig-2-1-residuals-md9f753280b" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9f753280b" x="35.856172" y="174.656707" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_8">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: end; fill: currentColor" x="29.356172" y="179.500457" transform="rotate(-0 29.356172 179.500457)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-ytick_2">
+     <g id="fig-2-1-residuals-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9f753280b" x="35.856172" y="145.371644" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_9">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: end; fill: currentColor" x="29.356172" y="150.215394" transform="rotate(-0 29.356172 150.215394)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-ytick_3">
+     <g id="fig-2-1-residuals-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9f753280b" x="35.856172" y="116.086582" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_10">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: end; fill: currentColor" x="29.356172" y="120.930332" transform="rotate(-0 29.356172 120.930332)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-ytick_4">
+     <g id="fig-2-1-residuals-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9f753280b" x="35.856172" y="86.801519" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_11">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: end; fill: currentColor" x="29.356172" y="91.645269" transform="rotate(-0 29.356172 91.645269)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-ytick_5">
+     <g id="fig-2-1-residuals-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9f753280b" x="35.856172" y="57.516457" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_12">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: end; fill: currentColor" x="29.356172" y="62.360207" transform="rotate(-0 29.356172 62.360207)">8</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-ytick_6">
+     <g id="fig-2-1-residuals-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-1-residuals-md9f753280b" x="35.856172" y="28.231395" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-2-1-residuals-text_13">
+      <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: end; fill: currentColor" x="29.356172" y="33.075145" transform="rotate(-0 29.356172 33.075145)">10</text>
+     </g>
+    </g>
+    <g id="fig-2-1-residuals-text_14">
+     <text style="font-size: 10px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="12.5675" y="97.128" transform="rotate(-90 12.5675 97.128)">y</text>
+    </g>
+   </g>
+   <g id="fig-2-1-residuals-line2d_13">
+    <path d="M 67.307081 118.356013 
+L 67.307081 157.99391 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_14">
+    <path d="M 93.039643 182.808 
+L 93.039643 147.485602 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_15">
+    <path d="M 118.772205 125.326024 
+L 118.772205 136.977295 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_16">
+    <path d="M 144.504767 131.620993 
+L 144.504767 126.468988 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_17">
+    <path d="M 170.237329 120.182572 
+L 170.237329 115.96068 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_18">
+    <path d="M 195.969891 106.780223 
+L 195.969891 105.452373 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_19">
+    <path d="M 221.702453 126.258924 
+L 221.702453 94.944066 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_20">
+    <path d="M 247.435015 87.874926 
+L 247.435015 84.435758 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_21">
+    <path d="M 273.167577 88.490839 
+L 273.167577 73.927451 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_22">
+    <path d="M 298.900139 11.448 
+L 298.900139 63.419144 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_23">
+    <path d="M 324.632701 51.749938 
+L 324.632701 52.910836 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_24">
+    <path d="M 350.365263 51.48218 
+L 350.365263 42.402529 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-opacity: 0.9; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-line2d_25">
+    <path d="M 51.581626 164.415653 
+L 58.000179 161.794533 
+L 64.418732 159.173413 
+L 70.837285 156.552294 
+L 77.255838 153.931174 
+L 83.674391 151.310054 
+L 90.092944 148.688934 
+L 96.511497 146.067815 
+L 102.930049 143.446695 
+L 109.348602 140.825575 
+L 115.767155 138.204456 
+L 122.185708 135.583336 
+L 128.604261 132.962216 
+L 135.022814 130.341096 
+L 141.441367 127.719977 
+L 147.85992 125.098857 
+L 154.278472 122.477737 
+L 160.697025 119.856617 
+L 167.115578 117.235498 
+L 173.534131 114.614378 
+L 179.952684 111.993258 
+L 186.371237 109.372138 
+L 192.78979 106.751019 
+L 199.208343 104.129899 
+L 205.626895 101.508779 
+L 212.045448 98.887659 
+L 218.464001 96.26654 
+L 224.882554 93.64542 
+L 231.301107 91.0243 
+L 237.71966 88.403181 
+L 244.138213 85.782061 
+L 250.556766 83.160941 
+L 256.975318 80.539821 
+L 263.393871 77.918702 
+L 269.812424 75.297582 
+L 276.230977 72.676462 
+L 282.64953 70.055342 
+L 289.068083 67.434223 
+L 295.486636 64.813103 
+L 301.905189 62.191983 
+L 308.323741 59.570863 
+L 314.742294 56.949744 
+L 321.160847 54.328624 
+L 327.5794 51.707504 
+L 333.997953 49.086384 
+L 340.416506 46.465265 
+L 346.835059 43.844145 
+L 353.253612 41.223025 
+L 359.672164 38.601906 
+L 366.090717 35.980786 
+" clip-path="url(#fig-2-1-residuals-pf77cc8618f)" style="fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-patch_3">
+    <path d="M 35.856172 191.376 
+L 35.856172 2.88 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-patch_4">
+    <path d="M 35.856172 191.376 
+L 381.816172 191.376 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residuals-PathCollection_1">
+    <defs>
+     <path id="fig-2-1-residuals-m11bcaaa742" d="M 0 2.54951 
+C 0.676138 2.54951 1.324674 2.280877 1.802776 1.802776 
+C 2.280877 1.324674 2.54951 0.676138 2.54951 0 
+C 2.54951 -0.676138 2.280877 -1.324674 1.802776 -1.802776 
+C 1.324674 -2.280877 0.676138 -2.54951 0 -2.54951 
+C -0.676138 -2.54951 -1.324674 -2.280877 -1.802776 -1.802776 
+C -2.280877 -1.324674 -2.54951 -0.676138 -2.54951 0 
+C -2.54951 0.676138 -2.280877 1.324674 -1.802776 1.802776 
+C -1.324674 2.280877 -0.676138 2.54951 0 2.54951 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-2-1-residuals-pf77cc8618f)">
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="67.307081" y="118.356013" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="93.039643" y="182.808" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="118.772205" y="125.326024" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="144.504767" y="131.620993" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="170.237329" y="120.182572" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="195.969891" y="106.780223" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="221.702453" y="126.258924" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="247.435015" y="87.874926" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="273.167577" y="88.490839" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="298.900139" y="11.448" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="324.632701" y="51.749938" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-2-1-residuals-m11bcaaa742" x="350.365263" y="51.48218" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-2-1-residuals-text_15">
+    <!-- $\hat{y} = wx + b$ -->
+    <g style="fill: currentColor" transform="translate(322.059445 72.996958)">
+     <text>
+      <tspan x="7.096191" y="-2.203125" style="font-size: 11px; font-family: 'Lora'; fill: currentColor">̂</tspan>
+      <tspan x="8.652832" y="-0.96875" style="font-size: 11px; font-family: 'Lora'; fill: currentColor">=</tspan>
+      <tspan x="37.662109" y="-0.96875" style="font-size: 11px; font-family: 'Lora'; fill: currentColor">+</tspan>
+      <tspan x="0" y="-0.96875" style="font-style: oblique; font-size: 11px; font-family: 'Lora'; fill: currentColor">y</tspan>
+      <tspan x="20.012695" y="-0.96875" style="font-style: oblique; font-size: 11px; font-family: 'Lora'; fill: currentColor">w</tspan>
+      <tspan x="29.009277" y="-0.96875" style="font-style: oblique; font-size: 11px; font-family: 'Lora'; fill: currentColor">x</tspan>
+      <tspan x="49.021973" y="-0.96875" style="font-style: oblique; font-size: 11px; font-family: 'Lora'; fill: currentColor">b</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-1-residuals-pf77cc8618f">
+   <rect x="35.856172" y="2.88" width="345.96" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

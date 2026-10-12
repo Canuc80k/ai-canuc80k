@@ -1,0 +1,2 @@
+input (128, 64) latent (128, 4) reconstruction (128, 64)
+Training reconstruction loss: 0.0761

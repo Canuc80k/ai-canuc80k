@@ -1,0 +1,129 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="390.96pt" height="200.016pt" viewBox="0 0 390.96 200.016" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-03T10:46:26.195848</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 200.016 
+L 390.96 200.016 
+L 390.96 0 
+L 0 0 
+L 0 200.016 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 9.5544 81.1584 
+L 127.1808 81.1584 
+L 127.1808 34.0344 
+L 9.5544 34.0344 
+z
+" clip-path="url(#padc39d6d22)" style="fill: #3b6ea8; opacity: 0.11; stroke: #3b6ea8; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 9.5544 81.1584 
+L 127.1808 81.1584 
+L 127.1808 34.0344 
+L 9.5544 34.0344 
+L 9.5544 81.1584 
+z
+" clip-path="url(#padc39d6d22)" style="fill: none; stroke: #3b6ea8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 157.536 81.1584 
+L 248.6016 81.1584 
+L 248.6016 34.0344 
+L 157.536 34.0344 
+z
+" clip-path="url(#padc39d6d22)" style="fill: #c2603e; opacity: 0.11; stroke: #c2603e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 157.536 81.1584 
+L 248.6016 81.1584 
+L 248.6016 34.0344 
+L 157.536 34.0344 
+L 157.536 81.1584 
+z
+" clip-path="url(#padc39d6d22)" style="fill: none; stroke: #c2603e; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 282.7512 81.1584 
+L 373.8168 81.1584 
+L 373.8168 34.0344 
+L 282.7512 34.0344 
+z
+" clip-path="url(#padc39d6d22)" style="fill: #b8892b; opacity: 0.11; stroke: #b8892b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 282.7512 81.1584 
+L 373.8168 81.1584 
+L 373.8168 34.0344 
+L 282.7512 34.0344 
+L 282.7512 81.1584 
+z
+" clip-path="url(#padc39d6d22)" style="fill: none; stroke: #b8892b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 129.178048 57.5964 
+Q 142.358334 57.5964 154.196979 57.5964 
+" clip-path="url(#padc39d6d22)" style="fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 149.396979 55.1964 
+L 154.196979 57.5964 
+L 149.396979 59.9964 
+z
+" clip-path="url(#padc39d6d22)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 250.598384 57.5964 
+Q 265.675904 57.5964 279.411783 57.5964 
+" clip-path="url(#padc39d6d22)" style="fill: none; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 274.611783 55.1964 
+L 279.411783 57.5964 
+L 274.611783 59.9964 
+z
+" clip-path="url(#padc39d6d22)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(58.100647 53.250712)">Dev</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(22.405647 67.682712)">CV chọn cấu hình</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(173.132472 54.570369)">Chốt model</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(173.706534 66.418056)">fit toàn dev</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(302.047281 53.369306)">Test riêng</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(293.304859 67.930212)">chấm một lần</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="195.48" y="109.4328" transform="rotate(-0 195.48 109.4328)">Trong mỗi fold: fit cả Pipeline trên train</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="195.48" y="142.4196" transform="rotate(-0 195.48 142.4196)">Không chọn feature, threshold, seed hay model từ test</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="195.48" y="175.4064" transform="rotate(-0 195.48 175.4064)">CV tốt nhất = điểm để chọn; test = báo cáo sau chọn</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="padc39d6d22">
+   <rect x="5.76" y="5.76" width="379.44" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

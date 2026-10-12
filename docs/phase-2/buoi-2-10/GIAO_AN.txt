@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 2.10 — Feature engineering, tuning và phân tích lỗi
+
+TRÌNH TỰ DẠY
+1. Hỏi: Gain đến từ feature mới hay từ đổi split ngẫu nhiên?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Feature engineering cần thông tin có tại inference.
+- Search giữ split/protocol; log params và metric, kể cả trial không tốt.
+- Chọn bằng CV; test chỉ đọc sau khi đã chốt lựa chọn.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Target encoding/OFF/stacking sai cách có thể tạo leakage.
+
+CÂU HỎI CHỐT
+Đọc best_params và CV score, giải thích vì sao search không fit test.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

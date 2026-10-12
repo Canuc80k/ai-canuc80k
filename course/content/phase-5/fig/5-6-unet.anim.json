@@ -1,0 +1,31 @@
+{
+ "w": 960,
+ "h": 321,
+ "n": 12,
+ "cols": 3,
+ "dur": 800,
+ "hold": 2400,
+ "labels": [
+  "bước 0: IoU với mask thật 0.00",
+  "bước 4: IoU với mask thật 0.00",
+  "bước 8: IoU với mask thật 0.00",
+  "bước 12: IoU với mask thật 0.96",
+  "bước 16: IoU với mask thật 0.95",
+  "bước 20: IoU với mask thật 0.90",
+  "bước 30: IoU với mask thật 0.90",
+  "bước 45: IoU với mask thật 0.95",
+  "bước 70: IoU với mask thật 0.97",
+  "bước 120: IoU với mask thật 0.97",
+  "bước 200: IoU với mask thật 0.98",
+  "bước 320: IoU với mask thật 0.97"
+ ],
+ "key": [
+  2,
+  4,
+  6,
+  11
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

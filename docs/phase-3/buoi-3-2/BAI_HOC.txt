@@ -1,0 +1,67 @@
+BUỔI 3.2 — Dataset và DataLoader
+
+HỌC SINH CẦN HIỂU
+- Dataset trả sample; DataLoader tạo batch và có thể shuffle.
+- drop_last quyết định có loại batch cuối thiếu phần tử.
+- Inference phải giữ IDs để ghép predictions đúng mẫu.
+
+CÂU HỎI MỞ BÀI
+Batch cuối ít mẫu hơn có bị mất khỏi dữ liệu không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+n_batches = ceil(n_samples/batch_size)
+
+CẦN PHÂN BIỆT
+Shuffle output mà quên IDs làm nhãn đúng bị gán sang mẫu khác.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả kích thước từng batch; drop_last loại batch cuối không đủ.
+Input:
+{
+  "n": 9,
+  "batch_size": 4,
+  "drop_last": false
+}
+Output để đối chiếu sau khi làm:
+[
+  4,
+  4,
+  1
+]
+
+Bài trên lớp 2: Trả predictions theo ids_order; batch_ids/pred có thể bị shuffle.
+Input:
+{
+  "ids_order": [
+    1,
+    2,
+    3
+  ],
+  "batch_ids": [
+    3,
+    1,
+    2
+  ],
+  "pred": [
+    8,
+    6,
+    7
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  6,
+  7,
+  8
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả kích thước từng batch; drop_last loại batch cuối không đủ.; xem BTVN_01.txt.
+- BTVN 2: Trả predictions theo ids_order; batch_ids/pred có thể bị shuffle.; xem BTVN_02.txt.
+- BTVN 3: DataLoader giữ đúng IDs; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+PyTorch Learn the Basics: Datasets & DataLoaders, Transforms.
+Thực hành FashionMNIST của tutorial và xem batch theo hướng dẫn.

@@ -1,0 +1,61 @@
+BUỔI 3.5 — Training loop và inference
+
+HỌC SINH CẦN HIỂU
+- Train: forward→loss→zero_grad→backward→step.
+- Validation: eval và no_grad; không cập nhật parameters/statistics.
+- Metric epoch cân theo số mẫu; save/load toàn bộ thông tin inference cần.
+
+CÂU HỎI MỞ BÀI
+Train loop và validation loop khác nhau ở đâu?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+epoch_mean = sum(batch_mean×batch_size)/sum(batch_size)
+
+CẦN PHÂN BIỆT
+Không trung bình các batch means nếu batch sizes khác nhau.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Mean epoch cân theo số mẫu mỗi batch.
+Input:
+{
+  "means": [
+    1,
+    3
+  ],
+  "sizes": [
+    4,
+    1
+  ]
+}
+Output để đối chiếu sau khi làm:
+1.4
+
+Bài trên lớp 2: Update w←w-lr*grad từng phần tử.
+Input:
+{
+  "w": [
+    1,
+    2
+  ],
+  "grad": [
+    2,
+    -1
+  ],
+  "lr": 0.1
+}
+Output để đối chiếu sau khi làm:
+[
+  0.8,
+  2.1
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Mean epoch cân theo số mẫu mỗi batch.; xem BTVN_01.txt.
+- BTVN 2: Update w←w-lr*grad từng phần tử.; xem BTVN_02.txt.
+- BTVN 3: Training loop chạy sạch; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+PyTorch Learn the Basics: Optimization, Save & Load Model.
+Hoàn thành training loop FashionMNIST và phần save/load của tutorial.

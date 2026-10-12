@@ -1,0 +1,108 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>K-Means và các phương pháp clustering</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 2.9</small><h1>Buổi 2.9: K-Means và các phương pháp clustering</h1><p>Hai vòng tròn lồng nhau có phải hai cụm hình cầu?</p></section><section class="slide"><small>Buổi 2.9</small><h1>Ý tưởng chính</h1><p>center_new = mean(points assigned to cluster)</p><ul><li>KMeans giả định clusters thuận theo khoảng cách đến center.</li><li>DBSCAN dùng density và có noise=-1; hierarchical/spectral có giả định khác.</li><li>Cluster IDs có thể hoán vị; đánh giá bằng ARI/silhouette phù hợp.</li></ul></section><section class="slide"><small>Buổi 2.9</small><h1>Ví dụ</h1><pre>{
+  &quot;points&quot;: [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  &quot;centers&quot;: [
+    [
+      0
+    ],
+    [
+      10
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Đáp án ví dụ</h1><pre>[
+  [
+    1
+  ],
+  [
+    9
+  ]
+]</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Code minh họa (1)</h1><pre>import numpy as np
+from sklearn.datasets import make_moons
+from sklearn.cluster import
+KMeans,DBSCAN,AgglomerativeClustering,SpectralClustering
+from sklearn.metrics import adjusted_rand_score
+
+X,y = make_moons(n_samples=120,noise=.05,random_state=42)
+models = [KMeans(n_clusters=2,n_init=10,random_state=42),
+          DBSCAN(eps=.25,min_samples=4),AgglomerativeClustering(n_clusters=2),
+          SpectralClustering(2,affinity=&quot;nearest_neighbors&quot;,random_state=42)]
+for model in models:
+    labels = model.fit_predict(X)
+    # y chỉ dùng sau khi fit, không đưa vào thuật toán.
+    print(type(model).__name__,&quot;clusters&quot;,len(set(labels)-{-1}),
+          &quot;noise&quot;,int((labels==-1).sum()),&quot;ARI&quot;,round(adjusted_rand_score(y,labels)</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Code minh họa (2)</h1><pre>          ,4))</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Kết quả</h1><pre>KMeans clusters 2 noise 0 ARI 0.2271
+DBSCAN clusters 2 noise 0 ARI 1.0
+AgglomerativeClustering clusters 2 noise 0 ARI 0.5098
+SpectralClustering clusters 2 noise 0 ARI 1.0</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Điểm dễ nhầm</h1><ul><li>Không đưa y thật vào fit rồi gọi đó là unsupervised.</li><li>Làm một bước KMeans trên0,2,8,10 với centers0,10.</li></ul></section><section class="slide"><small>Buổi 2.9</small><h1>Bài trên lớp 1</h1><p>Một bước assign/update Euclidean; tie center index nhỏ; cluster rỗng giữ center cũ.</p><pre>{
+  &quot;points&quot;: [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  &quot;centers&quot;: [
+    [
+      0
+    ],
+    [
+      10
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Bài trên lớp 2</h1><p>Tổng squared distance từ mỗi point đến center gần nhất.</p><pre>{
+  &quot;points&quot;: [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  &quot;centers&quot;: [
+    [
+      1
+    ],
+    [
+      9
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.9</small><h1>Bài tập về nhà 1</h1><p>Một bước assign/update Euclidean; tie center index nhỏ; cluster rỗng giữ center cũ.</p><ul><li>Input: points: nxd; centers: kxd, n, k, d&gt;=1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 2.9</small><h1>Bài tập về nhà 2</h1><p>Tổng squared distance từ mỗi point đến center gần nhất.</p><ul><li>Input: points/centers: matrices cùng số chiều.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 2.9</small><h1>Bài tập về nhà 3</h1><p>Clustering ảnh chữ số</p><ul><li>Data: cluster</li><li>Metric: AdjustedRandIndex, giátrịcó thểâm; score=max(0, ARI).</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 2.9</small><h1>Tổng kết</h1><p>Làm một bước KMeans trên0,2,8,10 với centers0,10.</p><ul><li>AIO 12.3; NT 8.3–8.5.</li><li>NT 9.8 phần KMeans/DBSCAN; sklearn “Comparing different clustering algorithms on toy datasets” có code và dữ liệu sẵn.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

@@ -1,0 +1,66 @@
+BUỔI 0.4 — Pandas
+
+HỌC SINH CẦN HIỂU
+- DataFrame có tên cột và kiểu dữ liệu; kiểm schema trước xử lý.
+- groupby gom cùng lớp; transform trả một giá trị cho mỗi dòng ban đầu.
+- merge theo khóa có kiểm tra cardinality tránh tăng số mẫu.
+
+CÂU HỎI MỞ BÀI
+Điểm thiếu của một học sinh nên lấy median của lớp nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+missing_score → median của group tương ứng
+
+CẦN PHÂN BIỆT
+Điền missing để mô tả bảng khác fit imputer cho ML; ở ML phải fit trên train.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính mean theo group; group được chuyển thành chuỗi trong keys output.
+Input:
+{
+  "groups": [
+    "A",
+    "A",
+    "B"
+  ],
+  "values": [
+    8,
+    6,
+    10
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "A": 7.0,
+  "B": 10.0
+}
+
+Bài trên lớp 2: Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.
+Input:
+{
+  "train": [
+    10,
+    null,
+    30
+  ],
+  "query": [
+    null,
+    100
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  20.0,
+  100
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính mean theo group; group được chuyển thành chuỗi trong keys output.; xem BTVN_01.txt.
+- BTVN 2: Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.; xem BTVN_02.txt.
+- BTVN 3: Giữ records có score>=threshold, sắp score giảm; hòa score thì id tăng.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+NT chương 3; AIO 11.2.
+NT 9.3 “Làm sạch và tổng hợp dữ liệu bằng pandas”, dùng đúng hai bảng students/classes cấp trong tài liệu.

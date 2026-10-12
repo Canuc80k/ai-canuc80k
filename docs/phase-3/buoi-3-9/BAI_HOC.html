@@ -1,0 +1,46 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Autoencoders — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/3.10?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 3.9: Autoencoders</h1><p>Nếu không có nhãn, autoencoder học mục tiêu nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Encoder nén input; decoder tái tạo input từ latent.</li><li>Reconstruction loss dùng chính input làm mục tiêu; không phải class accuracy.</li><li>Bottleneck/denoising giúp học biểu diễn; VAE thêm mô hình hóa distribution.</li></ul><p class="note">loss = mean((reconstruction-input)²)</p><h2>Code minh họa</h2><pre>import torch
+from torch import nn
+from sklearn.datasets import load_digits
+torch.manual_seed(42)
+torch.set_num_threads(1)
+X = torch.tensor(load_digits().data[:128]/16,dtype=torch.float32)
+encoder = nn.Sequential(nn.Linear(64,16),nn.ReLU(),nn.Linear(16,4))
+decoder = nn.Sequential(nn.Linear(4,16),nn.ReLU(),nn.Linear(16,64),nn.Sigmoid())
+optimizer = torch.optim.Adam(list(encoder.parameters())+list(decoder.parameters()),lr=.01)
+for step in range(20):
+    optimizer.zero_grad(); latent=encoder(X); reconstruction=decoder(latent)
+    loss=((reconstruction-X)**2).mean(); loss.backward(); optimizer.step()
+print(&quot;input&quot;,tuple(X.shape),&quot;latent&quot;,tuple(latent.shape),&quot;reconstruction&quot;,tuple(reconstruction.shape))
+print(&quot;Training reconstruction loss:&quot;,round(loss.item(),5))
+# Không có nhãn chữ số đi vào loss; loss tái tạo không phải accuracy phân loại.
+</pre><h3>Kết quả</h3><pre>input (128, 64) latent (128, 4) reconstruction (128, 64)
+Training reconstruction loss: 0.0761
+</pre><p class="note">Loss tái tạo tốt không tự chứng minh latent tốt cho mọi task.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Số giá trịlatent=n*k và reconstruction=n*d; không phải parameters.</p><pre>{
+  &quot;n&quot;: 128,
+  &quot;d&quot;: 64,
+  &quot;k&quot;: 4
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;latent&quot;: 512,
+  &quot;reconstruction&quot;: 8192
+}</pre></details><h3>Bài 2</h3><p>MSE giữainput/reconstruction theo tất cả phần tử.</p><pre>{
+  &quot;X&quot;: [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  &quot;reconstruction&quot;: [
+    [
+      0.2,
+      0.8
+    ],
+    [
+      0.8,
+      0.2
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>0.039999999999999994</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Số giá trịlatent=n*k và reconstruction=n*d; không phải parameters.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>MSE giữainput/reconstruction theo tất cả phần tử.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Autoencoder khử nhiễu chữ số</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>KHTN chương 15; AIO 51.1 về VAE.</p><p>AIO 51.3 câu hỏi về VAE; dùng ví dụ autoencoder của KHTN15 cho reconstruction. VAE là mở rộng, không gọi đồng nhất với autoencoder thường.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-8/BAI_HOC.html">← Embeddings, pooling, attention và Transformers</a><a href="../../phase-3/buoi-3-10/BAI_HOC.html">Fine-tuning đầy đủ và PEFT →</a></nav></body></html>

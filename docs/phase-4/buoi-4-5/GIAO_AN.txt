@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 4.5 — Object detection
+
+TRÌNH TỰ DẠY
+1. Hỏi: Hai boxes chồng lên nhau đã đủ coi là cùng detection?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Detector trả nhiều boxes và scores; match ground truth theo scorer của đề.
+- IoU đo giao/hợp; NMS loại dự đoán lặp có overlap cao.
+- xyxy khác xywh; confidence threshold khác IoU threshold.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Không dùng classification accuracy thay detection metric.
+
+CÂU HỎI CHỐT
+Tính IoU1/7 rồi đoán NMS giữboxnào vớithreshold0.1.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

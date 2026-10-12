@@ -1,0 +1,2 @@
+Inputs: ['A', 'B'] Targets: ['B', 'C']
+Mean NLL: 1.039721 Perplexity: 2.828427

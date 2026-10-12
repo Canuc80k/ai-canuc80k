@@ -1,0 +1,80 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sequence labeling và phân tách từ</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 5.4</small><h1>Buổi 5.4: Sequence labeling và phân tách từ</h1><p>Một ranh giới đúng ký tự đã chắc đúng cả từ con chưa?</p></section><section class="slide"><small>Buổi 5.4</small><h1>Ý tưởng chính</h1><p>span=[start,end), end không thuộc span</p><ul><li>Sequence labeling giữ alignment từng token/ký tự.</li><li>Span bắt đầu/kết thúc phải đúng; boundary-F1 khác word-span F1.</li><li>Indices theo Unicode code points của đề, không theo byte UTF8.</li></ul></section><section class="slide"><small>Buổi 5.4</small><h1>Ví dụ</h1><pre>{
+  &quot;text&quot;: &quot;rainbow&quot;,
+  &quot;ends&quot;: [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.4</small><h1>Đáp án ví dụ</h1><pre>[
+  [
+    0,
+    4
+  ],
+  [
+    4,
+    7
+  ]
+]</pre></section><section class="slide"><small>Buổi 5.4</small><h1>Code minh họa</h1><pre># Ký tự cuối mỗi từ con được đánh dấu 1; indices theo ký tự Unicode.
+word=&quot;rainbow&quot;; labels=[0,0,0,1,0,0,1]
+def spans(word,labels):
+    if len(word)!=len(labels) or not labels or labels[-1]!=1:
+        raise ValueError(&quot;Sai chiều dài hoặc thiếu ranh giới cuối&quot;)
+    start=0; result=[]
+    for end,label in enumerate(labels):
+        if label==1: result.append((start,end+1,word[start:end+1])); start=end+1
+    return result
+print(&quot;Spans:&quot;,spans(word,labels))
+print(&quot;Số ký tự tiếng Việt:&quot;,len(&quot;học&quot;),&quot;số bytes
+UTF8:&quot;,len(&quot;học&quot;.encode(&quot;utf-8&quot;)))
+assert [s[2] for s in spans(word,labels)]==[&quot;rain&quot;,&quot;bow&quot;]</pre></section><section class="slide"><small>Buổi 5.4</small><h1>Kết quả</h1><pre>Spans: [(0, 4, &#39;rain&#39;), (4, 7, &#39;bow&#39;)]
+Số ký tự tiếng Việt: 3 số bytes UTF8: 5</pre></section><section class="slide"><small>Buổi 5.4</small><h1>Điểm dễ nhầm</h1><ul><li>len(text.encode()) khác len(text); phải kiểm nhãn cuối và độ dài.</li><li>Khôi phục rain+bow từ ends và so spans khi thiếu một boundary.</li></ul></section><section class="slide"><small>Buổi 5.4</small><h1>Bài trên lớp 1</h1><p>Khôi phục [start, end) từ nhãn kết thúc1, zero-based theo ký tự Unicode; nhãn cuối=1.</p><pre>{
+  &quot;text&quot;: &quot;rainbow&quot;,
+  &quot;ends&quot;: [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.4</small><h1>Bài trên lớp 2</h1><p>So spans[begin, end): exact match sets. Cả hai sets rỗng→1, một set rỗng→0.</p><pre>{
+  &quot;true&quot;: [
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      7
+    ]
+  ],
+  &quot;pred&quot;: [
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      7
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.4</small><h1>Bài tập về nhà 1</h1><p>Khôi phục [start, end) từ nhãn kết thúc1, zero-based theo ký tự Unicode; nhãn cuối=1.</p><ul><li>Input: text: string không rỗng; ends: list 0/1 bằng len(text), cuối bằng 1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 5.4</small><h1>Bài tập về nhà 2</h1><p>So spans[begin, end): exact match sets. Cả hai sets rỗng→1, một set rỗng→0.</p><ul><li>Input: true/pred: listspan pairsinteger.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 5.4</small><h1>Bài tập về nhà 3</h1><p>Tách compound words lớp</p><ul><li>Data: wordseg</li><li>Metric: Mean word-span F1, không boundary-F1; độ dài đúng và ends cuối bằng 1.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 5.4</small><h1>Tổng kết</h1><p>Khôi phục rain+bow từ ends và so spans khi thiếu một boundary.</p><ul><li>AIO36,43; IOAI WordSeg baseline.</li><li>ioai25wordseg: notebook/data có sẵn; AIO43.2 POS hoặc43.3 NER nếu học mở rộng.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

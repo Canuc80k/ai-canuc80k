@@ -1,0 +1,6 @@
+Hai features ở đây giống nhau hoàn toàn.
+LinearRegression [1.0, 1.0]
+Ridge [0.6667, 0.6667]
+Lasso [1.75, 0.0]
+L1([1,1]): 2
+L2 squared([1,1]): 2

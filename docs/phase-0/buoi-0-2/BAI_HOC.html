@@ -1,0 +1,47 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cấu trúc dữ liệu và thao tác tệp — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/0.1?part=1">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 0.2: Cấu trúc dữ liệu và thao tác tệp</h1><p>Nếu hai bảng bị xáo trộn dòng, còn ghép được đáp án không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>ID định danh mẫu; số thứ tự dòng có thể thay đổi khi sort/shuffle.</li><li>Dict giúp tra cứu theo khóa; Counter đếm tần suất.</li><li>CSV lưu bảng chữ; phải chuyển chuỗi số thành kiểu số trước khi tính/sort.</li></ul><p class="note">prediction[id] thay vì prediction[row_index]</p><h2>Code minh họa</h2><pre>import csv
+from io import StringIO
+from collections import Counter
+# CSV mẫu được cấp ngay trong code; không cần tìm tệp bên ngoài.
+raw = &quot;id,label\n3,cat\n1,dog\n2,cat\n&quot;
+rows = list(csv.DictReader(StringIO(raw)))
+print(&quot;Mỗi dòng là một dict:&quot;, rows[0])
+# Đếm theo nhãn, không dùng vị trí dòng như một ID.
+counts = Counter(row[&quot;label&quot;] for row in rows)
+print(&quot;Tần suất:&quot;, dict(sorted(counts.items())))
+# Sắp xếp ID theo số; sort chuỗi có thể đặt &#x27;10&#x27; trước &#x27;2&#x27;.
+ordered = sorted(rows, key=lambda row: int(row[&quot;id&quot;]))
+print(&quot;ID theo thứ tự số:&quot;, [r[&quot;id&quot;] for r in ordered])
+assert counts[&quot;cat&quot;] == 2
+</pre><h3>Kết quả</h3><pre>Mỗi dòng là một dict: {&#x27;id&#x27;: &#x27;3&#x27;, &#x27;label&#x27;: &#x27;cat&#x27;}
+Tần suất: {&#x27;cat&#x27;: 2, &#x27;dog&#x27;: 1}
+ID theo thứ tự số: [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;]
+</pre><p class="note">ID trùng có thể làm ghi đè hoặc merge nhân dòng.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Đếm tần suất các chuỗi. Giữ nguyên hoa/thường: cat và Cat là hai khóa khác nhau.</p><pre>{
+  &quot;items&quot;: [
+    &quot;cat&quot;,
+    &quot;dog&quot;,
+    &quot;cat&quot;
+  ]
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;cat&quot;: 2,
+  &quot;dog&quot;: 1
+}</pre></details><h3>Bài 2</h3><p>Sắp các records tăng dần theo id integer, giữ nguyên mọi trường.</p><pre>{
+  &quot;records&quot;: [
+    {
+      &quot;id&quot;: 10,
+      &quot;label&quot;: &quot;A&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;label&quot;: &quot;B&quot;
+    }
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  {
+    &quot;id&quot;: 2,
+    &quot;label&quot;: &quot;B&quot;
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;label&quot;: &quot;A&quot;
+  }
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Đếm tần suất các chuỗi. Giữ nguyên hoa/thường: cat và Cat là hai khóa khác nhau.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Sắp các records tăng dần theo id integer, giữ nguyên mọi trường.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Ghép predictions vào IDs theo khóa, không theo thứ tự dòng.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO chương 2–3; NT 3.8.</p><p>AIO 2.2: Character Counting, Word Counting, Getting Max Over Kernel; AIO 3.1 phần class; NT 9.3 yêu cầu ghi CSV.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-0/buoi-0-1/BAI_HOC.html">← Python cơ bản</a><a href="../../phase-0/buoi-0-3/BAI_HOC.html">NumPy →</a></nav></body></html>

@@ -1,0 +1,26 @@
+{
+ "w": 960,
+ "h": 330,
+ "n": 7,
+ "cols": 2,
+ "dur": 1500,
+ "hold": 2000,
+ "labels": [
+  "từ vựng 149 mảnh (chỉ có ký tự): câu thành 51 token",
+  "từ vựng 150 mảnh: câu thành 50 token",
+  "từ vựng 300 mảnh: câu thành 33 token",
+  "từ vựng 600 mảnh: câu thành 28 token",
+  "từ vựng 1200 mảnh: câu thành 17 token",
+  "từ vựng 2400 mảnh: câu thành 13 token",
+  "từ vựng 4000 mảnh: câu thành 11 token"
+ ],
+ "key": [
+  0,
+  2,
+  4,
+  6
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

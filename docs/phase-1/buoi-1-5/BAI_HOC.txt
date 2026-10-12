@@ -1,0 +1,70 @@
+BUỔI 1.5 — Đánh giá classification
+
+HỌC SINH CẦN HIỂU
+- Chốt positive class trước khi tính TP, FP, FN, TN.
+- Precision quan tâm báo nhầm; recall quan tâm bỏ sót; F1 kết hợp hai đại lượng.
+- AUC dùng scores/probabilities; threshold thay đổi labels và F1.
+
+CÂU HỎI MỞ BÀI
+Báo động giả và bỏ sót nên phạt giống nhau không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+F1 = 2TP / (2TP + FP + FN)
+
+CẦN PHÂN BIỆT
+Binary F1, macro F1 và weighted F1 không thay thế tùy tiện cho nhau.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả [TN, FP, FN, TP] theo positive class 1.
+Input:
+{
+  "y": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "pred": [
+    1,
+    0,
+    1,
+    0
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  1,
+  1,
+  1,
+  1
+]
+
+Bài trên lớp 2: Tính binary F1=2TP/(2TP+FP+FN); denominator bằng 0 trả 0.
+Input:
+{
+  "y": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "pred": [
+    1,
+    0,
+    1,
+    0
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.5
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả [TN, FP, FN, TP] theo positive class 1.; xem BTVN_01.txt.
+- BTVN 2: Tính binary F1=2TP/(2TP+FP+FN); denominator bằng 0 trả 0.; xem BTVN_02.txt.
+- BTVN 3: Tính AUC bằng xác suất score positive lớn hơn score negative; tie tính 0.5.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+Slide trang 17–21; KHTN 2.4–2.7; NT 7.
+NT 9.6 yêu cầu các metrics/confusion matrix/ROC; NT 9.10 trắc nghiệm; bài aidiabetes để luyện F1 sau khi biết model.

@@ -1,0 +1,230 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="393.233996pt" height="241.737634pt" viewBox="0 0 393.233996 241.737634" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-1-5-roc-figure_1">
+  <g id="fig-1-5-roc-patch_1">
+   <path d="M 0 241.737634 
+L 393.233996 241.737634 
+L 393.233996 0 
+L 0 0 
+L 0 241.737634 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-1-5-roc-axes_1">
+   <g id="fig-1-5-roc-patch_2">
+    <path d="M 45.514531 200.762321 
+L 388.193996 200.762321 
+L 388.193996 5.04 
+L 45.514531 5.04 
+L 45.514531 200.762321 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-5-roc-matplotlib.axis_1">
+    <g id="fig-1-5-roc-xtick_1">
+     <g id="fig-1-5-roc-line2d_1">
+      <defs>
+       <path id="fig-1-5-roc-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-1-5-roc-m04e37d9cc8" x="52.104521" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="52.104521" y="214.934821" transform="rotate(-0 52.104521 214.934821)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-xtick_2">
+     <g id="fig-1-5-roc-line2d_2">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m04e37d9cc8" x="118.004418" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="118.004418" y="214.934821" transform="rotate(-0 118.004418 214.934821)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-xtick_3">
+     <g id="fig-1-5-roc-line2d_3">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m04e37d9cc8" x="183.904315" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="183.904315" y="214.934821" transform="rotate(-0 183.904315 214.934821)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-xtick_4">
+     <g id="fig-1-5-roc-line2d_4">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m04e37d9cc8" x="249.804212" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="249.804212" y="214.934821" transform="rotate(-0 249.804212 214.934821)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-xtick_5">
+     <g id="fig-1-5-roc-line2d_5">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m04e37d9cc8" x="315.704109" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="315.704109" y="214.934821" transform="rotate(-0 315.704109 214.934821)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-xtick_6">
+     <g id="fig-1-5-roc-line2d_6">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m04e37d9cc8" x="381.604006" y="200.762321" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="381.604006" y="214.934821" transform="rotate(-0 381.604006 214.934821)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="216.854263" y="233.717321" transform="rotate(-0 216.854263 233.717321)">FPR = FP / (FP + TN)</text>
+    </g>
+   </g>
+   <g id="fig-1-5-roc-matplotlib.axis_2">
+    <g id="fig-1-5-roc-ytick_1">
+     <g id="fig-1-5-roc-line2d_7">
+      <defs>
+       <path id="fig-1-5-roc-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-1-5-roc-m9fce3a8e10" x="45.514531" y="197.10396" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="200.69021" transform="rotate(-0 38.514531 200.69021)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-ytick_2">
+     <g id="fig-1-5-roc-line2d_8">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m9fce3a8e10" x="45.514531" y="160.520349" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="164.106599" transform="rotate(-0 38.514531 164.106599)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-ytick_3">
+     <g id="fig-1-5-roc-line2d_9">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m9fce3a8e10" x="45.514531" y="123.936737" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="127.522987" transform="rotate(-0 38.514531 127.522987)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-ytick_4">
+     <g id="fig-1-5-roc-line2d_10">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m9fce3a8e10" x="45.514531" y="87.353126" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="90.939376" transform="rotate(-0 38.514531 90.939376)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-ytick_5">
+     <g id="fig-1-5-roc-line2d_11">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m9fce3a8e10" x="45.514531" y="50.769514" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="54.355764" transform="rotate(-0 38.514531 54.355764)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-ytick_6">
+     <g id="fig-1-5-roc-line2d_12">
+      <g>
+       <use xlink:href="#fig-1-5-roc-m9fce3a8e10" x="45.514531" y="14.185903" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-5-roc-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="17.772153" transform="rotate(-0 38.514531 17.772153)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-5-roc-text_14">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.4" y="102.901161" transform="rotate(-90 13.4 102.901161)">TPR = TP / (TP + FN)</text>
+    </g>
+   </g>
+   <g id="fig-1-5-roc-line2d_13">
+    <path d="M 52.104521 197.10396 
+L 381.604006 14.185903 
+" clip-path="url(#fig-1-5-roc-pa05cc53779)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #b8892b"/>
+   </g>
+   <g id="fig-1-5-roc-line2d_14">
+    <path d="M 52.104521 197.10396 
+L 52.104521 151.374446 
+L 107.021102 151.374446 
+L 107.021102 105.644932 
+L 216.854263 105.644932 
+L 216.854263 59.915417 
+L 326.687425 59.915417 
+L 326.687425 14.185903 
+L 381.604006 14.185903 
+" clip-path="url(#fig-1-5-roc-pa05cc53779)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="fig-1-5-roc-mede4bdd5e5" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-1-5-roc-pa05cc53779)">
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="52.104521" y="197.10396" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="52.104521" y="151.374446" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="107.021102" y="151.374446" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="107.021102" y="105.644932" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="216.854263" y="105.644932" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="216.854263" y="59.915417" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="326.687425" y="59.915417" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="326.687425" y="14.185903" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-5-roc-mede4bdd5e5" x="381.604006" y="14.185903" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-5-roc-patch_3">
+    <path d="M 45.514531 200.762321 
+L 45.514531 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-5-roc-patch_4">
+    <path d="M 45.514531 200.762321 
+L 388.193996 200.762321 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-5-roc-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="223.444253" y="43.452792" transform="rotate(-0 223.444253 43.452792)">AUC = 0.625</text>
+   </g>
+   <g id="fig-1-5-roc-text_16">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="226.739248" y="133.08264" transform="rotate(-0 226.739248 133.08264)">Mốc AUC = 0.5</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-1-5-roc-pa05cc53779">
+   <rect x="45.514531" y="5.04" width="342.679464" height="195.722321"/>
+  </clipPath>
+ </defs>
+</svg>

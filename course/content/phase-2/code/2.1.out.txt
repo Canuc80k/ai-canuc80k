@@ -1,0 +1,33 @@
+== Dữ liệu ==
+X: (200, 2)   y: (200,)
+Mốc đoán trung bình: MSE = 2.3415   Var(y) = 2.3415
+
+== Nghiệm đóng ==
+w = [ 0.0499 -0.1453]   b = 0.9809
+MSE = 0.0881
+Căn 70 m², cách trung tâm 8 km: 3.31 tỷ
+
+== Kiểm tra gradient ==
+grad đúng:            sai số tương đối 1.1e-12
+grad quên hệ số 2:    sai số tương đối 0.333
+
+== Learning rate trên dữ liệu gốc ==
+Ngưỡng 2/λ_max = 1.43e-04   số điều kiện = 99638
+lr = 1e-03: loss sau 1000 vòng = nan
+lr = 2e-04: loss sau 1000 vòng = inf
+lr = 1e-04: loss sau 1000 vòng = 0.1541
+
+== Sau khi chuẩn hóa ==
+Ngưỡng 2/λ_max = 0.952   số điều kiện = 1.11
+lr = 0.01: loss sau 100 vòng = 0.3736
+lr = 0.1 : loss sau 100 vòng = 0.08808
+lr = 0.5 : loss sau 100 vòng = 0.08808
+lr = 1.0 : loss sau 100 vòng = 3.703e+08
+Đổi về đơn vị gốc: w = [ 0.0499 -0.1453]   b = 0.9809
+
+== scikit-learn ==
+R² train = 0.960   R² test = 0.969
+Trùng nghiệm đóng: True   trùng gradient descent: True
+
+== Đoán độ phức tạp ==
+Hệ số góc = 1.98   dự đoán n = 2·10⁵: 38 giây

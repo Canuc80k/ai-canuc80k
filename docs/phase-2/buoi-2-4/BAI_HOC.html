@@ -1,0 +1,46 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>K-Nearest Neighbors — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/2.4?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 2.4: K-Nearest Neighbors</h1><p>Đổi đơn vị một feature có làm đổi hàng xóm gần nhất không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>kNN tìm k mẫu gần query và bỏ phiếu hoặc lấy trung bình.</li><li>Khoảng cách phụ thuộc scale features; cần preprocessing học từ train.</li><li>k nhỏ nhạy chi tiết; k lớn có thể làm mờ ranh giới.</li></ul><p class="note">distance²(x,q)=sum_j(x_j-q_j)²</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.neighbors import KNeighborsClassifier
+X = np.array([[0],[2],[10]],dtype=float)
+y = np.array([0,0,1])
+query = np.array([[3.0]])
+for k in [1,3]:
+    model = KNeighborsClassifier(n_neighbors=k).fit(X,y)
+    distance,index = model.kneighbors(query)
+    print(&quot;k&quot;,k,&quot;neighbors&quot;,index[0].tolist(),&quot;distance&quot;,distance[0].tolist())
+    print(&quot;class:&quot;,int(model.predict(query)[0]))
+assert KNeighborsClassifier(1).fit(X,y).predict(query)[0]==0
+</pre><h3>Kết quả</h3><pre>k 1 neighbors [1] distance [1.0]
+class: 0
+k 3 neighbors [1, 0, 2] distance [1.0, 3.0, 7.0]
+class: 0
+</pre><p class="note">Ties cần quy ước; fit kNN nhẹ nhưng predict có thể tốn thời gian.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</p><pre>{
+  &quot;a&quot;: [
+    1,
+    0
+  ],
+  &quot;b&quot;: [
+    1,
+    1
+  ]
+}</pre><details><summary>Đáp án</summary><pre>0.7071067811865475</pre></details><h3>Bài 2</h3><p>Euclidean squared, ties neighbor theo index nhỏ; k voters, ties label nhỏ.</p><pre>{
+  &quot;X&quot;: [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      10
+    ]
+  ],
+  &quot;y&quot;: [
+    0,
+    0,
+    1
+  ],
+  &quot;query&quot;: [
+    3
+  ],
+  &quot;k&quot;: 1
+}</pre><details><summary>Đáp án</summary><pre>0</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Euclidean squared, ties neighbor theo index nhỏ; k voters, ties label nhỏ.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>kNN trên dữ liệu nhiều thang đo</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO 12.2.</p><p>AIO 12.2 thực hành thuật toán KNN, 12.4 trắc nghiệm; NT 9.6 phần KNN.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-2/buoi-2-3/BAI_HOC.html">← Regularization L1/L2</a><a href="../../phase-2/buoi-2-5/BAI_HOC.html">Decision Trees →</a></nav></body></html>

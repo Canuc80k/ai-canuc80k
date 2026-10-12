@@ -1,0 +1,56 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image augmentation — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/5.3?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 4.4: Image augmentation</h1><p>Flip ảnh có cần flip box và mask không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Augmentation phải giữ task semantics; ảnh chữ số/hướng không dùng mọi phép biến đổi.</li><li>Box/mask phải biến đổi đồng bộ; labels mask resize bằng nearest-neighbor.</li><li>Augment chỉ train; split theo ảnh gốc trước tạo views.</li></ul><p class="note">horizontal box flip: x1_new=W-x2, x2_new=W-x1</p><h2>Code minh họa</h2><pre>import numpy as np
+# Ảnh nhỏ và mask có cùng vị trí đối tượng; flip cả hai cùng nhau.
+image=np.array([[10,20,30],[40,50,60]])
+mask=np.array([[1,0,0],[1,0,0]])
+image_flip=np.fliplr(image); mask_flip=np.fliplr(mask)
+print(&quot;Image:&quot;,image.tolist(),&quot;flipped:&quot;,image_flip.tolist())
+print(&quot;Mask flipped:&quot;,mask_flip.tolist())
+width=100; x1,x2=10,30
+print(&quot;Box mới khi flip ngang:&quot;,[width-x2,width-x1])
+assert np.array_equal(mask_flip,np.array([[0,0,1],[0,0,1]]))
+# Mask resize dùng nearest-neighbor; không tạo nhãn trung gian bằng bilinear.
+</pre><h3>Kết quả</h3><pre>Image: [[10, 20, 30], [40, 50, 60]] flipped: [[30, 20, 10], [60, 50, 40]]
+Mask flipped: [[0, 0, 1], [0, 0, 1]]
+Box mới khi flip ngang: [70, 90]
+</pre><p class="note">Không đưa các views cùng ảnh vào cả train và validation.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Flip ngang boxxyxy trongwidthW: [W-x2, y1, W-x1, y2].</p><pre>{
+  &quot;width&quot;: 100,
+  &quot;boxes&quot;: [
+    [
+      10,
+      20,
+      30,
+      40
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    70,
+    20,
+    90,
+    40
+  ]
+]</pre></details><h3>Bài 2</h3><p>Flip ngang mỗi row của mask, giữ dtype integer labels.</p><pre>{
+  &quot;mask&quot;: [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    0,
+    0,
+    1
+  ],
+  [
+    0,
+    0,
+    1
+  ]
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Flip ngang boxxyxy trongwidthW: [W-x2, y1, W-x1, y2].</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Flip ngang mỗi row của mask, giữ dtype integer labels.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Augmentation giữ đúng nhãn</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>PyTorch transfer learning/data transforms; AIO40.</p><p>Chạy transforms trong tutorial Transfer Learning; làm phần augmentation của bài tập AIO40.2 theo chương.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-4/buoi-4-3/BAI_HOC.html">← Vision encoders và transfer learning</a><a href="../../phase-4/buoi-4-5/BAI_HOC.html">Object detection →</a></nav></body></html>

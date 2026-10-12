@@ -1,0 +1,114 @@
+BTVN 3 — Dự đoán noise trong diffusion
+Mã local: aicanuc80kp4b10h3
+
+BÀI TOÁN
+Digits x0 normalized; xt=sqrt(a)x0+sqrt(1-a)epsilon, a∈{0.2,0.5,0.8}; inputx0không cấp trên test.
+
+MỤC TIÊU CỦA BUỔI
+Nhận xt và alpha_bar, dự đoán epsilon cho 64 pixels; đây là lab denoising nhỏ, không model ảnh lớn.
+
+DỮ LIỆU ĐƯỢC CẤP
+Thư mục ../../data/hw_4_10/ tính từ thư mục buổi học:
+- train.csv: dữ liệu dùng học; các target theo task có trong train nếu supervised.
+- valid.csv và valid_answers.json: dữ liệu/đáp án validation để chọn phương án.
+- test.csv: dữ liệu cần dự đoán, không có target để chọn model.
+- sample_submission.csv: mẫu định dạng output.
+- DATA_NOTE.json: schema, số mẫu, nguồn, hashes và split.
+Số mẫu: {
+  "train": 500,
+  "valid": 120,
+  "test": 200
+}
+Giữ các split/IDs đã cấp; không lấy nhãn của bộ gốc public hoặc đưa test labels vào notebook. Với dữ liệu tổng hợp, đây là bài luyện lớp, không đề IOAI chính thức.
+
+OUTPUT
+[
+  "id",
+  "y0",
+  "y1",
+  "y2",
+  "y3",
+  "y4",
+  "y5",
+  "y6",
+  "y7",
+  "y8",
+  "y9",
+  "y10",
+  "y11",
+  "y12",
+  "y13",
+  "y14",
+  "y15",
+  "y16",
+  "y17",
+  "y18",
+  "y19",
+  "y20",
+  "y21",
+  "y22",
+  "y23",
+  "y24",
+  "y25",
+  "y26",
+  "y27",
+  "y28",
+  "y29",
+  "y30",
+  "y31",
+  "y32",
+  "y33",
+  "y34",
+  "y35",
+  "y36",
+  "y37",
+  "y38",
+  "y39",
+  "y40",
+  "y41",
+  "y42",
+  "y43",
+  "y44",
+  "y45",
+  "y46",
+  "y47",
+  "y48",
+  "y49",
+  "y50",
+  "y51",
+  "y52",
+  "y53",
+  "y54",
+  "y55",
+  "y56",
+  "y57",
+  "y58",
+  "y59",
+  "y60",
+  "y61",
+  "y62",
+  "y63"
+]
+Dùng đúng header và đủ mỗi test ID một lần, không NaN/Inf. Thứ tự dòng CSV không ảnh hưởng nếu ID đúng. Đọc miền giá trị của task trong DATA_NOTE; các quy ước probability/mask/label/box chỉ áp dụng khi task có những trường này.
+
+MẪU OUTPUT
+id,y0,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,y13,y14,y15,y16,y17,y18,y19,y20,y21,y22,y23,y24,y25,y26,y27,y28,y29,y30,y31,y32,y33,y34,y35,y36,y37,y38,y39,y40,y41,y42,y43,y44,y45,y46,y47,y48,y49,y50,y51,y52,y53,y54,y55,y56,y57,y58,y59,y60,y61,y62,y63
+test_0000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+test_0001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+test_0002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Input mẫu submission chỉ minh họa schema; các số 0/uniform không phải đáp án test.
+
+CHẤM ĐIỂM
+MSE của epsilon; score=exp(-MSE).
+Code score_prediction.py chấm validation cùng quy ước; test answers được giáo viên giữ riêng. Output sai schema/IDs/shape/dtype bị từ chối, không âm thầm cắt số. Giáo viên còn đọc code để kiểm đúng phương pháp học trong buổi; điểm predictions riêng không chứng minh thuật toán đã dùng.
+
+CÁC BƯỚC LÀM
+1. Đọc train/valid/test và DATA_NOTE, in shapes/schema.
+2. Làm một baseline phù hợp và ghi validation score.
+3. Làm thí nghiệm theo mục tiêu buổi; ghi params,seed,score và thời gian.
+4. Chốt phương án bằng validation. Tạo test output theo mẫu.
+5. Chạy lại notebook từ đầu; nộp code/notebook,output và ghi chú lỗi mô hình.
+
+LỆNH CHẤM VALIDATION
+python -X utf8 ../../utils/score_prediction.py --data ../../data/hw_4_10 --submission valid_submission.csv
+Không dùng teacher_private test answers khi học. Bài này là gói local; không tự suy được truy cập LQDOJ hoặc quy chế thi từ trạng thái local.

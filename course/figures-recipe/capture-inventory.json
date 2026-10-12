@@ -1,0 +1,5253 @@
+{
+  "2-1-residuals": {
+    "name": "2-1-residuals",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "$\\hat y=wx+b$",
+          "phần dư"
+        ],
+        "xlabel": "đặc trưng $x$",
+        "ylabel": "giá trị $y$",
+        "title": "",
+        "lines": 13,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-1-scaling": {
+    "name": "2-1-scaling",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "$w_1$",
+        "ylabel": "$w_2$",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": true,
+        "texts": [
+          "B"
+        ],
+        "xlabel": "$w_1$",
+        "ylabel": "$w_2$",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "2-2-geometry": {
+    "name": "2-2-geometry",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "OLS",
+          "nghiệm bị phạt",
+          "A"
+        ],
+        "xlabel": "$w_1$",
+        "ylabel": "$w_2$",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 3
+      },
+      {
+        "on": true,
+        "texts": [
+          "OLS",
+          "nghiệm bị phạt",
+          "B"
+        ],
+        "xlabel": "$w_1$",
+        "ylabel": "$w_2$",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "2-2-path": {
+    "name": "2-2-path",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "30 cột rác"
+        ],
+        "xlabel": "alpha của scikit-learn  (phạt giảm dần →)",
+        "ylabel": "hệ số",
+        "title": "",
+        "lines": 33,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-2-validation": {
+    "name": "2-2-validation",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "tốt nhất\nλ ≈ 1.6",
+          "variance cao",
+          "bias cao"
+        ],
+        "xlabel": "λ",
+        "ylabel": "R²",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-2-shrink": {
+    "name": "2-2-shrink",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "|z| ≤ λ  ⇒  Lasso = 0"
+        ],
+        "xlabel": "z (hệ số least squares)",
+        "ylabel": "hệ số sau khi phạt",
+        "title": "",
+        "lines": 5,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-3-sigmoid": {
+    "name": "2-3-sigmoid",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "z = 0 → p = 0.5",
+          "z âm: p gần 0",
+          "z dương: p gần 1"
+        ],
+        "xlabel": "z = $w^\top x + b$",
+        "ylabel": "σ(z)",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-4-k": {
+    "name": "2-4-k",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "đặc trưng 2",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 4
+      },
+      {
+        "on": true,
+        "texts": [
+          "B"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 4
+      }
+    ]
+  },
+  "2-5-partition": {
+    "name": "2-5-partition",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "đặc trưng 2",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 4
+      },
+      {
+        "on": true,
+        "texts": [
+          "B"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 4
+      }
+    ]
+  },
+  "2-6-variance": {
+    "name": "2-6-variance",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "ρ = 0.8",
+          "ρ = 0.5",
+          "ρ = 0.2",
+          "ρ = 0.05"
+        ],
+        "xlabel": "số cây B",
+        "ylabel": "phương sai (σ² = 1)",
+        "title": "",
+        "lines": 4,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-7-stages": {
+    "name": "2-7-stages",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "mẫu",
+        "ylabel": "dự đoán",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-8-margin": {
+    "name": "2-8-margin",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "biên quyết định"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "đặc trưng 2",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "2-9-pca": {
+    "name": "2-9-pca",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "",
+          "PC1",
+          "",
+          "PC2",
+          "phương sai: 3.91 và 0.35"
+        ],
+        "xlabel": "trục quan sát 1",
+        "ylabel": "trục quan sát 2",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-10-moons": {
+    "name": "2-10-moons",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "đặc trưng 2",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": true,
+        "texts": [
+          "B"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "2-11-cyclic": {
+    "name": "2-11-cyclic",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0h",
+          "3h",
+          "6h",
+          "9h",
+          "12h",
+          "15h",
+          "18h",
+          "21h",
+          "23h",
+          "0.26",
+          "2",
+          "23h và 0h ở cạnh nhau"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 24
+      }
+    ]
+  },
+  "2-1-lr": {
+    "name": "2-1-lr",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "đáy = 0.088"
+        ],
+        "xlabel": "vòng lặp",
+        "ylabel": "loss (MSE)",
+        "title": "",
+        "lines": 4,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-1-gd1d": {
+    "name": "2-1-gd1d",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "A"
+        ],
+        "xlabel": "w",
+        "ylabel": "J(w)",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [
+          "",
+          "",
+          "",
+          "",
+          "B"
+        ],
+        "xlabel": "w",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-1-projection": {
+    "name": "2-1-projection",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "",
+          "",
+          "$\\mathbf{y}$",
+          "$\\hat{\\mathbf{y}}$",
+          "phần dư",
+          "mặt phẳng dự đoán"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-1-residual-plots": {
+    "name": "2-1-residual-plots",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "dự đoán",
+        "ylabel": "phần dư",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [
+          "B"
+        ],
+        "xlabel": "dự đoán",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [
+          "C"
+        ],
+        "xlabel": "dự đoán",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-1-loglog": {
+    "name": "2-1-loglog",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "n = 2·10⁵\n~38 giây",
+          "giới hạn 1 giây",
+          "hệ số góc ≈ 1.98"
+        ],
+        "xlabel": "n",
+        "ylabel": "thời gian (giây)",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "2-3-linfail": {
+    "name": "2-3-linfail",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "300 email gốc: ngưỡng 3.1",
+          "thêm 20 siêu spam: ngưỡng 6.0",
+          "mức 0.5"
+        ],
+        "xlabel": "số link",
+        "ylabel": "nhãn / dự đoán",
+        "title": "",
+        "lines": 5,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "2-3-boundary": {
+    "name": "2-3-boundary",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "p = 0.1",
+          "p = 0.5",
+          "p = 0.9"
+        ],
+        "xlabel": "số link",
+        "ylabel": "số từ quảng cáo",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "2-3-loss": {
+    "name": "2-3-loss",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "p đoán cho email spam",
+        "ylabel": "loss",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "sai nặng nhưng\ngradient gần 0"
+        ],
+        "xlabel": "p đoán cho email spam",
+        "ylabel": "|gradient theo z|",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-3-weights": {
+    "name": "2-3-weights",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "0",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "1",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "2",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "3",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "4",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "5",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "6",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "7",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "8",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "9",
+        "lines": 0,
+        "images": 1,
+        "collections": 0
+      }
+    ]
+  },
+  "0-1-names": {
+    "name": "0-1-names",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "a",
+          "[1, 2, 3]",
+          "b",
+          "Một list, hai tên.\nb.append(4) làm a đổi."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "a",
+          "[1, 2, 3]",
+          "c",
+          "[1, 2, 3]",
+          "Hai list ngoài riêng; phần tử con\ncó thể vẫn dùng chung."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-1-notebook": {
+    "name": "0-1-notebook",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Ô 1: n = 3",
+          "Ô 2: total = sum(range(n + 1))",
+          "Trạng thái: n = 3, total = 6"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "Ô 1 chạy lại: n = 5",
+          "Ô 2 chưa chạy lại",
+          "Trạng thái: n = 5, total vẫn = 6"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-1-speed": {
+    "name": "0-1-speed",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "17.04 ms",
+          "6.63 ms",
+          "0.26 ms"
+        ],
+        "xlabel": "Thời gian cho một lần chạy (ms), CPU",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-2-speed": {
+    "name": "0-2-speed",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "23.61 ms",
+          "1.12 ms"
+        ],
+        "xlabel": "Thời gian cho một lần chạy (ms), CPU",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-2-axis": {
+    "name": "0-2-axis",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "9",
+          "8",
+          "7",
+          "5",
+          "6",
+          "4",
+          "4",
+          "4",
+          "5",
+          "9",
+          "8",
+          "10",
+          "7",
+          "8",
+          "10",
+          "Toán   Lý    Tin",
+          "8.00",
+          "5.00",
+          "4.33",
+          "9.00",
+          "8.33",
+          "axis=1: gộp ba môn\n→ (5,), một số mỗi học sinh",
+          "axis=0 → (3,)\n[6.8, 6.8, 7.2]"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-2-broadcast": {
+    "name": "0-2-broadcast",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "10",
+          "20",
+          "30",
+          "40",
+          "lặp sang ngang"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "1",
+          "2",
+          "3",
+          "Coi như (1, 3).\nXếp từ bên phải."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "11",
+          "12",
+          "13",
+          "21",
+          "22",
+          "23",
+          "31",
+          "32",
+          "33",
+          "41",
+          "42",
+          "43",
+          "B lặp xuống mỗi hàng"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-2-view": {
+    "name": "0-2-view",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "a = [0, 1, 2, 3, 4, 5]",
+          "s = a[1:4] : view\ns[0] = 100 sửa a[1]"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "a = [0, 1, 2, 3, 4, 5]",
+          "1",
+          "2",
+          "3",
+          "f = a[[1, 2, 3]] : copy",
+          "f[0] = -1 chỉ sửa bản sao"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-3-eda": {
+    "name": "0-3-eda",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Điểm Toán cuối kỳ (0–10)",
+        "ylabel": "Số học sinh",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Giờ tự học mỗi tuần",
+        "ylabel": "Điểm Toán cuối kỳ (0–10)",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "0-3-bar": {
+    "name": "0-3-bar",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "6.79",
+          "6.41",
+          "5.96",
+          "6.58"
+        ],
+        "xlabel": "",
+        "ylabel": "Điểm trung bình (0–10)",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "6.79",
+          "6.41",
+          "5.96",
+          "6.58"
+        ],
+        "xlabel": "",
+        "ylabel": "Điểm trung bình (0–10)",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-3-merge": {
+    "name": "0-3-merge",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "id 1 · A",
+          "id 2 · A",
+          "id 3 · B"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "A · 38",
+          "A · 38",
+          "B · 42",
+          "Mỗi học sinh A khớp hai dòng.\nvalidate='many_to_one' bắt lỗi."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "1 · A · 38",
+          "1 · A · 38",
+          "2 · A · 38",
+          "2 · A · 38",
+          "3 · B · 42"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-3-submission": {
+    "name": "0-3-submission",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "403  →  6.414",
+          "401  →  5.964",
+          "402  →  6.579",
+          "Gán theo vị trí sẽ ghép sai học sinh."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "401  →  5.964",
+          "402  →  6.579",
+          "403  →  6.414",
+          "Ghép theo khóa giữ đúng ý nghĩa."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-2-shape-mismatch": {
+    "name": "0-2-shape-mismatch",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "1",
+          "2",
+          "3",
+          "y = (3,)",
+          "1",
+          "2",
+          "3",
+          "y_hat = (3, 1)"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "-1",
+          "-2",
+          "1",
+          "0",
+          "-1",
+          "2",
+          "1",
+          "0",
+          "(3, 1) − (3,) → (3, 3)",
+          "MSE sai = 1.333",
+          "9 hiệu bị trộn\nvào một trung bình"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "0",
+          "0",
+          "y_hat.ravel() → (3,)",
+          "MSE đúng = 0.0",
+          "assert\ny_hat.shape == y.shape"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "0-3-groupby": {
+    "name": "0-3-groupby",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "10A1 → mean 6.79",
+          "10A2 → mean 6.41",
+          "10A3 → mean 5.96",
+          "10A4 → mean 6.58",
+          "shape = (4,) · một dòng mỗi lớp"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "10A4 · 6.72 → 6.58",
+          "10A3 · 6.84 → 5.96",
+          "10A3 · 4.79 → 5.96",
+          "mỗi dòng nhận mean\ncủa lớp tương ứng",
+          "shape = (400,) · gán thành cột mới"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-1-contract": {
+    "name": "1-1-contract",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Đăng ký\nDự báo mưa",
+          "Model\nf(x)",
+          "Dự đoán\nsố người",
+          "session_id",
+          "ID + dự đoán",
+          "Nhãn thật",
+          "chỉ học / chấm"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-1-timeline": {
+    "name": "1-1-timeline",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Train · 80 buổi",
+          "học mô hình",
+          "Valid · 20",
+          "chọn",
+          "Test · 20",
+          "chấm cuối",
+          "Thời gian → · dữ liệu giả đã xếp thứ tự"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-2-fits": {
+    "name": "1-2-fits",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "x",
+        "ylabel": "Mức tham gia chuẩn hóa",
+        "title": "k=1 · bám nhiễu",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "k=10 · giữ xu hướng",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "k=80 · san phẳng",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "1-2-learning": {
+    "name": "1-2-learning",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "Phương sai nhiễu = 0.0625"
+        ],
+        "xlabel": "Số mẫu train trong mỗi lần học",
+        "ylabel": "MSE · trung bình 4 fold",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-3-groups": {
+    "name": "1-3-groups",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "■ Train"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Random theo hàng",
+        "lines": 0,
+        "images": 0,
+        "collections": 18
+      },
+      {
+        "on": true,
+        "texts": [
+          "■ Validation"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Group: giữ riêng người 2, 5",
+        "lines": 0,
+        "images": 0,
+        "collections": 18
+      }
+    ]
+  },
+  "1-3-time": {
+    "name": "1-3-time",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "gap",
+          "gap",
+          "gap",
+          "Test riêng →"
+        ],
+        "xlabel": "Tuần · train xanh, validation đất, test vàng",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-4-pipeline": {
+    "name": "1-4-pipeline",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Impute\nmedian",
+          "Scale\nmean / std",
+          "Encode\ndanh mục",
+          "Model\ntham số",
+          "TRAIN: fit trạng thái của toàn quy trình",
+          "VALID / MỚI: transform bằng trạng thái train → predict",
+          "Cột số và cột chữ đi nhánh riêng trong ColumnTransformer"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-4-leakage": {
+    "name": "1-4-leakage",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Train + validation",
+          "Thống kê chung",
+          "Fit model",
+          "Sai: validation tham gia học preprocessing",
+          "Cột biết sau buổi",
+          "Pipeline đúng",
+          "Điểm rất đẹp",
+          "Vẫn sai: feature chưa có lúc dự đoán"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-5-confusion": {
+    "name": "1-5-confusion",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "TN = 3\nđúng âm",
+          "FP = 3\nbáo nhầm",
+          "FN = 1\nbỏ sót",
+          "TP = 3\nđúng dương"
+        ],
+        "xlabel": "Dự đoán ở ngưỡng 0.5",
+        "ylabel": "Nhãn thật",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-5-threshold": {
+    "name": "1-5-threshold",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Threshold",
+        "ylabel": "Score trên validation nhỏ",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-5-roc": {
+    "name": "1-5-roc",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "AUC = 0.625",
+          "Mốc AUC = 0.5"
+        ],
+        "xlabel": "FPR = FP / (FP + TN)",
+        "ylabel": "TPR = TP / (TP + FN)",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-6-losses": {
+    "name": "1-6-losses",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "|r|",
+          "r²"
+        ],
+        "xlabel": "Phần dư r",
+        "ylabel": "Đóng góp vào loss",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-6-relative": {
+    "name": "1-6-relative",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "100%",
+          "10%",
+          "1%"
+        ],
+        "xlabel": "",
+        "ylabel": "Lỗi tương đối · cùng lỗi tuyệt đối 1",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-6-ranking": {
+    "name": "1-6-ranking",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "A",
+          "hạng 1",
+          "B",
+          "hạng 2",
+          "C",
+          "hạng 3",
+          "AP@3 = (1 + 2/3) / 3 = 5/9",
+          "C",
+          "hạng 1",
+          "E",
+          "hạng 2",
+          "B",
+          "hạng 3",
+          "AP@3 = (1 + 1) / 3 = 2/3",
+          "Relevant = {A, C, E} · cả hai có Precision@3 = 2/3"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-7-workflow": {
+    "name": "1-7-workflow",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Dev\nCV chọn cấu hình",
+          "Chốt model\nfit toàn dev",
+          "Test riêng\nchấm một lần",
+          "Trong mỗi fold: fit cả Pipeline trên train",
+          "Không chọn feature, threshold, seed hay model từ test",
+          "CV tốt nhất = điểm để chọn; test = báo cáo sau chọn"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-7-search": {
+    "name": "1-7-search",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Hyperparameter A",
+        "ylabel": "Hyperparameter B",
+        "title": "Grid · mọi tổ hợp",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Hyperparameter A",
+        "ylabel": "Hyperparameter B",
+        "title": "Random · ngân sách hữu hạn",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "1-1-task-types": {
+    "name": "1-1-task-types",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Câu hỏi: có ≥ 30 người?",
+          "↓ đầu ra cần tạo",
+          "0 hoặc 1"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Classification\n(học có nhãn)",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "Câu hỏi: có bao nhiêu?",
+          "↓ đầu ra cần tạo",
+          "28.4 người"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Regression\n(học có nhãn)",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "Không có nhãn mục tiêu",
+          "↓ đầu ra cần tạo",
+          "các nhóm"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Clustering\n(không giám sát)",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "1-3-oof-mapping": {
+    "name": "1-3-oof-mapping",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "StratifiedKFold: 96 mẫu · 3 fold · mỗi fold 32 mẫu",
+          "Fold 1",
+          "valid\n32",
+          "train\n32",
+          "train\n32",
+          "Fold 2",
+          "train\n32",
+          "valid\n32",
+          "train\n32",
+          "Fold 3",
+          "train\n32",
+          "train\n32",
+          "valid\n32",
+          "OOF shape = (96,) · ghi dự đoán vào đúng valid_ids",
+          "times_scored == 1 · accuracy từng fold: 0.969, 0.906, 0.906 · pooled = 0.927"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-4-units": {
+    "name": "2-4-units",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "Q",
+          "A",
+          "B",
+          "A",
+          "QA: 1 điểm",
+          "QB: 1 giờ"
+        ],
+        "xlabel": "điểm thuật toán",
+        "ylabel": "Giờ",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 3
+      },
+      {
+        "on": true,
+        "texts": [
+          "Q",
+          "A",
+          "B",
+          "B",
+          "QA: 1 điểm",
+          "QB: 60 phút"
+        ],
+        "xlabel": "điểm thuật toán",
+        "ylabel": "Phút",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "2-5-stump": {
+    "name": "2-5-stump",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A",
+          "giảm Gini = 0.167"
+        ],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": true,
+        "texts": [
+          "B",
+          "giảm Gini = 0.5",
+          "hai lá thuần"
+        ],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": true,
+        "texts": [
+          "C",
+          "giảm Gini = 0.167"
+        ],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "2-6-bootstrap": {
+    "name": "2-6-bootstrap",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Dữ liệu gốc",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "Một lượt rút",
+          "0",
+          "0",
+          "2",
+          "3",
+          "3",
+          "OOB: 1 và 4",
+          "mẫu không xuất hiện trong lượt rút"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-8-hinge": {
+    "name": "2-8-hinge",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "đúng phía\nnhưng trong lề",
+          "loss = 0"
+        ],
+        "xlabel": "signed margin  y f(x)",
+        "ylabel": "hinge loss",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-9-label": {
+    "name": "2-9-label",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "biến thiên lớn, không mang nhãn",
+        "ylabel": "biến thiên nhỏ, mang nhãn",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": true,
+        "texts": [
+          "B",
+          "hai lớp bị trộn"
+        ],
+        "xlabel": "sau chiếu xuống trục x",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "2-10-density": {
+    "name": "2-10-density",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "0.1",
+          "0.2",
+          "0.35",
+          "core: đủ 3 điểm\n(tính cả chính nó)",
+          "border"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 4
+      },
+      {
+        "on": false,
+        "texts": [
+          "noise",
+          "x = 3"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-11-time": {
+    "name": "2-11-time",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "chưa biết target",
+          "lag_1 = 6\nmean_prev_2 = 6.5",
+          "lịch sử đã có"
+        ],
+        "xlabel": "giờ",
+        "ylabel": "số đơn",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-7-fit-stages": {
+    "name": "2-7-fit-stages",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A"
+        ],
+        "xlabel": "x",
+        "ylabel": "dự đoán",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [
+          "B"
+        ],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [
+          "C"
+        ],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "2-7-boosting": {
+    "name": "2-7-boosting",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "số cây",
+        "ylabel": "MSE",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-4-knn-vote": {
+    "name": "2-4-knn-vote",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "xlabel": "đặc trưng 1",
+        "ylabel": "đặc trưng 2",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 3
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "khoảng cách bình phương $d^2$",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-5-stump-tree": {
+    "name": "2-5-stump-tree",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "t = 2.5\nGini gain = 0.5",
+          "A"
+        ],
+        "xlabel": "x",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": false,
+        "texts": [
+          "B",
+          "x ≤ 2.5?",
+          "lá trái: nhãn 0\nGini = 0",
+          "lá phải: nhãn 1\nGini = 0",
+          "",
+          "",
+          "đúng",
+          "sai"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "2-10-kmeans-assign": {
+    "name": "2-10-kmeans-assign",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0",
+          "1",
+          "5",
+          "6",
+          "A",
+          "tâm = 0",
+          "tâm = 6"
+        ],
+        "xlabel": "giá trị x",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 3
+      },
+      {
+        "on": true,
+        "texts": [
+          "0",
+          "1",
+          "5",
+          "6",
+          "B",
+          "tâm mới = 0.5",
+          "tâm mới = 5.5"
+        ],
+        "xlabel": "giá trị x",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "2-3-softmax": {
+    "name": "2-3-softmax",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A",
+          "2",
+          "1",
+          "0"
+        ],
+        "xlabel": "",
+        "ylabel": "giá trị",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "B",
+          "1",
+          "0.368",
+          "0.135"
+        ],
+        "xlabel": "",
+        "ylabel": "giá trị",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "C",
+          "0.665",
+          "0.245",
+          "0.09",
+          "tổng = 1.000"
+        ],
+        "xlabel": "",
+        "ylabel": "giá trị",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-1-shapes": {
+    "name": "3-1-shapes",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "m1",
+          "m2",
+          "d1",
+          "d2",
+          "d3",
+          "X: 2 mẫu × 3 đặc trưng",
+          "1",
+          "0",
+          "0",
+          "1",
+          "1",
+          "1",
+          "d1",
+          "d2",
+          "d3",
+          "h1",
+          "h2",
+          "W: (3, 2)",
+          "@",
+          "4",
+          "5",
+          "10",
+          "11",
+          "m1",
+          "m2",
+          "h1",
+          "h2",
+          "X @ W: (2, 2)",
+          "Chiều d3 bị cộng gộp; chiều batch 2 được giữ."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-1-graph": {
+    "name": "3-1-graph",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "w = 2",
+          "u = 3w = 6",
+          "J = (u − 1)² = 25",
+          "× 3",
+          "× 2(u−1) = 10",
+          "dJ/du = 10",
+          "du/dw = 3",
+          "dJ/dw = 10 × 3 = 30",
+          "Forward theo thứ tự topo; backward đi ngược và nhân đạo hàm cục bộ."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-1-autograd-sum": {
+    "name": "3-1-autograd-sum",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "v = 2,  J = (3v − 1)²  ⇒  dJ/dv = 30",
+          "Lượt 1\nbackward\n.grad = 30",
+          "Chưa xóa\ngradient\n30 + 30 = 60",
+          "zero_grad rồi\nbackward\n.grad = 30",
+          "PyTorch cộng gradient mới vào .grad; training loop thường xóa trước mỗi step.",
+          "Dãy output 30, 60, 30 là kiểm trực tiếp cho accumulate → clear → accumulate."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-2-xor": {
+    "name": "3-2-xor",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "y = 0",
+          "y = 0",
+          "y = 1",
+          "y = 1",
+          "Một đường thẳng không tách được XOR."
+        ],
+        "xlabel": "x₁",
+        "ylabel": "x₂",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "3-2-backprop": {
+    "name": "3-2-backprop",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "X\n(B, d)",
+          "Z₁ → ReLU → H\n(B, h)",
+          "Z₂ → loss\n(B, c)",
+          "W₁",
+          "W₂",
+          "G₂ = ∂J/∂P\n(B, c)",
+          "G₁ = (G₂W₂ᵀ)\n⊙ 1[Z₁ > 0]\n(B, h)",
+          "∇W₁ = XᵀG₁\n(d, h)",
+          "qua W₂ᵀ",
+          "qua ReLU rồi Xᵀ",
+          "Mỗi gradient tham số cùng shape tham số; các mẫu đóng góp rồi cộng trong phép nhân ma trận."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-2-hand-backprop": {
+    "name": "3-2-hand-backprop",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Một mẫu: x = 2, y = 0\nw₁ = 0.5, b₁ = 0; w₂ = 2, b₂ = 0",
+          "x = 2",
+          "z₁ = 1\nReLU → h = 1",
+          "p = 2",
+          "J = (p − y)²\nJ = 4",
+          "× w₁ + b₁",
+          "× w₂ + b₂",
+          "y = 0",
+          "Backward: đi từ loss về đầu vào; ReLU đang mở",
+          "dJ/dw₁\n8 × 2 = 16",
+          "dJ/dz₁\n8 × 1 = 8",
+          "dJ/dh\n4 × 2 = 8",
+          "dJ/dp = 4",
+          "× x",
+          "× 1",
+          "× w₂",
+          "Bias lớp đầu\ndJ/db₁ = 8",
+          "Tham số lớp cuối: dJ/dw₂ = 4 × h = 4\ndJ/db₂ = 4",
+          "Tính đủ gradient bằng cùng bộ trọng số, rồi mới cập nhật."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-3-activation": {
+    "name": "3-3-activation",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "ReLU"
+        ],
+        "xlabel": "z",
+        "ylabel": "đầu ra",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "tanh"
+        ],
+        "xlabel": "z",
+        "ylabel": "",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "sigmoid",
+          "σ′(0)=0.25"
+        ],
+        "xlabel": "z",
+        "ylabel": "",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "3-3-residual-loss": {
+    "name": "3-3-residual-loss",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "MSE = r²",
+          "MAE = |r|"
+        ],
+        "xlabel": "|phần dư r|",
+        "ylabel": "loss của một phần tử",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "4",
+          "100",
+          "2",
+          "10"
+        ],
+        "xlabel": "",
+        "ylabel": "giá trị",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-3-loss-metrics": {
+    "name": "3-3-loss-metrics",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "1",
+          "4",
+          "100"
+        ],
+        "xlabel": "",
+        "ylabel": "loss",
+        "title": "MSE từng mẫu",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "1",
+          "2",
+          "10"
+        ],
+        "xlabel": "",
+        "ylabel": "loss",
+        "title": "MAE từng mẫu",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-4-loop": {
+    "name": "3-4-loop",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "batch (x, y)",
+          "zero_grad",
+          "forward +\nloss",
+          "backward",
+          "step",
+          "kết thúc epoch → validation\neval + no_grad\nkhông optimizer.step()",
+          "sau nhiều batch",
+          "Một batch: zero_grad → forward/loss → backward → step. Validation đứng ngoài chuỗi cập nhật."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-4-checkpoint": {
+    "name": "3-4-checkpoint",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "best.pt\nweights\npreprocess + labels",
+          "tiến trình mới\nđúng kiến trúc +\nđúng hợp đồng",
+          "model.eval()\nquery → logits\n→ prediction",
+          "Test cuối chỉ đánh giá packet đã chốt; không dùng test để chọn epoch.",
+          "Giữ mean/std, thứ tự đặc trưng, kiến trúc và mapping nhãn cùng trọng số."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-5-paths": {
+    "name": "3-5-paths",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "đáy"
+        ],
+        "xlabel": "w₁",
+        "ylabel": "w₂",
+        "title": "SGD",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      },
+      {
+        "on": true,
+        "texts": [
+          "đáy"
+        ],
+        "xlabel": "w₁",
+        "ylabel": "w₂",
+        "title": "SGD + momentum",
+        "lines": 1,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "3-5-schedule": {
+    "name": "3-5-schedule",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.1",
+          "0.05",
+          "0.025",
+          "× 0.5",
+          "× 0.5"
+        ],
+        "xlabel": "epoch tiếp theo",
+        "ylabel": "learning rate",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "3-6-dropout": {
+    "name": "3-6-dropout",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Dropout với p = 0.5: phần tử được giữ lại chia cho 1 − p = 0.5",
+          "h = [1, 2, 3, 4]",
+          "mask =\n[1, 0, 1, 0]",
+          "train =\n[2, 0, 6, 0]",
+          "eval: [1, 2, 3, 4]  |  không bốc mask, không scale lại",
+          "Train thay đổi đường truyền; eval dùng toàn bộ vector để kỳ vọng đầu ra giữ nguyên."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-6-capacity": {
+    "name": "3-6-capacity",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "train",
+          "validation"
+        ],
+        "xlabel": "bậc đa thức (khả năng biểu diễn)",
+        "ylabel": "MSE",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-7-memory": {
+    "name": "3-7-memory",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "weight\n4 B",
+          "gradient\n4 B",
+          "moment m\n4 B",
+          "moment v\n4 B",
+          "Adam FP32: xấp xỉ 16 byte × P tham số",
+          "Chưa gồm activation, batch, workspace và allocator."
+        ],
+        "xlabel": "byte cho một tham số (minh họa)",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-7-debug": {
+    "name": "3-7-debug",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "1\nbatch nhỏ",
+          "2\nshape + dtype",
+          "3\nloss hữu hạn",
+          "4\ngradient hữu hạn",
+          "5\noverfit 1 batch",
+          "6\nđo CUDA thật",
+          "học được",
+          "Hết VRAM → giảm batch; NaN → tìm phép đầu tiên sinh số lỗi."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-8-padding": {
+    "name": "3-8-padding",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "token IDs (B = 2, L = 4)",
+          "2",
+          "3",
+          "4",
+          "0",
+          "5",
+          "6",
+          "0",
+          "0",
+          "s1",
+          "s2",
+          "1",
+          "2",
+          "3",
+          "4",
+          "→",
+          "valid mask: ID ≠ 0",
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "s1",
+          "s2",
+          "1",
+          "2",
+          "3",
+          "4",
+          "ID 0 là PAD; cột PAD chỉ lấp bảng, không thêm thông tin.",
+          "Mask giữ lại vị trí hợp lệ khi pooling hoặc tính loss theo token."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-8-pooling": {
+    "name": "3-8-pooling",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Masked mean: tổng đúng, mẫu số cũng phải đúng",
+          "token vectors:\n[2, 0]  [0, 4]\nPAD: [0, 0]\nmask: 1  1  0",
+          "sum = [2, 4]",
+          "÷ 2 token thật\nmean = [1, 2]",
+          "Nếu chia độ dài PAD = 3 → [2/3, 4/3] (bị co sai)",
+          "Masked mean giống prefix sum: phải đếm đúng số phần tử hợp lệ."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-9-attention": {
+    "name": "3-9-attention",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "q = [1],  k₁ = [1], k₂ = [0],  v₁ = [2, 0], v₂ = [0, 4]",
+          "scores\n[1, 0]",
+          "softmax\n[0.731, 0.269]",
+          "output = AV\n[1.462, 1.076]",
+          "chuẩn hóa",
+          "trộn value",
+          "0.731 × [2, 0] + 0.269 × [0, 4] = [1.462, 1.076]",
+          "Attention trả tổ hợp mềm; không chọn cứng key có score lớn nhất."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-9-masks": {
+    "name": "3-9-masks",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "✓",
+          "✓",
+          "✓",
+          "×",
+          "✓",
+          "✓",
+          "✓",
+          "×",
+          "✓",
+          "✓",
+          "✓",
+          "×",
+          "✓",
+          "✓",
+          "✓",
+          "×"
+        ],
+        "xlabel": "key",
+        "ylabel": "query",
+        "title": "Padding:\nbỏ key PAD ở cột 4",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "✓",
+          "×",
+          "×",
+          "×",
+          "✓",
+          "✓",
+          "×",
+          "×",
+          "✓",
+          "✓",
+          "✓",
+          "×",
+          "✓",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        "xlabel": "key",
+        "ylabel": "query",
+        "title": "Causal:\nquery chỉ nhìn quá khứ + hiện tại",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-9-mask-flow": {
+    "name": "3-9-mask-flow",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Cấm key trước softmax để trọng số của key ấy bằng 0",
+          "raw scores\n[1, 0, 2]",
+          "causal keep\n[✓, ✓, ×]",
+          "masked scores\n[1, 0, −∞]",
+          "weights\n[0.731, 0.269, 0]",
+          "exp(−∞) = 0  ⇒  tổng hàng weights vẫn bằng 1",
+          "Nếu mask sau softmax mà không chuẩn hóa lại, attention mất phân phối hợp lệ."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-10-bottleneck": {
+    "name": "3-10-bottleneck",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "x: [4 cảm biến]\n[ x₁, x₂, x₃, x₄ ]",
+          "z: [1 số]\nnút thắt",
+          "x̂: [4 số tái tạo]\n[ x̂₁, x̂₂, x̂₃, x̂₄ ]",
+          "encoder",
+          "decoder",
+          "loss so sánh x̂ với x; denoising dùng đầu vào nhiễu, target sạch.",
+          "Nút thắt giữ cấu trúc chung nhưng có thể bỏ mất chi tiết cần thiết."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "3-10-reconstruction": {
+    "name": "3-10-reconstruction",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "mẫu thường: x₂ ≈ x₁",
+          "bất thường\n(0.9, 0.1)",
+          "tái tạo\n(0.5, 0.5)",
+          "lỗi tái tạo"
+        ],
+        "xlabel": "cảm biến 1 đã chuẩn hóa",
+        "ylabel": "cảm biến 2 đã chuẩn hóa",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 3
+      }
+    ]
+  },
+  "4-1-package": {
+    "name": "4-1-package",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Trọng số\nđã học",
+          "Cấu hình\nkiến trúc",
+          "Processor\nđầu vào",
+          "Bảng nhãn\nđầu ra",
+          "gói local\nrevision + hash",
+          "cùng hợp đồng → tái tạo logits → nhãn",
+          "bốn nhánh phải cùng revision"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-1-batches": {
+    "name": "4-1-batches",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Input giữ ID",
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "batch 1\n[0, 1]",
+          "batch 2\n[2, 3]",
+          "batch 3\n[4]",
+          "nối lại: [0, 1, 2, 3, 4]"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-2-reuse": {
+    "name": "4-2-reuse",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Ảnh / chữ\ninput",
+          "Encoder\ncố định",
+          "Embedding\n(n, d)",
+          "Linear probe",
+          "kNN / tìm kiếm",
+          "Clustering",
+          "một lần trích → nhiều cách dùng",
+          "encoder không chạy lại khi đổi nhánh"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-2-cosine": {
+    "name": "4-2-cosine",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "",
+          "",
+          "(3, 4)",
+          "(6, 8)"
+        ],
+        "xlabel": "tọa độ 1",
+        "ylabel": "tọa độ 2",
+        "title": "Cùng hướng, khác độ dài",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "",
+          "cả hai → (0.6, 0.8)\ncosine = 1"
+        ],
+        "xlabel": "tọa độ 1",
+        "ylabel": "",
+        "title": "Chuẩn hóa về độ dài 1",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "4-2-results": {
+    "name": "4-2-results",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.9574",
+          "0.9870",
+          "0.9889"
+        ],
+        "xlabel": "validation accuracy · cùng split 540 mẫu",
+        "ylabel": "",
+        "title": "Ba cách dùng trên cùng biểu diễn",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-3-unfreeze": {
+    "name": "4-3-unfreeze",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "BLUE: giữ trọng số     CLAY: cho phép học",
+          "Head mới",
+          "block đầu",
+          "block cuối",
+          "head",
+          "Mở block cuối",
+          "block đầu",
+          "block cuối",
+          "head",
+          "Mở encoder",
+          "block đầu",
+          "block cuối",
+          "head",
+          "Tô màu phần học; mọi phần vẫn tham gia forward."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-3-validation": {
+    "name": "4-3-validation",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "train",
+          "validation",
+          "giữ checkpoint\nvalidation thấp nhất",
+          "Sơ đồ minh họa, không phải số đo của demo"
+        ],
+        "xlabel": "epoch",
+        "ylabel": "loss",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "4-3-transfer": {
+    "name": "4-3-transfer",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.9020",
+          "0.9379"
+        ],
+        "xlabel": "validation accuracy",
+        "ylabel": "",
+        "title": "Điểm ở checkpoint đã chọn",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "66",
+          "2,146"
+        ],
+        "xlabel": "tham số được học · log scale",
+        "ylabel": "",
+        "title": "Ngân sách cập nhật",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-4-path": {
+    "name": "4-4-path",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "input x",
+          "W0\ncố định",
+          "A\n8 → r",
+          "B\nr → 6",
+          "+",
+          "output y",
+          "nhánh sửa = (α/r) · B A · x",
+          "y = W0x + nhánh sửa"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-4-count": {
+    "name": "4-4-count",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "full: 6 × 8 = 48",
+          "LoRA: 14r",
+          "r = 2 → 28"
+        ],
+        "xlabel": "rank r",
+        "ylabel": "tham số được học",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "4-5-contrastive": {
+    "name": "4-5-contrastive",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.8",
+          "0.6",
+          "-0.8",
+          "0.6",
+          "0.8",
+          "-0.6",
+          "-1",
+          "0",
+          "1"
+        ],
+        "xlabel": "chữ tìm ảnh → đọc theo cột",
+        "ylabel": "ảnh tìm chữ → đọc theo hàng",
+        "title": "Mỗi hàng / cột là một hướng chuẩn hóa",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-5-candidates": {
+    "name": "4-5-candidates",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "",
+          "lớp 0",
+          "",
+          "lớp 1",
+          "",
+          "lớp 2",
+          "",
+          "ảnh / ứng viên mới",
+          "vector ảnh giữ nguyên",
+          "thêm lớp → mẫu số softmax tăng"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "4-5-ranking": {
+    "name": "4-5-ranking",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.480",
+          "0.361"
+        ],
+        "xlabel": "Tổng xác suất",
+        "ylabel": "P(chuỗi)",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "-0.3670",
+          "-0.3396"
+        ],
+        "xlabel": "Mean log-prob",
+        "ylabel": "cao hơn",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "1.4434",
+          "1.4044"
+        ],
+        "xlabel": "Perplexity",
+        "ylabel": "thấp hơn",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-1-window": {
+    "name": "5-1-window",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "1",
+          "2",
+          "0",
+          "0",
+          "1",
+          "3",
+          "2",
+          "1",
+          "0"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Ảnh X",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "1",
+          "0",
+          "0",
+          "2"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Kernel K",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "3",
+          "8",
+          "2",
+          "1"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Kết quả Y",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-1-receptive": {
+    "name": "5-1-receptive",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "Ảnh gốc",
+          "3 ô ở lớp 1",
+          "3 ô ở lớp 1",
+          "3 ô ở lớp 1",
+          "Hợp vùng nhìn của ô lớp 2: 5 ô"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-1-pool-shift": {
+    "name": "5-1-pool-shift",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "4",
+          "0",
+          "0"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Đỉnh ở ô 1",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "4",
+          "0"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "MaxPool",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "0",
+          "4",
+          "0"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Đỉnh dịch sang ô 2",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "4"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "MaxPool",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-2-cnn": {
+    "name": "5-2-cnn",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Ảnh\n1×12×12",
+          "Conv + ReLU\n8×12×12",
+          "MaxPool\n8×6×6",
+          "",
+          "",
+          "",
+          "Conv + ReLU\n8×6×6",
+          "Global average\n8 số",
+          "Linear head\n2 logits",
+          "",
+          "",
+          "Một ảnh → nhiều bộ dò → một nhãn"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-2-residual": {
+    "name": "5-2-residual",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "x",
+          "F(x)",
+          "+",
+          "y",
+          "",
+          "",
+          "",
+          "Đường giữ x",
+          "y = x + F(x)  ·  Hai nhánh phải cùng shape"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-2-metrics": {
+    "name": "5-2-metrics",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.5",
+          "1",
+          "1"
+        ],
+        "xlabel": "",
+        "ylabel": "đúng",
+        "title": "Accuracy",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "0.6981",
+          "0",
+          "0"
+        ],
+        "xlabel": "",
+        "ylabel": "loss",
+        "title": "Cross-entropy loss",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-3-labels": {
+    "name": "5-3-labels",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "",
+          "Lật ngang",
+          "Quai bên trái",
+          "Quai bên phải",
+          "Lớp vật thể giữ nguyên · Nhãn hướng đổi"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-3-split": {
+    "name": "5-3-split",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Ảnh nguồn",
+          "Train nguồn",
+          "Validation nguồn",
+          "",
+          "",
+          "Crop / flip / đổi sáng",
+          "Preprocessing cố định",
+          "",
+          "",
+          "Chia theo nguồn trước khi tạo biến thể"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-4-patches": {
+    "name": "5-4-patches",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Ảnh 4×4",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "4",
+          "5",
+          "2",
+          "3",
+          "6",
+          "7",
+          "8",
+          "9",
+          "12",
+          "13",
+          "10",
+          "11",
+          "14",
+          "15"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Mỗi hàng một patch",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-4-position": {
+    "name": "5-4-position",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "A+p0",
+          "B+p1",
+          "C+p2",
+          "D+p3",
+          "C+p0",
+          "A+p1",
+          "D+p2",
+          "B+p3",
+          "Vị trí gắn với ô · Nội dung đổi chỗ",
+          "",
+          "Không chỉ đảo cả cặp (nội dung, vị trí)"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-5-iou": {
+    "name": "5-5-iou",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "A: 16",
+          "B: 16",
+          "Giao: 9"
+        ],
+        "xlabel": "x",
+        "ylabel": "y",
+        "title": "IoU = 9 / (16 + 16 − 9) = 9/23",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-5-pr": {
+    "name": "5-5-pr",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "Bao nội suy: 1",
+          "Bao nội suy: 2/3",
+          "FP lặp"
+        ],
+        "xlabel": "Recall",
+        "ylabel": "Precision",
+        "title": "AP toy = 0.5×1 + 0.5×(2/3) = 5/6",
+        "lines": 2,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "5-5-nms": {
+    "name": "5-5-nms",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0 · 0.9 → giữ",
+          "1 · 0.8 → bỏ",
+          "2 · 0.7 → giữ",
+          "IoU(0,1) > 0.5"
+        ],
+        "xlabel": "x",
+        "ylabel": "y",
+        "title": "NMS một lớp · threshold IoU = 0.5",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-6-masks": {
+    "name": "5-6-masks",
+    "axes": [
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Semantic: một lớp",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [
+          "1",
+          "2"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Instance: hai ID",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-6-unet": {
+    "name": "5-6-unet",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Encoder\n4×12×12",
+          "Bottleneck\n8×6×6",
+          "Decoder\n4×12×12",
+          "",
+          "",
+          "Skip: concatenate",
+          "Pool ×2",
+          "Up ×2",
+          "8 kênh up + 4 kênh skip = 12 kênh"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-6-mask-metrics": {
+    "name": "5-6-mask-metrics",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Ground truth G",
+          "1",
+          "1",
+          "1",
+          "FN",
+          "0",
+          "Prediction P",
+          "1",
+          "TP",
+          "1",
+          "TP",
+          "0",
+          "1",
+          "FP"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Bốn pixel foreground",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "0.5000",
+          "0.6667"
+        ],
+        "xlabel": "",
+        "ylabel": "điểm",
+        "title": "TP=2 · FP=1 · FN=1",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-7-pairs": {
+    "name": "5-7-pairs",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Ảnh nguồn",
+          "View 1",
+          "View 2",
+          "",
+          "",
+          "Positive\ncùng nguồn",
+          "Giữ nội dung cần học qua augmentation"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-7-matrix": {
+    "name": "5-7-matrix",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0.99",
+          "0.11",
+          "-0.99",
+          "0.11",
+          "0.99",
+          "0.11",
+          "-0.99",
+          "-0.11",
+          "0.99",
+          "Đường chéo: cặp nguồn phù hợp"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Ảnh theo hàng · Caption theo cột",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-8-gan": {
+    "name": "5-8-gan",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Noise z",
+          "Generator G",
+          "Discriminator D",
+          "Mẫu thật",
+          "",
+          "",
+          "",
+          "Thật / giả",
+          "Train D:\ndetach fake",
+          "Train G: gradient qua D về G"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-8-diffusion": {
+    "name": "5-8-diffusion",
+    "axes": [
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Sạch x0",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Nhiễu vừa",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Gần noise",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-9-shortcut": {
+    "name": "5-9-shortcut",
+    "axes": [
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Đứng\nnguồn",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Ngang\nnguồn",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Đứng\nđổi góc",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Ngang\nđổi góc",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-9-occlusion": {
+    "name": "5-9-occlusion",
+    "axes": [
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Ảnh gốc",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Che góc",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": false,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Che nét",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-kt3-contract": {
+    "name": "5-kt3-contract",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Classification\nmột nhãn",
+          "Detection\nbox + lớp + score",
+          "Segmentation\nmask / RLE",
+          "Retrieval\nthứ hạng",
+          "Đọc đầu ra → chọn metric → chọn pipeline"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "5-kt3-loop": {
+    "name": "5-kt3-loop",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Baseline hợp lệ",
+          "Đo validation",
+          "Đọc lỗi / giả thuyết",
+          "Một thay đổi",
+          "",
+          "",
+          "",
+          "",
+          "Chốt: nạp lại → runtime → schema"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-1-token-levels": {
+    "name": "6-1-token-levels",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "học sinh học máy",
+          "Âm tiết",
+          "học",
+          "sinh",
+          "học",
+          "máy",
+          "Từ\n(ngữ cảnh này)",
+          "học sinh",
+          "học máy",
+          "BPE: lower",
+          "lo",
+          "w",
+          "e",
+          "r",
+          "Mảnh sau một luật gộp l + o → lo trong demo"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-1-text-pipeline": {
+    "name": "6-1-text-pipeline",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Train\ntext + nhãn",
+          "TF-IDF\nvocabulary + IDF",
+          "Classifier\ntrọng số",
+          "fit",
+          "fit",
+          "Validation\ntext",
+          "transform\ncùng cột",
+          "predict\nso với gold",
+          "Validation không học lại vocabulary, IDF hoặc weights"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-2-cosine": {
+    "name": "6-2-cosine",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "d1 = (2, 2), cos = 1",
+          "q = (1, 1)",
+          "d2, cos = 0.707",
+          "d3, cos = −1"
+        ],
+        "xlabel": "Chiều 1 (ví dụ số)",
+        "ylabel": "Chiều 2",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-2-masked-pooling": {
+    "name": "6-2-masked-pooling",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "h1 = (2, 0)",
+          "mask = 1",
+          "h2 = (0, 2)",
+          "mask = 1",
+          "PAD: (9, 9)",
+          "mask = 0",
+          "PAD: (9, 9)",
+          "mask = 0",
+          "Tổng có mask = (2, 2)   ·   số token giữ = 2",
+          "Mean đúng: (1, 1)",
+          "Mean cả PAD: (5, 5)"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-3-attention-masks": {
+    "name": "6-3-attention-masks",
+    "axes": [
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Key được nhìn",
+        "ylabel": "Query",
+        "title": "Hai chiều + padding mask",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "Key được nhìn",
+        "ylabel": "Query",
+        "title": "Causal + padding mask",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-3-two-heads": {
+    "name": "6-3-two-heads",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Token IDs\n(B, L)",
+          "Encoder\nH: (B, L, d)",
+          "Head câu\n(B, C)",
+          "Head token\n(B, L, C)",
+          "CLS",
+          "từng h_i"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-4-causal-shift": {
+    "name": "6-4-causal-shift",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Input",
+          "Label",
+          "BOS",
+          "em",
+          "em",
+          "học",
+          "học",
+          "toán",
+          "toán",
+          "EOS",
+          "Vị trí i dự đoán token i + 1; không đọc input tương lai"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-4-temperature": {
+    "name": "6-4-temperature",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.867",
+          "0.117",
+          "0.016"
+        ],
+        "xlabel": "",
+        "ylabel": "Xác suất sampling",
+        "title": "T = 0.5",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "0.665",
+          "0.245",
+          "0.090"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "T = 1",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "0.506",
+          "0.307",
+          "0.186"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "T = 2",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-5-encoder-decoder": {
+    "name": "6-5-encoder-decoder",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Nguồn x: đã có",
+          "Encoder: Hˣ",
+          "BOS + đích\nđã sinh",
+          "Decoder",
+          "Token y_t",
+          "Memory nguồn\n(cross-attention)",
+          "Encoder đọc hai chiều nguồn; decoder chỉ đọc tiền tố đích"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-5-teacher-forcing": {
+    "name": "6-5-teacher-forcing",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Input đích",
+          "Label",
+          "BOS",
+          "B",
+          "B",
+          "A",
+          "A",
+          "EOS",
+          "Teacher forcing dùng target đúng ở bước trước"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-6-llm-pipeline": {
+    "name": "6-6-llm-pipeline",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Messages\n+ few-shot",
+          "Chat template\n+ tokenizer",
+          "LLM\n+ decoding",
+          "Raw output\nchỉ token mới",
+          "Parse + schema",
+          "Đối chiếu gold\n+ lỗi nội dung",
+          "JSON hợp lệ chưa bảo đảm thông tin đúng nguồn"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-6-memory-budget": {
+    "name": "6-6-memory-budget",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Weights\n≈ P × byte/weight",
+          "KV cache\n≈ 2 B L n_h d_h b",
+          "Activation\n+ buffer",
+          "Còn cần khoảng trống cho allocator và runtime",
+          "B tăng 4 × và L tăng 2 × ⇒ cache tăng 8 ×",
+          "Sơ đồ thành phần; không biểu diễn tỉ lệ dung lượng đã đo"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-3-ner-alignment": {
+    "name": "6-3-ner-alignment",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "NER: căn nhãn từ vào token đầu của mỗi từ",
+          "4 vị trí tính loss",
+          "Token",
+          "[CLS]",
+          "An",
+          "đến",
+          "Hà",
+          "##Nội",
+          "sớm",
+          "[SEP]",
+          "word id",
+          "—",
+          "0",
+          "1",
+          "2",
+          "2",
+          "3",
+          "—",
+          "nhãn / loss",
+          "-100",
+          "B-PER",
+          "O",
+          "B-LOC",
+          "-100",
+          "O",
+          "-100",
+          "-100: bỏ qua special token và subword lặp",
+          "loss demo = 0.2395 · không nhân bản nhãn cho ##Nội"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-4-greedy-paths": {
+    "name": "6-4-greedy-paths",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Greedy nhìn bước đầu; xác suất cả chuỗi lại chọn B",
+          "Bắt đầu",
+          "A",
+          "B",
+          "EOS",
+          "EOS",
+          "p(A)=0.60",
+          "p(B)=0.40",
+          "p(EOS|A)=0.50",
+          "p(EOS|B)=0.95",
+          "Greedy: A→EOS\n0.60 × 0.50 = 0.30",
+          "Cả chuỗi: B→EOS\n0.40 × 0.95 = 0.38"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "6-5-cross-attention": {
+    "name": "6-5-cross-attention",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Cross-attention: từ điểm q·k đến vector context",
+          "q = (1, 0)\nk1=(1,0), k2=(0,1)\nv1=(2,0), v2=(0,2)",
+          "scores / √2\n(0.707, 0.000)",
+          "softmax\n(0.670, 0.330)",
+          "0.670·(2,0) + 0.330·(0,2)\ncontext = (1.340, 0.660)",
+          "q·k",
+          "trọng số",
+          "Số liệu đặt tay để kiểm phép tính, không phải attention lấy từ model dịch.",
+          "Mỗi hàng trọng số cộng thành 1; context là tổ hợp có trọng số của values."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-1-sampling": {
+    "name": "7-1-sampling",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "200 Hz · 4 chu kỳ / 20 ms",
+          "mẫu cách nhau 0.5 ms"
+        ],
+        "xlabel": "thời gian (ms)",
+        "ylabel": "biên độ tương đối",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "7-1-spectrogram": {
+    "name": "7-1-spectrogram",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "200 Hz",
+          "600 Hz",
+          "ranh giới 0.5 s"
+        ],
+        "xlabel": "tâm frame (giây)",
+        "ylabel": "tần số (Hz)",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "dB so với đỉnh phổ",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "7-1-mel": {
+    "name": "7-1-mel",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0",
+          "4",
+          "8",
+          "12",
+          "16",
+          "19"
+        ],
+        "xlabel": "tần số (Hz)",
+        "ylabel": "trọng số",
+        "title": "6 / 20 bộ lọc tam giác",
+        "lines": 6,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "−80…0 dB"
+        ],
+        "xlabel": "thời gian (giây)",
+        "ylabel": "mel band",
+        "title": "20 band log-mel",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 2
+      }
+    ]
+  },
+  "7-2-task": {
+    "name": "7-2-task",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "một clip\nwaveform",
+          "clip head",
+          "1 nhãn\ncho cả clip",
+          "frame head",
+          "nhãn ở từng\nthời điểm",
+          "đầu ra cần gì?",
+          "một nhãn hay một dãy nhãn"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-2-order": {
+    "name": "7-2-order",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "đổi"
+        ],
+        "xlabel": "thời gian (giây)",
+        "ylabel": "mel band",
+        "title": "1 · thấp → cao",
+        "lines": 1,
+        "images": 1,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "đổi"
+        ],
+        "xlabel": "thời gian (giây)",
+        "ylabel": "",
+        "title": "0 · cao → thấp",
+        "lines": 1,
+        "images": 1,
+        "collections": 0
+      }
+    ]
+  },
+  "7-3-asr": {
+    "name": "7-3-asr",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "âm thanh\nencoder",
+          "CTC\nframe → nhãn / blank",
+          "collapse\n→ transcript",
+          "decoder + attention\nsinh token nối tiếp",
+          "decode\n→ transcript",
+          "hai hợp đồng output",
+          "theo frame  /  theo token"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-3-ctc": {
+    "name": "7-3-ctc",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "frame 1\n_ 0.6 · a 0.4",
+          "frame 2\n_ 0.5 · a 0.5",
+          "frame 3\n_ 0.4 · a 0.6",
+          "8 path → 3 transcript sau collapse",
+          "___\n→ rỗng\nP = 0.12",
+          "6 path khác\n→ a\nP = 0.76",
+          "a _ a\n→ aa\nP = 0.12",
+          "−ln P(a) = −ln 0.76 ≈ 0.2744"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-4-fusion": {
+    "name": "7-4-fusion",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "EARLY FUSION · ghép ở mức đặc trưng",
+          "vector ảnh",
+          "vector chữ",
+          "concatenate",
+          "head chung",
+          "LATE FUSION · ghép ở mức xác suất",
+          "head ảnh",
+          "head chữ",
+          "cùng lớp",
+          "mean",
+          "sample ID đúng · class mapping đúng · ablation cùng split"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-4-vlm": {
+    "name": "7-4-vlm",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "ảnh",
+          "image encoder\n+ projector",
+          "language\nmodel",
+          "đáp án",
+          "câu hỏi\ntext tokens",
+          "processor/template giữ đúng ảnh + câu hỏi + token đặc biệt"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-kt4-time": {
+    "name": "7-kt4-time",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "20′",
+          "60′",
+          "60′",
+          "80′",
+          "80′",
+          "40′",
+          "20′"
+        ],
+        "xlabel": "phút từ đầu buổi luyện",
+        "ylabel": "",
+        "title": "Lịch luyện mẫu · tổng 360 phút",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-kt4-loop": {
+    "name": "7-kt4-loop",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "giữ\nvalidation",
+          "xem cùng\nmẫu sai",
+          "đổi\nmột phần",
+          "chấm +\nghi kết quả",
+          "Giả thuyết → một thay đổi → bằng chứng trên cùng tập"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "7-2-confusion": {
+    "name": "7-2-confusion",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "10",
+          "0",
+          "10",
+          "0"
+        ],
+        "xlabel": "nhãn dự đoán",
+        "ylabel": "nhãn thật",
+        "title": "pooled baseline\naccuracy = 0.500",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      },
+      {
+        "on": true,
+        "texts": [
+          "10",
+          "0",
+          "0",
+          "10"
+        ],
+        "xlabel": "nhãn dự đoán",
+        "ylabel": "",
+        "title": "CNN giữ vị trí\naccuracy = 1.000",
+        "lines": 0,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "7-3-wer": {
+    "name": "7-3-wer",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "1",
+          "0",
+          "1",
+          "2",
+          "3",
+          "2",
+          "1",
+          "0",
+          "1",
+          "2",
+          "3",
+          "2",
+          "1",
+          "1",
+          "2",
+          "4",
+          "3",
+          "2",
+          "2",
+          "2",
+          "5",
+          "4",
+          "3",
+          "3",
+          "2"
+        ],
+        "xlabel": "prefix của prediction",
+        "ylabel": "prefix của reference",
+        "title": "DP alignment · distance = 2 · WER = 2 / 5 = 0.400",
+        "lines": 5,
+        "images": 0,
+        "collections": 1
+      }
+    ]
+  },
+  "7-4-ablation": {
+    "name": "7-4-ablation",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.500",
+          "0.500",
+          "1.000",
+          "0.500",
+          "0.875"
+        ],
+        "xlabel": "accuracy trên cùng bảng 8 mẫu",
+        "ylabel": "",
+        "title": "Ablation fusion · số liệu đặt tay trong bài",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-1-budget": {
+    "name": "8-1-budget",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "Đọc +\nbaseline\n30 phút",
+          "Cải thiện có giả thuyết\n130 phút",
+          "Chạy\nlại + kiểm\n20 phút"
+        ],
+        "xlabel": "Phút từ lúc bắt đầu — buổi luyện giả định",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-1-priority": {
+    "name": "8-1-priority",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.72",
+          "0.15",
+          "0.07"
+        ],
+        "xlabel": "Điểm tăng dự kiến/phút = p × ΔN / t",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-2-groups": {
+    "name": "8-2-groups",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "Doc A",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "Doc B",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "Doc C",
+          "Train",
+          "Validation"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Theo dòng: chung nguồn",
+        "lines": 0,
+        "images": 0,
+        "collections": 14
+      },
+      {
+        "on": false,
+        "texts": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "Doc A",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "Doc B",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "Doc C",
+          "Train",
+          "Validation"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "Theo nhóm: nguồn mới",
+        "lines": 0,
+        "images": 0,
+        "collections": 14
+      }
+    ]
+  },
+  "8-2-shift": {
+    "name": "8-2-shift",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.970",
+          "0.383",
+          "Signal + shortcut",
+          "0.830",
+          "0.863",
+          "Chỉ signal"
+        ],
+        "xlabel": "",
+        "ylabel": "Accuracy",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-3-partition": {
+    "name": "8-3-partition",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "A ở 0 gần hơn",
+          "Bằng nhau",
+          "B ở 6 gần hơn",
+          "A",
+          "B"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 8
+      }
+    ]
+  },
+  "8-3-mismatch": {
+    "name": "8-3-mismatch",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4 = A",
+          "5 = B",
+          "6 = h",
+          "7"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 8
+      },
+      {
+        "on": false,
+        "texts": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4 = A",
+          "5 = B",
+          "6 = h",
+          "7"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 8
+      }
+    ]
+  },
+  "8-4-voting": {
+    "name": "8-4-voting",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.510",
+          "0.510",
+          "0.010",
+          "0.343",
+          "Ngưỡng 0.5",
+          "Hard vote: lớp 1",
+          "Soft vote: lớp 0"
+        ],
+        "xlabel": "",
+        "ylabel": "Xác suất lớp 1",
+        "title": "",
+        "lines": 1,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-4-correlation": {
+    "name": "8-4-correlation",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "ρ = 0",
+          "ρ = 0.5",
+          "ρ = 1"
+        ],
+        "xlabel": "Số model K",
+        "ylabel": "Var(mean error) / σ²",
+        "title": "",
+        "lines": 3,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-5-timeline": {
+    "name": "8-5-timeline",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "Đọc môi trường\n30 phút",
+          "Baseline + validation\n75 phút",
+          "Thí nghiệm\n195 phút",
+          "Chạy lại\n45 phút",
+          "Kiểm file\n15 phút"
+        ],
+        "xlabel": "Phút — cấu hình thi thử giả định",
+        "ylabel": "",
+        "title": "",
+        "lines": 5,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-5-reproduce": {
+    "name": "8-5-reproduce",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Fit trên train\nPipeline",
+          "Artifact\nModel +\npreprocessing",
+          "Tiến trình mới\nNạp + predict",
+          "CSV thật\nID + xác suất",
+          "Readback\nSchema +\nmiền giá trị",
+          "Receipt\nHash + manifest",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-2-validation-slices": {
+    "name": "8-2-validation-slices",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.90\n81/90 đúng",
+          "0.20\n2/10 đúng"
+        ],
+        "xlabel": "",
+        "ylabel": "Accuracy theo lát",
+        "title": "Đừng chỉ nhìn trung bình",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "81",
+          "9",
+          "n=90",
+          "n=10",
+          "2 đúng · 8 sai"
+        ],
+        "xlabel": "Số mẫu",
+        "ylabel": "",
+        "title": "Kích thước lát quyết định độ tin cậy",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "8-4-tune-audit": {
+    "name": "8-4-tune-audit",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.3124",
+          "0.2571",
+          "0.4809",
+          "0.2384",
+          "0.2113"
+        ],
+        "xlabel": "",
+        "ylabel": "Log loss",
+        "title": "Audit: log loss thấp hơn là tốt",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "0.842",
+          "0.892",
+          "0.925",
+          "0.908",
+          "0.925"
+        ],
+        "xlabel": "",
+        "ylabel": "Accuracy",
+        "title": "Audit: accuracy cao hơn là tốt",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-1-loop": {
+    "name": "9-1-loop",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Agent\npolicy π(a | s)",
+          "Environment\nquy tắc chuyển",
+          "",
+          "Aₜ: hành động",
+          "",
+          "Sₜ₊₁, Rₜ₊₁: trạng thái mới, phần thưởng",
+          "Trải nghiệm cập nhật Q hoặc tham số policy"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-1-grid": {
+    "name": "9-1-grid",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "V*=6.200",
+          "V*=8.000",
+          "V*=10.000",
+          "G · V*=0",
+          "V*=4.580",
+          "Chắn",
+          "V*=8.000",
+          "V*=10.000",
+          "V*=3.122",
+          "V*=4.580",
+          "V*=6.200",
+          "V*=8.000",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "S"
+        ],
+        "xlabel": "Cột",
+        "ylabel": "Hàng",
+        "title": "Thưởng: −1 mỗi bước; +10 khi vào G · γ = 0.9",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-2-search": {
+    "name": "9-2-search",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "",
+          "2",
+          "",
+          "2",
+          "",
+          "1",
+          "",
+          "10",
+          "S",
+          "h=4",
+          "A",
+          "h=2",
+          "B",
+          "h=10",
+          "G",
+          "h=0",
+          "S–A–G: 4 giây",
+          "S–B–G: 11 giây"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-2-minimax": {
+    "name": "9-2-minimax",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "MAX\n3",
+          "MIN A\n3",
+          "MIN B\n2",
+          "3",
+          "5",
+          "2",
+          "9",
+          "MAX chọn max(3, 2) = 3; MIN chọn lá nhỏ hơn"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-2-constraints": {
+    "name": "9-2-constraints",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "≠",
+          "≠",
+          "A = 0",
+          "B = 1",
+          "C = 0",
+          "Domain của mỗi biến: {0, 1}",
+          "Không có điều kiện A ≠ C"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 2,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-3-bayes": {
+    "name": "9-3-bayes",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "1000 bài",
+          "Lỗi: 20",
+          "Sạch: 980",
+          "Cảnh báo: 18",
+          "Cảnh báo: 98",
+          "",
+          "",
+          "",
+          "",
+          "2%",
+          "98%",
+          "90%",
+          "10%",
+          "P(lỗi | cảnh báo) = 18 / (18 + 98) ≈ 15.5%"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-3-gradient": {
+    "name": "9-3-gradient",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Features\nx = (1, 2)",
+          "Logit\nz = 0",
+          "Sigmoid\np = 0.5",
+          "Loss\nL = log 2",
+          "",
+          "",
+          "",
+          "",
+          "dL/dz = p − y = −0.5",
+          "∇w L = (−0.5, −1) ; ∂L/∂b = −0.5",
+          "Forward: tính dự đoán · Backward: chia sai số về tham số"
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-3-attention": {
+    "name": "9-3-attention",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.6698",
+          "0.3302"
+        ],
+        "xlabel": "Tổng trọng số mỗi hàng = 1",
+        "ylabel": "Trọng số attention",
+        "title": "Query đầu nhìn 2 key",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      },
+      {
+        "on": true,
+        "texts": [
+          "1.0000",
+          "0.0000"
+        ],
+        "xlabel": "Tổng trọng số mỗi hàng = 1",
+        "ylabel": "",
+        "title": "Query đầu với causal mask",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-2-astar-frontier": {
+    "name": "9-2-astar-frontier",
+    "axes": [
+      {
+        "on": false,
+        "texts": [
+          "Dijkstra (h=0)",
+          "",
+          "",
+          "",
+          "S",
+          "B",
+          "A",
+          "G",
+          "cost = 4",
+          "A* · h tốt",
+          "",
+          "",
+          "S",
+          "A",
+          "G",
+          "cost = 4",
+          "A* · h sai",
+          "",
+          "",
+          "S",
+          "B",
+          "G",
+          "cost = 11",
+          "Thứ tự lấy đỉnh ra khỏi heap",
+          "A* h tốt không mở B; h sai làm đường 11 được lấy ra trước đường 4."
+        ],
+        "xlabel": "",
+        "ylabel": "",
+        "title": "",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  },
+  "9-3-confusion-metrics": {
+    "name": "9-3-confusion-metrics",
+    "axes": [
+      {
+        "on": true,
+        "texts": [
+          "0.90",
+          "0.1552",
+          "0.2647",
+          "0.90",
+          "0.98",
+          "TP=18 · FN=2 · FP=98 · TN=882 · baseline luôn đoán sạch: recall = 0"
+        ],
+        "xlabel": "",
+        "ylabel": "Giá trị metric",
+        "title": "Một accuracy cao chưa nói detector bắt lỗi tốt",
+        "lines": 0,
+        "images": 0,
+        "collections": 0
+      }
+    ]
+  }
+}

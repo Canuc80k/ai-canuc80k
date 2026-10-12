@@ -1,0 +1,26 @@
+{
+ "w": 960,
+ "h": 360,
+ "n": 7,
+ "cols": 2,
+ "dur": 1700,
+ "hold": 1400,
+ "labels": [
+  "ảnh gốc: lệch 0/64 bit so với ảnh gốc (ô cam là bit khác)",
+  "nén JPEG chất lượng 15: lệch 0/64 bit so với ảnh gốc (ô cam là bit khác)",
+  "thu nhỏ còn 25% rồi phóng lại: lệch 0/64 bit so với ảnh gốc (ô cam là bit khác)",
+  "tăng sáng 25%: lệch 2/64 bit so với ảnh gốc (ô cam là bit khác)",
+  "cắt bớt 6% mỗi cạnh: lệch 6/64 bit so với ảnh gốc (ô cam là bit khác)",
+  "lật ngang: lệch 28/64 bit so với ảnh gốc (ô cam là bit khác)",
+  "một ảnh khác: lệch 42/64 bit so với ảnh gốc (ô cam là bit khác)"
+ ],
+ "key": [
+  0,
+  1,
+  5,
+  6
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

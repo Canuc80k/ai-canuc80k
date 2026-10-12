@@ -1,0 +1,411 @@
+
+=== PAGE 1 ===
+2026 USA-North America AI Olympiad
+(USA-NA-AIO) Round 2 Problems
+Day 2
+USA AI Olympiad (USAAIO)
+April 5, 2026
+Problem 3.
+Non Open-ended Problem: Diffusion Mod-
+els (50 Points)
+Submission Requirements
+1. Each contestant must submit a Jupiter Notebook (.ipynb). You should
+put all your solutions on this file.
+2. Your submitted file must follow the format
+Diffusion_LastName_FirstName_SchoolName
+3. Each part’s name/number must appear in a text cell in bold section
+format, such as
+# **Part 1.3.4**
+Page 1 of 14
+
+=== PAGE 2 ===
+In this problem, we study the diffusion model, which is widely used in modern gen-
+erative AI systems. For simplicity, we consider one-dimensional data, so all variables
+take values in R.
+Notation and Preliminaries
+For a random variable x, we write
+x ∼N(µ, σ2)
+to denote that x follows a normal distribution with mean µ and variance σ2.
+The probability density function of a one-dimensional Gaussian distribution is
+f(x) =
+1
+√
+2πσ2 exp
+ 
+−(x −µ)2
+2σ2
+!
+.
+When conditioning on another variable y, we write
+x | y ∼N(µ, σ2)
+to mean that conditional on y, the random variable x follows a normal distribution
+with mean µ and variance σ2.
+Define
+¯αt =
+tY
+s=1
+αs.
+Part 3.1.
+Properties of the Forward Process
+Let 0 < αt < 1 be a sequence of parameters. The forward diffusion process is defined
+by
+xt = √αtxt−1 + √1 −αt ϵt,
+where
+ϵt ∼N(0, 1)
+Page 2 of 14
+
+=== PAGE 3 ===
+and the noise variables ϵ1, ϵ2, . . . are independent.
+The sequence
+x0, x1, x2, . . . , xT
+forms a Markov chain describing the gradual addition of Gaussian noise.
+Part 3.1.1.
+(5 Points)
+Mathematically prove that x2 can be written in the form
+x2 = A2x0 + B2¯ϵ2,
+where
+¯ϵ2 ∼N(0, 1).
+Find explicit expressions for A2 and B2.
+Then, using this expression, conclude that the conditional distribution of x2 given
+x0 is Gaussian, and compute its mean and variance.
+A complete derivation is required.
+Part 3.1.2.
+(5 Points)
+Mathematically prove that for any t ≥1, xt can be written in the form
+xt = Atx0 + Bt¯ϵt,
+where
+¯ϵt ∼N(0, 1).
+Find explicit expressions for At and Bt.
+Then, using this expression, conclude that the conditional distribution of xt given x0
+is Gaussian, and compute its mean and variance.
+Your final answers should be written in terms of ¯αt and x0.
+A complete derivation is required.
+Page 3 of 14
+
+=== PAGE 4 ===
+Part 3.1.3.
+(5 Points)
+We have
+xt | x0 ∼N(µt|0, σ2
+t|0).
+Compute
+lim
+t→∞µt|0
+and
+lim
+t→∞σ2
+t|0.
+Your final answers should be simplified as much as possible. Reasoning is required.
+Part 3.2.
+Kullback–Leibler Divergence
+Part 3.2.1.
+(5 Points)
+Let q and p be two one-dimensional normal distributions defined as
+q ∼N(µq, σ2
+q),
+p ∼N(µp, σ2
+p).
+Compute the Kullback–Leibler divergence
+DKL(q ∥p).
+Your answer should be expressed in terms of µq, µp, σ2
+q, σ2
+p.
+A complete derivation is required.
+Part 3.2.2.
+(5 Points)
+In the diffusion model, the true posterior distribution of the forward process is
+q(xt−1 | xt, x0) ∼N(˜µt(xt, x0), ˜βt),
+while the reverse generative model is
+pθ(xt−1 | xt) ∼N(µθ(xt, t), σ2
+t ).
+Page 4 of 14
+
+=== PAGE 5 ===
+Compute
+DKL
+
+q(xt−1 | xt, x0) ∥pθ(xt−1 | xt)
+
+.
+Your answer should be expressed in terms of
+˜µt(xt, x0), µθ(xt, t), ˜βt, σ2
+t .
+A complete derivation is required.
+Part 3.2.3.
+(10 Points)
+Compute ˜µt(xt, x0) and ˜βt in
+q(xt−1 | xt, x0) ∼N(˜µt(xt, x0), ˜βt).
+Your final answers should be expressed in terms of xt, x0, αt, and ¯αt.
+A complete derivation is required.
+Part 3.2.4.
+(5 Points)
+Recall from Part 3.1.2 that xt can be written in terms of x0 and ¯ϵt.
+First express x0 in terms of xt and ¯ϵt.
+Then substitute this expression into the formula for ˜µt(xt, x0) obtained in the previ-
+ous part, and rewrite it in terms of xt, ¯ϵt, αt, and ¯αt.
+A complete derivation is required.
+Part 3.2.5.
+(5 Points)
+Assume that
+σ2
+t = ˜βt.
+Suppose that at time step t, the model outputs a quantity ϵθ(xt, t), and that the
+reverse-process mean µθ(xt, t) is written in terms of xt and ϵθ(xt, t) in the same form
+as the expression obtained for ˜µt(xt, x0) in the previous part.
+Page 5 of 14
+
+=== PAGE 6 ===
+Using this parameterization, compute
+DKL
+
+q(xt−1 | xt, x0) ∥pθ(xt−1 | xt)
+
+.
+Your final answer should be simplified as much as possible.
+A complete derivation is required.
+Part 3.3.
+Neural Network Parameterization (5 Points)
+In the reverse generative process, we use a deep neural network to predict the noise
+term
+ϵθ(xt, t).
+Suppose the input xt is a tensor with shape
+(B, C, L0, L1, L2, . . . , LM−1),
+where B denotes the batch size, C denotes the number of channels, and L0, L1, . . . , LM−1
+denote the spatial or data dimensions.
+The output ϵθ(xt, t) has the same tensor shape as xt.
+Because the function ϵθ(xt, t) depends on the time step t, explain how to design the
+architecture of the deep neural network so that the information of t is incorporated
+into the model.
+Your answer should describe how the time step t is represented and how this repre-
+sentation is incorporated into the neural network.
+No programming or implementation is required. Provide a conceptual explanation.
+Page 6 of 14
+
+=== PAGE 7 ===
+Problem 4.
+Open-Ended Problem:
+Classifying Geo-
+metric Shapes from RGB Images (40 Points)
+In this problem, you will solve an image classification task involving simple geometric
+shapes.
+Each sample consists of a single RGB image containing exactly one geometric object.
+Your goal is to correctly classify the type of shape present in the image.
+Image Model
+Each image is a color image of size
+112 × 112
+with three color channels (RGB).
+The background of the image is white.
+Each image contains exactly one geometric shape, which can be one of the following:
+• a circle,
+• a triangle,
+• a rectangle.
+The shapes are generated with variability in the following aspects:
+• Position: The shape may appear anywhere in the image.
+• Scale: The size of the shape varies across samples.
+• Rotation: Triangles and rectangles may be rotated by arbitrary angles.
+• Shape geometry: Triangles are not necessarily equilateral.
+• Color: Each shape is rendered in a randomly selected RGB color.
+Page 7 of 14
+
+=== PAGE 8 ===
+Dataset Description
+Training dataset
+The training dataset contains 1,000 samples.
+Each sample indexed from 0 to 199 includes
+• an RGB image,
+• the corresponding shape label.
+Each sample indexed from 200 to 999 has an RGB image only (no ground-
+truth label).
+Test dataset
+The test dataset contains 300 samples.
+For each test sample you are given only the RGB image.
+Prediction Targets
+For each test sample s, you must predict a single label
+ys ∈{0, 1, 2}.
+The label definitions are:
+• 0: circle,
+• 1: triangle,
+• 2: rectangle.
+Evaluation Metric
+The evaluation score is macro F1. Higher scores indicate better
+performance.
+Invalid Predictions
+For a missing or invalid prediction:
+• If the predicted label is missing or not in {0, 1, 2}, it is treated as an incorrect
+prediction.
+Page 8 of 14
+
+=== PAGE 9 ===
+Prohibited Models
+All pretrained models (regardless of whether you use
+their pretrained parameters) are prohibited, such as those imported from
+torchvision.models or HuggingFace. That is, you are required to build
+your own model and train it from scratch. If you violate this rule, you
+will get 0 point in this problem.
+Prohibited Label Imputation/Prediction Method
+For training data samples with
+missing labels, participants are not allowed to inspect the images and manually
+determine their labels using human vision. Participants may either exclude these
+samples from training or impute the missing labels using a coding-based method.
+Manual labeling based on visual inspection is strictly prohibited.
+For the test dataset, participants must not predict labels by visually inspecting the
+images. All predictions must be generated using code.
+Baseline Model
+The baseline solution is to make no predictions at all. Under this
+approach, the resulting score is zero.
+We adopt this trivial baseline to provide a clear reference point. Any meaningful
+model should achieve a score above zero, demonstrating that it has learned useful
+information from the data.
+Final Competition Score
+Let
+• X be your score,
+• Xbaseline be the baseline score,
+• Xbest be the best score among all contestants.
+Your final competition score is computed as
+Scorefinal =
+X −Xbaseline
+Xbest −Xbaseline
+× 100%.
+If
+X < Xbaseline,
+then the final score is 0.
+Page 9 of 14
+
+=== PAGE 10 ===
+Submission Requirements
+Each contestant must submit three files:
+• a prediction file (.csv),
+• a Jupyter notebook with all your code (.ipynb),
+• A report that describes the model you submitted in your .ipynb file, any other
+models you tried but did not adopt, and your thought process for this problem
+(.docx).
+File naming format
+All submitted files must follow the format
+Shape_Classification_LastName_FirstName_SchoolName
+Submission format
+A sample submission CSV file is provided. Your submission must follow exactly the
+same structure as the sample submission file.
+Starter Code
+Please use the following URL:
+https://drive.google.com/file/d/15ISQTWZSSuVzuCRyNibaNAQVsuXH2Ch
+B/view?usp=drive_link
+Page 10 of 14
+
+=== PAGE 11 ===
+Problem 5.
+Open-Ended Problem: Mixed Functions
+Parameter Regression (50 Points)
+Problem Overview
+In this problem, data are organized into groups. Each group
+contains 400 observed data points (x, y).
+The observations in each group are generated from a mixture of four mathematical
+functions:
+• an exponential function
+• a logarithmic function
+• a trigonometric function
+• a linear function
+Each function contributes 100 data points, and Gaussian noise is added to the ob-
+servations.
+Thus, each group corresponds to one set of parameters describing the four functions.
+Your task is to use the 400 observed points in each group to estimate the parameters
+of all four functions.
+Mathematical Models
+Each group contains data generated from the following four
+equations.
+Exponential function
+y = a0ea1x + a2
+Logarithmic function
+y = b0 ln(x) + b1
+Trigonometric function
+y = c0 sin(c1x + c2) + c3
+Linear function
+y = d0x + d1
+Page 11 of 14
+
+=== PAGE 12 ===
+Each group therefore contains 11 parameters:
+a0, a1, a2, b0, b1, c0, c1, c2, c3, d0, d1
+Dataset Description
+Training data
+The training dataset contains 400 groups.
+The file train.csv contains observed data points with columns
+group_id, x, y.
+Each group contains 400 observations.
+The file train_params.csv contains the true parameters for the training groups with
+columns
+group_id, a0, a1, a2, b0, b1, c0, c1, c2, c3, d0, d1.
+Test data
+The test dataset contains 200 groups.
+The file test.csv contains observed data points with columns
+group_id, x, y.
+Each group also contains 400 observations.
+Task
+Using the training data, build a model that maps
+400 observations (x, y) →11 parameters.
+Then apply your model to the test dataset. For each group in test.csv, predict
+a0, a1, a2, b0, b1, c0, c1, c2, c3, d0, d1.
+Page 12 of 14
+
+=== PAGE 13 ===
+Evaluation Metric
+Submissions are evaluated using the Root Mean Squared Error
+(RMSE). The RMSE is computed across all predicted parameters for all groups:
+RMSE =
+v
+u
+u
+t 1
+N
+N
+X
+i=1
+(ˆpi −pi)2.
+Here pi denotes the true parameter value, ˆpi denotes the predicted parameter value,
+and N is the total number of predicted parameters across all groups. Lower RMSE
+indicates better performance.
+Baseline Solution
+A baseline approach proceeds as follows.
+For each group, the 400 observed points (x, y) are first partitioned into four clusters
+using a clustering method such as K-means with k = 4.
+Since the data in each group are generated from four different functions, each cluster
+is expected to correspond approximately to one of the four function types.
+Next, for each cluster, four candidate models are fitted: exponential, logarithmic,
+trigonometric, and linear. For each function type, the model that best fits one of
+the clusters is selected, and the corresponding parameters are used as the predicted
+parameters for that function.
+Combining the parameters from the four fitted functions produces the 11 predicted
+parameters for that group.
+The performance of this baseline solution defines the baseline RMSE, denoted by
+Xbaseline.
+Final Competition Score
+Let X be the RMSE of your submission, Xbaseline be the
+RMSE of the baseline solution, and Xbest be the best RMSE among all submissions.
+The final competition score is computed as
+Scorefinal =
+Xbaseline −X
+Xbaseline −Xbest
+× 100%.
+If X > Xbaseline, then the final score is 0. The best submission receives 100% of the
+total score in this problem.
+Page 13 of 14
+
+=== PAGE 14 ===
+Submission Requirements
+Each contestant must submit three files:
+• a prediction file (.csv),
+• a Jupyter notebook with all your code (.ipynb),
+• A report that describes the model you submitted in your .ipynb file, any other
+models you tried but did not adopt, and your thought process for this problem
+(.docx).
+All submitted files must follow the format
+mix_functions_LastName_FirstName_SchoolName
+Hint
+If you knew which function each data point belongs to, you might consider
+the following to help you estimate parameters that modulate the function:
+scipy.optimize.curve_fit
+This can be found here:
+https://docs.scipy.org/doc/scipy/index.html
+Please use the following URL:
+https://drive.google.com/file/d/134CU_q4kTEYa2umo71ybniEAq5sfHkf
+X/view?usp=drive_link
+Page 14 of 14

@@ -1,0 +1,64 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chia dữ liệu và cross-validation</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 1.3</small><h1>Buổi 1.3: Chia dữ liệu và cross-validation</h1><p>Ảnh cùng con vật vào cả train và valid có công bằng không?</p></section><section class="slide"><small>Buổi 1.3</small><h1>Ý tưởng chính</h1><p>groups_train ∩ groups_valid = ∅</p><ul><li>Train học tham số; validation chọn cấu hình; test đánh giá cuối.</li><li>Stratified giữ tỉ lệ lớp; group split giữ đối tượng độc lập.</li><li>Time split mô phỏng dự đoán tương lai; CV lặp protocol hợp lý qua folds.</li></ul></section><section class="slide"><small>Buổi 1.3</small><h1>Ví dụ</h1><pre>{
+  &quot;train_groups&quot;: [
+    1,
+    1,
+    2
+  ],
+  &quot;valid_groups&quot;: [
+    2,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Đáp án ví dụ</h1><pre>[
+  2
+]</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Code minh họa (1)</h1><pre>import numpy as np
+from sklearn.model_selection import GroupKFold,StratifiedKFold
+
+# Hai ảnh cùng con vật phải thuộc cùng một group khi đánh giá cá thể mới.
+ids = np.arange(8)
+groups = np.array([0,0,1,1,2,2,3,3])
+y = np.array([0,0,1,1,0,0,1,1])
+X = ids.reshape(-1,1)
+print(&quot;Group folds:&quot;)
+for train,valid in GroupKFold(n_splits=2).split(X,y,groups):
+    print(&quot;train&quot;,train.tolist(),&quot;valid&quot;,valid.tolist())
+    assert set(groups[train]).isdisjoint(set(groups[valid]))
+print(&quot;Stratified giữ tỉ lệ lớp, không tự giữ group:&quot;)
+for train,valid in StratifiedKFold(2,shuffle=True,random_state=42).split(X,y):
+    overlap = sorted(set(groups[train]) &amp; set(groups[valid]))</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Code minh họa (2)</h1><pre>    print(&quot;groups trùng:&quot;,overlap)</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Kết quả</h1><pre>Group folds:
+train [0, 1, 4, 5] valid [2, 3, 6, 7]
+train [2, 3, 6, 7] valid [0, 1, 4, 5]
+Stratified giữ tỉ lệ lớp, không tự giữ group:
+groups trùng: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]
+groups trùng: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Điểm dễ nhầm</h1><ul><li>Không shuffle thời gian khi task yêu cầu dự đoán tương lai.</li><li>Lập split cho ảnh cùng người, dữ liệu độc lập và dữ liệu theo ngày.</li></ul></section><section class="slide"><small>Buổi 1.3</small><h1>Bài trên lớp 1</h1><p>Trả các group có mặt trong cả train và valid, sorted tăng.</p><pre>{
+  &quot;train_groups&quot;: [
+    1,
+    1,
+    2
+  ],
+  &quot;valid_groups&quot;: [
+    2,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Bài trên lớp 2</h1><p>Tách indices theo time&lt;=cutoff là train, còn lại valid. Giữ thứ tự input.</p><pre>{
+  &quot;time&quot;: [
+    5,
+    1,
+    8,
+    3
+  ],
+  &quot;cutoff&quot;: 3
+}</pre></section><section class="slide"><small>Buổi 1.3</small><h1>Bài tập về nhà 1</h1><p>Trả các group có mặt trong cả train và valid, sorted tăng.</p><ul><li>Input: train_groups/valid_groups: list integer.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 1.3</small><h1>Bài tập về nhà 2</h1><p>Tách indices theo time&lt;=cutoff là train, còn lại valid. Giữ thứ tự input.</p><ul><li>Input: time: list số; cutoff: số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 1.3</small><h1>Bài tập về nhà 3</h1><p>Không shuffle; chia indices 0..n-1 thành k folds, fold đầu nhận phần dư. Trả list {train, valid}.</p><ul><li>Input: n, k: integers,2&lt;=k&lt;=min(20, n), n&lt;=200. Không shuffle.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 1.3</small><h1>Tổng kết</h1><p>Lập split cho ảnh cùng người, dữ liệu độc lập và dữ liệu theo ngày.</p><ul><li>Slide trang 2,11,14–16; NT 7.3–7.4.</li><li>NT 9.5 dùng KFold; NT 9.6 dùng Stratified CV; làm đúng split và seed đã ghi trong hai đề.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

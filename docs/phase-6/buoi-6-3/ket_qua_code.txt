@@ -1,0 +1,2 @@
+Ref: ['go', 'to', 'school'] Hyp: ['go', 'school']
+Edits: 1 WER: 0.333333

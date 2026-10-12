@@ -1,0 +1,50 @@
+{
+ "w": 960,
+ "h": 520,
+ "n": 15,
+ "cols": 3,
+ "dur": [
+  1500,
+  1000,
+  220,
+  220,
+  220,
+  220,
+  500,
+  1500,
+  240,
+  240,
+  240,
+  500,
+  1300,
+  2200,
+  1000
+ ],
+ "hold": 1200,
+ "labels": [
+  "đầu vào (x₁, x₂): không đường thẳng nào tách hai cặp góc",
+  "đầu vào (x₁, x₂): không đường thẳng nào tách hai cặp góc",
+  "z = xW + b với W toàn 1, b = (0, −1): z₂ = z₁ − 1, mọi điểm dồn lên một đường thẳng",
+  "z = xW + b với W toàn 1, b = (0, −1): z₂ = z₁ − 1, mọi điểm dồn lên một đường thẳng",
+  "z = xW + b với W toàn 1, b = (0, −1): z₂ = z₁ − 1, mọi điểm dồn lên một đường thẳng",
+  "z = xW + b với W toàn 1, b = (0, −1): z₂ = z₁ − 1, mọi điểm dồn lên một đường thẳng",
+  "z = xW + b với W toàn 1, b = (0, −1): z₂ = z₁ − 1, mọi điểm dồn lên một đường thẳng",
+  "z = xW + b với W toàn 1, b = (0, −1): z₂ = z₁ − 1, mọi điểm dồn lên một đường thẳng",
+  "ReLU: tọa độ âm bị ép về 0, nửa dưới gập lên trục ngang",
+  "ReLU: tọa độ âm bị ép về 0, nửa dưới gập lên trục ngang",
+  "ReLU: tọa độ âm bị ép về 0, nửa dưới gập lên trục ngang",
+  "ReLU: tọa độ âm bị ép về 0, nửa dưới gập lên trục ngang",
+  "ReLU: tọa độ âm bị ép về 0, nửa dưới gập lên trục ngang",
+  "h₁ − 2h₂ = 0.5 tách hai lớp: đúng 98% trong 200 điểm",
+  "h₁ − 2h₂ = 0.5 tách hai lớp: đúng 98% trong 200 điểm"
+ ],
+ "key": [
+  0,
+  7,
+  12,
+  14
+ ],
+ "dark": true,
+ "dw": 600,
+ "pcols": 2
+}

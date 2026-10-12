@@ -1,0 +1,31 @@
+{
+ "w": 960,
+ "h": 439,
+ "n": 12,
+ "cols": 3,
+ "dur": 900,
+ "hold": 2600,
+ "labels": [
+  "λ = 0.01: R² test Ridge 0.40, Lasso 0.59; Lasso còn 31/32 hệ số khác 0",
+  "λ = 0.1: R² test Ridge 0.64, Lasso 0.85; Lasso còn 27/32 hệ số khác 0",
+  "λ = 0.3: R² test Ridge 0.78, Lasso 0.90; Lasso còn 20/32 hệ số khác 0",
+  "λ = 1: R² test Ridge 0.84, Lasso 0.92; Lasso còn 16/32 hệ số khác 0",
+  "λ = 2: R² test Ridge 0.84, Lasso 0.93; Lasso còn 8/32 hệ số khác 0",
+  "λ = 4: R² test Ridge 0.83, Lasso 0.92; Lasso còn 6/32 hệ số khác 0",
+  "λ = 8: R² test Ridge 0.79, Lasso 0.89; Lasso còn 2/32 hệ số khác 0",
+  "λ = 12: R² test Ridge 0.74, Lasso 0.84; Lasso còn 2/32 hệ số khác 0",
+  "λ = 20: R² test Ridge 0.67, Lasso 0.66; Lasso còn 2/32 hệ số khác 0",
+  "λ = 30: R² test Ridge 0.60, Lasso 0.44; Lasso còn 1/32 hệ số khác 0",
+  "λ = 50: R² test Ridge 0.50, Lasso -0.01; Lasso còn 0/32 hệ số khác 0",
+  "λ = 80: R² test Ridge 0.40, Lasso -0.01; Lasso còn 0/32 hệ số khác 0"
+ ],
+ "key": [
+  0,
+  4,
+  7,
+  11
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

@@ -1,0 +1,37 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Diffusion — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/5.8?part=1">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 4.10: Diffusion</h1><p>Làm thế nào từ noise quay lại một ảnh?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Forward noising làm input nhiễu theo schedule.</li><li>Network dự đoán noise hoặc đại lượng theo objective; sampling dùng nhiều bước denoise.</li><li>Pipeline ảnh cần checkpoint, scheduler, conditioning và seed rõ.</li></ul><p class="note">xt=sqrt(alpha_bar)×x0+sqrt(1-alpha_bar)×epsilon</p><h2>Code minh họa</h2><pre>import numpy as np
+# Forward noising: x_t=sqrt(alpha_bar)*x0+sqrt(1-alpha_bar)*epsilon.
+x0=np.array([1.,2.]); epsilon=np.array([.5,-1.]); alpha_bar=.25
+xt=np.sqrt(alpha_bar)*x0+np.sqrt(1-alpha_bar)*epsilon
+print(&quot;x0:&quot;,x0.tolist(),&quot;xt:&quot;,xt.round(6).tolist())
+# Nếu predictor dự đoán đúng noise, có thể khôi phục x0 trong fixture này.
+predicted_noise=epsilon.copy()
+reconstructed=(xt-np.sqrt(1-alpha_bar)*predicted_noise)/np.sqrt(alpha_bar)
+print(&quot;Recovered x0:&quot;,reconstructed.round(6).tolist())
+assert np.allclose(reconstructed,x0)
+# Đây không phải cả diffusion model: cần network dự đoán noise và schedule nhiều bước.
+</pre><h3>Kết quả</h3><pre>x0: [1.0, 2.0] xt: [0.933013, 0.133975]
+Recovered x0: [1.0, 2.0]
+</pre><p class="note">Biết noise thật trongfixture không đồng nghĩa biết noise test của model thật.</p><h3>Code bổ sung: <a href="diffusion_demo.py">diffusion_demo.py</a></h3><p>diffusers + local pipeline directory gồm model/scheduler config. Chạy khi có checkpoint/thư viện đã cấp; không đồng nhất với fixture nhỏ ở trên.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>xt=sqrt(alpha_bar)*x0+sqrt(1-alpha_bar)*noise.</p><pre>{
+  &quot;x0&quot;: [
+    1,
+    2
+  ],
+  &quot;noise&quot;: [
+    0.5,
+    -1
+  ],
+  &quot;alpha_bar&quot;: 0.25
+}</pre><details><summary>Đáp án</summary><pre>[
+  0.9330127018922193,
+  0.1339745962155614
+]</pre></details><h3>Bài 2</h3><p>x0=(xt-sqrt(1-alpha_bar)*pred_noise)/sqrt(alpha_bar).</p><pre>{
+  &quot;xt&quot;: [
+    0.5
+  ],
+  &quot;pred_noise&quot;: [
+    0
+  ],
+  &quot;alpha_bar&quot;: 0.25
+}</pre><details><summary>Đáp án</summary><pre>[
+  1.0
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>xt=sqrt(alpha_bar)*x0+sqrt(1-alpha_bar)*noise.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>x0=(xt-sqrt(1-alpha_bar)*pred_noise)/sqrt(alpha_bar).</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Dự đoán noise trong diffusion</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO52 và54.</p><p>AIO52.2 Image Inpainting using DDPM,52.3 trắc nghiệm;54.2 chương trình tô màu ảnh nếu học tiếp.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-4/buoi-4-9/BAI_HOC.html">← GAN</a><a href="../../phase-5/buoi-5-1/BAI_HOC.html">Text processing và baseline NLP →</a></nav></body></html>

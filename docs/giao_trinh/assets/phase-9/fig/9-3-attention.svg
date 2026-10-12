@@ -1,0 +1,244 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="500.556875pt" height="255.822812pt" viewBox="0 0 500.556875 255.822812" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-9-3-attention-figure_1">
+  <g id="fig-9-3-attention-patch_1">
+   <path d="M -0 255.822812 
+L 500.556875 255.822812 
+L 500.556875 0 
+L -0 0 
+L -0 255.822812 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-9-3-attention-axes_1">
+   <g id="fig-9-3-attention-patch_2">
+    <path d="M 46.141875 214.122187 
+L 251.991875 214.122187 
+L 251.991875 24.675312 
+L 46.141875 24.675312 
+L 46.141875 214.122187 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-9-3-attention-matplotlib.axis_1">
+    <g id="fig-9-3-attention-xtick_1">
+     <g id="fig-9-3-attention-line2d_1">
+      <defs>
+       <path id="fig-9-3-attention-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-9-3-attention-m04e37d9cc8" x="86.688087" y="214.122187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="86.688087" y="228.143281" transform="rotate(-0 86.688087 228.143281)">Key 0</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-xtick_2">
+     <g id="fig-9-3-attention-line2d_2">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m04e37d9cc8" x="211.445663" y="214.122187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="211.445663" y="228.143281" transform="rotate(-0 211.445663 228.143281)">Key 1</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-text_3">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="149.066875" y="247.8025" transform="rotate(-0 149.066875 247.8025)">Tổng trọng số mỗi hàng = 1</text>
+    </g>
+   </g>
+   <g id="fig-9-3-attention-matplotlib.axis_2">
+    <g id="fig-9-3-attention-ytick_1">
+     <g id="fig-9-3-attention-line2d_3">
+      <defs>
+       <path id="fig-9-3-attention-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-9-3-attention-m9fce3a8e10" x="46.141875" y="214.122187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="217.708438" transform="rotate(-0 39.141875 217.708438)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-ytick_2">
+     <g id="fig-9-3-attention-line2d_4">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m9fce3a8e10" x="46.141875" y="135.18599" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="138.77224" transform="rotate(-0 39.141875 138.77224)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-ytick_3">
+     <g id="fig-9-3-attention-line2d_5">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m9fce3a8e10" x="46.141875" y="56.249792" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="59.836042" transform="rotate(-0 39.141875 59.836042)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.027344" y="119.39875" transform="rotate(-90 14.027344 119.39875)">Trọng số attention</text>
+    </g>
+   </g>
+   <g id="fig-9-3-attention-patch_3">
+    <path d="M 55.498693 214.122187 
+L 117.877481 214.122187 
+L 117.877481 108.385327 
+L 55.498693 108.385327 
+z
+" clip-path="url(#fig-9-3-attention-p862b1ab368)" style="fill: var(--t-n, #3b6ea8); opacity: 0.9"/>
+   </g>
+   <g id="fig-9-3-attention-patch_4">
+    <path d="M 180.256269 214.122187 
+L 242.635057 214.122187 
+L 242.635057 161.986652 
+L 180.256269 161.986652 
+z
+" clip-path="url(#fig-9-3-attention-p862b1ab368)" style="fill: var(--accent, #c2603e); opacity: 0.9"/>
+   </g>
+   <g id="fig-9-3-attention-patch_5">
+    <path d="M 46.141875 214.122187 
+L 46.141875 24.675312 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-9-3-attention-patch_6">
+    <path d="M 46.141875 214.122187 
+L 251.991875 214.122187 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-9-3-attention-text_8">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="86.688087" y="101.281069" transform="rotate(-0 86.688087 101.281069)">0.6698</text>
+   </g>
+   <g id="fig-9-3-attention-text_9">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="211.445663" y="154.882394" transform="rotate(-0 211.445663 154.882394)">0.3302</text>
+   </g>
+   <g id="fig-9-3-attention-text_10">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="149.066875" y="14.675312" transform="rotate(-0 149.066875 14.675312)">Query đầu nhìn 2 key</text>
+   </g>
+  </g>
+  <g id="fig-9-3-attention-axes_2">
+   <g id="fig-9-3-attention-patch_7">
+    <path d="M 289.666875 214.122187 
+L 495.516875 214.122187 
+L 495.516875 24.675312 
+L 289.666875 24.675312 
+L 289.666875 214.122187 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-9-3-attention-matplotlib.axis_3">
+    <g id="fig-9-3-attention-xtick_3">
+     <g id="fig-9-3-attention-line2d_6">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m04e37d9cc8" x="330.213087" y="214.122187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="330.213087" y="228.143281" transform="rotate(-0 330.213087 228.143281)">Key 0</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-xtick_4">
+     <g id="fig-9-3-attention-line2d_7">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m04e37d9cc8" x="454.970663" y="214.122187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="454.970663" y="228.143281" transform="rotate(-0 454.970663 228.143281)">Key 1</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-text_13">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="392.591875" y="247.8025" transform="rotate(-0 392.591875 247.8025)">Tổng trọng số mỗi hàng = 1</text>
+    </g>
+   </g>
+   <g id="fig-9-3-attention-matplotlib.axis_4">
+    <g id="fig-9-3-attention-ytick_4">
+     <g id="fig-9-3-attention-line2d_8">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m9fce3a8e10" x="289.666875" y="214.122187" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="282.666875" y="217.708438" transform="rotate(-0 282.666875 217.708438)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-ytick_5">
+     <g id="fig-9-3-attention-line2d_9">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m9fce3a8e10" x="289.666875" y="135.18599" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="282.666875" y="138.77224" transform="rotate(-0 282.666875 138.77224)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-9-3-attention-ytick_6">
+     <g id="fig-9-3-attention-line2d_10">
+      <g>
+       <use xlink:href="#fig-9-3-attention-m9fce3a8e10" x="289.666875" y="56.249792" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-9-3-attention-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="282.666875" y="59.836042" transform="rotate(-0 282.666875 59.836042)">1.0</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-9-3-attention-patch_8">
+    <path d="M 299.023693 214.122187 
+L 361.402481 214.122187 
+L 361.402481 56.249792 
+L 299.023693 56.249792 
+z
+" clip-path="url(#fig-9-3-attention-p96e90a07e3)" style="fill: var(--t-n, #3b6ea8); opacity: 0.9"/>
+   </g>
+   <g id="fig-9-3-attention-patch_9">
+    <path d="M 423.781269 214.122187 
+L 486.160057 214.122187 
+L 486.160057 214.122187 
+L 423.781269 214.122187 
+z
+" clip-path="url(#fig-9-3-attention-p96e90a07e3)" style="fill: var(--accent, #c2603e); opacity: 0.9"/>
+   </g>
+   <g id="fig-9-3-attention-patch_10">
+    <path d="M 289.666875 214.122187 
+L 289.666875 24.675312 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-9-3-attention-patch_11">
+    <path d="M 289.666875 214.122187 
+L 495.516875 214.122187 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-9-3-attention-text_17">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="330.213087" y="49.145534" transform="rotate(-0 330.213087 49.145534)">1.0000</text>
+   </g>
+   <g id="fig-9-3-attention-text_18">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="454.970663" y="207.01793" transform="rotate(-0 454.970663 207.01793)">0.0000</text>
+   </g>
+   <g id="fig-9-3-attention-text_19">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="392.591875" y="14.675312" transform="rotate(-0 392.591875 14.675312)">Query đầu với causal mask</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-9-3-attention-p862b1ab368">
+   <rect x="46.141875" y="24.675312" width="205.85" height="189.446875"/>
+  </clipPath>
+  <clipPath id="fig-9-3-attention-p96e90a07e3">
+   <rect x="289.666875" y="24.675312" width="205.85" height="189.446875"/>
+  </clipPath>
+ </defs>
+</svg>

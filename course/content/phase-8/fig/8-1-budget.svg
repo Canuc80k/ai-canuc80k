@@ -1,0 +1,123 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="486.627852pt" height="192.073317pt" viewBox="0 0 486.627852 192.073317" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-8-1-budget-figure_1">
+  <g id="fig-8-1-budget-patch_1">
+   <path d="M 0 192.073317 
+L 486.627852 192.073317 
+L 486.627852 0 
+L 0 0 
+L 0 192.073317 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-8-1-budget-axes_1">
+   <g id="fig-8-1-budget-patch_2">
+    <path d="M 7.989453 149.822692 
+L 474.239453 149.822692 
+L 474.239453 5.04 
+L 7.989453 5.04 
+L 7.989453 149.822692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-8-1-budget-matplotlib.axis_1">
+    <g id="fig-8-1-budget-xtick_1">
+     <g id="fig-8-1-budget-line2d_1">
+      <defs>
+       <path id="fig-8-1-budget-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-1-budget-m04e37d9cc8" x="7.989453" y="149.822692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-budget-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="7.989453" y="163.995192" transform="rotate(-0 7.989453 163.995192)">0</text>
+     </g>
+    </g>
+    <g id="fig-8-1-budget-xtick_2">
+     <g id="fig-8-1-budget-line2d_2">
+      <g>
+       <use xlink:href="#fig-8-1-budget-m04e37d9cc8" x="85.697786" y="149.822692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-budget-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="85.697786" y="163.995192" transform="rotate(-0 85.697786 163.995192)">30</text>
+     </g>
+    </g>
+    <g id="fig-8-1-budget-xtick_3">
+     <g id="fig-8-1-budget-line2d_3">
+      <g>
+       <use xlink:href="#fig-8-1-budget-m04e37d9cc8" x="422.433898" y="149.822692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-budget-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="422.433898" y="163.995192" transform="rotate(-0 422.433898 163.995192)">160</text>
+     </g>
+    </g>
+    <g id="fig-8-1-budget-xtick_4">
+     <g id="fig-8-1-budget-line2d_4">
+      <g>
+       <use xlink:href="#fig-8-1-budget-m04e37d9cc8" x="474.239453" y="149.822692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-budget-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="474.239453" y="163.995192" transform="rotate(-0 474.239453 163.995192)">180</text>
+     </g>
+    </g>
+    <g id="fig-8-1-budget-text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="241.114453" y="184.053005" transform="rotate(-0 241.114453 184.053005)">Phút từ lúc bắt đầu — buổi luyện giả định</text>
+    </g>
+   </g>
+   <g id="fig-8-1-budget-matplotlib.axis_2"/>
+   <g id="fig-8-1-budget-patch_3">
+    <path d="M 7.989453 105.274172 
+L 85.697786 105.274172 
+L 85.697786 38.451391 
+L 7.989453 38.451391 
+z
+" clip-path="url(#fig-8-1-budget-pe80859e2af)" style="fill: #b8892b; opacity: 0.22; stroke: #b8892b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-8-1-budget-patch_4">
+    <path d="M 85.697786 105.274172 
+L 422.433898 105.274172 
+L 422.433898 38.451391 
+L 85.697786 38.451391 
+z
+" clip-path="url(#fig-8-1-budget-pe80859e2af)" style="fill: var(--t-n, #3b6ea8); opacity: 0.22; stroke: var(--t-n, #3b6ea8); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-8-1-budget-patch_5">
+    <path d="M 422.433898 105.274172 
+L 474.239453 105.274172 
+L 474.239453 38.451391 
+L 422.433898 38.451391 
+z
+" clip-path="url(#fig-8-1-budget-pe80859e2af)" style="fill: var(--accent, #c2603e); opacity: 0.22; stroke: var(--accent, #c2603e); stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-8-1-budget-patch_6">
+    <path d="M 7.989453 149.822692 
+L 474.239453 149.822692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-1-budget-text_6">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(32.90487 62.221484)">Đọc +</text>
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(26.86737 74.411984)">baseline</text>
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(27.832878 86.754078)">30 phút</text>
+   </g>
+   <g id="fig-8-1-budget-text_7">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(436.041011 62.137812)">Chạy</text>
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(425.347418 74.495656)">lại + kiểm</text>
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(429.430933 86.83775)">20 phút</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-8-1-budget-pe80859e2af">
+   <rect x="7.989453" y="5.04" width="466.25" height="144.782692"/>
+  </clipPath>
+ </defs>
+</svg>

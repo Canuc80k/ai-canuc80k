@@ -1,0 +1,64 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fine-tuning đầy đủ và PEFT</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 3.10</small><h1>Buổi 3.10: Fine-tuning đầy đủ và PEFT</h1><p>Có cần cập nhật tất cả weights của pretrained model không?</p></section><section class="slide"><small>Buổi 3.10</small><h1>Ý tưởng chính</h1><p>ΔW=B×A, params=r(in+out)</p><ul><li>Full fine-tune cập nhật base; frozen probe chỉ cập nhật head.</li><li>LoRA học update low-rank; adapter phải lưu cùng đúng base revision.</li><li>Đếm trainable params, đo validation và inference cost khi so phương án.</li></ul></section><section class="slide"><small>Buổi 3.10</small><h1>Ví dụ</h1><pre>{
+  &quot;layers&quot;: [
+    {
+      &quot;name&quot;: &quot;base&quot;,
+      &quot;count&quot;: 16,
+      &quot;trainable&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;head&quot;,
+      &quot;count&quot;: 9,
+      &quot;trainable&quot;: true
+    }
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Đáp án ví dụ</h1><pre>9</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Code minh họa (1)</h1><pre>import torch
+from torch import nn
+torch.manual_seed(42)
+
+# Minh họa cơ chế LoRA ở một linear layer nhỏ, không giả là fine-tune LLM.
+d,r = 4,2
+base = nn.Linear(d,d,bias=False)
+for p in base.parameters(): p.requires_grad=False
+A = nn.Parameter(torch.randn(r,d)*.01)
+B = nn.Parameter(torch.zeros(d,r))
+X = torch.ones(3,d)
+output = base(X)+X@A.T@B.T
+loss = output.square().mean(); loss.backward()
+print(&quot;Base params:&quot;,sum(p.numel() for p in base.parameters()))
+print(&quot;Adapter params:&quot;,A.numel()+B.numel())</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Code minh họa (2)</h1><pre>print(&quot;Base grad:&quot;,base.weight.grad)
+print(&quot;B có gradient:&quot;,B.grad is not None)
+assert base.weight.grad is None and A.numel()+B.numel()==16</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Kết quả</h1><pre>Base params: 16
+Adapter params: 16
+Base grad: None
+B có gradient: True</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Điểm dễ nhầm</h1><ul><li>Adapter nhỏ không đồng nghĩa mọi chi phí inference đều nhỏ hơn.</li><li>So base4× 4 và adapterrank2; kiểm base.weight.grad trong demo.</li></ul></section><section class="slide"><small>Buổi 3.10</small><h1>Bài trên lớp 1</h1><p>Tổng số parameters trainable của các layers được đánh trainable=true.</p><pre>{
+  &quot;layers&quot;: [
+    {
+      &quot;name&quot;: &quot;base&quot;,
+      &quot;count&quot;: 16,
+      &quot;trainable&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;head&quot;,
+      &quot;count&quot;: 9,
+      &quot;trainable&quot;: true
+    }
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Bài trên lớp 2</h1><p>Adapter A: r x in, B: out x r; trả adapter params và base params(out*in).</p><pre>{
+  &quot;in&quot;: 4,
+  &quot;out&quot;: 4,
+  &quot;r&quot;: 2
+}</pre></section><section class="slide"><small>Buổi 3.10</small><h1>Bài tập về nhà 1</h1><p>Tổng số parameters trainable của các layers được đánh trainable=true.</p><ul><li>Input: layers: list{name, count&gt;=0, trainable: boolean}.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 3.10</small><h1>Bài tập về nhà 2</h1><p>Adapter A: r x in, B: out x r; trả adapter params và base params(out*in).</p><ul><li>Input: in, out, r: số nguyên dương.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 3.10</small><h1>Bài tập về nhà 3</h1><p>Freeze và adapter nhỏ</p><ul><li>Data: digits</li><li>Metric: Accuracy, labels từ 0 đến 9.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 3.10</small><h1>Tổng kết</h1><p>So base4× 4 và adapterrank2; kiểm base.weight.grad trong demo.</p><ul><li>AIO 58.1–58.2 và59.2.</li><li>AIO 58.3 trắc nghiệm;59.2 PEFT for Multiple-choice QA và59.3 trắc nghiệm.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

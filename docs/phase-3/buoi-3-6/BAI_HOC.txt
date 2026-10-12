@@ -1,0 +1,55 @@
+BUỔI 3.6 — Optimizers, learning rate và initialization
+
+HỌC SINH CẦN HIỂU
+- SGD/mini-batch tính gradient từ batch; momentum giúp ổn định quỹ đạo.
+- Adam/AdamW điều chỉnh update theo thống kê gradient; dùng đúng weight decay.
+- So bằng cùng updates/budget và khởi tạo; chọn LR theo validation.
+
+CÂU HỎI MỞ BÀI
+Hai optimizer chạy cùng epochs có chắc cùng số updates không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+SGD: w_new=w-lr×grad
+
+CẦN PHÂN BIỆT
+Không kết luận optimizer luôn hơn từ một fixture1D.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Update w←w-lr*grad từng phần tử.
+Input:
+{
+  "w": [
+    1,
+    2
+  ],
+  "grad": [
+    2,
+    -1
+  ],
+  "lr": 0.1
+}
+Output để đối chiếu sau khi làm:
+[
+  0.8,
+  2.1
+]
+
+Bài trên lớp 2: Số optimizer steps khi cón_batches, accumulation; step cuối vẫn thực hiện kể cả chưa đủ.
+Input:
+{
+  "n_batches": 10,
+  "accumulation": 4
+}
+Output để đối chiếu sau khi làm:
+3
+
+BÀI VỀ NHÀ
+- BTVN 1: Update w←w-lr*grad từng phần tử.; xem BTVN_01.txt.
+- BTVN 2: Số optimizer steps khi cón_batches, accumulation; step cuối vẫn thực hiện kể cả chưa đủ.; xem BTVN_02.txt.
+- BTVN 3: So optimizers bằng cùng budget; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 31.1; KHTN 3.2,9.
+AIO 31.2 “Bài Tập và Gợi Ý”;31.1/31.2 có lý thuyết và bài thực hành optimizer/initializer.

@@ -1,0 +1,196 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="399.6pt" height="241.92pt" viewBox="0 0 399.6 241.92" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 241.92 
+L 399.6 241.92 
+L 399.6 0 
+L 0 0 
+L 0 241.92 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 18.04824 84.3696 
+L 93.93624 84.3696 
+Q 98.48952 84.3696 98.48952 79.9344 
+L 98.48952 45.5616 
+Q 98.48952 41.1264 93.93624 41.1264 
+L 18.04824 41.1264 
+Q 13.49496 41.1264 13.49496 45.5616 
+L 13.49496 79.9344 
+Q 13.49496 84.3696 18.04824 84.3696 
+L 18.04824 84.3696 
+z
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: #c2603e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.927641 85.25154 
+Q 127.896155 103.773609 196.405581 121.909429 
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 191.373086 117.473891 
+L 196.405581 121.909429 
+L 189.837654 123.274102 
+z
+" clip-path="url(#pcd5af56514)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 111.76992 84.3696 
+L 187.65792 84.3696 
+Q 192.2112 84.3696 192.2112 79.9344 
+L 192.2112 45.5616 
+Q 192.2112 41.1264 187.65792 41.1264 
+L 111.76992 41.1264 
+Q 107.21664 41.1264 107.21664 45.5616 
+L 107.21664 79.9344 
+Q 107.21664 84.3696 111.76992 84.3696 
+L 111.76992 84.3696 
+z
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: #3b6ea8; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 151.306623 85.949762 
+Q 174.758605 103.77485 197.008942 120.686608 
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 194.047476 114.667495 
+L 197.008942 120.686608 
+L 190.416772 119.444313 
+z
+" clip-path="url(#pcd5af56514)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 205.4916 84.3696 
+L 281.3796 84.3696 
+Q 285.93288 84.3696 285.93288 79.9344 
+L 285.93288 45.5616 
+Q 285.93288 41.1264 281.3796 41.1264 
+L 205.4916 41.1264 
+Q 200.93832 41.1264 200.93832 45.5616 
+L 200.93832 79.9344 
+Q 200.93832 84.3696 205.4916 84.3696 
+L 205.4916 84.3696 
+z
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: #b8892b; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 241.930832 86.051997 
+Q 221.62014 103.771558 202.446797 120.498868 
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 208.940236 118.815049 
+L 202.446797 120.498868 
+L 204.995806 114.293825 
+z
+" clip-path="url(#pcd5af56514)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 299.21328 84.3696 
+L 375.10128 84.3696 
+Q 379.65456 84.3696 379.65456 79.9344 
+L 379.65456 45.5616 
+Q 379.65456 41.1264 375.10128 41.1264 
+L 299.21328 41.1264 
+Q 294.66 41.1264 294.66 45.5616 
+L 294.66 79.9344 
+Q 294.66 84.3696 299.21328 84.3696 
+L 299.21328 84.3696 
+z
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: #3b6ea8; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 335.233239 85.272451 
+Q 268.481697 103.772753 203.184671 121.869933 
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 209.767963 123.158451 
+L 203.184671 121.869933 
+L 208.165461 117.376411 
+z
+" clip-path="url(#pcd5af56514)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 131.88024 163.8336 
+L 267.71976 163.8336 
+Q 272.27304 163.8336 272.27304 159.3984 
+L 272.27304 129.8304 
+Q 272.27304 125.3952 267.71976 125.3952 
+L 131.88024 125.3952 
+Q 127.32696 125.3952 127.32696 129.8304 
+L 127.32696 159.3984 
+Q 127.32696 163.8336 131.88024 163.8336 
+L 131.88024 163.8336 
+z
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: #c2603e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 199.8 166.205275 
+Q 199.8 177.3264 199.8 186.770474 
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 202.8 180.770474 
+L 199.8 186.770474 
+L 196.8 180.770474 
+z
+" clip-path="url(#pcd5af56514)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 88.24464 223.7088 
+L 311.35536 223.7088 
+Q 315.90864 223.7088 315.90864 219.2736 
+L 315.90864 197.0976 
+Q 315.90864 192.6624 311.35536 192.6624 
+L 88.24464 192.6624 
+Q 83.69136 192.6624 83.69136 197.0976 
+L 83.69136 219.2736 
+Q 83.69136 223.7088 88.24464 223.7088 
+L 88.24464 223.7088 
+z
+" clip-path="url(#pcd5af56514)" style="fill: none; stroke: #3b6ea8; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(30.58599 59.727281)">Trọng số</text>
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(36.688178 74.380594)">đã học</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(124.63392 58.769906)">Cấu hình</text>
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(125.040795 73.059844)">kiến trúc</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(214.630913 58.736062)">Processor</text>
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(220.817475 73.041187)">đầu vào</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(306.94353 58.865437)">Bảng nhãn</text>
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(319.25103 73.311187)">đầu ra</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(176.080313 140.767275)">gói local</text>
+    <text style="font-size: 12px; font-family: 'Inter'; fill: currentColor" transform="translate(156.48 155.14215)">revision + hash</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'Inter'; text-anchor: middle; fill: currentColor" x="199.8" y="212.4306" transform="rotate(-0 199.8 212.4306)">cùng hợp đồng → tái tạo logits → nhãn</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Inter'; text-anchor: middle; fill: currentColor" x="199.8" y="24.1248" transform="rotate(-0 199.8 24.1248)">bốn nhánh phải cùng revision</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcd5af56514">
+   <rect x="10.08" y="10.08" width="379.44" height="221.76"/>
+  </clipPath>
+ </defs>
+</svg>

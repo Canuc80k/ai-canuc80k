@@ -1,0 +1,79 @@
+BUỔI 4.6 — Image segmentation và U-Net
+
+HỌC SINH CẦN HIỂU
+- Segmentation dự đoán label map; masks/ignore-index cần mapping rõ.
+- U-Net encoder/decoder vàskip giữ thông tin không gian nhiều scales.
+- Dice/IoU hoặc weighted pixel score phụ thuộc đúng đề.
+
+CÂU HỎI MỞ BÀI
+Class một ảnh khác class cho từng pixel thế nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Dice=2×intersection/(size_true+size_pred)
+
+CẦN PHÂN BIỆT
+Radar Practice vàRadar individual có labels/weights khác, không tái dùng scorer.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Binary IoU/Dice; cả true, predrỗng→1 cho cả 2.
+Input:
+{
+  "true": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "pred": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "iou": 0.6666666666666666,
+  "dice": 0.8
+}
+
+Bài trên lớp 2: Score=tổng trọng số của pixel dự đoán đúng/tổng trọng số ground truth; trọng số background vs object.
+Input:
+{
+  "true": [
+    -1,
+    0,
+    1,
+    -1
+  ],
+  "pred": [
+    -1,
+    0,
+    0,
+    -1
+  ],
+  "bg": -1,
+  "w_bg": 1,
+  "w_obj": 50
+}
+Output để đối chiếu sau khi làm:
+0.5098039215686274
+
+BÀI VỀ NHÀ
+- BTVN 1: Binary IoU/Dice; cả true, predrỗng→1 cho cả 2.; xem BTVN_01.txt.
+- BTVN 2: Score=tổng trọng số của pixel dự đoán đúng/tổng trọng số ground truth; trọng số background vs object.; xem BTVN_02.txt.
+- BTVN 3: Mask chữ số; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO40; IOAI Radar/Weather baseline.
+AIO40.2 phần segmentation; ioai25radarpre baseline.ipynb và bài LQDOJ cùng tên.

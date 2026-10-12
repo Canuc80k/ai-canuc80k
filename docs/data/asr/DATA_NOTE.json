@@ -1,0 +1,41 @@
+{
+  "status": "DATA_FETCHED",
+  "family": "asr",
+  "kind": "asr",
+  "source": "https://huggingface.co/datasets/hf-internal-testing/librispeech_asr_dummy",
+  "original_source": "LibriSpeech/OpenSLR12",
+  "raw_sha256": "4e69a06fa5edc90921e5e7e39a7084881f8b3ed9c805c574f4f39c6fde27c603",
+  "samples": {
+    "train": 5,
+    "valid": 5,
+    "test": 5
+  },
+  "output_header": [
+    "id",
+    "text"
+  ],
+  "metric": "WER: lowercase, remove punctuation, whitespace split; score=max(0,1-WER). Public teaching subset, not an unseen official benchmark.",
+  "note": "15 recordings selected by smallest compressed file size, for a teaching subset; not an unseen official benchmark.",
+  "sha256": {
+    "sample_submission.csv": "0a044a0991f51451b2b806930e607caa558e8407494751e5b74f4de6993a2459",
+    "test.csv": "e1cb37addf35dfe1e87bb3ff36edbe4c52a367908b047879065af1e7ad7a34d1",
+    "train.csv": "79e6c94d942ceea629a79f23d0ec6e89c920a9e0b75c2fbbfbe0fc78446da25f",
+    "valid.csv": "9f8e67ddce7f50ad1cd3f381de7b0e684e6cb7971996935dd7efb7b39147e9b4",
+    "valid_answers.json": "c14f166ecff0e66d2cd79b1988029ca89b447b7e97976aade1fc16932295f3be",
+    "audio\\test_0000.flac": "765c97d18eb1aa76ab4223359dd403ab8e606d9dc195c0b82f4b6b40b5b91a14",
+    "audio\\test_0001.flac": "84bd6220942701e8973dc0e8a2c8a7ac5f794a15d1a884994e95c5e3b8efa96e",
+    "audio\\test_0002.flac": "52e72bda6f458ffea420adc0044fd93392d16d3f0393f03c71888b773e9ad02c",
+    "audio\\test_0003.flac": "c19e0c3de6100627ffbca103dc5d8502dc6d74a3e1f06e00d5e6dc6ffbb25d94",
+    "audio\\test_0004.flac": "54aac47c491c01ca59b3be862b9f53cf4fd93862e1363b02471d910f76e3b4ac",
+    "audio\\train_0000.flac": "ff87e7b407cf5355d492e618dbc87e9800a688ccb950ab1ac693d64a1bcfb80f",
+    "audio\\train_0001.flac": "2de6e800e9a973de275a2c57ef2a8ccf0e25655f0158a0a551bdc0e944607ebc",
+    "audio\\train_0002.flac": "659d4e11b195fa5e15dcb1fa860d703cbb9e1a57fa307d4ac6a6093435cf49cb",
+    "audio\\train_0003.flac": "d23fc0e9c9ccb35f6ec9223954c921e1c9daa0cc9d8e8ad10b3b9cb4b14b6617",
+    "audio\\train_0004.flac": "5e7e3b96d975c74c952209a4d3a0731ec57019689685e1cf5f3c73a76f6f8a36",
+    "audio\\valid_0000.flac": "2da8a3d5a915be58a29cae9520c94e96395619f1dd3a0968486c9d5154b77b12",
+    "audio\\valid_0001.flac": "e4ef839a12f5e01279f449fbec8decd9917a2a01516a8a67635c4cde526caee5",
+    "audio\\valid_0002.flac": "db055fdf17b99b4e68f2e2bdbd01a5a8388321df44e0fcb1600e6b4387466fc3",
+    "audio\\valid_0003.flac": "0d3573eac7e74ab8c05a5743b050bd6bda2e6f73629bc7ec338394206a29e7f2",
+    "audio\\valid_0004.flac": "cce5a7959d35cd34310e6868853d7d755b5aa13caa9579ddbaf0e5b28ffd29fd"
+  }
+}

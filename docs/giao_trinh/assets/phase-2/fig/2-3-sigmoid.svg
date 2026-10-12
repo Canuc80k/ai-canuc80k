@@ -1,0 +1,260 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="457.625781pt" height="228.025pt" viewBox="0 0 457.625781 228.025" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-3-sigmoid-figure_1">
+  <g id="fig-2-3-sigmoid-patch_1">
+   <path d="M 0 228.025 
+L 457.625781 228.025 
+L 457.625781 0 
+L 0 0 
+L 0 228.025 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-3-sigmoid-axes_1">
+   <g id="fig-2-3-sigmoid-patch_2">
+    <path d="M 45.514531 187.28 
+L 452.585781 187.28 
+L 452.585781 5.04 
+L 45.514531 5.04 
+L 45.514531 187.28 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-3-sigmoid-matplotlib.axis_1">
+    <g id="fig-2-3-sigmoid-xtick_1">
+     <g id="fig-2-3-sigmoid-line2d_1">
+      <defs>
+       <path id="fig-2-3-sigmoid-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="74.591049" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="74.591049" y="201.4525" transform="rotate(-0 74.591049 201.4525)">−6</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-xtick_2">
+     <g id="fig-2-3-sigmoid-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="132.744085" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="132.744085" y="201.4525" transform="rotate(-0 132.744085 201.4525)">−4</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-xtick_3">
+     <g id="fig-2-3-sigmoid-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="190.897121" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="190.897121" y="201.4525" transform="rotate(-0 190.897121 201.4525)">−2</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-xtick_4">
+     <g id="fig-2-3-sigmoid-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="249.050156" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="249.050156" y="201.4525" transform="rotate(-0 249.050156 201.4525)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-xtick_5">
+     <g id="fig-2-3-sigmoid-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="307.203192" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="307.203192" y="201.4525" transform="rotate(-0 307.203192 201.4525)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-xtick_6">
+     <g id="fig-2-3-sigmoid-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="365.356228" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="365.356228" y="201.4525" transform="rotate(-0 365.356228 201.4525)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-xtick_7">
+     <g id="fig-2-3-sigmoid-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m04e37d9cc8" x="423.509263" y="187.28" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="423.509263" y="201.4525" transform="rotate(-0 423.509263 201.4525)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-text_8">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="249.050156" y="220.18" transform="rotate(-0 249.050156 220.18)">z</text>
+    </g>
+   </g>
+   <g id="fig-2-3-sigmoid-matplotlib.axis_2">
+    <g id="fig-2-3-sigmoid-ytick_1">
+     <g id="fig-2-3-sigmoid-line2d_8">
+      <defs>
+       <path id="fig-2-3-sigmoid-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m9fce3a8e10" x="45.514531" y="180.53037" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="184.11662" transform="rotate(-0 38.514531 184.11662)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-ytick_2">
+     <g id="fig-2-3-sigmoid-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m9fce3a8e10" x="45.514531" y="96.16" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="99.74625" transform="rotate(-0 38.514531 99.74625)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-ytick_3">
+     <g id="fig-2-3-sigmoid-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-3-sigmoid-m9fce3a8e10" x="45.514531" y="11.78963" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-sigmoid-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.514531" y="15.37588" transform="rotate(-0 38.514531 15.37588)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-sigmoid-text_12">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.4" y="96.16" transform="rotate(-90 13.4 96.16)">σ(z)</text>
+    </g>
+   </g>
+   <g id="fig-2-3-sigmoid-line2d_11">
+    <path d="M 45.514531 180.376639 
+L 74.080935 180.120377 
+L 93.46528 179.733646 
+L 107.748482 179.232154 
+L 118.970997 178.627547 
+L 128.153056 177.931831 
+L 136.314885 177.106837 
+L 143.456486 176.178288 
+L 149.577858 175.190746 
+L 155.69923 173.988036 
+L 160.800374 172.790964 
+L 165.901517 171.387207 
+L 171.002661 169.745895 
+L 176.103804 167.833386 
+L 180.184719 166.084026 
+L 184.265634 164.118993 
+L 188.346549 161.918911 
+L 192.427464 159.464677 
+L 196.508378 156.7381 
+L 200.589293 153.72268 
+L 204.670208 150.404517 
+L 208.751123 146.773327 
+L 212.832038 142.823515 
+L 216.912952 138.555261 
+L 220.993867 133.975517 
+L 225.074782 129.098824 
+L 230.175925 122.620702 
+L 235.277069 115.77702 
+L 241.398441 107.197739 
+L 253.641185 89.512985 
+L 261.803015 77.948731 
+L 267.924387 69.699298 
+L 273.025531 63.221176 
+L 277.106445 58.344483 
+L 281.18736 53.764739 
+L 285.268275 49.496485 
+L 289.34919 45.546673 
+L 293.430105 41.915483 
+L 297.511019 38.59732 
+L 301.591934 35.5819 
+L 305.672849 32.855323 
+L 309.753764 30.401089 
+L 313.834678 28.201007 
+L 317.915593 26.235974 
+L 321.996508 24.486614 
+L 327.097652 22.574105 
+L 332.198795 20.932793 
+L 337.299939 19.529036 
+L 342.401082 18.331964 
+L 348.522454 17.129254 
+L 354.643826 16.141712 
+L 361.785427 15.213163 
+L 369.947257 14.388169 
+L 379.129315 13.692453 
+L 390.351831 13.087846 
+L 403.614804 12.614666 
+L 419.938463 12.261228 
+L 442.383494 12.007893 
+L 452.585781 11.943361 
+L 452.585781 11.943361 
+" clip-path="url(#fig-2-3-sigmoid-p6e115dcef0)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-sigmoid-line2d_12">
+    <path d="M 45.514531 96.16 
+L 452.585781 96.16 
+" clip-path="url(#fig-2-3-sigmoid-p6e115dcef0)" style="fill: none; stroke-dasharray: 2.59,1.12; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.7"/>
+   </g>
+   <g id="fig-2-3-sigmoid-line2d_13">
+    <path d="M 249.050156 187.28 
+L 249.050156 5.04 
+" clip-path="url(#fig-2-3-sigmoid-p6e115dcef0)" style="fill: none; stroke-dasharray: 2.59,1.12; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.7"/>
+   </g>
+   <g id="fig-2-3-sigmoid-patch_3">
+    <path d="M 45.514531 187.28 
+L 45.514531 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-sigmoid-patch_4">
+    <path d="M 45.514531 187.28 
+L 452.585781 187.28 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-sigmoid-PathCollection_1">
+    <defs>
+     <path id="fig-2-3-sigmoid-m802164e3ce" d="M 0 3.24037 
+C 0.859356 3.24037 1.683631 2.898944 2.291288 2.291288 
+C 2.898944 1.683631 3.24037 0.859356 3.24037 0 
+C 3.24037 -0.859356 2.898944 -1.683631 2.291288 -2.291288 
+C 1.683631 -2.898944 0.859356 -3.24037 0 -3.24037 
+C -0.859356 -3.24037 -1.683631 -2.898944 -2.291288 -2.291288 
+C -2.898944 -1.683631 -3.24037 -0.859356 -3.24037 0 
+C -3.24037 0.859356 -2.898944 1.683631 -2.291288 2.291288 
+C -1.683631 2.898944 -0.859356 3.24037 0 3.24037 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-2-3-sigmoid-p6e115dcef0)">
+     <use xlink:href="#fig-2-3-sigmoid-m802164e3ce" x="249.050156" y="96.16" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-2-3-sigmoid-text_13">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="51.329835" y="167.031111" transform="rotate(-0 51.329835 167.031111)">z âm: p gần 0</text>
+   </g>
+   <g id="fig-2-3-sigmoid-text_14">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="446.770478" y="25.288889" transform="rotate(-0 446.770478 25.288889)">z dương: p gần 1</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-3-sigmoid-p6e115dcef0">
+   <rect x="45.514531" y="5.04" width="407.07125" height="182.24"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 5.2 — Word embeddings và sentence embeddings
+
+TRÌNH TỰ DẠY
+1. Hỏi: Padding có nên kéo mean sentence embedding về một hướng?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Embeddings có thểstatic hoặc contextual; cosine dùng normalize hợp lý.
+- Pooling chỉ tính tokens hợp lệ; giữ thứ tự khi task cần composition.
+- Ranking metrics khácaccuracy class; Chameleon cóHits/nDCG riêng.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Không gọi embedding fixture là output sentence-transformer thật.
+
+CÂU HỎI CHỐT
+So meanmasked[.5,.5] với mean tính token padding[9,9].
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

@@ -1,0 +1,178 @@
+/* Trình chiếu slide.html — dùng chung cho 55 buổi */
+@font-face { font-family: "Lora"; src: url("fonts/lora.woff") format("woff"); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: "Lora"; src: url("fonts/inter-400.woff") format("woff"); font-weight: 400 700; unicode-range: U+2190-21FF; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-400.woff") format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("fonts/inter-600.woff") format("woff"); font-weight: 500 700; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono.woff") format("woff"); font-weight: 400; font-display: swap; }
+
+:root {
+  color-scheme: light;
+  --page: #f4f2ea; --paper: #fffdf8; --line: #e6e2d6; --text: #1f1e1c; --text-2: #3d3c38; --muted: #807d75;
+  --accent: #c2603e; --code-bg: #f3f0e7; --code-text: #2b2a27; --btn: #ffffff; --btn-hover: #efece3;
+  --ok: #5d7a4c; --t-k: #9a4528; --t-s: #4d7337; --t-n: #2f6587; --t-c: #8d8a80;
+  --shadow: 0 1px 2px rgba(31, 30, 28, .06), 0 10px 40px rgba(31, 30, 28, .08);
+  /* Lượt 8: biến màu của hình SVG dùng chung với trang bài (thiếu thì hình tối lấy màu dự phòng của nền sáng). */
+  --surface: #ffffff; --line-strong: #d3cebf; --faint: #a19e94; --code-head: #ebe7dc; --accent-soft: #f5e6dd;
+  --serif: "Lora", Georgia, serif; --sans: "Inter", "Segoe UI", sans-serif; --mono: "JetBrains Mono", Consolas, monospace;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #1f1e1d; --paper: #2b2a28; --line: #3a3935; --text: #f2f0e9; --text-2: #d8d5cb; --muted: #a5a299;
+  --accent: #d97757; --code-bg: #1f1e1d; --code-text: #e6e3da; --btn: #30302e; --btn-hover: #393834;
+  --ok: #9dba86; --t-k: #eb9a7e; --t-s: #a9c48f; --t-n: #8fbad8; --t-c: #8a877e;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 40px rgba(0, 0, 0, .35);
+  --surface: #30302e; --line-strong: #4a4944; --faint: #7c7970; --code-head: #2a2927; --accent-soft: rgba(217, 119, 87, .14);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #1f1e1d; --paper: #2b2a28; --line: #3a3935; --text: #f2f0e9; --text-2: #d8d5cb; --muted: #a5a299;
+    --accent: #d97757; --code-bg: #1f1e1d; --code-text: #e6e3da; --btn: #30302e; --btn-hover: #393834;
+  --ok: #9dba86; --t-k: #eb9a7e; --t-s: #a9c48f; --t-n: #8fbad8; --t-c: #8a877e;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 40px rgba(0, 0, 0, .35);
+    --surface: #30302e; --line-strong: #4a4944; --faint: #7c7970; --code-head: #2a2927; --accent-soft: rgba(217, 119, 87, .14);
+  }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; display: grid; grid-template-rows: 1fr auto; justify-items: center; align-items: center; gap: 14px; padding: 20px 20px 14px; background: var(--page); color: var(--text); font-family: "Inter", "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; }
+.deck { position: relative; width: min(100%, calc((100vh - 86px) * 16 / 9)); aspect-ratio: 16 / 9; container-type: inline-size; }
+.slide { position: absolute; inset: 0; display: none; flex-direction: column; padding: 5.4cqw 6.4cqw 5cqw; background: var(--paper); border: 1px solid var(--line); border-radius: 1.4cqw; box-shadow: var(--shadow); overflow: auto; font-size: 2.05cqw; line-height: 1.55; color: var(--text-2); scrollbar-width: thin; }
+.slide.active { display: flex; }
+.slide small { order: -1; margin-bottom: 1.6cqw; font-size: 1.25cqw; font-weight: 500; letter-spacing: .02em; color: var(--muted); }
+.slide h1 { margin: 0 0 2.2cqw; font: 500 3.7cqw/1.2 "Lora", Cambria, Georgia, serif; letter-spacing: -.01em; color: var(--text); text-wrap: balance; }
+.slide p { margin: 0 0 1.4cqw; max-width: 60ch; text-wrap: pretty; }
+.slide ul { margin: 0; padding-left: 1.2em; }
+.slide li { margin: 0 0 1cqw; padding-left: .2em; }
+.slide li::marker { color: var(--accent); }
+.slide pre { margin: .4cqw 0 0; padding: 1.6cqw 2cqw; border-radius: .9cqw; background: var(--code-bg); color: var(--code-text); font: var(--pre-size, 1.45cqw)/1.6 "JetBrains Mono", "Cascadia Mono", Consolas, monospace; white-space: pre-wrap; word-break: break-word; overflow: auto; }
+.slide img { max-width: 100%; max-height: 60%; object-fit: contain; border-radius: .8cqw; }
+.slide:first-of-type { justify-content: center; }
+.slide:first-of-type small { display: none; }
+.slide:first-of-type h1 { font-size: 5cqw; max-width: 18ch; }
+.slide:first-of-type p { font: italic 2.4cqw/1.5 "Lora", Cambria, Georgia, serif; color: var(--text-2); padding-left: 1.8cqw; border-left: .25cqw solid var(--accent); }
+.bar { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); }
+.bar button { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 9px; background: var(--btn); color: var(--text); font: 16px/1 system-ui, sans-serif; cursor: pointer; }
+.bar button:hover:not(:disabled) { background: var(--btn-hover); }
+.bar button:disabled { opacity: .4; cursor: default; }
+.count { min-width: 64px; text-align: center; font-variant-numeric: tabular-nums; }
+.progress { position: absolute; left: 1.4cqw; right: 1.4cqw; bottom: 0; height: 2px; border-radius: 2px; background: transparent; overflow: hidden; pointer-events: none; z-index: 2; }
+.progress i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+:fullscreen body, body:fullscreen { padding: 0; }
+@media (max-width: 560px) { body { padding: 10px 10px 8px; gap: 8px; } }
+@media print {
+  @page { size: 16in 9in; margin: 0; }
+  body { display: block; padding: 0; overflow: visible; background: #fff; }
+  .deck { width: 16in; aspect-ratio: auto; container-type: inline-size; }
+  .slide { position: relative; display: flex; width: 16in; height: 9in; border: 0; border-radius: 0; box-shadow: none; break-after: page; }
+  .bar, .progress { display: none; }
+}
+
+/* ===== Bộ slide mới (bài lý thuyết) ===== */
+.deck.v2 .slide { padding: 6.2cqw 6cqw 4.2cqw; font-size: calc(2.1cqw * var(--fs, 1)); line-height: 1.5; justify-content: flex-start; overflow: hidden; }
+.deck.v2 .s-head { position: absolute; top: 2.4cqw; left: 6cqw; right: 6cqw; display: flex; justify-content: space-between; align-items: baseline; font: 600 1.05cqw/1 "Inter", system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.deck.v2 .s-num { font-weight: 500; letter-spacing: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
+.deck.v2 .s-heading { margin: 0 0 2.2cqw; font: 500 calc(3.1cqw * var(--fs, 1))/1.2 "Lora", Cambria, Georgia, serif; letter-spacing: -.01em; color: var(--text); text-wrap: balance; }
+.deck.v2 .s-body { display: grid; gap: 4cqw; flex: 1; min-height: 0; align-content: center; }
+.deck.v2 .s-plain { font-size: calc(2.35cqw * var(--fs, 1)); }
+.deck.v2 .s-plain .s-col { max-width: 78cqw; }
+.deck.v2 .s-split .s-body { grid-template-columns: 1fr 1fr; align-items: center; align-content: center; }
+.deck.v2 .s-col > :first-child { margin-top: 0; }
+.deck.v2 .s-col > :last-child { margin-bottom: 0; }
+.deck.v2 p { margin: 0 0 1.3cqw; max-width: none; }
+.deck.v2 ul, .deck.v2 ol { margin: 0 0 1.3cqw; padding-left: 1.2em; }
+.deck.v2 li { margin: 0 0 1.5cqw; }
+.deck.v2 strong { font-weight: 600; color: var(--text); }
+.deck.v2 code { font: .86em "JetBrains Mono", Consolas, monospace; }
+.deck.v2 .katex { font-size: 1.08em; }
+.deck.v2 .katex-display { margin: 1.4cqw 0 1.6cqw; }
+.deck.v2 table { width: 100%; border-collapse: collapse; margin: 1.2cqw 0 1.4cqw; font: calc(1.8cqw * var(--fs, 1))/1.45 "Inter", system-ui, sans-serif; }
+.deck.v2 th { text-align: left; font-weight: 500; color: var(--muted); border-bottom: 1px solid var(--line); padding: .7cqw 1.2cqw .7cqw 0; }
+.deck.v2 td { border-bottom: 1px solid var(--line); padding: .8cqw 1.2cqw .8cqw 0; color: var(--text); }
+.deck.v2 tr:last-child td { border-bottom: 0; }
+.deck.v2 pre { margin: 0; white-space: pre; overflow: hidden; }
+.deck.v2 pre.code { padding: 1.6cqw 2cqw; border-radius: .9cqw .9cqw 0 0; font-size: calc(1.42cqw * var(--fs, 1)); line-height: 1.6; }
+.deck.v2 pre.code:last-child { border-radius: .9cqw; }
+.deck.v2 pre.out { position: relative; padding: 2.8cqw 2cqw 1.4cqw; border: 1px solid var(--line); border-top: 0; border-radius: 0 0 .9cqw .9cqw; background: transparent; color: var(--text-2); font: calc(1.32cqw * var(--fs, 1))/1.55 "JetBrains Mono", Consolas, monospace; }
+.deck.v2 .out-label { position: absolute; top: .9cqw; left: 2cqw; font: 600 .9cqw/1 "Inter", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.deck.v2 .t-k { color: var(--t-k); } .deck.v2 .t-s { color: var(--t-s); } .deck.v2 .t-n { color: var(--t-n); } .deck.v2 .t-c { color: var(--t-c); }
+.deck.v2 .fig { margin: 0; text-align: center; }
+.deck.v2 .fig svg { display: block; width: 100%; height: auto; max-height: calc(31cqw * var(--fs, 1)); margin: 0 auto; color: var(--text); }
+.deck.v2 .fig svg * { stroke-linejoin: round; stroke-linecap: butt; }
+.deck.v2 .fig figcaption { margin-top: 1cqw; font: calc(1.2cqw * var(--fs, 1))/1.45 "Inter", sans-serif; color: var(--muted); }
+.deck.v2 .s-figure .fig svg { max-height: calc(34cqw * var(--fs, 1)); width: 100%; }
+.deck.v2 .s-figure .fig + * { margin-top: 2.2cqw; }  /* lượt 8: chữ dưới hình không dính caption */
+.deck.v2 .s-center .s-body { align-content: center; justify-items: center; text-align: center; }
+.deck.v2 .s-center { font-size: calc(2.4cqw * var(--fs, 1)); }
+.deck.v2 .s-center .s-col { max-width: 76cqw; }
+.deck.v2 .s-center .katex-display .katex { font-size: 1.3em; }
+.deck.v2 .callout { margin: 0; padding: 2cqw 2.4cqw; border-radius: 1.1cqw; background: var(--page); border: 1px solid var(--line); }
+.deck.v2 .callout-title { margin: 0 0 1cqw; font: 600 1.05cqw/1.2 "Inter", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.deck.v2 .callout p:last-child { margin-bottom: 0; }
+/* bìa và trang mở phần */
+.deck.v2 .s-title { justify-content: center; padding-left: 9cqw; }
+.deck.v2 .s-title .s-mark { width: 5cqw; height: .5cqw; background: var(--accent); border-radius: 1px; margin-bottom: 3cqw; }
+.deck.v2 .s-title h1 { margin: 0 0 1.6cqw; font: 500 6cqw/1.1 "Lora", Cambria, Georgia, serif; letter-spacing: -.015em; color: var(--text); }
+.deck.v2 .s-title .s-sub p { font: 2.4cqw/1.4 "Lora", Cambria, Georgia, serif; color: var(--text-2); border: 0; padding: 0; margin: 0; font-style: normal; }
+.deck.v2 .s-title .s-meta { position: absolute; left: 9cqw; bottom: 4.6cqw; font: 500 1.3cqw/1 "Inter", sans-serif; color: var(--muted); letter-spacing: .02em; }
+.deck.v2 .s-section { justify-content: center; padding-left: 9cqw; background: var(--page); }
+.deck.v2 .s-section .s-no { font: 400 8cqw/1 "Lora", Cambria, Georgia, serif; color: var(--accent); opacity: .85; margin-bottom: 1.2cqw; }
+.deck.v2 .s-section h1 { margin: 0; font: 500 4.6cqw/1.15 "Lora", Cambria, Georgia, serif; color: var(--text); max-width: 20ch; }
+/* câu hỏi nhanh */
+.deck.v2 .s-quiz .s-body { align-content: center; }
+.deck.v2 .quiz { max-width: 74cqw; margin: 0 auto; width: 100%; }
+.deck.v2 .quiz-label { margin: 0 0 1.2cqw; font: 600 1.1cqw/1 "Inter", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.deck.v2 .quiz-q p { font: calc(2.7cqw * var(--fs, 1))/1.4 "Lora", Cambria, Georgia, serif; color: var(--text); margin-bottom: 2.2cqw; }
+.deck.v2 .quiz-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2cqw; list-style: none; padding: 0; margin: 0; }
+.deck.v2 .quiz-opts li { margin: 0; }
+.deck.v2 .quiz-opt { display: flex; align-items: baseline; gap: 1.4cqw; width: 100%; padding: 1.3cqw 1.8cqw; border: 1px solid var(--line); border-radius: .9cqw; background: var(--paper); color: var(--text); font: calc(1.95cqw * var(--fs, 1))/1.4 "Inter", sans-serif; text-align: left; cursor: pointer; }
+.deck.v2 .quiz-opt:hover { background: var(--btn-hover); }
+.deck.v2 .quiz-key { font: 600 1.2cqw "JetBrains Mono", monospace; color: var(--muted); }
+.deck.v2 .quiz.is-answered .quiz-opt { cursor: default; }
+.deck.v2 .quiz.is-answered .quiz-opt:not(.is-right):not(.is-wrong) { opacity: .5; }
+.deck.v2 .quiz-opt.is-right { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 12%, var(--paper)); }
+.deck.v2 .quiz-opt.is-wrong { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--paper)); }
+.deck.v2 .quiz-why { margin-top: 2cqw; font: calc(1.75cqw * var(--fs, 1))/1.5 "Inter", sans-serif; color: var(--text-2); }
+.deck.v2 .quiz-why p { margin: 0; }
+.deck.v2 .quiz-src { margin: 2.2cqw 0 0; padding-top: 1.2cqw; border-top: 1px solid var(--line); font: 1.25cqw/1.4 "Inter", sans-serif; color: var(--muted); }
+.deck.v2 .quiz-src-kind { display: inline-block; margin-right: .8cqw; padding: .1cqw .8cqw; border: 1px solid transparent; border-radius: 99px; background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); font-size: 1cqw; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.deck.v2 .quiz-src-adapted .quiz-src-kind { border-color: var(--line); background: transparent; color: var(--muted); }
+.deck.v2 .quiz-src a { color: inherit; }
+@media print { .deck.v2 .slide { padding: 6.2cqw 6cqw 4.2cqw; } .deck.v2 .s-title, .deck.v2 .s-section { padding-left: 9cqw; } }
+
+/* Code hiển thị đúng từng ký tự: tắt ligature của JetBrains Mono (!= <= <| không bị ghép). */
+code, pre, kbd, samp, code * , pre * { font-variant-ligatures: none !important; font-feature-settings: "liga" 0, "calt" 0 !important; }
+
+/* Code trên slide đọc được khi chiếu: code 1.7cqw, kết quả 1.55cqw (trước là 1.42/1.32, chỉ khoảng 2/3 chữ thân slide).
+   Khối kết quả đứng riêng (không có code ngay trên) có đủ viền và bo góc. */
+.deck.v2 pre.code { font-size: calc(1.7cqw * var(--fs, 1)); }
+.deck.v2 pre.out { font-size: calc(1.55cqw * var(--fs, 1)); padding-top: 3.1cqw; }
+.deck.v2 .out-label { font-size: 1cqw; }
+.deck.v2 pre.out:first-child, .deck.v2 :not(pre.code) + pre.out { border-top: 1px solid var(--line); border-radius: .9cqw; }
+/* Bố cục căn giữa: khối code và kết quả vẫn căn trái (thụt lề Python phải giữ nguyên). */
+.deck.v2 .s-center pre { text-align: left; }
+.deck.v2 pre + p, .deck.v2 pre + ul, .deck.v2 pre + ol { margin-top: 1.6cqw; }
+.deck.v2 .quiz-q pre + p { margin-top: 0; }
+.deck.v2 .quiz-q pre.code { border-radius: .9cqw; margin-bottom: 1.6cqw; }
+/* Liên kết trong thân slide: cùng màu nhấn, không dùng xanh mặc định của trình duyệt */
+.deck.v2 .s-body a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.deck.v2 .s-body .quiz-src a { color: inherit; }
+
+/* ---------- hình động (lượt 9, ui/anim.js) ---------- */
+.deck.v2 .fig.anim { width: 100%; }
+.deck.v2 .fig.anim .anim-stage { display: block; width: min(100%, calc(29cqw * var(--fs, 1) * var(--ar, 1.78))); max-width: 100% !important; height: auto; margin: 0 auto; cursor: pointer; border-radius: .5cqw; }
+.deck.v2 .s-figure .fig.anim .anim-stage { width: min(100%, calc(31cqw * var(--fs, 1) * var(--ar, 1.78))); }
+.deck.v2 .anim-bar { display: flex; align-items: center; justify-content: center; gap: .9cqw; max-width: none !important; margin: .9cqw auto 0; font: calc(1.3cqw * var(--fs, 1))/1.4 "Inter", sans-serif; color: var(--muted); }
+.deck.v2 .anim-play { flex: none; display: inline-grid; place-items: center; width: 2.6cqw; height: 2.6cqw; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--btn); color: var(--text); cursor: pointer; }
+.deck.v2 .anim-play svg { width: 1cqw; height: 1cqw; }
+.deck.v2 .anim-seek { width: 14cqw; margin: 0; accent-color: var(--accent); cursor: pointer; }
+.deck.v2 .anim-label { min-width: 0; text-align: left; font-variant-numeric: tabular-nums; }
+.deck.v2 .anim-step { color: var(--faint); margin-right: .2em; }
+.deck.v2 .anim-label code { font-family: "JetBrains Mono", Consolas, monospace; }
+.deck.v2 .anim-keys { display: none; }
+@media print {
+  .deck.v2 .fig.anim .anim-live { display: none !important; }
+  .deck.v2 .anim-keys { display: grid; grid-template-columns: repeat(var(--pcols, 4), minmax(0, 1fr)); gap: .8cqw 1.4cqw; max-width: calc(var(--pcols, 4) * 31cqw); margin: 0 auto; }
+  .deck.v2 .anim-key canvas { display: block; width: 100%; height: auto; max-height: calc(19cqw * var(--fs, 1)); object-fit: contain; }
+  .deck.v2 .anim-key span { display: block; margin-top: .4cqw; font: calc(1.05cqw * var(--fs, 1))/1.35 "Inter", sans-serif; color: var(--muted); text-align: center; }
+}

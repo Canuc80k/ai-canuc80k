@@ -1,0 +1,71 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>K-Means và các phương pháp clustering — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/2.10?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 2.9: K-Means và các phương pháp clustering</h1><p>Hai vòng tròn lồng nhau có phải hai cụm hình cầu?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>KMeans giả định clusters thuận theo khoảng cách đến center.</li><li>DBSCAN dùng density và có noise=-1; hierarchical/spectral có giả định khác.</li><li>Cluster IDs có thể hoán vị; đánh giá bằng ARI/silhouette phù hợp.</li></ul><p class="note">center_new = mean(points assigned to cluster)</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.datasets import make_moons
+from sklearn.cluster import KMeans,DBSCAN,AgglomerativeClustering,SpectralClustering
+from sklearn.metrics import adjusted_rand_score
+X,y = make_moons(n_samples=120,noise=.05,random_state=42)
+models = [KMeans(n_clusters=2,n_init=10,random_state=42),
+          DBSCAN(eps=.25,min_samples=4),AgglomerativeClustering(n_clusters=2),
+          SpectralClustering(2,affinity=&quot;nearest_neighbors&quot;,random_state=42)]
+for model in models:
+    labels = model.fit_predict(X)
+    # y chỉ dùng sau khi fit, không đưa vào thuật toán.
+    print(type(model).__name__,&quot;clusters&quot;,len(set(labels)-{-1}),
+          &quot;noise&quot;,int((labels==-1).sum()),&quot;ARI&quot;,round(adjusted_rand_score(y,labels),4))
+</pre><h3>Kết quả</h3><pre>KMeans clusters 2 noise 0 ARI 0.2271
+DBSCAN clusters 2 noise 0 ARI 1.0
+AgglomerativeClustering clusters 2 noise 0 ARI 0.5098
+SpectralClustering clusters 2 noise 0 ARI 1.0
+</pre><p class="note">Không đưa y thật vào fit rồi gọi đó là unsupervised.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Một bước assign/update Euclidean; tie center index nhỏ; cluster rỗng giữ center cũ.</p><pre>{
+  &quot;points&quot;: [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  &quot;centers&quot;: [
+    [
+      0
+    ],
+    [
+      10
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    1.0
+  ],
+  [
+    9.0
+  ]
+]</pre></details><h3>Bài 2</h3><p>Tổng squared distance từ mỗi point đến center gần nhất.</p><pre>{
+  &quot;points&quot;: [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  &quot;centers&quot;: [
+    [
+      1
+    ],
+    [
+      9
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>4</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Một bước assign/update Euclidean; tie center index nhỏ; cluster rỗng giữ center cũ.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Tổng squared distance từ mỗi point đến center gần nhất.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Clustering ảnh chữ số</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO 12.3; NT 8.3–8.5.</p><p>NT 9.8 phần KMeans/DBSCAN; sklearn “Comparing different clustering algorithms on toy datasets” có code và dữ liệu sẵn.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-2/buoi-2-8/BAI_HOC.html">← PCA, t-SNE và UMAP</a><a href="../../phase-2/buoi-2-10/BAI_HOC.html">Feature engineering, tuning và phân tích lỗi →</a></nav></body></html>

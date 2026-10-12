@@ -1,0 +1,67 @@
+BUỔI 3.9 — Autoencoders
+
+HỌC SINH CẦN HIỂU
+- Encoder nén input; decoder tái tạo input từ latent.
+- Reconstruction loss dùng chính input làm mục tiêu; không phải class accuracy.
+- Bottleneck/denoising giúp học biểu diễn; VAE thêm mô hình hóa distribution.
+
+CÂU HỎI MỞ BÀI
+Nếu không có nhãn, autoencoder học mục tiêu nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+loss = mean((reconstruction-input)²)
+
+CẦN PHÂN BIỆT
+Loss tái tạo tốt không tự chứng minh latent tốt cho mọi task.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Số giá trịlatent=n*k và reconstruction=n*d; không phải parameters.
+Input:
+{
+  "n": 128,
+  "d": 64,
+  "k": 4
+}
+Output để đối chiếu sau khi làm:
+{
+  "latent": 512,
+  "reconstruction": 8192
+}
+
+Bài trên lớp 2: MSE giữainput/reconstruction theo tất cả phần tử.
+Input:
+{
+  "X": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "reconstruction": [
+    [
+      0.2,
+      0.8
+    ],
+    [
+      0.8,
+      0.2
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.039999999999999994
+
+BÀI VỀ NHÀ
+- BTVN 1: Số giá trịlatent=n*k và reconstruction=n*d; không phải parameters.; xem BTVN_01.txt.
+- BTVN 2: MSE giữainput/reconstruction theo tất cả phần tử.; xem BTVN_02.txt.
+- BTVN 3: Autoencoder khử nhiễu chữ số; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+KHTN chương 15; AIO 51.1 về VAE.
+AIO 51.3 câu hỏi về VAE; dùng ví dụ autoencoder của KHTN15 cho reconstruction. VAE là mở rộng, không gọi đồng nhất với autoencoder thường.

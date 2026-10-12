@@ -1,0 +1,26 @@
+{
+ "w": 960,
+ "h": 400,
+ "n": 7,
+ "cols": 2,
+ "dur": 1300,
+ "hold": 2200,
+ "labels": [
+  "mẫu 3 lệch 3: MAE 2.33, RMSE 2.38",
+  "mẫu 3 lệch 6: MAE 3.33, RMSE 3.83",
+  "mẫu 3 lệch 10: MAE 4.67, RMSE 6.00",
+  "mẫu 3 lệch 15: MAE 6.33, RMSE 8.81",
+  "mẫu 3 lệch 20: MAE 8.00, RMSE 11.66",
+  "mẫu 3 lệch 30: MAE 11.33, RMSE 17.40",
+  "mẫu 3 lệch 45: MAE 16.33, RMSE 26.03"
+ ],
+ "key": [
+  0,
+  2,
+  4,
+  6
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

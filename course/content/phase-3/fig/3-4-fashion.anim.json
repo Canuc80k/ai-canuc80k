@@ -1,0 +1,31 @@
+{
+ "w": 960,
+ "h": 290,
+ "n": 12,
+ "cols": 2,
+ "dur": 900,
+ "hold": 2600,
+ "labels": [
+  "bước 0 (epoch 0.0): accuracy validation 0.142, loss 2.313",
+  "bước 2 (epoch 0.0): accuracy validation 0.255, loss 2.138",
+  "bước 5 (epoch 0.1): accuracy validation 0.324, loss 1.939",
+  "bước 10 (epoch 0.1): accuracy validation 0.577, loss 1.658",
+  "bước 20 (epoch 0.2): accuracy validation 0.618, loss 1.209",
+  "bước 40 (epoch 0.4): accuracy validation 0.685, loss 0.877",
+  "bước 80 (epoch 0.9): accuracy validation 0.757, loss 0.719",
+  "bước 160 (epoch 1.7): accuracy validation 0.790, loss 0.598",
+  "bước 300 (epoch 3.2): accuracy validation 0.822, loss 0.551",
+  "bước 470 (epoch 5.0): accuracy validation 0.831, loss 0.515",
+  "bước 940 (epoch 10.0): accuracy validation 0.825, loss 0.493",
+  "bước 1880 (epoch 20.0): accuracy validation 0.852, loss 0.420"
+ ],
+ "key": [
+  0,
+  3,
+  6,
+  11
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

@@ -1,0 +1,422 @@
+CẬP NHẬT BÀN GIAO 01/10/2026
+Bộ 55 bài thuộc 7 phase đã được soạn thành tài liệu từng buổi. Mở ../START_HERE.html để xem slide, code, hai bài trên lớp và ba BTVN của từng bài. Bài nguồn trong file này vẫn dùng để học thêm. Tạo contest trên LQDOJ là bước sau; chưa triển khai trong bàn giao này.
+
+GIÁO TRÌNH AI — BẢN SỬA THEO NỘI DUNG VÀ BÀI TẬP CÓ SẴN
+Ngày 01/10/2026.
+
+Chia 7 phase để sắp thứ tự học. Syllabus không quy định phải có 7 phase; đây là cách nhóm kiến thức, không phải 7 cấp thi hoặc chứng nhận trình độ. Số bài mỗi phase theo nội dung cần học, không ép bằng nhau.
+Không ấn định tổng số buổi, giờ, số bài tập hay điểm qua phase. Một bài học có thể dạy trong một hoặc nhiều buổi, tùy kiến thức đầu vào và thời gian thực hành.
+Mỗi bài có phần học và bài tập lấy từ tài liệu/bài gốc. Bài tập trong sách, bài làm lại tutorial và bài nộp judge được ghi rõ. Không gọi một tutorial thành competition mới.
+
+Ba file:
+  01_Giao_trinh_note.txt: cần học những gì và thứ tự.
+  02_Giao_trinh_tung_buoi.txt: nội dung dạy của từng bài, bài tập đi kèm; không lịch ép 100 buổi.
+  03_He_thong_bai_tap_AI.txt: chỉ dẫn mở đúng nguồn bài tập và đầu ra theo bài gốc.
+
+TÀI LIỆU LOCAL
+  Gốc: C:\Users\Admin\Desktop\Giáo trình dạy AI
+  NT = Tài liệu\ai_olympiad_260909_221030.pdf, tài liệu nền tảng 64 trang.
+  AIO = Tài liệu\AIO_Exercise_Book_v2025.pdf, sách bài tập có phần lời giải.
+  KHTN = Tài liệu\AI-CKHTN.pdf, ghi chép đội tuyển.
+  Syllabus = Tài liệu\Syllabus.pdf, IOAI 2026.
+  Bank = Ngân hàng đề\Ngan_hang_bai_tap_AI_V2.xlsx.
+  Các số như NT9.5, AIO37.2 là chương/mục của tài liệu, không số trang PDF. Các bài nâng cao có yêu cầu dữ liệu/model/GPU ghi trong nguồn; cần kiểm môi trường trước buổi thực hành, không coi mọi bài đều chạy được trên máy yếu.
+  Link slide đầu: https://docs.google.com/presentation/d/1gTYDtpGAEriMPos_6Eyfg1sXmYlNaERFBamptQn55uk/edit
+
+CÁCH DẠY TỪNG BÀI
+  Đi theo thứ tự dưới đây. Mỗi bài ghi rõ phần học, nguồn và bài tập đang có.
+  Trên lớp giải thích ví dụ/code của nguồn, để học sinh làm bài tập tương ứng. Buổi sau chữa phần chưa hiểu rồi tiếp tục, không chạy theo lịch số buổi cố định.
+  “Kết quả cần có” mô tả thứ bài tập đã yêu cầu hoặc kết quả code ví dụ, không một bộ chỉ tiêu chấm mới.
+  Một đề lớn có thể dùng lại khi học nhiều model; không coi mỗi lần đổi model là một đề mới.
+
+
+[Phase 0] Python và công cụ xử lý dữ liệu
+
+[Bài 0.1] Python cơ bản
+  Học: Biến, kiểu dữ liệu, if, for/while, hàm; đọc lỗi và chạy notebook.
+  Đọc/giảng theo: AIO 1.1.
+  Bài tập đi kèm: AIO 1.2 Câu hỏi tự luận và 1.3 Câu hỏi trắc nghiệm; làm các bài Python/activation theo đề sách.
+  Kết quả: Code và đáp án; giải thích được input, output của hàm.
+
+[Bài 0.2] Cấu trúc dữ liệu và thao tác tệp
+  Học: List, dict, set, indexing; đọc/ghi CSV, JSON; class ở mức viết Dataset sau này.
+  Đọc/giảng theo: AIO chương 2–3; NT 3.8.
+  Bài tập đi kèm: AIO 2.2: Character Counting, Word Counting, Getting Max Over Kernel; AIO 3.1 phần class; NT 9.3 yêu cầu ghi CSV.
+  Kết quả: Các hàm theo đề sách và CSV không có cột index thừa.
+
+[Bài 0.3] NumPy
+  Học: Array, shape, dtype, axis, slicing, reshape, broadcasting và vector hóa.
+  Đọc/giảng theo: NT chương 2; AIO 6.1.
+  Bài tập đi kèm: NT 9.2 “NumPy và mảng nhiều chiều”; có dữ liệu x=np.arange(1,61).reshape(3,4,5) và assert tự kiểm tra.
+  Kết quả: Notebook chạy qua các assert của bài gốc.
+
+[Bài 0.4] Pandas
+  Học: DataFrame, lọc dữ liệu, missing, groupby, merge và data dictionary.
+  Đọc/giảng theo: NT chương 3; AIO 11.2.
+  Bài tập đi kèm: NT 9.3 “Làm sạch và tổng hợp dữ liệu bằng pandas”, dùng đúng hai bảng students/classes cấp trong tài liệu.
+  Kết quả: students_clean, active_students, class_summary, students_full và CSV theo đề.
+
+[Bài 0.5] Matplotlib và Seaborn
+  Học: Chọn biểu đồ, trục/đơn vị; histogram, scatter, heatmap; đọc ảnh và ma trận.
+  Đọc/giảng theo: NT chương 4; AIO 11.3.
+  Bài tập đi kèm: NT 9.4 “Vẽ dữ liệu bằng Matplotlib”; AIO 11.3 phần phân tích IMDB Movie Dataset.
+  Kết quả: student_scores.png đúng yêu cầu; các biểu đồ IMDB có giải thích.
+
+[Phase 1] Nền tảng học máy, toán cần dùng và đánh giá
+
+[Bài 1.1] Học máy và quy trình làm bài
+  Học: Sample, feature, target; classification/regression; fit, predict; baseline, validation và output.
+  Đọc/giảng theo: NT chương 1, 7; KHTN chương 1.
+  Bài tập đi kèm: NT 9.6 “So sánh mô hình classification”: làm phần đọc dữ liệu và xác định X,y trước, hoàn thành phần model sau Phase 2.
+  Kết quả: Shape, target/label map, sơ đồ train→predict→evaluate.
+
+[Bài 1.2] Generalization, underfitting và overfitting
+  Học: Điểm train khác hiệu quả trên mẫu mới; capacity; đọc learning curves.
+  Đọc/giảng theo: Slide buổi 1, trang 3–13; KHTN 3.4.
+  Bài tập đi kèm: Chạy notebook generalization được slide trang 10 dẫn tới; NT 9.5 yêu cầu so metric train/test.
+  Kết quả: Bảng train/validation score và nhận xét, không chọn model bằng điểm train.
+
+[Bài 1.3] Chia dữ liệu và cross-validation
+  Học: Train/validation/test; stratified, group, time split; CV chọn model, test đánh giá cuối.
+  Đọc/giảng theo: Slide trang 2,11,14–16; NT 7.3–7.4.
+  Bài tập đi kèm: NT 9.5 dùng KFold; NT 9.6 dùng Stratified CV; làm đúng split và seed đã ghi trong hai đề.
+  Kết quả: Chỉ số split/folds và bảng CV; giải thích vì sao test không dùng để chọn.
+
+[Bài 1.4] Data leakage và Pipeline
+  Học: Fit preprocessing trong train/fold; imputer, scaler, encoder; Pipeline/ColumnTransformer.
+  Đọc/giảng theo: NT chương 5–6; tài liệu sklearn Common Pitfalls.
+  Bài tập đi kèm: NT 9.7 “Pipeline với giá trị thiếu và cột phân loại”, có dữ liệu tạo sẵn và tình huống category mới.
+  Kết quả: Pipeline chạy CV và dự đoán khu_vuc='Tay' theo bài gốc.
+
+[Bài 1.5] Đánh giá classification
+  Học: Confusion matrix, accuracy, precision, recall, F1, averaging; ROC/AUC; threshold và mất cân bằng.
+  Đọc/giảng theo: Slide trang 17–21; KHTN 2.4–2.7; NT 7.
+  Bài tập đi kèm: NT 9.6 yêu cầu các metrics/confusion matrix/ROC; NT 9.10 trắc nghiệm; bài aidiabetes để luyện F1 sau khi biết model.
+  Kết quả: Metrics và ROC đúng positive class; output.csv nếu làm LQDOJ.
+
+[Bài 1.6] Đánh giá regression
+  Học: MAE, MSE, RMSE, R2; đọc residual; metric lớn/nhỏ tốt hơn.
+  Đọc/giảng theo: Slide trang 22; KHTN 1.1.3; NT 9.5.
+  Bài tập đi kèm: NT 9.5 “So sánh mô hình regression”; dùng load_diabetes() theo đề, đây là hồi quy khác bài aidiabetes phân loại trên LQDOJ.
+  Kết quả: Bảng MAE/RMSE/R2 và kết quả test sau khi chọn bằng CV.
+
+[Bài 1.7] Đại số tuyến tính dùng trong AI
+  Học: Vector, ma trận, dot product, norm, cosine, phép nhân và phép chiếu; học đến mức đọc được model.
+  Đọc/giảng theo: AIO 6.1; NT 2; KHTN phần PCA.
+  Bài tập đi kèm: AIO 6.2 Câu hỏi tự luận, 6.3 Câu hỏi trắc nghiệm.
+  Kết quả: Lời giải các phép tính và code NumPy theo câu hỏi sách.
+
+[Bài 1.8] Xác suất và thống kê dùng trong AI
+  Học: Mean, variance, covariance, phân bố, xác suất có điều kiện; phân biệt probability với nhãn dự đoán.
+  Đọc/giảng theo: AIO chương 7–8.
+  Bài tập đi kèm: AIO 7.2 Câu hỏi tự luận, 7.3 và 8.2 Câu hỏi trắc nghiệm.
+  Kết quả: Đáp án có phép tính; giải thích xác suất/độ tương đồng theo bài.
+
+[Bài 1.9] Đạo hàm và gradient descent
+  Học: Đạo hàm, chain rule, gradient, loss và learning rate; học gắn với tối ưu mô hình.
+  Đọc/giảng theo: KHTN 3.1–3.2; AIO 21.2–21.4.
+  Bài tập đi kèm: AIO 21.4 thực hành huấn luyện Linear Regression và 21.6 trắc nghiệm; trở lại khi học mạng neural.
+  Kết quả: Loss theo bước và cách cập nhật tham số từ bài sách.
+
+[Phase 2] Machine Learning cổ điển
+
+[Bài 2.1] Linear Regression
+  Học: Quan hệ tuyến tính, hệ số, bias, MSE; model dùng NumPy và sklearn.
+  Đọc/giảng theo: AIO chương 21–22; KHTN 3.1.
+  Bài tập đi kèm: AIO 22.3 “Linear Regression cho bài toán advertising”; NT 9.5 phần Linear Regression.
+  Kết quả: Notebook bài advertising và kết quả baseline regression.
+
+[Bài 2.2] Logistic Regression và Softmax
+  Học: Logits, sigmoid/softmax, xác suất, decision boundary, binary/multiclass loss.
+  Đọc/giảng theo: AIO chương 26–27; KHTN 3.6–3.7.
+  Bài tập đi kèm: AIO 26.2 Thực hành, 26.3 trắc nghiệm; AIO 27.4 Credit Card Fraud Detection hoặc 27.5 Twitter Sentiment Analysis.
+  Kết quả: Model/probabilities và confusion matrix đúng loại bài.
+
+[Bài 2.3] Regularization L1/L2
+  Học: Ridge, Lasso; tác dụng penalty; chọn độ mạnh regularization bằng validation.
+  Đọc/giảng theo: KHTN 3.5; NT phụ lục A.
+  Bài tập đi kèm: NT 9.5 phần Ridge; làm ví dụ Ridge/Lasso trong KHTN 3.5.
+  Kết quả: Hệ số và metric của mô hình regularized so với Linear Regression.
+
+[Bài 2.4] K-Nearest Neighbors
+  Học: Khoảng cách, k, scaling, voting và chi phí predict.
+  Đọc/giảng theo: AIO 12.2.
+  Bài tập đi kèm: AIO 12.2 thực hành thuật toán KNN, 12.4 trắc nghiệm; NT 9.6 phần KNN.
+  Kết quả: KNN với pipeline scaling; kết quả CV và tham số k.
+
+[Bài 2.5] Decision Trees
+  Học: Impurity/split, depth, leaf; classification/regression và overfit.
+  Đọc/giảng theo: AIO 13.2–13.3; KHTN chương 5.
+  Bài tập đi kèm: AIO 13.2/13.3 thực hành, 13.4 trắc nghiệm; NT 9.5/9.6 phần cây.
+  Kết quả: Cây và predictions; so train/validation, giải thích depth.
+
+[Bài 2.6] Bagging, Random Forest và boosting
+  Học: Ensemble, bagging, RF, gradient boosting; giới hạn các thư viện trong môi trường thi.
+  Đọc/giảng theo: AIO chương 16–18; KHTN chương 6.
+  Bài tập đi kèm: AIO 16.3 Housing, 16.4 trắc nghiệm; 17.2–17.4 Gradient Boosting; NT 9.5 phần Random Forest.
+  Kết quả: Bảng model/metric; không bắt dùng thư viện ngoài đề thi.
+
+[Bài 2.7] SVM
+  Học: Margin, kernel, C, gamma, scaling; score khác probability.
+  Đọc/giảng theo: KHTN chương 4; NT 7.2 và phụ lục A.
+  Bài tập đi kèm: NT 9.6 phần SVC(probability=True), trong cùng pipeline/CV của bài.
+  Kết quả: Kết quả SVC và ROC, không nhầm classes_ khi lấy probability.
+
+[Bài 2.8] PCA, t-SNE và UMAP
+  Học: PCA/variance; giảm chiều cho model khác giảm chiều để vẽ; biết dùng thư viện và đọc giới hạn.
+  Đọc/giảng theo: NT 8.2; KHTN chương 7; UMAP Basic Usage.
+  Bài tập đi kèm: NT 9.8 phần PCA; ví dụ t-SNE trong sklearn; phần Iris trong UMAP Basic Usage.
+  Kết quả: Explained variance/projection và hình 2D, không coi hình đẹp là bằng chứng model tốt.
+
+[Bài 2.9] K-Means và các phương pháp clustering
+  Học: KMeans, DBSCAN, hierarchical, spectral; cluster label khác class; inertia, silhouette, ARI.
+  Đọc/giảng theo: AIO 12.3; NT 8.3–8.5.
+  Bài tập đi kèm: NT 9.8 phần KMeans/DBSCAN; sklearn “Comparing different clustering algorithms on toy datasets” có code và dữ liệu sẵn.
+  Kết quả: Cluster plots và metrics theo bài; không đưa nhãn thật vào fit.
+
+[Bài 2.10] Feature engineering, tuning và phân tích lỗi
+  Học: Xử lý missing/categorical/scaling; feature mới; tìm hyperparameters và đọc lỗi theo nhóm.
+  Đọc/giảng theo: KHTN 1.3–1.7,2.9; NT phụ lục A.
+  Bài tập đi kèm: NT 9.5 phần nâng cao GridSearchCV; 9.7 Pipeline; 9.9 Mô phỏng submission. Sau đó luyện aicalhouse/aititanic bằng data của đề.
+  Kết quả: Pipeline, bảng CV/trials và file predictions đúng mẫu.
+
+[Phase 3] Neural Networks và Deep Learning
+
+[Bài 3.1] PyTorch tensors và autograd
+  Học: Shape, dtype, device, gradients; CPU/GPU; chưa cần model lớn.
+  Đọc/giảng theo: PyTorch Learn the Basics: Tensors, Automatic Differentiation.
+  Bài tập đi kèm: Làm code trong hai tutorial trên; không thay tensor shape hoặc bỏ requires_grad mà không hiểu tác dụng.
+  Kết quả: Code chạy, giải thích tensor/gradient trong chính ví dụ tutorial.
+
+[Bài 3.2] Dataset và DataLoader
+  Học: Đọc sample, batch, shuffle, transformations; giữ đúng sample ID khi inference.
+  Đọc/giảng theo: PyTorch Learn the Basics: Datasets & DataLoaders, Transforms.
+  Bài tập đi kèm: Thực hành FashionMNIST của tutorial và xem batch theo hướng dẫn.
+  Kết quả: Dataset/DataLoader và batch images/labels.
+
+[Bài 3.3] Perceptron, MLP và backpropagation
+  Học: Neuron, layers, activation, forward, chain rule, backward.
+  Đọc/giảng theo: AIO chương 28; KHTN chương 8; PyTorch Autograd.
+  Bài tập đi kèm: AIO 28.2 Thực hành,28.3 trắc nghiệm; phần Build Model của PyTorch Learn the Basics.
+  Kết quả: Model và tính/đọc gradient theo bài sách/tutorial.
+
+[Bài 3.4] Activation, loss và output head
+  Học: ReLU/sigmoid/tanh; MSE/MAE/CE; logits; binary/multiclass heads.
+  Đọc/giảng theo: AIO 1,26–28; PyTorch Optimization.
+  Bài tập đi kèm: AIO 1.2/1.3 phần activation;27.6 và28.3 trắc nghiệm; loss trong tutorial PyTorch.
+  Kết quả: Giải thích vì sao loss/output/dtype phải khớp task.
+
+[Bài 3.5] Training loop và inference
+  Học: Train/eval, zero_grad/backward/step, no_grad; epoch metrics; checkpoint/load.
+  Đọc/giảng theo: PyTorch Learn the Basics: Optimization, Save & Load Model.
+  Bài tập đi kèm: Hoàn thành training loop FashionMNIST và phần save/load của tutorial.
+  Kết quả: Model reload được và inference theo hướng dẫn.
+
+[Bài 3.6] Optimizers, learning rate và initialization
+  Học: SGD/mini-batch, Adam/AdamW, LR/convergence, weight initialization.
+  Đọc/giảng theo: AIO 31.1; KHTN 3.2,9.
+  Bài tập đi kèm: AIO 31.2 “Bài Tập và Gợi Ý”;31.1/31.2 có lý thuyết và bài thực hành optimizer/initializer.
+  Kết quả: Loss/gradient logs và đáp án các bài tương ứng trong sách.
+
+[Bài 3.7] Dropout, weight decay, early stopping và normalization
+  Học: Regularization mạng neural; BatchNorm; phân biệt train/eval; best checkpoint.
+  Đọc/giảng theo: KHTN chương 9; AIO chương 31–32.
+  Bài tập đi kèm: AIO 31.2 phần liên quan và32.2 chương trình gradient vanishing;32.3 trắc nghiệm; đọc/check checkpoint trong tutorial PyTorch.
+  Kết quả: Curves/checkpoint và giải thích cơ chế đang áp dụng.
+
+[Bài 3.8] Embeddings, pooling, attention và Transformers
+  Học: Vector biểu diễn; pooling/masks; Q/K/V, multi-head, positional encoding; Transformer text/image.
+  Đọc/giảng theo: KHTN chương 19–20; AIO 37.1–37.3.
+  Bài tập đi kèm: AIO 37.1 các phần thực hành Transformer;37.4 trắc nghiệm, gồm text/image Transformer.
+  Kết quả: Code/shape và các câu hỏi theo sách; chưa phải tự train LM lớn.
+
+[Bài 3.9] Autoencoders
+  Học: Encoder, bottleneck, decoder, reconstruction; dùng mô hình có sẵn để hiểu biểu diễn.
+  Đọc/giảng theo: KHTN chương 15; AIO 51.1 về VAE.
+  Bài tập đi kèm: AIO 51.3 câu hỏi về VAE; dùng ví dụ autoencoder của KHTN15 cho reconstruction. VAE là mở rộng, không gọi đồng nhất với autoencoder thường.
+  Kết quả: Reconstruction/latent outputs theo ví dụ sách và đáp án câu hỏi.
+
+[Bài 3.10] Fine-tuning đầy đủ và PEFT
+  Học: Frozen/full fine-tune, adapters/LoRA; trainable params và checkpoint đi kèm.
+  Đọc/giảng theo: AIO 58.1–58.2 và59.2.
+  Bài tập đi kèm: AIO 58.3 trắc nghiệm;59.2 PEFT for Multiple-choice QA và59.3 trắc nghiệm.
+  Kết quả: Model/adapter và inference theo chương; thực hành cần GPU như nguồn.
+
+[Phase 4] Computer Vision
+
+[Bài 4.1] Convolution và pooling
+  Học: Channels, kernel, stride, padding, receptive field; max/average pooling.
+  Đọc/giảng theo: AIO 34.1; KHTN chương 12.
+  Bài tập đi kèm: AIO 34.2 Thực hành và34.3 trắc nghiệm.
+  Kết quả: Feature maps/output shapes và đáp án theo sách.
+
+[Bài 4.2] CNN và image classification
+  Học: Conv blocks, classifier; training và lỗi theo lớp.
+  Đọc/giảng theo: AIO chương 34–35.
+  Bài tập đi kèm: AIO 35.2 Bài tập: phần lập trình và trắc nghiệm.
+  Kết quả: Notebook model ảnh và predictions trên data cấp trong chương.
+
+[Bài 4.3] Vision encoders và transfer learning
+  Học: ResNet, frozen features, fine-tune; ViT/patch tokens.
+  Đọc/giảng theo: AIO 35,37.3,40; PyTorch Transfer Learning tutorial.
+  Bài tập đi kèm: AIO 40.2 Bài Tập và Gợi Ý;37.3 thực hành Vision Transformer.
+  Kết quả: Model, trainable parameters và kết quả theo nguồn.
+
+[Bài 4.4] Image augmentation
+  Học: Flip/crop/color/noise; nhãn không đổi hay cần transform mask/box; train-only.
+  Đọc/giảng theo: PyTorch transfer learning/data transforms; AIO40.
+  Bài tập đi kèm: Chạy transforms trong tutorial Transfer Learning; làm phần augmentation của bài tập AIO40.2 theo chương.
+  Kết quả: Ảnh sau transform và đúng đồng bộ annotations nếu có.
+
+[Bài 4.5] Object detection
+  Học: Bounding boxes, IoU, matching/NMS; thực hành YOLO/SSD/DETR theo syllabus.
+  Đọc/giảng theo: AIO41–42; PyTorch TorchVision Object Detection Finetuning tutorial.
+  Bài tập đi kèm: AIO41.2 các bài classification+bbox,41.3 trắc nghiệm; tutorial Penn-Fudan có data và code tải sẵn.
+  Kết quả: Boxes/masks từ model theo tutorial; metric đúng nguồn.
+
+[Bài 4.6] Image segmentation và U-Net
+  Học: Pixel labels, encoder-decoder/skip; mask, IoU/Dice; dữ liệu nhiều channels.
+  Đọc/giảng theo: AIO40; IOAI Radar/Weather baseline.
+  Bài tập đi kèm: AIO40.2 phần segmentation; ioai25radarpre baseline.ipynb và bài LQDOJ cùng tên.
+  Kết quả: Mask prediction và kết quả validation; giữ đúng label map/scorer.
+
+[Bài 4.7] Self-supervised vision
+  Học: Học biểu diễn không nhãn; pretrained SSL khác pretrained supervised; trích features.
+  Đọc/giảng theo: Tài liệu Hugging Face DINOv2.
+  Bài tập đi kèm: Chạy ví dụ lấy embeddings trong trang DINOv2; đây là bài thực hành theo code tài liệu, không một competition mới.
+  Kết quả: Embeddings/shape theo ví dụ; giải thích supervision của model.
+
+[Bài 4.8] CLIP và image-text retrieval
+  Học: Image/text encoder, cosine, query/gallery; retrieval khác VQA.
+  Đọc/giảng theo: IOAI Restroom baseline; syllabus vision-text encoders.
+  Bài tập đi kèm: ioai25restroom: chạy notebook baseline và làm bài bằng training/validation/test đính kèm.
+  Kết quả: test_answer.csv theo đề, kèm kết quả validation.
+
+[Bài 4.9] GAN
+  Học: Generator/discriminator, training luân phiên, mode collapse; dùng skeleton thực hành.
+  Đọc/giảng theo: AIO50; PyTorch DCGAN tutorial.
+  Bài tập đi kèm: AIO50.2 chương trình DCGAN-BERTs và50.3 trắc nghiệm; tutorial DCGAN là nhánh PyTorch có sẵn.
+  Kết quả: Samples và training logs theo nguồn, không đặt leaderboard tự nghĩ.
+
+[Bài 4.10] Diffusion
+  Học: Noising/denoising, scheduler, pretrained pipeline, conditioning.
+  Đọc/giảng theo: AIO52 và54.
+  Bài tập đi kèm: AIO52.2 Image Inpainting using DDPM,52.3 trắc nghiệm;54.2 chương trình tô màu ảnh nếu học tiếp.
+  Kết quả: Ảnh inpainting/colorization theo code của sách; cần tài nguyên nguồn yêu cầu.
+
+[Phase 5] Natural Language Processing
+
+[Bài 5.1] Text processing và baseline NLP
+  Học: Unicode, tokenization, vocabulary, sparse features/TF-IDF, padding/truncation.
+  Đọc/giảng theo: AIO14,27.5; KHTN19.
+  Bài tập đi kèm: AIO27.5 Twitter Sentiment Analysis và27.6 trắc nghiệm; bank K04 Disaster Tweets để luyện thêm.
+  Kết quả: Text classifier và labels theo dữ liệu của nguồn.
+
+[Bài 5.2] Word embeddings và sentence embeddings
+  Học: Static/contextual features, similarity, masked pooling và ranking.
+  Đọc/giảng theo: KHTN19; IOAI Chameleon baseline.
+  Bài tập đi kèm: ioai25chameleon: notebook sentence-transformers, validation queries và test queries được cấp.
+  Kết quả: Top-10 options theo đề và score validation.
+
+[Bài 5.3] BERT và pretrained text encoders
+  Học: Tokenizer/model matching, CLS/pooling, classification head, fine-tune.
+  Đọc/giảng theo: AIO37.2.
+  Bài tập đi kèm: AIO37.2 Text classification using BERT và37.4 câu hỏi liên quan.
+  Kết quả: BERT classifier và predictions trên data chương.
+
+[Bài 5.4] Sequence labeling và phân tách từ
+  Học: Nhãn từng ký tự/token; alignment, spans, padding; RNN/LSTM khi đọc model nguồn.
+  Đọc/giảng theo: AIO36,43; IOAI WordSeg baseline.
+  Bài tập đi kèm: ioai25wordseg: notebook/data có sẵn; AIO43.2 POS hoặc43.3 NER nếu học mở rộng.
+  Kết quả: JSON arrays đúng độ dài và span F1 theo WordSeg.
+
+[Bài 5.5] Language modeling
+  Học: Next-token prediction, causal masking, loss/perplexity; dùng LM đã cấp.
+  Đọc/giảng theo: AIO56; AIO48 sinh thơ.
+  Bài tập đi kèm: AIO56.2 câu hỏi trắc nghiệm; thực hành trong AIO48 để nối language modeling với text generation.
+  Kết quả: Đáp án và generated text theo bài sách; không yêu cầu tự pretrain model lớn.
+
+[Bài 5.6] Encoder-decoder và text generation
+  Học: Encoder/decoder, teacher forcing/decoding; translation, input/output sequences.
+  Đọc/giảng theo: AIO46.
+  Bài tập đi kèm: AIO46.2 Transformer-based Translation và46.3 trắc nghiệm; AIO47 Anh–Việt là bài tiếp theo có sẵn.
+  Kết quả: Translation outputs và evaluation theo chương.
+
+[Bài 5.7] Pretrained LMs, prompting và VLM
+  Học: Local/API models, structured prompts, image+text inputs; chỉ dùng API khi task cho phép.
+  Đọc/giảng theo: AIO57; AIO39 VQA; syllabus LMs.
+  Bài tập đi kèm: AIO57.3 câu hỏi về prompting; AIO39.2 chương trình Visual Question Answering và39.3 trắc nghiệm.
+  Kết quả: Đáp án và VQA outputs theo chương; không coi CLIP retrieval là VQA.
+
+[Phase 6] Audio và Multimodal
+
+[Bài 6.1] Audio data và spectrograms
+  Học: Waveform, sample rate, duration; Mel spectrogram; padding/masks; biết đang có WAV hay tensor ảnh.
+  Đọc/giảng theo: IOAI Synthetic Speech baseline; tài liệu HuBERT.
+  Bài tập đi kèm: Đọc/chạy SpectrogramDataset trong ioai25speech_baseline.ipynb; xem các samples validation được cấp.
+  Kết quả: Tensor shapes, label mapping và pipeline đọc dữ liệu.
+
+[Bài 6.2] Audio classification
+  Học: Classify speech/spectrogram, CNN/frozen features; macro F1.
+  Đọc/giảng theo: IOAI Synthetic Speech baseline.
+  Bài tập đi kèm: ioai25speech: làm baseline từ notebook, dùng validation_set.zip và val_answer.csv để chấm.
+  Kết quả: test_answer.csv đúng filename order; macro F1 validation.
+
+[Bài 6.3] Pretrained audio encoders và ASR
+  Học: HuBERT, Whisper; đọc audio, trích biểu diễn và sinh transcript; ASR khác classification.
+  Đọc/giảng theo: Hugging Face HuBERT; repo Whisper và notebook LibriSpeech.
+  Bài tập đi kèm: Chạy ví dụ audio/ASR trong trang HuBERT và notebook LibriSpeech của repo Whisper, dùng đúng dữ liệu mẫu được nguồn cung cấp.
+  Kết quả: Transcript/encoder outputs; WER theo ground truth và cách chấm trong notebook.
+
+[Bài 6.4] Audio-language và multimodal
+  Học: Qwen-Audio/Voxtral; audio+text; phân biệt ASR, audio understanding và image-text VQA.
+  Đọc/giảng theo: Hugging Face Qwen2Audio/Voxtral; AIO39 VQA.
+  Bài tập đi kèm: Phần Inference của Qwen2Audio có audio mẫu tiếng kính vỡ và code sinh mô tả; Voxtral có ví dụ Transcription/Audio Understanding. Chạy hoặc đọc code theo nguồn trên môi trường đủ tài nguyên; AIO39.2/39.3 cho bài image-text.
+  Kết quả: Output theo từng ví dụ, giải thích input/processor/model; đây là thực hành tài liệu, không đề có leaderboard/hidden scorer.
+
+GỢI Ý CHO BUỔI GENERALIZATION CỦA THẦY
+  1. Dùng câu chọn học sinh A/B/C/D để hỏi: score nào nói về dữ liệu đã thấy, score nào nói về mẫu mới? Không khẳng định C luôn tốt nhất khi chưa biết thi thử có đại diện/độc lập không.
+  2. Dùng hình underfit/overfit trong slide và notebook make_moons để nhìn biên quyết định.
+  3. Cho học sinh chạy cùng split với các depth đã nêu trong notebook; đọc train/validation score và giải thích.
+  4. Nối sang NT9.5/9.6: cùng model/split thì đánh giá bằng metric nào? Scaler/imputer phải học ở đâu?
+  5. Chữa bài nguồn; CV/tuning chuyển sang bài tiếp theo nếu lớp chưa đủ thời gian.
+  Bài tập đã có: notebook generalization trong slide, NT9.5 so train/test và NT9.10 trắc nghiệm. Không tạo thêm dataset hay một cuộc thi khác.
+
+LƯU Ý DÙNG NGUỒN
+  AIO/KHTN có ví dụ sử dụng framework khác nhau. Học ý tưởng từ sách; theo code PyTorch chính thức khi cần thực hành môi trường torch. Chưa chuyển toàn bộ code sách sang PyTorch trong lần sửa này.
+  Một tutorial hiện có code không đồng nghĩa đã benchmark trên máy lớp. Model lớn ở Qwen/Voxtral/diffusion/PEFT cần tài nguyên phù hợp; học phần đọc code/câu hỏi trước khi chạy nếu chưa có máy.
+  Quyền truy cập dữ liệu/weights và rules mỗi đề phải kiểm khi chuẩn bị dạy. Không coi các nhãn truy cập cũ trong BankV2 là trạng thái live mới.
+
+TUTORIAL/NOTEBOOK ĐƯỢC DẪN
+  PyTorch Learn the Basics (Tensors, DataLoader, Autograd, Build Model, Optimization, Save/Load):
+    https://docs.pytorch.org/tutorials/beginner/basics/intro.html
+  Sklearn Common Pitfalls (pipeline/leakage):
+    https://scikit-learn.org/stable/common_pitfalls.html
+  Clustering comparison, có code/dữ liệu mẫu:
+    https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
+  t-SNE, có ví dụ và code:
+    https://scikit-learn.org/stable/auto_examples/manifold/plot_t_sne_perplexity.html
+  UMAP Basic Usage, ví dụ Iris; bản source đã đọc:
+    https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+    https://raw.githubusercontent.com/lmcinnes/umap/master/doc/basic_usage.rst
+  DINOv2, ví dụ lấy embeddings:
+    https://huggingface.co/docs/transformers/model_doc/dinov2
+  PyTorch Transfer Learning:
+    https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
+  TorchVision Detection, dữ liệu Penn-Fudan và code:
+    https://docs.pytorch.org/tutorials/intermediate/torchvision_tutorial.html
+  DCGAN tutorial:
+    https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+  HuBERT:
+    https://huggingface.co/docs/transformers/model_doc/hubert
+  Whisper LibriSpeech notebook:
+    https://github.com/openai/whisper/blob/main/notebooks/LibriSpeech.ipynb
+  Qwen2Audio, ví dụ Inference có audio mẫu:
+    https://huggingface.co/docs/transformers/model_doc/qwen2_audio
+  Voxtral, ví dụ Transcription/Audio Understanding:
+    https://huggingface.co/docs/transformers/model_doc/voxtral
+
+NGUỒN PHẠM VI THI
+  https://ioai-official.org/syllabus/
+  https://ioai-official.org/republic-of-kazakhstan/2026-contest-rules/
+  Dùng syllabus để biết nội dung; dùng rules/task cụ thể để biết package, model, API và output được phép. Không suy việc được dùng API trong thi từ việc syllabus có mục pretrained LMs/API.

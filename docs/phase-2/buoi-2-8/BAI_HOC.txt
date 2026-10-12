@@ -1,0 +1,77 @@
+BUỔI 2.8 — PCA, t-SNE và UMAP
+
+HỌC SINH CẦN HIỂU
+- PCA tìm directions giữ variance, cần centering và xử lý scale.
+- t-SNE/UMAP tập trung cấu trúc lân cận để khám phá/trực quan.
+- PCA trước classifier phải fit trong folds; hình2D không thay validation.
+
+CÂU HỎI MỞ BÀI
+Giảm chiều để nén dữ liệu khác giảm chiều để vẽ thế nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Z = (X - mean) × componentsᵀ
+
+CẦN PHÂN BIỆT
+90% variance không đồng nghĩa90% thông tin phân loại.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Center bằng mean vector cấp sẵn, rồi dot với từng component.
+Input:
+{
+  "X": [
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  "mean": [
+    2,
+    2
+  ],
+  "components": [
+    [
+      0.7071067811865475,
+      0.7071067811865475
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    -1.414213562373095
+  ],
+  [
+    1.414213562373095
+  ]
+]
+
+Bài trên lớp 2: Trả explained_variance_ratio cho eigenvalues nonnegative; tổng bằng 0 thì ratios bằng 0.
+Input:
+{
+  "eigenvalues": [
+    3,
+    1,
+    0
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  0.75,
+  0.25,
+  0.0
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Center bằng mean vector cấp sẵn, rồi dot với từng component.; xem BTVN_01.txt.
+- BTVN 2: Trả explained_variance_ratio cho eigenvalues nonnegative; tổng bằng 0 thì ratios bằng 0.; xem BTVN_02.txt.
+- BTVN 3: Classifier trước/sau PCA; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+NT 8.2; KHTN chương 7; UMAP Basic Usage.
+NT 9.8 phần PCA; ví dụ t-SNE trong sklearn; phần Iris trong UMAP Basic Usage.

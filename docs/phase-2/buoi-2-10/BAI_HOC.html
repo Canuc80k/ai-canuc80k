@@ -1,0 +1,60 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Feature engineering, tuning và phân tích lỗi — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/2.11?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 2.10: Feature engineering, tuning và phân tích lỗi</h1><p>Gain đến từ feature mới hay từ đổi split ngẫu nhiên?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Feature engineering cần thông tin có tại inference.</li><li>Search giữ split/protocol; log params và metric, kể cả trial không tốt.</li><li>Chọn bằng CV; test chỉ đọc sau khi đã chốt lựa chọn.</li></ul><p class="note">compare = cùng data + cùng split + cùng metric</p><h2>Code minh họa</h2><pre>from sklearn.datasets import load_wine
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split,StratifiedKFold,GridSearchCV
+X,y = load_wine(return_X_y=True)
+Xtr,Xte,ytr,yte = train_test_split(X,y,test_size=.25,stratify=y,random_state=42)
+pipe = make_pipeline(StandardScaler(),KNeighborsClassifier())
+cv = StratifiedKFold(3,shuffle=True,random_state=42)
+search = GridSearchCV(pipe,{&quot;kneighborsclassifier__n_neighbors&quot;:[1,3,7]},
+                      cv=cv,scoring=&quot;f1_macro&quot;)
+search.fit(Xtr,ytr)  # Test không đi vào search.
+print(&quot;Best params:&quot;,search.best_params_)
+print(&quot;Mean CV F1:&quot;,round(search.best_score_,4))
+print(&quot;Final test F1 macro:&quot;,round(search.score(Xte,yte),4))
+# search.score ở đây dùng f1_macro vì search được đặt scoring đó.
+</pre><h3>Kết quả</h3><pre>Best params: {&#x27;kneighborsclassifier__n_neighbors&#x27;: 7}
+Mean CV F1: 0.9628
+Final test F1 macro: 0.9771
+</pre><p class="note">Target encoding/OFF/stacking sai cách có thể tạo leakage.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Vocabulary cấp sẵn; unseen category tạo vector toàn 0.</p><pre>{
+  &quot;values&quot;: [
+    &quot;red&quot;,
+    &quot;yellow&quot;,
+    &quot;blue&quot;
+  ],
+  &quot;vocab&quot;: [
+    &quot;red&quot;,
+    &quot;blue&quot;
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    1,
+    0
+  ],
+  [
+    0,
+    0
+  ],
+  [
+    0,
+    1
+  ]
+]</pre></details><h3>Bài 2</h3><p>Mean CV score cho mỗi model; chọn mean lớn nhất, tie id nhỏ.</p><pre>{
+  &quot;trials&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;scores&quot;: [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;scores&quot;: [
+        0.7,
+        0.7
+      ]
+    }
+  ]
+}</pre><details><summary>Đáp án</summary><pre>2</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Vocabulary cấp sẵn; unseen category tạo vector toàn 0.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Mean CV score cho mỗi model; chọn mean lớn nhất, tie id nhỏ.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Một cải tiến có kiểm chứng</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>KHTN 1.3–1.7,2.9; NT phụ lục A.</p><p>NT 9.5 phần nâng cao GridSearchCV; 9.7 Pipeline; 9.9 Mô phỏng submission. Sau đó luyện aicalhouse/aititanic bằng data của đề.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-2/buoi-2-9/BAI_HOC.html">← K-Means và các phương pháp clustering</a><a href="../../phase-3/buoi-3-1/BAI_HOC.html">PyTorch tensors và autograd →</a></nav></body></html>

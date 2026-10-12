@@ -1,0 +1,28 @@
+{
+ "w": 960,
+ "h": 420,
+ "n": 10,
+ "cols": 3,
+ "dur": 900,
+ "hold": 2400,
+ "labels": [
+  "bước 1: loss đúng 1.513, loss khi softmax hai lần 1.168",
+  "bước 5: loss đúng 0.279, loss khi softmax hai lần 1.019",
+  "bước 10: loss đúng 0.122, loss khi softmax hai lần 0.812",
+  "bước 20: loss đúng 0.058, loss khi softmax hai lần 0.633",
+  "bước 40: loss đúng 0.028, loss khi softmax hai lần 0.585",
+  "bước 70: loss đúng 0.016, loss khi softmax hai lần 0.569",
+  "bước 110: loss đúng 0.010, loss khi softmax hai lần 0.562",
+  "bước 160: loss đúng 0.007, loss khi softmax hai lần 0.559",
+  "bước 230: loss đúng 0.005, loss khi softmax hai lần 0.556",
+  "bước 300: loss đúng 0.004, loss khi softmax hai lần 0.555"
+ ],
+ "key": [
+  1,
+  4,
+  9
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 3
+}

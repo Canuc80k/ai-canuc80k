@@ -1,0 +1,55 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Self-supervised vision</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 4.7</small><h1>Buổi 4.7: Self-supervised vision</h1><p>Dữ liệu không nhãn tạo cặp positive/negative bằng cách nào?</p></section><section class="slide"><small>Buổi 4.7</small><h1>Ý tưởng chính</h1><p>contrastive loss=-log softmax(similarity/temperature)[positive]</p><ul><li>Self-supervised tạo mục tiêu từ dữ liệu; không đồng nhất supervised pretrained vớiSSL.</li><li>Contrastive học views liên quan gần nhau, quản lý false negatives.</li><li>DINOv2 làencoderSSL cósẵn; thực hành trích features đúng processor/checkpoint.</li></ul></section><section class="slide"><small>Buổi 4.7</small><h1>Ví dụ</h1><pre>{
+  &quot;a&quot;: [
+    1,
+    0
+  ],
+  &quot;b&quot;: [
+    1,
+    1
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Đáp án ví dụ</h1><pre>0.707107</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Code minh họa (1)</h1><pre>import torch
+import torch.nn.functional as F
+
+# Giả sử encoder tạo hai views cùng ảnh và một view ảnh khác.
+# Đây là embeddings fixture để hiểu contrastive score, không output DINO thật.
+anchor=torch.tensor([[1.,0.]])
+views=torch.tensor([[.9,.1],[0.,1.]])
+anchor=F.normalize(anchor,dim=1); views=F.normalize(views,dim=1)
+similarity=anchor@views.T
+logits=similarity/.1
+loss=F.cross_entropy(logits,torch.tensor([0]))
+print(&quot;Similarities:&quot;,similarity.round(decimals=4).tolist())
+print(&quot;Contrastive CE:&quot;,round(loss.item(),6))
+assert similarity[0,0]&gt;similarity[0,1]
+# Thực hành pretrained SSL thật theo DINOv2 docs trong bài, không nhầm fixture với</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Code minh họa (2)</h1><pre>checkpoint.</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Kết quả</h1><pre>Similarities: [[0.9939000010490417, 0.0]]
+Contrastive CE: 4.8e-05</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Điểm dễ nhầm</h1><ul><li>Một loss nhỏ trên fixture không là kết quả huấn luyệnSSL ảnh thật.</li><li>Giảm temperature và đọc thay đổi weights cho positive/negative.</li></ul></section><section class="slide"><small>Buổi 4.7</small><h1>Bài trên lớp 1</h1><p>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</p><pre>{
+  &quot;a&quot;: [
+    1,
+    0
+  ],
+  &quot;b&quot;: [
+    1,
+    1
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Bài trên lớp 2</h1><p>Crossentropy chọnpositiveindex từsimilarity scores/temperature.</p><pre>{
+  &quot;similarities&quot;: [
+    1,
+    0
+  ],
+  &quot;temperature&quot;: 0.1,
+  &quot;positive&quot;: 0
+}</pre></section><section class="slide"><small>Buổi 4.7</small><h1>Bài tập về nhà 1</h1><p>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</p><ul><li>Input: a/b: list số cùng chiều dài&gt;0.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 4.7</small><h1>Bài tập về nhà 2</h1><p>Crossentropy chọnpositiveindex từsimilarity scores/temperature.</p><ul><li>Input: similarities: list số hữu hạn; temperature&gt;0; chỉ số positive hợp lệ.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 4.7</small><h1>Bài tập về nhà 3</h1><p>Đánh giá biểu diễn bằng clustering</p><ul><li>Data: cluster</li><li>Metric: AdjustedRandIndex, giátrịcó thểâm; score=max(0, ARI).</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 4.7</small><h1>Tổng kết</h1><p>Giảm temperature và đọc thay đổi weights cho positive/negative.</p><ul><li>Tài liệu Hugging Face DINOv2.</li><li>Chạy ví dụ lấy embeddings trong trang DINOv2; đây là bài thực hành theo code tài liệu, không một competition mới.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

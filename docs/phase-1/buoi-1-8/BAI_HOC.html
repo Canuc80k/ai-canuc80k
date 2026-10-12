@@ -1,0 +1,30 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Xác suất và thống kê dùng trong AI — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/2.3?part=1">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 1.8: Xác suất và thống kê dùng trong AI</h1><p>P(cảnh báo|lỗi) có bằng P(lỗi|cảnh báo) không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Mean dễ bị outlier kéo; median mô tả vị trí giữa khi sắp thứ tự.</li><li>Variance/std mô tả độ phân tán; phải phân biệt population/sample convention.</li><li>Xác suất có điều kiện phụ thuộc mẫu số; nhãn quyết định không phải probability.</li></ul><p class="note">P(lỗi|cảnh báo) = TP/(TP+FP)</p><h2>Code minh họa</h2><pre>import numpy as np
+x = np.array([1,2,3,100],dtype=float)
+print(&quot;Mean:&quot;,x.mean(),&quot;Median:&quot;,np.median(x))
+print(&quot;Std population:&quot;,round(x.std(ddof=0),4))
+# 20 vật lỗi, 80 vật tốt; detector bắt đúng 18 và báo nhầm 8.
+tp,fn,fp,tn = 18,2,8,72
+print(&quot;P(canh bao|loi):&quot;,tp/(tp+fn))
+print(&quot;P(loi|canh bao):&quot;,round(tp/(tp+fp),6))
+print(&quot;Hai xác suất có điều kiện này không bằng nhau.&quot;)
+assert x.mean()==26.5 and np.median(x)==2.5
+</pre><h3>Kết quả</h3><pre>Mean: 26.5 Median: 2.5
+Std population: 42.4411
+P(canh bao|loi): 0.9
+P(loi|canh bao): 0.692308
+Hai xác suất có điều kiện này không bằng nhau.
+</pre><p class="note">Đảo điều kiện thay đổi mẫu số và ý nghĩa.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả mean, population variance; phân biệt generator collapse với cùng mean.</p><pre>{
+  &quot;values&quot;: [
+    1,
+    2,
+    3
+  ]
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;mean&quot;: 2.0,
+  &quot;variance&quot;: 0.6666666666666666
+}</pre></details><h3>Bài 2</h3><p>Từ TN, FP, FN, TP tính P(positive thật|báo positive); denominator bằng 0 trả 0.</p><pre>{
+  &quot;tn&quot;: 72,
+  &quot;fp&quot;: 8,
+  &quot;fn&quot;: 2,
+  &quot;tp&quot;: 18
+}</pre><details><summary>Đáp án</summary><pre>0.6923076923076923</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả mean, population variance; phân biệt generator collapse với cùng mean.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Từ TN, FP, FN, TP tính P(positive thật|báo positive); denominator bằng 0 trả 0.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Binary log loss trung bình, dùng natural log; prob0/1 clip vào[1e-12,1-1e-12].</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO chương 7–8.</p><p>AIO 7.2 Câu hỏi tự luận, 7.3 và 8.2 Câu hỏi trắc nghiệm.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-1/buoi-1-7/BAI_HOC.html">← Đại số tuyến tính dùng trong AI</a><a href="../../phase-1/buoi-1-9/BAI_HOC.html">Đạo hàm và gradient descent →</a></nav></body></html>

@@ -1,0 +1,51 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pandas — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/0.3?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 0.4: Pandas</h1><p>Điểm thiếu của một học sinh nên lấy median của lớp nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>DataFrame có tên cột và kiểu dữ liệu; kiểm schema trước xử lý.</li><li>groupby gom cùng lớp; transform trả một giá trị cho mỗi dòng ban đầu.</li><li>merge theo khóa có kiểm tra cardinality tránh tăng số mẫu.</li></ul><p class="note">missing_score → median của group tương ứng</p><h2>Code minh họa</h2><pre>import pandas as pd
+# Bốn học sinh là fixture minh họa, không phải hồ sơ cá nhân.
+students = pd.DataFrame({&quot;id&quot;:[1,2,3,4], &quot;class&quot;:[&quot;A&quot;,&quot;A&quot;,&quot;B&quot;,&quot;B&quot;],
+                         &quot;score&quot;:[8.0,None,6.0,10.0]})
+teachers = pd.DataFrame({&quot;class&quot;:[&quot;A&quot;,&quot;B&quot;], &quot;teacher&quot;:[&quot;Mai&quot;,&quot;Son&quot;]})
+# transform trả một median cho từng dòng thuộc đúng nhóm.
+median = students.groupby(&quot;class&quot;)[&quot;score&quot;].transform(&quot;median&quot;)
+students[&quot;score&quot;] = students[&quot;score&quot;].fillna(median)
+# validate ngăn merge làm tăng số dòng do khóa trùng.
+full = students.merge(teachers, on=&quot;class&quot;, validate=&quot;many_to_one&quot;)
+print(full.to_string(index=False))
+print(&quot;Điểm trung bình mỗi lớp:&quot;)
+print(full.groupby(&quot;class&quot;)[&quot;score&quot;].mean().to_string())
+assert len(full) == 4 and full[&quot;score&quot;].notna().all()
+</pre><h3>Kết quả</h3><pre> id class  score teacher
+  1     A    8.0     Mai
+  2     A    8.0     Mai
+  3     B    6.0     Son
+  4     B   10.0     Son
+Điểm trung bình mỗi lớp:
+class
+A    8.0
+B    8.0
+</pre><p class="note">Điền missing để mô tả bảng khác fit imputer cho ML; ở ML phải fit trên train.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Tính mean theo group; group được chuyển thành chuỗi trong keys output.</p><pre>{
+  &quot;groups&quot;: [
+    &quot;A&quot;,
+    &quot;A&quot;,
+    &quot;B&quot;
+  ],
+  &quot;values&quot;: [
+    8,
+    6,
+    10
+  ]
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;A&quot;: 7.0,
+  &quot;B&quot;: 10.0
+}</pre></details><h3>Bài 2</h3><p>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</p><pre>{
+  &quot;train&quot;: [
+    10,
+    null,
+    30
+  ],
+  &quot;query&quot;: [
+    null,
+    100
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  20.0,
+  100
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Tính mean theo group; group được chuyển thành chuỗi trong keys output.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Giữ records có score&gt;=threshold, sắp score giảm; hòa score thì id tăng.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>NT chương 3; AIO 11.2.</p><p>NT 9.3 “Làm sạch và tổng hợp dữ liệu bằng pandas”, dùng đúng hai bảng students/classes cấp trong tài liệu.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-0/buoi-0-3/BAI_HOC.html">← NumPy</a><a href="../../phase-0/buoi-0-5/BAI_HOC.html">Matplotlib và Seaborn →</a></nav></body></html>

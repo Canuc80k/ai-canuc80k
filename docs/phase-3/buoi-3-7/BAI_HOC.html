@@ -1,0 +1,54 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dropout, weight decay, early stopping và normalization — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/3.6?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 3.7: Dropout, weight decay, early stopping và normalization</h1><p>Tại sao dropout cần tắt khi predict?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Dropout ngẫu nhiên ở train; eval dùng toàn bộ tín hiệu theo quy ước layer.</li><li>Early stopping chọn best checkpoint bằng validation, không last epoch.</li><li>BatchNorm dùng statistics train/eval khác nhau; normalization cần đúng axes.</li></ul><p class="note">best checkpoint = validation loss thấp nhất theo rule đã chốt</p><h2>Code minh họa</h2><pre>import torch
+from torch import nn
+torch.manual_seed(42)
+dropout = nn.Dropout(p=.5)
+X = torch.ones(1,8)
+dropout.train(); a = dropout(X)
+dropout.eval(); b = dropout(X)
+print(&quot;train dropout:&quot;,a.tolist())
+print(&quot;eval dropout:&quot;,b.tolist())
+losses = [.8,.6,.65,.7]
+best=float(&quot;inf&quot;); patience=2; bad=0; best_epoch=None
+for epoch,loss in enumerate(losses,1):
+    if loss&lt;best: best=loss; best_epoch=epoch; bad=0
+    else: bad+=1
+    if bad&gt;=patience:
+        print(&quot;stop&quot;,epoch,&quot;restore best epoch&quot;,best_epoch); break
+assert torch.equal(b,X) and best_epoch==2
+</pre><h3>Kết quả</h3><pre>train dropout: [[2.0, 2.0, 2.0, 2.0, 0.0, 2.0, 0.0, 0.0]]
+eval dropout: [[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]]
+stop 4 restore best epoch 2
+</pre><p class="note">Không cập nhật BatchNorm từ test và không dùng test để early-stop.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Theo losses, patience, min_delta; improvement strict loss&lt;best-min_delta; best/stop zero-based.</p><pre>{
+  &quot;losses&quot;: [
+    0.8,
+    0.6,
+    0.65,
+    0.7
+  ],
+  &quot;patience&quot;: 2,
+  &quot;min_delta&quot;: 0
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;best&quot;: 1,
+  &quot;stop&quot;: 3
+}</pre></details><h3>Bài 2</h3><p>Layer normalization từng row với population variance và epsilon; gamma=1, beta=0.</p><pre>{
+  &quot;rows&quot;: [
+    [
+      1,
+      3
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  &quot;eps&quot;: 1e-05
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    -0.9999950000374997,
+    0.9999950000374997
+  ],
+  [
+    0.0,
+    0.0
+  ]
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Theo losses, patience, min_delta; improvement strict loss&lt;best-min_delta; best/stop zero-based.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Layer normalization từng row với population variance và epsilon; gamma=1, beta=0.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Regularization và best checkpoint</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>KHTN chương 9; AIO chương 31–32.</p><p>AIO 31.2 phần liên quan và32.2 chương trình gradient vanishing;32.3 trắc nghiệm; đọc/check checkpoint trong tutorial PyTorch.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-6/BAI_HOC.html">← Optimizers, learning rate và initialization</a><a href="../../phase-3/buoi-3-8/BAI_HOC.html">Embeddings, pooling, attention và Transformers →</a></nav></body></html>

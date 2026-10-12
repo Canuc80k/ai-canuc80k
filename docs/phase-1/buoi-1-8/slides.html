@@ -1,0 +1,49 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Xác suất và thống kê dùng trong AI</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 1.8</small><h1>Buổi 1.8: Xác suất và thống kê dùng trong AI</h1><p>P(cảnh báo|lỗi) có bằng P(lỗi|cảnh báo) không?</p></section><section class="slide"><small>Buổi 1.8</small><h1>Ý tưởng chính</h1><p>P(lỗi|cảnh báo) = TP/(TP+FP)</p><ul><li>Mean dễ bị outlier kéo; median mô tả vị trí giữa khi sắp thứ tự.</li><li>Variance/std mô tả độ phân tán; phải phân biệt population/sample convention.</li><li>Xác suất có điều kiện phụ thuộc mẫu số; nhãn quyết định không phải probability.</li></ul></section><section class="slide"><small>Buổi 1.8</small><h1>Ví dụ</h1><pre>{
+  &quot;values&quot;: [
+    1,
+    2,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.8</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;mean&quot;: 2,
+  &quot;variance&quot;: 0.666667
+}</pre></section><section class="slide"><small>Buổi 1.8</small><h1>Code minh họa</h1><pre>import numpy as np
+
+x = np.array([1,2,3,100],dtype=float)
+print(&quot;Mean:&quot;,x.mean(),&quot;Median:&quot;,np.median(x))
+print(&quot;Std population:&quot;,round(x.std(ddof=0),4))
+# 20 vật lỗi, 80 vật tốt; detector bắt đúng 18 và báo nhầm 8.
+tp,fn,fp,tn = 18,2,8,72
+print(&quot;P(canh bao|loi):&quot;,tp/(tp+fn))
+print(&quot;P(loi|canh bao):&quot;,round(tp/(tp+fp),6))
+print(&quot;Hai xác suất có điều kiện này không bằng nhau.&quot;)
+assert x.mean()==26.5 and np.median(x)==2.5</pre></section><section class="slide"><small>Buổi 1.8</small><h1>Kết quả</h1><pre>Mean: 26.5 Median: 2.5
+Std population: 42.4411
+P(canh bao|loi): 0.9
+P(loi|canh bao): 0.692308
+Hai xác suất có điều kiện này không bằng nhau.</pre></section><section class="slide"><small>Buổi 1.8</small><h1>Điểm dễ nhầm</h1><ul><li>Đảo điều kiện thay đổi mẫu số và ý nghĩa.</li><li>Từ TP18, FP8, FN2, TN72, tính hai xác suất và giải thích khác nhau.</li></ul></section><section class="slide"><small>Buổi 1.8</small><h1>Bài trên lớp 1</h1><p>Trả mean, population variance; phân biệt generator collapse với cùng mean.</p><pre>{
+  &quot;values&quot;: [
+    1,
+    2,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.8</small><h1>Bài trên lớp 2</h1><p>Từ TN, FP, FN, TP tính P(positive thật|báo positive); denominator bằng 0 trả 0.</p><pre>{
+  &quot;tn&quot;: 72,
+  &quot;fp&quot;: 8,
+  &quot;fn&quot;: 2,
+  &quot;tp&quot;: 18
+}</pre></section><section class="slide"><small>Buổi 1.8</small><h1>Bài tập về nhà 1</h1><p>Trả mean, population variance; phân biệt generator collapse với cùng mean.</p><ul><li>Input: values: list số không rỗng.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 1.8</small><h1>Bài tập về nhà 2</h1><p>Từ TN, FP, FN, TP tính P(positive thật|báo positive); denominator bằng 0 trả 0.</p><ul><li>Input: tn/fp/fn/tp: nonnegative integers.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 1.8</small><h1>Bài tập về nhà 3</h1><p>Binary log loss trung bình, dùng natural log; prob0/1 clip vào[1e-12,1-1e-12].</p><ul><li>Input: y: list 0/1; prob: list[0,1] cùng chiều dài&gt;0.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 1.8</small><h1>Tổng kết</h1><p>Từ TP18, FP8, FN2, TN72, tính hai xác suất và giải thích khác nhau.</p><ul><li>AIO chương 7–8.</li><li>AIO 7.2 Câu hỏi tự luận, 7.3 và 8.2 Câu hỏi trắc nghiệm.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

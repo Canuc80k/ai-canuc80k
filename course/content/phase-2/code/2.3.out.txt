@@ -1,0 +1,33 @@
+== Dữ liệu spam ==
+train (300, 2), test (100, 2), tỉ lệ spam train = 0.307
+
+== Linear regression trên nhãn 0/1 ==
+dự đoán từ -0.20 đến 1.34; 54 email ngoài [0, 1]
+300 email gốc    : ngưỡng linear = 3.07 (acc 0.78)   ngưỡng logistic = 3.01 (acc 0.78)
+thêm 20 siêu spam: ngưỡng linear = 6.00 (acc 0.68)   ngưỡng logistic = 3.01 (acc 0.78)
+
+== Kiểm tra gradient ==
+sai số tương đối = 5.8e-12
+
+== Gradient descent ==
+w = [1.124 0.947]   b = -4.730   (quy luật thật: 1.1, 0.9, −4.5)
+loss ban đầu = 0.6931 (= log 2)   sau 5000 vòng = 0.3995
+scikit-learn: w = [1.124 0.947]   b = -4.730   trùng: True
+
+== Đọc hệ số qua odds ==
+thêm 1 link: odds × 3.08   thêm 1 từ quảng cáo: odds × 2.58
+P(spam) cho (1,1), (2,1), (7,1), (8,1): [0.065 0.177 0.983 0.995]
+
+== Ngưỡng quyết định trên 100 email test ==
+ngưỡng 0.3: chặn đúng 30 spam, chặn nhầm 21 thư thật, lọt  3 spam
+ngưỡng 0.5: chặn đúng 25 spam, chặn nhầm  7 thư thật, lọt  8 spam
+ngưỡng 0.9: chặn đúng  4 spam, chặn nhầm  0 thư thật, lọt 29 spam
+accuracy = 0.85   mốc luôn đoán 'không spam' = 0.67
+log loss: mốc = 0.635   mô hình = 0.371   nộp nhãn thay xác suất = 5.407
+
+== Softmax không tràn số ==
+softmax(2, 1, 0) = [0.665 0.245 0.09 ]   cộng 1000 vào mọi logit: [0.665 0.245 0.09 ]
+
+== Softmax regression trên chữ số viết tay ==
+tự cài: accuracy = 0.978   scikit-learn: accuracy = 0.978
+nhãn trùng: 1.000   xác suất lệch lớn nhất: 0.032

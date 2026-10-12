@@ -1,0 +1,451 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="494.487623pt" height="235.072656pt" viewBox="0 0 494.487623 235.072656" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-9-label-figure_1">
+  <g id="fig-2-9-label-patch_1">
+   <path d="M 0 235.072656 
+L 494.487623 235.072656 
+L 494.487623 0 
+L 0 0 
+L 0 235.072656 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-9-label-axes_1">
+   <g id="fig-2-9-label-patch_2">
+    <path d="M 50.379766 193.47 
+L 261.663694 193.47 
+L 261.663694 23.345 
+L 50.379766 23.345 
+L 50.379766 193.47 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-9-label-matplotlib.axis_1">
+    <g id="fig-2-9-label-xtick_1">
+     <g id="fig-2-9-label-line2d_1">
+      <defs>
+       <path id="fig-2-9-label-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="77.839821" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="77.839821" y="207.6425" transform="rotate(-0 77.839821 207.6425)">−4</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_2">
+     <g id="fig-2-9-label-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="116.230363" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="116.230363" y="207.6425" transform="rotate(-0 116.230363 207.6425)">−2</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_3">
+     <g id="fig-2-9-label-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="154.620906" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="154.620906" y="207.6425" transform="rotate(-0 154.620906 207.6425)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_4">
+     <g id="fig-2-9-label-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="193.011448" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="193.011448" y="207.6425" transform="rotate(-0 193.011448 207.6425)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_5">
+     <g id="fig-2-9-label-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="231.401991" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="231.401991" y="207.6425" transform="rotate(-0 231.401991 207.6425)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-text_6">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="156.02173" y="227.052344" transform="rotate(-0 156.02173 227.052344)">biến thiên lớn, không mang nhãn</text>
+    </g>
+   </g>
+   <g id="fig-2-9-label-matplotlib.axis_2">
+    <g id="fig-2-9-label-ytick_1">
+     <g id="fig-2-9-label-line2d_6">
+      <defs>
+       <path id="fig-2-9-label-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-9-label-m9fce3a8e10" x="50.379766" y="176.4575" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.379766" y="180.04375" transform="rotate(-0 43.379766 180.04375)">−0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-ytick_2">
+     <g id="fig-2-9-label-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-9-label-m9fce3a8e10" x="50.379766" y="142.4325" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.379766" y="146.01875" transform="rotate(-0 43.379766 146.01875)">−0.1</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-ytick_3">
+     <g id="fig-2-9-label-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-9-label-m9fce3a8e10" x="50.379766" y="108.4075" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.379766" y="111.99375" transform="rotate(-0 43.379766 111.99375)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-ytick_4">
+     <g id="fig-2-9-label-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-9-label-m9fce3a8e10" x="50.379766" y="74.3825" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.379766" y="77.96875" transform="rotate(-0 43.379766 77.96875)">0.1</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-ytick_5">
+     <g id="fig-2-9-label-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-9-label-m9fce3a8e10" x="50.379766" y="40.3575" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.379766" y="43.94375" transform="rotate(-0 43.379766 43.94375)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-text_12">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.027344" y="108.4075" transform="rotate(-90 14.027344 108.4075)">biến thiên nhỏ, mang nhãn</text>
+    </g>
+   </g>
+   <g id="fig-2-9-label-PathCollection_1">
+    <defs>
+     <path id="fig-2-9-label-m728b5e953d" d="M 0 2.12132 
+C 0.562581 2.12132 1.102195 1.897805 1.5 1.5 
+C 1.897805 1.102195 2.12132 0.562581 2.12132 0 
+C 2.12132 -0.562581 1.897805 -1.102195 1.5 -1.5 
+C 1.102195 -1.897805 0.562581 -2.12132 0 -2.12132 
+C -0.562581 -2.12132 -1.102195 -1.897805 -1.5 -1.5 
+C -1.897805 -1.102195 -2.12132 -0.562581 -2.12132 0 
+C -2.12132 0.562581 -1.897805 1.102195 -1.5 1.5 
+C -1.102195 1.897805 -0.562581 2.12132 0 2.12132 
+z
+" style="stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+    </defs>
+    <g clip-path="url(#fig-2-9-label-p7fc250cbe2)">
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="87.887916" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="103.306464" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="102.367281" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="141.122133" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="65.839645" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="147.36904" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="117.872357" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="188.926702" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="191.35479" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="208.070454" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="184.0845" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="152.585064" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="187.628863" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="212.417144" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="129.529057" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="178.052617" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="152.982634" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="209.903929" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="122.492052" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="143.044368" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="168.531281" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="164.529899" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="91.681609" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="168.447461" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="150.071715" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="145.416856" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="148.658791" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="163.027348" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="84.888491" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="214.220939" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="121.549693" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="68.573578" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="151.473861" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="210.57437" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="134.711533" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="214.175218" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="214.392754" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="121.50016" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="59.983581" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="107.20157" y="149.2375" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+    </g>
+   </g>
+   <g id="fig-2-9-label-PathCollection_2">
+    <defs>
+     <path id="fig-2-9-label-m56e927791e" d="M 0 2.12132 
+C 0.562581 2.12132 1.102195 1.897805 1.5 1.5 
+C 1.897805 1.102195 2.12132 0.562581 2.12132 0 
+C 2.12132 -0.562581 1.897805 -1.102195 1.5 -1.5 
+C 1.102195 -1.897805 0.562581 -2.12132 0 -2.12132 
+C -0.562581 -2.12132 -1.102195 -1.897805 -1.5 -1.5 
+C -1.897805 -1.102195 -2.12132 -0.562581 -2.12132 0 
+C -2.12132 0.562581 -1.897805 1.102195 -1.5 1.5 
+C -1.102195 1.897805 -0.562581 2.12132 0 2.12132 
+z
+" style="stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+    </defs>
+    <g clip-path="url(#fig-2-9-label-p7fc250cbe2)">
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="200.207073" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="123.264579" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="96.625178" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="103.266082" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="154.627822" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="153.618587" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="188.099183" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="192.591071" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="118.83136" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="148.602854" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="111.08854" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="157.380828" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="110.448447" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="108.542598" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="236.140226" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="155.864333" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="179.312882" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="252.059879" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="184.789684" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="150.238909" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="156.716644" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="126.039455" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="196.633152" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="141.941328" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="222.293663" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="141.385438" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="141.04513" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="138.52078" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="178.641633" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="161.797483" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="207.27094" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="133.377514" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="165.763306" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="229.020308" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="145.392522" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="175.0682" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="214.966318" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="175.867989" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="130.261908" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="75.44617" y="67.5775" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+    </g>
+   </g>
+   <g id="fig-2-9-label-patch_3">
+    <path d="M 50.379766 193.47 
+L 50.379766 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-9-label-patch_4">
+    <path d="M 50.379766 193.47 
+L 261.663694 193.47 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-9-label-text_13">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="156.02173" y="13.345" transform="rotate(-0 156.02173 13.345)">trước PCA</text>
+   </g>
+  </g>
+  <g id="fig-2-9-label-axes_2">
+   <g id="fig-2-9-label-patch_5">
+    <path d="M 278.163694 193.47 
+L 489.447623 193.47 
+L 489.447623 23.345 
+L 278.163694 23.345 
+L 278.163694 193.47 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-9-label-matplotlib.axis_3">
+    <g id="fig-2-9-label-xtick_6">
+     <g id="fig-2-9-label-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="305.62375" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="305.62375" y="207.6425" transform="rotate(-0 305.62375 207.6425)">−4</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_7">
+     <g id="fig-2-9-label-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="344.014292" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="344.014292" y="207.6425" transform="rotate(-0 344.014292 207.6425)">−2</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_8">
+     <g id="fig-2-9-label-line2d_13">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="382.404834" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="382.404834" y="207.6425" transform="rotate(-0 382.404834 207.6425)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_9">
+     <g id="fig-2-9-label-line2d_14">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="420.795377" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="420.795377" y="207.6425" transform="rotate(-0 420.795377 207.6425)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-xtick_10">
+     <g id="fig-2-9-label-line2d_15">
+      <g>
+       <use xlink:href="#fig-2-9-label-m04e37d9cc8" x="459.185919" y="193.47" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-9-label-text_18">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="459.185919" y="207.6425" transform="rotate(-0 459.185919 207.6425)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-9-label-text_19">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.805658" y="227.052344" transform="rotate(-0 383.805658 227.052344)">sau chiếu xuống trục x</text>
+    </g>
+   </g>
+   <g id="fig-2-9-label-matplotlib.axis_4"/>
+   <g id="fig-2-9-label-PathCollection_3">
+    <g clip-path="url(#fig-2-9-label-pa117384c8a)">
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="315.671844" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="331.090393" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="330.15121" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="368.906062" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="293.623573" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="375.152969" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="345.656285" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="416.71063" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="419.138719" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="435.854383" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="411.868428" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="380.368992" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="415.412792" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="440.201073" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="357.312986" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="405.836546" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="380.766563" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="437.687858" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="350.275981" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="370.828296" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="396.315209" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="392.313828" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="319.465538" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="396.231389" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="377.855643" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="373.200784" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="376.442719" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="390.811277" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="312.67242" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="442.004868" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="349.333621" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="296.357507" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="379.257789" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="438.358298" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="362.495462" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="441.959147" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="442.176682" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="349.284088" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="287.767509" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m728b5e953d" x="334.985498" y="112.884474" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+    </g>
+   </g>
+   <g id="fig-2-9-label-PathCollection_4">
+    <g clip-path="url(#fig-2-9-label-pa117384c8a)">
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="427.991001" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="351.048508" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="324.409106" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="331.05001" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="382.41175" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="381.402516" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="415.883112" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="420.374999" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="346.615289" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="376.386783" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="338.872468" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="385.164756" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="338.232376" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="336.326526" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="463.924154" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="383.648261" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="407.09681" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="479.843808" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="412.573613" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="378.022838" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="384.500572" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="353.823384" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="424.417081" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="369.725256" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="450.077591" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="369.169367" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="368.829058" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="366.304708" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="406.425562" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="389.581411" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="435.054868" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="361.161442" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="393.547234" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="456.804237" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="373.176451" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="402.852128" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="442.750246" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="403.651918" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="358.045837" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+     <use xlink:href="#fig-2-9-label-m56e927791e" x="303.230099" y="112.884474" style="fill: var(--accent, #c2603e); fill-opacity: 0.75; stroke: #ffffff; stroke-opacity: 0.75; stroke-width: 0.25"/>
+    </g>
+   </g>
+   <g id="fig-2-9-label-patch_6">
+    <path d="M 278.163694 193.47 
+L 278.163694 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-9-label-patch_7">
+    <path d="M 278.163694 193.47 
+L 489.447623 193.47 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-9-label-text_20">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.805658" y="13.345" transform="rotate(-0 383.805658 13.345)">chiếu còn 1 trục</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-9-label-p7fc250cbe2">
+   <rect x="50.379766" y="23.345" width="211.283929" height="170.125"/>
+  </clipPath>
+  <clipPath id="fig-2-9-label-pa117384c8a">
+   <rect x="278.163694" y="23.345" width="211.283929" height="170.125"/>
+  </clipPath>
+ </defs>
+</svg>

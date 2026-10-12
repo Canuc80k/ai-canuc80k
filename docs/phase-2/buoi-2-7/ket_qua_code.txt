@@ -1,0 +1,2 @@
+linear accuracy 0.963 support_vectors 24
+rbf accuracy 0.9815 support_vectors 57

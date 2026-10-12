@@ -1,0 +1,14 @@
+{
+  "layers": [
+    {
+      "name": "base",
+      "count": 16,
+      "trainable": false
+    },
+    {
+      "name": "head",
+      "count": 9,
+      "trainable": true
+    }
+  ]
+}

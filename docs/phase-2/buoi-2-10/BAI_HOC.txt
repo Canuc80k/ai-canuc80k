@@ -1,0 +1,79 @@
+BUỔI 2.10 — Feature engineering, tuning và phân tích lỗi
+
+HỌC SINH CẦN HIỂU
+- Feature engineering cần thông tin có tại inference.
+- Search giữ split/protocol; log params và metric, kể cả trial không tốt.
+- Chọn bằng CV; test chỉ đọc sau khi đã chốt lựa chọn.
+
+CÂU HỎI MỞ BÀI
+Gain đến từ feature mới hay từ đổi split ngẫu nhiên?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+compare = cùng data + cùng split + cùng metric
+
+CẦN PHÂN BIỆT
+Target encoding/OFF/stacking sai cách có thể tạo leakage.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Vocabulary cấp sẵn; unseen category tạo vector toàn 0.
+Input:
+{
+  "values": [
+    "red",
+    "yellow",
+    "blue"
+  ],
+  "vocab": [
+    "red",
+    "blue"
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    1,
+    0
+  ],
+  [
+    0,
+    0
+  ],
+  [
+    0,
+    1
+  ]
+]
+
+Bài trên lớp 2: Mean CV score cho mỗi model; chọn mean lớn nhất, tie id nhỏ.
+Input:
+{
+  "trials": [
+    {
+      "id": 1,
+      "scores": [
+        0.8,
+        0.5
+      ]
+    },
+    {
+      "id": 2,
+      "scores": [
+        0.7,
+        0.7
+      ]
+    }
+  ]
+}
+Output để đối chiếu sau khi làm:
+2
+
+BÀI VỀ NHÀ
+- BTVN 1: Vocabulary cấp sẵn; unseen category tạo vector toàn 0.; xem BTVN_01.txt.
+- BTVN 2: Mean CV score cho mỗi model; chọn mean lớn nhất, tie id nhỏ.; xem BTVN_02.txt.
+- BTVN 3: Một cải tiến có kiểm chứng; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+KHTN 1.3–1.7,2.9; NT phụ lục A.
+NT 9.5 phần nâng cao GridSearchCV; 9.7 Pipeline; 9.9 Mô phỏng submission. Sau đó luyện aicalhouse/aititanic bằng data của đề.

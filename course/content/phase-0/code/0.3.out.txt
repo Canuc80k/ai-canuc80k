@@ -1,0 +1,103 @@
+(400, 5) (100, 4)
+   id   lop  gio_tu_hoc  diem_hk1  diem_toan
+0   1  10A4         0.4       9.1       6.72
+1   2  10A3         0.6       5.9       6.84
+2   3  10A3         2.8       4.9       4.79
+
+id              int64
+lop            object
+gio_tu_hoc    float64
+diem_hk1      float64
+diem_toan     float64
+dtype: object
+id             0
+lop            0
+gio_tu_hoc    23
+diem_hk1       0
+diem_toan      0
+dtype: int64
+
+schema: OK train/test ids disjoint: OK
+
+           id  gio_tu_hoc  diem_hk1  diem_toan
+count  400.00      377.00    400.00     400.00
+mean   200.50        5.43      6.55       6.44
+std    115.61        4.13      1.39       1.16
+min      1.00        0.30      2.90       3.51
+25%    100.75        2.60      5.60       5.64
+50%    200.50        4.40      6.50       6.43
+75%    300.25        6.80      7.50       7.21
+max    400.00       23.00     10.00       9.94
+lop
+10A4    110
+10A3    103
+10A1     98
+10A2     89
+Name: count, dtype: int64
+
+6.436 (400, 2)
+52 7.416
+      id   lop  gio_tu_hoc
+220  221  10A3        22.6
+252  253  10A1        20.1
+287  288  10A4        23.0
+399  400  10A3        21.7
+   id   lop  gio_tu_hoc
+0   1  10A4         0.4
+1   2  10A3         0.6
+
+      id  diem_hk1  diem_toan  tien_bo
+236  237       5.3       9.35     4.05
+252  253       4.9       8.23     3.33
+339  340       3.9       7.22     3.32
+
+0
+98
+
+4.4 {'10A1': 4.2, '10A2': 4.4, '10A3': 4.7, '10A4': 4.45}
+0 0
+[4.4]
+
+      mean   std  count
+lop                    
+10A1  6.79  1.00     98
+10A2  6.41  1.17     89
+10A3  5.96  1.14    103
+10A4  6.58  1.16    110
+
+(4,) (400,)
+    lop  diem_toan  toan_tb_lop
+0  10A4       6.72         6.58
+1  10A3       6.84         5.96
+2  10A3       4.79         5.96
+
+[7.0, 8.0, 6.0]
+
+(400, 7) (400, 9)
+chuyen
+False    6.32
+True     6.79
+Name: diem_toan, dtype: float64
+
+(498, 9)
+MergeError: Merge keys are not unique in right dataset; not a many-to-one merge
+
+            gio_tu_hoc  diem_hk1  diem_toan
+gio_tu_hoc        1.00      0.00       0.36
+diem_hk1          0.00      1.00       0.56
+diem_toan         0.36      0.56       1.00
+
+    id  diem_toan
+0  401      5.964
+1  402      6.579
+2  403      6.414
+file: (100, 2) OK
+
+['Unnamed: 0', 'id', 'diem_toan']
+
+False
+
+{'A': 7.0, 'B': 7.0}
+[8.0, 8.0, 8.0, 9.0, 9.0, 9.0]
+0.5 0.6
+{'count': {'A': 3, 'B': 2}, 'size': {'A': 3, 'B': 3}}

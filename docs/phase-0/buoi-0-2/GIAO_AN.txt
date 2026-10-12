@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 0.2 — Cấu trúc dữ liệu và thao tác tệp
+
+TRÌNH TỰ DẠY
+1. Hỏi: Nếu hai bảng bị xáo trộn dòng, còn ghép được đáp án không?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- ID định danh mẫu; số thứ tự dòng có thể thay đổi khi sort/shuffle.
+- Dict giúp tra cứu theo khóa; Counter đếm tần suất.
+- CSV lưu bảng chữ; phải chuyển chuỗi số thành kiểu số trước khi tính/sort.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+ID trùng có thể làm ghi đè hoặc merge nhân dòng.
+
+CÂU HỎI CHỐT
+Đảo thứ tự predictions và chứng minh kết quả ghép theo ID không đổi.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

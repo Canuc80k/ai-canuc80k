@@ -1,0 +1,4 @@
+k 1 neighbors [1] distance [1.0]
+class: 0
+k 3 neighbors [1, 0, 2] distance [1.0, 3.0, 7.0]
+class: 0

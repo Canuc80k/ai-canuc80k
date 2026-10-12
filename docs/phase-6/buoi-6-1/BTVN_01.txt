@@ -1,0 +1,38 @@
+BTVN 1 — Audio data và spectrograms: sample_duration
+Mã local: aicanuc80kp6b01h1
+
+YÊU CẦU
+Trả n_samples/sample_rate seconds và frame count floor((n-window)/hop)+1 nếun>=window, khôngpad.
+
+INPUT
+Đọc đúng một JSON object từ stdin.
+n_samples>=0; sample_rate/window/hop số nguyên dương.
+Trừ giới hạn riêng ở trên: list 1D tối đa 1000 phần tử; ma trận tối đa 100 hàng, 64 cột; |số thực|<=1e6. Các ma trận hình chữ nhật và kích thước tương thích. Không có dữ liệu sai schema.
+
+OUTPUT
+In đúng một JSON value chứa kết quả yêu cầu, không thêm dòng giải thích. Thứ tự list giữ theo quy định; dict không yêu cầu thứ tự keys. Sai số số thực được chấp nhận: abs_error <=1e-6+1e-6*abs(expected). Booleans khác numbers.
+
+VÍ DỤ INPUT
+{
+  "n_samples": 16000,
+  "sample_rate": 16000,
+  "window": 400,
+  "hop": 160
+}
+
+VÍ DỤ OUTPUT
+{
+  "seconds": 1.0,
+  "frames": 98
+}
+
+GIẢI THÍCH VÍ DỤ
+Áp dụng yêu cầu lên chính input đã cấp. Với dữ liệu của lớp, không tự đổi positive class, quy ước tie, axes hoặc denominator.
+
+CẦN NỘP
+Một chương trình đọc stdin/in stdout và code đã dùng. Có thể dùng json,math,collections; ở bài primitive này không gọi một model/thư viện đã làm sẵn toàn bộ phép toán cần cài.
+
+TỰ KIỂM TRA
+- Chạy input mẫu và so semantic JSON với output mẫu.
+- Kiểm trường hợp biên đã nêu trong yêu cầu, không thêm giả định ngoài đề.
+- Không dùng print debug trong output nộp.

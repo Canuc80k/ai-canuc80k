@@ -1,0 +1,25 @@
+{
+ "w": 960,
+ "h": 420,
+ "n": 7,
+ "cols": 2,
+ "dur": 1800,
+ "hold": 1800,
+ "labels": [
+  "10 bài lỗi trên 1000: 108 cảnh báo, 9 đúng (cam đặc), 99 nhầm (xanh); P(lỗi | cảnh báo) = 0.083",
+  "20 bài lỗi trên 1000: 116 cảnh báo, 18 đúng (cam đặc), 98 nhầm (xanh); P(lỗi | cảnh báo) = 0.155",
+  "50 bài lỗi trên 1000: 140 cảnh báo, 45 đúng (cam đặc), 95 nhầm (xanh); P(lỗi | cảnh báo) = 0.321",
+  "100 bài lỗi trên 1000: 180 cảnh báo, 90 đúng (cam đặc), 90 nhầm (xanh); P(lỗi | cảnh báo) = 0.500",
+  "200 bài lỗi trên 1000: 260 cảnh báo, 180 đúng (cam đặc), 80 nhầm (xanh); P(lỗi | cảnh báo) = 0.692",
+  "300 bài lỗi trên 1000: 340 cảnh báo, 270 đúng (cam đặc), 70 nhầm (xanh); P(lỗi | cảnh báo) = 0.794",
+  "500 bài lỗi trên 1000: 500 cảnh báo, 450 đúng (cam đặc), 50 nhầm (xanh); P(lỗi | cảnh báo) = 0.900"
+ ],
+ "key": [
+  1,
+  3,
+  6
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 3
+}

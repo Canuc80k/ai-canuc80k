@@ -1,0 +1,213 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="429.026094pt" height="199.22524pt" viewBox="0 0 429.026094 199.22524" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-8-1-priority-figure_1">
+  <g id="fig-8-1-priority-patch_1">
+   <path d="M 0 199.22524 
+L 429.026094 199.22524 
+L 429.026094 0 
+L 0 0 
+L 0 199.22524 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-8-1-priority-axes_1">
+   <g id="fig-8-1-priority-patch_2">
+    <path d="M 64.186094 157.524615 
+L 423.986094 157.524615 
+L 423.986094 5.04 
+L 64.186094 5.04 
+L 64.186094 157.524615 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-8-1-priority-matplotlib.axis_1">
+    <g id="fig-8-1-priority-xtick_1">
+     <g id="fig-8-1-priority-line2d_1">
+      <defs>
+       <path id="fig-8-1-priority-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="64.186094" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="64.186094" y="171.697115" transform="rotate(-0 64.186094 171.697115)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_2">
+     <g id="fig-8-1-priority-line2d_2">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="106.515506" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="106.515506" y="171.697115" transform="rotate(-0 106.515506 171.697115)">0.1</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_3">
+     <g id="fig-8-1-priority-line2d_3">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="148.844917" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="148.844917" y="171.697115" transform="rotate(-0 148.844917 171.697115)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_4">
+     <g id="fig-8-1-priority-line2d_4">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="191.174329" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="191.174329" y="171.697115" transform="rotate(-0 191.174329 171.697115)">0.3</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_5">
+     <g id="fig-8-1-priority-line2d_5">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="233.503741" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="233.503741" y="171.697115" transform="rotate(-0 233.503741 171.697115)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_6">
+     <g id="fig-8-1-priority-line2d_6">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="275.833153" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="275.833153" y="171.697115" transform="rotate(-0 275.833153 171.697115)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_7">
+     <g id="fig-8-1-priority-line2d_7">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="318.162564" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="318.162564" y="171.697115" transform="rotate(-0 318.162564 171.697115)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_8">
+     <g id="fig-8-1-priority-line2d_8">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="360.491976" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="360.491976" y="171.697115" transform="rotate(-0 360.491976 171.697115)">0.7</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-xtick_9">
+     <g id="fig-8-1-priority-line2d_9">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m04e37d9cc8" x="402.821388" y="157.524615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="402.821388" y="171.697115" transform="rotate(-0 402.821388 171.697115)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-text_10">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="244.086094" y="191.204928" transform="rotate(-0 244.086094 191.204928)">Điểm tăng dự kiến/phút = p × ΔN / t</text>
+    </g>
+   </g>
+   <g id="fig-8-1-priority-matplotlib.axis_2">
+    <g id="fig-8-1-priority-ytick_1">
+     <g id="fig-8-1-priority-line2d_10">
+      <defs>
+       <path id="fig-8-1-priority-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-1-priority-m9fce3a8e10" x="64.186094" y="25.833357" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="57.186094" y="29.419607" transform="rotate(-0 57.186094 29.419607)">Sửa schema</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-ytick_2">
+     <g id="fig-8-1-priority-line2d_11">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m9fce3a8e10" x="64.186094" y="81.282308" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="57.186094" y="84.868558" transform="rotate(-0 57.186094 84.868558)">Model mới</text>
+     </g>
+    </g>
+    <g id="fig-8-1-priority-ytick_3">
+     <g id="fig-8-1-priority-line2d_12">
+      <g>
+       <use xlink:href="#fig-8-1-priority-m9fce3a8e10" x="64.186094" y="136.731259" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-1-priority-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="57.186094" y="140.317509" transform="rotate(-0 57.186094 140.317509)">Thêm seed</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-8-1-priority-patch_3">
+    <path d="M 64.186094 11.971119 
+L 368.957858 11.971119 
+L 368.957858 39.695594 
+L 64.186094 39.695594 
+z
+" clip-path="url(#fig-8-1-priority-p450a430129)" style="fill: var(--accent, #c2603e); opacity: 0.75"/>
+   </g>
+   <g id="fig-8-1-priority-patch_4">
+    <path d="M 64.186094 67.42007 
+L 127.680211 67.42007 
+L 127.680211 95.144545 
+L 64.186094 95.144545 
+z
+" clip-path="url(#fig-8-1-priority-p450a430129)" style="fill: var(--t-n, #3b6ea8); opacity: 0.75"/>
+   </g>
+   <g id="fig-8-1-priority-patch_5">
+    <path d="M 64.186094 122.869021 
+L 93.816682 122.869021 
+L 93.816682 150.593497 
+L 64.186094 150.593497 
+z
+" clip-path="url(#fig-8-1-priority-p450a430129)" style="fill: #b8892b; opacity: 0.75"/>
+   </g>
+   <g id="fig-8-1-priority-patch_6">
+    <path d="M 64.186094 157.524615 
+L 64.186094 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-1-priority-patch_7">
+    <path d="M 64.186094 157.524615 
+L 423.986094 157.524615 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-1-priority-text_14">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="375.30727" y="28.458357" transform="rotate(-0 375.30727 28.458357)">0.72</text>
+   </g>
+   <g id="fig-8-1-priority-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="134.029623" y="83.907308" transform="rotate(-0 134.029623 83.907308)">0.15</text>
+   </g>
+   <g id="fig-8-1-priority-text_16">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="100.166094" y="139.356259" transform="rotate(-0 100.166094 139.356259)">0.07</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-8-1-priority-p450a430129">
+   <rect x="64.186094" y="5.04" width="359.8" height="152.484615"/>
+  </clipPath>
+ </defs>
+</svg>

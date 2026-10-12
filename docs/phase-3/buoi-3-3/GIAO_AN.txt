@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 3.3 — Perceptron, MLP và backpropagation
+
+TRÌNH TỰ DẠY
+1. Hỏi: Tại sao ghép hai linear layers không activation vẫn tuyến tính?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Neuron linear kết hợp features; activation tạo phi tuyến.
+- MLP nhiều lớp dùng phi tuyến để biểu diễn quan hệ như XOR.
+- Backprop tính gradient; optimizer cập nhật parameters.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Training XOR thành công chỉ minh họa khả năng biểu diễn, không là score data thật.
+
+CÂU HỎI CHỐT
+Tính parameters MLP2→8→1 và so output cho4 điểm XOR.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

@@ -1,0 +1,63 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data leakage và Pipeline — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/1.4?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 1.4: Data leakage và Pipeline</h1><p>Nếu scaler biết trước mean của valid, điểm còn độc lập không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Preprocessing cũng học thống kê: median, mean/std, vocabulary, PCA.</li><li>fit trên train; transform train/valid/test bằng cùng thống kê đã học.</li><li>Pipeline trong CV giúp mỗi fold học preprocessing từ phần train của fold.</li></ul><p class="note">fit(train) → transform(valid)</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+train = np.array([[10.0],[np.nan],[30.0]])
+valid = np.array([[np.nan],[100.0]])
+# Tất cả thống kê được học từ train.
+prep = make_pipeline(SimpleImputer(strategy=&quot;median&quot;),StandardScaler())
+prep.fit(train)
+print(&quot;Median train:&quot;,prep[0].statistics_.tolist())
+print(&quot;Mean sau impute train:&quot;,prep[1].mean_.tolist())
+print(&quot;Valid sau impute:&quot;,prep[0].transform(valid).ravel().tolist())
+print(&quot;Valid sau scale:&quot;,prep.transform(valid).round(4).ravel().tolist())
+assert prep[0].statistics_[0] == 20
+# Sai protocol: không gọi fit/fit_transform trên valid.
+</pre><h3>Kết quả</h3><pre>Median train: [20.0]
+Mean sau impute train: [20.0]
+Valid sau impute: [20.0, 100.0]
+Valid sau scale: [0.0, 9.798]
+</pre><p class="note">Pipeline không tự sửa group/time leakage hoặc feature nhìn tương lai.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</p><pre>{
+  &quot;train&quot;: [
+    10,
+    null,
+    30
+  ],
+  &quot;query&quot;: [
+    null,
+    100
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  20.0,
+  100
+]</pre></details><h3>Bài 2</h3><p>Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.</p><pre>{
+  &quot;train&quot;: [
+    [
+      1,
+      10
+    ],
+    [
+      3,
+      10
+    ]
+  ],
+  &quot;query&quot;: [
+    [
+      2,
+      12
+    ],
+    [
+      4,
+      10
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    0.0,
+    2.0
+  ],
+  [
+    2.0,
+    0.0
+  ]
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Vocabulary cấp sẵn; unseen category tạo vector toàn 0.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>NT chương 5–6; tài liệu sklearn Common Pitfalls.</p><p>NT 9.7 “Pipeline với giá trị thiếu và cột phân loại”, có dữ liệu tạo sẵn và tình huống category mới.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-1/buoi-1-3/BAI_HOC.html">← Chia dữ liệu và cross-validation</a><a href="../../phase-1/buoi-1-5/BAI_HOC.html">Đánh giá classification →</a></nav></body></html>

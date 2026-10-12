@@ -1,0 +1,9 @@
+ id class  score teacher
+  1     A    8.0     Mai
+  2     A    8.0     Mai
+  3     B    6.0     Son
+  4     B   10.0     Son
+Điểm trung bình mỗi lớp:
+class
+A    8.0
+B    8.0

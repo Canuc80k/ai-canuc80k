@@ -1,0 +1,270 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="392.903789pt" height="248.944739pt" viewBox="0 0 392.903789 248.944739" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-2-shrink-figure_1">
+  <g id="fig-2-2-shrink-patch_1">
+   <path d="M 0 248.944739 
+L 392.903789 248.944739 
+L 392.903789 0 
+L 0 0 
+L 0 248.944739 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-2-shrink-axes_1">
+   <g id="fig-2-2-shrink-patch_2">
+    <path d="M 42.159141 207.342083 
+L 385.217891 207.342083 
+L 385.217891 33.016183 
+L 42.159141 33.016183 
+L 42.159141 207.342083 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-2-shrink-matplotlib.axis_1">
+    <g id="fig-2-2-shrink-xtick_1">
+     <g id="fig-2-2-shrink-line2d_1">
+      <defs>
+       <path id="fig-2-2-shrink-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="42.159141" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="42.159141" y="221.514583" transform="rotate(-0 42.159141 221.514583)">−3</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-xtick_2">
+     <g id="fig-2-2-shrink-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="99.335599" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="99.335599" y="221.514583" transform="rotate(-0 99.335599 221.514583)">−2</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-xtick_3">
+     <g id="fig-2-2-shrink-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="156.512057" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="156.512057" y="221.514583" transform="rotate(-0 156.512057 221.514583)">−1</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-xtick_4">
+     <g id="fig-2-2-shrink-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="213.688516" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="213.688516" y="221.514583" transform="rotate(-0 213.688516 221.514583)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-xtick_5">
+     <g id="fig-2-2-shrink-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="270.864974" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="270.864974" y="221.514583" transform="rotate(-0 270.864974 221.514583)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-xtick_6">
+     <g id="fig-2-2-shrink-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="328.041432" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="328.041432" y="221.514583" transform="rotate(-0 328.041432 221.514583)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-xtick_7">
+     <g id="fig-2-2-shrink-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m04e37d9cc8" x="385.217891" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="385.217891" y="221.514583" transform="rotate(-0 385.217891 221.514583)">3</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-text_8">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="213.688516" y="240.924427" transform="rotate(-0 213.688516 240.924427)">z (hệ số least squares)</text>
+    </g>
+   </g>
+   <g id="fig-2-2-shrink-matplotlib.axis_2">
+    <g id="fig-2-2-shrink-ytick_1">
+     <g id="fig-2-2-shrink-line2d_8">
+      <defs>
+       <path id="fig-2-2-shrink-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="207.342083" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="210.928333" transform="rotate(-0 35.159141 210.928333)">−3</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-ytick_2">
+     <g id="fig-2-2-shrink-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="178.287767" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="181.874017" transform="rotate(-0 35.159141 181.874017)">−2</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-ytick_3">
+     <g id="fig-2-2-shrink-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="149.23345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="152.8197" transform="rotate(-0 35.159141 152.8197)">−1</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-ytick_4">
+     <g id="fig-2-2-shrink-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="120.179133" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="123.765383" transform="rotate(-0 35.159141 123.765383)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-ytick_5">
+     <g id="fig-2-2-shrink-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="91.124817" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="94.711067" transform="rotate(-0 35.159141 94.711067)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-ytick_6">
+     <g id="fig-2-2-shrink-line2d_13">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="62.0705" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="65.65675" transform="rotate(-0 35.159141 65.65675)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-ytick_7">
+     <g id="fig-2-2-shrink-line2d_14">
+      <g>
+       <use xlink:href="#fig-2-2-shrink-m9fce3a8e10" x="42.159141" y="33.016183" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-shrink-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.159141" y="36.602433" transform="rotate(-0 35.159141 36.602433)">3</text>
+     </g>
+    </g>
+    <g id="fig-2-2-shrink-text_16">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.027344" y="120.179133" transform="rotate(-90 14.027344 120.179133)">hệ số sau khi phạt</text>
+    </g>
+   </g>
+   <g id="fig-2-2-shrink-patch_3">
+    <path d="M 156.512057 207.342083 
+L 270.864974 207.342083 
+L 270.864974 33.016183 
+L 156.512057 33.016183 
+z
+" clip-path="url(#fig-2-2-shrink-p3c8f688063)" style="fill: var(--accent, #c2603e); opacity: 0.08"/>
+   </g>
+   <g id="fig-2-2-shrink-line2d_15">
+    <path d="M 42.159141 207.342083 
+L 385.217891 33.016183 
+L 385.217891 33.016183 
+" clip-path="url(#fig-2-2-shrink-p3c8f688063)" style="fill: none; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 1.2"/>
+   </g>
+   <g id="fig-2-2-shrink-line2d_16">
+    <path d="M 42.159141 163.760608 
+L 385.217891 76.597658 
+L 385.217891 76.597658 
+" clip-path="url(#fig-2-2-shrink-p3c8f688063)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-shrink-line2d_17">
+    <path d="M 42.159141 178.287767 
+L 156.512057 120.179133 
+L 270.864974 120.179133 
+L 385.217891 62.0705 
+L 385.217891 62.0705 
+" clip-path="url(#fig-2-2-shrink-p3c8f688063)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-shrink-line2d_18">
+    <path d="M 42.159141 120.179133 
+L 385.217891 120.179133 
+" clip-path="url(#fig-2-2-shrink-p3c8f688063)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-shrink-line2d_19">
+    <path d="M 213.688516 207.342083 
+L 213.688516 33.016183 
+" clip-path="url(#fig-2-2-shrink-p3c8f688063)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-shrink-patch_4">
+    <path d="M 42.159141 207.342083 
+L 42.159141 33.016183 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-shrink-patch_5">
+    <path d="M 42.159141 207.342083 
+L 385.217891 207.342083 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-shrink-legend_1">
+    <g id="fig-2-2-shrink-line2d_20">
+     <path d="M 98.300742 12.7125 
+L 108.300742 12.7125 
+L 118.300742 12.7125 
+" style="fill: none; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 1.2"/>
+    </g>
+    <g id="fig-2-2-shrink-text_17">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="126.300742" y="16.2125" transform="rotate(-0 126.300742 16.2125)">least squares</text>
+    </g>
+    <g id="fig-2-2-shrink-line2d_21">
+     <path d="M 203.612461 12.7125 
+L 213.612461 12.7125 
+L 223.612461 12.7125 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.4; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-2-shrink-text_18">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="231.612461" y="16.2125" transform="rotate(-0 231.612461 16.2125)">Ridge</text>
+    </g>
+    <g id="fig-2-2-shrink-line2d_22">
+     <path d="M 276.330273 12.7125 
+L 286.330273 12.7125 
+L 296.330273 12.7125 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.4; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-2-shrink-text_19">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="304.330273" y="16.2125" transform="rotate(-0 304.330273 16.2125)">Lasso</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-2-shrink-p3c8f688063">
+   <rect x="42.159141" y="33.016183" width="343.05875" height="174.3259"/>
+  </clipPath>
+ </defs>
+</svg>

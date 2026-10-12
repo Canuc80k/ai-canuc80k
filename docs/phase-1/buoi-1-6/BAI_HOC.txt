@@ -1,0 +1,62 @@
+BUỔI 1.6 — Đánh giá regression
+
+HỌC SINH CẦN HIỂU
+- MAE lấy độ lớn sai số; MSE bình phương sai số, RMSE lấy căn sau khi trung bình.
+- RMSE nhạy hơn với lỗi lớn; đơn vị RMSE giống target.
+- Chọn và đọc metric của đề, không chọn metric thuận lợi cho mình.
+
+CÂU HỎI MỞ BÀI
+Một lỗi rất lớn ảnh hưởng MAE và RMSE giống nhau không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+MAE=mean|ŷ-y|; RMSE=sqrt(mean(ŷ-y)²)
+
+CẦN PHÂN BIỆT
+Mean của căn sai số không phải căn của mean squared error.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả {mae, mse, rmse} từ y/pred.
+Input:
+{
+  "y": [
+    1,
+    3
+  ],
+  "pred": [
+    2,
+    5
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "mae": 1.5,
+  "mse": 2.5,
+  "rmse": 1.5811388300841898
+}
+
+Bài trên lớp 2: Trả mean và median của list.
+Input:
+{
+  "values": [
+    1,
+    2,
+    3,
+    100
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "mean": 26.5,
+  "median": 2.5
+}
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả {mae, mse, rmse} từ y/pred.; xem BTVN_01.txt.
+- BTVN 2: Trả mean và median của list.; xem BTVN_02.txt.
+- BTVN 3: Chọn model có validation RMSE nhỏ nhất; hòa thì id nhỏ nhất. Không chọn bằng train RMSE.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+Slide trang 22; KHTN 1.1.3; NT 9.5.
+NT 9.5 “So sánh mô hình regression”; dùng load_diabetes() theo đề, đây là hồi quy khác bài aidiabetes phân loại trên LQDOJ.

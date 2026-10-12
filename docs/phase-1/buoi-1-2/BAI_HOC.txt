@@ -1,0 +1,64 @@
+BUỔI 1.2 — Generalization, underfitting và overfitting
+
+HỌC SINH CẦN HIỂU
+- Generalization là hiệu quả trên mẫu mới của mục tiêu thực tế.
+- Underfit: chưa học đủ quan hệ; overfit: học cả chi tiết/noise của train.
+- So capacity trên cùng split và metric; một split nhỏ có thể nhiễu.
+
+CÂU HỎI MỞ BÀI
+Train 100% có phải chắc chắn thi tốt hơn train 90%?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+gap = train_score - validation_score
+
+CẦN PHÂN BIỆT
+Gap là dấu hiệu; không dùng một ngưỡng gap cố định để kết luận mọi model.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính train_score-valid_score cho mỗi model, không tự gán overfit chỉ từ gap.
+Input:
+{
+  "train": [
+    0.8,
+    1
+  ],
+  "valid": [
+    0.7,
+    0.6
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  0.10000000000000009,
+  0.4
+]
+
+Bài trên lớp 2: Chọn record có valid_score cao nhất; hòa chọn id nhỏ nhất. Không dùng train_score.
+Input:
+{
+  "models": [
+    {
+      "id": 1,
+      "train_score": 1.0,
+      "valid_score": 0.6
+    },
+    {
+      "id": 2,
+      "train_score": 0.8,
+      "valid_score": 0.75
+    }
+  ]
+}
+Output để đối chiếu sau khi làm:
+2
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính train_score-valid_score cho mỗi model, không tự gán overfit chỉ từ gap.; xem BTVN_01.txt.
+- BTVN 2: Chọn record có valid_score cao nhất; hòa chọn id nhỏ nhất. Không dùng train_score.; xem BTVN_02.txt.
+- BTVN 3: Mean CV score cho mỗi model; chọn mean lớn nhất, tie id nhỏ.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+Slide buổi 1, trang 3–13; KHTN 3.4.
+Chạy notebook generalization được slide trang 10 dẫn tới; NT 9.5 yêu cầu so metric train/test.

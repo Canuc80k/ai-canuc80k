@@ -1,0 +1,76 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data leakage và Pipeline</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 1.4</small><h1>Buổi 1.4: Data leakage và Pipeline</h1><p>Nếu scaler biết trước mean của valid, điểm còn độc lập không?</p></section><section class="slide"><small>Buổi 1.4</small><h1>Ý tưởng chính</h1><p>fit(train) → transform(valid)</p><ul><li>Preprocessing cũng học thống kê: median, mean/std, vocabulary, PCA.</li><li>fit trên train; transform train/valid/test bằng cùng thống kê đã học.</li><li>Pipeline trong CV giúp mỗi fold học preprocessing từ phần train của fold.</li></ul></section><section class="slide"><small>Buổi 1.4</small><h1>Ví dụ</h1><pre>{
+  &quot;train&quot;: [
+    10,
+    null,
+    30
+  ],
+  &quot;query&quot;: [
+    null,
+    100
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Đáp án ví dụ</h1><pre>[
+  20,
+  100
+]</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Code minh họa (1)</h1><pre>import numpy as np
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+
+train = np.array([[10.0],[np.nan],[30.0]])
+valid = np.array([[np.nan],[100.0]])
+# Tất cả thống kê được học từ train.
+prep = make_pipeline(SimpleImputer(strategy=&quot;median&quot;),StandardScaler())
+prep.fit(train)
+print(&quot;Median train:&quot;,prep[0].statistics_.tolist())
+print(&quot;Mean sau impute train:&quot;,prep[1].mean_.tolist())
+print(&quot;Valid sau impute:&quot;,prep[0].transform(valid).ravel().tolist())
+print(&quot;Valid sau scale:&quot;,prep.transform(valid).round(4).ravel().tolist())
+assert prep[0].statistics_[0] == 20</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Code minh họa (2)</h1><pre># Sai protocol: không gọi fit/fit_transform trên valid.</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Kết quả</h1><pre>Median train: [20.0]
+Mean sau impute train: [20.0]
+Valid sau impute: [20.0, 100.0]
+Valid sau scale: [0.0, 9.798]</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Điểm dễ nhầm</h1><ul><li>Pipeline không tự sửa group/time leakage hoặc feature nhìn tương lai.</li><li>Chỉ ra dòng fit sai trong quy trình scale toàn bảng rồi chia dữ liệu.</li></ul></section><section class="slide"><small>Buổi 1.4</small><h1>Bài trên lớp 1</h1><p>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</p><pre>{
+  &quot;train&quot;: [
+    10,
+    null,
+    30
+  ],
+  &quot;query&quot;: [
+    null,
+    100
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Bài trên lớp 2</h1><p>Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.</p><pre>{
+  &quot;train&quot;: [
+    [
+      1,
+      10
+    ],
+    [
+      3,
+      10
+    ]
+  ],
+  &quot;query&quot;: [
+    [
+      2,
+      12
+    ],
+    [
+      4,
+      10
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.4</small><h1>Bài tập về nhà 1</h1><p>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</p><ul><li>Input: train/query: list số hoặc null.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 1.4</small><h1>Bài tập về nhà 2</h1><p>Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.</p><ul><li>Input: train/query: ma trận cùng số cột; train không rỗng.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 1.4</small><h1>Bài tập về nhà 3</h1><p>Vocabulary cấp sẵn; unseen category tạo vector toàn 0.</p><ul><li>Input: values/vocab: list strings; vocab khác nhau.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 1.4</small><h1>Tổng kết</h1><p>Chỉ ra dòng fit sai trong quy trình scale toàn bảng rồi chia dữ liệu.</p><ul><li>NT chương 5–6; tài liệu sklearn Common Pitfalls.</li><li>NT 9.7 “Pipeline với giá trị thiếu và cột phân loại”, có dữ liệu tạo sẵn và tình huống category mới.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

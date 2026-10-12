@@ -1,0 +1,71 @@
+BUỔI 3.1 — PyTorch tensors và autograd
+
+HỌC SINH CẦN HIỂU
+- Tensor có shape, dtype, device; requires_grad cho phép theo dõi graph.
+- backward dùng chain rule qua các phép toán đã ghi.
+- grad được cộng dồn, cần zero_grad giữa các bước train.
+
+CÂU HỎI MỞ BÀI
+Làm sao framework biết gradient của x*x+3*x?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+d(x²+3x)/dx = 2x+3
+
+CẦN PHÂN BIỆT
+detach/numpy hoặc no_grad sai chỗ có thể cắt graph cần học.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Reshape flattened values theo rows x cols; số phần tử phải bằng rows*cols.
+Input:
+{
+  "values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "rows": 2,
+  "cols": 3
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    1,
+    2,
+    3
+  ],
+  [
+    4,
+    5,
+    6
+  ]
+]
+
+Bài trên lớp 2: Tính dy/dx với y=x^2+3x tại từng x.
+Input:
+{
+  "x": [
+    2,
+    0,
+    -1
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  7,
+  3,
+  1
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Reshape flattened values theo rows x cols; số phần tử phải bằng rows*cols.; xem BTVN_01.txt.
+- BTVN 2: Tính dy/dx với y=x^2+3x tại từng x.; xem BTVN_02.txt.
+- BTVN 3: Huấn luyện linear bằng autograd; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+PyTorch Learn the Basics: Tensors, Automatic Differentiation.
+Làm code trong hai tutorial trên; không thay tensor shape hoặc bỏ requires_grad mà không hiểu tác dụng.

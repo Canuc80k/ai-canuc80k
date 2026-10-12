@@ -1,0 +1,33 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Self-supervised vision — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/5.7?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 4.7: Self-supervised vision</h1><p>Dữ liệu không nhãn tạo cặp positive/negative bằng cách nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Self-supervised tạo mục tiêu từ dữ liệu; không đồng nhất supervised pretrained vớiSSL.</li><li>Contrastive học views liên quan gần nhau, quản lý false negatives.</li><li>DINOv2 làencoderSSL cósẵn; thực hành trích features đúng processor/checkpoint.</li></ul><p class="note">contrastive loss=-log softmax(similarity/temperature)[positive]</p><h2>Code minh họa</h2><pre>import torch
+import torch.nn.functional as F
+# Giả sử encoder tạo hai views cùng ảnh và một view ảnh khác.
+# Đây là embeddings fixture để hiểu contrastive score, không output DINO thật.
+anchor=torch.tensor([[1.,0.]])
+views=torch.tensor([[.9,.1],[0.,1.]])
+anchor=F.normalize(anchor,dim=1); views=F.normalize(views,dim=1)
+similarity=anchor@views.T
+logits=similarity/.1
+loss=F.cross_entropy(logits,torch.tensor([0]))
+print(&quot;Similarities:&quot;,similarity.round(decimals=4).tolist())
+print(&quot;Contrastive CE:&quot;,round(loss.item(),6))
+assert similarity[0,0]&gt;similarity[0,1]
+# Thực hành pretrained SSL thật theo DINOv2 docs trong bài, không nhầm fixture với checkpoint.
+</pre><h3>Kết quả</h3><pre>Similarities: [[0.9939000010490417, 0.0]]
+Contrastive CE: 4.8e-05
+</pre><p class="note">Một loss nhỏ trên fixture không là kết quả huấn luyệnSSL ảnh thật.</p><h3>Code bổ sung: <a href="ssl_demo.py">ssl_demo.py</a></h3><p>transformers + local DINOv2 checkpoint. Chạy khi có checkpoint/thư viện đã cấp; không đồng nhất với fixture nhỏ ở trên.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</p><pre>{
+  &quot;a&quot;: [
+    1,
+    0
+  ],
+  &quot;b&quot;: [
+    1,
+    1
+  ]
+}</pre><details><summary>Đáp án</summary><pre>0.7071067811865475</pre></details><h3>Bài 2</h3><p>Crossentropy chọnpositiveindex từsimilarity scores/temperature.</p><pre>{
+  &quot;similarities&quot;: [
+    1,
+    0
+  ],
+  &quot;temperature&quot;: 0.1,
+  &quot;positive&quot;: 0
+}</pre><details><summary>Đáp án</summary><pre>4.5398899217730104e-05</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Crossentropy chọnpositiveindex từsimilarity scores/temperature.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Đánh giá biểu diễn bằng clustering</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>Tài liệu Hugging Face DINOv2.</p><p>Chạy ví dụ lấy embeddings trong trang DINOv2; đây là bài thực hành theo code tài liệu, không một competition mới.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-4/buoi-4-6/BAI_HOC.html">← Image segmentation và U-Net</a><a href="../../phase-4/buoi-4-8/BAI_HOC.html">CLIP và image-text retrieval →</a></nav></body></html>

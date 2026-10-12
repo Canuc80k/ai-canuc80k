@@ -1,0 +1,46 @@
+{
+ "w": 960,
+ "h": 450,
+ "n": 13,
+ "cols": 3,
+ "dur": [
+  900,
+  300,
+  1000,
+  900,
+  300,
+  1000,
+  900,
+  300,
+  1000,
+  900,
+  300,
+  1000,
+  2400
+ ],
+ "hold": 1200,
+ "labels": [
+  "ảnh 1: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 3",
+  "ảnh 1: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 3",
+  "ảnh 1: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 3",
+  "ảnh 2: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 7",
+  "ảnh 2: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 7",
+  "ảnh 2: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 7",
+  "ảnh 3: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 0",
+  "ảnh 3: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 0",
+  "ảnh 3: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 0",
+  "ảnh 4: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 5",
+  "ảnh 4: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 5",
+  "ảnh 4: lưới 8 × 8 trải theo từng hàng thành 64 số, nhãn 5",
+  "4 ảnh thành bảng X shape (4, 64) và vector nhãn y shape (4,)"
+ ],
+ "key": [
+  0,
+  2,
+  8,
+  12
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

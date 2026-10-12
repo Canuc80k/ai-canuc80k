@@ -1,0 +1,51 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Matplotlib và Seaborn — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/0.3?part=1">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 0.5: Matplotlib và Seaborn</h1><p>Biểu đồ điểm từng người có trả lời phân bố điểm của lớp không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Bar chart so sánh categories; histogram đếm giá trị trong khoảng.</li><li>Scatter xem quan hệ hai biến số; line cần thứ tự như thời gian.</li><li>Nhãn trục và đơn vị giúp đọc đúng; không cắt trục để tạo kết luận sai.</li></ul><p class="note">bin_count = số mẫu thuộc khoảng đã công bố</p><h2>Code minh họa</h2><pre>import numpy as np
+import matplotlib.pyplot as plt
+# Cùng dữ liệu nhưng hai biểu đồ trả lời hai câu hỏi khác nhau.
+names = [&quot;An&quot;, &quot;Binh&quot;, &quot;Chi&quot;, &quot;Dung&quot;]
+scores = np.array([8.5, 6.0, 7.0, 9.0])
+fig, axes = plt.subplots(1, 2, figsize=(8, 3), layout=&quot;constrained&quot;)
+axes[0].bar(names, scores)
+axes[0].set(title=&quot;Diem tung hoc sinh&quot;, ylabel=&quot;Diem / 10&quot;, ylim=(0,10))
+axes[1].hist(scores, bins=[0,5,7,9,10], edgecolor=&quot;black&quot;)
+axes[1].set(title=&quot;Phan bo diem&quot;, xlabel=&quot;Diem&quot;, ylabel=&quot;So hoc sinh&quot;)
+fig.savefig(&quot;demo_plot.png&quot;, dpi=120)
+plt.close(fig)
+print(&quot;Điểm trung bình:&quot;, scores.mean())
+print(&quot;Số mẫu:&quot;, len(scores))
+print(&quot;Biểu đồ đã lưu: demo_plot.png&quot;)
+</pre><h3>Kết quả</h3><pre>Điểm trung bình: 7.625
+Số mẫu: 4
+Biểu đồ đã lưu: demo_plot.png
+</pre><p class="note">Một hình đẹp chưa trả lời câu hỏi nếu không nêu điều đang so sánh.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Đếm mỗi bin [edge_i, edge_i+1), riêng bin cuối bao gồm edge cuối. Values nằm trong toàn khoảng.</p><pre>{
+  &quot;values&quot;: [
+    0,
+    5,
+    7,
+    9,
+    10
+  ],
+  &quot;edges&quot;: [
+    0,
+    5,
+    7,
+    9,
+    10
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  1,
+  1,
+  1,
+  2
+]</pre></details><h3>Bài 2</h3><p>Trả loại biểu đồ: compare_categories→bar; distribution→histogram; two_numeric→scatter; sequence_over_time→line.</p><pre>{
+  &quot;questions&quot;: [
+    &quot;compare_categories&quot;,
+    &quot;distribution&quot;,
+    &quot;two_numeric&quot;,
+    &quot;sequence_over_time&quot;
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  &quot;bar&quot;,
+  &quot;histogram&quot;,
+  &quot;scatter&quot;,
+  &quot;line&quot;
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Đếm mỗi bin [edge_i, edge_i+1), riêng bin cuối bao gồm edge cuối. Values nằm trong toàn khoảng.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Trả loại biểu đồ: compare_categories→bar; distribution→histogram; two_numeric→scatter; sequence_over_time→line.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Tính mean theo group; group được chuyển thành chuỗi trong keys output.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>NT chương 4; AIO 11.3.</p><p>NT 9.4 “Vẽ dữ liệu bằng Matplotlib”; AIO 11.3 phần phân tích IMDB Movie Dataset.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-0/buoi-0-4/BAI_HOC.html">← Pandas</a><a href="../../phase-1/buoi-1-1/BAI_HOC.html">Học máy và quy trình làm bài →</a></nav></body></html>

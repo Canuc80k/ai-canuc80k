@@ -1,0 +1,42 @@
+{
+ "w": 960,
+ "h": 470,
+ "n": 11,
+ "cols": 3,
+ "dur": [
+  1500,
+  1300,
+  200,
+  200,
+  200,
+  200,
+  200,
+  200,
+  900,
+  1800,
+  1800
+ ],
+ "hold": 1800,
+ "labels": [
+  "trên trục x: lớp cam nằm hai đầu, lớp xanh ở giữa",
+  "không vạch nào trên trục tách được hai lớp",
+  "nâng mỗi điểm lên độ cao x²",
+  "nâng mỗi điểm lên độ cao x²",
+  "nâng mỗi điểm lên độ cao x²",
+  "nâng mỗi điểm lên độ cao x²",
+  "nâng mỗi điểm lên độ cao x²",
+  "nâng mỗi điểm lên độ cao x²",
+  "nâng mỗi điểm lên độ cao x²",
+  "đường ngang x² = 2.25 tách hai lớp",
+  "trên trục x, đường ngang ấy ứng với hai ngưỡng x = ±1.5"
+ ],
+ "key": [
+  0,
+  5,
+  8,
+  9
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

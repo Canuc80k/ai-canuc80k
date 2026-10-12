@@ -1,0 +1,4 @@
+KMeans clusters 2 noise 0 ARI 0.2271
+DBSCAN clusters 2 noise 0 ARI 1.0
+AgglomerativeClustering clusters 2 noise 0 ARI 0.5098
+SpectralClustering clusters 2 noise 0 ARI 1.0

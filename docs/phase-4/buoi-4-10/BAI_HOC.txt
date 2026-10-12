@@ -1,0 +1,62 @@
+BUỔI 4.10 — Diffusion
+
+HỌC SINH CẦN HIỂU
+- Forward noising làm input nhiễu theo schedule.
+- Network dự đoán noise hoặc đại lượng theo objective; sampling dùng nhiều bước denoise.
+- Pipeline ảnh cần checkpoint, scheduler, conditioning và seed rõ.
+
+CÂU HỎI MỞ BÀI
+Làm thế nào từ noise quay lại một ảnh?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+xt=sqrt(alpha_bar)×x0+sqrt(1-alpha_bar)×epsilon
+
+CẦN PHÂN BIỆT
+Biết noise thật trongfixture không đồng nghĩa biết noise test của model thật.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: xt=sqrt(alpha_bar)*x0+sqrt(1-alpha_bar)*noise.
+Input:
+{
+  "x0": [
+    1,
+    2
+  ],
+  "noise": [
+    0.5,
+    -1
+  ],
+  "alpha_bar": 0.25
+}
+Output để đối chiếu sau khi làm:
+[
+  0.9330127018922193,
+  0.1339745962155614
+]
+
+Bài trên lớp 2: x0=(xt-sqrt(1-alpha_bar)*pred_noise)/sqrt(alpha_bar).
+Input:
+{
+  "xt": [
+    0.5
+  ],
+  "pred_noise": [
+    0
+  ],
+  "alpha_bar": 0.25
+}
+Output để đối chiếu sau khi làm:
+[
+  1.0
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: xt=sqrt(alpha_bar)*x0+sqrt(1-alpha_bar)*noise.; xem BTVN_01.txt.
+- BTVN 2: x0=(xt-sqrt(1-alpha_bar)*pred_noise)/sqrt(alpha_bar).; xem BTVN_02.txt.
+- BTVN 3: Dự đoán noise trong diffusion; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO52 và54.
+AIO52.2 Image Inpainting using DDPM,52.3 trắc nghiệm;54.2 chương trình tô màu ảnh nếu học tiếp.

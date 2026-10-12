@@ -1,0 +1,324 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="489.956873pt" height="213.29pt" viewBox="0 0 489.956873 213.29" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-5-stump-figure_1">
+  <g id="fig-2-5-stump-patch_1">
+   <path d="M 0 213.29 
+L 489.956873 213.29 
+L 489.956873 0 
+L 0 0 
+L 0 213.29 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-5-stump-axes_1">
+   <g id="fig-2-5-stump-patch_2">
+    <path d="M 5.04 172.545 
+L 134.71458 172.545 
+L 134.71458 23.345 
+L 5.04 23.345 
+L 5.04 172.545 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-5-stump-matplotlib.axis_1">
+    <g id="fig-2-5-stump-xtick_1">
+     <g id="fig-2-5-stump-line2d_1">
+      <defs>
+       <path id="fig-2-5-stump-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="21.249322" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="21.249322" y="186.7175" transform="rotate(-0 21.249322 186.7175)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_2">
+     <g id="fig-2-5-stump-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="53.667967" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="53.667967" y="186.7175" transform="rotate(-0 53.667967 186.7175)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_3">
+     <g id="fig-2-5-stump-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="86.086612" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="86.086612" y="186.7175" transform="rotate(-0 86.086612 186.7175)">3</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_4">
+     <g id="fig-2-5-stump-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="118.505257" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="118.505257" y="186.7175" transform="rotate(-0 118.505257 186.7175)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="69.87729" y="205.445" transform="rotate(-0 69.87729 205.445)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-matplotlib.axis_2"/>
+   <g id="fig-2-5-stump-PathCollection_1">
+    <defs>
+     <path id="fig-2-5-stump-m47aa5aba95" d="M 0 4.031129 
+C 1.069068 4.031129 2.094493 3.606384 2.850439 2.850439 
+C 3.606384 2.094493 4.031129 1.069068 4.031129 0 
+C 4.031129 -1.069068 3.606384 -2.094493 2.850439 -2.850439 
+C 2.094493 -3.606384 1.069068 -4.031129 0 -4.031129 
+C -1.069068 -4.031129 -2.094493 -3.606384 -2.850439 -2.850439 
+C -3.606384 -2.094493 -4.031129 -1.069068 -4.031129 0 
+C -4.031129 1.069068 -3.606384 2.094493 -2.850439 2.850439 
+C -2.094493 3.606384 -1.069068 4.031129 0 4.031129 
+z
+" style="stroke: #ffffff; stroke-width: 0.5"/>
+    </defs>
+    <g clip-path="url(#fig-2-5-stump-pd041f25e84)">
+     <use xlink:href="#fig-2-5-stump-m47aa5aba95" x="21.249322" y="97.945" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.5"/>
+     <use xlink:href="#fig-2-5-stump-m47aa5aba95" x="53.667967" y="97.945" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.5"/>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-PathCollection_2">
+    <defs>
+     <path id="fig-2-5-stump-m477e49038c" d="M -4.031129 4.031129 
+L 4.031129 4.031129 
+L 4.031129 -4.031129 
+L -4.031129 -4.031129 
+z
+" style="stroke: #ffffff; stroke-width: 0.5"/>
+    </defs>
+    <g clip-path="url(#fig-2-5-stump-pd041f25e84)">
+     <use xlink:href="#fig-2-5-stump-m477e49038c" x="86.086612" y="97.945" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.5"/>
+     <use xlink:href="#fig-2-5-stump-m477e49038c" x="118.505257" y="97.945" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.5"/>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-line2d_5">
+    <path d="M 37.458645 172.545 
+L 37.458645 23.345 
+" clip-path="url(#fig-2-5-stump-pd041f25e84)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #b8892b; stroke-width: 1.6"/>
+   </g>
+   <g id="fig-2-5-stump-patch_3">
+    <path d="M 5.04 172.545 
+L 5.04 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-5-stump-patch_4">
+    <path d="M 5.04 172.545 
+L 134.71458 172.545 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-5-stump-text_6">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="69.87729" y="37.481672" transform="rotate(-0 69.87729 37.481672)">giảm Gini = 0.167</text>
+   </g>
+   <g id="fig-2-5-stump-text_7">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="69.87729" y="13.345" transform="rotate(-0 69.87729 13.345)">t = 1.5</text>
+   </g>
+  </g>
+  <g id="fig-2-5-stump-axes_2">
+   <g id="fig-2-5-stump-patch_5">
+    <path d="M 171.806667 172.545 
+L 301.481246 172.545 
+L 301.481246 23.345 
+L 171.806667 23.345 
+L 171.806667 172.545 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-5-stump-matplotlib.axis_3">
+    <g id="fig-2-5-stump-xtick_5">
+     <g id="fig-2-5-stump-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="188.015989" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="188.015989" y="186.7175" transform="rotate(-0 188.015989 186.7175)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_6">
+     <g id="fig-2-5-stump-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="220.434634" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="220.434634" y="186.7175" transform="rotate(-0 220.434634 186.7175)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_7">
+     <g id="fig-2-5-stump-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="252.853279" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="252.853279" y="186.7175" transform="rotate(-0 252.853279 186.7175)">3</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_8">
+     <g id="fig-2-5-stump-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="285.271924" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="285.271924" y="186.7175" transform="rotate(-0 285.271924 186.7175)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-text_12">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="236.643957" y="205.445" transform="rotate(-0 236.643957 205.445)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-matplotlib.axis_4"/>
+   <g id="fig-2-5-stump-PathCollection_3">
+    <g clip-path="url(#fig-2-5-stump-p0619f3ec51)">
+     <use xlink:href="#fig-2-5-stump-m47aa5aba95" x="188.015989" y="97.945" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.5"/>
+     <use xlink:href="#fig-2-5-stump-m47aa5aba95" x="220.434634" y="97.945" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.5"/>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-PathCollection_4">
+    <g clip-path="url(#fig-2-5-stump-p0619f3ec51)">
+     <use xlink:href="#fig-2-5-stump-m477e49038c" x="252.853279" y="97.945" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.5"/>
+     <use xlink:href="#fig-2-5-stump-m477e49038c" x="285.271924" y="97.945" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.5"/>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-line2d_10">
+    <path d="M 236.643957 172.545 
+L 236.643957 23.345 
+" clip-path="url(#fig-2-5-stump-p0619f3ec51)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #b8892b; stroke-width: 1.6"/>
+   </g>
+   <g id="fig-2-5-stump-patch_6">
+    <path d="M 171.806667 172.545 
+L 171.806667 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-5-stump-patch_7">
+    <path d="M 171.806667 172.545 
+L 301.481246 172.545 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-5-stump-text_13">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="236.643957" y="37.481672" transform="rotate(-0 236.643957 37.481672)">giảm Gini = 0.5</text>
+   </g>
+   <g id="fig-2-5-stump-text_14">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="236.643957" y="13.345" transform="rotate(-0 236.643957 13.345)">t = 2.5</text>
+   </g>
+  </g>
+  <g id="fig-2-5-stump-axes_3">
+   <g id="fig-2-5-stump-patch_8">
+    <path d="M 338.573333 172.545 
+L 468.247913 172.545 
+L 468.247913 23.345 
+L 338.573333 23.345 
+L 338.573333 172.545 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-5-stump-matplotlib.axis_5">
+    <g id="fig-2-5-stump-xtick_9">
+     <g id="fig-2-5-stump-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="354.782656" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="354.782656" y="186.7175" transform="rotate(-0 354.782656 186.7175)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_10">
+     <g id="fig-2-5-stump-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="387.201301" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="387.201301" y="186.7175" transform="rotate(-0 387.201301 186.7175)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_11">
+     <g id="fig-2-5-stump-line2d_13">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="419.619946" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="419.619946" y="186.7175" transform="rotate(-0 419.619946 186.7175)">3</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-xtick_12">
+     <g id="fig-2-5-stump-line2d_14">
+      <g>
+       <use xlink:href="#fig-2-5-stump-m04e37d9cc8" x="452.038591" y="172.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-5-stump-text_18">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="452.038591" y="186.7175" transform="rotate(-0 452.038591 186.7175)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-5-stump-text_19">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="403.410623" y="205.445" transform="rotate(-0 403.410623 205.445)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-matplotlib.axis_6"/>
+   <g id="fig-2-5-stump-PathCollection_5">
+    <g clip-path="url(#fig-2-5-stump-pcd7c654f37)">
+     <use xlink:href="#fig-2-5-stump-m47aa5aba95" x="354.782656" y="97.945" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.5"/>
+     <use xlink:href="#fig-2-5-stump-m47aa5aba95" x="387.201301" y="97.945" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.5"/>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-PathCollection_6">
+    <g clip-path="url(#fig-2-5-stump-pcd7c654f37)">
+     <use xlink:href="#fig-2-5-stump-m477e49038c" x="419.619946" y="97.945" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.5"/>
+     <use xlink:href="#fig-2-5-stump-m477e49038c" x="452.038591" y="97.945" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.5"/>
+    </g>
+   </g>
+   <g id="fig-2-5-stump-line2d_15">
+    <path d="M 435.829268 172.545 
+L 435.829268 23.345 
+" clip-path="url(#fig-2-5-stump-pcd7c654f37)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #b8892b; stroke-width: 1.6"/>
+   </g>
+   <g id="fig-2-5-stump-patch_9">
+    <path d="M 338.573333 172.545 
+L 338.573333 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-5-stump-patch_10">
+    <path d="M 338.573333 172.545 
+L 468.247913 172.545 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-5-stump-text_20">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="403.410623" y="37.481672" transform="rotate(-0 403.410623 37.481672)">giảm Gini = 0.167</text>
+   </g>
+   <g id="fig-2-5-stump-text_21">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="403.410623" y="13.345" transform="rotate(-0 403.410623 13.345)">t = 3.5</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-5-stump-pd041f25e84">
+   <rect x="5.04" y="23.345" width="129.67458" height="149.2"/>
+  </clipPath>
+  <clipPath id="fig-2-5-stump-p0619f3ec51">
+   <rect x="171.806667" y="23.345" width="129.67458" height="149.2"/>
+  </clipPath>
+  <clipPath id="fig-2-5-stump-pcd7c654f37">
+   <rect x="338.573333" y="23.345" width="129.67458" height="149.2"/>
+  </clipPath>
+ </defs>
+</svg>

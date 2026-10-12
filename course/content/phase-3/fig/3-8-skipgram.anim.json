@@ -1,0 +1,30 @@
+{
+ "w": 960,
+ "h": 560,
+ "n": 11,
+ "cols": 3,
+ "dur": 900,
+ "hold": 2800,
+ "labels": [
+  "epoch 0: vector khởi tạo ngẫu nhiên",
+  "epoch 5",
+  "epoch 10",
+  "epoch 20",
+  "epoch 35",
+  "epoch 50",
+  "epoch 80",
+  "epoch 120",
+  "epoch 180",
+  "epoch 260",
+  "epoch 400: con vật, trái cây, con số, màu tách thành bốn nhóm"
+ ],
+ "key": [
+  0,
+  4,
+  7,
+  10
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

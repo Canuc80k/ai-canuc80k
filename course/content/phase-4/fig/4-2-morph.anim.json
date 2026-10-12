@@ -1,0 +1,44 @@
+{
+ "w": 960,
+ "h": 600,
+ "n": 12,
+ "cols": 3,
+ "dur": [
+  1800,
+  1800,
+  260,
+  260,
+  260,
+  260,
+  260,
+  260,
+  260,
+  600,
+  1800,
+  1800
+ ],
+ "hold": 1200,
+ "labels": [
+  "PCA của pixel thô (3072 số mỗi ảnh): bốn lớp trộn vào nhau",
+  "linear probe trên pixel thô: accuracy 5-fold 0.57",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "chuyển từ không gian pixel sang không gian đặc trưng",
+  "PCA của vector ResNet-18 (512 số mỗi ảnh): cùng lớp tụ lại",
+  "linear probe trên vector ResNet-18: accuracy 5-fold 0.90"
+ ],
+ "key": [
+  0,
+  5,
+  10,
+  11
+ ],
+ "dark": true,
+ "dw": 600,
+ "pcols": 4
+}

@@ -1,0 +1,2 @@
+Similarities: [[0.9939000010490417, 0.0]]
+Contrastive CE: 4.8e-05

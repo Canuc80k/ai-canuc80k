@@ -1,0 +1,79 @@
+BUỔI 4.8 — CLIP và image-text retrieval
+
+HỌC SINH CẦN HIỂU
+- Retrieval xếp gallery theo mức tương ứng với query.
+- CLIP tạo image/text embeddings; normalize và cosine là baseline.
+- Mục tiêu của task phải đúng: Restroom cần khác giới cùnglocation.
+
+CÂU HỎI MỞ BÀI
+Tìm ảnh tương ứng khác việc tạo một câu mô tả ảnh?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+rank by cosine(query, gallery)
+
+CẦN PHÂN BIỆT
+Không suy target từfilename hoặc chỉ tìm ảnh nhìn giống nhất màsaiquan hệ.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Cosinequery/gallery; ranking giảm; hòa thì chọn id integer nhỏ. cosine của zero-vector được quy ước là 0.
+Input:
+{
+  "query": [
+    0.9,
+    0.1
+  ],
+  "gallery": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "ids": [
+    10,
+    20,
+    30
+  ],
+  "k": 3
+}
+Output để đối chiếu sau khi làm:
+[
+  10,
+  30,
+  20
+]
+
+Bài trên lớp 2: Với một target, vị trí khớp đầu tiên1-based; Hits@k, nDCG@k=1/log2(rank+1), không có target→0.
+Input:
+{
+  "ranked": [
+    "a",
+    "b",
+    "c"
+  ],
+  "target": "b",
+  "k": 3
+}
+Output để đối chiếu sau khi làm:
+{
+  "hits": 1,
+  "ndcg": 0.6309297535714575
+}
+
+BÀI VỀ NHÀ
+- BTVN 1: Cosinequery/gallery; ranking giảm; hòa thì chọn id integer nhỏ. cosine của zero-vector được quy ước là 0.; xem BTVN_01.txt.
+- BTVN 2: Với một target, vị trí khớp đầu tiên1-based; Hits@k, nDCG@k=1/log2(rank+1), không có target→0.; xem BTVN_02.txt.
+- BTVN 3: Tìm prototype cùng chữ số; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+IOAI Restroom baseline; syllabus vision-text encoders.
+ioai25restroom: chạy notebook baseline và làm bài bằng training/validation/test đính kèm.

@@ -1,0 +1,68 @@
+BUỔI 0.2 — Cấu trúc dữ liệu và thao tác tệp
+
+HỌC SINH CẦN HIỂU
+- ID định danh mẫu; số thứ tự dòng có thể thay đổi khi sort/shuffle.
+- Dict giúp tra cứu theo khóa; Counter đếm tần suất.
+- CSV lưu bảng chữ; phải chuyển chuỗi số thành kiểu số trước khi tính/sort.
+
+CÂU HỎI MỞ BÀI
+Nếu hai bảng bị xáo trộn dòng, còn ghép được đáp án không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+prediction[id] thay vì prediction[row_index]
+
+CẦN PHÂN BIỆT
+ID trùng có thể làm ghi đè hoặc merge nhân dòng.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Đếm tần suất các chuỗi. Giữ nguyên hoa/thường: cat và Cat là hai khóa khác nhau.
+Input:
+{
+  "items": [
+    "cat",
+    "dog",
+    "cat"
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "cat": 2,
+  "dog": 1
+}
+
+Bài trên lớp 2: Sắp các records tăng dần theo id integer, giữ nguyên mọi trường.
+Input:
+{
+  "records": [
+    {
+      "id": 10,
+      "label": "A"
+    },
+    {
+      "id": 2,
+      "label": "B"
+    }
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  {
+    "id": 2,
+    "label": "B"
+  },
+  {
+    "id": 10,
+    "label": "A"
+  }
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Đếm tần suất các chuỗi. Giữ nguyên hoa/thường: cat và Cat là hai khóa khác nhau.; xem BTVN_01.txt.
+- BTVN 2: Sắp các records tăng dần theo id integer, giữ nguyên mọi trường.; xem BTVN_02.txt.
+- BTVN 3: Ghép predictions vào IDs theo khóa, không theo thứ tự dòng.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO chương 2–3; NT 3.8.
+AIO 2.2: Character Counting, Word Counting, Getting Max Over Kernel; AIO 3.1 phần class; NT 9.3 yêu cầu ghi CSV.

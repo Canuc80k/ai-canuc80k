@@ -1,0 +1,3 @@
+Output shape: (2, 3)
+Params cần train: 1539
+Ví dụ này không đo chất lượng transfer learning.

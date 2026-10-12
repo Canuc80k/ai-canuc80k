@@ -1,0 +1,52 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Đạo hàm và gradient descent</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 1.9</small><h1>Buổi 1.9: Đạo hàm và gradient descent</h1><p>Ta nên bước sang trái hay sang phải để giảm loss?</p></section><section class="slide"><small>Buổi 1.9</small><h1>Ý tưởng chính</h1><p>w_new = w_old - learning_rate × gradient</p><ul><li>Đạo hàm là độ dốc; gradient gom độ dốc của nhiều tham số.</li><li>Gradient descent đi ngược gradient với độ dài bước do learning rate quyết định.</li><li>Loss là thứ optimizer tối ưu; metric đánh giá có thể khác loss.</li></ul></section><section class="slide"><small>Buổi 1.9</small><h1>Ví dụ</h1><pre>{
+  &quot;x&quot;: [
+    2,
+    0,
+    -1
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.9</small><h1>Đáp án ví dụ</h1><pre>[
+  7,
+  3,
+  1
+]</pre></section><section class="slide"><small>Buổi 1.9</small><h1>Code minh họa</h1><pre># f(w)=(w-3)^2, gradient=2*(w-3).
+w = 0.0
+learning_rate = 0.1
+print(&quot;step | w | loss&quot;)
+for step in range(5):
+    loss = (w-3)**2
+    print(step,round(w,4),round(loss,4))
+    grad = 2*(w-3)
+    w = w-learning_rate*grad
+print(&quot;w sau 5 updates:&quot;,round(w,6))
+assert abs(w-2.01696)&lt;1e-8</pre></section><section class="slide"><small>Buổi 1.9</small><h1>Kết quả</h1><pre>step | w | loss
+0 0.0 9.0
+1 0.6 5.76
+2 1.08 3.6864
+3 1.464 2.3593
+4 1.7712 1.5099
+w sau 5 updates: 2.01696</pre></section><section class="slide"><small>Buổi 1.9</small><h1>Điểm dễ nhầm</h1><ul><li>Learning rate quá lớn có thể làm loss tăng hoặc dao động.</li><li>Tính update đầu của f(w)=(w-3)² tại w0=0, lr0.1.</li></ul></section><section class="slide"><small>Buổi 1.9</small><h1>Bài trên lớp 1</h1><p>Tính dy/dx với y=x^2+3x tại từng x.</p><pre>{
+  &quot;x&quot;: [
+    2,
+    0,
+    -1
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.9</small><h1>Bài trên lớp 2</h1><p>Cập nhật w←w-lr*2*(w-target) đúng steps lần. Trả w cuối.</p><pre>{
+  &quot;w&quot;: 0,
+  &quot;target&quot;: 3,
+  &quot;lr&quot;: 0.1,
+  &quot;steps&quot;: 5
+}</pre></section><section class="slide"><small>Buổi 1.9</small><h1>Bài tập về nhà 1</h1><p>Tính dy/dx với y=x^2+3x tại từng x.</p><ul><li>Input: x: list số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 1.9</small><h1>Bài tập về nhà 2</h1><p>Cập nhật w←w-lr*2*(w-target) đúng steps lần. Trả w cuối.</p><ul><li>Input: w, target, lr: số; steps: integer0..1000;0&lt;=lr&lt;=1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 1.9</small><h1>Bài tập về nhà 3</h1><p>Với loss=(w*x+b-y)^2, trả grad_w và grad_b.</p><ul><li>Input: w, b, x, y: số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 1.9</small><h1>Tổng kết</h1><p>Tính update đầu của f(w)=(w-3)² tại w0=0, lr0.1.</p><ul><li>KHTN 3.1–3.2; AIO 21.2–21.4.</li><li>AIO 21.4 thực hành huấn luyện Linear Regression và 21.6 trắc nghiệm; trở lại khi học mạng neural.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

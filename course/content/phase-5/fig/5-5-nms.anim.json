@@ -1,0 +1,48 @@
+{
+ "w": 684,
+ "h": 540,
+ "n": 14,
+ "cols": 4,
+ "dur": [
+  1800,
+  1400,
+  1000,
+  1400,
+  1000,
+  1400,
+  1000,
+  450,
+  450,
+  450,
+  450,
+  450,
+  450,
+  600
+ ],
+ "hold": 3200,
+ "labels": [
+  "160 box ứng viên của detector, chưa NMS",
+  "box score cao nhất còn lại (1.00) và 6 box chồng lên nó với IoU > 0.3",
+  "đã giữ 1 box; còn 153 box chưa xét",
+  "box score cao nhất còn lại (0.93) và 6 box chồng lên nó với IoU > 0.3",
+  "đã giữ 2 box; còn 146 box chưa xét",
+  "box score cao nhất còn lại (0.93) và 4 box chồng lên nó với IoU > 0.3",
+  "đã giữ 3 box; còn 141 box chưa xét",
+  "đã giữ 7 box; còn 114 box chưa xét",
+  "đã giữ 11 box; còn 95 box chưa xét",
+  "đã giữ 15 box; còn 70 box chưa xét",
+  "đã giữ 19 box; còn 36 box chưa xét",
+  "đã giữ 23 box; còn 6 box chưa xét",
+  "đã giữ 26 box; còn 0 box chưa xét",
+  "NMS xong: 26 box cho 24 đồng xu; 2 box nhỏ nằm trong box lớn có IoU ≤ 0.3 nên vẫn sót"
+ ],
+ "key": [
+  0,
+  1,
+  2,
+  13
+ ],
+ "dark": false,
+ "dw": 480,
+ "pcols": 4
+}

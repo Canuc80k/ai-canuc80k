@@ -1,0 +1,1660 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="472.392109pt" height="220.282969pt" viewBox="0 0 472.392109 220.282969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-0-3-eda-figure_1">
+  <g id="fig-0-3-eda-patch_1">
+   <path d="M 0 220.282969 
+L 472.392109 220.282969 
+L 472.392109 0 
+L 0 0 
+L 0 220.282969 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-0-3-eda-axes_1">
+   <g id="fig-0-3-eda-patch_2">
+    <path d="M 42.539609 178.582344 
+L 228.401484 178.582344 
+L 228.401484 24.027344 
+L 42.539609 24.027344 
+L 42.539609 178.582344 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-0-3-eda-matplotlib.axis_1">
+    <g id="fig-0-3-eda-xtick_1">
+     <g id="fig-0-3-eda-line2d_1">
+      <defs>
+       <path id="fig-0-3-eda-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="75.125782" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="75.125782" y="192.754844" transform="rotate(-0 75.125782 192.754844)">4</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_2">
+     <g id="fig-0-3-eda-line2d_2">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="123.401594" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="123.401594" y="192.754844" transform="rotate(-0 123.401594 192.754844)">6</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_3">
+     <g id="fig-0-3-eda-line2d_3">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="171.677406" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="171.677406" y="192.754844" transform="rotate(-0 171.677406 192.754844)">8</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_4">
+     <g id="fig-0-3-eda-line2d_4">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="219.953217" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="219.953217" y="192.754844" transform="rotate(-0 219.953217 192.754844)">10</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="135.470547" y="212.262656" transform="rotate(-0 135.470547 212.262656)">Điểm Toán cuối kỳ (0–10)</text>
+    </g>
+   </g>
+   <g id="fig-0-3-eda-matplotlib.axis_2">
+    <g id="fig-0-3-eda-ytick_1">
+     <g id="fig-0-3-eda-line2d_5">
+      <defs>
+       <path id="fig-0-3-eda-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="182.168594" transform="rotate(-0 35.539609 182.168594)">0</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_2">
+     <g id="fig-0-3-eda-line2d_6">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="155.936923" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="159.523173" transform="rotate(-0 35.539609 159.523173)">10</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_3">
+     <g id="fig-0-3-eda-line2d_7">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="133.291501" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="136.877751" transform="rotate(-0 35.539609 136.877751)">20</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_4">
+     <g id="fig-0-3-eda-line2d_8">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="110.64608" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="114.23233" transform="rotate(-0 35.539609 114.23233)">30</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_5">
+     <g id="fig-0-3-eda-line2d_9">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="88.000659" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="91.586909" transform="rotate(-0 35.539609 91.586909)">40</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_6">
+     <g id="fig-0-3-eda-line2d_10">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="65.355238" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="68.941488" transform="rotate(-0 35.539609 68.941488)">50</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_7">
+     <g id="fig-0-3-eda-line2d_11">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="42.539609" y="42.709816" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="46.296066" transform="rotate(-0 35.539609 46.296066)">60</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-text_13">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="101.304844" transform="rotate(-90 13.345 101.304844)">Số học sinh</text>
+    </g>
+   </g>
+   <g id="fig-0-3-eda-patch_3">
+    <path d="M 50.987876 178.582344 
+L 63.056829 178.582344 
+L 63.056829 178.582344 
+L 50.987876 178.582344 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_4">
+    <path d="M 63.056829 178.582344 
+L 75.125782 178.582344 
+L 75.125782 169.524175 
+L 63.056829 169.524175 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_5">
+    <path d="M 75.125782 178.582344 
+L 87.194735 178.582344 
+L 87.194735 137.820586 
+L 75.125782 137.820586 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_6">
+    <path d="M 87.194735 178.582344 
+L 99.263688 178.582344 
+L 99.263688 126.497875 
+L 87.194735 126.497875 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_7">
+    <path d="M 99.263688 178.582344 
+L 111.332641 178.582344 
+L 111.332641 88.000659 
+L 99.263688 88.000659 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_8">
+    <path d="M 111.332641 178.582344 
+L 123.401594 178.582344 
+L 123.401594 51.767985 
+L 111.332641 51.767985 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_9">
+    <path d="M 123.401594 178.582344 
+L 135.470547 178.582344 
+L 135.470547 31.387106 
+L 123.401594 31.387106 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_10">
+    <path d="M 135.470547 178.582344 
+L 147.5395 178.582344 
+L 147.5395 31.387106 
+L 135.470547 31.387106 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_11">
+    <path d="M 147.5395 178.582344 
+L 159.608453 178.582344 
+L 159.608453 47.238901 
+L 147.5395 47.238901 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_12">
+    <path d="M 159.608453 178.582344 
+L 171.677406 178.582344 
+L 171.677406 97.058827 
+L 159.608453 97.058827 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_13">
+    <path d="M 171.677406 178.582344 
+L 183.746359 178.582344 
+L 183.746359 131.026959 
+L 171.677406 131.026959 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_14">
+    <path d="M 183.746359 178.582344 
+L 195.815311 178.582344 
+L 195.815311 158.201465 
+L 183.746359 158.201465 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_15">
+    <path d="M 195.815311 178.582344 
+L 207.884264 178.582344 
+L 207.884264 169.524175 
+L 195.815311 169.524175 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_16">
+    <path d="M 207.884264 178.582344 
+L 219.953217 178.582344 
+L 219.953217 176.317802 
+L 207.884264 176.317802 
+z
+" clip-path="url(#fig-0-3-eda-pa8c77f1e95)" style="fill: var(--t-n, #3b6ea8); opacity: 0.85"/>
+   </g>
+   <g id="fig-0-3-eda-patch_17">
+    <path d="M 42.539609 178.582344 
+L 42.539609 24.027344 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-0-3-eda-patch_18">
+    <path d="M 42.539609 178.582344 
+L 228.401484 178.582344 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-0-3-eda-text_14">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="135.470547" y="14.027344" transform="rotate(-0 135.470547 14.027344)">Phân bố nhãn</text>
+   </g>
+  </g>
+  <g id="fig-0-3-eda-axes_2">
+   <g id="fig-0-3-eda-patch_19">
+    <path d="M 281.490234 178.582344 
+L 467.352109 178.582344 
+L 467.352109 24.027344 
+L 281.490234 24.027344 
+L 281.490234 178.582344 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-0-3-eda-matplotlib.axis_3">
+    <g id="fig-0-3-eda-xtick_5">
+     <g id="fig-0-3-eda-line2d_12">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="287.705479" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="287.705479" y="192.754844" transform="rotate(-0 287.705479 192.754844)">0</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_6">
+     <g id="fig-0-3-eda-line2d_13">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="324.922515" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="324.922515" y="192.754844" transform="rotate(-0 324.922515 192.754844)">5</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_7">
+     <g id="fig-0-3-eda-line2d_14">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="362.13955" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="362.13955" y="192.754844" transform="rotate(-0 362.13955 192.754844)">10</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_8">
+     <g id="fig-0-3-eda-line2d_15">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="399.356586" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_18">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="399.356586" y="192.754844" transform="rotate(-0 399.356586 192.754844)">15</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-xtick_9">
+     <g id="fig-0-3-eda-line2d_16">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m04e37d9cc8" x="436.573621" y="178.582344" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_19">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="436.573621" y="192.754844" transform="rotate(-0 436.573621 192.754844)">20</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-text_20">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="374.421172" y="212.032344" transform="rotate(-0 374.421172 212.032344)">Giờ tự học mỗi tuần</text>
+    </g>
+   </g>
+   <g id="fig-0-3-eda-matplotlib.axis_4">
+    <g id="fig-0-3-eda-ytick_8">
+     <g id="fig-0-3-eda-line2d_17">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="160.849927" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_21">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="164.436177" transform="rotate(-0 274.490234 164.436177)">4</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_9">
+     <g id="fig-0-3-eda-line2d_18">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="138.99852" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_22">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="142.58477" transform="rotate(-0 274.490234 142.58477)">5</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_10">
+     <g id="fig-0-3-eda-line2d_19">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="117.147114" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_23">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="120.733364" transform="rotate(-0 274.490234 120.733364)">6</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_11">
+     <g id="fig-0-3-eda-line2d_20">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="95.295707" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_24">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="98.881957" transform="rotate(-0 274.490234 98.881957)">7</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_12">
+     <g id="fig-0-3-eda-line2d_21">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="73.4443" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_25">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="77.03055" transform="rotate(-0 274.490234 77.03055)">8</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_13">
+     <g id="fig-0-3-eda-line2d_22">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="51.592893" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_26">
+      <text style="font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="55.048518" transform="rotate(-0 274.490234 55.048518)">9</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-ytick_14">
+     <g id="fig-0-3-eda-line2d_23">
+      <g>
+       <use xlink:href="#fig-0-3-eda-m9fce3a8e10" x="281.490234" y="29.741487" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-3-eda-text_27">
+      <text style="font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="274.490234" y="33.197112" transform="rotate(-0 274.490234 33.197112)">10</text>
+     </g>
+    </g>
+    <g id="fig-0-3-eda-text_28">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="253.652187" y="101.304844" transform="rotate(-90 253.652187 101.304844)">Điểm Toán cuối kỳ (0–10)</text>
+    </g>
+   </g>
+   <g id="fig-0-3-eda-PathCollection_1">
+    <defs>
+     <path id="fig-0-3-eda-C0_0_ea278d2e9f" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 -0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="290.682842" y="101.414101" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="292.171524" y="98.791932" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="143.587316" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="97.917876" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="300.359271" y="107.313981" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="368.094276" y="73.007272" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="326.411196" y="87.866229" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="326.411196" y="128.072817" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="343.531032" y="101.632615" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="94.640165" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="115.617515" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="298.87059" y="141.183661" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.922515" y="86.33663" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="400.100926" y="72.570244" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.013063" y="94.640165" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="336.831966" y="122.172937" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="332.365922" y="89.177313" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.155537" y="104.254784" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="317.479108" y="103.380727" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="371.071639" y="66.233336" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="82.184863" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="310.780041" y="126.324704" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="359.906528" y="89.177313" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="347.997077" y="99.22896" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="331.621581" y="118.02117" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="88.740285" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="387.447134" y="86.992172" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="108.843579" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="96.606791" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="341.29801" y="115.836029" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.990426" y="136.81338" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="100.32153" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="314.501745" y="159.101815" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="134.409725" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="295.148886" y="166.749807" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="305.569656" y="113.650889" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="159.538843" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="316.734767" y="109.936149" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="95.077193" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="130.257958" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="418.709444" y="51.592893" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="123.92105" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="334.598944" y="127.854303" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.103612" y="95.514221" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="115.180487" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="388.191475" y="132.880127" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="343.531032" y="61.426026" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="91.799482" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="298.126249" y="144.8984" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="71.696188" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="97.262333" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="312.268723" y="129.82093" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="80.218236" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="333.854603" y="124.358078" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="77.814581" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="148.394625" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="409.033015" y="68.855505" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="326.411196" y="95.732735" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="337.576307" y="93.766108" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="349.485758" y="106.876952" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="125.669162" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="124.795106" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="435.08494" y="85.24406" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="306.313997" y="69.948075" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="125.232134" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="300.359271" y="85.462574" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="300.359271" y="109.499121" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="364.372572" y="73.4443" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.013063" y="96.388277" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.200811" y="118.02117" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.990426" y="115.399001" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="296.637568" y="152.546393" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="98.573418" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="93.766108" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="306.313997" y="116.710086" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="337.576307" y="83.495947" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="362.883891" y="102.943699" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="299.614931" y="128.072817" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="353.207462" y="111.02872" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="292.915864" y="120.424825" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="345.019714" y="119.550768" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="123.265508" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.103612" y="128.072817" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="125.232134" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="93.32908" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="159.538843" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="361.395209" y="115.399001" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="365.116913" y="74.973899" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="120.861853" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.013063" y="117.147114" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="311.524382" y="129.383901" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="316.734767" y="149.050168" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="298.87059" y="133.535669" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="105.12884" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.922515" y="105.784382" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="124.795106" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="311.524382" y="97.699362" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="306.313997" y="80.43675" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="132.224584" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="344.275373" y="104.254784" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="345.019714" y="91.362454" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="121.080367" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="326.411196" y="120.206311" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="83.495947" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="124.795106" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="95.951249" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="142.71326" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="295.893227" y="101.414101" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="123.046993" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="336.831966" y="135.065267" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.802678" y="86.33663" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="103.599241" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="133.535669" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="292.915864" y="142.276231" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="316.734767" y="112.12129" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="67.54442" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="326.411196" y="143.368802" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="105.347354" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="132.661612" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="350.97444" y="112.995346" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="142.931774" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="96.606791" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="121.517395" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="92.23651" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="295.893227" y="158.446272" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="380.748068" y="77.159039" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="314.501745" y="130.9135" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="292.915864" y="101.632615" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="141.620689" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.945152" y="88.303257" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="102.288157" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="375.537683" y="108.188037" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.200811" y="115.399001" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="98.791932" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="150.361252" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="48.315182" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.945152" y="78.907152" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="91.14394" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="116.491571" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="311.524382" y="86.33663" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.922515" y="76.066469" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.155537" y="96.606791" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="310.035701" y="105.565868" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="291.427183" y="124.795106" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="329.388559" y="111.902776" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.757404" y="150.361252" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="138.99852" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="311.524382" y="117.365628" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="299.614931" y="159.975871" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="329.388559" y="109.936149" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.757404" y="114.961973" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="99.447474" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="332.365922" y="92.23651" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="336.831966" y="116.710086" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.223448" y="67.981448" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="339.064988" y="92.673538" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="295.893227" y="116.054543" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="369.582957" y="90.706911" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="332.365922" y="91.580968" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="359.162187" y="87.210686" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="296.637568" y="151.89085" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="97.917876" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="81.747835" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="401.589608" y="69.292533" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="97.917876" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="298.87059" y="106.876952" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="338.320647" y="128.946873" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.899878" y="106.22141" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="114.306431" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="350.230099" y="31.052571" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="365.116913" y="93.32908" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="316.734767" y="134.628239" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="100.758559" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="344.275373" y="95.951249" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="334.598944" y="104.254784" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="118.02117" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.825316" y="135.502295" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.990426" y="104.473298" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="336.831966" y="107.313981" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="112.558318" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="342.786692" y="151.89085" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="398.612245" y="88.303257" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="334.598944" y="140.309605" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="352.463121" y="92.455024" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="108.406551" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="414.987741" y="114.087917" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="104.254784" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="378.515046" y="130.039444" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="385.214112" y="96.606791" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="146.209485" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="352.463121" y="94.203137" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="295.893227" y="110.810206" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="71.040645" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="295.893227" y="114.743459" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="341.29801" y="94.203137" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.013063" y="135.065267" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.223448" y="92.892052" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="145.553942" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="330.87724" y="139.654063" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="347.997077" y="46.130042" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="98.13639" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.990426" y="110.591692" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="331.621581" y="74.099842" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="148.176111" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="371.815979" y="115.836029" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="76.503497" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="331.621581" y="83.932975" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.200811" y="126.980247" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="328.644218" y="128.946873" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="305.569656" y="107.751009" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="296.637568" y="137.250408" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="110.154663" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="331.621581" y="108.188037" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.990426" y="141.839203" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.825316" y="171.557116" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="130.9135" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="100.758559" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.990426" y="132.224584" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="348.741417" y="81.092292" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="114.743459" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="455.926479" y="96.388277" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.945152" y="115.180487" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="421.686807" y="97.699362" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="88.958799" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="79.781208" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="312.268723" y="114.306431" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="399.356586" y="96.606791" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="347.997077" y="102.725185" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.802678" y="106.22141" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="71.259159" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="72.133216" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="86.992172" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="114.524945" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="310.035701" y="136.594866" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="289.938501" y="130.257958" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="332.365922" y="108.188037" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="416.476422" y="43.944901" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="293.660205" y="138.342978" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="299.614931" y="160.412899" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.155537" y="127.198761" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="335.343285" y="91.362454" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="125.01362" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="316.734767" y="130.694986" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="311.524382" y="150.142738" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="92.892052" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="407.544333" y="74.318356" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="377.770705" y="78.25161" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="99.884502" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="87.4292" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="317.479108" y="134.846753" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.757404" y="117.365628" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="79.999722" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="437.317962" y="68.418477" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.223448" y="112.776832" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="349.485758" y="75.192413" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="96.825305" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="333.110263" y="91.799482" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="390.424497" y="52.46695" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.155537" y="142.931774" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="386.702794" y="62.737111" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="114.306431" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="347.252736" y="107.751009" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="381.492409" y="129.383901" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="350.97444" y="131.350528" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="95.295707" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="79.562694" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="123.265508" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="334.598944" y="56.837231" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="319.71213" y="94.640165" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.058338" y="106.439924" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="299.614931" y="115.180487" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="112.558318" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="119.11374" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="348.741417" y="78.033096" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="336.087625" y="99.665988" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="346.508395" y="120.424825" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="373.304661" y="73.4443" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="337.576307" y="139.435549" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="296.637568" y="114.743459" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.223448" y="146.646513" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="298.126249" y="105.565868" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.899878" y="94.421651" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="294.404546" y="158.227758" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="81.310807" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.899878" y="81.529321" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="343.531032" y="123.484022" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="114.743459" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="458.903842" y="77.596067" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.013063" y="138.124464" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="352.463121" y="71.696188" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="312.268723" y="148.394625" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="109.936149" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.013063" y="95.732735" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="296.637568" y="84.370004" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="329.388559" y="85.899602" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="293.660205" y="157.135188" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="81.747835" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="112.12129" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="346.508395" y="119.769282" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="300.359271" y="59.896428" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="384.469771" y="133.535669" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="369.582957" y="118.895226" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="359.162187" y="98.13639" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="114.087917" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="351.71878" y="76.066469" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="90.488397" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="371.815979" y="122.828479" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="293.660205" y="132.00607" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="325.666855" y="86.992172" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="377.026364" y="98.791932" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="353.951802" y="119.550768" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="356.184825" y="95.732735" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="351.71878" y="136.594866" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="329.388559" y="119.332254" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="95.514221" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="339.809329" y="119.550768" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="313.757404" y="159.538843" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="317.479108" y="134.191211" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.200811" y="56.837231" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="113.21386" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="96.169763" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="347.252736" y="92.673538" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="330.1329" y="117.802656" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="368.094276" y="140.309605" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="78.033096" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="56.618717" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="327.899878" y="142.276231" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="298.126249" y="108.843579" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="82.840405" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="330.87724" y="101.195587" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="333.854603" y="70.822131" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="325.666855" y="89.395827" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="84.588518" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="357.673506" y="136.157838" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="329.388559" y="63.174139" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="363.628232" y="112.995346" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.802678" y="171.120088" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="334.598944" y="110.810206" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="371.071639" y="88.740285" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="90.488397" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.103612" y="125.669162" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.945152" y="119.332254" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="315.246086" y="100.540045" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="371.071639" y="102.288157" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="337.576307" y="116.054543" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="309.29136" y="108.406551" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="90.269883" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="312.268723" y="127.854303" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="325.666855" y="108.625065" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="122.828479" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="331.621581" y="137.031894" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="371.071639" y="55.526147" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="436.573621" y="95.951249" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="353.207462" y="86.992172" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="408.288674" y="57.055745" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="347.252736" y="108.625065" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="350.230099" y="118.239684" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="339.809329" y="114.961973" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="322.689493" y="84.588518" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="134.191211" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="302.592293" y="125.01362" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="109.280607" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="336.831966" y="142.276231" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.080975" y="125.450648" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="324.178174" y="160.849927" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="92.455024" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="321.200811" y="121.954423" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="325.666855" y="124.576592" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="344.275373" y="75.847955" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.828641" y="112.12129" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="320.45647" y="161.723983" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="304.825316" y="80.218236" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="314.501745" y="124.576592" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="305.569656" y="97.917876" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="337.576307" y="66.45185" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="418.709444" y="90.706911" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="403.078289" y="79.781208" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="308.547019" y="110.154663" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="339.064988" y="121.954423" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="326.411196" y="92.017996" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="293.660205" y="79.34418" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="290.682842" y="137.90595" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="307.802678" y="85.025546" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.967789" y="155.168561" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="297.381909" y="118.239684" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="96.606791" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="74.755385" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="301.847953" y="150.361252" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="297.381909" y="130.694986" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="316.734767" y="119.550768" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="343.531032" y="97.043819" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="330.87724" y="86.992172" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="303.336634" y="128.072817" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="318.223448" y="61.863055" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="323.433833" y="99.665988" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="292.171524" y="92.23651" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="356.184825" y="95.951249" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="306.313997" y="79.34418" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="297.381909" y="132.880127" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+    <g clip-path="url(#fig-0-3-eda-p9463eafd66)">
+     <use xlink:href="#fig-0-3-eda-C0_0_ea278d2e9f" x="449.227413" y="63.611167" style="fill: var(--accent, #c2603e); fill-opacity: 0.6"/>
+    </g>
+   </g>
+   <g id="fig-0-3-eda-patch_20">
+    <path d="M 281.490234 178.582344 
+L 281.490234 24.027344 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-0-3-eda-patch_21">
+    <path d="M 281.490234 178.582344 
+L 467.352109 178.582344 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-0-3-eda-text_29">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="374.421172" y="14.027344" transform="rotate(-0 374.421172 14.027344)">Quan hệ giữa hai biến</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-0-3-eda-pa8c77f1e95">
+   <rect x="42.539609" y="24.027344" width="185.861875" height="154.555"/>
+  </clipPath>
+  <clipPath id="fig-0-3-eda-p9463eafd66">
+   <rect x="281.490234" y="24.027344" width="185.861875" height="154.555"/>
+  </clipPath>
+ </defs>
+</svg>

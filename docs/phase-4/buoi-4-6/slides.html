@@ -1,0 +1,92 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image segmentation và U-Net</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 4.6</small><h1>Buổi 4.6: Image segmentation và U-Net</h1><p>Class một ảnh khác class cho từng pixel thế nào?</p></section><section class="slide"><small>Buổi 4.6</small><h1>Ý tưởng chính</h1><p>Dice=2×intersection/(size_true+size_pred)</p><ul><li>Segmentation dự đoán label map; masks/ignore-index cần mapping rõ.</li><li>U-Net encoder/decoder vàskip giữ thông tin không gian nhiều scales.</li><li>Dice/IoU hoặc weighted pixel score phụ thuộc đúng đề.</li></ul></section><section class="slide"><small>Buổi 4.6</small><h1>Ví dụ</h1><pre>{
+  &quot;true&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  &quot;pred&quot;: [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;iou&quot;: 0.666667,
+  &quot;dice&quot;: 0.8
+}</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Code minh họa (1)</h1><pre>import numpy as np
+import torch
+from torch import nn
+
+true=np.array([[1,0],[1,0]],dtype=bool)
+pred=np.array([[1,1],[1,0]],dtype=bool)
+intersection=(true&amp;pred).sum(); union=(true|pred).sum()
+print(&quot;IoU:&quot;,round(float(intersection/union),6))
+print(&quot;Dice:&quot;,float(2*intersection/(true.sum()+pred.sum())))
+# Skip connection nối theo channel, không nối theo chiều ảnh.
+skip=torch.ones(1,2,4,4); up=torch.zeros(1,2,4,4)
+joined=torch.cat([up,skip],dim=1)
+head=nn.Conv2d(4,2,1)
+print(&quot;Joined shape:&quot;,tuple(joined.shape),&quot;logits
+shape:&quot;,tuple(head(joined).shape))</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Code minh họa (2)</h1><pre>assert tuple(head(joined).shape)==(1,2,4,4)</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Kết quả</h1><pre>IoU: 0.666667
+Dice: 0.8
+Joined shape: (1, 4, 4, 4) logits shape: (1, 2, 4, 4)</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Điểm dễ nhầm</h1><ul><li>Radar Practice vàRadar individual có labels/weights khác, không tái dùng scorer.</li><li>Tính IoU/Dice của mask2× 2 và shape saucat channelsskip.</li></ul></section><section class="slide"><small>Buổi 4.6</small><h1>Bài trên lớp 1</h1><p>Binary IoU/Dice; cả true, predrỗng→1 cho cả 2.</p><pre>{
+  &quot;true&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  &quot;pred&quot;: [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Bài trên lớp 2</h1><p>Score=tổng trọng số của pixel dự đoán đúng/tổng trọng số ground truth; trọng số background vs object.</p><pre>{
+  &quot;true&quot;: [
+    -1,
+    0,
+    1,
+    -1
+  ],
+  &quot;pred&quot;: [
+    -1,
+    0,
+    0,
+    -1
+  ],
+  &quot;bg&quot;: -1,
+  &quot;w_bg&quot;: 1,
+  &quot;w_obj&quot;: 50
+}</pre></section><section class="slide"><small>Buổi 4.6</small><h1>Bài tập về nhà 1</h1><p>Binary IoU/Dice; cả true, predrỗng→1 cho cả 2.</p><ul><li>Input: true/pred: hai ma trận nhị phân cùng kích thước.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 4.6</small><h1>Bài tập về nhà 2</h1><p>Score=tổng trọng số của pixel dự đoán đúng/tổng trọng số ground truth; trọng số background vs object.</p><ul><li>Input: true/pred: list nhãn số nguyên; bg: integer; w_bg, w_obj positive.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 4.6</small><h1>Bài tập về nhà 3</h1><p>Mask chữ số</p><ul><li>Data: mask</li><li>Metric: Mean binary IoU; cả hai masks rỗng→1.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 4.6</small><h1>Tổng kết</h1><p>Tính IoU/Dice của mask2× 2 và shape saucat channelsskip.</p><ul><li>AIO40; IOAI Radar/Weather baseline.</li><li>AIO40.2 phần segmentation; ioai25radarpre baseline.ipynb và bài LQDOJ cùng tên.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

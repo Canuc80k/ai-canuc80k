@@ -1,0 +1,82 @@
+BUỔI 0.3 — NumPy
+
+HỌC SINH CẦN HIỂU
+- Ý nghĩa mỗi axis do ta quy định. Trong ví dụ: axis0 là mẫu.
+- reshape giữ số phần tử; transpose đổi thứ tự các trục.
+- keepdims giữ chiều để phép broadcasting trừ đúng thống kê theo mẫu.
+
+CÂU HỎI MỞ BÀI
+Ma trận 3× 4× 5 có ba mẫu hay ba features?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+z = (x - mean) / std
+
+CẦN PHÂN BIỆT
+Shape hợp lệ không bảo đảm axis có đúng ý nghĩa.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính trung bình từng cột của ma trận.
+Input:
+{
+  "matrix": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  2.5,
+  3.5,
+  4.5
+]
+
+Bài trên lớp 2: Chuyển vị ma trận: output[j][i]=input[i][j].
+Input:
+{
+  "matrix": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    1,
+    4
+  ],
+  [
+    2,
+    5
+  ],
+  [
+    3,
+    6
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính trung bình từng cột của ma trận.; xem BTVN_01.txt.
+- BTVN 2: Chuyển vị ma trận: output[j][i]=input[i][j].; xem BTVN_02.txt.
+- BTVN 3: Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+NT chương 2; AIO 6.1.
+NT 9.2 “NumPy và mảng nhiều chiều”; có dữ liệu x=np.arange(1,61).reshape(3,4,5) và assert tự kiểm tra.

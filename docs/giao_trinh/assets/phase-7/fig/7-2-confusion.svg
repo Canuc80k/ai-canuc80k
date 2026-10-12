@@ -1,0 +1,250 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="487.211983pt" height="253.997692pt" viewBox="0 0 487.211983 253.997692" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-7-2-confusion-figure_1">
+  <g id="fig-7-2-confusion-patch_1">
+   <path d="M 0 253.997692 
+L 487.211983 253.997692 
+L 487.211983 0 
+L 0 0 
+L 0 253.997692 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-7-2-confusion-axes_1">
+   <g id="fig-7-2-confusion-patch_2">
+    <path d="M 37.048906 213.252692 
+L 249.860445 213.252692 
+L 249.860445 23.345 
+L 37.048906 23.345 
+L 37.048906 213.252692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-7-2-confusion-matplotlib.axis_1">
+    <g id="fig-7-2-confusion-xtick_1">
+     <g id="fig-7-2-confusion-line2d_1">
+      <defs>
+       <path id="fig-7-2-confusion-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m04e37d9cc8" x="90.251791" y="213.252692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-2-confusion-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="90.251791" y="227.425192" transform="rotate(-0 90.251791 227.425192)">0</text>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-xtick_2">
+     <g id="fig-7-2-confusion-line2d_2">
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m04e37d9cc8" x="196.65756" y="213.252692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-2-confusion-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="196.65756" y="227.425192" transform="rotate(-0 196.65756 227.425192)">1</text>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-text_3">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="143.454675" y="246.152692" transform="rotate(-0 143.454675 246.152692)">nhãn dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-7-2-confusion-matplotlib.axis_2">
+    <g id="fig-7-2-confusion-ytick_1">
+     <g id="fig-7-2-confusion-line2d_3">
+      <defs>
+       <path id="fig-7-2-confusion-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m9fce3a8e10" x="37.048906" y="165.775769" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-2-confusion-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="169.362019" transform="rotate(-0 30.048906 169.362019)">0</text>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-ytick_2">
+     <g id="fig-7-2-confusion-line2d_4">
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m9fce3a8e10" x="37.048906" y="70.821923" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-2-confusion-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="74.408173" transform="rotate(-0 30.048906 74.408173)">1</text>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-text_6">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="118.298846" transform="rotate(-90 13.345 118.298846)">nhãn thật</text>
+    </g>
+   </g>
+   <g id="fig-7-2-confusion-QuadMesh_1">
+    <path d="M 37.048906 213.252692 
+L 143.454675 213.252692 
+L 143.454675 118.298846 
+L 37.048906 118.298846 
+L 37.048906 213.252692 
+" clip-path="url(#fig-7-2-confusion-p325c2a0ac8)" style="fill: #b8892b; fill-opacity: 0.95"/>
+    <path d="M 143.454675 213.252692 
+L 249.860445 213.252692 
+L 249.860445 118.298846 
+L 143.454675 118.298846 
+L 143.454675 213.252692 
+" clip-path="url(#fig-7-2-confusion-p325c2a0ac8)" style="fill: #fffaf1"/>
+    <path d="M 37.048906 118.298846 
+L 143.454675 118.298846 
+L 143.454675 23.345 
+L 37.048906 23.345 
+L 37.048906 118.298846 
+" clip-path="url(#fig-7-2-confusion-p325c2a0ac8)" style="fill: #b8892b; fill-opacity: 0.95"/>
+    <path d="M 143.454675 118.298846 
+L 249.860445 118.298846 
+L 249.860445 23.345 
+L 143.454675 23.345 
+L 143.454675 118.298846 
+" clip-path="url(#fig-7-2-confusion-p325c2a0ac8)" style="fill: #fffaf1"/>
+   </g>
+   <g id="fig-7-2-confusion-patch_3">
+    <path d="M 37.048906 213.252692 
+L 37.048906 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-2-confusion-patch_4">
+    <path d="M 37.048906 213.252692 
+L 249.860445 213.252692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-2-confusion-text_7">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="90.251791" y="168.400769" transform="rotate(-0 90.251791 168.400769)">10</text>
+   </g>
+   <g id="fig-7-2-confusion-text_8">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="196.65756" y="168.400769" transform="rotate(-0 196.65756 168.400769)">0</text>
+   </g>
+   <g id="fig-7-2-confusion-text_9">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="90.251791" y="73.446923" transform="rotate(-0 90.251791 73.446923)">10</text>
+   </g>
+   <g id="fig-7-2-confusion-text_10">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="196.65756" y="73.446923" transform="rotate(-0 196.65756 73.446923)">0</text>
+   </g>
+   <g id="fig-7-2-confusion-text_11">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="143.454675" y="13.345" transform="rotate(-0 143.454675 13.345)">Mean pooling</text>
+   </g>
+  </g>
+  <g id="fig-7-2-confusion-axes_2">
+   <g id="fig-7-2-confusion-patch_5">
+    <path d="M 269.360445 213.252692 
+L 482.171983 213.252692 
+L 482.171983 23.345 
+L 269.360445 23.345 
+L 269.360445 213.252692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-7-2-confusion-matplotlib.axis_3">
+    <g id="fig-7-2-confusion-xtick_3">
+     <g id="fig-7-2-confusion-line2d_5">
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m04e37d9cc8" x="322.563329" y="213.252692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-2-confusion-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="322.563329" y="227.425192" transform="rotate(-0 322.563329 227.425192)">0</text>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-xtick_4">
+     <g id="fig-7-2-confusion-line2d_6">
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m04e37d9cc8" x="428.969099" y="213.252692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-2-confusion-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="428.969099" y="227.425192" transform="rotate(-0 428.969099 227.425192)">1</text>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-text_14">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="375.766214" y="246.152692" transform="rotate(-0 375.766214 246.152692)">nhãn dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-7-2-confusion-matplotlib.axis_4">
+    <g id="fig-7-2-confusion-ytick_3">
+     <g id="fig-7-2-confusion-line2d_7">
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m9fce3a8e10" x="269.360445" y="165.775769" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-7-2-confusion-ytick_4">
+     <g id="fig-7-2-confusion-line2d_8">
+      <g>
+       <use xlink:href="#fig-7-2-confusion-m9fce3a8e10" x="269.360445" y="70.821923" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="fig-7-2-confusion-QuadMesh_2">
+    <path d="M 269.360445 213.252692 
+L 375.766214 213.252692 
+L 375.766214 118.298846 
+L 269.360445 118.298846 
+L 269.360445 213.252692 
+" clip-path="url(#fig-7-2-confusion-p740b5ae145)" style="fill: #b8892b; fill-opacity: 0.95"/>
+    <path d="M 375.766214 213.252692 
+L 482.171983 213.252692 
+L 482.171983 118.298846 
+L 375.766214 118.298846 
+L 375.766214 213.252692 
+" clip-path="url(#fig-7-2-confusion-p740b5ae145)" style="fill: #fffaf1"/>
+    <path d="M 269.360445 118.298846 
+L 375.766214 118.298846 
+L 375.766214 23.345 
+L 269.360445 23.345 
+L 269.360445 118.298846 
+" clip-path="url(#fig-7-2-confusion-p740b5ae145)" style="fill: #fffaf1"/>
+    <path d="M 375.766214 118.298846 
+L 482.171983 118.298846 
+L 482.171983 23.345 
+L 375.766214 23.345 
+L 375.766214 118.298846 
+" clip-path="url(#fig-7-2-confusion-p740b5ae145)" style="fill: #b8892b; fill-opacity: 0.95"/>
+   </g>
+   <g id="fig-7-2-confusion-patch_6">
+    <path d="M 269.360445 213.252692 
+L 269.360445 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-2-confusion-patch_7">
+    <path d="M 269.360445 213.252692 
+L 482.171983 213.252692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-2-confusion-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="322.563329" y="168.400769" transform="rotate(-0 322.563329 168.400769)">10</text>
+   </g>
+   <g id="fig-7-2-confusion-text_16">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="428.969099" y="168.400769" transform="rotate(-0 428.969099 168.400769)">0</text>
+   </g>
+   <g id="fig-7-2-confusion-text_17">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="322.563329" y="73.446923" transform="rotate(-0 322.563329 73.446923)">0</text>
+   </g>
+   <g id="fig-7-2-confusion-text_18">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="428.969099" y="73.446923" transform="rotate(-0 428.969099 73.446923)">10</text>
+   </g>
+   <g id="fig-7-2-confusion-text_19">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="375.766214" y="13.345" transform="rotate(-0 375.766214 13.345)">CNN</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-7-2-confusion-p325c2a0ac8">
+   <rect x="37.048906" y="23.345" width="212.811538" height="189.907692"/>
+  </clipPath>
+  <clipPath id="fig-7-2-confusion-p740b5ae145">
+   <rect x="269.360445" y="23.345" width="212.811538" height="189.907692"/>
+  </clipPath>
+ </defs>
+</svg>

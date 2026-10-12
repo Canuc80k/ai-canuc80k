@@ -1,0 +1,69 @@
+BUỔI 5.1 — Text processing và baseline NLP
+
+HỌC SINH CẦN HIỂU
+- Tokenization/vocabulary biến text thành indices/đếm; TF-IDF weighted features.
+- Sparse baseline thường nhanh và cần fit vocab trên train.
+- Giữ Unicode/negation; tránh duplicate qua split.
+
+CÂU HỎI MỞ BÀI
+Máy biến một câu thành features mà không đọc nghĩa như người ra sao?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+TF-IDF dùng term frequency và inverse document frequency
+
+CẦN PHÂN BIỆT
+Không fit IDF/vocabulary trên cảlabeled test rồi báo validation độc lập.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tokenize bằng lower()+split(); sorted vocab. Không thay Unicode.
+Input:
+{
+  "texts": [
+    "AI học AI",
+    "học máy"
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  "ai",
+  "học",
+  "máy"
+]
+
+Bài trên lớp 2: Đếm các vocabulary tokens trong mỗi văn bản lower()+split().
+Input:
+{
+  "texts": [
+    "AI học AI",
+    "máy học"
+  ],
+  "vocab": [
+    "ai",
+    "học",
+    "máy"
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    2,
+    1,
+    0
+  ],
+  [
+    0,
+    1,
+    1
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Tokenize bằng lower()+split(); sorted vocab. Không thay Unicode.; xem BTVN_01.txt.
+- BTVN 2: Đếm các vocabulary tokens trong mỗi văn bản lower()+split().; xem BTVN_02.txt.
+- BTVN 3: Phân loại văn bản lớp; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO14,27.5; KHTN19.
+AIO27.5 Twitter Sentiment Analysis và27.6 trắc nghiệm; bank K04 Disaster Tweets để luyện thêm.

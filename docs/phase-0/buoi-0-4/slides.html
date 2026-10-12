@@ -1,0 +1,72 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pandas</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 0.4</small><h1>Buổi 0.4: Pandas</h1><p>Điểm thiếu của một học sinh nên lấy median của lớp nào?</p></section><section class="slide"><small>Buổi 0.4</small><h1>Ý tưởng chính</h1><p>missing_score → median của group tương ứng</p><ul><li>DataFrame có tên cột và kiểu dữ liệu; kiểm schema trước xử lý.</li><li>groupby gom cùng lớp; transform trả một giá trị cho mỗi dòng ban đầu.</li><li>merge theo khóa có kiểm tra cardinality tránh tăng số mẫu.</li></ul></section><section class="slide"><small>Buổi 0.4</small><h1>Ví dụ</h1><pre>{
+  &quot;groups&quot;: [
+    &quot;A&quot;,
+    &quot;A&quot;,
+    &quot;B&quot;
+  ],
+  &quot;values&quot;: [
+    8,
+    6,
+    10
+  ]
+}</pre></section><section class="slide"><small>Buổi 0.4</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;A&quot;: 7,
+  &quot;B&quot;: 10
+}</pre></section><section class="slide"><small>Buổi 0.4</small><h1>Code minh họa</h1><pre>import pandas as pd
+
+# Bốn học sinh là fixture minh họa, không phải hồ sơ cá nhân.
+students = pd.DataFrame({&quot;id&quot;:[1,2,3,4], &quot;class&quot;:[&quot;A&quot;,&quot;A&quot;,&quot;B&quot;,&quot;B&quot;],
+                         &quot;score&quot;:[8.0,None,6.0,10.0]})
+teachers = pd.DataFrame({&quot;class&quot;:[&quot;A&quot;,&quot;B&quot;], &quot;teacher&quot;:[&quot;Mai&quot;,&quot;Son&quot;]})
+# transform trả một median cho từng dòng thuộc đúng nhóm.
+median = students.groupby(&quot;class&quot;)[&quot;score&quot;].transform(&quot;median&quot;)
+students[&quot;score&quot;] = students[&quot;score&quot;].fillna(median)
+# validate ngăn merge làm tăng số dòng do khóa trùng.
+full = students.merge(teachers, on=&quot;class&quot;, validate=&quot;many_to_one&quot;)
+print(full.to_string(index=False))
+print(&quot;Điểm trung bình mỗi lớp:&quot;)
+print(full.groupby(&quot;class&quot;)[&quot;score&quot;].mean().to_string())
+assert len(full) == 4 and full[&quot;score&quot;].notna().all()</pre></section><section class="slide"><small>Buổi 0.4</small><h1>Kết quả</h1><pre>id class  score teacher
+  1     A    8.0     Mai
+  2     A    8.0     Mai
+  3     B    6.0     Son
+  4     B   10.0     Son
+Điểm trung bình mỗi lớp:
+class
+A    8.0
+B    8.0</pre></section><section class="slide"><small>Buổi 0.4</small><h1>Điểm dễ nhầm</h1><ul><li>Điền missing để mô tả bảng khác fit imputer cho ML; ở ML phải fit trên train.</li><li>Thêm một khóa teacher bị trùng và quan sát validate báo lỗi.</li></ul></section><section class="slide"><small>Buổi 0.4</small><h1>Bài trên lớp 1</h1><p>Tính mean theo group; group được chuyển thành chuỗi trong keys output.</p><pre>{
+  &quot;groups&quot;: [
+    &quot;A&quot;,
+    &quot;A&quot;,
+    &quot;B&quot;
+  ],
+  &quot;values&quot;: [
+    8,
+    6,
+    10
+  ]
+}</pre></section><section class="slide"><small>Buổi 0.4</small><h1>Bài trên lớp 2</h1><p>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</p><pre>{
+  &quot;train&quot;: [
+    10,
+    null,
+    30
+  ],
+  &quot;query&quot;: [
+    null,
+    100
+  ]
+}</pre></section><section class="slide"><small>Buổi 0.4</small><h1>Bài tập về nhà 1</h1><p>Tính mean theo group; group được chuyển thành chuỗi trong keys output.</p><ul><li>Input: groups/values: cùng chiều dài; values số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 0.4</small><h1>Bài tập về nhà 2</h1><p>Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.</p><ul><li>Input: train/query: list số hoặc null.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 0.4</small><h1>Bài tập về nhà 3</h1><p>Giữ records có score&gt;=threshold, sắp score giảm; hòa score thì id tăng.</p><ul><li>Input: rows: {id, score}; threshold: số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 0.4</small><h1>Tổng kết</h1><p>Thêm một khóa teacher bị trùng và quan sát validate báo lỗi.</p><ul><li>NT chương 3; AIO 11.2.</li><li>NT 9.3 “Làm sạch và tổng hợp dữ liệu bằng pandas”, dùng đúng hai bảng students/classes cấp trong tài liệu.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

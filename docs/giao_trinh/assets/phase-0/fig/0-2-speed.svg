@@ -1,0 +1,162 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="443.354297pt" height="184.294375pt" viewBox="0 0 443.354297 184.294375" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-0-2-speed-figure_1">
+  <g id="fig-0-2-speed-patch_1">
+   <path d="M 0 184.294375 
+L 443.354297 184.294375 
+L 443.354297 0 
+L 0 0 
+L 0 184.294375 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-0-2-speed-axes_1">
+   <g id="fig-0-2-speed-patch_2">
+    <path d="M 91.384297 142.04375 
+L 438.314297 142.04375 
+L 438.314297 5.04 
+L 91.384297 5.04 
+L 91.384297 142.04375 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-0-2-speed-matplotlib.axis_1">
+    <g id="fig-0-2-speed-xtick_1">
+     <g id="fig-0-2-speed-line2d_1">
+      <defs>
+       <path id="fig-0-2-speed-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-0-2-speed-m04e37d9cc8" x="91.384297" y="142.04375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="91.384297" y="156.21625" transform="rotate(-0 91.384297 156.21625)">0</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-xtick_2">
+     <g id="fig-0-2-speed-line2d_2">
+      <g>
+       <use xlink:href="#fig-0-2-speed-m04e37d9cc8" x="149.235468" y="142.04375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="149.235468" y="156.21625" transform="rotate(-0 149.235468 156.21625)">5</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-xtick_3">
+     <g id="fig-0-2-speed-line2d_3">
+      <g>
+       <use xlink:href="#fig-0-2-speed-m04e37d9cc8" x="207.086638" y="142.04375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="207.086638" y="156.21625" transform="rotate(-0 207.086638 156.21625)">10</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-xtick_4">
+     <g id="fig-0-2-speed-line2d_4">
+      <g>
+       <use xlink:href="#fig-0-2-speed-m04e37d9cc8" x="264.937809" y="142.04375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="264.937809" y="156.21625" transform="rotate(-0 264.937809 156.21625)">15</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-xtick_5">
+     <g id="fig-0-2-speed-line2d_5">
+      <g>
+       <use xlink:href="#fig-0-2-speed-m04e37d9cc8" x="322.78898" y="142.04375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="322.78898" y="156.21625" transform="rotate(-0 322.78898 156.21625)">20</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-xtick_6">
+     <g id="fig-0-2-speed-line2d_6">
+      <g>
+       <use xlink:href="#fig-0-2-speed-m04e37d9cc8" x="380.640151" y="142.04375" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="380.640151" y="156.21625" transform="rotate(-0 380.640151 156.21625)">25</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="264.849297" y="176.274062" transform="rotate(-0 264.849297 176.274062)">Thời gian cho một lần chạy (ms), CPU</text>
+    </g>
+   </g>
+   <g id="fig-0-2-speed-matplotlib.axis_2">
+    <g id="fig-0-2-speed-ytick_1">
+     <g id="fig-0-2-speed-line2d_7">
+      <defs>
+       <path id="fig-0-2-speed-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-0-2-speed-m9fce3a8e10" x="91.384297" y="32.025587" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="84.384297" y="35.673439" transform="rotate(-0 84.384297 35.673439)">Vòng lặp Python</text>
+     </g>
+    </g>
+    <g id="fig-0-2-speed-ytick_2">
+     <g id="fig-0-2-speed-line2d_8">
+      <g>
+       <use xlink:href="#fig-0-2-speed-m9fce3a8e10" x="91.384297" y="115.058163" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-0-2-speed-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="84.384297" y="118.844061" transform="rotate(-0 84.384297 118.844061)">Phép toán NumPy</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-0-2-speed-patch_3">
+    <path d="M 91.384297 11.267443 
+L 364.557525 11.267443 
+L 364.557525 52.783731 
+L 91.384297 52.783731 
+z
+" clip-path="url(#fig-0-2-speed-pa46a3c4cd0)" style="fill: var(--accent, #c2603e)"/>
+   </g>
+   <g id="fig-0-2-speed-patch_4">
+    <path d="M 91.384297 94.300019 
+L 104.342959 94.300019 
+L 104.342959 135.816307 
+L 91.384297 135.816307 
+z
+" clip-path="url(#fig-0-2-speed-pa46a3c4cd0)" style="fill: var(--t-n, #3b6ea8)"/>
+   </g>
+   <g id="fig-0-2-speed-patch_5">
+    <path d="M 91.384297 142.04375 
+L 91.384297 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-0-2-speed-patch_6">
+    <path d="M 91.384297 142.04375 
+L 438.314297 142.04375 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-0-2-speed-text_10">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="371.386856" y="34.650587" transform="rotate(-0 371.386856 34.650587)">23.61 ms</text>
+   </g>
+   <g id="fig-0-2-speed-text_11">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="111.17229" y="117.683163" transform="rotate(-0 111.17229 117.683163)">1.12 ms</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-0-2-speed-pa46a3c4cd0">
+   <rect x="91.384297" y="5.04" width="346.93" height="137.00375"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,71 @@
+BUỔI 5.2 — Word embeddings và sentence embeddings
+
+HỌC SINH CẦN HIỂU
+- Embeddings có thểstatic hoặc contextual; cosine dùng normalize hợp lý.
+- Pooling chỉ tính tokens hợp lệ; giữ thứ tự khi task cần composition.
+- Ranking metrics khácaccuracy class; Chameleon cóHits/nDCG riêng.
+
+CÂU HỎI MỞ BÀI
+Padding có nên kéo mean sentence embedding về một hướng?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+pooled=sum(mask_i×embedding_i)/sum(mask_i)
+
+CẦN PHÂN BIỆT
+Không gọi embedding fixture là output sentence-transformer thật.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.
+Input:
+{
+  "tokens": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  "mask": [
+    1,
+    1,
+    0
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  0.5,
+  0.5
+]
+
+Bài trên lớp 2: Trả cosine của hai vector; có norm bằng 0 thì trả 0.
+Input:
+{
+  "a": [
+    1,
+    0
+  ],
+  "b": [
+    1,
+    1
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.7071067811865475
+
+BÀI VỀ NHÀ
+- BTVN 1: Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.; xem BTVN_01.txt.
+- BTVN 2: Trả cosine của hai vector; có norm bằng 0 thì trả 0.; xem BTVN_02.txt.
+- BTVN 3: Pooling và embeddings cho text; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+KHTN19; IOAI Chameleon baseline.
+ioai25chameleon: notebook sentence-transformers, validation queries và test queries được cấp.

@@ -1,0 +1,2 @@
+IDs shape: (2, 3) padding mask: [[False, False, True], [False, False, False]]
+Hidden: (2, 3, 4) logits: (2, 2)

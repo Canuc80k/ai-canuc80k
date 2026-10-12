@@ -1,0 +1,92 @@
+BUỔI 2.9 — K-Means và các phương pháp clustering
+
+HỌC SINH CẦN HIỂU
+- KMeans giả định clusters thuận theo khoảng cách đến center.
+- DBSCAN dùng density và có noise=-1; hierarchical/spectral có giả định khác.
+- Cluster IDs có thể hoán vị; đánh giá bằng ARI/silhouette phù hợp.
+
+CÂU HỎI MỞ BÀI
+Hai vòng tròn lồng nhau có phải hai cụm hình cầu?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+center_new = mean(points assigned to cluster)
+
+CẦN PHÂN BIỆT
+Không đưa y thật vào fit rồi gọi đó là unsupervised.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Một bước assign/update Euclidean; tie center index nhỏ; cluster rỗng giữ center cũ.
+Input:
+{
+  "points": [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  "centers": [
+    [
+      0
+    ],
+    [
+      10
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    1.0
+  ],
+  [
+    9.0
+  ]
+]
+
+Bài trên lớp 2: Tổng squared distance từ mỗi point đến center gần nhất.
+Input:
+{
+  "points": [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      8
+    ],
+    [
+      10
+    ]
+  ],
+  "centers": [
+    [
+      1
+    ],
+    [
+      9
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+4
+
+BÀI VỀ NHÀ
+- BTVN 1: Một bước assign/update Euclidean; tie center index nhỏ; cluster rỗng giữ center cũ.; xem BTVN_01.txt.
+- BTVN 2: Tổng squared distance từ mỗi point đến center gần nhất.; xem BTVN_02.txt.
+- BTVN 3: Clustering ảnh chữ số; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 12.3; NT 8.3–8.5.
+NT 9.8 phần KMeans/DBSCAN; sklearn “Comparing different clustering algorithms on toy datasets” có code và dữ liệu sẵn.

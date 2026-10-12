@@ -1,0 +1,28 @@
+{
+ "w": 960,
+ "h": 330,
+ "n": 9,
+ "cols": 2,
+ "dur": 900,
+ "hold": 2600,
+ "labels": [
+  "bước 0: validation MSE full 0.0054, rank 1 0.0054, rank 2 0.0054",
+  "bước 5: validation MSE full 0.0019, rank 1 0.0039, rank 2 0.0036",
+  "bước 10: validation MSE full 0.001, rank 1 0.0034, rank 2 0.0024",
+  "bước 20: validation MSE full 0.00043, rank 1 0.0021, rank 2 0.00022",
+  "bước 40: validation MSE full 4.8e-05, rank 1 0.002, rank 2 3.6e-05",
+  "bước 70: validation MSE full 3.3e-06, rank 1 0.002, rank 2 1.7e-06",
+  "bước 110: validation MSE full 3.6e-08, rank 1 0.002, rank 2 4.7e-08",
+  "bước 160: validation MSE full 2.3e-10, rank 1 0.002, rank 2 2.1e-07",
+  "bước 250: validation MSE full 2.9e-14, rank 1 0.002, rank 2 5e-06"
+ ],
+ "key": [
+  0,
+  3,
+  5,
+  8
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

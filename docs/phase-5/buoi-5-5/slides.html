@@ -1,0 +1,53 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Language modeling</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 5.5</small><h1>Buổi 5.5: Language modeling</h1><p>Target next-token có cùng vị trí với input token không?</p></section><section class="slide"><small>Buổi 5.5</small><h1>Ý tưởng chính</h1><p>input=tokens[:-1], target=tokens[1:]</p><ul><li>Causal LM dự đoán token tiếp theo từ con text trước.</li><li>Loss cần shift targets vàcausalmask; tokenization là phần của đánh giá.</li><li>Perplexity=exp(meanNLL); không so trực tiếp khi tokenizer khác.</li></ul></section><section class="slide"><small>Buổi 5.5</small><h1>Ví dụ</h1><pre>{
+  &quot;tokens&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;,
+    &quot;C&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.5</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;inputs&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;
+  ],
+  &quot;targets&quot;: [
+    &quot;B&quot;,
+    &quot;C&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.5</small><h1>Code minh họa</h1><pre>import numpy as np
+
+tokens=[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;]
+inputs=tokens[:-1]; targets=tokens[1:]
+print(&quot;Inputs:&quot;,inputs,&quot;Targets:&quot;,targets)
+# Xác suất đúng của hai next-token predictions được cấp trong fixture.
+true_token_prob=np.array([.5,.25])
+nll=-np.log(true_token_prob).mean()
+perplexity=np.exp(nll)
+print(&quot;Mean NLL:&quot;,round(nll,6),&quot;Perplexity:&quot;,round(perplexity,6))
+assert np.isclose(perplexity,np.sqrt(8))
+# Không so perplexity giữa các tokenizers khác nhau như cùng một metric.</pre></section><section class="slide"><small>Buổi 5.5</small><h1>Kết quả</h1><pre>Inputs: [&#39;A&#39;, &#39;B&#39;] Targets: [&#39;B&#39;, &#39;C&#39;]
+Mean NLL: 1.039721 Perplexity: 2.828427</pre></section><section class="slide"><small>Buổi 5.5</small><h1>Điểm dễ nhầm</h1><ul><li>Khôngcopy đúng token input thành target ởcùngvịtrí để tạo điểmảo.</li><li>Tính perplexity của true-tokenprobs0.5,0.25.</li></ul></section><section class="slide"><small>Buổi 5.5</small><h1>Bài trên lớp 1</h1><p>Trả inputs=tokens[:-1], targets=tokens[1:].</p><pre>{
+  &quot;tokens&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;,
+    &quot;C&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.5</small><h1>Bài trên lớp 2</h1><p>exp(mean(-log(p_true_token))); p∈(0,1].</p><pre>{
+  &quot;prob&quot;: [
+    0.5,
+    0.25
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.5</small><h1>Bài tập về nhà 1</h1><p>Trả inputs=tokens[:-1], targets=tokens[1:].</p><ul><li>Input: tokens: list chuỗi/integers, length&gt;=2.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 5.5</small><h1>Bài tập về nhà 2</h1><p>exp(mean(-log(p_true_token))); p∈(0,1].</p><ul><li>Input: prob: list không rỗng(0,1].</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 5.5</small><h1>Bài tập về nhà 3</h1><p>Next-character model</p><ul><li>Data: lm</li><li>Metric: Next-character cross entropy; score=exp(-mean log loss).</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 5.5</small><h1>Tổng kết</h1><p>Tính perplexity của true-tokenprobs0.5,0.25.</p><ul><li>AIO56; AIO48 sinh thơ.</li><li>AIO56.2 câu hỏi trắc nghiệm; thực hành trong AIO48 để nối language modeling với text generation.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

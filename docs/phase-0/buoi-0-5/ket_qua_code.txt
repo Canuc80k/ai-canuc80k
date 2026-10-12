@@ -1,0 +1,3 @@
+Điểm trung bình: 7.625
+Số mẫu: 4
+Biểu đồ đã lưu: demo_plot.png

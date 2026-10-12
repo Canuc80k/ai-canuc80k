@@ -1,0 +1,6 @@
+Encoder source: ['xin', 'chào']
+Decoder input: ['BOS', 'hello', 'there']
+Decoder target: ['hello', 'there', 'EOS']
+step 0 previous BOS wanted hello
+step 1 previous hello wanted there
+step 2 previous there wanted EOS

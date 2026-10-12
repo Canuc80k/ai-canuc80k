@@ -1,0 +1,1108 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="504.216384pt" height="213.205692pt" viewBox="0 0 504.216384 213.205692" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-7-fit-stages-figure_1">
+  <g id="fig-2-7-fit-stages-patch_1">
+   <path d="M 0 213.205692 
+L 504.216384 213.205692 
+L 504.216384 0 
+L 0 0 
+L 0 213.205692 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-7-fit-stages-axes_1">
+   <g id="fig-2-7-fit-stages-patch_2">
+    <path d="M 49.597813 172.460692 
+L 178.176384 172.460692 
+L 178.176384 23.927656 
+L 49.597813 23.927656 
+L 49.597813 172.460692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-7-fit-stages-matplotlib.axis_1">
+    <g id="fig-2-7-fit-stages-xtick_1">
+     <g id="fig-2-7-fit-stages-line2d_1">
+      <defs>
+       <path id="fig-2-7-fit-stages-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="55.442293" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="55.442293" y="186.633192" transform="rotate(-0 55.442293 186.633192)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_2">
+     <g id="fig-2-7-fit-stages-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="94.405496" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="94.405496" y="186.633192" transform="rotate(-0 94.405496 186.633192)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_3">
+     <g id="fig-2-7-fit-stages-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="133.3687" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="133.3687" y="186.633192" transform="rotate(-0 133.3687 186.633192)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_4">
+     <g id="fig-2-7-fit-stages-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="172.331903" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="172.331903" y="186.633192" transform="rotate(-0 172.331903 186.633192)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="113.887098" y="205.360692" transform="rotate(-0 113.887098 205.360692)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-matplotlib.axis_2">
+    <g id="fig-2-7-fit-stages-ytick_1">
+     <g id="fig-2-7-fit-stages-line2d_5">
+      <defs>
+       <path id="fig-2-7-fit-stages-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="163.723455" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="167.309705" transform="rotate(-0 42.597813 167.309705)">−1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_2">
+     <g id="fig-2-7-fit-stages-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="141.880361" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="145.466611" transform="rotate(-0 42.597813 145.466611)">−1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_3">
+     <g id="fig-2-7-fit-stages-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="120.037268" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="123.623518" transform="rotate(-0 42.597813 123.623518)">−0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_4">
+     <g id="fig-2-7-fit-stages-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="98.194174" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="101.780424" transform="rotate(-0 42.597813 101.780424)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_5">
+     <g id="fig-2-7-fit-stages-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="76.351081" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_10">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="79.960338" transform="rotate(-0 42.597813 79.960338)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_6">
+     <g id="fig-2-7-fit-stages-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="54.507987" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_11">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="58.117245" transform="rotate(-0 42.597813 58.117245)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_7">
+     <g id="fig-2-7-fit-stages-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="49.597813" y="32.664894" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_12">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="42.597813" y="36.274151" transform="rotate(-0 42.597813 36.274151)">1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-text_13">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="98.194174" transform="rotate(-90 13.345 98.194174)">dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-PathCollection_1">
+    <defs>
+     <path id="fig-2-7-fit-stages-m679c80d625" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: currentColor; stroke-opacity: 0.35"/>
+    </defs>
+    <g clip-path="url(#fig-2-7-fit-stages-pccc42b56cd)">
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="58.525594" y="82.281505" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="61.303289" y="92.514613" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="61.454951" y="84.954842" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="63.243056" y="87.017042" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="65.624253" y="75.60934" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="65.793847" y="63.734562" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="67.503326" y="81.745862" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="68.26744" y="61.727676" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="68.499848" y="58.728505" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="69.796592" y="60.488307" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="72.177621" y="44.631595" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="72.954549" y="64.946418" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="75.372537" y="51.819257" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="77.159111" y="26.48977" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="77.339909" y="58.422177" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="77.37062" y="60.590357" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="78.737852" y="57.487071" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="80.74722" y="48.424224" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="81.340501" y="63.877137" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="81.672726" y="58.8156" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="88.981497" y="78.00219" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="90.261158" y="69.281894" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="90.660409" y="69.111477" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="91.487897" y="71.406292" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="92.472519" y="62.685985" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="92.946232" y="48.132858" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="93.719637" y="62.877122" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="93.964878" y="75.411123" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="93.968967" y="54.897683" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="94.661223" y="56.490937" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="98.264441" y="81.195677" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="98.582814" y="61.303369" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="100.982153" y="80.801295" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="103.658857" y="79.470703" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="103.695444" y="80.915756" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="104.153937" y="61.313207" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="104.485196" y="83.48837" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="104.641" y="77.159908" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="108.431599" y="77.944624" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="109.134021" y="68.248406" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="109.783281" y="67.652937" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="110.268848" y="97.524261" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="111.236971" y="70.710651" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="111.602414" y="83.113155" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="112.871775" y="74.134028" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="113.002215" y="76.278261" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="115.309827" y="102.187138" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="115.735945" y="95.657039" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="116.749615" y="102.290661" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="119.879398" y="100.523282" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="120.356372" y="84.797898" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="121.502737" y="108.260076" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="124.500547" y="124.037069" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="124.647233" y="82.431038" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="124.813907" y="129.00836" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="125.344274" y="117.048857" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="126.321983" y="119.204988" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="126.448585" y="135.909659" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="128.01018" y="111.878982" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="128.885" y="109.939268" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="131.793615" y="129.913335" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="132.454931" y="129.127466" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="132.53044" y="132.131751" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="133.472652" y="154.492242" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="133.569649" y="128.357361" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="135.540098" y="150.521244" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="136.181571" y="147.559736" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="136.265881" y="129.920375" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="137.189327" y="124.064651" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="137.801577" y="148.207035" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="138.973971" y="123.0572" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="139.882008" y="115.640717" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="140.190552" y="136.795663" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="140.992673" y="140.638712" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="143.052322" y="138.202215" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="144.435136" y="146.666111" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="145.547165" y="152.877043" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="147.408548" y="133.408046" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="148.110623" y="132.390065" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="148.605268" y="148.294564" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="148.654079" y="147.024403" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="151.217379" y="149.087614" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="152.856278" y="149.217034" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="153.274376" y="152.438865" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="154.602018" y="158.481449" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="154.770092" y="126.798372" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="154.981753" y="143.030585" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="155.094853" y="137.455084" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="155.779566" y="114.281605" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="162.14607" y="136.035042" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="162.378102" y="121.782782" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="164.613603" y="143.264348" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="165.659849" y="131.945778" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="166.073399" y="113.949818" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="166.80497" y="125.074127" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="167.426604" y="139.176988" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="168.500098" y="138.424379" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="170.197041" y="110.57969" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="170.891311" y="125.680311" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="170.949557" y="104.56191" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-line2d_12">
+    <path d="M 55.442293 98.194174 
+L 61.544963 84.732058 
+L 64.831017 77.946143 
+L 67.647634 72.580179 
+L 69.994815 68.51239 
+L 72.341996 64.874938 
+L 74.21974 62.310487 
+L 76.097485 60.079144 
+L 77.97523 58.201623 
+L 79.852975 56.695351 
+L 81.261283 55.817825 
+L 82.669592 55.16165 
+L 84.0779 54.730253 
+L 85.486209 54.525887 
+L 86.894518 54.549621 
+L 88.302826 54.801329 
+L 89.711135 55.279698 
+L 91.119443 55.982228 
+L 92.527752 56.90525 
+L 93.93606 58.043942 
+L 95.813805 59.887247 
+L 97.69155 62.086155 
+L 99.569295 64.620253 
+L 101.916475 68.22312 
+L 104.263656 72.260518 
+L 107.080274 77.596164 
+L 110.366327 84.355975 
+L 114.591252 93.596082 
+L 123.51054 113.271832 
+L 126.796593 119.941069 
+L 129.61321 125.173002 
+L 131.960391 129.107207 
+L 134.307572 132.593225 
+L 136.185317 135.025142 
+L 138.063062 137.115158 
+L 139.940807 138.843871 
+L 141.349115 139.893516 
+L 142.757424 140.725348 
+L 144.165732 141.33502 
+L 145.574041 141.719348 
+L 146.982349 141.876325 
+L 148.390658 141.80513 
+L 149.798966 141.506136 
+L 151.207275 140.980904 
+L 152.615584 140.232178 
+L 154.023892 139.263868 
+L 155.901637 137.640119 
+L 157.779382 135.650194 
+L 159.657126 133.312565 
+L 161.534871 130.648933 
+L 163.882052 126.89889 
+L 166.229233 122.732675 
+L 169.04585 117.269294 
+L 172.331903 110.400772 
+L 172.331903 110.400772 
+" clip-path="url(#fig-2-7-fit-stages-pccc42b56cd)" style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 1.1"/>
+   </g>
+   <g id="fig-2-7-fit-stages-line2d_13">
+    <path d="M 55.442293 97.500726 
+L 109.896891 97.500726 
+L 110.366327 99.660456 
+L 120.693923 99.660456 
+L 121.163359 102.318496 
+L 130.082647 102.318496 
+L 130.552083 104.314682 
+L 172.331903 104.314682 
+L 172.331903 104.314682 
+" clip-path="url(#fig-2-7-fit-stages-pccc42b56cd)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-patch_3">
+    <path d="M 49.597813 172.460692 
+L 49.597813 23.927656 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-patch_4">
+    <path d="M 49.597813 172.460692 
+L 178.176384 172.460692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-text_14">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="113.887098" y="13.927656" transform="rotate(-0 113.887098 13.927656)">1 cây</text>
+   </g>
+  </g>
+  <g id="fig-2-7-fit-stages-axes_2">
+   <g id="fig-2-7-fit-stages-patch_5">
+    <path d="M 210.097812 172.460692 
+L 338.676384 172.460692 
+L 338.676384 23.927656 
+L 210.097812 23.927656 
+L 210.097812 172.460692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-7-fit-stages-matplotlib.axis_3">
+    <g id="fig-2-7-fit-stages-xtick_5">
+     <g id="fig-2-7-fit-stages-line2d_14">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="215.942293" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="215.942293" y="186.633192" transform="rotate(-0 215.942293 186.633192)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_6">
+     <g id="fig-2-7-fit-stages-line2d_15">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="254.905496" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="254.905496" y="186.633192" transform="rotate(-0 254.905496 186.633192)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_7">
+     <g id="fig-2-7-fit-stages-line2d_16">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="293.8687" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="293.8687" y="186.633192" transform="rotate(-0 293.8687 186.633192)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_8">
+     <g id="fig-2-7-fit-stages-line2d_17">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="332.831903" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_18">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="332.831903" y="186.633192" transform="rotate(-0 332.831903 186.633192)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-text_19">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="274.387098" y="205.360692" transform="rotate(-0 274.387098 205.360692)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-matplotlib.axis_4">
+    <g id="fig-2-7-fit-stages-ytick_8">
+     <g id="fig-2-7-fit-stages-line2d_18">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="163.723455" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_20">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="167.309705" transform="rotate(-0 203.097812 167.309705)">−1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_9">
+     <g id="fig-2-7-fit-stages-line2d_19">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="141.880361" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_21">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="145.466611" transform="rotate(-0 203.097812 145.466611)">−1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_10">
+     <g id="fig-2-7-fit-stages-line2d_20">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="120.037268" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_22">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="123.623518" transform="rotate(-0 203.097812 123.623518)">−0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_11">
+     <g id="fig-2-7-fit-stages-line2d_21">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="98.194174" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_23">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="101.780424" transform="rotate(-0 203.097812 101.780424)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_12">
+     <g id="fig-2-7-fit-stages-line2d_22">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="76.351081" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_24">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="79.960338" transform="rotate(-0 203.097812 79.960338)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_13">
+     <g id="fig-2-7-fit-stages-line2d_23">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="54.507987" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_25">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="58.117245" transform="rotate(-0 203.097812 58.117245)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_14">
+     <g id="fig-2-7-fit-stages-line2d_24">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="210.097812" y="32.664894" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_26">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="203.097812" y="36.274151" transform="rotate(-0 203.097812 36.274151)">1.5</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-PathCollection_2">
+    <g clip-path="url(#fig-2-7-fit-stages-p1ec5f510fd)">
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="219.025594" y="82.281505" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="221.803289" y="92.514613" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="221.954951" y="84.954842" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="223.743056" y="87.017042" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="226.124253" y="75.60934" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="226.293847" y="63.734562" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="228.003326" y="81.745862" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="228.76744" y="61.727676" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="228.999848" y="58.728505" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="230.296592" y="60.488307" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="232.677621" y="44.631595" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="233.454549" y="64.946418" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="235.872537" y="51.819257" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="237.659111" y="26.48977" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="237.839909" y="58.422177" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="237.87062" y="60.590357" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="239.237852" y="57.487071" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="241.24722" y="48.424224" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="241.840501" y="63.877137" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="242.172726" y="58.8156" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="249.481497" y="78.00219" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="250.761158" y="69.281894" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="251.160409" y="69.111477" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="251.987897" y="71.406292" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="252.972519" y="62.685985" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="253.446232" y="48.132858" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="254.219637" y="62.877122" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="254.464878" y="75.411123" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="254.468967" y="54.897683" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="255.161223" y="56.490937" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="258.764441" y="81.195677" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="259.082814" y="61.303369" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="261.482153" y="80.801295" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="264.158857" y="79.470703" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="264.195444" y="80.915756" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="264.653937" y="61.313207" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="264.985196" y="83.48837" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="265.141" y="77.159908" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="268.931599" y="77.944624" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="269.634021" y="68.248406" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="270.283281" y="67.652937" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="270.768848" y="97.524261" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="271.736971" y="70.710651" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="272.102414" y="83.113155" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="273.371775" y="74.134028" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="273.502215" y="76.278261" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="275.809827" y="102.187138" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="276.235945" y="95.657039" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="277.249615" y="102.290661" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="280.379398" y="100.523282" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="280.856372" y="84.797898" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="282.002737" y="108.260076" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="285.000547" y="124.037069" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="285.147233" y="82.431038" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="285.313907" y="129.00836" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="285.844274" y="117.048857" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="286.821983" y="119.204988" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="286.948585" y="135.909659" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="288.51018" y="111.878982" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="289.385" y="109.939268" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="292.293615" y="129.913335" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="292.954931" y="129.127466" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="293.03044" y="132.131751" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="293.972652" y="154.492242" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="294.069649" y="128.357361" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="296.040098" y="150.521244" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="296.681571" y="147.559736" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="296.765881" y="129.920375" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="297.689327" y="124.064651" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="298.301577" y="148.207035" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="299.473971" y="123.0572" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="300.382008" y="115.640717" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="300.690552" y="136.795663" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="301.492673" y="140.638712" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="303.552322" y="138.202215" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="304.935136" y="146.666111" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="306.047165" y="152.877043" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="307.908548" y="133.408046" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="308.610623" y="132.390065" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="309.105268" y="148.294564" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="309.154079" y="147.024403" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="311.717379" y="149.087614" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="313.356278" y="149.217034" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="313.774376" y="152.438865" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="315.102018" y="158.481449" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="315.270092" y="126.798372" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="315.481753" y="143.030585" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="315.594853" y="137.455084" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="316.279566" y="114.281605" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="322.64607" y="136.035042" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="322.878102" y="121.782782" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="325.113603" y="143.264348" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="326.159849" y="131.945778" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="326.573399" y="113.949818" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="327.30497" y="125.074127" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="327.926604" y="139.176988" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="329.000098" y="138.424379" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="330.697041" y="110.57969" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="331.391311" y="125.680311" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="331.449557" y="104.56191" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-line2d_25">
+    <path d="M 215.942293 98.194174 
+L 222.044963 84.732058 
+L 225.331017 77.946143 
+L 228.147634 72.580179 
+L 230.494815 68.51239 
+L 232.841996 64.874938 
+L 234.71974 62.310487 
+L 236.597485 60.079144 
+L 238.47523 58.201623 
+L 240.352975 56.695351 
+L 241.761283 55.817825 
+L 243.169592 55.16165 
+L 244.5779 54.730253 
+L 245.986209 54.525887 
+L 247.394518 54.549621 
+L 248.802826 54.801329 
+L 250.211135 55.279698 
+L 251.619443 55.982228 
+L 253.027752 56.90525 
+L 254.43606 58.043942 
+L 256.313805 59.887247 
+L 258.19155 62.086155 
+L 260.069295 64.620253 
+L 262.416475 68.22312 
+L 264.763656 72.260518 
+L 267.580274 77.596164 
+L 270.866327 84.355975 
+L 275.091252 93.596082 
+L 284.01054 113.271832 
+L 287.296593 119.941069 
+L 290.11321 125.173002 
+L 292.460391 129.107207 
+L 294.807572 132.593225 
+L 296.685317 135.025142 
+L 298.563062 137.115158 
+L 300.440807 138.843871 
+L 301.849115 139.893516 
+L 303.257424 140.725348 
+L 304.665732 141.33502 
+L 306.074041 141.719348 
+L 307.482349 141.876325 
+L 308.890658 141.80513 
+L 310.298966 141.506136 
+L 311.707275 140.980904 
+L 313.115584 140.232178 
+L 314.523892 139.263868 
+L 316.401637 137.640119 
+L 318.279382 135.650194 
+L 320.157126 133.312565 
+L 322.034871 130.648933 
+L 324.382052 126.89889 
+L 326.729233 122.732675 
+L 329.54585 117.269294 
+L 332.831903 110.400772 
+L 332.831903 110.400772 
+" clip-path="url(#fig-2-7-fit-stages-p1ec5f510fd)" style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 1.1"/>
+   </g>
+   <g id="fig-2-7-fit-stages-line2d_26">
+    <path d="M 215.942293 83.242847 
+L 224.861581 83.242847 
+L 225.331017 81.272172 
+L 225.800453 81.272172 
+L 226.269889 79.358465 
+L 228.147634 79.358465 
+L 228.61707 77.941229 
+L 256.783241 77.941229 
+L 257.252677 79.164028 
+L 260.069295 79.164028 
+L 260.538731 82.150312 
+L 270.396891 82.150312 
+L 270.866327 84.310043 
+L 274.621816 84.310043 
+L 275.091252 97.555748 
+L 281.193923 97.555748 
+L 281.663359 104.346912 
+L 284.949412 104.346912 
+L 285.418849 114.753351 
+L 290.582647 114.753351 
+L 291.052083 121.637439 
+L 292.929828 121.637439 
+L 293.399264 123.881758 
+L 315.932201 123.881758 
+L 316.401637 121.783739 
+L 329.54585 121.783739 
+L 330.015286 117.718134 
+L 332.831903 117.718134 
+L 332.831903 117.718134 
+" clip-path="url(#fig-2-7-fit-stages-p1ec5f510fd)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-patch_6">
+    <path d="M 210.097812 172.460692 
+L 210.097812 23.927656 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-patch_7">
+    <path d="M 210.097812 172.460692 
+L 338.676384 172.460692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-text_27">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="274.387098" y="13.927656" transform="rotate(-0 274.387098 13.927656)">10 cây</text>
+   </g>
+  </g>
+  <g id="fig-2-7-fit-stages-axes_3">
+   <g id="fig-2-7-fit-stages-patch_8">
+    <path d="M 370.597813 172.460692 
+L 499.176384 172.460692 
+L 499.176384 23.927656 
+L 370.597813 23.927656 
+L 370.597813 172.460692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-7-fit-stages-matplotlib.axis_5">
+    <g id="fig-2-7-fit-stages-xtick_9">
+     <g id="fig-2-7-fit-stages-line2d_27">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="376.442293" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_28">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="376.442293" y="186.633192" transform="rotate(-0 376.442293 186.633192)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_10">
+     <g id="fig-2-7-fit-stages-line2d_28">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="415.405496" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_29">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="415.405496" y="186.633192" transform="rotate(-0 415.405496 186.633192)">2</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_11">
+     <g id="fig-2-7-fit-stages-line2d_29">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="454.3687" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_30">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="454.3687" y="186.633192" transform="rotate(-0 454.3687 186.633192)">4</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-xtick_12">
+     <g id="fig-2-7-fit-stages-line2d_30">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m04e37d9cc8" x="493.331903" y="172.460692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_31">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="493.331903" y="186.633192" transform="rotate(-0 493.331903 186.633192)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-text_32">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="434.887098" y="205.360692" transform="rotate(-0 434.887098 205.360692)">x</text>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-matplotlib.axis_6">
+    <g id="fig-2-7-fit-stages-ytick_15">
+     <g id="fig-2-7-fit-stages-line2d_31">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="163.723455" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_33">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="167.309705" transform="rotate(-0 363.597813 167.309705)">−1.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_16">
+     <g id="fig-2-7-fit-stages-line2d_32">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="141.880361" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_34">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="145.466611" transform="rotate(-0 363.597813 145.466611)">−1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_17">
+     <g id="fig-2-7-fit-stages-line2d_33">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="120.037268" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_35">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="123.623518" transform="rotate(-0 363.597813 123.623518)">−0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_18">
+     <g id="fig-2-7-fit-stages-line2d_34">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="98.194174" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_36">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="101.780424" transform="rotate(-0 363.597813 101.780424)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_19">
+     <g id="fig-2-7-fit-stages-line2d_35">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="76.351081" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_37">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="79.960338" transform="rotate(-0 363.597813 79.960338)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_20">
+     <g id="fig-2-7-fit-stages-line2d_36">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="54.507987" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_38">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="58.117245" transform="rotate(-0 363.597813 58.117245)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-7-fit-stages-ytick_21">
+     <g id="fig-2-7-fit-stages-line2d_37">
+      <g>
+       <use xlink:href="#fig-2-7-fit-stages-m9fce3a8e10" x="370.597813" y="32.664894" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-7-fit-stages-text_39">
+      <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="363.597813" y="36.274151" transform="rotate(-0 363.597813 36.274151)">1.5</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-PathCollection_3">
+    <g clip-path="url(#fig-2-7-fit-stages-p3e1e903300)">
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="379.525594" y="82.281505" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="382.303289" y="92.514613" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="382.454951" y="84.954842" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="384.243056" y="87.017042" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="386.624253" y="75.60934" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="386.793847" y="63.734562" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="388.503326" y="81.745862" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="389.26744" y="61.727676" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="389.499848" y="58.728505" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="390.796592" y="60.488307" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="393.177621" y="44.631595" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="393.954549" y="64.946418" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="396.372537" y="51.819257" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="398.159111" y="26.48977" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="398.339909" y="58.422177" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="398.37062" y="60.590357" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="399.737852" y="57.487071" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="401.74722" y="48.424224" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="402.340501" y="63.877137" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="402.672726" y="58.8156" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="409.981497" y="78.00219" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="411.261158" y="69.281894" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="411.660409" y="69.111477" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="412.487897" y="71.406292" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="413.472519" y="62.685985" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="413.946232" y="48.132858" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="414.719637" y="62.877122" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="414.964878" y="75.411123" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="414.968967" y="54.897683" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="415.661223" y="56.490937" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="419.264441" y="81.195677" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="419.582814" y="61.303369" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="421.982153" y="80.801295" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="424.658857" y="79.470703" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="424.695444" y="80.915756" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="425.153937" y="61.313207" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="425.485196" y="83.48837" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="425.641" y="77.159908" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="429.431599" y="77.944624" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="430.134021" y="68.248406" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="430.783281" y="67.652937" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="431.268848" y="97.524261" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="432.236971" y="70.710651" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="432.602414" y="83.113155" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="433.871775" y="74.134028" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="434.002215" y="76.278261" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="436.309827" y="102.187138" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="436.735945" y="95.657039" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="437.749615" y="102.290661" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="440.879398" y="100.523282" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="441.356372" y="84.797898" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="442.502737" y="108.260076" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="445.500547" y="124.037069" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="445.647233" y="82.431038" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="445.813907" y="129.00836" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="446.344274" y="117.048857" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="447.321983" y="119.204988" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="447.448585" y="135.909659" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="449.01018" y="111.878982" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="449.885" y="109.939268" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="452.793615" y="129.913335" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="453.454931" y="129.127466" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="453.53044" y="132.131751" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="454.472652" y="154.492242" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="454.569649" y="128.357361" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="456.540098" y="150.521244" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="457.181571" y="147.559736" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="457.265881" y="129.920375" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="458.189327" y="124.064651" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="458.801577" y="148.207035" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="459.973971" y="123.0572" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="460.882008" y="115.640717" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="461.190552" y="136.795663" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="461.992673" y="140.638712" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="464.052322" y="138.202215" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="465.435136" y="146.666111" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="466.547165" y="152.877043" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="468.408548" y="133.408046" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="469.110623" y="132.390065" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="469.605268" y="148.294564" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="469.654079" y="147.024403" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="472.217379" y="149.087614" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="473.856278" y="149.217034" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="474.274376" y="152.438865" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="475.602018" y="158.481449" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="475.770092" y="126.798372" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="475.981753" y="143.030585" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="476.094853" y="137.455084" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="476.779566" y="114.281605" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="483.14607" y="136.035042" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="483.378102" y="121.782782" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="485.613603" y="143.264348" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="486.659849" y="131.945778" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="487.073399" y="113.949818" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="487.80497" y="125.074127" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="488.426604" y="139.176988" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="489.500098" y="138.424379" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="491.197041" y="110.57969" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="491.891311" y="125.680311" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+     <use xlink:href="#fig-2-7-fit-stages-m679c80d625" x="491.949557" y="104.56191" style="fill: currentColor; fill-opacity: 0.35; stroke: currentColor; stroke-opacity: 0.35"/>
+    </g>
+   </g>
+   <g id="fig-2-7-fit-stages-line2d_38">
+    <path d="M 376.442293 98.194174 
+L 382.544963 84.732058 
+L 385.831017 77.946143 
+L 388.647634 72.580179 
+L 390.994815 68.51239 
+L 393.341996 64.874938 
+L 395.21974 62.310487 
+L 397.097485 60.079144 
+L 398.97523 58.201623 
+L 400.852975 56.695351 
+L 402.261283 55.817825 
+L 403.669592 55.16165 
+L 405.0779 54.730253 
+L 406.486209 54.525887 
+L 407.894518 54.549621 
+L 409.302826 54.801329 
+L 410.711135 55.279698 
+L 412.119443 55.982228 
+L 413.527752 56.90525 
+L 414.93606 58.043942 
+L 416.813805 59.887247 
+L 418.69155 62.086155 
+L 420.569295 64.620253 
+L 422.916475 68.22312 
+L 425.263656 72.260518 
+L 428.080274 77.596164 
+L 431.366327 84.355975 
+L 435.591252 93.596082 
+L 444.51054 113.271832 
+L 447.796593 119.941069 
+L 450.61321 125.173002 
+L 452.960391 129.107207 
+L 455.307572 132.593225 
+L 457.185317 135.025142 
+L 459.063062 137.115158 
+L 460.940807 138.843871 
+L 462.349115 139.893516 
+L 463.757424 140.725348 
+L 465.165732 141.33502 
+L 466.574041 141.719348 
+L 467.982349 141.876325 
+L 469.390658 141.80513 
+L 470.798966 141.506136 
+L 472.207275 140.980904 
+L 473.615584 140.232178 
+L 475.023892 139.263868 
+L 476.901637 137.640119 
+L 478.779382 135.650194 
+L 480.657126 133.312565 
+L 482.534871 130.648933 
+L 484.882052 126.89889 
+L 487.229233 122.732675 
+L 490.04585 117.269294 
+L 493.331903 110.400772 
+L 493.331903 110.400772 
+" clip-path="url(#fig-2-7-fit-stages-p3e1e903300)" style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 1.1"/>
+   </g>
+   <g id="fig-2-7-fit-stages-line2d_39">
+    <path d="M 376.442293 82.855186 
+L 380.667219 82.855186 
+L 381.136655 87.310145 
+L 382.075527 87.310145 
+L 382.544963 84.932663 
+L 385.361581 84.932663 
+L 385.831017 74.839271 
+L 386.300453 74.839271 
+L 386.769889 70.267538 
+L 387.239325 70.267538 
+L 387.708761 74.524657 
+L 388.647634 74.524657 
+L 389.11707 61.185064 
+L 389.586506 59.02036 
+L 391.933687 59.02036 
+L 392.403123 52.634872 
+L 393.341996 52.634872 
+L 393.811432 55.565025 
+L 394.750304 55.565025 
+L 395.21974 52.839679 
+L 397.097485 52.839679 
+L 397.566921 42.533145 
+L 398.036358 42.533145 
+L 398.505794 56.471971 
+L 401.791847 56.471971 
+L 402.261283 61.40682 
+L 406.016773 61.40682 
+L 406.486209 66.665247 
+L 412.588879 66.665247 
+L 413.058316 63.872915 
+L 413.997188 63.872915 
+L 414.466624 64.819339 
+L 414.93606 64.819339 
+L 415.405496 63.937993 
+L 417.283241 63.937993 
+L 417.752677 72.214428 
+L 419.160986 72.214428 
+L 419.630422 71.262439 
+L 420.569295 71.262439 
+L 421.038731 75.369993 
+L 430.896891 75.369993 
+L 431.366327 80.27258 
+L 435.121816 80.27258 
+L 435.591252 97.162975 
+L 440.755051 97.162975 
+L 441.224487 95.951997 
+L 441.693923 95.951997 
+L 442.163359 106.696516 
+L 445.449412 106.696516 
+L 445.918849 120.838529 
+L 447.796593 120.838529 
+L 448.26603 119.996722 
+L 451.082647 119.996722 
+L 451.552083 129.457765 
+L 453.429828 129.457765 
+L 453.899264 131.702083 
+L 454.3687 140.463758 
+L 454.838136 137.20224 
+L 455.307572 137.20224 
+L 455.777009 138.395547 
+L 457.185317 138.395547 
+L 457.654753 135.118988 
+L 458.124189 135.118988 
+L 458.593626 136.025969 
+L 459.063062 136.025969 
+L 459.532498 129.418641 
+L 460.940807 129.418641 
+L 461.410243 135.674765 
+L 461.879679 139.561878 
+L 464.696296 139.561878 
+L 465.165732 142.661925 
+L 467.043477 142.661925 
+L 467.512913 139.709058 
+L 468.921222 139.709058 
+L 469.390658 146.479808 
+L 470.798966 146.479808 
+L 471.268403 147.542299 
+L 473.615584 147.542299 
+L 474.08502 148.337312 
+L 475.493328 148.337312 
+L 475.962765 136.386932 
+L 476.432201 136.386932 
+L 476.901637 123.37833 
+L 479.718254 123.37833 
+L 480.18769 129.608288 
+L 484.412616 129.608288 
+L 484.882052 134.359526 
+L 485.820924 134.359526 
+L 486.290361 132.844423 
+L 486.759797 132.844423 
+L 487.229233 122.111374 
+L 488.168105 134.666176 
+L 490.04585 134.666176 
+L 490.515286 116.241019 
+L 491.454159 116.241019 
+L 491.923595 108.058766 
+L 493.331903 108.058766 
+L 493.331903 108.058766 
+" clip-path="url(#fig-2-7-fit-stages-p3e1e903300)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-patch_9">
+    <path d="M 370.597813 172.460692 
+L 370.597813 23.927656 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-patch_10">
+    <path d="M 370.597813 172.460692 
+L 499.176384 172.460692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-7-fit-stages-text_40">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="434.887098" y="13.927656" transform="rotate(-0 434.887098 13.927656)">100 cây</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-7-fit-stages-pccc42b56cd">
+   <rect x="49.597813" y="23.927656" width="128.578571" height="148.533036"/>
+  </clipPath>
+  <clipPath id="fig-2-7-fit-stages-p1ec5f510fd">
+   <rect x="210.097812" y="23.927656" width="128.578571" height="148.533036"/>
+  </clipPath>
+  <clipPath id="fig-2-7-fit-stages-p3e1e903300">
+   <rect x="370.597813" y="23.927656" width="128.578571" height="148.533036"/>
+  </clipPath>
+ </defs>
+</svg>

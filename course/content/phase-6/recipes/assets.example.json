@@ -1,0 +1,13 @@
+{
+  "repo_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "REPLACE_WITH_REVIEWED_40_HEX_COMMIT",
+  "license": "apache-2.0",
+  "license_reviewed": false,
+  "files": {
+    "config.json": "REPLACE_WITH_REAL_SHA256",
+    "tokenizer.json": "REPLACE_WITH_REAL_SHA256",
+    "tokenizer_config.json": "REPLACE_WITH_REAL_SHA256",
+    "model.safetensors": "REPLACE_WITH_REAL_SHA256",
+    "LICENSE": "REPLACE_WITH_REAL_SHA256"
+  }
+}

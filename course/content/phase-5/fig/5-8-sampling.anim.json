@@ -1,0 +1,30 @@
+{
+ "w": 960,
+ "h": 420,
+ "n": 11,
+ "cols": 3,
+ "dur": 650,
+ "hold": 2600,
+ "labels": [
+  "mức 40: điểm xuất phát lấy từ N(0, 1)",
+  "sau 4 bước khử nhiễu, còn mức 36",
+  "sau 8 bước khử nhiễu, còn mức 32",
+  "sau 12 bước khử nhiễu, còn mức 28",
+  "sau 16 bước khử nhiễu, còn mức 24",
+  "sau 20 bước khử nhiễu, còn mức 20",
+  "sau 24 bước khử nhiễu, còn mức 16",
+  "sau 28 bước khử nhiễu, còn mức 12",
+  "sau 32 bước khử nhiễu, còn mức 8",
+  "sau 36 bước khử nhiễu, còn mức 4",
+  "mức 0: hai cụm quanh −2 và +2, như dữ liệu train"
+ ],
+ "key": [
+  0,
+  3,
+  6,
+  10
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

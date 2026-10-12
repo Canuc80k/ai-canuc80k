@@ -1,0 +1,547 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="487.047344pt" height="238.49pt" viewBox="0 0 487.047344 238.49" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-3-3-activation-figure_1">
+  <g id="fig-3-3-activation-patch_1">
+   <path d="M 0 238.49 
+L 487.047344 238.49 
+L 487.047344 0 
+L 0 0 
+L 0 238.49 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-3-3-activation-axes_1">
+   <g id="fig-3-3-activation-patch_2">
+    <path d="M 39.643594 197.745 
+L 156.575737 197.745 
+L 156.575737 23.345 
+L 39.643594 23.345 
+L 39.643594 197.745 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-3-activation-matplotlib.axis_1">
+    <g id="fig-3-3-activation-xtick_1">
+     <g id="fig-3-3-activation-line2d_1">
+      <defs>
+       <path id="fig-3-3-activation-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="39.643594" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="39.643594" y="211.9175" transform="rotate(-0 39.643594 211.9175)">−5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-xtick_2">
+     <g id="fig-3-3-activation-line2d_2">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="98.109665" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="98.109665" y="211.9175" transform="rotate(-0 98.109665 211.9175)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-xtick_3">
+     <g id="fig-3-3-activation-line2d_3">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="156.575737" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="156.575737" y="211.9175" transform="rotate(-0 156.575737 211.9175)">5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-text_4">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="98.109665" y="230.645" transform="rotate(-0 98.109665 230.645)">z</text>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-matplotlib.axis_2">
+    <g id="fig-3-3-activation-ytick_1">
+     <g id="fig-3-3-activation-line2d_4">
+      <defs>
+       <path id="fig-3-3-activation-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="39.643594" y="191.285741" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="32.643594" y="194.871991" transform="rotate(-0 32.643594 194.871991)">−1</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_2">
+     <g id="fig-3-3-activation-line2d_5">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="39.643594" y="158.989444" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="32.643594" y="162.575694" transform="rotate(-0 32.643594 162.575694)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_3">
+     <g id="fig-3-3-activation-line2d_6">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="39.643594" y="126.693148" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="32.643594" y="130.279398" transform="rotate(-0 32.643594 130.279398)">1</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_4">
+     <g id="fig-3-3-activation-line2d_7">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="39.643594" y="94.396852" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="32.643594" y="97.983102" transform="rotate(-0 32.643594 97.983102)">2</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_5">
+     <g id="fig-3-3-activation-line2d_8">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="39.643594" y="62.100556" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="32.643594" y="65.686806" transform="rotate(-0 32.643594 65.686806)">3</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_6">
+     <g id="fig-3-3-activation-line2d_9">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="39.643594" y="29.804259" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="32.643594" y="33.390509" transform="rotate(-0 32.643594 33.390509)">4</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-text_11">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="110.545" transform="rotate(-90 13.345 110.545)">đầu ra</text>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-line2d_10">
+    <path d="M 39.643594 158.989444 
+L 97.963134 158.989444 
+L 98.256197 158.584729 
+L 156.035529 -1 
+L 156.035529 -1 
+" clip-path="url(#fig-3-3-activation-p1092eb956b)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-line2d_11">
+    <path d="M 39.643594 158.989444 
+L 156.575737 158.989444 
+" clip-path="url(#fig-3-3-activation-p1092eb956b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-line2d_12">
+    <path d="M 98.109665 197.745 
+L 98.109665 23.345 
+" clip-path="url(#fig-3-3-activation-p1092eb956b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-patch_3">
+    <path d="M 39.643594 197.745 
+L 39.643594 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-patch_4">
+    <path d="M 39.643594 197.745 
+L 156.575737 197.745 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-text_12">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="98.109665" y="13.345" transform="rotate(-0 98.109665 13.345)">ReLU</text>
+   </g>
+  </g>
+  <g id="fig-3-3-activation-axes_2">
+   <g id="fig-3-3-activation-patch_5">
+    <path d="M 201.065022 197.745 
+L 317.997165 197.745 
+L 317.997165 23.345 
+L 201.065022 23.345 
+L 201.065022 197.745 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-3-activation-matplotlib.axis_3">
+    <g id="fig-3-3-activation-xtick_4">
+     <g id="fig-3-3-activation-line2d_13">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="201.065022" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="201.065022" y="211.9175" transform="rotate(-0 201.065022 211.9175)">−5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-xtick_5">
+     <g id="fig-3-3-activation-line2d_14">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="259.531094" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="259.531094" y="211.9175" transform="rotate(-0 259.531094 211.9175)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-xtick_6">
+     <g id="fig-3-3-activation-line2d_15">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="317.997165" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="317.997165" y="211.9175" transform="rotate(-0 317.997165 211.9175)">5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-text_16">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="259.531094" y="230.645" transform="rotate(-0 259.531094 230.645)">z</text>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-matplotlib.axis_4">
+    <g id="fig-3-3-activation-ytick_7">
+     <g id="fig-3-3-activation-line2d_16">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="201.065022" y="183.211667" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="194.065022" y="186.797917" transform="rotate(-0 194.065022 186.797917)">−1.0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_8">
+     <g id="fig-3-3-activation-line2d_17">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="201.065022" y="146.878333" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_18">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="194.065022" y="150.464583" transform="rotate(-0 194.065022 150.464583)">−0.5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_9">
+     <g id="fig-3-3-activation-line2d_18">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="201.065022" y="110.545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_19">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="194.065022" y="114.13125" transform="rotate(-0 194.065022 114.13125)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_10">
+     <g id="fig-3-3-activation-line2d_19">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="201.065022" y="74.211667" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_20">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="194.065022" y="77.797917" transform="rotate(-0 194.065022 77.797917)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_11">
+     <g id="fig-3-3-activation-line2d_20">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="201.065022" y="37.878333" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_21">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="194.065022" y="41.464583" transform="rotate(-0 194.065022 41.464583)">1.0</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-line2d_21">
+    <path d="M 201.065022 183.205069 
+L 218.648803 183.078262 
+L 224.803127 182.830092 
+L 228.612946 182.481315 
+L 231.543576 182.00994 
+L 233.88808 181.424394 
+L 235.939521 180.686233 
+L 237.697899 179.820799 
+L 239.163214 178.883738 
+L 240.628529 177.697783 
+L 242.093844 176.203 
+L 243.559159 174.328735 
+L 244.731412 172.501919 
+L 245.903664 170.334864 
+L 247.075916 167.779583 
+L 248.541231 163.966129 
+L 250.006546 159.383186 
+L 251.471861 153.962072 
+L 252.937176 147.668406 
+L 254.695554 138.991754 
+L 256.746995 127.526896 
+L 259.970688 107.814457 
+L 263.194381 88.496407 
+L 265.245823 77.612368 
+L 267.004201 69.540297 
+L 268.469516 63.771806 
+L 269.934831 58.860286 
+L 271.400146 54.748802 
+L 272.865461 51.355659 
+L 274.330776 48.588081 
+L 275.796091 46.352302 
+L 277.261406 44.560101 
+L 278.726721 43.13239 
+L 280.192036 42.000672 
+L 281.950414 40.952591 
+L 283.708792 40.16666 
+L 285.760234 39.497018 
+L 288.104738 38.966286 
+L 291.035368 38.539334 
+L 294.845187 38.223596 
+L 300.413384 38.011738 
+L 310.084464 37.903867 
+L 317.997165 37.884931 
+L 317.997165 37.884931 
+" clip-path="url(#fig-3-3-activation-p7a06bdbb0b)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-line2d_22">
+    <path d="M 201.065022 110.545 
+L 317.997165 110.545 
+" clip-path="url(#fig-3-3-activation-p7a06bdbb0b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-line2d_23">
+    <path d="M 259.531094 197.745 
+L 259.531094 23.345 
+" clip-path="url(#fig-3-3-activation-p7a06bdbb0b)" style="fill: none; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-patch_6">
+    <path d="M 201.065022 197.745 
+L 201.065022 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-patch_7">
+    <path d="M 201.065022 197.745 
+L 317.997165 197.745 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-text_22">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="259.531094" y="13.345" transform="rotate(-0 259.531094 13.345)">tanh</text>
+   </g>
+  </g>
+  <g id="fig-3-3-activation-axes_3">
+   <g id="fig-3-3-activation-patch_8">
+    <path d="M 362.486451 197.745 
+L 479.418594 197.745 
+L 479.418594 23.345 
+L 362.486451 23.345 
+L 362.486451 197.745 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-3-activation-matplotlib.axis_5">
+    <g id="fig-3-3-activation-xtick_7">
+     <g id="fig-3-3-activation-line2d_24">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="362.486451" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_23">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="362.486451" y="211.9175" transform="rotate(-0 362.486451 211.9175)">−5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-xtick_8">
+     <g id="fig-3-3-activation-line2d_25">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="420.952522" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_24">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="420.952522" y="211.9175" transform="rotate(-0 420.952522 211.9175)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-xtick_9">
+     <g id="fig-3-3-activation-line2d_26">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m04e37d9cc8" x="479.418594" y="197.745" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_25">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="479.418594" y="211.9175" transform="rotate(-0 479.418594 211.9175)">5</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-text_26">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="420.952522" y="230.645" transform="rotate(-0 420.952522 230.645)">z</text>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-matplotlib.axis_6">
+    <g id="fig-3-3-activation-ytick_12">
+     <g id="fig-3-3-activation-line2d_27">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="362.486451" y="189.817727" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_27">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="355.486451" y="193.403977" transform="rotate(-0 355.486451 193.403977)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_13">
+     <g id="fig-3-3-activation-line2d_28">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="362.486451" y="158.108636" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_28">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="355.486451" y="161.694886" transform="rotate(-0 355.486451 161.694886)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_14">
+     <g id="fig-3-3-activation-line2d_29">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="362.486451" y="126.399545" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_29">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="355.486451" y="129.985795" transform="rotate(-0 355.486451 129.985795)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_15">
+     <g id="fig-3-3-activation-line2d_30">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="362.486451" y="94.690455" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_30">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="355.486451" y="98.276705" transform="rotate(-0 355.486451 98.276705)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_16">
+     <g id="fig-3-3-activation-line2d_31">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="362.486451" y="62.981364" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_31">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="355.486451" y="66.567614" transform="rotate(-0 355.486451 66.567614)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-3-3-activation-ytick_17">
+     <g id="fig-3-3-activation-line2d_32">
+      <g>
+       <use xlink:href="#fig-3-3-activation-m9fce3a8e10" x="362.486451" y="31.272273" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-activation-text_32">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="355.486451" y="34.858523" transform="rotate(-0 355.486451 34.858523)">1.0</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-line2d_33">
+    <path d="M 362.486451 188.756606 
+L 367.468522 188.198673 
+L 371.571404 187.527992 
+L 375.088161 186.740178 
+L 378.311854 185.788076 
+L 381.242484 184.677521 
+L 383.880051 183.429307 
+L 386.224555 182.0802 
+L 388.569059 180.463703 
+L 390.6205 178.79461 
+L 392.671941 176.853571 
+L 394.723383 174.605983 
+L 396.774824 172.016379 
+L 398.826265 169.049803 
+L 400.877706 165.673658 
+L 402.929147 161.860041 
+L 404.980588 157.5885 
+L 407.325092 152.133849 
+L 409.669596 146.07571 
+L 412.307163 138.584294 
+L 415.237794 129.539582 
+L 419.047613 116.987809 
+L 427.253377 89.689267 
+L 430.184007 80.783115 
+L 432.821574 73.444594 
+L 435.166079 67.535183 
+L 437.510583 62.233524 
+L 439.562024 58.094352 
+L 441.613465 54.408195 
+L 443.664906 51.152171 
+L 445.716347 48.29677 
+L 447.767788 45.808504 
+L 449.819229 43.652105 
+L 451.87067 41.792231 
+L 454.215174 39.986014 
+L 456.559679 38.474824 
+L 458.904183 37.215319 
+L 461.54175 36.051392 
+L 464.47238 35.016946 
+L 467.696073 34.130931 
+L 471.212829 33.398385 
+L 475.315712 32.775169 
+L 479.418594 32.333394 
+L 479.418594 32.333394 
+" clip-path="url(#fig-3-3-activation-p86dcfbf7b2)" style="fill: none; stroke: #b8892b; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-line2d_34">
+    <path d="M 362.486451 189.817727 
+L 479.418594 189.817727 
+" clip-path="url(#fig-3-3-activation-p86dcfbf7b2)" style="fill: none; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-line2d_35">
+    <path d="M 420.952522 197.745 
+L 420.952522 23.345 
+" clip-path="url(#fig-3-3-activation-p86dcfbf7b2)" style="fill: none; stroke: currentColor; stroke-opacity: 0.45; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-patch_9">
+    <path d="M 362.486451 197.745 
+L 362.486451 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-patch_10">
+    <path d="M 362.486451 197.745 
+L 479.418594 197.745 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-activation-PathCollection_1">
+    <defs>
+     <path id="fig-3-3-activation-m50bf5611e0" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #b8892b"/>
+    </defs>
+    <g clip-path="url(#fig-3-3-activation-p86dcfbf7b2)">
+     <use xlink:href="#fig-3-3-activation-m50bf5611e0" x="420.952522" y="110.545" style="fill: #b8892b; stroke: #b8892b"/>
+    </g>
+   </g>
+   <g id="fig-3-3-activation-text_33">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="423.291165" y="113.715909" transform="rotate(-0 423.291165 113.715909)">σ′(0)=0.25</text>
+   </g>
+   <g id="fig-3-3-activation-text_34">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="420.952522" y="13.345" transform="rotate(-0 420.952522 13.345)">sigmoid</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-3-3-activation-p1092eb956b">
+   <rect x="39.643594" y="23.345" width="116.932143" height="174.4"/>
+  </clipPath>
+  <clipPath id="fig-3-3-activation-p7a06bdbb0b">
+   <rect x="201.065022" y="23.345" width="116.932143" height="174.4"/>
+  </clipPath>
+  <clipPath id="fig-3-3-activation-p86dcfbf7b2">
+   <rect x="362.486451" y="23.345" width="116.932143" height="174.4"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,296 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="415.334152pt" height="213.207165pt" viewBox="0 0 415.334152 213.207165" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-3-5-schedule-figure_1">
+  <g id="fig-3-5-schedule-patch_1">
+   <path d="M 0 213.207165 
+L 415.334152 213.207165 
+L 415.334152 0 
+L 0 0 
+L 0 213.207165 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-3-5-schedule-axes_1">
+   <g id="fig-3-5-schedule-patch_2">
+    <path d="M 51.358438 171.779821 
+L 410.294152 171.779821 
+L 410.294152 8.62625 
+L 51.358438 8.62625 
+L 51.358438 171.779821 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-5-schedule-matplotlib.axis_1">
+    <g id="fig-3-5-schedule-xtick_1">
+     <g id="fig-3-5-schedule-line2d_1">
+      <defs>
+       <path id="fig-3-5-schedule-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="63.879451" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="63.879451" y="185.952321" transform="rotate(-0 63.879451 185.952321)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_2">
+     <g id="fig-3-5-schedule-line2d_2">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="105.616162" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="105.616162" y="185.952321" transform="rotate(-0 105.616162 185.952321)">1</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_3">
+     <g id="fig-3-5-schedule-line2d_3">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="147.352873" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="147.352873" y="185.952321" transform="rotate(-0 147.352873 185.952321)">2</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_4">
+     <g id="fig-3-5-schedule-line2d_4">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="189.089584" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="189.089584" y="185.952321" transform="rotate(-0 189.089584 185.952321)">3</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_5">
+     <g id="fig-3-5-schedule-line2d_5">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="230.826295" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="230.826295" y="185.952321" transform="rotate(-0 230.826295 185.952321)">4</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_6">
+     <g id="fig-3-5-schedule-line2d_6">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="272.563006" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="272.563006" y="185.952321" transform="rotate(-0 272.563006 185.952321)">5</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_7">
+     <g id="fig-3-5-schedule-line2d_7">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="314.299717" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="314.299717" y="185.952321" transform="rotate(-0 314.299717 185.952321)">6</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_8">
+     <g id="fig-3-5-schedule-line2d_8">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="356.036428" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="356.036428" y="185.952321" transform="rotate(-0 356.036428 185.952321)">7</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-xtick_9">
+     <g id="fig-3-5-schedule-line2d_9">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m04e37d9cc8" x="397.773138" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="397.773138" y="185.952321" transform="rotate(-0 397.773138 185.952321)">8</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-text_10">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="230.826295" y="205.362165" transform="rotate(-0 230.826295 205.362165)">epoch tiếp theo</text>
+    </g>
+   </g>
+   <g id="fig-3-5-schedule-matplotlib.axis_2">
+    <g id="fig-3-5-schedule-ytick_1">
+     <g id="fig-3-5-schedule-line2d_10">
+      <defs>
+       <path id="fig-3-5-schedule-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="171.779821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="175.366071" transform="rotate(-0 44.358438 175.366071)">0.00</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-ytick_2">
+     <g id="fig-3-5-schedule-line2d_11">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="144.58756" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="148.17381" transform="rotate(-0 44.358438 148.17381)">0.02</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-ytick_3">
+     <g id="fig-3-5-schedule-line2d_12">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="117.395298" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="120.981548" transform="rotate(-0 44.358438 120.981548)">0.04</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-ytick_4">
+     <g id="fig-3-5-schedule-line2d_13">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="90.203036" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="93.789286" transform="rotate(-0 44.358438 93.789286)">0.06</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-ytick_5">
+     <g id="fig-3-5-schedule-line2d_14">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="63.010774" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="66.597024" transform="rotate(-0 44.358438 66.597024)">0.08</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-ytick_6">
+     <g id="fig-3-5-schedule-line2d_15">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="35.818512" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="39.404762" transform="rotate(-0 44.358438 39.404762)">0.10</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-ytick_7">
+     <g id="fig-3-5-schedule-line2d_16">
+      <g>
+       <use xlink:href="#fig-3-5-schedule-m9fce3a8e10" x="51.358438" y="8.62625" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-5-schedule-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="44.358438" y="12.2125" transform="rotate(-0 44.358438 12.2125)">0.12</text>
+     </g>
+    </g>
+    <g id="fig-3-5-schedule-text_18">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="90.203036" transform="rotate(-90 13.345 90.203036)">learning rate</text>
+    </g>
+   </g>
+   <g id="fig-3-5-schedule-line2d_17">
+    <path d="M 63.879451 35.818512 
+L 105.616162 35.818512 
+L 105.616162 35.818512 
+L 147.352873 35.818512 
+L 147.352873 35.818512 
+L 189.089584 35.818512 
+L 189.089584 103.799167 
+L 230.826295 103.799167 
+L 230.826295 103.799167 
+L 272.563006 103.799167 
+L 272.563006 103.799167 
+L 314.299717 103.799167 
+L 314.299717 137.789494 
+L 356.036428 137.789494 
+L 356.036428 137.789494 
+L 397.773138 137.789494 
+L 397.773138 137.789494 
+" clip-path="url(#fig-3-5-schedule-p661407342f)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-5-schedule-line2d_18">
+    <path d="M 189.089584 171.779821 
+L 189.089584 8.62625 
+" clip-path="url(#fig-3-5-schedule-p661407342f)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 0.8"/>
+   </g>
+   <g id="fig-3-5-schedule-line2d_19">
+    <path d="M 314.299717 171.779821 
+L 314.299717 8.62625 
+" clip-path="url(#fig-3-5-schedule-p661407342f)" style="fill: none; stroke-dasharray: 0.8,1.32; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 0.8"/>
+   </g>
+   <g id="fig-3-5-schedule-patch_3">
+    <path d="M 51.358438 171.779821 
+L 51.358438 8.62625 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-5-schedule-patch_4">
+    <path d="M 51.358438 171.779821 
+L 410.294152 171.779821 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-5-schedule-PathCollection_1">
+    <defs>
+     <path id="fig-3-5-schedule-m47cad51b22" d="M 0 2.95804 
+C 0.784481 2.95804 1.536938 2.646362 2.09165 2.09165 
+C 2.646362 1.536938 2.95804 0.784481 2.95804 0 
+C 2.95804 -0.784481 2.646362 -1.536938 2.09165 -2.09165 
+C 1.536938 -2.646362 0.784481 -2.95804 0 -2.95804 
+C -0.784481 -2.95804 -1.536938 -2.646362 -2.09165 -2.09165 
+C -2.646362 -1.536938 -2.95804 -0.784481 -2.95804 0 
+C -2.95804 0.784481 -2.646362 1.536938 -2.09165 2.09165 
+C -1.536938 2.646362 -0.784481 2.95804 0 2.95804 
+z
+" style="stroke: #b8892b"/>
+    </defs>
+    <g clip-path="url(#fig-3-5-schedule-p661407342f)">
+     <use xlink:href="#fig-3-5-schedule-m47cad51b22" x="63.879451" y="35.818512" style="fill: #b8892b; stroke: #b8892b"/>
+    </g>
+   </g>
+   <g id="fig-3-5-schedule-text_19">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="68.887856" y="27.660833" transform="rotate(-0 68.887856 27.660833)">0.1</text>
+   </g>
+   <g id="fig-3-5-schedule-PathCollection_2">
+    <g clip-path="url(#fig-3-5-schedule-p661407342f)">
+     <use xlink:href="#fig-3-5-schedule-m47cad51b22" x="189.089584" y="103.799167" style="fill: #b8892b; stroke: #b8892b"/>
+    </g>
+   </g>
+   <g id="fig-3-5-schedule-text_20">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="194.097989" y="95.641488" transform="rotate(-0 194.097989 95.641488)">0.05</text>
+   </g>
+   <g id="fig-3-5-schedule-PathCollection_3">
+    <g clip-path="url(#fig-3-5-schedule-p661407342f)">
+     <use xlink:href="#fig-3-5-schedule-m47cad51b22" x="314.299717" y="137.789494" style="fill: #b8892b; stroke: #b8892b"/>
+    </g>
+   </g>
+   <g id="fig-3-5-schedule-text_21">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="319.308122" y="129.631815" transform="rotate(-0 319.308122 129.631815)">0.025</text>
+   </g>
+   <g id="fig-3-5-schedule-text_22">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="199.523761" y="54.853095" transform="rotate(-0 199.523761 54.853095)">× 0.5</text>
+   </g>
+   <g id="fig-3-5-schedule-text_23">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="324.733894" y="116.035685" transform="rotate(-0 324.733894 116.035685)">× 0.5</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-3-5-schedule-p661407342f">
+   <rect x="51.358438" y="8.62625" width="358.935714" height="163.153571"/>
+  </clipPath>
+ </defs>
+</svg>

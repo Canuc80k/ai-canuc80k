@@ -1,0 +1,96 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bagging, Random Forest và boosting</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 2.6</small><h1>Buổi 2.6: Bagging, Random Forest và boosting</h1><p>Nhiều model sửa được những loại lỗi khác nhau thế nào?</p></section><section class="slide"><small>Buổi 2.6</small><h1>Ý tưởng chính</h1><p>ensemble_prob = mean(model_probabilities)</p><ul><li>Bagging học các model trên các mẫu biến đổi, giúp giảm phương sai.</li><li>Random Forest thêm ngẫu nhiên khi chọn features; averaging giảm dao động.</li><li>Boosting thêm model để sửa lỗi theo objective; cần quản lý capacity/số vòng.</li></ul></section><section class="slide"><small>Buổi 2.6</small><h1>Ví dụ</h1><pre>{
+  &quot;predictions&quot;: [
+    [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.1,
+        0.9
+      ]
+    ],
+    [
+      [
+        0.4,
+        0.6
+      ],
+      [
+        0.3,
+        0.7
+      ]
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Đáp án ví dụ</h1><pre>[
+  [
+    0.6,
+    0.4
+  ],
+  [
+    0.2,
+    0.8
+  ]
+]</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Code minh họa (1)</h1><pre>import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier,HistGradientBoostingClassifier
+
+X,y = load_breast_cancer(return_X_y=True)
+Xtr,Xva,ytr,yva = train_test_split(X,y,test_size=.25,stratify=y,random_state=42)
+models = [DecisionTreeClassifier(random_state=42),
+          RandomForestClassifier(n_estimators=30,max_depth=5,random_state=42),
+          HistGradientBoostingClassifier(max_iter=30,max_leaf_nodes=7,random_state=
+          42)]
+for model in models:
+    model.fit(Xtr,ytr)
+    print(type(model).__name__,&quot;validation_accuracy&quot;,round(model.score(Xva,yva),4))</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Code minh họa (2)</h1><pre># Các điểm ở đây chỉ là kết quả một split, không benchmark tổng quát.</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Kết quả</h1><pre>DecisionTreeClassifier validation_accuracy 0.9231
+RandomForestClassifier validation_accuracy 0.951
+HistGradientBoostingClassifier validation_accuracy 0.958</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Điểm dễ nhầm</h1><ul><li>Không so models bằng train score hoặc ngân sách hoàn toàn khác nhau.</li><li>Tính average của hai probability vectors rồi phân biệt với hard voting.</li></ul></section><section class="slide"><small>Buổi 2.6</small><h1>Bài trên lớp 1</h1><p>Trung bình probabilities từ các models cho từng sample.</p><pre>{
+  &quot;predictions&quot;: [
+    [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.1,
+        0.9
+      ]
+    ],
+    [
+      [
+        0.4,
+        0.6
+      ],
+      [
+        0.3,
+        0.7
+      ]
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Bài trên lớp 2</h1><p>Cập nhật prediction + learning_rate*weak_prediction cho từng mẫu.</p><pre>{
+  &quot;pred&quot;: [
+    2,
+    4
+  ],
+  &quot;weak&quot;: [
+    1,
+    1
+  ],
+  &quot;lr&quot;: 0.5
+}</pre></section><section class="slide"><small>Buổi 2.6</small><h1>Bài tập về nhà 1</h1><p>Trung bình probabilities từ các models cho từng sample.</p><ul><li>Input: predictions: models x samples x classes; mỗi probability row tổng1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 2.6</small><h1>Bài tập về nhà 2</h1><p>Cập nhật prediction + learning_rate*weak_prediction cho từng mẫu.</p><ul><li>Input: pred/weak: list cùng chiều; lr: số[0,1].</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 2.6</small><h1>Bài tập về nhà 3</h1><p>So model đơn và ensemble</p><ul><li>Data: cls</li><li>Metric: Accuracy, classes 0/1/2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 2.6</small><h1>Tổng kết</h1><p>Tính average của hai probability vectors rồi phân biệt với hard voting.</p><ul><li>AIO chương 16–18; KHTN chương 6.</li><li>AIO 16.3 Housing, 16.4 trắc nghiệm; 17.2–17.4 Gradient Boosting; NT 9.5 phần Random Forest.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

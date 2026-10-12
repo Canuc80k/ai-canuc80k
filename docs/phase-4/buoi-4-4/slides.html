@@ -1,0 +1,68 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Image augmentation</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 4.4</small><h1>Buổi 4.4: Image augmentation</h1><p>Flip ảnh có cần flip box và mask không?</p></section><section class="slide"><small>Buổi 4.4</small><h1>Ý tưởng chính</h1><p>horizontal box flip: x1_new=W-x2, x2_new=W-x1</p><ul><li>Augmentation phải giữ task semantics; ảnh chữ số/hướng không dùng mọi phép biến đổi.</li><li>Box/mask phải biến đổi đồng bộ; labels mask resize bằng nearest-neighbor.</li><li>Augment chỉ train; split theo ảnh gốc trước tạo views.</li></ul></section><section class="slide"><small>Buổi 4.4</small><h1>Ví dụ</h1><pre>{
+  &quot;width&quot;: 100,
+  &quot;boxes&quot;: [
+    [
+      10,
+      20,
+      30,
+      40
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.4</small><h1>Đáp án ví dụ</h1><pre>[
+  [
+    70,
+    20,
+    90,
+    40
+  ]
+]</pre></section><section class="slide"><small>Buổi 4.4</small><h1>Code minh họa</h1><pre>import numpy as np
+
+# Ảnh nhỏ và mask có cùng vị trí đối tượng; flip cả hai cùng nhau.
+image=np.array([[10,20,30],[40,50,60]])
+mask=np.array([[1,0,0],[1,0,0]])
+image_flip=np.fliplr(image); mask_flip=np.fliplr(mask)
+print(&quot;Image:&quot;,image.tolist(),&quot;flipped:&quot;,image_flip.tolist())
+print(&quot;Mask flipped:&quot;,mask_flip.tolist())
+width=100; x1,x2=10,30
+print(&quot;Box mới khi flip ngang:&quot;,[width-x2,width-x1])
+assert np.array_equal(mask_flip,np.array([[0,0,1],[0,0,1]]))
+# Mask resize dùng nearest-neighbor; không tạo nhãn trung gian bằng bilinear.</pre></section><section class="slide"><small>Buổi 4.4</small><h1>Kết quả</h1><pre>Image: [[10, 20, 30], [40, 50, 60]] flipped: [[30, 20, 10], [60, 50, 40]]
+Mask flipped: [[0, 0, 1], [0, 0, 1]]
+Box mới khi flip ngang: [70, 90]</pre></section><section class="slide"><small>Buổi 4.4</small><h1>Điểm dễ nhầm</h1><ul><li>Không đưa các views cùng ảnh vào cả train và validation.</li><li>Flip box10..30 trongwidth100, rồi vẽ vị trí mask mới.</li></ul></section><section class="slide"><small>Buổi 4.4</small><h1>Bài trên lớp 1</h1><p>Flip ngang boxxyxy trongwidthW: [W-x2, y1, W-x1, y2].</p><pre>{
+  &quot;width&quot;: 100,
+  &quot;boxes&quot;: [
+    [
+      10,
+      20,
+      30,
+      40
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.4</small><h1>Bài trên lớp 2</h1><p>Flip ngang mỗi row của mask, giữ dtype integer labels.</p><pre>{
+  &quot;mask&quot;: [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.4</small><h1>Bài tập về nhà 1</h1><p>Flip ngang boxxyxy trongwidthW: [W-x2, y1, W-x1, y2].</p><ul><li>Input: width&gt;0; boxes: list validxyxy trong ảnh.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 4.4</small><h1>Bài tập về nhà 2</h1><p>Flip ngang mỗi row của mask, giữ dtype integer labels.</p><ul><li>Input: mask: ma trận số nguyên hình chữ nhật.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 4.4</small><h1>Bài tập về nhà 3</h1><p>Augmentation giữ đúng nhãn</p><ul><li>Data: digits</li><li>Metric: Accuracy, labels từ 0 đến 9.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 4.4</small><h1>Tổng kết</h1><p>Flip box10..30 trongwidth100, rồi vẽ vị trí mask mới.</p><ul><li>PyTorch transfer learning/data transforms; AIO40.</li><li>Chạy transforms trong tutorial Transfer Learning; làm phần augmentation của bài tập AIO40.2 theo chương.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

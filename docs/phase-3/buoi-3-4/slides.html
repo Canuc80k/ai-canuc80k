@@ -1,0 +1,68 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Activation, loss và output head</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 3.4</small><h1>Buổi 3.4: Activation, loss và output head</h1><p>Head trả một logit hay một vector classes?</p></section><section class="slide"><small>Buổi 3.4</small><h1>Ý tưởng chính</h1><p>softmax_i = exp(z_i-max(z))/sum_j exp(z_j-max(z))</p><ul><li>Binary/multiclass/regression cần output head, target dtype và loss tương ứng.</li><li>CrossEntropyLoss nhận logits; BCEWithLogitsLoss kết hợp sigmoid/log-loss ổn định.</li><li>Softmax cần trừ max để tránh exp overflow.</li></ul></section><section class="slide"><small>Buổi 3.4</small><h1>Ví dụ</h1><pre>{
+  &quot;x&quot;: [
+    -2,
+    0,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.4</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;value&quot;: [
+    0,
+    0,
+    3
+  ],
+  &quot;grad&quot;: [
+    0,
+    0,
+    1
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.4</small><h1>Code minh họa</h1><pre>import torch
+from torch import nn
+
+logits = torch.tensor([[1000.,1001.]])
+prob = torch.softmax(logits,dim=1)
+target = torch.tensor([1],dtype=torch.long)
+loss = nn.CrossEntropyLoss()(logits,target)
+print(&quot;Softmax:&quot;,prob.round(decimals=6).tolist())
+print(&quot;Sum:&quot;,prob.sum().item(),&quot;CE:&quot;,round(loss.item(),6))
+binary_logits = torch.tensor([0.0])
+binary_y = torch.tensor([1.0])
+print(&quot;BCE logits:&quot;,round(nn.BCEWithLogitsLoss()(binary_logits,binary_y).item(),6))
+assert torch.isfinite(prob).all() and torch.isfinite(loss)
+# Không softmax trước CrossEntropyLoss, không sigmoid trước BCEWithLogitsLoss.</pre></section><section class="slide"><small>Buổi 3.4</small><h1>Kết quả</h1><pre>Softmax: [[0.2689409852027893, 0.7310590147972107]]
+Sum: 1.0 CE: 0.313262
+BCE logits: 0.693147</pre></section><section class="slide"><small>Buổi 3.4</small><h1>Điểm dễ nhầm</h1><ul><li>Đưa probability vào một loss chờ logits là lỗi hợp đồng.</li><li>Giải thích vì sao logits1000,1001 vẫn tạo probability hữu hạn.</li></ul></section><section class="slide"><small>Buổi 3.4</small><h1>Bài trên lớp 1</h1><p>Trả max(0, x) từng phần tử; derivative tại0 quy ước0.</p><pre>{
+  &quot;x&quot;: [
+    -2,
+    0,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.4</small><h1>Bài trên lớp 2</h1><p>Mean cross entropy từ logits từng row, targets theo index class; dùng logsumexp ổn định.</p><pre>{
+  &quot;logits&quot;: [
+    [
+      1000,
+      1001
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  &quot;target&quot;: [
+    1,
+    0
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.4</small><h1>Bài tập về nhà 1</h1><p>Trả max(0, x) từng phần tử; derivative tại0 quy ước0.</p><ul><li>Input: x: list số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 3.4</small><h1>Bài tập về nhà 2</h1><p>Mean cross entropy từ logits từng row, targets theo index class; dùng logsumexp ổn định.</p><ul><li>Input: logits: nxc; target: n indices 0..c-1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 3.4</small><h1>Bài tập về nhà 3</h1><p>Logits và CrossEntropy</p><ul><li>Data: prob</li><li>Metric: Mean log loss; score=exp(-mean log loss).</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 3.4</small><h1>Tổng kết</h1><p>Giải thích vì sao logits1000,1001 vẫn tạo probability hữu hạn.</p><ul><li>AIO 1,26–28; PyTorch Optimization.</li><li>AIO 1.2/1.3 phần activation;27.6 và28.3 trắc nghiệm; loss trong tutorial PyTorch.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

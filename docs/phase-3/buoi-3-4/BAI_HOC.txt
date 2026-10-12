@@ -1,0 +1,71 @@
+BUỔI 3.4 — Activation, loss và output head
+
+HỌC SINH CẦN HIỂU
+- Binary/multiclass/regression cần output head, target dtype và loss tương ứng.
+- CrossEntropyLoss nhận logits; BCEWithLogitsLoss kết hợp sigmoid/log-loss ổn định.
+- Softmax cần trừ max để tránh exp overflow.
+
+CÂU HỎI MỞ BÀI
+Head trả một logit hay một vector classes?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+softmax_i = exp(z_i-max(z))/sum_j exp(z_j-max(z))
+
+CẦN PHÂN BIỆT
+Đưa probability vào một loss chờ logits là lỗi hợp đồng.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả max(0, x) từng phần tử; derivative tại0 quy ước0.
+Input:
+{
+  "x": [
+    -2,
+    0,
+    3
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "value": [
+    0,
+    0,
+    3
+  ],
+  "grad": [
+    0,
+    0,
+    1
+  ]
+}
+
+Bài trên lớp 2: Mean cross entropy từ logits từng row, targets theo index class; dùng logsumexp ổn định.
+Input:
+{
+  "logits": [
+    [
+      1000,
+      1001
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "target": [
+    1,
+    0
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.503204434039076
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả max(0, x) từng phần tử; derivative tại0 quy ước0.; xem BTVN_01.txt.
+- BTVN 2: Mean cross entropy từ logits từng row, targets theo index class; dùng logsumexp ổn định.; xem BTVN_02.txt.
+- BTVN 3: Logits và CrossEntropy; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 1,26–28; PyTorch Optimization.
+AIO 1.2/1.3 phần activation;27.6 và28.3 trắc nghiệm; loss trong tutorial PyTorch.

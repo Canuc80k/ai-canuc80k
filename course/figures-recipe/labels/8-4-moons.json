@@ -1,0 +1,1 @@
+[{"x": 120, "y": 20.0, "text": "train 360", "size": 12, "anchor": "middle"}, {"x": 325, "y": 20.0, "text": "tune 120", "size": 12, "anchor": "middle"}, {"x": 530, "y": 20.0, "text": "audit 120", "size": 12, "anchor": "middle"}, {"x": 320, "y": 236.0, "text": "cùng make_moons, chia một lần: tune chọn trọng số, audit chỉ mở cho phương án đã khóa", "size": 11, "anchor": "middle"}]

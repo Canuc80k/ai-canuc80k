@@ -1,0 +1,525 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="486.99796pt" height="230.885802pt" viewBox="0 0 486.99796 230.885802" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-7-1-sampling-figure_1">
+  <g id="fig-7-1-sampling-patch_1">
+   <path d="M 0 230.885802 
+L 486.99796 230.885802 
+L 486.99796 0 
+L 0 0 
+L 0 230.885802 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-7-1-sampling-axes_1">
+   <g id="fig-7-1-sampling-patch_2">
+    <path d="M 56.354375 189.822833 
+L 472.339952 189.822833 
+L 472.339952 32.358917 
+L 56.354375 32.358917 
+L 56.354375 189.822833 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-7-1-sampling-matplotlib.axis_1">
+    <g id="fig-7-1-sampling-xtick_1">
+     <g id="fig-7-1-sampling-line2d_1">
+      <defs>
+       <path id="fig-7-1-sampling-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="56.354375" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="56.354375" y="203.995333" transform="rotate(-0 56.354375 203.995333)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_2">
+     <g id="fig-7-1-sampling-line2d_2">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="108.352572" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="108.352572" y="203.995333" transform="rotate(-0 108.352572 203.995333)">2.5</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_3">
+     <g id="fig-7-1-sampling-line2d_3">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="160.350769" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="160.350769" y="203.995333" transform="rotate(-0 160.350769 203.995333)">5.0</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_4">
+     <g id="fig-7-1-sampling-line2d_4">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="212.348966" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="212.348966" y="203.995333" transform="rotate(-0 212.348966 203.995333)">7.5</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_5">
+     <g id="fig-7-1-sampling-line2d_5">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="264.347163" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="264.347163" y="203.995333" transform="rotate(-0 264.347163 203.995333)">10.0</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_6">
+     <g id="fig-7-1-sampling-line2d_6">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="316.345361" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="316.345361" y="203.995333" transform="rotate(-0 316.345361 203.995333)">12.5</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_7">
+     <g id="fig-7-1-sampling-line2d_7">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="368.343558" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="368.343558" y="203.995333" transform="rotate(-0 368.343558 203.995333)">15.0</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_8">
+     <g id="fig-7-1-sampling-line2d_8">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="420.341755" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="420.341755" y="203.995333" transform="rotate(-0 420.341755 203.995333)">17.5</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-xtick_9">
+     <g id="fig-7-1-sampling-line2d_9">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m04e37d9cc8" x="472.339952" y="189.822833" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="472.339952" y="203.995333" transform="rotate(-0 472.339952 203.995333)">20.0</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-text_10">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="264.347163" y="222.865489" transform="rotate(-0 264.347163 222.865489)">thời gian (ms)</text>
+    </g>
+   </g>
+   <g id="fig-7-1-sampling-matplotlib.axis_2">
+    <g id="fig-7-1-sampling-ytick_1">
+     <g id="fig-7-1-sampling-line2d_10">
+      <defs>
+       <path id="fig-7-1-sampling-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="175.733956" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="179.320206" transform="rotate(-0 49.354375 179.320206)">−0.75</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-ytick_2">
+     <g id="fig-7-1-sampling-line2d_11">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="155.01502" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="158.60127" transform="rotate(-0 49.354375 158.60127)">−0.50</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-ytick_3">
+     <g id="fig-7-1-sampling-line2d_12">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="134.296084" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="137.882334" transform="rotate(-0 49.354375 137.882334)">−0.25</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-ytick_4">
+     <g id="fig-7-1-sampling-line2d_13">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="113.577148" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="117.163398" transform="rotate(-0 49.354375 117.163398)">0.00</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-ytick_5">
+     <g id="fig-7-1-sampling-line2d_14">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="92.858211" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="96.444461" transform="rotate(-0 49.354375 96.444461)">0.25</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-ytick_6">
+     <g id="fig-7-1-sampling-line2d_15">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="72.139275" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="75.725525" transform="rotate(-0 49.354375 75.725525)">0.50</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-ytick_7">
+     <g id="fig-7-1-sampling-line2d_16">
+      <g>
+       <use xlink:href="#fig-7-1-sampling-m9fce3a8e10" x="56.354375" y="51.420339" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-7-1-sampling-text_17">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="49.354375" y="55.006589" transform="rotate(-0 49.354375 55.006589)">0.75</text>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-text_18">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.027344" y="111.090875" transform="rotate(-90 14.027344 111.090875)">biên độ tương đối</text>
+    </g>
+   </g>
+   <g id="fig-7-1-sampling-line2d_17">
+    <path d="M 56.354375 113.577148 
+L 62.081335 93.902331 
+L 65.205132 84.012746 
+L 67.808296 76.559604 
+L 69.890827 71.246899 
+L 71.973358 66.603437 
+L 73.535256 63.604626 
+L 75.097154 61.050485 
+L 76.659053 58.963741 
+L 78.220951 57.362963 
+L 79.262217 56.572975 
+L 80.303482 56.008519 
+L 81.344748 55.67183 
+L 82.386013 55.564238 
+L 83.427279 55.68617 
+L 84.468544 56.037144 
+L 85.50981 56.61577 
+L 86.551075 57.419759 
+L 87.592341 58.445931 
+L 89.154239 60.392664 
+L 90.716137 62.812647 
+L 92.278036 65.684347 
+L 93.839934 68.982211 
+L 95.922465 73.991051 
+L 98.004996 79.625748 
+L 100.60816 87.412688 
+L 103.731956 97.591464 
+L 108.417651 113.805249 
+L 113.623979 131.74262 
+L 116.747775 141.756711 
+L 119.350939 149.35142 
+L 121.43347 154.799667 
+L 123.516001 159.596185 
+L 125.0779 162.719836 
+L 126.639798 165.4062 
+L 128.201696 167.631375 
+L 129.763594 169.375559 
+L 130.80486 170.263287 
+L 131.846126 170.926741 
+L 132.887391 171.363296 
+L 133.928657 171.571224 
+L 134.969922 171.549702 
+L 136.011188 171.298817 
+L 137.052453 170.81956 
+L 138.093719 170.113828 
+L 139.134984 169.184413 
+L 140.17625 168.034992 
+L 141.738148 165.90853 
+L 143.300046 163.316409 
+L 144.861945 160.281694 
+L 146.423843 156.831388 
+L 148.506374 151.63807 
+L 150.588905 145.843008 
+L 153.192069 137.893343 
+L 156.315865 127.579796 
+L 162.042826 107.656827 
+L 166.207888 93.473778 
+L 169.331684 83.621146 
+L 171.934848 76.209493 
+L 174.017379 70.936258 
+L 176.09991 66.337178 
+L 177.661809 63.374457 
+L 179.223707 60.858454 
+L 180.785605 58.811557 
+L 182.347503 57.251979 
+L 183.388769 56.49003 
+L 184.430034 55.953941 
+L 185.4713 55.645835 
+L 186.512566 55.566929 
+L 187.553831 55.717536 
+L 188.595097 56.097061 
+L 189.636362 56.704001 
+L 190.677628 57.535955 
+L 191.718893 58.589632 
+L 193.280791 60.576523 
+L 194.84269 63.035029 
+L 196.404588 65.943273 
+L 197.966486 69.275376 
+L 200.049017 74.325761 
+L 202.131548 79.996712 
+L 204.734712 87.820663 
+L 207.858509 98.030496 
+L 212.544204 114.261437 
+L 217.750531 132.175315 
+L 220.874328 142.154603 
+L 223.477492 149.709447 
+L 225.560023 155.119385 
+L 227.642554 159.872538 
+L 229.204452 162.960757 
+L 230.76635 165.609547 
+L 232.328249 167.795337 
+L 233.890147 169.498679 
+L 234.931412 170.358547 
+L 235.972678 170.993763 
+L 237.013943 171.401815 
+L 238.055209 171.581088 
+L 239.096474 171.530873 
+L 240.13774 171.251369 
+L 241.179006 170.74368 
+L 242.220271 170.009817 
+L 243.261537 169.052682 
+L 244.823435 167.206866 
+L 246.385333 164.883839 
+L 247.947231 162.104269 
+L 249.50913 158.892891 
+L 251.591661 153.989265 
+L 253.674192 148.446722 
+L 256.277356 140.754411 
+L 259.401152 130.656026 
+L 263.566214 116.313353 
+L 269.813807 94.763062 
+L 272.937604 84.801407 
+L 275.540768 77.266671 
+L 277.623299 71.876014 
+L 279.70583 67.144653 
+L 281.267728 64.074221 
+L 282.829627 61.444281 
+L 284.391525 59.278233 
+L 285.953423 57.595353 
+L 286.994689 56.749435 
+L 288.035954 56.128352 
+L 289.07722 55.734561 
+L 290.118485 55.569619 
+L 291.159751 55.63418 
+L 292.201016 55.927988 
+L 293.242282 56.449881 
+L 294.283547 57.197793 
+L 295.324813 58.168766 
+L 296.886711 60.034823 
+L 298.448609 62.377315 
+L 300.010508 65.175398 
+L 301.572406 68.404173 
+L 303.654937 73.328995 
+L 305.737468 78.890142 
+L 308.340632 86.601617 
+L 311.464428 96.716394 
+L 316.150123 112.892858 
+L 321.877084 132.606861 
+L 325.00088 142.550728 
+L 327.604044 150.06524 
+L 329.686575 155.436533 
+L 331.769106 160.146028 
+L 333.331004 163.198625 
+L 334.892903 165.809676 
+L 336.454801 167.955947 
+L 338.016699 169.61834 
+L 339.057965 170.450294 
+L 340.09923 171.057234 
+L 341.140496 171.436759 
+L 342.181761 171.587366 
+L 343.223027 171.50846 
+L 344.264292 171.200354 
+L 345.305558 170.664265 
+L 346.346823 169.902316 
+L 347.388089 168.91752 
+L 348.949987 167.03125 
+L 350.511886 164.66933 
+L 352.073784 161.852778 
+L 353.635682 158.606655 
+L 355.718213 153.660713 
+L 357.800744 148.081049 
+L 360.403908 140.350528 
+L 363.527705 130.219516 
+L 368.2134 114.033346 
+L 373.94036 94.332101 
+L 377.064156 84.406175 
+L 379.66732 76.912004 
+L 381.749851 71.560157 
+L 383.832382 66.872601 
+L 385.394281 63.837886 
+L 386.956179 61.245765 
+L 388.518077 59.119303 
+L 390.079976 57.477424 
+L 391.121241 56.659445 
+L 392.162507 56.066658 
+L 393.203772 55.701406 
+L 394.245038 55.565135 
+L 395.286303 55.658384 
+L 396.327569 55.980785 
+L 397.368834 56.531061 
+L 398.4101 57.307036 
+L 399.451365 58.30564 
+L 401.013264 60.212093 
+L 402.575162 62.593405 
+L 404.13706 65.428384 
+L 405.698958 68.691804 
+L 407.781489 73.658788 
+L 409.86402 79.256884 
+L 412.467184 87.006331 
+L 415.590981 97.153421 
+L 420.276676 113.349046 
+L 426.003636 133.037229 
+L 429.127433 142.945062 
+L 431.730596 150.418776 
+L 433.813128 155.751093 
+L 435.895659 160.416638 
+L 437.457557 163.433424 
+L 439.019455 166.006575 
+L 440.581353 168.113194 
+L 442.143252 169.734536 
+L 443.184517 170.538525 
+L 444.225783 171.117151 
+L 445.267048 171.468125 
+L 446.308314 171.590057 
+L 447.349579 171.482465 
+L 448.390845 171.145776 
+L 449.43211 170.58132 
+L 450.473376 169.791332 
+L 451.514641 168.778936 
+L 453.07654 166.852328 
+L 454.638438 164.451663 
+L 456.200336 161.598301 
+L 457.762235 158.317633 
+L 459.844766 153.329683 
+L 461.927297 147.713243 
+L 464.53046 139.94499 
+L 467.654257 129.781978 
+L 472.339952 113.577148 
+L 472.339952 113.577148 
+" clip-path="url(#fig-7-1-sampling-p1037d4e964)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-1-sampling-patch_3">
+    <path d="M 56.354375 189.822833 
+L 56.354375 32.358917 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-1-sampling-patch_4">
+    <path d="M 56.354375 189.822833 
+L 472.339952 189.822833 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-7-1-sampling-PathCollection_1">
+    <defs>
+     <path id="fig-7-1-sampling-m21d583a35a" d="M 0 2.44949 
+C 0.649612 2.44949 1.272706 2.191396 1.732051 1.732051 
+C 2.191396 1.272706 2.44949 0.649612 2.44949 0 
+C 2.44949 -0.649612 2.191396 -1.272706 1.732051 -1.732051 
+C 1.272706 -2.191396 0.649612 -2.44949 0 -2.44949 
+C -0.649612 -2.44949 -1.272706 -2.191396 -1.732051 -1.732051 
+C -2.191396 -1.272706 -2.44949 -0.649612 -2.44949 0 
+C -2.44949 0.649612 -2.191396 1.272706 -1.732051 1.732051 
+C -1.272706 2.191396 -0.649612 2.44949 0 2.44949 
+z
+" style="stroke: #ffffff; stroke-width: 0.55"/>
+    </defs>
+    <g clip-path="url(#fig-7-1-sampling-p1037d4e964)">
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="56.354375" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="66.754014" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="77.153654" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="87.553293" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="97.952933" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="108.352572" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="118.752212" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="129.151851" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="139.55149" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="149.95113" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="160.350769" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="170.750409" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="181.150048" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="191.549688" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="201.949327" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="212.348966" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="222.748606" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="233.148245" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="243.547885" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="253.947524" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="264.347163" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="274.746803" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="285.146442" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="295.546082" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="305.945721" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="316.345361" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="326.745" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="337.144639" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="347.544279" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="357.943918" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="368.343558" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="378.743197" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="389.142837" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="399.542476" y="58.403485" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="409.942115" y="79.477949" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="420.341755" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="430.741394" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="441.141034" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="451.540673" y="168.75081" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="461.940313" y="147.676346" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="472.339952" y="113.577148" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+    </g>
+   </g>
+   <g id="fig-7-1-sampling-text_19">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="464.02024" y="178.800359" transform="rotate(-0 464.02024 178.800359)">mẫu cách nhau 0.5 ms</text>
+   </g>
+   <g id="fig-7-1-sampling-legend_1">
+    <g id="fig-7-1-sampling-line2d_18">
+     <path d="M 182.13357 12.7125 
+L 192.13357 12.7125 
+L 202.13357 12.7125 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+    </g>
+    <g id="fig-7-1-sampling-text_20">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="210.13357" y="16.2125" transform="rotate(-0 210.13357 16.2125)">tín hiệu liên tục</text>
+    </g>
+    <g id="fig-7-1-sampling-PathCollection_2">
+     <g>
+      <use xlink:href="#fig-7-1-sampling-m21d583a35a" x="309.49396" y="13.5875" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.55"/>
+     </g>
+    </g>
+    <g id="fig-7-1-sampling-text_21">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="327.49396" y="16.2125" transform="rotate(-0 327.49396 16.2125)">mẫu</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-7-1-sampling-p1037d4e964">
+   <rect x="56.354375" y="32.358917" width="415.985577" height="157.463915"/>
+  </clipPath>
+ </defs>
+</svg>

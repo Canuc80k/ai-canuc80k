@@ -1,0 +1,41 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python cơ bản — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/0.1?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 0.1: Python cơ bản</h1><p>Máy tính phân biệt bài đạt và chưa đạt bằng cách nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Biến lưu một giá trị; list lưu nhiều giá trị cùng một thứ tự.</li><li>if chỉ chạy nhánh thỏa điều kiện. for đọc lần lượt từng phần tử.</li><li>Hàm nhận input và trả output bằng return; print chỉ hiển thị.</li></ul><p class="note">passed(score) = score &gt;= 6</p><h2>Code minh họa</h2><pre># Dữ liệu: điểm của bốn bài kiểm tra, thang 0..10.
+scores = [8, 5, 9, 4]
+# Hàm trả True nếu điểm đạt yêu cầu; không chỉ print kết quả.
+def passed(score):
+    return score &gt;= 6
+# Duyệt từng điểm và đếm bằng một biến có ý nghĩa.
+count = 0
+for score in scores:
+    if passed(score):
+        count += 1
+print(&quot;Điểm:&quot;, scores)
+print(&quot;Số bài đạt:&quot;, count)
+print(&quot;Trung bình:&quot;, sum(scores) / len(scores))
+assert count == 2
+</pre><h3>Kết quả</h3><pre>Điểm: [8, 5, 9, 4]
+Số bài đạt: 2
+Trung bình: 6.5
+</pre><p class="note">Không gọi trung bình trên list rỗng; phải nêu quy ước trước.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Đếm số điểm đạt ngưỡng và tính trung bình tất cả điểm.</p><pre>{
+  &quot;scores&quot;: [
+    8,
+    5,
+    9,
+    4
+  ],
+  &quot;threshold&quot;: 6
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;passed&quot;: 2,
+  &quot;mean&quot;: 6.5
+}</pre></details><h3>Bài 2</h3><p>Gán nhãn: score&gt;=8 là Tot; 6.5&lt;=score&lt;8 là Dat; còn lại Can_co_gang.</p><pre>{
+  &quot;scores&quot;: [
+    8,
+    6.5,
+    6.49,
+    10
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  &quot;Tot&quot;,
+  &quot;Dat&quot;,
+  &quot;Can_co_gang&quot;,
+  &quot;Tot&quot;
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Đếm số điểm đạt ngưỡng và tính trung bình tất cả điểm.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Gán nhãn: score&gt;=8 là Tot; 6.5&lt;=score&lt;8 là Dat; còn lại Can_co_gang.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Tính tổng từng cửa sổ k phần tử liên tiếp, theo thứ tự từ trái qua phải.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO 1.1.</p><p>AIO 1.2 Câu hỏi tự luận và 1.3 Câu hỏi trắc nghiệm; làm các bài Python/activation theo đề sách.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><span></span><a href="../../phase-0/buoi-0-2/BAI_HOC.html">Cấu trúc dữ liệu và thao tác tệp →</a></nav></body></html>

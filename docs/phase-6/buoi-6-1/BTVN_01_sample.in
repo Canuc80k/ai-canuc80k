@@ -1,0 +1,6 @@
+{
+  "n_samples": 16000,
+  "sample_rate": 16000,
+  "window": 400,
+  "hop": 160
+}

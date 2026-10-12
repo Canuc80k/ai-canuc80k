@@ -1,0 +1,63 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pretrained LMs, prompting và VLM — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/6.6?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 5.7: Pretrained LMs, prompting và VLM</h1><p>Một câu trả lời đúng ý nhưng sai schema có nộp được không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Prompt quy định task/context/output; source và model version cầnrõ.</li><li>Validate structuredoutput, labelmap vàgrounding; VLM có thêm image inputs.</li><li>API được đề cấp mới dùng; syllabus nêuAPI không cấp phép dùng ởmọikỳthi.</li></ul><p class="note">valid output = đúng schema + đúnglabel/task</p><h2>Code minh họa</h2><pre>import json
+# Không gọi API: minh họa hợp đồng structured output trong lab lớp.
+allowed={&quot;weather&quot;,&quot;sport&quot;}
+responses=[&#x27;{&quot;label&quot;:&quot;weather&quot;}&#x27;,&#x27;{&quot;label&quot;:&quot;music&quot;}&#x27;,&#x27;label: sport&#x27;]
+for text in responses:
+    try:
+        obj=json.loads(text)
+        if set(obj)!={&quot;label&quot;} or obj[&quot;label&quot;] not in allowed:
+            raise ValueError(&quot;Sai schema/label&quot;)
+        print(&quot;Hợp lệ:&quot;,obj[&quot;label&quot;])
+    except (ValueError,TypeError,json.JSONDecodeError):
+        print(&quot;Không hợp lệ:&quot;,text)
+# VLM thật có ảnh+question; không chỉ một câu text. Nguồn AIO39 có ví dụ đầy đủ.
+</pre><h3>Kết quả</h3><pre>Hợp lệ: weather
+Không hợp lệ: {&quot;label&quot;:&quot;music&quot;}
+Không hợp lệ: label: sport
+</pre><p class="note">Không đưa dữ liệu test riêng sangAPI hoặc tinoutput màkhôngparse.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Check parsedobjects: dictđúngduynhất keylabel và label trongallowed; invalid→false.</p><pre>{
+  &quot;objects&quot;: [
+    {
+      &quot;label&quot;: &quot;weather&quot;
+    },
+    {
+      &quot;label&quot;: &quot;music&quot;
+    },
+    &quot;weather&quot;
+  ],
+  &quot;allowed&quot;: [
+    &quot;weather&quot;,
+    &quot;sport&quot;
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  true,
+  false,
+  false
+]</pre></details><h3>Bài 2</h3><p>Tách target khỏi records, giữ features theo danh sách tên cột đã cấp.</p><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;x&quot;: 2,
+      &quot;y&quot;: 5
+    },
+    {
+      &quot;x&quot;: 3,
+      &quot;y&quot;: 7
+    }
+  ],
+  &quot;features&quot;: [
+    &quot;x&quot;
+  ],
+  &quot;target&quot;: &quot;y&quot;
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;X&quot;: [
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  &quot;y&quot;: [
+    5,
+    7
+  ]
+}</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Check parsedobjects: dictđúngduynhất keylabel và label trongallowed; invalid→false.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Tách target khỏi records, giữ features theo danh sách tên cột đã cấp.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Phân loại và structured output</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO57; AIO39 VQA; syllabus LMs.</p><p>AIO57.3 câu hỏi về prompting; AIO39.2 chương trình Visual Question Answering và39.3 trắc nghiệm.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-5/buoi-5-6/BAI_HOC.html">← Encoder-decoder và text generation</a><a href="../../phase-6/buoi-6-1/BAI_HOC.html">Audio data và spectrograms →</a></nav></body></html>

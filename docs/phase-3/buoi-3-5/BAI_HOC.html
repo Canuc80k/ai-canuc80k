@@ -1,0 +1,52 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Training loop và inference — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/3.4?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 3.5: Training loop và inference</h1><p>Train loop và validation loop khác nhau ở đâu?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Train: forward→loss→zero_grad→backward→step.</li><li>Validation: eval và no_grad; không cập nhật parameters/statistics.</li><li>Metric epoch cân theo số mẫu; save/load toàn bộ thông tin inference cần.</li></ul><p class="note">epoch_mean = sum(batch_mean×batch_size)/sum(batch_size)</p><h2>Code minh họa</h2><pre>import torch
+from torch import nn
+from torch.utils.data import TensorDataset,DataLoader
+torch.manual_seed(42)
+torch.set_num_threads(1)
+X = torch.linspace(-1,1,40).reshape(-1,1)
+y = 2*X+1
+loader = DataLoader(TensorDataset(X,y),batch_size=8,shuffle=False)
+model = nn.Linear(1,1)
+optimizer = torch.optim.SGD(model.parameters(),lr=.1)
+loss_fn = nn.MSELoss()
+for epoch in range(8):
+    model.train(); total = 0.0
+    for xb,yb in loader:
+        optimizer.zero_grad(); loss = loss_fn(model(xb),yb)
+        loss.backward(); optimizer.step(); total += loss.item()*len(xb)
+    print(&quot;epoch&quot;,epoch,&quot;loss&quot;,round(total/len(X),6))
+model.eval()
+with torch.no_grad(): print(&quot;x=0 -&gt;&quot;,round(model(torch.zeros(1,1)).item(),4))
+# Số phần tử batch cuối có thể khác; metric epoch phải cân theo số mẫu.
+</pre><h3>Kết quả</h3><pre>epoch 0 loss 0.484902
+epoch 1 loss 0.232143
+epoch 2 loss 0.109975
+epoch 3 loss 0.050168
+epoch 4 loss 0.022364
+epoch 5 loss 0.009853
+epoch 6 loss 0.004316
+epoch 7 loss 0.001886
+x=0 -&gt; 1.0108
+</pre><p class="note">Không trung bình các batch means nếu batch sizes khác nhau.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Mean epoch cân theo số mẫu mỗi batch.</p><pre>{
+  &quot;means&quot;: [
+    1,
+    3
+  ],
+  &quot;sizes&quot;: [
+    4,
+    1
+  ]
+}</pre><details><summary>Đáp án</summary><pre>1.4</pre></details><h3>Bài 2</h3><p>Update w←w-lr*grad từng phần tử.</p><pre>{
+  &quot;w&quot;: [
+    1,
+    2
+  ],
+  &quot;grad&quot;: [
+    2,
+    -1
+  ],
+  &quot;lr&quot;: 0.1
+}</pre><details><summary>Đáp án</summary><pre>[
+  0.8,
+  2.1
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Mean epoch cân theo số mẫu mỗi batch.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Update w←w-lr*grad từng phần tử.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Training loop chạy sạch</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>PyTorch Learn the Basics: Optimization, Save &amp; Load Model.</p><p>Hoàn thành training loop FashionMNIST và phần save/load của tutorial.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-4/BAI_HOC.html">← Activation, loss và output head</a><a href="../../phase-3/buoi-3-6/BAI_HOC.html">Optimizers, learning rate và initialization →</a></nav></body></html>

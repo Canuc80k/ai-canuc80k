@@ -1,0 +1,5 @@
+shape: (3, 4, 5)
+Hàng cuối của mẫu đầu: [16. 17. 18. 19. 20.]
+Mean từng mẫu: [10.5 30.5 50.5]
+Mean sau chuẩn hóa: [0. 0. 0.]
+Std sau chuẩn hóa: [1. 1. 1.]

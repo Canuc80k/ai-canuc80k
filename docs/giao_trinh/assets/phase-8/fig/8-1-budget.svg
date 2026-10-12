@@ -1,0 +1,139 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="400.659531pt" height="193.243937pt" viewBox="0 0 400.659531 193.243937" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 193.243937 
+L 400.659531 193.243937 
+L 400.659531 0 
+L 0 0 
+L 0 193.243937 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 7.790156 154.008 
+L 387.230156 154.008 
+L 387.230156 4.32 
+L 7.790156 4.32 
+L 7.790156 154.008 
+z
+" style="fill: none"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 7.790156 107.950154 
+L 71.030156 107.950154 
+L 71.030156 38.863385 
+L 7.790156 38.863385 
+z
+" clip-path="url(#p66ba08714a)" style="fill: #b8892b; opacity: 0.22; stroke: #b8892b; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 71.030156 107.950154 
+L 345.070156 107.950154 
+L 345.070156 38.863385 
+L 71.030156 38.863385 
+z
+" clip-path="url(#p66ba08714a)" style="fill: #3b6ea8; opacity: 0.22; stroke: #3b6ea8; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 345.070156 107.950154 
+L 387.230156 107.950154 
+L 387.230156 38.863385 
+L 345.070156 38.863385 
+z
+" clip-path="url(#p66ba08714a)" style="fill: #c2603e; opacity: 0.22; stroke: #c2603e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mbbd9e52683" d="M 0 0 
+L 0 3.5 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbbd9e52683" x="7.790156" y="154.008" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="7.790156" y="169.0105" transform="rotate(-0 7.790156 169.0105)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mbbd9e52683" x="71.030156" y="154.008" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="71.030156" y="169.0105" transform="rotate(-0 71.030156 169.0105)">30</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mbbd9e52683" x="345.070156" y="154.008" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="345.070156" y="169.0105" transform="rotate(-0 345.070156 169.0105)">160</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mbbd9e52683" x="387.230156" y="154.008" style="fill: currentColor; stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="387.230156" y="169.0105" transform="rotate(-0 387.230156 169.0105)">180</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="197.510156" y="186.334563" transform="rotate(-0 197.510156 186.334563)">Phút từ lúc bắt đầu — buổi luyện giả định</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_6">
+    <path d="M 7.790156 154.008 
+L 387.230156 154.008 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(23.815078 64.209738)">Đọc +</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(17.724687 76.074613)">baseline</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(19.324844 88.361613)">30 phút</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(149.95125 71.154519)">Cải thiện có giả thuyết</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(185.727891 83.570425)">130 phút</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(352.700938 62.950238)">Chạy</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(341.290156 77.425207)">lại + kiểm</text>
+    <text style="font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(346.107813 89.729394)">20 phút</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p66ba08714a">
+   <rect x="7.790156" y="4.32" width="379.44" height="149.688"/>
+  </clipPath>
+ </defs>
+</svg>

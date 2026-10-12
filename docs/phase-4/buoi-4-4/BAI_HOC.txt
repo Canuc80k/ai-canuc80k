@@ -1,0 +1,80 @@
+BUỔI 4.4 — Image augmentation
+
+HỌC SINH CẦN HIỂU
+- Augmentation phải giữ task semantics; ảnh chữ số/hướng không dùng mọi phép biến đổi.
+- Box/mask phải biến đổi đồng bộ; labels mask resize bằng nearest-neighbor.
+- Augment chỉ train; split theo ảnh gốc trước tạo views.
+
+CÂU HỎI MỞ BÀI
+Flip ảnh có cần flip box và mask không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+horizontal box flip: x1_new=W-x2, x2_new=W-x1
+
+CẦN PHÂN BIỆT
+Không đưa các views cùng ảnh vào cả train và validation.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Flip ngang boxxyxy trongwidthW: [W-x2, y1, W-x1, y2].
+Input:
+{
+  "width": 100,
+  "boxes": [
+    [
+      10,
+      20,
+      30,
+      40
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    70,
+    20,
+    90,
+    40
+  ]
+]
+
+Bài trên lớp 2: Flip ngang mỗi row của mask, giữ dtype integer labels.
+Input:
+{
+  "mask": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    0,
+    0,
+    1
+  ],
+  [
+    0,
+    0,
+    1
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Flip ngang boxxyxy trongwidthW: [W-x2, y1, W-x1, y2].; xem BTVN_01.txt.
+- BTVN 2: Flip ngang mỗi row của mask, giữ dtype integer labels.; xem BTVN_02.txt.
+- BTVN 3: Augmentation giữ đúng nhãn; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+PyTorch transfer learning/data transforms; AIO40.
+Chạy transforms trong tutorial Transfer Learning; làm phần augmentation của bài tập AIO40.2 theo chương.

@@ -1,0 +1,151 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="450.99pt" height="213.266384pt" viewBox="0 0 450.99 213.266384" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-1-7-search-figure_1">
+  <g id="fig-1-7-search-patch_1">
+   <path d="M 0 213.266384 
+L 450.99 213.266384 
+L 450.99 0 
+L 0 0 
+L 0 213.266384 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-1-7-search-axes_1">
+   <g id="fig-1-7-search-patch_2">
+    <path d="M 24.15 189.116384 
+L 217.4 189.116384 
+L 217.4 24.125312 
+L 24.15 24.125312 
+L 24.15 189.116384 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-7-search-matplotlib.axis_1">
+    <g id="fig-1-7-search-text_1">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="120.775" y="205.246071" transform="rotate(-0 120.775 205.246071)">Hyperparameter A</text>
+    </g>
+   </g>
+   <g id="fig-1-7-search-matplotlib.axis_2">
+    <g id="fig-1-7-search-text_2">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.169688" y="106.620848" transform="rotate(-90 13.169688 106.620848)">Hyperparameter B</text>
+    </g>
+   </g>
+   <g id="fig-1-7-search-PathCollection_1">
+    <defs>
+     <path id="fig-1-7-search-ma26dbf249a" d="M 0 2.645751 
+C 0.701661 2.645751 1.374679 2.366978 1.870829 1.870829 
+C 2.366978 1.374679 2.645751 0.701661 2.645751 0 
+C 2.645751 -0.701661 2.366978 -1.374679 1.870829 -1.870829 
+C 1.374679 -2.366978 0.701661 -2.645751 0 -2.645751 
+C -0.701661 -2.645751 -1.374679 -2.366978 -1.870829 -1.870829 
+C -2.366978 -1.374679 -2.645751 -0.701661 -2.645751 0 
+C -2.645751 0.701661 -2.366978 1.374679 -1.870829 1.870829 
+C -1.374679 2.366978 -0.701661 2.645751 0 2.645751 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-1-7-search-pf818bea3e1)">
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="53.1375" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="98.229167" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="143.320833" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="188.4125" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="53.1375" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="98.229167" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="143.320833" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="188.4125" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="53.1375" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="98.229167" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="143.320833" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="188.4125" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="53.1375" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="98.229167" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="143.320833" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-1-7-search-ma26dbf249a" x="188.4125" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-7-search-patch_3">
+    <path d="M 24.15 189.116384 
+L 24.15 24.125312 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-7-search-patch_4">
+    <path d="M 24.15 189.116384 
+L 217.4 189.116384 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-7-search-text_3">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="120.775" y="14.125312" transform="rotate(-0 120.775 14.125312)">Grid · mọi tổ hợp</text>
+   </g>
+  </g>
+  <g id="fig-1-7-search-axes_2">
+   <g id="fig-1-7-search-patch_5">
+    <path d="M 252.7 189.116384 
+L 445.95 189.116384 
+L 445.95 24.125312 
+L 252.7 24.125312 
+L 252.7 189.116384 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-7-search-matplotlib.axis_3">
+    <g id="fig-1-7-search-text_4">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="349.325" y="205.246071" transform="rotate(-0 349.325 205.246071)">Hyperparameter A</text>
+    </g>
+   </g>
+   <g id="fig-1-7-search-matplotlib.axis_4">
+    <g id="fig-1-7-search-text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="241.719687" y="106.620848" transform="rotate(-90 241.719687 106.620848)">Hyperparameter B</text>
+    </g>
+   </g>
+   <g id="fig-1-7-search-PathCollection_2">
+    <defs>
+     <path id="fig-1-7-search-m3e4f3d8897" d="M 0 2.645751 
+C 0.701661 2.645751 1.374679 2.366978 1.870829 1.870829 
+C 2.366978 1.374679 2.645751 0.701661 2.645751 0 
+C 2.645751 -0.701661 2.366978 -1.374679 1.870829 -1.870829 
+C 1.374679 -2.366978 0.701661 -2.645751 0 -2.645751 
+C -0.701661 -2.645751 -1.374679 -2.366978 -1.870829 -1.870829 
+C -2.366978 -1.374679 -2.645751 -0.701661 -2.645751 0 
+C -2.645751 0.701661 -2.366978 1.374679 -1.870829 1.870829 
+C -1.374679 2.366978 -0.701661 2.645751 0 2.645751 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#fig-1-7-search-p3ff9cc494d)">
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="402.673563" y="151.369979" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="358.252307" y="124.033354" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="305.255028" y="121.69126" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="338.219232" y="91.924353" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="385.870256" y="170.599151" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="311.299725" y="92.874339" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="284.970693" y="40.919598" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-1-7-search-m3e4f3d8897" x="400.705711" y="167.762928" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-7-search-patch_6">
+    <path d="M 252.7 189.116384 
+L 252.7 24.125312 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-7-search-patch_7">
+    <path d="M 252.7 189.116384 
+L 445.95 189.116384 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-7-search-text_6">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="349.325" y="14.125312" transform="rotate(-0 349.325 14.125312)">Random · ngân sách hữu hạn</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-1-7-search-pf818bea3e1">
+   <rect x="24.15" y="24.125312" width="193.25" height="164.991071"/>
+  </clipPath>
+  <clipPath id="fig-1-7-search-p3ff9cc494d">
+   <rect x="252.7" y="24.125312" width="193.25" height="164.991071"/>
+  </clipPath>
+ </defs>
+</svg>

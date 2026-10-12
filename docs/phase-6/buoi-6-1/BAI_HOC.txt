@@ -1,0 +1,58 @@
+BUỔI 6.1 — Audio data và spectrograms
+
+HỌC SINH CẦN HIỂU
+- Waveform có samples theo thời gian; sample_rate quyết định duration/frequency.
+- STFT chiaframes; Mel filters biến đổi phổ; padding cần mask.
+- Spectrogramtensor của IOAI Speech không phảiWAVraw.
+
+CÂU HỎI MỞ BÀI
+Nếu đọc nhầm sample rate, âm thanh có còn đúng thời gian?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+duration=n_samples/sample_rate
+
+CẦN PHÂN BIỆT
+FFT mộtframe chưa phải Mel spectrogram đầyđủ.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả n_samples/sample_rate seconds và frame count floor((n-window)/hop)+1 nếun>=window, khôngpad.
+Input:
+{
+  "n_samples": 16000,
+  "sample_rate": 16000,
+  "window": 400,
+  "hop": 160
+}
+Output để đối chiếu sau khi làm:
+{
+  "seconds": 1.0,
+  "frames": 98
+}
+
+Bài trên lớp 2: DFTpowerchỉbinsk=0..floor(n/2), chọn max, tiesk nhỏ. Trảbin vàfreq=k*sample_rate/n.
+Input:
+{
+  "wave": [
+    0,
+    1,
+    0,
+    -1
+  ],
+  "sample_rate": 4
+}
+Output để đối chiếu sau khi làm:
+{
+  "bin": 1,
+  "frequency": 1.0
+}
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả n_samples/sample_rate seconds và frame count floor((n-window)/hop)+1 nếun>=window, khôngpad.; xem BTVN_01.txt.
+- BTVN 2: DFTpowerchỉbinsk=0..floor(n/2), chọn max, tiesk nhỏ. Trảbin vàfreq=k*sample_rate/n.; xem BTVN_02.txt.
+- BTVN 3: Tần số của âm thanh tổng hợp; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+IOAI Synthetic Speech baseline; tài liệu HuBERT.
+Đọc/chạy SpectrogramDataset trong ioai25speech_baseline.ipynb; xem các samples validation được cấp.

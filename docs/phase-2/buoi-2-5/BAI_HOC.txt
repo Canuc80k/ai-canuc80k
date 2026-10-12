@@ -1,0 +1,59 @@
+BUỔI 2.5 — Decision Trees
+
+HỌC SINH CẦN HIỂU
+- Mỗi split chia dữ liệu; cây chọn giảm impurity/error.
+- Classification lá dự đoán lớp; regression lá thường lấy trung bình target.
+- Depth/min_samples_leaf hạn chế cây học quá chi tiết.
+
+CÂU HỎI MỞ BÀI
+Cây quyết định chọn câu hỏi ở nút đầu theo tiêu chí nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Gini = 1 - sum_c p_c²
+
+CẦN PHÂN BIỆT
+Một cây đọc dễ không có nghĩa luôn tổng quát tốt khi rất sâu.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Gini=1-sum(freq/N)^2, list rỗng trả 0.
+Input:
+{
+  "labels": [
+    0,
+    0,
+    1,
+    1
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.5
+
+Bài trên lớp 2: Dự đoán left_label khi x<=threshold; ngược lại right_label.
+Input:
+{
+  "x": [
+    0,
+    2,
+    5
+  ],
+  "threshold": 2,
+  "left_label": 0,
+  "right_label": 1
+}
+Output để đối chiếu sau khi làm:
+[
+  0,
+  0,
+  1
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Gini=1-sum(freq/N)^2, list rỗng trả 0.; xem BTVN_01.txt.
+- BTVN 2: Dự đoán left_label khi x<=threshold; ngược lại right_label.; xem BTVN_02.txt.
+- BTVN 3: Cây quyết định có kiểm soát capacity; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 13.2–13.3; KHTN chương 5.
+AIO 13.2/13.3 thực hành, 13.4 trắc nghiệm; NT 9.5/9.6 phần cây.

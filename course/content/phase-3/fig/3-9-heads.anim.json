@@ -1,0 +1,50 @@
+{
+ "w": 960,
+ "h": 380,
+ "n": 15,
+ "cols": 3,
+ "dur": [
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  1600,
+  1600
+ ],
+ "hold": 1200,
+ "labels": [
+  "query “the”: trọng số lớn nhất ở “animal” (0.49)",
+  "query “animal”: trọng số lớn nhất ở “[CLS]” (0.83)",
+  "query “did”: trọng số lớn nhất ở “[CLS]” (0.51)",
+  "query “not”: trọng số lớn nhất ở “[CLS]” (0.64)",
+  "query “cross”: trọng số lớn nhất ở “street” (0.65)",
+  "query “the”: trọng số lớn nhất ở “[CLS]” (0.77)",
+  "query “street”: trọng số lớn nhất ở “[CLS]” (0.90)",
+  "query “because”: trọng số lớn nhất ở “[CLS]” (0.22)",
+  "query “it”: trọng số lớn nhất ở “animal” (0.69)",
+  "query “was”: trọng số lớn nhất ở “tired” (0.29)",
+  "query “too”: trọng số lớn nhất ở “[CLS]” (0.83)",
+  "query “tired”: trọng số lớn nhất ở “[CLS]” (0.70)",
+  "query “.”: trọng số lớn nhất ở “the” (0.34)",
+  "query “it”: trọng số lớn nhất ở “animal” (0.69); “animal” nhận 0.69",
+  "query “it”: trọng số lớn nhất ở “animal” (0.69); “animal” nhận 0.69"
+ ],
+ "key": [
+  1,
+  4,
+  12,
+  14
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

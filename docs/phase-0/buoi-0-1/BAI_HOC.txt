@@ -1,0 +1,62 @@
+BUỔI 0.1 — Python cơ bản
+
+HỌC SINH CẦN HIỂU
+- Biến lưu một giá trị; list lưu nhiều giá trị cùng một thứ tự.
+- if chỉ chạy nhánh thỏa điều kiện. for đọc lần lượt từng phần tử.
+- Hàm nhận input và trả output bằng return; print chỉ hiển thị.
+
+CÂU HỎI MỞ BÀI
+Máy tính phân biệt bài đạt và chưa đạt bằng cách nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+passed(score) = score >= 6
+
+CẦN PHÂN BIỆT
+Không gọi trung bình trên list rỗng; phải nêu quy ước trước.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Đếm số điểm đạt ngưỡng và tính trung bình tất cả điểm.
+Input:
+{
+  "scores": [
+    8,
+    5,
+    9,
+    4
+  ],
+  "threshold": 6
+}
+Output để đối chiếu sau khi làm:
+{
+  "passed": 2,
+  "mean": 6.5
+}
+
+Bài trên lớp 2: Gán nhãn: score>=8 là Tot; 6.5<=score<8 là Dat; còn lại Can_co_gang.
+Input:
+{
+  "scores": [
+    8,
+    6.5,
+    6.49,
+    10
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  "Tot",
+  "Dat",
+  "Can_co_gang",
+  "Tot"
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Đếm số điểm đạt ngưỡng và tính trung bình tất cả điểm.; xem BTVN_01.txt.
+- BTVN 2: Gán nhãn: score>=8 là Tot; 6.5<=score<8 là Dat; còn lại Can_co_gang.; xem BTVN_02.txt.
+- BTVN 3: Tính tổng từng cửa sổ k phần tử liên tiếp, theo thứ tự từ trái qua phải.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 1.1.
+AIO 1.2 Câu hỏi tự luận và 1.3 Câu hỏi trắc nghiệm; làm các bài Python/activation theo đề sách.

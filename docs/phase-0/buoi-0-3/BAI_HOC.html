@@ -1,0 +1,63 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NumPy — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/0.2?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 0.3: NumPy</h1><p>Ma trận 3× 4× 5 có ba mẫu hay ba features?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Ý nghĩa mỗi axis do ta quy định. Trong ví dụ: axis0 là mẫu.</li><li>reshape giữ số phần tử; transpose đổi thứ tự các trục.</li><li>keepdims giữ chiều để phép broadcasting trừ đúng thống kê theo mẫu.</li></ul><p class="note">z = (x - mean) / std</p><h2>Code minh họa</h2><pre>import numpy as np
+# Ba mẫu, mỗi mẫu là ma trận 4 hàng, 5 cột.
+x = np.arange(1, 61, dtype=float).reshape(3, 4, 5)
+print(&quot;shape:&quot;, x.shape)
+print(&quot;Hàng cuối của mẫu đầu:&quot;, x[0, -1])
+# Giữ chiều để broadcasting trừ đúng mean của từng mẫu.
+mean = x.mean(axis=(1, 2), keepdims=True)
+std = x.std(axis=(1, 2), keepdims=True)
+z = (x - mean) / std
+print(&quot;Mean từng mẫu:&quot;, mean.ravel())
+print(&quot;Mean sau chuẩn hóa:&quot;, z.mean(axis=(1, 2)).round(6))
+print(&quot;Std sau chuẩn hóa:&quot;, z.std(axis=(1, 2)).round(6))
+assert z.shape == x.shape
+assert np.allclose(z.mean(axis=(1, 2)), 0)
+</pre><h3>Kết quả</h3><pre>shape: (3, 4, 5)
+Hàng cuối của mẫu đầu: [16. 17. 18. 19. 20.]
+Mean từng mẫu: [10.5 30.5 50.5]
+Mean sau chuẩn hóa: [0. 0. 0.]
+Std sau chuẩn hóa: [1. 1. 1.]
+</pre><p class="note">Shape hợp lệ không bảo đảm axis có đúng ý nghĩa.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Tính trung bình từng cột của ma trận.</p><pre>{
+  &quot;matrix&quot;: [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  2.5,
+  3.5,
+  4.5
+]</pre></details><h3>Bài 2</h3><p>Chuyển vị ma trận: output[j][i]=input[i][j].</p><pre>{
+  &quot;matrix&quot;: [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    1,
+    4
+  ],
+  [
+    2,
+    5
+  ],
+  [
+    3,
+    6
+  ]
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Tính trung bình từng cột của ma trận.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Chuyển vị ma trận: output[j][i]=input[i][j].</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>NT chương 2; AIO 6.1.</p><p>NT 9.2 “NumPy và mảng nhiều chiều”; có dữ liệu x=np.arange(1,61).reshape(3,4,5) và assert tự kiểm tra.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-0/buoi-0-2/BAI_HOC.html">← Cấu trúc dữ liệu và thao tác tệp</a><a href="../../phase-0/buoi-0-4/BAI_HOC.html">Pandas →</a></nav></body></html>

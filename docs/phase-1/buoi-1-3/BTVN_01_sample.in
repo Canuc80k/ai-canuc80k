@@ -1,0 +1,11 @@
+{
+  "train_groups": [
+    1,
+    1,
+    2
+  ],
+  "valid_groups": [
+    2,
+    3
+  ]
+}

@@ -1,0 +1,3 @@
+Best params: {'kneighborsclassifier__n_neighbors': 7}
+Mean CV F1: 0.9628
+Final test F1 macro: 0.9771

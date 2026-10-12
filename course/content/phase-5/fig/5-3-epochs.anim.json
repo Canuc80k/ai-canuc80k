@@ -1,0 +1,29 @@
+{
+ "w": 960,
+ "h": 400,
+ "n": 10,
+ "cols": 3,
+ "dur": 1300,
+ "hold": 1600,
+ "labels": [
+  "ảnh gốc",
+  "epoch 1: crop 20% diện tích, xoay +7°, lật ngang, sáng ×1.08",
+  "epoch 2: crop 48% diện tích, xoay +15°, lật ngang, sáng ×1.05",
+  "epoch 3: crop 27% diện tích, xoay +8°, lật ngang, sáng ×1.15",
+  "epoch 4: crop 23% diện tích, xoay −14°, sáng ×1.00",
+  "epoch 5: crop 60% diện tích, xoay −4°, lật ngang, sáng ×1.24",
+  "epoch 6: crop 22% diện tích, xoay +10°, sáng ×1.06",
+  "epoch 7: crop 39% diện tích, xoay −12°, sáng ×1.15",
+  "epoch 8: crop 46% diện tích, xoay +3°, sáng ×1.01",
+  "epoch 9: crop 60% diện tích, xoay −7°, lật ngang, sáng ×1.05"
+ ],
+ "key": [
+  0,
+  2,
+  5,
+  8
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

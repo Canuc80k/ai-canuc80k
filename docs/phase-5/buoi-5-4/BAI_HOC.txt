@@ -1,0 +1,80 @@
+BUỔI 5.4 — Sequence labeling và phân tách từ
+
+HỌC SINH CẦN HIỂU
+- Sequence labeling giữ alignment từng token/ký tự.
+- Span bắt đầu/kết thúc phải đúng; boundary-F1 khác word-span F1.
+- Indices theo Unicode code points của đề, không theo byte UTF8.
+
+CÂU HỎI MỞ BÀI
+Một ranh giới đúng ký tự đã chắc đúng cả từ con chưa?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+span=[start,end), end không thuộc span
+
+CẦN PHÂN BIỆT
+len(text.encode()) khác len(text); phải kiểm nhãn cuối và độ dài.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Khôi phục [start, end) từ nhãn kết thúc1, zero-based theo ký tự Unicode; nhãn cuối=1.
+Input:
+{
+  "text": "rainbow",
+  "ends": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    0,
+    4
+  ],
+  [
+    4,
+    7
+  ]
+]
+
+Bài trên lớp 2: So spans[begin, end): exact match sets. Cả hai sets rỗng→1, một set rỗng→0.
+Input:
+{
+  "true": [
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      7
+    ]
+  ],
+  "pred": [
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      7
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.0
+
+BÀI VỀ NHÀ
+- BTVN 1: Khôi phục [start, end) từ nhãn kết thúc1, zero-based theo ký tự Unicode; nhãn cuối=1.; xem BTVN_01.txt.
+- BTVN 2: So spans[begin, end): exact match sets. Cả hai sets rỗng→1, một set rỗng→0.; xem BTVN_02.txt.
+- BTVN 3: Tách compound words lớp; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO36,43; IOAI WordSeg baseline.
+ioai25wordseg: notebook/data có sẵn; AIO43.2 POS hoặc43.3 NER nếu học mở rộng.

@@ -1,0 +1,3 @@
+Image: [[10, 20, 30], [40, 50, 60]] flipped: [[30, 20, 10], [60, 50, 40]]
+Mask flipped: [[0, 0, 1], [0, 0, 1]]
+Box mới khi flip ngang: [70, 90]

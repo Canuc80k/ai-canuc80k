@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 1.2 — Generalization, underfitting và overfitting
+
+TRÌNH TỰ DẠY
+1. Hỏi: Train 100% có phải chắc chắn thi tốt hơn train 90%?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Generalization là hiệu quả trên mẫu mới của mục tiêu thực tế.
+- Underfit: chưa học đủ quan hệ; overfit: học cả chi tiết/noise của train.
+- So capacity trên cùng split và metric; một split nhỏ có thể nhiễu.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Gap là dấu hiệu; không dùng một ngưỡng gap cố định để kết luận mọi model.
+
+CÂU HỎI CHỐT
+Chọn depth từ validation của demo, sau đó giải thích vì sao không chọn bằng train.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

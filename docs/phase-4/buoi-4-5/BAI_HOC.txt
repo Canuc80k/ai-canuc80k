@@ -1,0 +1,82 @@
+BUỔI 4.5 — Object detection
+
+HỌC SINH CẦN HIỂU
+- Detector trả nhiều boxes và scores; match ground truth theo scorer của đề.
+- IoU đo giao/hợp; NMS loại dự đoán lặp có overlap cao.
+- xyxy khác xywh; confidence threshold khác IoU threshold.
+
+CÂU HỎI MỞ BÀI
+Hai boxes chồng lên nhau đã đủ coi là cùng detection?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+IoU=intersection_area/union_area
+
+CẦN PHÂN BIỆT
+Không dùng classification accuracy thay detection metric.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính IoU hai boxes với tọa độ xyxy liên tục; zero-union→1.
+Input:
+{
+  "a": [
+    0,
+    0,
+    2,
+    2
+  ],
+  "b": [
+    1,
+    1,
+    3,
+    3
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.14285714285714285
+
+Bài trên lớp 2: NMS: score giảm, hòa thì index tăng; suppress khiIoU > threshold, không suppress khi bằng.
+Input:
+{
+  "boxes": [
+    [
+      0,
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      3,
+      3
+    ],
+    [
+      5,
+      5,
+      7,
+      7
+    ]
+  ],
+  "scores": [
+    0.9,
+    0.8,
+    0.7
+  ],
+  "threshold": 0.1
+}
+Output để đối chiếu sau khi làm:
+[
+  0,
+  2
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính IoU hai boxes với tọa độ xyxy liên tục; zero-union→1.; xem BTVN_01.txt.
+- BTVN 2: NMS: score giảm, hòa thì index tăng; suppress khiIoU > threshold, không suppress khi bằng.; xem BTVN_02.txt.
+- BTVN 3: Một chữ số, một bounding box; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO41–42; PyTorch TorchVision Object Detection Finetuning tutorial.
+AIO41.2 các bài classification+bbox,41.3 trắc nghiệm; tutorial Penn-Fudan có data và code tải sẵn.

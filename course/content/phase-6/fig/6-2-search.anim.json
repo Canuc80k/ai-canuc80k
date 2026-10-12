@@ -1,0 +1,48 @@
+{
+ "w": 960,
+ "h": 470,
+ "n": 14,
+ "cols": 3,
+ "dur": [
+  2200,
+  2200,
+  160,
+  160,
+  2200,
+  2200,
+  160,
+  160,
+  2200,
+  2200,
+  160,
+  160,
+  2200,
+  2200
+ ],
+ "hold": 800,
+ "labels": [
+  "câu hỏi: “Mấy giờ thì được vào phòng thi?”",
+  "câu hỏi: “Mấy giờ thì được vào phòng thi?”",
+  "câu hỏi: “Khi nào biết điểm?”",
+  "câu hỏi: “Khi nào biết điểm?”",
+  "câu hỏi: “Khi nào biết điểm?”",
+  "câu hỏi: “Khi nào biết điểm?”",
+  "câu hỏi: “Ăn trưa ở đâu?”",
+  "câu hỏi: “Ăn trưa ở đâu?”",
+  "câu hỏi: “Ăn trưa ở đâu?”",
+  "câu hỏi: “Ăn trưa ở đâu?”",
+  "câu hỏi: “Máy ở phòng thực hành có thư viện học sâu không?”",
+  "câu hỏi: “Máy ở phòng thực hành có thư viện học sâu không?”",
+  "câu hỏi: “Máy ở phòng thực hành có thư viện học sâu không?”",
+  "câu hỏi: “Máy ở phòng thực hành có thư viện học sâu không?”"
+ ],
+ "key": [
+  0,
+  4,
+  8,
+  12
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

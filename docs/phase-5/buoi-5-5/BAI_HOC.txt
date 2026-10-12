@@ -1,0 +1,59 @@
+BUỔI 5.5 — Language modeling
+
+HỌC SINH CẦN HIỂU
+- Causal LM dự đoán token tiếp theo từ con text trước.
+- Loss cần shift targets vàcausalmask; tokenization là phần của đánh giá.
+- Perplexity=exp(meanNLL); không so trực tiếp khi tokenizer khác.
+
+CÂU HỎI MỞ BÀI
+Target next-token có cùng vị trí với input token không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+input=tokens[:-1], target=tokens[1:]
+
+CẦN PHÂN BIỆT
+Khôngcopy đúng token input thành target ởcùngvịtrí để tạo điểmảo.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả inputs=tokens[:-1], targets=tokens[1:].
+Input:
+{
+  "tokens": [
+    "A",
+    "B",
+    "C"
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "inputs": [
+    "A",
+    "B"
+  ],
+  "targets": [
+    "B",
+    "C"
+  ]
+}
+
+Bài trên lớp 2: exp(mean(-log(p_true_token))); p∈(0,1].
+Input:
+{
+  "prob": [
+    0.5,
+    0.25
+  ]
+}
+Output để đối chiếu sau khi làm:
+2.82842712474619
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả inputs=tokens[:-1], targets=tokens[1:].; xem BTVN_01.txt.
+- BTVN 2: exp(mean(-log(p_true_token))); p∈(0,1].; xem BTVN_02.txt.
+- BTVN 3: Next-character model; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO56; AIO48 sinh thơ.
+AIO56.2 câu hỏi trắc nghiệm; thực hành trong AIO48 để nối language modeling với text generation.

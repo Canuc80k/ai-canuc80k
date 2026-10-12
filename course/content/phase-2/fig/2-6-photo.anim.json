@@ -1,0 +1,29 @@
+{
+ "w": 920,
+ "h": 440,
+ "n": 10,
+ "cols": 3,
+ "dur": 1000,
+ "hold": 2600,
+ "labels": [
+  "trung bình 1 cây: RMSE điểm chưa thấy 33.3 (một cây sâu không bootstrap: 25.5)",
+  "trung bình 2 cây: RMSE điểm chưa thấy 27.0",
+  "trung bình 3 cây: RMSE điểm chưa thấy 25.9",
+  "trung bình 5 cây: RMSE điểm chưa thấy 24.0",
+  "trung bình 8 cây: RMSE điểm chưa thấy 23.3",
+  "trung bình 12 cây: RMSE điểm chưa thấy 22.4",
+  "trung bình 20 cây: RMSE điểm chưa thấy 22.1",
+  "trung bình 35 cây: RMSE điểm chưa thấy 21.6",
+  "trung bình 60 cây: RMSE điểm chưa thấy 21.6",
+  "trung bình 100 cây: RMSE điểm chưa thấy 21.5"
+ ],
+ "key": [
+  0,
+  3,
+  6,
+  9
+ ],
+ "dark": false,
+ "dw": 600,
+ "pcols": 4
+}

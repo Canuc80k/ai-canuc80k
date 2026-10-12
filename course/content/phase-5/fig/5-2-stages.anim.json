@@ -1,0 +1,25 @@
+{
+ "w": 960,
+ "h": 480,
+ "n": 6,
+ "cols": 2,
+ "dur": 1500,
+ "hold": 2400,
+ "labels": [
+  "ảnh vào 224 × 224 × 3",
+  "`conv1` · 64 kênh · 112 × 112 (9 kênh mạnh nhất)",
+  "`layer1` · 64 kênh · 56 × 56 (9 kênh mạnh nhất)",
+  "`layer2` · 128 kênh · 28 × 28 (9 kênh mạnh nhất)",
+  "`layer3` · 256 kênh · 14 × 14 (9 kênh mạnh nhất)",
+  "`layer4` · 512 kênh · 7 × 7 (9 kênh mạnh nhất); dự đoán “bell cote” 0.54"
+ ],
+ "key": [
+  1,
+  2,
+  3,
+  5
+ ],
+ "dark": false,
+ "dw": 640,
+ "pcols": 4
+}

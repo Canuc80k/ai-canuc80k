@@ -1,0 +1,25 @@
+{
+ "w": 960,
+ "h": 260,
+ "n": 6,
+ "cols": 2,
+ "dur": 1700,
+ "hold": 2400,
+ "labels": [
+  "còn 8 ứng viên xanh, champion ban đầu là 0",
+  "lượt 1: đề xuất 6, phản hồi “đề xuất thắng”",
+  "còn 3 ứng viên xanh, champion là 6",
+  "lượt 2: đề xuất 4, phản hồi “hòa”",
+  "còn 1 ứng viên xanh, champion là 6",
+  "lượt 3: đề xuất 5 chính là hidden, giải xong"
+ ],
+ "key": [
+  0,
+  1,
+  2,
+  5
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 1
+}

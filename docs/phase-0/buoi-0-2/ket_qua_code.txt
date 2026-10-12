@@ -1,0 +1,3 @@
+Mỗi dòng là một dict: {'id': '3', 'label': 'cat'}
+Tần suất: {'cat': 2, 'dog': 1}
+ID theo thứ tự số: ['1', '2', '3']

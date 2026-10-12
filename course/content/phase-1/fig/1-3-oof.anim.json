@@ -1,0 +1,34 @@
+{
+ "w": 960,
+ "h": 330,
+ "n": 7,
+ "cols": 2,
+ "dur": [
+  1500,
+  1100,
+  1500,
+  1100,
+  1500,
+  1100,
+  1500
+ ],
+ "hold": 2200,
+ "labels": [
+  "96 mẫu (số nhỏ là nhãn thật), cột OOF còn trống",
+  "fold 1: train trên 64 mẫu, giữ 32 mẫu viền cam",
+  "fold 1: dự đoán ghi về đúng vị trí gốc, accuracy fold 0.969",
+  "fold 2: train trên 64 mẫu, giữ 32 mẫu viền cam",
+  "fold 2: dự đoán ghi về đúng vị trí gốc, accuracy fold 0.906",
+  "fold 3: train trên 64 mẫu, giữ 32 mẫu viền cam",
+  "fold 3: dự đoán ghi về đúng vị trí gốc, accuracy fold 0.906; OOF đủ 96 ô, accuracy gộp 0.927"
+ ],
+ "key": [
+  1,
+  2,
+  4,
+  6
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

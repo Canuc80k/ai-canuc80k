@@ -1,0 +1,3 @@
+DecisionTreeClassifier validation_accuracy 0.9231
+RandomForestClassifier validation_accuracy 0.951
+HistGradientBoostingClassifier validation_accuracy 0.958

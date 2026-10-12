@@ -1,0 +1,81 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Word embeddings và sentence embeddings</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 5.2</small><h1>Buổi 5.2: Word embeddings và sentence embeddings</h1><p>Padding có nên kéo mean sentence embedding về một hướng?</p></section><section class="slide"><small>Buổi 5.2</small><h1>Ý tưởng chính</h1><p>pooled=sum(mask_i×embedding_i)/sum(mask_i)</p><ul><li>Embeddings có thểstatic hoặc contextual; cosine dùng normalize hợp lý.</li><li>Pooling chỉ tính tokens hợp lệ; giữ thứ tự khi task cần composition.</li><li>Ranking metrics khácaccuracy class; Chameleon cóHits/nDCG riêng.</li></ul></section><section class="slide"><small>Buổi 5.2</small><h1>Ví dụ</h1><pre>{
+  &quot;tokens&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  &quot;mask&quot;: [
+    1,
+    1,
+    0
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.2</small><h1>Đáp án ví dụ</h1><pre>[
+  0.5,
+  0.5
+]</pre></section><section class="slide"><small>Buổi 5.2</small><h1>Code minh họa</h1><pre>import numpy as np
+
+tokens=np.array([[1.,0.],[0.,1.],[9.,9.]])
+mask=np.array([1,1,0],dtype=float)
+# Padding không được tham gia mean pooling.
+pooled=(tokens*mask[:,None]).sum(axis=0)/mask.sum()
+print(&quot;Mean pooling có mask:&quot;,pooled.tolist())
+print(&quot;Mean sai nếu tính padding:&quot;,tokens.mean(axis=0).tolist())
+options=np.array([[1.,0.],[0.,1.],[1.,1.]])
+norm=lambda a:a/np.linalg.norm(a,axis=-1,keepdims=True)
+scores=norm(options)@norm(pooled)
+print(&quot;Cosine:&quot;,scores.round(4).tolist())
+assert np.allclose(pooled,[.5,.5])</pre></section><section class="slide"><small>Buổi 5.2</small><h1>Kết quả</h1><pre>Mean pooling có mask: [0.5, 0.5]
+Mean sai nếu tính padding: [3.3333333333333335, 3.3333333333333335]
+Cosine: [0.7071, 0.7071, 1.0]</pre></section><section class="slide"><small>Buổi 5.2</small><h1>Điểm dễ nhầm</h1><ul><li>Không gọi embedding fixture là output sentence-transformer thật.</li><li>So meanmasked[.5,.5] với mean tính token padding[9,9].</li></ul></section><section class="slide"><small>Buổi 5.2</small><h1>Bài trên lớp 1</h1><p>Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.</p><pre>{
+  &quot;tokens&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  &quot;mask&quot;: [
+    1,
+    1,
+    0
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.2</small><h1>Bài trên lớp 2</h1><p>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</p><pre>{
+  &quot;a&quot;: [
+    1,
+    0
+  ],
+  &quot;b&quot;: [
+    1,
+    1
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.2</small><h1>Bài tập về nhà 1</h1><p>Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.</p><ul><li>Input: tokens: nxd; mask: n0/1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 5.2</small><h1>Bài tập về nhà 2</h1><p>Trả cosine của hai vector; có norm bằng 0 thì trả 0.</p><ul><li>Input: a/b: list số cùng chiều dài&gt;0.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 5.2</small><h1>Bài tập về nhà 3</h1><p>Pooling và embeddings cho text</p><ul><li>Data: text</li><li>Metric: Macro F1 theo đúng classes 0/1/2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 5.2</small><h1>Tổng kết</h1><p>So meanmasked[.5,.5] với mean tính token padding[9,9].</p><ul><li>KHTN19; IOAI Chameleon baseline.</li><li>ioai25chameleon: notebook sentence-transformers, validation queries và test queries được cấp.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

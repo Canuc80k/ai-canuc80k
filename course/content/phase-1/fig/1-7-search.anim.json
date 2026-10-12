@@ -1,0 +1,41 @@
+{
+ "w": 960,
+ "h": 439,
+ "n": 11,
+ "cols": 3,
+ "dur": [
+  2200,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  1100,
+  1100,
+  1100,
+  1100
+ ],
+ "hold": 2400,
+ "labels": [
+  "F1 cross-validation của mọi k lẻ từ 3 tới 33, hai kiểu weights (nét mờ, chỉ để nhìn; thường không có)",
+  "grid thử 1/6: k = 3, uniform, F1 0.649; tốt nhất đến giờ k = 3, uniform",
+  "grid thử 2/6: k = 3, distance, F1 0.649; tốt nhất đến giờ k = 3, uniform",
+  "grid thử 3/6: k = 9, uniform, F1 0.677; tốt nhất đến giờ k = 9, uniform",
+  "grid thử 4/6: k = 9, distance, F1 0.685; tốt nhất đến giờ k = 9, distance",
+  "grid thử 5/6: k = 21, uniform, F1 0.614; tốt nhất đến giờ k = 9, distance",
+  "grid thử 6/6: k = 21, distance, F1 0.661; tốt nhất đến giờ k = 9, distance",
+  "random thử 1/4: k = 3, uniform, F1 0.649; tốt nhất đến giờ k = 3, uniform",
+  "random thử 2/4: k = 21, uniform, F1 0.614; tốt nhất đến giờ k = 3, uniform",
+  "random thử 3/4: k = 25, distance, F1 0.628; tốt nhất đến giờ k = 3, uniform",
+  "random thử 4/4: k = 13, distance, F1 0.676; tốt nhất đến giờ k = 13, distance"
+ ],
+ "key": [
+  0,
+  6,
+  10
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 3
+}

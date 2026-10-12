@@ -1,0 +1,33 @@
+NGUỒN DỮ LIỆU — AI CANUC80K
+
+1. Dữ liệu tổng hợp
+Các bảng regression/classification, chuỗi token, câu văn chủ đề, compound words, dịch cụm
+màu/hình dạng, char corpus, tone/audio-question và Gaussian GAN do giáo viên/recipe của bộ
+tài liệu tự soạn. Đây là dữ liệu luyện lớp, không phải dataset thực địa hay đề IOAI chính thức.
+Seed riêng cho mỗi bài: 372700 + phase*100 + số buổi. Schema, split và hashes trong DATA_NOTE.json.
+Các ảnh noisy, mask, boxes và gallery được biến đổi từ Digits theo recipe và ghi rõ trong đề.
+
+2. Digits
+Ảnh chữ số viết tay 8x8 từ sklearn.datasets.load_digits, nguồn UCI Optical Recognition of
+Handwritten Digits, tác giả E. Alpaydin và C. Kaynak. Pixel gốc có giá trị 0..16.
+https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html
+https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+Các subset được chia stratified với seed của từng bài; train 500, valid 120, test 200.
+Không dùng nhãn test từ bộ gốc công khai để chọn model của bài luyện.
+
+3. Audio ASR — LibriSpeech
+LibriSpeech: Vassil Panayotov, Guoguo Chen, Daniel Povey, Sanjeev Khudanpur.
+Nguồn gốc và giấy phép Creative Commons Attribution 4.0 (CC BY 4.0):
+https://www.openslr.org/12
+https://creativecommons.org/licenses/by/4.0/
+Bản nhỏ dùng trong bộ tài liệu lấy từ hf-internal-testing/librispeech_asr_dummy, cấu hình clean:
+https://huggingface.co/datasets/hf-internal-testing/librispeech_asr_dummy
+File clean/validation-00000-of-00001.parquet. Recipe chọn 15 bản ghi có kích thước FLAC nén
+nhỏ nhất trong bản này; không khẳng định đây là 15 bản ngắn nhất theo thời lượng.
+Giữ bytes FLAC gốc, đổi tên file, chia 5 train / 5 valid / 5 test và tách transcript test riêng.
+Subset rất nhỏ và public; chỉ dùng để luyện pipeline và WER, không dùng làm benchmark phân hạng.
+
+4. Checkpoint và bài mở rộng
+Model pretrained không được đóng trong ZIP. Nguồn model và cách đọc cache/file ghi ở code
+bổ sung của từng buổi. Bài/tài liệu LQDOJ và IOAI dẫn ở cuối bài vẫn dùng quy chế, scorer và
+định dạng gốc; chúng không phải những bài mới đã được tạo trong nhóm 3727.

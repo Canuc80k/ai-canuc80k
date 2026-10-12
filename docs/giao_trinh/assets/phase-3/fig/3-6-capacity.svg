@@ -1,0 +1,303 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="435.457746pt" height="230.043317pt" viewBox="0 0 435.457746 230.043317" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-3-6-capacity-figure_1">
+  <g id="fig-3-6-capacity-patch_1">
+   <path d="M 0 230.043317 
+L 435.457746 230.043317 
+L 435.457746 0 
+L 0 0 
+L 0 230.043317 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-3-6-capacity-axes_1">
+   <g id="fig-3-6-capacity-patch_2">
+    <path d="M 57.082031 188.342692 
+L 430.417746 188.342692 
+L 430.417746 32.315807 
+L 57.082031 32.315807 
+L 57.082031 188.342692 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-6-capacity-matplotlib.axis_1">
+    <g id="fig-3-6-capacity-xtick_1">
+     <g id="fig-3-6-capacity-line2d_1">
+      <defs>
+       <path id="fig-3-6-capacity-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m04e37d9cc8" x="66.737265" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="66.737265" y="202.515192" transform="rotate(-0 66.737265 202.515192)">1</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-xtick_2">
+     <g id="fig-3-6-capacity-line2d_2">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m04e37d9cc8" x="131.105492" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="131.105492" y="202.515192" transform="rotate(-0 131.105492 202.515192)">3</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-xtick_3">
+     <g id="fig-3-6-capacity-line2d_3">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m04e37d9cc8" x="195.473718" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="195.473718" y="202.515192" transform="rotate(-0 195.473718 202.515192)">5</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-xtick_4">
+     <g id="fig-3-6-capacity-line2d_4">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m04e37d9cc8" x="259.841945" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="259.841945" y="202.515192" transform="rotate(-0 259.841945 202.515192)">7</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-xtick_5">
+     <g id="fig-3-6-capacity-line2d_5">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m04e37d9cc8" x="324.210172" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="324.210172" y="202.515192" transform="rotate(-0 324.210172 202.515192)">9</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-xtick_6">
+     <g id="fig-3-6-capacity-line2d_6">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m04e37d9cc8" x="388.578398" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="388.578398" y="202.515192" transform="rotate(-0 388.578398 202.515192)">11</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="243.749888" y="222.023005" transform="rotate(-0 243.749888 222.023005)">bậc đa thức (khả năng biểu diễn)</text>
+    </g>
+   </g>
+   <g id="fig-3-6-capacity-matplotlib.axis_2">
+    <g id="fig-3-6-capacity-ytick_1">
+     <g id="fig-3-6-capacity-line2d_7">
+      <defs>
+       <path id="fig-3-6-capacity-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="188.342692" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="191.928942" transform="rotate(-0 50.082031 191.928942)">0.000</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-ytick_2">
+     <g id="fig-3-6-capacity-line2d_8">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="164.702255" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="168.288505" transform="rotate(-0 50.082031 168.288505)">0.025</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-ytick_3">
+     <g id="fig-3-6-capacity-line2d_9">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="141.061818" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="144.648068" transform="rotate(-0 50.082031 144.648068)">0.050</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-ytick_4">
+     <g id="fig-3-6-capacity-line2d_10">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="117.421381" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="121.007631" transform="rotate(-0 50.082031 121.007631)">0.075</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-ytick_5">
+     <g id="fig-3-6-capacity-line2d_11">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="93.780943" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="97.367193" transform="rotate(-0 50.082031 97.367193)">0.100</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-ytick_6">
+     <g id="fig-3-6-capacity-line2d_12">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="70.140506" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="73.726756" transform="rotate(-0 50.082031 73.726756)">0.125</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-ytick_7">
+     <g id="fig-3-6-capacity-line2d_13">
+      <g>
+       <use xlink:href="#fig-3-6-capacity-m9fce3a8e10" x="57.082031" y="46.500069" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-6-capacity-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="50.082031" y="50.086319" transform="rotate(-0 50.082031 50.086319)">0.150</text>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-text_15">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="110.329249" transform="rotate(-90 13.345 110.329249)">MSE</text>
+    </g>
+   </g>
+   <g id="fig-3-6-capacity-line2d_14">
+    <path d="M 66.737265 34.069925 
+L 98.921379 155.124852 
+L 131.105492 156.18095 
+L 163.289605 159.872975 
+L 195.473718 167.020379 
+L 227.657832 167.036033 
+L 259.841945 168.852209 
+L 292.026058 168.934024 
+L 324.210172 171.52246 
+L 356.394285 174.602808 
+L 388.578398 179.132242 
+L 420.762512 181.605747 
+" clip-path="url(#fig-3-6-capacity-p0d58b64131)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.1; stroke-linecap: square"/>
+    <defs>
+     <path id="fig-3-6-capacity-m2eb7aacc1c" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-3-6-capacity-p0d58b64131)">
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="66.737265" y="34.069925" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="98.921379" y="155.124852" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="131.105492" y="156.18095" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="163.289605" y="159.872975" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="195.473718" y="167.020379" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="227.657832" y="167.036033" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="259.841945" y="168.852209" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="292.026058" y="168.934024" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="324.210172" y="171.52246" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="356.394285" y="174.602808" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="388.578398" y="179.132242" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="420.762512" y="181.605747" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-3-6-capacity-line2d_15">
+    <path d="M 66.737265 94.509479 
+L 98.921379 184.22815 
+L 131.105492 184.191634 
+L 163.289605 180.313642 
+L 195.473718 170.75787 
+L 227.657832 170.784824 
+L 259.841945 169.627471 
+L 292.026058 169.466134 
+L 324.210172 166.415282 
+L 356.394285 158.640814 
+L 388.578398 121.733126 
+L 420.762512 96.921768 
+" clip-path="url(#fig-3-6-capacity-p0d58b64131)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.1; stroke-linecap: square"/>
+    <defs>
+     <path id="fig-3-6-capacity-m6d78653e43" d="M 0 1.5 
+C 0.397805 1.5 0.77937 1.341951 1.06066 1.06066 
+C 1.341951 0.77937 1.5 0.397805 1.5 0 
+C 1.5 -0.397805 1.341951 -0.77937 1.06066 -1.06066 
+C 0.77937 -1.341951 0.397805 -1.5 0 -1.5 
+C -0.397805 -1.5 -0.77937 -1.341951 -1.06066 -1.06066 
+C -1.341951 -0.77937 -1.5 -0.397805 -1.5 0 
+C -1.5 0.397805 -1.341951 0.77937 -1.06066 1.06066 
+C -0.77937 1.341951 -0.397805 1.5 0 1.5 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#fig-3-6-capacity-p0d58b64131)">
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="66.737265" y="94.509479" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="98.921379" y="184.22815" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="131.105492" y="184.191634" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="163.289605" y="180.313642" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="195.473718" y="170.75787" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="227.657832" y="170.784824" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="259.841945" y="169.627471" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="292.026058" y="169.466134" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="324.210172" y="166.415282" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="356.394285" y="158.640814" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="388.578398" y="121.733126" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="420.762512" y="96.921768" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-3-6-capacity-patch_3">
+    <path d="M 57.082031 188.342692 
+L 57.082031 32.315807 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-6-capacity-patch_4">
+    <path d="M 57.082031 188.342692 
+L 430.417746 188.342692 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-6-capacity-legend_1">
+    <g id="fig-3-6-capacity-line2d_16">
+     <path d="M 173.584224 12.7125 
+L 183.584224 12.7125 
+L 193.584224 12.7125 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.1; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#fig-3-6-capacity-m2eb7aacc1c" x="183.584224" y="12.7125" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-text_16">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="201.584224" y="16.2125" transform="rotate(-0 201.584224 16.2125)">train</text>
+    </g>
+    <g id="fig-3-6-capacity-line2d_17">
+     <path d="M 242.711334 12.7125 
+L 252.711334 12.7125 
+L 262.711334 12.7125 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.1; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#fig-3-6-capacity-m6d78653e43" x="252.711334" y="12.7125" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     </g>
+    </g>
+    <g id="fig-3-6-capacity-text_17">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="270.711334" y="16.2125" transform="rotate(-0 270.711334 16.2125)">validation</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-3-6-capacity-p0d58b64131">
+   <rect x="57.082031" y="32.315807" width="373.335714" height="156.026886"/>
+  </clipPath>
+ </defs>
+</svg>

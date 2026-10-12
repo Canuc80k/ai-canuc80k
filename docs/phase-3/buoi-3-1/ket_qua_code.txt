@@ -1,0 +1,2 @@
+y: 10.0 dy/dx: 7.0
+shape: (2, 3) dtype: torch.float32 device: cpu

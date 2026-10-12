@@ -1,0 +1,10 @@
+{
+  "x": [
+    0,
+    2,
+    5
+  ],
+  "threshold": 2,
+  "left_label": 0,
+  "right_label": 1
+}

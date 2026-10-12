@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 2.3 — Regularization L1/L2
+
+TRÌNH TỰ DẠY
+1. Hỏi: Tại sao ta chấp nhận fit train kém hơn để hệ số bớt lớn?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Regularization thêm penalty nhằm hạn chế lời giải quá phức tạp theo giả định.
+- L1 khuyến khích nhiều hệ số 0; L2 khuyến khích hệ số nhỏ.
+- Độ mạnh regularization chọn bằng validation; scaling thay ý nghĩa penalty.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Alpha và C ở các APIs có thể có chiều tác dụng ngược nhau.
+
+CÂU HỎI CHỐT
+Tính L1/L2 của [1,-2,3] và so các hệ số model trong demo.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

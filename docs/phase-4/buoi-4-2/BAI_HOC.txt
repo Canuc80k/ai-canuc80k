@@ -1,0 +1,59 @@
+BUỔI 4.2 — CNN và image classification
+
+HỌC SINH CẦN HIỂU
+- CNN tái dùng kernels theo vị trí, tận dụng cấu trúc không gian.
+- Conv→activation→pool→head; phải theo dõi shape qua từng layer.
+- Xem lỗi từng lớp/ảnh; train accuracy chỉ giúp debug loop.
+
+CÂU HỎI MỞ BÀI
+CNN khác MLP trên ảnh ở cách dùng cấu trúc nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Input(B,C,H,W) → logits(B,n_classes)
+
+CẦN PHÂN BIỆT
+Flatten size sai thường chỉ lộ khi đổi resolution.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Max pool kích thước kxk, stride=k, bỏ phần dư.
+Input:
+{
+  "image": [
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "k": 2
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    4
+  ]
+]
+
+Bài trên lớp 2: Tính parameter count Linear(in, out), gồm bias nếu use_bias=true.
+Input:
+{
+  "in": 2,
+  "out": 3,
+  "use_bias": true
+}
+Output để đối chiếu sau khi làm:
+9
+
+BÀI VỀ NHÀ
+- BTVN 1: Max pool kích thước kxk, stride=k, bỏ phần dư.; xem BTVN_01.txt.
+- BTVN 2: Tính parameter count Linear(in, out), gồm bias nếu use_bias=true.; xem BTVN_02.txt.
+- BTVN 3: CNN chữ số; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO chương 34–35.
+AIO 35.2 Bài tập: phần lập trình và trắc nghiệm.

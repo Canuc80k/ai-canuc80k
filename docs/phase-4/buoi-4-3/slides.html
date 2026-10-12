@@ -1,0 +1,65 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vision encoders và transfer learning</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 4.3</small><h1>Buổi 4.3: Vision encoders và transfer learning</h1><p>Freeze một encoder chưa pretrained có phải transfer learning tốt?</p></section><section class="slide"><small>Buổi 4.3</small><h1>Ý tưởng chính</h1><p>Patch tokens=(H/P)×(W/P)</p><ul><li>Pretraining tạo weights đã học; architecture weights=None chưa có tri thức đó.</li><li>Freeze giữ base; thay head/fine-tune khi dữ liệu và budget cho phép.</li><li>ViT chia patch tokens, cần đúng preprocess/position theo checkpoint.</li></ul></section><section class="slide"><small>Buổi 4.3</small><h1>Ví dụ</h1><pre>{
+  &quot;layers&quot;: [
+    {
+      &quot;name&quot;: &quot;base&quot;,
+      &quot;count&quot;: 16,
+      &quot;trainable&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;head&quot;,
+      &quot;count&quot;: 9,
+      &quot;trainable&quot;: true
+    }
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Đáp án ví dụ</h1><pre>9</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Code minh họa (1)</h1><pre>import torch
+from torch import nn
+from torchvision.models import resnet18
+torch.manual_seed(42)
+torch.set_num_threads(1)
+
+# weights=None minh họa architecture và freezing, KHÔNG phải pretrained model.
+model=resnet18(weights=None)
+for p in model.parameters(): p.requires_grad=False
+model.fc=nn.Linear(model.fc.in_features,3)
+model.eval()
+X=torch.randn(2,3,64,64)
+with torch.no_grad(): output=model(X)
+print(&quot;Output shape:&quot;,tuple(output.shape))
+print(&quot;Params cần train:&quot;,sum(p.numel() for p in model.parameters() if</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Code minh họa (2)</h1><pre>p.requires_grad))
+print(&quot;Ví dụ này không đo chất lượng transfer learning.&quot;)
+assert tuple(output.shape)==(2,3)
+# Bài thực hành thật: dùng checkpoint được cấp trong nguồn và transforms đúng
+weights.</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Kết quả</h1><pre>Output shape: (2, 3)
+Params cần train: 1539
+Ví dụ này không đo chất lượng transfer learning.</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Điểm dễ nhầm</h1><ul><li>Không gọi demo architecture randomly initialized là kết quả pretrained.</li><li>Chỉ ra weights bịfreeze và head được train trong demoResNet.</li></ul></section><section class="slide"><small>Buổi 4.3</small><h1>Bài trên lớp 1</h1><p>Tổng số parameters trainable của các layers được đánh trainable=true.</p><pre>{
+  &quot;layers&quot;: [
+    {
+      &quot;name&quot;: &quot;base&quot;,
+      &quot;count&quot;: 16,
+      &quot;trainable&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;head&quot;,
+      &quot;count&quot;: 9,
+      &quot;trainable&quot;: true
+    }
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Bài trên lớp 2</h1><p>ẢnhHxW chia patch p x p, H/Wchiahết p; trả số tokens chưaCLS.</p><pre>{
+  &quot;h&quot;: 32,
+  &quot;w&quot;: 32,
+  &quot;p&quot;: 8
+}</pre></section><section class="slide"><small>Buổi 4.3</small><h1>Bài tập về nhà 1</h1><p>Tổng số parameters trainable của các layers được đánh trainable=true.</p><ul><li>Input: layers: list{name, count&gt;=0, trainable: boolean}.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 4.3</small><h1>Bài tập về nhà 2</h1><p>ẢnhHxW chia patch p x p, H/Wchiahết p; trả số tokens chưaCLS.</p><ul><li>Input: h, w, p: số nguyên dương, H/W divisibleby p.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 4.3</small><h1>Bài tập về nhà 3</h1><p>Frozen encoder và head</p><ul><li>Data: digits</li><li>Metric: Accuracy, labels từ 0 đến 9.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 4.3</small><h1>Tổng kết</h1><p>Chỉ ra weights bịfreeze và head được train trong demoResNet.</p><ul><li>AIO 35,37.3,40; PyTorch Transfer Learning tutorial.</li><li>AIO 40.2 Bài Tập và Gợi Ý;37.3 thực hành Vision Transformer.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

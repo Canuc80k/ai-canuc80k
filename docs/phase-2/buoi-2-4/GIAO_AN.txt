@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 2.4 — K-Nearest Neighbors
+
+TRÌNH TỰ DẠY
+1. Hỏi: Đổi đơn vị một feature có làm đổi hàng xóm gần nhất không?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- kNN tìm k mẫu gần query và bỏ phiếu hoặc lấy trung bình.
+- Khoảng cách phụ thuộc scale features; cần preprocessing học từ train.
+- k nhỏ nhạy chi tiết; k lớn có thể làm mờ ranh giới.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Ties cần quy ước; fit kNN nhẹ nhưng predict có thể tốn thời gian.
+
+CÂU HỎI CHỐT
+Tính distances từ query3 đến0,2,10; so k1 vàk3.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

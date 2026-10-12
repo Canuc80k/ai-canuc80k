@@ -1,0 +1,508 @@
+
+=== PAGE 1 ===
+2026 USA-North America AI Olympiad
+(USA-NA-AIO) Round 2 Problems
+Day 1
+USA AI Olympiad (USAAIO)
+April 4, 2026
+Problem 1.
+Non Open-ended Problem: Linear Atten-
+tion Is All You Need (90 Points)
+Submission Requirements
+1. Each contestant must submit a Jupiter Notebook (.ipynb). You should
+put all your solutions on this file.
+2. Your submitted file must follow the format
+Attn_LastName_FirstName_SchoolName
+3. Each part’s name/number must appear in a text cell in bold section
+format, such as
+# **Part 1.3.4**
+Page 1 of 15
+
+=== PAGE 2 ===
+The attention mechanism is a central component of the transformer architecture
+introduced in Attention Is All You Need. In this problem, we study the computational
+properties of attention, explore linear attention, introduce relative positional
+encoding, and finally apply these techniques to build a transformer model for time-
+series classification.
+Throughout this problem, we consider self-attention only and ignore masking
+for simplicity.
+Part 1.1.
+Linear Attention
+Assume the input sequence contains T tokens. For any attention head, let
+Q =
+
+
+q⊤
+0
+q⊤
+1...
+q⊤
+T−1
+
+,
+K =
+
+
+k⊤
+0
+k⊤
+1...
+k⊤
+T−1
+
+,
+V =
+
+
+v⊤
+0
+v⊤
+1...
+v⊤
+T−1
+
+∈RT×d.
+For each token position i ∈{0, 1, . . . , T −1},
+qi, ki, vi ∈Rd×1
+are column vectors corresponding to the query, key, and value of the i-th token,
+respectively.
+The self-attention output matrix is
+O =
+
+
+o⊤
+0
+o⊤
+1...
+o⊤
+T−1
+
+= softmax
+ QK⊤
+√
+d
+!
+V ∈RT×d
+where
+oi ∈Rd×1
+is a column vector corresponding to the output of the i-th token.
+Page 2 of 15
+
+=== PAGE 3 ===
+Part 1.1.1.
+(5 Points)
+Analyze the time complexity of computing the self-attention output O. Express the
+complexity in terms of T and d using Big-O notation. Reasoning is required.
+Part 1.1.2.
+(5 Points)
+Suppose
+exp
+ q⊤
+i kj
+√
+d
+!
+= ϕ(qi)⊤ϕ(kj),
+where ϕ (·) is a feature map function. Write the attention output vector ot using the
+feature map representation. Reasoning is required.
+Part 1.1.3.
+(5 Points)
+Define
+ϕ(Q) =
+
+
+ϕ(q0)⊤
+ϕ(q1)⊤
+...
+ϕ(qT−1)⊤
+
+,
+ϕ(K) =
+
+
+ϕ(k0)⊤
+ϕ(k1)⊤
+...
+ϕ(kT−1)⊤
+
+.
+Express the matrix O using ϕ(Q), ϕ(K) and V . Reasoning is required.
+Part 1.1.4.
+(5 Points)
+Suppose the feature map
+ϕ : Rd →Rℓ.
+Assume ϕ(qi) and ϕ(kj) have already been computed. Analyze the time complexity
+of computing O in terms of T, d, and ℓ. Reasoning is required.
+Page 3 of 15
+
+=== PAGE 4 ===
+Part 1.1.5.
+(5 Points)
+Explain why the representation
+exp
+ q⊤
+i kj
+√
+d
+!
+= ϕ(qi)⊤ϕ(kj)
+requires ℓ= ∞.
+Hint:
+exp(x) =
+∞
+X
+r=0
+xr
+r! .
+Part 1.1.6.
+(5 Points)
+Consider the truncated Taylor’s expansion
+exp(x) ≈
+2
+X
+r=0
+xr
+r! .
+Construct an explicit feature map ϕ(x) for x ∈Rd and compute the feature dimension
+ℓ. Reasoning is required.
+Part 1.2.
+Relative Positional Encoding
+In many time-series datasets, the relationship between two time steps depends on
+their relative distance rather than their absolute positions.
+Part 1.2.1.
+(5 Points)
+Suppose the attention score is modified as
+q⊤
+i (kj + rj−i)
+√
+d
+Page 4 of 15
+
+=== PAGE 5 ===
+where the learnable parameter rj−i ∈Rd×1 represents the relative directional
+positional encoding from token i to token j.
+Explain when this encoding is more appropriate than absolute positional encoding.
+Part 1.2.2.
+(5 Points)
+Assume the sequence contains T tokens indexed as
+0, 1, . . . , T −1.
+Determine the possible range of j −i. Reasoning is required.
+Part 1.2.3.
+(5 Points)
+For each token j, suppose each component p satisfies
+Var(kj,p) = σ2.
+Suppose component p in rj−i is initialized according to
+rj−i,p ∼N(0, τ 2).
+Determine the appropriate value of τ 2. Reasoning is required.
+Part 1.2.4.
+(5 Points)
+Explain how relative positional encoding can be incorporated into the linear-attention
+framework developed earlier. Reasoning is required.
+Part 1.3.
+Implementation of Linear Attention with Relative Po-
+sitional Encoding
+In this part, you are asked to build a PyTorch module called MyLinearAttentionRelativePos
+for multi-head self-attention with linear attention and relative positional encoding.
+Page 5 of 15
+
+=== PAGE 6 ===
+Starter Code
+Run the following starter code
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import matplotlib.pyplot as plt
+You may use basic modules such as nn.Linear. You are not allowed to use high-level
+modules such as nn.MultiheadAttention or nn.TransformerEncoder. You are not
+allowed to import anything else beyond those provided in the starter code. You are
+not allowed to import any model from HuggingFace.
+Hyperparameters
+Let dmodel denote the length of each input token, T denote the
+number of tokens (a hyperparameter that needs to be instantiated), H denote the
+number of attention heads and d denote the length of each value vector for each
+token and each head. You should not assume that Hd = dmodel.
+Hint: In this problem, we treat T as a hyperparameter. This is because we will use
+this model to study a dataset that all samples are with equal length T.
+Feature Map Function
+In this task, please use a feature map function defined with
+the ELU function. Recall that the ELU function is defined as
+ELU (x) =
+
+
+
+x
+if x ≥0
+ex −1
+if x < 0 .
+Therefore, the feature map function is defined as
+ϕ (x) = 1 + ELU (x) .
+You can instantiate an ELU transformation by using nn.ELU().
+Page 6 of 15
+
+=== PAGE 7 ===
+Part 1.3.1.
+(5 Points)
+Write down the total number of learnable parameters of this module. Express your
+answer in terms of dmodel, d, H, and T.
+For simplicity, please ignore the bias term in any affine/linear transformation. Rea-
+soning is required.
+Part 1.3.2.
+(5 Points)
+Plot ELU (x) and ϕ (x) for x ∈[−3, 3]. Put two plots in two separate figures.
+Part 1.3.3.
+(10 Points)
+Build the PyTorch class MyLinearAttentionRelativePos from scratch as a subclass
+of nn.Module.
+Part 1.4.
+Transformer Model for Time-Series Classification (20
+Points)
+In this part you will build an encoder-only transformer by using the linear at-
+tention with relative positional encoding module that you build in the previous part.
+You then apply your transformer to the FordA dataset.
+The FordA dataset is a time-series dataset derived from automotive sensor signals.
+Each sample consists of a time series of length 500. Each sample belongs to one of
+two classes.
+Your task is to train a transformer model to perform binary classification.
+Requirements
+• The transformer must use linear attention with relative positional encoding
+that you build in the previous part.
+• No additional positional encoding is allowed at the input.
+Page 7 of 15
+
+=== PAGE 8 ===
+• You should build an encoder-only transformer from scratch. Any attempt to
+load a well-built attention block or encoder module (except those that you
+build above) is prohibited.
+Feel free to import any needed libraries/modules/functions, as long as they are not
+against the above requirements.
+Starter Code
+Please use the following URL:
+https://drive.google.com/file/d/1ZpO63c-LJAQL-n9po9HXdrQl57DDbI
+4K/view?usp=drive_link
+Submission
+Beyond the Jupyter notebook, for this part, you should also submit a
+CSV file containing predictions for the test dataset.
+All submitted files must follow the format
+FordA_LastName_FirstName_SchoolName
+GPU
+You must do training and testing with L4 GPU.
+CSV Format
+The format of the CSV file must be the same as the sample submission
+file. It must contain two columns (in the sample submission file, the label column is
+empty):
+test_sample_id
+label
+Each row corresponds to one test sample.
+Evaluation
+Your model will be evaluated using the macro F1 score. A random
+guessing baseline achieves approximately 0.5. Your goal is to achieve a higher score.
+Page 8 of 15
+
+=== PAGE 9 ===
+Final Competition Score
+Let X be the macro F1 score of your submission, Xbaseline
+be the baseline score, and Xbest be the best score among all submissions.
+The final competition score is computed as
+Scorefinal =
+X −Xbaseline
+Xbest −Xbaseline
+× 100%.
+If X < Xbaseline, then the final score is 0. The best submission receives 100% of the
+total score in this part.
+In addition,
+1. In your submitted CSV file, if your prediction in a sample has a missing value
+or a value that is not one of those two labels, your solution in this sample will
+be graded to be a wrong prediction.
+2. If we find that you manually label the test dataset, you will receive 0 point in
+this part.
+3. If your Jupiter Notebook does not run properly on L4 GPU, you will receive 0
+point in this part.
+Page 9 of 15
+
+=== PAGE 10 ===
+Problem 2.
+Open-Ended Problem: Recovering a Sin-
+gle Source Central Field from Vector Field
+Observations (70 Points)
+In this problem, you will solve an inverse physics problem involving a central force
+field generated by a single source.
+We consider a two-dimensional continuous domain
+[−1, 1] × [−1, 1].
+Within this domain there is one unknown source location
+(xs, ys).
+Your goal is to recover both the coordinates of the single source and the magnitude
+function of the force field as a function of distance from the source.
+Central Field Model
+The force field is central, meaning that the force always points
+in the radial direction from the source.
+For sample s, let
+⃗rs = (xs, ys)
+denote the source location.
+For any point
+⃗r = (x, y),
+the vector field has the form
+⃗Fs(⃗r) = fs(∥⃗r −⃗rs∥) ⃗r −⃗rs
+∥⃗r −⃗rs∥.
+Here
+∥⃗r −⃗rs∥
+is the Euclidean (norm-2) distance from the source, and fs(r) is an unknown scalar
+function describing how the field magnitude depends on distance.
+Page 10 of 15
+
+=== PAGE 11 ===
+Unlike classical electric or gravitational fields, the explicit functional form of fs(r) is
+not provided. That is, you should not simply assume fs(r) ∝
+1
+r2.
+Please also note that fs may take different forms for different samples.
+Field Observations
+The vector field is measured on a regular 64 × 64 grid over the
+domain
+[−1, 1] × [−1, 1].
+At each grid point we observe a vector
+(Fx, Fy).
+Thus each sample is represented by a tensor of shape
+(64, 64, 2).
+Dataset Description
+Training dataset
+The training dataset contains 10,000 samples.
+Each sample includes
+• the vector field measurements,
+• the true source location,
+• the true values of the magnitude function at predefined radial checkpoints.
+Validation dataset
+A validation dataset containing 2,000 samples is also provided.
+It has the same
+format as the training dataset and can be used for model selection.
+Test dataset
+The test dataset contains 3,000 samples.
+For each test sample you are given only the vector field observations.
+Page 11 of 15
+
+=== PAGE 12 ===
+Prediction Targets
+For each test sample s, you must predict the coordinates of
+the source
+(xs, ys)
+and the field magnitude
+fs(ri)
+evaluated at 100 predefined radii
+ri = 0.02 + 0.02i
+for i = 0, 1, . . . , 99.
+Thus the radii are
+0.02, 0.04, 0.06, . . . , 2.00.
+Each prediction therefore contains
+2 + 100 = 102
+values.
+Evaluation Metric
+The evaluation score consists of two components.
+Source location error
+For each sample s, for the source coordinates, we compute the mean absolute (norm-
+1) error
+errors,source = |xpred
+s
+−xtrue
+s
+| + |ypred
+s
+−ytrue
+s
+|.
+Field magnitude error
+For the magnitude function, we compute the root mean squared error
+errors,field =
+v
+u
+u
+t 1
+100
+99
+X
+i=0
+
+f pred
+s
+(ri) −f true
+s
+(ri)
+2.
+Sample error
+For each sample s,
+errors = 103 · errors,source + 3 · 10−3 · errors,field.
+Page 12 of 15
+
+=== PAGE 13 ===
+Final evaluation score
+Let N denote the number of test samples. The final evaluation score is
+Score = 1
+N
+N−1
+X
+s=0
+errors.
+Lower scores indicate better performance.
+Invalid Predictions
+For a missing or invalid predicted value:
+1. If the prediction is about the source location, then for this sample s, errors,source =
+10.
+For instance, in sample s, if the prediction about source_x is valid (say, 0.312)
+but the prediction about source_y is missing, then errors,source = 10 for this
+sample.
+2. If the prediction is about the field magnitude, then for this sample s, errors,field =
+107
+3 .
+For instance, in sample s, suppose the prediction about the field magnitude has
+99 valid values and one missing value. Then errors,source = 107
+3 for this sample.
+Baseline Model
+A baseline solution treats the vector field as an image-like tensor.
+A convolutional neural network (CNN) is applied to the input tensor
+(64, 64, 2)
+and directly outputs 102 numbers:
+• 2 numbers for the source location,
+• 100 numbers for the magnitude values.
+Page 13 of 15
+
+=== PAGE 14 ===
+Final Competition Score
+Let
+• X be your evaluation score,
+• Xbaseline be the baseline score,
+• Xexpert be the expert model score that has been developed by the jury and
+achieves a score significantly better the baseline score,
+• Xcontestants be the best score among all contestants.
+Please note that the expert model is for the jury’s internal use for grading your
+solution. Contestants are not supposed to know this model.
+Define
+Xbest = min(Xexpert, Xcontestants).
+Your final competition score is computed as
+Scorefinal =
+Xbaseline −X
+Xbaseline −Xbest
+× 100%.
+If
+X > Xbaseline,
+then the final score is 0.
+Submission Requirements
+Each contestant must submit three files:
+• a prediction file (.csv),
+• a Jupyter notebook (.ipynb),
+• a report (.docx).
+File naming format
+All submitted files must follow the format
+Central_Field_LastName_FirstName_SchoolName
+Page 14 of 15
+
+=== PAGE 15 ===
+Submission Requirements
+Each contestant must submit three files:
+• a prediction file (.csv),
+• a Jupyter notebook with all your code (.ipynb),
+• A report that describes the model you submitted in your .ipynb file, any other
+models you tried but did not adopt, and your thought process for this problem
+(.docx).
+Starter Code
+Please use the following URL:
+https://drive.google.com/file/d/1pD0upn_OBIn_iyvMtyqtyyc87j-6kd
+VP/view?usp=drive_link
+Page 15 of 15

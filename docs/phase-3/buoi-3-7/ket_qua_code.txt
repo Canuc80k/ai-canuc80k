@@ -1,0 +1,3 @@
+train dropout: [[2.0, 2.0, 2.0, 2.0, 0.0, 2.0, 0.0, 0.0]]
+eval dropout: [[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]]
+stop 4 restore best epoch 2

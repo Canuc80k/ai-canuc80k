@@ -1,0 +1,56 @@
+BUỔI 4.3 — Vision encoders và transfer learning
+
+HỌC SINH CẦN HIỂU
+- Pretraining tạo weights đã học; architecture weights=None chưa có tri thức đó.
+- Freeze giữ base; thay head/fine-tune khi dữ liệu và budget cho phép.
+- ViT chia patch tokens, cần đúng preprocess/position theo checkpoint.
+
+CÂU HỎI MỞ BÀI
+Freeze một encoder chưa pretrained có phải transfer learning tốt?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Patch tokens=(H/P)×(W/P)
+
+CẦN PHÂN BIỆT
+Không gọi demo architecture randomly initialized là kết quả pretrained.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tổng số parameters trainable của các layers được đánh trainable=true.
+Input:
+{
+  "layers": [
+    {
+      "name": "base",
+      "count": 16,
+      "trainable": false
+    },
+    {
+      "name": "head",
+      "count": 9,
+      "trainable": true
+    }
+  ]
+}
+Output để đối chiếu sau khi làm:
+9
+
+Bài trên lớp 2: ẢnhHxW chia patch p x p, H/Wchiahết p; trả số tokens chưaCLS.
+Input:
+{
+  "h": 32,
+  "w": 32,
+  "p": 8
+}
+Output để đối chiếu sau khi làm:
+16
+
+BÀI VỀ NHÀ
+- BTVN 1: Tổng số parameters trainable của các layers được đánh trainable=true.; xem BTVN_01.txt.
+- BTVN 2: ẢnhHxW chia patch p x p, H/Wchiahết p; trả số tokens chưaCLS.; xem BTVN_02.txt.
+- BTVN 3: Frozen encoder và head; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 35,37.3,40; PyTorch Transfer Learning tutorial.
+AIO 40.2 Bài Tập và Gợi Ý;37.3 thực hành Vision Transformer.

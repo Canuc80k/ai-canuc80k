@@ -1,0 +1,8 @@
+{
+  "questions": [
+    "compare_categories",
+    "distribution",
+    "two_numeric",
+    "sequence_over_time"
+  ]
+}

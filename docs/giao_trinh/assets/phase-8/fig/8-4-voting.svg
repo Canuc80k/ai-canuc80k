@@ -1,0 +1,248 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="472.436563pt" height="249.259615pt" viewBox="0 0 472.436563 249.259615" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-8-4-voting-figure_1">
+  <g id="fig-8-4-voting-patch_1">
+   <path d="M 0 249.259615 
+L 472.436563 249.259615 
+L 472.436563 0 
+L 0 0 
+L 0 249.259615 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-8-4-voting-axes_1">
+   <g id="fig-8-4-voting-patch_2">
+    <path d="M 46.296563 227.624615 
+L 467.396563 227.624615 
+L 467.396563 5.04 
+L 46.296563 5.04 
+L 46.296563 227.624615 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-8-4-voting-matplotlib.axis_1">
+    <g id="fig-8-4-voting-xtick_1">
+     <g id="fig-8-4-voting-line2d_1">
+      <defs>
+       <path id="fig-8-4-voting-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-4-voting-m04e37d9cc8" x="93.085451" y="227.624615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="93.085451" y="241.797115" transform="rotate(-0 93.085451 241.797115)">Model 1</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-xtick_2">
+     <g id="fig-8-4-voting-line2d_2">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m04e37d9cc8" x="171.066933" y="227.624615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="171.066933" y="241.797115" transform="rotate(-0 171.066933 241.797115)">Model 2</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-xtick_3">
+     <g id="fig-8-4-voting-line2d_3">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m04e37d9cc8" x="249.048414" y="227.624615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="249.048414" y="241.797115" transform="rotate(-0 249.048414 241.797115)">Model 3</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-xtick_4">
+     <g id="fig-8-4-voting-line2d_4">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m04e37d9cc8" x="327.029896" y="227.624615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="327.029896" y="241.797115" transform="rotate(-0 327.029896 241.797115)">Mean</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-8-4-voting-matplotlib.axis_2">
+    <g id="fig-8-4-voting-ytick_1">
+     <g id="fig-8-4-voting-line2d_5">
+      <defs>
+       <path id="fig-8-4-voting-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="227.624615" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="231.210865" transform="rotate(-0 39.296563 231.210865)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_2">
+     <g id="fig-8-4-voting-line2d_6">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="200.48015" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="204.0664" transform="rotate(-0 39.296563 204.0664)">0.1</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_3">
+     <g id="fig-8-4-voting-line2d_7">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="173.335685" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="176.921935" transform="rotate(-0 39.296563 176.921935)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_4">
+     <g id="fig-8-4-voting-line2d_8">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="146.19122" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="149.77747" transform="rotate(-0 39.296563 149.77747)">0.3</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_5">
+     <g id="fig-8-4-voting-line2d_9">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="119.046754" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="122.633004" transform="rotate(-0 39.296563 122.633004)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_6">
+     <g id="fig-8-4-voting-line2d_10">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="91.902289" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="95.488539" transform="rotate(-0 39.296563 95.488539)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_7">
+     <g id="fig-8-4-voting-line2d_11">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="64.757824" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="68.344074" transform="rotate(-0 39.296563 68.344074)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_8">
+     <g id="fig-8-4-voting-line2d_12">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="37.613358" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="41.199608" transform="rotate(-0 39.296563 41.199608)">0.7</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-ytick_9">
+     <g id="fig-8-4-voting-line2d_13">
+      <g>
+       <use xlink:href="#fig-8-4-voting-m9fce3a8e10" x="46.296563" y="10.468893" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-8-4-voting-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.296563" y="14.055143" transform="rotate(-0 39.296563 14.055143)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-8-4-voting-text_14">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.357344" y="116.332308" transform="rotate(-90 14.357344 116.332308)">Xác suất lớp 1</text>
+    </g>
+   </g>
+   <g id="fig-8-4-voting-patch_3">
+    <path d="M 70.470822 227.624615 
+L 115.700081 227.624615 
+L 115.700081 89.187842 
+L 70.470822 89.187842 
+z
+" clip-path="url(#fig-8-4-voting-p60ca88374f)" style="fill: var(--t-n, #3b6ea8); opacity: 0.75"/>
+   </g>
+   <g id="fig-8-4-voting-patch_4">
+    <path d="M 148.452303 227.624615 
+L 193.681563 227.624615 
+L 193.681563 89.187842 
+L 148.452303 89.187842 
+z
+" clip-path="url(#fig-8-4-voting-p60ca88374f)" style="fill: var(--t-n, #3b6ea8); opacity: 0.75"/>
+   </g>
+   <g id="fig-8-4-voting-patch_5">
+    <path d="M 226.433785 227.624615 
+L 271.663044 227.624615 
+L 271.663044 224.910169 
+L 226.433785 224.910169 
+z
+" clip-path="url(#fig-8-4-voting-p60ca88374f)" style="fill: var(--t-n, #3b6ea8); opacity: 0.75"/>
+   </g>
+   <g id="fig-8-4-voting-patch_6">
+    <path d="M 304.415266 227.624615 
+L 349.644525 227.624615 
+L 349.644525 134.428618 
+L 304.415266 134.428618 
+z
+" clip-path="url(#fig-8-4-voting-p60ca88374f)" style="fill: var(--accent, #c2603e); opacity: 0.75"/>
+   </g>
+   <g id="fig-8-4-voting-line2d_14">
+    <path d="M 46.296563 91.902289 
+L 467.396563 91.902289 
+" clip-path="url(#fig-8-4-voting-p60ca88374f)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.7"/>
+   </g>
+   <g id="fig-8-4-voting-patch_7">
+    <path d="M 46.296563 227.624615 
+L 46.296563 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-voting-patch_8">
+    <path d="M 46.296563 227.624615 
+L 467.396563 227.624615 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-8-4-voting-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="93.085451" y="79.68728" transform="rotate(-0 93.085451 79.68728)">0.510</text>
+   </g>
+   <g id="fig-8-4-voting-text_16">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="171.066933" y="79.68728" transform="rotate(-0 171.066933 79.68728)">0.510</text>
+   </g>
+   <g id="fig-8-4-voting-text_17">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="249.048414" y="215.409606" transform="rotate(-0 249.048414 215.409606)">0.010</text>
+   </g>
+   <g id="fig-8-4-voting-text_18">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="327.029896" y="124.928055" transform="rotate(-0 327.029896 124.928055)">0.343</text>
+   </g>
+   <g id="fig-8-4-voting-text_19">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="362.121563" y="79.556882" transform="rotate(-0 362.121563 79.556882)">Ngưỡng 0.5</text>
+   </g>
+   <g id="fig-8-4-voting-text_20">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="194.461377" y="26.755572" transform="rotate(-0 194.461377 26.755572)">Hard vote: lớp 1</text>
+   </g>
+   <g id="fig-8-4-voting-text_21">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="373.818785" y="45.756698" transform="rotate(-0 373.818785 45.756698)">Soft vote: lớp 0</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-8-4-voting-p60ca88374f">
+   <rect x="46.296563" y="5.04" width="421.1" height="222.584615"/>
+  </clipPath>
+ </defs>
+</svg>

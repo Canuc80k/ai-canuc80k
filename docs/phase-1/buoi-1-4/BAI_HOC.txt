@@ -1,0 +1,82 @@
+BUỔI 1.4 — Data leakage và Pipeline
+
+HỌC SINH CẦN HIỂU
+- Preprocessing cũng học thống kê: median, mean/std, vocabulary, PCA.
+- fit trên train; transform train/valid/test bằng cùng thống kê đã học.
+- Pipeline trong CV giúp mỗi fold học preprocessing từ phần train của fold.
+
+CÂU HỎI MỞ BÀI
+Nếu scaler biết trước mean của valid, điểm còn độc lập không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+fit(train) → transform(valid)
+
+CẦN PHÂN BIỆT
+Pipeline không tự sửa group/time leakage hoặc feature nhìn tương lai.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.
+Input:
+{
+  "train": [
+    10,
+    null,
+    30
+  ],
+  "query": [
+    null,
+    100
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  20.0,
+  100
+]
+
+Bài trên lớp 2: Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.
+Input:
+{
+  "train": [
+    [
+      1,
+      10
+    ],
+    [
+      3,
+      10
+    ]
+  ],
+  "query": [
+    [
+      2,
+      12
+    ],
+    [
+      4,
+      10
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    0.0,
+    2.0
+  ],
+  [
+    2.0,
+    0.0
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Học median từ các giá trị train không null; điền null trong query. Nếu train toàn null dùng 0.; xem BTVN_01.txt.
+- BTVN 2: Chuẩn hóa từng cột bằng mean/std population của train, áp dụng cho query. Cột std=0 dùng divisor=1.; xem BTVN_02.txt.
+- BTVN 3: Vocabulary cấp sẵn; unseen category tạo vector toàn 0.; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+NT chương 5–6; tài liệu sklearn Common Pitfalls.
+NT 9.7 “Pipeline với giá trị thiếu và cột phân loại”, có dữ liệu tạo sẵn và tình huống category mới.

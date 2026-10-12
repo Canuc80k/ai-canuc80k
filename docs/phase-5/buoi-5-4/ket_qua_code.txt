@@ -1,0 +1,2 @@
+Spans: [(0, 4, 'rain'), (4, 7, 'bow')]
+Số ký tự tiếng Việt: 3 số bytes UTF8: 5

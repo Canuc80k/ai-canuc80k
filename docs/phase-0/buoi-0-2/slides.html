@@ -1,0 +1,57 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cấu trúc dữ liệu và thao tác tệp</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 0.2</small><h1>Buổi 0.2: Cấu trúc dữ liệu và thao tác tệp</h1><p>Nếu hai bảng bị xáo trộn dòng, còn ghép được đáp án không?</p></section><section class="slide"><small>Buổi 0.2</small><h1>Ý tưởng chính</h1><p>prediction[id] thay vì prediction[row_index]</p><ul><li>ID định danh mẫu; số thứ tự dòng có thể thay đổi khi sort/shuffle.</li><li>Dict giúp tra cứu theo khóa; Counter đếm tần suất.</li><li>CSV lưu bảng chữ; phải chuyển chuỗi số thành kiểu số trước khi tính/sort.</li></ul></section><section class="slide"><small>Buổi 0.2</small><h1>Ví dụ</h1><pre>{
+  &quot;items&quot;: [
+    &quot;cat&quot;,
+    &quot;dog&quot;,
+    &quot;cat&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 0.2</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;cat&quot;: 2,
+  &quot;dog&quot;: 1
+}</pre></section><section class="slide"><small>Buổi 0.2</small><h1>Code minh họa</h1><pre>import csv
+from io import StringIO
+from collections import Counter
+
+# CSV mẫu được cấp ngay trong code; không cần tìm tệp bên ngoài.
+raw = &quot;id,label\n3,cat\n1,dog\n2,cat\n&quot;
+rows = list(csv.DictReader(StringIO(raw)))
+print(&quot;Mỗi dòng là một dict:&quot;, rows[0])
+# Đếm theo nhãn, không dùng vị trí dòng như một ID.
+counts = Counter(row[&quot;label&quot;] for row in rows)
+print(&quot;Tần suất:&quot;, dict(sorted(counts.items())))
+# Sắp xếp ID theo số; sort chuỗi có thể đặt &#39;10&#39; trước &#39;2&#39;.
+ordered = sorted(rows, key=lambda row: int(row[&quot;id&quot;]))
+print(&quot;ID theo thứ tự số:&quot;, [r[&quot;id&quot;] for r in ordered])
+assert counts[&quot;cat&quot;] == 2</pre></section><section class="slide"><small>Buổi 0.2</small><h1>Kết quả</h1><pre>Mỗi dòng là một dict: {&#39;id&#39;: &#39;3&#39;, &#39;label&#39;: &#39;cat&#39;}
+Tần suất: {&#39;cat&#39;: 2, &#39;dog&#39;: 1}
+ID theo thứ tự số: [&#39;1&#39;, &#39;2&#39;, &#39;3&#39;]</pre></section><section class="slide"><small>Buổi 0.2</small><h1>Điểm dễ nhầm</h1><ul><li>ID trùng có thể làm ghi đè hoặc merge nhân dòng.</li><li>Đảo thứ tự predictions và chứng minh kết quả ghép theo ID không đổi.</li></ul></section><section class="slide"><small>Buổi 0.2</small><h1>Bài trên lớp 1</h1><p>Đếm tần suất các chuỗi. Giữ nguyên hoa/thường: cat và Cat là hai khóa khác nhau.</p><pre>{
+  &quot;items&quot;: [
+    &quot;cat&quot;,
+    &quot;dog&quot;,
+    &quot;cat&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 0.2</small><h1>Bài trên lớp 2</h1><p>Sắp các records tăng dần theo id integer, giữ nguyên mọi trường.</p><pre>{
+  &quot;records&quot;: [
+    {
+      &quot;id&quot;: 10,
+      &quot;label&quot;: &quot;A&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;label&quot;: &quot;B&quot;
+    }
+  ]
+}</pre></section><section class="slide"><small>Buổi 0.2</small><h1>Bài tập về nhà 1</h1><p>Đếm tần suất các chuỗi. Giữ nguyên hoa/thường: cat và Cat là hai khóa khác nhau.</p><ul><li>Input: items: list chuỗi; có thể rỗng.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 0.2</small><h1>Bài tập về nhà 2</h1><p>Sắp các records tăng dần theo id integer, giữ nguyên mọi trường.</p><ul><li>Input: records: list dict, mỗi dict có id integer khác nhau.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 0.2</small><h1>Bài tập về nhà 3</h1><p>Ghép predictions vào IDs theo khóa, không theo thứ tự dòng.</p><ul><li>Input: ids: list integer khác nhau; predictions: list {id, label}, đủ đúng các IDs.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 0.2</small><h1>Tổng kết</h1><p>Đảo thứ tự predictions và chứng minh kết quả ghép theo ID không đổi.</p><ul><li>AIO chương 2–3; NT 3.8.</li><li>AIO 2.2: Character Counting, Word Counting, Getting Max Over Kernel; AIO 3.1 phần class; NT 9.3 yêu cầu ghi CSV.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

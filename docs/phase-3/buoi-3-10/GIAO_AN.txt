@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 3.10 — Fine-tuning đầy đủ và PEFT
+
+TRÌNH TỰ DẠY
+1. Hỏi: Có cần cập nhật tất cả weights của pretrained model không?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Full fine-tune cập nhật base; frozen probe chỉ cập nhật head.
+- LoRA học update low-rank; adapter phải lưu cùng đúng base revision.
+- Đếm trainable params, đo validation và inference cost khi so phương án.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Adapter nhỏ không đồng nghĩa mọi chi phí inference đều nhỏ hơn.
+
+CÂU HỎI CHỐT
+So base4× 4 và adapterrank2; kiểm base.weight.grad trong demo.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

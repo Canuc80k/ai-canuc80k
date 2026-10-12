@@ -1,0 +1,4 @@
+Median train: [20.0]
+Mean sau impute train: [20.0]
+Valid sau impute: [20.0, 100.0]
+Valid sau scale: [0.0, 9.798]

@@ -1,0 +1,158 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="399.6pt" height="211.428pt" viewBox="0 0 399.6 211.428" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 211.428 
+L 399.6 211.428 
+L 399.6 0 
+L 0 0 
+L 0 211.428 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 19.18656 107.62668 
+L 93.93624 107.62668 
+Q 97.73064 107.62668 97.73064 104.43888 
+L 97.73064 67.14162 
+Q 97.73064 63.95382 93.93624 63.95382 
+L 19.18656 63.95382 
+Q 15.39216 63.95382 15.39216 67.14162 
+L 15.39216 104.43888 
+Q 15.39216 107.62668 19.18656 107.62668 
+L 19.18656 107.62668 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: #3b6ea8; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 100.108254 85.63086 
+Q 103.799484 85.63086 105.925466 85.63086 
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 100.325466 82.83086 
+L 105.925466 85.63086 
+L 100.325466 88.43086 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 114.04656 107.62668 
+L 188.79624 107.62668 
+Q 192.59064 107.62668 192.59064 104.43888 
+L 192.59064 67.14162 
+Q 192.59064 63.95382 188.79624 63.95382 
+L 114.04656 63.95382 
+Q 110.25216 63.95382 110.25216 67.14162 
+L 110.25216 104.43888 
+Q 110.25216 107.62668 114.04656 107.62668 
+L 114.04656 107.62668 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: #c2603e; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 194.968254 85.63086 
+Q 198.659484 85.63086 200.785466 85.63086 
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 195.185466 82.83086 
+L 200.785466 85.63086 
+L 195.185466 88.43086 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 208.90656 107.62668 
+L 283.65624 107.62668 
+Q 287.45064 107.62668 287.45064 104.43888 
+L 287.45064 67.14162 
+Q 287.45064 63.95382 283.65624 63.95382 
+L 208.90656 63.95382 
+Q 205.11216 63.95382 205.11216 67.14162 
+L 205.11216 104.43888 
+Q 205.11216 107.62668 208.90656 107.62668 
+L 208.90656 107.62668 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: #b8892b; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 289.828254 85.63086 
+Q 293.519484 85.63086 295.645466 85.63086 
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 290.045466 82.83086 
+L 295.645466 85.63086 
+L 290.045466 88.43086 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 303.76656 107.62668 
+L 378.51624 107.62668 
+Q 382.31064 107.62668 382.31064 104.43888 
+L 382.31064 67.14162 
+Q 382.31064 63.95382 378.51624 63.95382 
+L 303.76656 63.95382 
+Q 299.97216 63.95382 299.97216 67.14162 
+L 299.97216 104.43888 
+Q 299.97216 107.62668 303.76656 107.62668 
+L 303.76656 107.62668 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: #3b6ea8; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 53.7156 146.753384 
+Q 53.7156 129.148043 53.7156 113.10795 
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 50.9156 118.70795 
+L 53.7156 113.10795 
+L 56.5156 118.70795 
+z
+" clip-path="url(#p2e2f2e60c2)" style="fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 340.95168 107.3079 
+L 340.95168 148.7493 
+L 53.7156 148.7493 
+L 53.7156 108.9018 
+" clip-path="url(#p2e2f2e60c2)" style="fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(47.710463 81.450375)">giữ</text>
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(29.311088 96.69825)">validation</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(123.505463 81.506625)">xem cùng</text>
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(129.572025 96.7545)">mẫu sai</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(237.556088 79.685203)">đổi</text>
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(219.6414 98.199047)">một phần</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(319.884525 79.629891)">chấm +</text>
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: currentColor" transform="translate(309.740775 98.143734)">ghi kết quả</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="199.8" y="184.77144" transform="rotate(-0 199.8 184.77144)">Giả thuyết → một thay đổi → bằng chứng trên cùng tập</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2e2f2e60c2">
+   <rect x="10.08" y="10.08" width="379.44" height="191.268"/>
+  </clipPath>
+ </defs>
+</svg>

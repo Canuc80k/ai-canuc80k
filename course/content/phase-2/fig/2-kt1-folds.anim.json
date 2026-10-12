@@ -1,0 +1,21 @@
+{
+ "w": 960,
+ "h": 439,
+ "n": 3,
+ "cols": 2,
+ "dur": 2200,
+ "hold": 1600,
+ "labels": [
+  "fold 1: 30 mẫu validation; đoạn đứng là sai số của từng mẫu",
+  "fold 2: 30 mẫu validation; đoạn đứng là sai số của từng mẫu",
+  "fold 3: 30 mẫu validation; đoạn đứng là sai số của từng mẫu; MAE trung bình ba fold: median 1.309, ridge 0.316"
+ ],
+ "key": [
+  0,
+  1,
+  2
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 1
+}

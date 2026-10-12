@@ -1,0 +1,51 @@
+BUỔI 3.3 — Perceptron, MLP và backpropagation
+
+HỌC SINH CẦN HIỂU
+- Neuron linear kết hợp features; activation tạo phi tuyến.
+- MLP nhiều lớp dùng phi tuyến để biểu diễn quan hệ như XOR.
+- Backprop tính gradient; optimizer cập nhật parameters.
+
+CÂU HỎI MỞ BÀI
+Tại sao ghép hai linear layers không activation vẫn tuyến tính?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Linear(in,out) params = in×out + out
+
+CẦN PHÂN BIỆT
+Training XOR thành công chỉ minh họa khả năng biểu diễn, không là score data thật.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính parameter count Linear(in, out), gồm bias nếu use_bias=true.
+Input:
+{
+  "in": 2,
+  "out": 3,
+  "use_bias": true
+}
+Output để đối chiếu sau khi làm:
+9
+
+Bài trên lớp 2: Với loss=(w*x+b-y)^2, trả grad_w và grad_b.
+Input:
+{
+  "w": 1,
+  "b": 0,
+  "x": 2,
+  "y": 0
+}
+Output để đối chiếu sau khi làm:
+{
+  "grad_w": 8,
+  "grad_b": 4
+}
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính parameter count Linear(in, out), gồm bias nếu use_bias=true.; xem BTVN_01.txt.
+- BTVN 2: Với loss=(w*x+b-y)^2, trả grad_w và grad_b.; xem BTVN_02.txt.
+- BTVN 3: MLP chữ số; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO chương 28; KHTN chương 8; PyTorch Autograd.
+AIO 28.2 Thực hành,28.3 trắc nghiệm; phần Build Model của PyTorch Learn the Basics.

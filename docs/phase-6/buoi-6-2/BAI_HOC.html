@@ -1,0 +1,49 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Audio classification — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/7.2?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 6.2: Audio classification</h1><p>Nhận dạng một từ lệnh khác việc chép lại cả câu thế nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Audio classification chọn label; ASR sinh chuỗi text.</li><li>CNN trên spectrogram hoặc pretrained encoder+head làhaihướng.</li><li>Splittheospeaker khi mục tiêu gặpngườimới; macroF1 theo đúng classes.</li></ul><p class="note">macroF1 = mean(F1 từngclass trongclass list)</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import f1_score
+# Feature là năng lượng dải thấp/cao của tones tổng hợp.
+X=np.array([[8,1],[9,2],[7,1],[1,8],[2,9],[1,7]],dtype=float)
+y=np.array([0,0,0,1,1,1])
+model=LogisticRegression(random_state=42).fit(X,y)
+test=np.array([[8,2],[2,8]])
+true=[0,1]; pred=model.predict(test)
+print(&quot;Predictions:&quot;,pred.tolist(),&quot;Macro F1:&quot;,f1_score(true,pred,average=&quot;macro&quot;))
+assert pred.tolist()==true
+# Tones không thay giọng nói thật: IOAI Speech dùng spectrogram có sẵn, không features này.
+</pre><h3>Kết quả</h3><pre>Predictions: [0, 1] Macro F1: 1.0
+</pre><p class="note">Tones fixture không phải lời nói hoặc bộgiọng tổng hợp IOAI.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả [TN, FP, FN, TP] theo positive class 1.</p><pre>{
+  &quot;y&quot;: [
+    1,
+    1,
+    0,
+    0
+  ],
+  &quot;pred&quot;: [
+    1,
+    0,
+    1,
+    0
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  1,
+  1,
+  1,
+  1
+]</pre></details><h3>Bài 2</h3><p>Macro F1 theo đúng class list cấp, tínhcảlớpvắng vớiF1=0.</p><pre>{
+  &quot;y&quot;: [
+    0,
+    0,
+    1,
+    1
+  ],
+  &quot;pred&quot;: [
+    0,
+    1,
+    1,
+    1
+  ],
+  &quot;c&quot;: [
+    0,
+    1
+  ]
+}</pre><details><summary>Đáp án</summary><pre>0.7333333333333334</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả [TN, FP, FN, TP] theo positive class 1.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Macro F1 theo đúng class list cấp, tínhcảlớpvắng vớiF1=0.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Audio classifier nhỏ</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>IOAI Synthetic Speech baseline.</p><p>ioai25speech: làm baseline từ notebook, dùng validation_set.zip và val_answer.csv để chấm.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-6/buoi-6-1/BAI_HOC.html">← Audio data và spectrograms</a><a href="../../phase-6/buoi-6-3/BAI_HOC.html">Pretrained audio encoders và ASR →</a></nav></body></html>

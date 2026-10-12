@@ -1,0 +1,85 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Embeddings, pooling, attention và Transformers — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/3.8?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 3.8: Embeddings, pooling, attention và Transformers</h1><p>Padding hoặc token tương lai có được tham gia attention không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Embeddings biến IDs thành vectors; pooling phải bỏ padding.</li><li>Q/K xác định weights; V là nội dung được tổng hợp; softmax theo keys.</li><li>Transformer thêm multi-head, FFN, residual, normalization và thông tin vị trí.</li></ul><p class="note">Attention(Q,K,V)=softmax(QKᵀ/sqrt(dk)+mask)V</p><h2>Code minh họa</h2><pre>import torch,math
+from torch import nn
+torch.manual_seed(42)
+torch.set_num_threads(1)
+# Hai tokens, dimension2. Giá trị bên phải là token sẽ bị mask.
+Q = torch.tensor([[1.,0.]])
+K = torch.tensor([[1.,0.],[0.,1.]])
+V = torch.tensor([[10.,0.],[0.,20.]])
+score = Q@K.T/math.sqrt(2)
+weights = torch.softmax(score,dim=-1)
+print(&quot;Weights:&quot;,weights.round(decimals=4).tolist())
+print(&quot;Output:&quot;,(weights@V).round(decimals=4).tolist())
+masked = score.masked_fill(torch.tensor([[False,True]]),float(&quot;-inf&quot;))
+print(&quot;Masked output:&quot;,(torch.softmax(masked,-1)@V).tolist())
+layer = nn.TransformerEncoderLayer(d_model=4,nhead=2,dim_feedforward=8,
+                                   dropout=0,batch_first=True)
+layer.eval(); tokens = torch.arange(12,dtype=torch.float32).reshape(1,3,4)
+with torch.no_grad(): print(&quot;Transformer shape:&quot;,tuple(layer(tokens).shape))
+assert (torch.softmax(masked,-1)@V).tolist()==[[10.,0.]]
+</pre><h3>Kết quả</h3><pre>Weights: [[0.6697999835014343, 0.3301999866962433]]
+Output: [[6.6975998878479, 6.604800224304199]]
+Masked output: [[10.0, 0.0]]
+Transformer shape: (1, 3, 4)
+</pre><p class="note">Padding mask và causal mask khác nhau; row bị mask hết có thể NaN.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.</p><pre>{
+  &quot;tokens&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  &quot;mask&quot;: [
+    1,
+    1,
+    0
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  0.5,
+  0.5
+]</pre></details><h3>Bài 2</h3><p>Scaled-dot attention QK^T/sqrt(dk), softmax theo keys; allow=false bịmask. Mỗi query có ít nhất 1 key được phép.</p><pre>{
+  &quot;q&quot;: [
+    [
+      1,
+      0
+    ]
+  ],
+  &quot;k&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  &quot;v&quot;: [
+    [
+      10,
+      0
+    ],
+    [
+      0,
+      20
+    ]
+  ],
+  &quot;allow&quot;: [
+    [
+      true,
+      false
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    10.0,
+    0.0
+  ]
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Scaled-dot attention QK^T/sqrt(dk), softmax theo keys; allow=false bịmask. Mỗi query có ít nhất 1 key được phép.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Transformer nhỏ có mask</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>KHTN chương 19–20; AIO 37.1–37.3.</p><p>AIO 37.1 các phần thực hành Transformer;37.4 trắc nghiệm, gồm text/image Transformer.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-7/BAI_HOC.html">← Dropout, weight decay, early stopping và normalization</a><a href="../../phase-3/buoi-3-9/BAI_HOC.html">Autoencoders →</a></nav></body></html>

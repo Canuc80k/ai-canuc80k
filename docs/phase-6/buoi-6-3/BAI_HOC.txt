@@ -1,0 +1,59 @@
+BUỔI 6.3 — Pretrained audio encoders và ASR
+
+HỌC SINH CẦN HIỂU
+- HuBERT tạo audio representation; Whisper là ASR model theo task/checkpoint.
+- WER dùng edit distance theo từ; CERtheoký tự; normalizer cần khóa.
+- Code chạy model thật cần audio/checkpoint được cấp, không suy transcript bằng fixture.
+
+CÂU HỎI MỞ BÀI
+ASR sai một từ ở câu dài và câu ngắn ảnh hưởng WER thế nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+WER=(substitutions+insertions+deletions)/n_reference_words
+
+CẦN PHÂN BIỆT
+WERcó thể>1; khôngcắt về 1, không tune normalizer trên test để tăng điểm.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Levenshtein theo tokens; insert/delete/substitute đều cost1.
+Input:
+{
+  "a": [
+    "go",
+    "to",
+    "school"
+  ],
+  "b": [
+    "go",
+    "school"
+  ]
+}
+Output để đối chiếu sau khi làm:
+1
+
+Bài trên lớp 2: WER=edit_distance(ref_tokens, hyp_tokens)/len(ref); refkhôngrỗng, WERcó thể>1. Tokenize đãcấp, khônglowerthêm.
+Input:
+{
+  "ref": [
+    "go",
+    "to",
+    "school"
+  ],
+  "hyp": [
+    "go",
+    "school"
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.3333333333333333
+
+BÀI VỀ NHÀ
+- BTVN 1: Levenshtein theo tokens; insert/delete/substitute đều cost1.; xem BTVN_01.txt.
+- BTVN 2: WER=edit_distance(ref_tokens, hyp_tokens)/len(ref); refkhôngrỗng, WERcó thể>1. Tokenize đãcấp, khônglowerthêm.; xem BTVN_02.txt.
+- BTVN 3: ASR với audio công khai; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+Hugging Face HuBERT; repo Whisper và notebook LibriSpeech.
+Chạy ví dụ audio/ASR trong trang HuBERT và notebook LibriSpeech của repo Whisper, dùng đúng dữ liệu mẫu được nguồn cung cấp.

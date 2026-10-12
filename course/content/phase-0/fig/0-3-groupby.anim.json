@@ -1,0 +1,32 @@
+{
+ "w": 960,
+ "h": 420,
+ "n": 6,
+ "cols": 2,
+ "dur": [
+  1600,
+  300,
+  300,
+  1100,
+  1800,
+  2200
+ ],
+ "hold": 1400,
+ "labels": [
+  "400 dòng của train.csv, mỗi chấm là một học sinh",
+  "split: tách các dòng theo cột `lop`",
+  "split: tách các dòng theo cột `lop`",
+  "split: tách các dòng theo cột `lop`",
+  "apply: mỗi nhóm lấy trung bình `diem_toan` (vạch đậm)",
+  "combine: `df.groupby(\"lop\")[\"diem_toan\"].mean()` thành một dòng mỗi lớp"
+ ],
+ "key": [
+  0,
+  3,
+  4,
+  5
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

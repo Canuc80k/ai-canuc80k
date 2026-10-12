@@ -1,0 +1,3 @@
+diffusion_demo.py: diffusers + local pipeline directory gồm model/scheduler config
+Trạng thái: code hoàn chỉnh, đã kiểm cú pháp; chưa chạy checkpoint lớn trong gói này. Script dùng local cache/file, không tự gọi API ngoài.
+

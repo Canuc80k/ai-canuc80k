@@ -1,0 +1,159 @@
+CẬP NHẬT BÀN GIAO 01/10/2026
+Bộ 55 bài thuộc 7 phase đã được soạn thành tài liệu từng buổi. Mở ../START_HERE.html để xem slide, code, hai bài trên lớp và ba BTVN của từng bài. Bài nguồn trong file này vẫn dùng để học thêm. Tạo contest trên LQDOJ là bước sau; chưa triển khai trong bàn giao này.
+
+GIÁO TRÌNH AI — BẢN SỬA THEO NỘI DUNG VÀ BÀI TẬP CÓ SẴN
+Ngày 01/10/2026.
+
+Chia 7 phase để sắp thứ tự học. Syllabus không quy định phải có 7 phase; đây là cách nhóm kiến thức, không phải 7 cấp thi hoặc chứng nhận trình độ. Số bài mỗi phase theo nội dung cần học, không ép bằng nhau.
+Không ấn định tổng số buổi, giờ, số bài tập hay điểm qua phase. Một bài học có thể dạy trong một hoặc nhiều buổi, tùy kiến thức đầu vào và thời gian thực hành.
+Mỗi bài có phần học và bài tập lấy từ tài liệu/bài gốc. Bài tập trong sách, bài làm lại tutorial và bài nộp judge được ghi rõ. Không gọi một tutorial thành competition mới.
+
+Ba file:
+  01_Giao_trinh_note.txt: cần học những gì và thứ tự.
+  02_Giao_trinh_tung_buoi.txt: nội dung dạy của từng bài, bài tập đi kèm; không lịch ép 100 buổi.
+  03_He_thong_bai_tap_AI.txt: chỉ dẫn mở đúng nguồn bài tập và đầu ra theo bài gốc.
+
+TÀI LIỆU LOCAL
+  Gốc: C:\Users\Admin\Desktop\Giáo trình dạy AI
+  NT = Tài liệu\ai_olympiad_260909_221030.pdf, tài liệu nền tảng 64 trang.
+  AIO = Tài liệu\AIO_Exercise_Book_v2025.pdf, sách bài tập có phần lời giải.
+  KHTN = Tài liệu\AI-CKHTN.pdf, ghi chép đội tuyển.
+  Syllabus = Tài liệu\Syllabus.pdf, IOAI 2026.
+  Bank = Ngân hàng đề\Ngan_hang_bai_tap_AI_V2.xlsx.
+  Các số như NT9.5, AIO37.2 là chương/mục của tài liệu, không số trang PDF. Các bài nâng cao có yêu cầu dữ liệu/model/GPU ghi trong nguồn; cần kiểm môi trường trước buổi thực hành, không coi mọi bài đều chạy được trên máy yếu.
+  Link slide đầu: https://docs.google.com/presentation/d/1gTYDtpGAEriMPos_6Eyfg1sXmYlNaERFBamptQn55uk/edit
+
+TỔNG HỢP KIẾN THỨC
+  [Phase 0] Python và công cụ xử lý dữ liệu
+  [Phase 1] Nền tảng học máy, toán cần dùng và đánh giá
+  [Phase 2] Machine Learning cổ điển
+  [Phase 3] Neural Networks và Deep Learning
+  [Phase 4] Computer Vision
+  [Phase 5] Natural Language Processing
+  [Phase 6] Audio và Multimodal
+
+[Phase 0] Python và công cụ xử lý dữ liệu
+  0.1. Python cơ bản
+  0.2. Cấu trúc dữ liệu và thao tác tệp
+  0.3. NumPy
+  0.4. Pandas
+  0.5. Matplotlib và Seaborn
+
+[Phase 1] Nền tảng học máy, toán cần dùng và đánh giá
+  1.1. Học máy và quy trình làm bài
+  1.2. Generalization, underfitting và overfitting
+  1.3. Chia dữ liệu và cross-validation
+  1.4. Data leakage và Pipeline
+  1.5. Đánh giá classification
+  1.6. Đánh giá regression
+  1.7. Đại số tuyến tính dùng trong AI
+  1.8. Xác suất và thống kê dùng trong AI
+  1.9. Đạo hàm và gradient descent
+
+[Phase 2] Machine Learning cổ điển
+  2.1. Linear Regression
+  2.2. Logistic Regression và Softmax
+  2.3. Regularization L1/L2
+  2.4. K-Nearest Neighbors
+  2.5. Decision Trees
+  2.6. Bagging, Random Forest và boosting
+  2.7. SVM
+  2.8. PCA, t-SNE và UMAP
+  2.9. K-Means và các phương pháp clustering
+  2.10. Feature engineering, tuning và phân tích lỗi
+
+[Phase 3] Neural Networks và Deep Learning
+  3.1. PyTorch tensors và autograd
+  3.2. Dataset và DataLoader
+  3.3. Perceptron, MLP và backpropagation
+  3.4. Activation, loss và output head
+  3.5. Training loop và inference
+  3.6. Optimizers, learning rate và initialization
+  3.7. Dropout, weight decay, early stopping và normalization
+  3.8. Embeddings, pooling, attention và Transformers
+  3.9. Autoencoders
+  3.10. Fine-tuning đầy đủ và PEFT
+
+[Phase 4] Computer Vision
+  4.1. Convolution và pooling
+  4.2. CNN và image classification
+  4.3. Vision encoders và transfer learning
+  4.4. Image augmentation
+  4.5. Object detection
+  4.6. Image segmentation và U-Net
+  4.7. Self-supervised vision
+  4.8. CLIP và image-text retrieval
+  4.9. GAN
+  4.10. Diffusion
+
+[Phase 5] Natural Language Processing
+  5.1. Text processing và baseline NLP
+  5.2. Word embeddings và sentence embeddings
+  5.3. BERT và pretrained text encoders
+  5.4. Sequence labeling và phân tách từ
+  5.5. Language modeling
+  5.6. Encoder-decoder và text generation
+  5.7. Pretrained LMs, prompting và VLM
+
+[Phase 6] Audio và Multimodal
+  6.1. Audio data và spectrograms
+  6.2. Audio classification
+  6.3. Pretrained audio encoders và ASR
+  6.4. Audio-language và multimodal
+
+THỨ TỰ HỌC
+  Phase0 → Phase1 → Phase2 → Phase3. Sau đó học CV, NLP và Audio theo mạch của từng phần.
+  Người đã biết Python/NumPy/Pandas không phải học lại Phase0; làm bài tập tương ứng để xác định phần còn thiếu.
+  Metric, split, leakage và tạo bài nộp quay lại trong mọi bài dữ liệu thật, không học một lần rồi bỏ.
+  Math học theo chỗ sử dụng; không cần học toàn bộ một giáo trình toán trước khi bắt đầu model.
+
+BUỔI ĐẦU CỦA THẦY
+  Giữ Generalization + Evaluation làm bài mở đầu cho học sinh đã có Python cơ bản.
+  Dạy underfit/overfit → chia dữ liệu → đánh giá mô hình, dùng notebook make_moons đang có trong slide.
+  Cross-validation/tuning và metrics ảnh/ranking học sâu khi gặp đúng loại bài; không nhồi tất cả vào một buổi.
+  Ví dụ Keras trong slide có thể dùng để đọc ý tưởng; phần thực hành thi theo môi trường được công bố, ưu tiên sklearn/PyTorch cho IOAI2026.
+
+LUYỆN THI SAU KHI HỌC CÁC PHẦN LIÊN QUAN
+  Làm câu hỏi trắc nghiệm/tự luận AIO và NT9.10.
+  Làm bài dữ liệu theo trình tự đọc đề → tải data → baseline → validation → cải tiến → tạo output đúng mẫu.
+  Luyện từ bài LQDOJ cơ bản tới IOAI có notebook: Iris/Wine → Titanic/California → Antique → Restroom/WordSeg/Chameleon → Speech/Radar/Weather.
+  Không đặt nhãn “đủ quốc gia/đủ IOAI” theo phase. Không tạo thêm mock, rubric hay bài dữ liệu tưởng tượng trong bản này.
+
+PHẦN KHÔNG TÁCH THÀNH PHASE MỚI
+  Feature engineering của time series/video/irregular data: học theo bài nguồn cần nó; không coi xử lý ảnh đơn là đã làm video temporal modeling.
+  RNN/LSTM đọc khi làm WordSeg/NLP nguồn; không cần đào sâu như một syllabus riêng.
+  Web apps, Streamlit, MCP/A2A, agents, robotics, RL và distributed training trong sách không tự trở thành nội dung bắt buộc của lộ trình thi này.
+
+TUTORIAL/NOTEBOOK ĐƯỢC DẪN
+  PyTorch Learn the Basics (Tensors, DataLoader, Autograd, Build Model, Optimization, Save/Load):
+    https://docs.pytorch.org/tutorials/beginner/basics/intro.html
+  Sklearn Common Pitfalls (pipeline/leakage):
+    https://scikit-learn.org/stable/common_pitfalls.html
+  Clustering comparison, có code/dữ liệu mẫu:
+    https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
+  t-SNE, có ví dụ và code:
+    https://scikit-learn.org/stable/auto_examples/manifold/plot_t_sne_perplexity.html
+  UMAP Basic Usage, ví dụ Iris; bản source đã đọc:
+    https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+    https://raw.githubusercontent.com/lmcinnes/umap/master/doc/basic_usage.rst
+  DINOv2, ví dụ lấy embeddings:
+    https://huggingface.co/docs/transformers/model_doc/dinov2
+  PyTorch Transfer Learning:
+    https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
+  TorchVision Detection, dữ liệu Penn-Fudan và code:
+    https://docs.pytorch.org/tutorials/intermediate/torchvision_tutorial.html
+  DCGAN tutorial:
+    https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+  HuBERT:
+    https://huggingface.co/docs/transformers/model_doc/hubert
+  Whisper LibriSpeech notebook:
+    https://github.com/openai/whisper/blob/main/notebooks/LibriSpeech.ipynb
+  Qwen2Audio, ví dụ Inference có audio mẫu:
+    https://huggingface.co/docs/transformers/model_doc/qwen2_audio
+  Voxtral, ví dụ Transcription/Audio Understanding:
+    https://huggingface.co/docs/transformers/model_doc/voxtral
+
+NGUỒN PHẠM VI THI
+  https://ioai-official.org/syllabus/
+  https://ioai-official.org/republic-of-kazakhstan/2026-contest-rules/
+  Dùng syllabus để biết nội dung; dùng rules/task cụ thể để biết package, model, API và output được phép. Không suy việc được dùng API trong thi từ việc syllabus có mục pretrained LMs/API.

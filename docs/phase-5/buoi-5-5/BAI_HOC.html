@@ -1,0 +1,34 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Language modeling — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/6.4?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 5.5: Language modeling</h1><p>Target next-token có cùng vị trí với input token không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Causal LM dự đoán token tiếp theo từ con text trước.</li><li>Loss cần shift targets vàcausalmask; tokenization là phần của đánh giá.</li><li>Perplexity=exp(meanNLL); không so trực tiếp khi tokenizer khác.</li></ul><p class="note">input=tokens[:-1], target=tokens[1:]</p><h2>Code minh họa</h2><pre>import numpy as np
+tokens=[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;]
+inputs=tokens[:-1]; targets=tokens[1:]
+print(&quot;Inputs:&quot;,inputs,&quot;Targets:&quot;,targets)
+# Xác suất đúng của hai next-token predictions được cấp trong fixture.
+true_token_prob=np.array([.5,.25])
+nll=-np.log(true_token_prob).mean()
+perplexity=np.exp(nll)
+print(&quot;Mean NLL:&quot;,round(nll,6),&quot;Perplexity:&quot;,round(perplexity,6))
+assert np.isclose(perplexity,np.sqrt(8))
+# Không so perplexity giữa các tokenizers khác nhau như cùng một metric.
+</pre><h3>Kết quả</h3><pre>Inputs: [&#x27;A&#x27;, &#x27;B&#x27;] Targets: [&#x27;B&#x27;, &#x27;C&#x27;]
+Mean NLL: 1.039721 Perplexity: 2.828427
+</pre><p class="note">Khôngcopy đúng token input thành target ởcùngvịtrí để tạo điểmảo.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả inputs=tokens[:-1], targets=tokens[1:].</p><pre>{
+  &quot;tokens&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;,
+    &quot;C&quot;
+  ]
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;inputs&quot;: [
+    &quot;A&quot;,
+    &quot;B&quot;
+  ],
+  &quot;targets&quot;: [
+    &quot;B&quot;,
+    &quot;C&quot;
+  ]
+}</pre></details><h3>Bài 2</h3><p>exp(mean(-log(p_true_token))); p∈(0,1].</p><pre>{
+  &quot;prob&quot;: [
+    0.5,
+    0.25
+  ]
+}</pre><details><summary>Đáp án</summary><pre>2.82842712474619</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả inputs=tokens[:-1], targets=tokens[1:].</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>exp(mean(-log(p_true_token))); p∈(0,1].</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Next-character model</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO56; AIO48 sinh thơ.</p><p>AIO56.2 câu hỏi trắc nghiệm; thực hành trong AIO48 để nối language modeling với text generation.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-5/buoi-5-4/BAI_HOC.html">← Sequence labeling và phân tách từ</a><a href="../../phase-5/buoi-5-6/BAI_HOC.html">Encoder-decoder và text generation →</a></nav></body></html>

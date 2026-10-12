@@ -1,0 +1,83 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Object detection</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 4.5</small><h1>Buổi 4.5: Object detection</h1><p>Hai boxes chồng lên nhau đã đủ coi là cùng detection?</p></section><section class="slide"><small>Buổi 4.5</small><h1>Ý tưởng chính</h1><p>IoU=intersection_area/union_area</p><ul><li>Detector trả nhiều boxes và scores; match ground truth theo scorer của đề.</li><li>IoU đo giao/hợp; NMS loại dự đoán lặp có overlap cao.</li><li>xyxy khác xywh; confidence threshold khác IoU threshold.</li></ul></section><section class="slide"><small>Buổi 4.5</small><h1>Ví dụ</h1><pre>{
+  &quot;a&quot;: [
+    0,
+    0,
+    2,
+    2
+  ],
+  &quot;b&quot;: [
+    1,
+    1,
+    3,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Đáp án ví dụ</h1><pre>0.142857</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Code minh họa (1)</h1><pre>def iou(a,b):
+    x1=max(a[0],b[0]); y1=max(a[1],b[1])
+    x2=min(a[2],b[2]); y2=min(a[3],b[3])
+    intersection=max(0,x2-x1)*max(0,y2-y1)
+    area_a=(a[2]-a[0])*(a[3]-a[1])
+    area_b=(b[2]-b[0])*(b[3]-b[1])
+    return intersection/(area_a+area_b-intersection)
+A=[0,0,2,2]; B=[1,1,3,3]
+print(&quot;IoU:&quot;,round(iou(A,B),6))
+boxes=[(0,.9,A),(1,.8,B),(2,.7,[5,5,7,7])]
+kept=[]
+for ident,score,box in sorted(boxes,key=lambda row:(-row[1],row[0])):
+    if all(iou(box,previous[2])&lt;=.1 for previous in kept):
+    kept.append((ident,score,box))
+print(&quot;NMS giữ IDs:&quot;,[row[0] for row in kept])</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Code minh họa (2)</h1><pre>assert [row[0] for row in kept]==[0,2]</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Kết quả</h1><pre>IoU: 0.142857
+NMS giữ IDs: [0, 2]</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Điểm dễ nhầm</h1><ul><li>Không dùng classification accuracy thay detection metric.</li><li>Tính IoU1/7 rồi đoán NMS giữboxnào vớithreshold0.1.</li></ul></section><section class="slide"><small>Buổi 4.5</small><h1>Bài trên lớp 1</h1><p>Tính IoU hai boxes với tọa độ xyxy liên tục; zero-union→1.</p><pre>{
+  &quot;a&quot;: [
+    0,
+    0,
+    2,
+    2
+  ],
+  &quot;b&quot;: [
+    1,
+    1,
+    3,
+    3
+  ]
+}</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Bài trên lớp 2</h1><p>NMS: score giảm, hòa thì index tăng; suppress khiIoU&gt;threshold, không suppress khi bằng.</p><pre>{
+  &quot;boxes&quot;: [
+    [
+      0,
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      3,
+      3
+    ],
+    [
+      5,
+      5,
+      7,
+      7
+    ]
+  ],
+  &quot;scores&quot;: [
+    0.9,
+    0.8,
+    0.7
+  ],
+  &quot;threshold&quot;: 0.1
+}</pre></section><section class="slide"><small>Buổi 4.5</small><h1>Bài tập về nhà 1</h1><p>Tính IoU hai boxes với tọa độ xyxy liên tục; zero-union→1.</p><ul><li>Input: a/b: xyxy withx1&lt;=x2, y1&lt;=y2.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 4.5</small><h1>Bài tập về nhà 2</h1><p>NMS: score giảm, hòa thì index tăng; suppress khiIoU&gt;threshold, không suppress khi bằng.</p><ul><li>Input: boxes/scores: cùng chiều dài; threshold[0,1].</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 4.5</small><h1>Bài tập về nhà 3</h1><p>Một chữ số, một bounding box</p><ul><li>Data: boxes</li><li>Metric: Mean IoU với tọa độ xyxy liên tục; coords0..24, x1&lt;=x2, y1&lt;=y2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 4.5</small><h1>Tổng kết</h1><p>Tính IoU1/7 rồi đoán NMS giữboxnào vớithreshold0.1.</p><ul><li>AIO41–42; PyTorch TorchVision Object Detection Finetuning tutorial.</li><li>AIO41.2 các bài classification+bbox,41.3 trắc nghiệm; tutorial Penn-Fudan có data và code tải sẵn.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

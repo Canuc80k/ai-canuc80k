@@ -1,0 +1,72 @@
+BUỔI 3.7 — Dropout, weight decay, early stopping và normalization
+
+HỌC SINH CẦN HIỂU
+- Dropout ngẫu nhiên ở train; eval dùng toàn bộ tín hiệu theo quy ước layer.
+- Early stopping chọn best checkpoint bằng validation, không last epoch.
+- BatchNorm dùng statistics train/eval khác nhau; normalization cần đúng axes.
+
+CÂU HỎI MỞ BÀI
+Tại sao dropout cần tắt khi predict?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+best checkpoint = validation loss thấp nhất theo rule đã chốt
+
+CẦN PHÂN BIỆT
+Không cập nhật BatchNorm từ test và không dùng test để early-stop.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Theo losses, patience, min_delta; improvement strict loss<best-min_delta; best/stop zero-based.
+Input:
+{
+  "losses": [
+    0.8,
+    0.6,
+    0.65,
+    0.7
+  ],
+  "patience": 2,
+  "min_delta": 0
+}
+Output để đối chiếu sau khi làm:
+{
+  "best": 1,
+  "stop": 3
+}
+
+Bài trên lớp 2: Layer normalization từng row với population variance và epsilon; gamma=1, beta=0.
+Input:
+{
+  "rows": [
+    [
+      1,
+      3
+    ],
+    [
+      5,
+      5
+    ]
+  ],
+  "eps": 1e-05
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    -0.9999950000374997,
+    0.9999950000374997
+  ],
+  [
+    0.0,
+    0.0
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Theo losses, patience, min_delta; improvement strict loss<best-min_delta; best/stop zero-based.; xem BTVN_01.txt.
+- BTVN 2: Layer normalization từng row với population variance và epsilon; gamma=1, beta=0.; xem BTVN_02.txt.
+- BTVN 3: Regularization và best checkpoint; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+KHTN chương 9; AIO chương 31–32.
+AIO 31.2 phần liên quan và32.2 chương trình gradient vanishing;32.3 trắc nghiệm; đọc/check checkpoint trong tutorial PyTorch.

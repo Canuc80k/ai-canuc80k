@@ -1,0 +1,4 @@
+Base params: 16
+Adapter params: 16
+Base grad: None
+B có gradient: True

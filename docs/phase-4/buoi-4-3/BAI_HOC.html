@@ -1,0 +1,38 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vision encoders và transfer learning — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/5.3?part=1">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 4.3: Vision encoders và transfer learning</h1><p>Freeze một encoder chưa pretrained có phải transfer learning tốt?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Pretraining tạo weights đã học; architecture weights=None chưa có tri thức đó.</li><li>Freeze giữ base; thay head/fine-tune khi dữ liệu và budget cho phép.</li><li>ViT chia patch tokens, cần đúng preprocess/position theo checkpoint.</li></ul><p class="note">Patch tokens=(H/P)×(W/P)</p><h2>Code minh họa</h2><pre>import torch
+from torch import nn
+from torchvision.models import resnet18
+torch.manual_seed(42)
+torch.set_num_threads(1)
+# weights=None minh họa architecture và freezing, KHÔNG phải pretrained model.
+model=resnet18(weights=None)
+for p in model.parameters(): p.requires_grad=False
+model.fc=nn.Linear(model.fc.in_features,3)
+model.eval()
+X=torch.randn(2,3,64,64)
+with torch.no_grad(): output=model(X)
+print(&quot;Output shape:&quot;,tuple(output.shape))
+print(&quot;Params cần train:&quot;,sum(p.numel() for p in model.parameters() if p.requires_grad))
+print(&quot;Ví dụ này không đo chất lượng transfer learning.&quot;)
+assert tuple(output.shape)==(2,3)
+# Bài thực hành thật: dùng checkpoint được cấp trong nguồn và transforms đúng weights.
+</pre><h3>Kết quả</h3><pre>Output shape: (2, 3)
+Params cần train: 1539
+Ví dụ này không đo chất lượng transfer learning.
+</pre><p class="note">Không gọi demo architecture randomly initialized là kết quả pretrained.</p><h3>Code bổ sung: <a href="resnet_demo.py">resnet_demo.py</a></h3><p>torchvision + checkpoint ResNet18 được cấp. Chạy khi có checkpoint/thư viện đã cấp; không đồng nhất với fixture nhỏ ở trên.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Tổng số parameters trainable của các layers được đánh trainable=true.</p><pre>{
+  &quot;layers&quot;: [
+    {
+      &quot;name&quot;: &quot;base&quot;,
+      &quot;count&quot;: 16,
+      &quot;trainable&quot;: false
+    },
+    {
+      &quot;name&quot;: &quot;head&quot;,
+      &quot;count&quot;: 9,
+      &quot;trainable&quot;: true
+    }
+  ]
+}</pre><details><summary>Đáp án</summary><pre>9</pre></details><h3>Bài 2</h3><p>ẢnhHxW chia patch p x p, H/Wchiahết p; trả số tokens chưaCLS.</p><pre>{
+  &quot;h&quot;: 32,
+  &quot;w&quot;: 32,
+  &quot;p&quot;: 8
+}</pre><details><summary>Đáp án</summary><pre>16</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Tổng số parameters trainable của các layers được đánh trainable=true.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>ẢnhHxW chia patch p x p, H/Wchiahết p; trả số tokens chưaCLS.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Frozen encoder và head</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO 35,37.3,40; PyTorch Transfer Learning tutorial.</p><p>AIO 40.2 Bài Tập và Gợi Ý;37.3 thực hành Vision Transformer.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-4/buoi-4-2/BAI_HOC.html">← CNN và image classification</a><a href="../../phase-4/buoi-4-4/BAI_HOC.html">Image augmentation →</a></nav></body></html>

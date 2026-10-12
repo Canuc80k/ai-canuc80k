@@ -1,0 +1,1316 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="479.194375pt" height="249.625pt" viewBox="0 0 479.194375 249.625" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-3-linfail-figure_1">
+  <g id="fig-2-3-linfail-patch_1">
+   <path d="M 0 249.625 
+L 479.194375 249.625 
+L 479.194375 0 
+L 0 0 
+L 0 249.625 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-3-linfail-axes_1">
+   <g id="fig-2-3-linfail-patch_2">
+    <path d="M 45.921875 208.88 
+L 474.154375 208.88 
+L 474.154375 5.04 
+L 45.921875 5.04 
+L 45.921875 208.88 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-3-linfail-matplotlib.axis_1">
+    <g id="fig-2-3-linfail-xtick_1">
+     <g id="fig-2-3-linfail-line2d_1">
+      <defs>
+       <path id="fig-2-3-linfail-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m04e37d9cc8" x="54.157115" y="208.88" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="54.157115" y="223.0525" transform="rotate(-0 54.157115 223.0525)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-xtick_2">
+     <g id="fig-2-3-linfail-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m04e37d9cc8" x="136.509519" y="208.88" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="136.509519" y="223.0525" transform="rotate(-0 136.509519 223.0525)">5</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-xtick_3">
+     <g id="fig-2-3-linfail-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m04e37d9cc8" x="218.861923" y="208.88" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="218.861923" y="223.0525" transform="rotate(-0 218.861923 223.0525)">10</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-xtick_4">
+     <g id="fig-2-3-linfail-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m04e37d9cc8" x="301.214327" y="208.88" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="301.214327" y="223.0525" transform="rotate(-0 301.214327 223.0525)">15</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-xtick_5">
+     <g id="fig-2-3-linfail-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m04e37d9cc8" x="383.566731" y="208.88" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.566731" y="223.0525" transform="rotate(-0 383.566731 223.0525)">20</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-xtick_6">
+     <g id="fig-2-3-linfail-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m04e37d9cc8" x="465.919135" y="208.88" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="465.919135" y="223.0525" transform="rotate(-0 465.919135 223.0525)">25</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="260.038125" y="241.78" transform="rotate(-0 260.038125 241.78)">số link</text>
+    </g>
+   </g>
+   <g id="fig-2-3-linfail-matplotlib.axis_2">
+    <g id="fig-2-3-linfail-ytick_1">
+     <g id="fig-2-3-linfail-line2d_7">
+      <defs>
+       <path id="fig-2-3-linfail-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m9fce3a8e10" x="45.921875" y="181.083636" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.921875" y="184.669886" transform="rotate(-0 38.921875 184.669886)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-ytick_2">
+     <g id="fig-2-3-linfail-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m9fce3a8e10" x="45.921875" y="134.756364" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.921875" y="138.342614" transform="rotate(-0 38.921875 138.342614)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-ytick_3">
+     <g id="fig-2-3-linfail-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-3-linfail-m9fce3a8e10" x="45.921875" y="88.429091" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-3-linfail-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.921875" y="92.015341" transform="rotate(-0 38.921875 92.015341)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-3-linfail-text_11">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.807344" y="106.96" transform="rotate(-90 13.807344 106.96)">nhãn / dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-2-3-linfail-PathCollection_1">
+    <defs>
+     <path id="fig-2-3-linfail-C0_0_68227683be" d="M 0 1.936492 
+C 0.513564 1.936492 1.006162 1.732451 1.369306 1.369306 
+C 1.732451 1.006162 1.936492 0.513564 1.936492 -0 
+C 1.936492 -0.513564 1.732451 -1.006162 1.369306 -1.369306 
+C 1.006162 -1.732451 0.513564 -1.936492 0 -1.936492 
+C -0.513564 -1.936492 -1.006162 -1.732451 -1.369306 -1.369306 
+C -1.732451 -1.006162 -1.936492 -0.513564 -1.936492 0 
+C -1.936492 0.513564 -1.732451 1.006162 -1.369306 1.369306 
+C -1.006162 1.732451 -0.513564 1.936492 0 1.936492 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.580229" y="184.922785" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.856658" y="183.522207" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.586718" y="178.292192" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.56309" y="180.322368" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.03357" y="184.844219" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.297167" y="181.703246" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.053605" y="181.277736" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.416798" y="91.581765" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.786676" y="178.910172" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.659655" y="184.663141" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="103.0311" y="89.436911" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.710312" y="88.273986" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.284819" y="89.071854" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.526961" y="87.624863" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.273268" y="86.225416" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.352559" y="176.856113" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.031784" y="90.428565" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.302551" y="87.052734" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.067608" y="179.265606" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.603399" y="183.004173" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.164387" y="185.702557" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.967032" y="176.696812" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.101948" y="182.951541" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.708474" y="182.807141" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.974539" y="84.79971" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.048399" y="180.294563" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.485833" y="181.349465" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.507417" y="178.551601" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.24793" y="185.435194" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.591202" y="86.511465" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.006217" y="182.248824" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.017383" y="92.220026" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.361612" y="179.59653" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.230002" y="177.085928" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="168.00367" y="91.142098" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.79991" y="179.878292" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.100772" y="182.953747" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.822151" y="178.843651" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.725345" y="179.025178" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.708209" y="91.03532" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.198576" y="178.027085" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.34754" y="86.968372" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.530832" y="179.389921" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.679617" y="178.117989" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.745145" y="181.745441" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.905897" y="178.686613" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.497721" y="177.576845" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.074044" y="92.113778" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.355852" y="177.842874" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="119.514918" y="89.411902" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="136.409135" y="88.617329" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.409603" y="184.360507" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.137569" y="179.245126" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.599732" y="183.011049" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.461448" y="177.644863" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.929131" y="90.510349" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.344449" y="180.510941" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.602264" y="89.358822" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.715017" y="180.037479" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.128647" y="183.894412" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.518332" y="184.045918" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.31785" y="178.796363" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.344349" y="178.746672" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.369986" y="87.80851" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.649173" y="84.527596" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.644269" y="183.809764" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.302411" y="177.832378" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.403457" y="91.496074" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.922055" y="176.781151" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.709261" y="87.283022" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.155724" y="180.093309" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="138.834618" y="84.06915" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.457308" y="85.769602" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.530601" y="85.742874" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.365271" y="92.560615" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.452202" y="182.294758" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="117.987944" y="184.929775" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="134.995195" y="91.268697" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.213772" y="183.734789" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.929217" y="177.760656" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.312858" y="184.541921" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.152866" y="182.966768" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.121771" y="181.149912" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.765773" y="85.191181" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.396852" y="176.773056" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.185589" y="179.15508" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.212883" y="183.736454" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.320343" y="180.666851" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="137.527193" y="86.520787" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.413383" y="92.581103" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="137.398353" y="86.762382" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.447238" y="89.64952" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.070818" y="180.252522" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.465285" y="179.512833" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.874722" y="179.516593" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.211969" y="180.87007" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.898062" y="180.576469" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.606591" y="91.225871" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.603816" y="181.128227" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.30621" y="184.554388" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.002945" y="181.262024" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.21813" y="180.747811" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.981988" y="178.543931" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.102179" y="182.06888" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="84.724353" y="185.534757" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.176155" y="88.171975" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.641588" y="91.160246" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.290165" y="178.848276" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.548114" y="89.460362" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.566516" y="182.191107" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="56.18029" y="177.289854" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.098748" y="182.075314" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.351231" y="182.484095" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.87664" y="182.491803" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="103.473518" y="181.261852" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.088475" y="184.85197" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.329063" y="180.6505" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.70993" y="177.178919" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.938503" y="180.500635" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.832792" y="178.823697" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.307463" y="176.940675" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.318038" y="85.259236" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.303747" y="178.822807" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.704503" y="178.182032" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.150411" y="178.117403" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.410865" y="183.365206" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.538473" y="181.250757" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="152.202841" y="89.886392" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.450286" y="183.291286" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.451624" y="87.766133" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.198225" y="182.771006" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.213895" y="179.98423" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.505309" y="87.665464" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.672874" y="184.74906" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.813554" y="181.617163" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.083353" y="182.104181" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.648696" y="179.168908" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.533463" y="184.899773" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.932832" y="184.150889" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.689842" y="180.966915" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.15618" y="181.967619" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.85604" y="86.897079" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.331236" y="182.632295" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.601991" y="91.234497" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="122.172849" y="84.427847" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.773594" y="90.802006" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="134.765613" y="91.699201" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.069541" y="183.123017" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="102.776613" y="182.568663" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.269355" y="183.630562" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.33656" y="180.747148" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.25703" y="177.035246" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.309221" y="184.548742" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.678893" y="89.215129" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.399448" y="86.871036" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.939971" y="84.864532" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.567676" y="176.452734" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.396274" y="184.385502" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="103.752851" y="180.738056" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.981644" y="177.55164" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="117.830494" y="92.570474" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="136.945788" y="87.611015" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.427787" y="184.104996" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.891946" y="178.602067" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.789994" y="177.028786" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.287264" y="180.728879" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.14229" y="185.633285" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.004013" y="92.46651" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.211067" y="181.864696" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.343675" y="177.865707" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.797404" y="183.52261" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.93381" y="179.5165" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.159709" y="181.961002" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.467194" y="183.25958" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.576003" y="179.194511" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.150646" y="90.205679" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.524061" y="182.270718" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.409013" y="178.625416" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.603878" y="181.128111" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.559998" y="178.453002" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.708139" y="180.932605" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.417948" y="184.234153" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.81988" y="181.605302" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.939963" y="177.629799" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.418845" y="87.827598" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="56.453836" y="176.776909" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.162699" y="185.705723" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.838824" y="182.562714" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.486531" y="178.590764" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.547395" y="179.358863" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.399381" y="87.864096" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.377636" y="179.566483" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.487596" y="177.595833" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="55.06407" y="179.382949" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="103.801921" y="87.991497" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.406743" y="180.504838" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.979208" y="86.887533" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="135.639444" y="90.060624" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.994319" y="179.513742" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.725388" y="87.363487" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.981284" y="85.779997" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.059405" y="181.266859" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.290478" y="185.466116" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.280512" y="180.741541" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.394986" y="177.769492" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.260412" y="179.786297" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.806995" y="179.754299" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.559239" y="182.094045" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.448414" y="182.412567" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="104.650208" y="179.055364" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.541336" y="184.995716" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.849668" y="85.033864" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.486899" y="177.597139" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.853562" y="84.144334" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.238869" y="91.804703" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.25664" y="184.647339" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.574515" y="177.432845" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.609523" y="181.999754" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.492916" y="183.211348" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.575121" y="182.174971" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.886209" y="86.951215" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.484507" y="184.220052" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.09369" y="181.202569" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.888911" y="86.946148" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.188944" y="86.383536" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="84.688096" y="92.9482" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.16378" y="178.20304" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.302368" y="181.693492" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="136.192293" y="181.678487" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.347172" y="87.851289" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.541214" y="90.466235" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.538444" y="177.500483" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="135.087139" y="91.096287" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.309149" y="88.033296" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.987342" y="184.159381" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.671824" y="87.35322" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="56.142994" y="177.359789" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.518259" y="84.883788" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.822498" y="184.468491" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="120.656033" y="87.272125" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="154.919658" y="84.791915" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="135.028537" y="91.206176" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.676801" y="89.219052" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.680827" y="179.108657" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.274576" y="178.877508" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="53.915878" y="181.535996" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.84205" y="179.799272" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.462249" y="86.863981" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="119.313297" y="89.789975" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.379014" y="179.674606" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.010152" y="180.366282" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.602909" y="179.254766" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.155617" y="180.97574" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.289859" y="182.599177" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.773949" y="181.69143" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.656" y="84.514795" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.554243" y="91.324033" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.830771" y="184.342271" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="84.687554" y="92.949216" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.367602" y="177.82084" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.983039" y="176.556089" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="118.736884" y="183.525389" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.471853" y="183.250844" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.13721" y="183.878355" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.652181" y="180.155308" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.554015" y="181.221614" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.68209" y="178.113353" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="52.722723" y="183.773358" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="154.847435" y="177.581889" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="86.919956" y="88.763097" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.14881" y="85.576565" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.061182" y="85.630177" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="105.598134" y="177.277849" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.151252" y="181.09463" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.698685" y="180.068105" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="87.399639" y="87.863613" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="102.038299" y="91.298577" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.635115" y="181.069537" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="89.206064" y="84.47627" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.648022" y="177.295006" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="101.204243" y="185.517114" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.434761" y="179.57007" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="69.77165" y="182.688676" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.299198" y="91.802284" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.316497" y="184.42439" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.555524" y="178.350685" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.896401" y="176.829255" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.727608" y="180.896097" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="70.052054" y="182.162873" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="136.558372" y="88.337484" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="72.254679" y="178.03259" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.258233" y="178.797446" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="68.473847" y="185.122269" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="85.677647" y="183.747175" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="88.914959" y="85.022139" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="54.122922" y="181.147754" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.406952" y="179.622216" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.410317" y="85.857719" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="71.302544" y="179.817998" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C0_0_68227683be" x="121.194747" y="178.916493" style="fill: currentColor; fill-opacity: 0.32"/>
+    </g>
+   </g>
+   <g id="fig-2-3-linfail-PathCollection_2">
+    <defs>
+     <path id="fig-2-3-linfail-C1_0_799153d2e4" d="M 0 2.44949 
+C 0.649612 2.44949 1.272706 2.191396 1.732051 1.732051 
+C 2.191396 1.272706 2.44949 0.649612 2.44949 -0 
+C 2.44949 -0.649612 2.191396 -1.272706 1.732051 -1.732051 
+C 1.272706 -2.191396 0.649612 -2.44949 0 -2.44949 
+C -0.649612 -2.44949 -1.272706 -2.191396 -1.732051 -1.732051 
+C -2.191396 -1.272706 -2.44949 -0.649612 -2.44949 0 
+C -2.44949 0.649612 -2.191396 1.272706 -1.732051 1.732051 
+C -1.272706 2.191396 -0.649612 2.44949 0 2.44949 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="301.214327" y="88.006195" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="301.214327" y="90.936994" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="317.684808" y="91.328304" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="317.684808" y="83.856231" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="334.155288" y="92.964464" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="334.155288" y="86.660203" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="350.625769" y="84.902156" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="350.625769" y="90.917716" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="367.09625" y="92.612071" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="367.09625" y="89.362615" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="383.566731" y="90.004601" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="383.566731" y="88.784983" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="400.037212" y="89.101616" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="400.037212" y="84.333534" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="416.507692" y="91.956209" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="416.507692" y="84.315001" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="432.978173" y="92.637964" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="432.978173" y="84.368613" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="449.448654" y="89.976415" style="fill: var(--accent, #c2603e)"/>
+    </g>
+    <g clip-path="url(#fig-2-3-linfail-p30d9543dfb)">
+     <use xlink:href="#fig-2-3-linfail-C1_0_799153d2e4" x="449.448654" y="86.325032" style="fill: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-2-3-linfail-line2d_10">
+    <path d="M 54.157115 180.958804 
+L 58.316328 177.15894 
+L 62.47554 173.359076 
+L 66.634752 169.559211 
+L 70.793965 165.759347 
+L 74.953177 161.959483 
+L 79.112389 158.159619 
+L 83.271602 154.359755 
+L 87.430814 150.559891 
+L 91.590026 146.760027 
+L 95.749239 142.960163 
+L 99.908451 139.160299 
+L 104.067663 135.360435 
+L 108.226875 131.560571 
+L 112.386088 127.760707 
+L 116.5453 123.960843 
+L 120.704512 120.160979 
+L 124.863725 116.361115 
+L 129.022937 112.561251 
+L 133.182149 108.761387 
+L 137.341362 104.961523 
+L 141.500574 101.161659 
+L 145.659786 97.361795 
+L 149.818999 93.561931 
+L 153.978211 89.762066 
+L 158.137423 85.962202 
+L 162.296636 82.162338 
+L 166.455848 78.362474 
+L 170.61506 74.56261 
+L 174.774273 70.762746 
+L 178.933485 66.962882 
+L 183.092697 63.163018 
+L 187.251909 59.363154 
+L 191.411122 55.56329 
+L 195.570334 51.763426 
+L 199.729546 47.963562 
+L 203.888759 44.163698 
+L 208.047971 40.363834 
+L 212.207183 36.56397 
+L 216.366396 32.764106 
+L 220.525608 28.964242 
+L 224.68482 25.164378 
+L 228.844033 21.364514 
+L 233.003245 17.56465 
+L 237.162457 13.764786 
+L 241.32167 9.964921 
+L 245.480882 6.165057 
+L 249.640094 2.365193 
+L 253.32353 -1 
+" clip-path="url(#fig-2-3-linfail-p30d9543dfb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-linfail-line2d_11">
+    <path d="M 104.728861 204.247273 
+L 104.728861 134.756364 
+" clip-path="url(#fig-2-3-linfail-p30d9543dfb)" style="fill: none; stroke-dasharray: 1.1,1.815; stroke-dashoffset: 0; stroke: var(--t-n, #3b6ea8); stroke-width: 1.1"/>
+   </g>
+   <g id="fig-2-3-linfail-line2d_12">
+    <path d="M 54.157115 162.365499 
+L 58.316328 161.20412 
+L 62.47554 160.042741 
+L 66.634752 158.881361 
+L 70.793965 157.719982 
+L 74.953177 156.558603 
+L 79.112389 155.397223 
+L 83.271602 154.235844 
+L 87.430814 153.074465 
+L 91.590026 151.913085 
+L 95.749239 150.751706 
+L 99.908451 149.590327 
+L 104.067663 148.428948 
+L 108.226875 147.267568 
+L 112.386088 146.106189 
+L 116.5453 144.94481 
+L 120.704512 143.78343 
+L 124.863725 142.622051 
+L 129.022937 141.460672 
+L 133.182149 140.299292 
+L 137.341362 139.137913 
+L 141.500574 137.976534 
+L 145.659786 136.815154 
+L 149.818999 135.653775 
+L 153.978211 134.492396 
+L 158.137423 133.331016 
+L 162.296636 132.169637 
+L 166.455848 131.008258 
+L 170.61506 129.846878 
+L 174.774273 128.685499 
+L 178.933485 127.52412 
+L 183.092697 126.36274 
+L 187.251909 125.201361 
+L 191.411122 124.039982 
+L 195.570334 122.878603 
+L 199.729546 121.717223 
+L 203.888759 120.555844 
+L 208.047971 119.394465 
+L 212.207183 118.233085 
+L 216.366396 117.071706 
+L 220.525608 115.910327 
+L 224.68482 114.748947 
+L 228.844033 113.587568 
+L 233.003245 112.426189 
+L 237.162457 111.264809 
+L 241.32167 110.10343 
+L 245.480882 108.942051 
+L 249.640094 107.780671 
+L 253.799307 106.619292 
+L 257.958519 105.457913 
+L 262.117731 104.296533 
+L 266.276943 103.135154 
+L 270.436156 101.973775 
+L 274.595368 100.812396 
+L 278.75458 99.651016 
+L 282.913793 98.489637 
+L 287.073005 97.328258 
+L 291.232217 96.166878 
+L 295.39143 95.005499 
+L 299.550642 93.84412 
+L 303.709854 92.68274 
+L 307.869067 91.521361 
+L 312.028279 90.359982 
+L 316.187491 89.198602 
+L 320.346704 88.037223 
+L 324.505916 86.875844 
+L 328.665128 85.714464 
+L 332.824341 84.553085 
+L 336.983553 83.391706 
+L 341.142765 82.230326 
+L 345.301977 81.068947 
+L 349.46119 79.907568 
+L 353.620402 78.746188 
+L 357.779614 77.584809 
+L 361.938827 76.42343 
+L 366.098039 75.262051 
+L 370.257251 74.100671 
+L 374.416464 72.939292 
+L 378.575676 71.777913 
+L 382.734888 70.616533 
+L 386.894101 69.455154 
+L 391.053313 68.293775 
+L 395.212525 67.132395 
+L 399.371738 65.971016 
+L 403.53095 64.809637 
+L 407.690162 63.648257 
+L 411.849375 62.486878 
+L 416.008587 61.325499 
+L 420.167799 60.164119 
+L 424.327011 59.00274 
+L 428.486224 57.841361 
+L 432.645436 56.679981 
+L 436.804648 55.518602 
+L 440.963861 54.357223 
+L 445.123073 53.195844 
+L 449.282285 52.034464 
+L 453.441498 50.873085 
+L 457.60071 49.711706 
+L 461.759922 48.550326 
+L 465.919135 47.388947 
+" clip-path="url(#fig-2-3-linfail-p30d9543dfb)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: var(--accent, #c2603e); stroke-width: 2"/>
+   </g>
+   <g id="fig-2-3-linfail-line2d_13">
+    <path d="M 153.032871 204.247273 
+L 153.032871 134.756364 
+" clip-path="url(#fig-2-3-linfail-p30d9543dfb)" style="fill: none; stroke-dasharray: 1.1,1.815; stroke-dashoffset: 0; stroke: var(--accent, #c2603e); stroke-width: 1.1"/>
+   </g>
+   <g id="fig-2-3-linfail-line2d_14">
+    <path d="M 45.921875 134.756364 
+L 474.154375 134.756364 
+" clip-path="url(#fig-2-3-linfail-p30d9543dfb)" style="fill: none; stroke: currentColor; stroke-opacity: 0.4; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-linfail-patch_3">
+    <path d="M 45.921875 208.88 
+L 45.921875 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-linfail-patch_4">
+    <path d="M 45.921875 208.88 
+L 474.154375 208.88 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-3-linfail-text_12">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor; opacity: 0.7" x="462.625038" y="128.372682" transform="rotate(-0 462.625038 128.372682)">mức 0.5</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-3-linfail-p30d9543dfb">
+   <rect x="45.921875" y="5.04" width="428.2325" height="203.84"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,266 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="465.525658pt" height="285.213571pt" viewBox="0 0 465.525658 285.213571" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-4-5-contrastive-figure_1">
+  <g id="fig-4-5-contrastive-patch_1">
+   <path d="M 0 285.213571 
+L 465.525658 285.213571 
+L 465.525658 0 
+L 0 0 
+L 0 285.213571 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-4-5-contrastive-axes_1">
+   <g id="fig-4-5-contrastive-patch_2">
+    <path d="M 55.947266 244.468571 
+L 460.485658 244.468571 
+L 460.485658 5.04 
+L 55.947266 5.04 
+L 55.947266 244.468571 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-4-5-contrastive-matplotlib.axis_1">
+    <g id="fig-4-5-contrastive-xtick_1">
+     <g id="fig-4-5-contrastive-line2d_1">
+      <defs>
+       <path id="fig-4-5-contrastive-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-4-5-contrastive-m04e37d9cc8" x="133.358933" y="244.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-5-contrastive-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="133.358933" y="258.641071" transform="rotate(-0 133.358933 258.641071)">mô tả 1</text>
+     </g>
+    </g>
+    <g id="fig-4-5-contrastive-xtick_2">
+     <g id="fig-4-5-contrastive-line2d_2">
+      <g>
+       <use xlink:href="#fig-4-5-contrastive-m04e37d9cc8" x="258.216462" y="244.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-5-contrastive-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="258.216462" y="258.641071" transform="rotate(-0 258.216462 258.641071)">mô tả 2</text>
+     </g>
+    </g>
+    <g id="fig-4-5-contrastive-xtick_3">
+     <g id="fig-4-5-contrastive-line2d_3">
+      <g>
+       <use xlink:href="#fig-4-5-contrastive-m04e37d9cc8" x="383.073991" y="244.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-5-contrastive-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.073991" y="258.641071" transform="rotate(-0 383.073991 258.641071)">mô tả 3</text>
+     </g>
+    </g>
+    <g id="fig-4-5-contrastive-text_4">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="258.216462" y="277.368571" transform="rotate(-0 258.216462 277.368571)">chữ tìm ảnh → đọc theo cột</text>
+    </g>
+   </g>
+   <g id="fig-4-5-contrastive-matplotlib.axis_2">
+    <g id="fig-4-5-contrastive-ytick_1">
+     <g id="fig-4-5-contrastive-line2d_4">
+      <defs>
+       <path id="fig-4-5-contrastive-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-4-5-contrastive-m9fce3a8e10" x="55.947266" y="65.569695" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-5-contrastive-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="48.947266" y="69.155945" transform="rotate(-0 48.947266 69.155945)">ảnh 1</text>
+     </g>
+    </g>
+    <g id="fig-4-5-contrastive-ytick_2">
+     <g id="fig-4-5-contrastive-line2d_5">
+      <g>
+       <use xlink:href="#fig-4-5-contrastive-m9fce3a8e10" x="55.947266" y="132.824912" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-5-contrastive-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="48.947266" y="136.411162" transform="rotate(-0 48.947266 136.411162)">ảnh 2</text>
+     </g>
+    </g>
+    <g id="fig-4-5-contrastive-ytick_3">
+     <g id="fig-4-5-contrastive-line2d_6">
+      <g>
+       <use xlink:href="#fig-4-5-contrastive-m9fce3a8e10" x="55.947266" y="200.080128" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-5-contrastive-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="48.947266" y="203.666378" transform="rotate(-0 48.947266 203.666378)">ảnh 3</text>
+     </g>
+    </g>
+    <g id="fig-4-5-contrastive-text_8">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.817656" y="124.754286" transform="rotate(-90 13.817656 124.754286)">ảnh tìm chữ → đọc theo hàng</text>
+    </g>
+   </g>
+   <g id="fig-4-5-contrastive-patch_3">
+    <path d="M 83.415922 38.667608 
+L 183.301945 38.667608 
+Q 189.544821 38.667608 189.544821 42.030369 
+L 189.544821 89.109021 
+Q 189.544821 92.471782 183.301945 92.471782 
+L 83.415922 92.471782 
+Q 77.173045 92.471782 77.173045 89.109021 
+L 77.173045 42.030369 
+Q 77.173045 38.667608 83.415922 38.667608 
+L 83.415922 38.667608 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_4">
+    <path d="M 208.273451 38.667608 
+L 308.159474 38.667608 
+Q 314.40235 38.667608 314.40235 42.030369 
+L 314.40235 89.109021 
+Q 314.40235 92.471782 308.159474 92.471782 
+L 208.273451 92.471782 
+Q 202.030574 92.471782 202.030574 89.109021 
+L 202.030574 42.030369 
+Q 202.030574 38.667608 208.273451 38.667608 
+L 208.273451 38.667608 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_5">
+    <path d="M 333.130979 38.667608 
+L 433.017002 38.667608 
+Q 439.259879 38.667608 439.259879 42.030369 
+L 439.259879 89.109021 
+Q 439.259879 92.471782 433.017002 92.471782 
+L 333.130979 92.471782 
+Q 326.888103 92.471782 326.888103 89.109021 
+L 326.888103 42.030369 
+Q 326.888103 38.667608 333.130979 38.667608 
+L 333.130979 38.667608 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_6">
+    <path d="M 83.415922 105.922825 
+L 183.301945 105.922825 
+Q 189.544821 105.922825 189.544821 109.285586 
+L 189.544821 156.364238 
+Q 189.544821 159.726998 183.301945 159.726998 
+L 83.415922 159.726998 
+Q 77.173045 159.726998 77.173045 156.364238 
+L 77.173045 109.285586 
+Q 77.173045 105.922825 83.415922 105.922825 
+L 83.415922 105.922825 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_7">
+    <path d="M 208.273451 105.922825 
+L 308.159474 105.922825 
+Q 314.40235 105.922825 314.40235 109.285586 
+L 314.40235 156.364238 
+Q 314.40235 159.726998 308.159474 159.726998 
+L 208.273451 159.726998 
+Q 202.030574 159.726998 202.030574 156.364238 
+L 202.030574 109.285586 
+Q 202.030574 105.922825 208.273451 105.922825 
+L 208.273451 105.922825 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_8">
+    <path d="M 333.130979 105.922825 
+L 433.017002 105.922825 
+Q 439.259879 105.922825 439.259879 109.285586 
+L 439.259879 156.364238 
+Q 439.259879 159.726998 433.017002 159.726998 
+L 333.130979 159.726998 
+Q 326.888103 159.726998 326.888103 156.364238 
+L 326.888103 109.285586 
+Q 326.888103 105.922825 333.130979 105.922825 
+L 333.130979 105.922825 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_9">
+    <path d="M 83.415922 173.178042 
+L 183.301945 173.178042 
+Q 189.544821 173.178042 189.544821 176.540803 
+L 189.544821 223.619454 
+Q 189.544821 226.982215 183.301945 226.982215 
+L 83.415922 226.982215 
+Q 77.173045 226.982215 77.173045 223.619454 
+L 77.173045 176.540803 
+Q 77.173045 173.178042 83.415922 173.178042 
+L 83.415922 173.178042 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_10">
+    <path d="M 208.273451 173.178042 
+L 308.159474 173.178042 
+Q 314.40235 173.178042 314.40235 176.540803 
+L 314.40235 223.619454 
+Q 314.40235 226.982215 308.159474 226.982215 
+L 208.273451 226.982215 
+Q 202.030574 226.982215 202.030574 223.619454 
+L 202.030574 176.540803 
+Q 202.030574 173.178042 208.273451 173.178042 
+L 208.273451 173.178042 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-patch_11">
+    <path d="M 333.130979 173.178042 
+L 433.017002 173.178042 
+Q 439.259879 173.178042 439.259879 176.540803 
+L 439.259879 223.619454 
+Q 439.259879 226.982215 433.017002 226.982215 
+L 333.130979 226.982215 
+Q 326.888103 226.982215 326.888103 223.619454 
+L 326.888103 176.540803 
+Q 326.888103 173.178042 333.130979 173.178042 
+L 333.130979 173.178042 
+z
+" clip-path="url(#fig-4-5-contrastive-p89c2c29feb)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="fig-4-5-contrastive-text_9">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="133.358933" y="68.194695" transform="rotate(-0 133.358933 68.194695)">0.8</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_10">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="258.216462" y="68.194695" transform="rotate(-0 258.216462 68.194695)">0.6</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_11">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.073991" y="68.194695" transform="rotate(-0 383.073991 68.194695)">-0.8</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_12">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="133.358933" y="135.449912" transform="rotate(-0 133.358933 135.449912)">0.6</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_13">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="258.216462" y="135.449912" transform="rotate(-0 258.216462 135.449912)">0.8</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_14">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.073991" y="135.449912" transform="rotate(-0 383.073991 135.449912)">-0.6</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="133.358933" y="202.705128" transform="rotate(-0 133.358933 202.705128)">-1</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_16">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="258.216462" y="202.705128" transform="rotate(-0 258.216462 202.705128)">0</text>
+   </g>
+   <g id="fig-4-5-contrastive-text_17">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="383.073991" y="202.705128" transform="rotate(-0 383.073991 202.705128)">1</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-4-5-contrastive-p89c2c29feb">
+   <rect x="55.947266" y="5.04" width="404.538393" height="239.428571"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,201 @@
+id,text,target
+train_0000,yellow circle,hình tròn vàng
+train_0001,red triangle,hình tam giác đỏ
+train_0002,blue circle,hình tròn xanh
+train_0003,red triangle,hình tam giác đỏ
+train_0004,green square,hình vuông lục
+train_0005,red circle,hình tròn đỏ
+train_0006,yellow triangle,hình tam giác vàng
+train_0007,yellow triangle,hình tam giác vàng
+train_0008,green circle,hình tròn lục
+train_0009,blue square,hình vuông xanh
+train_0010,blue triangle,hình tam giác xanh
+train_0011,blue triangle,hình tam giác xanh
+train_0012,red square,hình vuông đỏ
+train_0013,blue triangle,hình tam giác xanh
+train_0014,yellow circle,hình tròn vàng
+train_0015,red triangle,hình tam giác đỏ
+train_0016,green square,hình vuông lục
+train_0017,red triangle,hình tam giác đỏ
+train_0018,red square,hình vuông đỏ
+train_0019,blue triangle,hình tam giác xanh
+train_0020,red triangle,hình tam giác đỏ
+train_0021,green circle,hình tròn lục
+train_0022,yellow circle,hình tròn vàng
+train_0023,yellow circle,hình tròn vàng
+train_0024,yellow triangle,hình tam giác vàng
+train_0025,green circle,hình tròn lục
+train_0026,green triangle,hình tam giác lục
+train_0027,red square,hình vuông đỏ
+train_0028,red triangle,hình tam giác đỏ
+train_0029,blue circle,hình tròn xanh
+train_0030,blue triangle,hình tam giác xanh
+train_0031,green square,hình vuông lục
+train_0032,yellow square,hình vuông vàng
+train_0033,blue square,hình vuông xanh
+train_0034,blue square,hình vuông xanh
+train_0035,yellow triangle,hình tam giác vàng
+train_0036,yellow triangle,hình tam giác vàng
+train_0037,yellow triangle,hình tam giác vàng
+train_0038,blue triangle,hình tam giác xanh
+train_0039,blue circle,hình tròn xanh
+train_0040,yellow triangle,hình tam giác vàng
+train_0041,green triangle,hình tam giác lục
+train_0042,red square,hình vuông đỏ
+train_0043,blue circle,hình tròn xanh
+train_0044,green circle,hình tròn lục
+train_0045,green triangle,hình tam giác lục
+train_0046,yellow square,hình vuông vàng
+train_0047,red circle,hình tròn đỏ
+train_0048,blue square,hình vuông xanh
+train_0049,blue square,hình vuông xanh
+train_0050,blue triangle,hình tam giác xanh
+train_0051,blue circle,hình tròn xanh
+train_0052,blue triangle,hình tam giác xanh
+train_0053,green triangle,hình tam giác lục
+train_0054,red square,hình vuông đỏ
+train_0055,yellow square,hình vuông vàng
+train_0056,blue square,hình vuông xanh
+train_0057,red triangle,hình tam giác đỏ
+train_0058,red circle,hình tròn đỏ
+train_0059,red triangle,hình tam giác đỏ
+train_0060,yellow triangle,hình tam giác vàng
+train_0061,red square,hình vuông đỏ
+train_0062,blue circle,hình tròn xanh
+train_0063,red square,hình vuông đỏ
+train_0064,blue triangle,hình tam giác xanh
+train_0065,red square,hình vuông đỏ
+train_0066,yellow square,hình vuông vàng
+train_0067,yellow triangle,hình tam giác vàng
+train_0068,blue triangle,hình tam giác xanh
+train_0069,blue triangle,hình tam giác xanh
+train_0070,blue square,hình vuông xanh
+train_0071,yellow square,hình vuông vàng
+train_0072,blue circle,hình tròn xanh
+train_0073,green square,hình vuông lục
+train_0074,green circle,hình tròn lục
+train_0075,yellow triangle,hình tam giác vàng
+train_0076,green circle,hình tròn lục
+train_0077,blue square,hình vuông xanh
+train_0078,green square,hình vuông lục
+train_0079,red circle,hình tròn đỏ
+train_0080,red circle,hình tròn đỏ
+train_0081,blue circle,hình tròn xanh
+train_0082,green triangle,hình tam giác lục
+train_0083,yellow triangle,hình tam giác vàng
+train_0084,red square,hình vuông đỏ
+train_0085,yellow circle,hình tròn vàng
+train_0086,green triangle,hình tam giác lục
+train_0087,green circle,hình tròn lục
+train_0088,blue triangle,hình tam giác xanh
+train_0089,yellow triangle,hình tam giác vàng
+train_0090,yellow square,hình vuông vàng
+train_0091,green square,hình vuông lục
+train_0092,red triangle,hình tam giác đỏ
+train_0093,yellow circle,hình tròn vàng
+train_0094,yellow square,hình vuông vàng
+train_0095,blue square,hình vuông xanh
+train_0096,yellow circle,hình tròn vàng
+train_0097,green square,hình vuông lục
+train_0098,red square,hình vuông đỏ
+train_0099,yellow triangle,hình tam giác vàng
+train_0100,blue triangle,hình tam giác xanh
+train_0101,blue square,hình vuông xanh
+train_0102,blue circle,hình tròn xanh
+train_0103,green square,hình vuông lục
+train_0104,green circle,hình tròn lục
+train_0105,blue triangle,hình tam giác xanh
+train_0106,yellow circle,hình tròn vàng
+train_0107,green triangle,hình tam giác lục
+train_0108,yellow circle,hình tròn vàng
+train_0109,red square,hình vuông đỏ
+train_0110,green circle,hình tròn lục
+train_0111,yellow circle,hình tròn vàng
+train_0112,green square,hình vuông lục
+train_0113,green square,hình vuông lục
+train_0114,yellow square,hình vuông vàng
+train_0115,red square,hình vuông đỏ
+train_0116,blue triangle,hình tam giác xanh
+train_0117,green triangle,hình tam giác lục
+train_0118,yellow circle,hình tròn vàng
+train_0119,yellow square,hình vuông vàng
+train_0120,blue circle,hình tròn xanh
+train_0121,yellow circle,hình tròn vàng
+train_0122,red triangle,hình tam giác đỏ
+train_0123,yellow triangle,hình tam giác vàng
+train_0124,red triangle,hình tam giác đỏ
+train_0125,green triangle,hình tam giác lục
+train_0126,blue triangle,hình tam giác xanh
+train_0127,blue circle,hình tròn xanh
+train_0128,red circle,hình tròn đỏ
+train_0129,green circle,hình tròn lục
+train_0130,yellow triangle,hình tam giác vàng
+train_0131,green triangle,hình tam giác lục
+train_0132,red circle,hình tròn đỏ
+train_0133,red circle,hình tròn đỏ
+train_0134,green triangle,hình tam giác lục
+train_0135,yellow circle,hình tròn vàng
+train_0136,red triangle,hình tam giác đỏ
+train_0137,red circle,hình tròn đỏ
+train_0138,red square,hình vuông đỏ
+train_0139,yellow circle,hình tròn vàng
+train_0140,red circle,hình tròn đỏ
+train_0141,yellow triangle,hình tam giác vàng
+train_0142,green circle,hình tròn lục
+train_0143,blue square,hình vuông xanh
+train_0144,red triangle,hình tam giác đỏ
+train_0145,red triangle,hình tam giác đỏ
+train_0146,green square,hình vuông lục
+train_0147,red triangle,hình tam giác đỏ
+train_0148,yellow square,hình vuông vàng
+train_0149,red triangle,hình tam giác đỏ
+train_0150,blue square,hình vuông xanh
+train_0151,green triangle,hình tam giác lục
+train_0152,blue square,hình vuông xanh
+train_0153,yellow triangle,hình tam giác vàng
+train_0154,yellow circle,hình tròn vàng
+train_0155,red triangle,hình tam giác đỏ
+train_0156,blue circle,hình tròn xanh
+train_0157,yellow square,hình vuông vàng
+train_0158,green square,hình vuông lục
+train_0159,red triangle,hình tam giác đỏ
+train_0160,blue square,hình vuông xanh
+train_0161,blue triangle,hình tam giác xanh
+train_0162,yellow circle,hình tròn vàng
+train_0163,green square,hình vuông lục
+train_0164,green circle,hình tròn lục
+train_0165,green triangle,hình tam giác lục
+train_0166,red circle,hình tròn đỏ
+train_0167,green square,hình vuông lục
+train_0168,red triangle,hình tam giác đỏ
+train_0169,red triangle,hình tam giác đỏ
+train_0170,yellow square,hình vuông vàng
+train_0171,green circle,hình tròn lục
+train_0172,yellow circle,hình tròn vàng
+train_0173,red square,hình vuông đỏ
+train_0174,blue square,hình vuông xanh
+train_0175,green triangle,hình tam giác lục
+train_0176,red square,hình vuông đỏ
+train_0177,yellow triangle,hình tam giác vàng
+train_0178,blue square,hình vuông xanh
+train_0179,yellow triangle,hình tam giác vàng
+train_0180,red square,hình vuông đỏ
+train_0181,green square,hình vuông lục
+train_0182,green triangle,hình tam giác lục
+train_0183,green circle,hình tròn lục
+train_0184,green square,hình vuông lục
+train_0185,blue triangle,hình tam giác xanh
+train_0186,blue square,hình vuông xanh
+train_0187,blue square,hình vuông xanh
+train_0188,red circle,hình tròn đỏ
+train_0189,blue square,hình vuông xanh
+train_0190,green circle,hình tròn lục
+train_0191,yellow triangle,hình tam giác vàng
+train_0192,blue square,hình vuông xanh
+train_0193,green circle,hình tròn lục
+train_0194,blue circle,hình tròn xanh
+train_0195,blue triangle,hình tam giác xanh
+train_0196,blue triangle,hình tam giác xanh
+train_0197,blue circle,hình tròn xanh
+train_0198,blue square,hình vuông xanh
+train_0199,green circle,hình tròn lục

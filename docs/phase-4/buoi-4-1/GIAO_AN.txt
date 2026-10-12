@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 4.1 — Convolution và pooling
+
+TRÌNH TỰ DẠY
+1. Hỏi: Kernel2× 2 nhìn một phần ảnh3× 3 ra sao?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Convolution/cross-correlation kết hợp vùng cục bộ; stride/padding đổi shape.
+- Channels là loại thông tin, không cùng ý nghĩa với batch dimension.
+- Pooling gom vùng; max và average giữ thông tin khác nhau.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Conv2d của PyTorch không lật kernel trong thao tác cross-correlation.
+
+CÂU HỎI CHỐT
+Tính ô đầu output của kernel[[1,0],[0,-1]] bằng tay.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

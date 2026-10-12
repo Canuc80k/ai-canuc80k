@@ -1,0 +1,27 @@
+{
+ "w": 960,
+ "h": 350,
+ "n": 8,
+ "cols": 2,
+ "dur": 900,
+ "hold": 2600,
+ "labels": [
+  "bước 0: MSE output so với ảnh sạch 0.1919 (input nhiễu: 0.0655)",
+  "bước 10: MSE output so với ảnh sạch 0.1163 (input nhiễu: 0.0655)",
+  "bước 30: MSE output so với ảnh sạch 0.0909 (input nhiễu: 0.0655)",
+  "bước 60: MSE output so với ảnh sạch 0.0525 (input nhiễu: 0.0655)",
+  "bước 120: MSE output so với ảnh sạch 0.0344 (input nhiễu: 0.0655)",
+  "bước 250: MSE output so với ảnh sạch 0.0243 (input nhiễu: 0.0655)",
+  "bước 500: MSE output so với ảnh sạch 0.0195 (input nhiễu: 0.0655)",
+  "bước 1000: MSE output so với ảnh sạch 0.0169 (input nhiễu: 0.0655)"
+ ],
+ "key": [
+  0,
+  2,
+  4,
+  8
+ ],
+ "dark": false,
+ "dw": 640,
+ "pcols": 4
+}

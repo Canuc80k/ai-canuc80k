@@ -1,0 +1,43 @@
+BTVN 3 — Đánh giá regression: select_regression_model
+Mã local: aicanuc80kp1b06h3
+
+YÊU CẦU
+Chọn model có validation RMSE nhỏ nhất; hòa thì id nhỏ nhất. Không chọn bằng train RMSE.
+
+INPUT
+Đọc đúng một JSON object từ stdin.
+models: list {id, train_rmse, valid_rmse}, không rỗng.
+Trừ giới hạn riêng ở trên: list 1D tối đa 1000 phần tử; ma trận tối đa 100 hàng, 64 cột; |số thực|<=1e6. Các ma trận hình chữ nhật và kích thước tương thích. Không có dữ liệu sai schema.
+
+OUTPUT
+In đúng một JSON value chứa kết quả yêu cầu, không thêm dòng giải thích. Thứ tự list giữ theo quy định; dict không yêu cầu thứ tự keys. Sai số số thực được chấp nhận: abs_error <=1e-6+1e-6*abs(expected). Booleans khác numbers.
+
+VÍ DỤ INPUT
+{
+  "models": [
+    {
+      "id": 1,
+      "train_rmse": 0,
+      "valid_rmse": 3
+    },
+    {
+      "id": 2,
+      "train_rmse": 1,
+      "valid_rmse": 2
+    }
+  ]
+}
+
+VÍ DỤ OUTPUT
+2
+
+GIẢI THÍCH VÍ DỤ
+Áp dụng yêu cầu lên chính input đã cấp. Với dữ liệu của lớp, không tự đổi positive class, quy ước tie, axes hoặc denominator.
+
+CẦN NỘP
+Một chương trình đọc stdin/in stdout và code đã dùng. Có thể dùng json,math,collections; ở bài primitive này không gọi một model/thư viện đã làm sẵn toàn bộ phép toán cần cài.
+
+TỰ KIỂM TRA
+- Chạy input mẫu và so semantic JSON với output mẫu.
+- Kiểm trường hợp biên đã nêu trong yêu cầu, không thêm giả định ngoài đề.
+- Không dùng print debug trong output nộp.

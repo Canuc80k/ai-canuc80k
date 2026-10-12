@@ -1,0 +1,15 @@
+{
+  "objects": [
+    {
+      "label": "weather"
+    },
+    {
+      "label": "music"
+    },
+    "weather"
+  ],
+  "allowed": [
+    "weather",
+    "sport"
+  ]
+}

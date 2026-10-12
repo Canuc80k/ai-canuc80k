@@ -1,0 +1,40 @@
+BTVN 1 — Convolution và pooling: conv_shape
+Mã local: aicanuc80kp4b01h1
+
+YÊU CẦU
+Output floor((input+2padding-kernel)/stride)+1 cho H/W, không dilation.
+
+INPUT
+Đọc đúng một JSON object từ stdin.
+h, w, kh, kw, stride positive; padding>=0; output positive.
+Trừ giới hạn riêng ở trên: list 1D tối đa 1000 phần tử; ma trận tối đa 100 hàng, 64 cột; |số thực|<=1e6. Các ma trận hình chữ nhật và kích thước tương thích. Không có dữ liệu sai schema.
+
+OUTPUT
+In đúng một JSON value chứa kết quả yêu cầu, không thêm dòng giải thích. Thứ tự list giữ theo quy định; dict không yêu cầu thứ tự keys. Sai số số thực được chấp nhận: abs_error <=1e-6+1e-6*abs(expected). Booleans khác numbers.
+
+VÍ DỤ INPUT
+{
+  "h": 5,
+  "w": 5,
+  "kh": 3,
+  "kw": 3,
+  "stride": 1,
+  "padding": 0
+}
+
+VÍ DỤ OUTPUT
+[
+  3,
+  3
+]
+
+GIẢI THÍCH VÍ DỤ
+Áp dụng yêu cầu lên chính input đã cấp. Với dữ liệu của lớp, không tự đổi positive class, quy ước tie, axes hoặc denominator.
+
+CẦN NỘP
+Một chương trình đọc stdin/in stdout và code đã dùng. Có thể dùng json,math,collections; ở bài primitive này không gọi một model/thư viện đã làm sẵn toàn bộ phép toán cần cài.
+
+TỰ KIỂM TRA
+- Chạy input mẫu và so semantic JSON với output mẫu.
+- Kiểm trường hợp biên đã nêu trong yêu cầu, không thêm giả định ngoài đề.
+- Không dùng print debug trong output nộp.

@@ -1,0 +1,17 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "score": 8
+    },
+    {
+      "id": 3,
+      "score": 8
+    },
+    {
+      "id": 2,
+      "score": 6
+    }
+  ],
+  "threshold": 7
+}

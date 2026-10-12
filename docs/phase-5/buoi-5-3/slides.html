@@ -1,0 +1,93 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BERT và pretrained text encoders</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 5.3</small><h1>Buổi 5.3: BERT và pretrained text encoders</h1><p>Tokenizer khác checkpoint có thể dùng cùng token IDs không?</p></section><section class="slide"><small>Buổi 5.3</small><h1>Ý tưởng chính</h1><p>IDs→embedding→encoder→pooling/head→logits</p><ul><li>BERT pretrained encoder cần đúng tokenizer, attentionmask và head.</li><li>Frozen features khác fine-tune; labelmap thuộcdata/task.</li><li>Padding/truncation ảnh hưởng information; không nhầm hidden states với logits.</li></ul></section><section class="slide"><small>Buổi 5.3</small><h1>Ví dụ</h1><pre>{
+  &quot;ids&quot;: [
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ]
+  ],
+  &quot;pad_id&quot;: 0
+}</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Đáp án ví dụ</h1><pre>[
+  [
+    1,
+    1,
+    0
+  ],
+  [
+    1,
+    0,
+    0
+  ]
+]</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Code minh họa (1)</h1><pre>import torch
+from torch import nn
+torch.manual_seed(42)
+torch.set_num_threads(1)
+
+# Tiny Transformer encoder minh họa head/mask; KHÔNG giả là BERT pretrained.
+embedding=nn.Embedding(8,4,padding_idx=0)
+layer=nn.TransformerEncoderLayer(4,2,8,dropout=0,batch_first=True)
+classifier=nn.Linear(4,2)
+ids=torch.tensor([[1,2,0],[3,4,5]])
+pad=(ids==0)
+hidden=layer(embedding(ids),src_key_padding_mask=pad)
+mask=(~pad).unsqueeze(-1)
+pooled=(hidden*mask).sum(1)/mask.sum(1)
+logits=classifier(pooled)</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Code minh họa (2)</h1><pre>print(&quot;IDs shape:&quot;,tuple(ids.shape),&quot;padding mask:&quot;,pad.tolist())
+print(&quot;Hidden:&quot;,tuple(hidden.shape),&quot;logits:&quot;,tuple(logits.shape))
+assert tuple(logits.shape)==(2,2)
+# BERT thật: tokenizer và checkpoint phải khớp; bert_demo.py có code inference
+cache-only.</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Kết quả</h1><pre>IDs shape: (2, 3) padding mask: [[False, False, True], [False, False, False]]
+Hidden: (2, 3, 4) logits: (2, 2)</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Điểm dễ nhầm</h1><ul><li>TinyTransformer demo có weights ngẫu nhiên, không phải BERT pretrained.</li><li>Theo dõi shapes IDs2× 3, hidden2× 3× 4, logits2× 2.</li></ul></section><section class="slide"><small>Buổi 5.3</small><h1>Bài trên lớp 1</h1><p>Mask bằng 1 nếu token!=pad_id; bằng 0 nếu là padding.</p><pre>{
+  &quot;ids&quot;: [
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ]
+  ],
+  &quot;pad_id&quot;: 0
+}</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Bài trên lớp 2</h1><p>Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.</p><pre>{
+  &quot;tokens&quot;: [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  &quot;mask&quot;: [
+    1,
+    1,
+    0
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.3</small><h1>Bài tập về nhà 1</h1><p>Mask bằng 1 nếu token!=pad_id; bằng 0 nếu là padding.</p><ul><li>Input: ids: nxL integer; pad_id: integer.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 5.3</small><h1>Bài tập về nhà 2</h1><p>Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.</p><ul><li>Input: tokens: nxd; mask: n0/1.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 5.3</small><h1>Bài tập về nhà 3</h1><p>Text encoder và head</p><ul><li>Data: text</li><li>Metric: Macro F1 theo đúng classes 0/1/2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 5.3</small><h1>Tổng kết</h1><p>Theo dõi shapes IDs2× 3, hidden2× 3× 4, logits2× 2.</p><ul><li>AIO37.2.</li><li>AIO37.2 Text classification using BERT và37.4 câu hỏi liên quan.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

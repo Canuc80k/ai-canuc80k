@@ -1,0 +1,29 @@
+{
+ "w": 720,
+ "h": 720,
+ "n": 10,
+ "cols": 4,
+ "dur": 1000,
+ "hold": 2600,
+ "labels": [
+  "γ = 0.01: 123 support vector, accuracy 5-fold CV 0.830",
+  "γ = 0.03: 100 support vector, accuracy 5-fold CV 0.835",
+  "γ = 0.1: 87 support vector, accuracy 5-fold CV 0.830",
+  "γ = 0.3: 81 support vector, accuracy 5-fold CV 0.845",
+  "γ = 1: 72 support vector, accuracy 5-fold CV 0.890",
+  "γ = 3: 92 support vector, accuracy 5-fold CV 0.895",
+  "γ = 10: 138 support vector, accuracy 5-fold CV 0.885",
+  "γ = 30: 177 support vector, accuracy 5-fold CV 0.845",
+  "γ = 100: 199 support vector, accuracy 5-fold CV 0.755",
+  "γ = 300: 200 support vector, accuracy 5-fold CV 0.640"
+ ],
+ "key": [
+  0,
+  4,
+  7,
+  9
+ ],
+ "dark": true,
+ "dw": 480,
+ "pcols": 2
+}

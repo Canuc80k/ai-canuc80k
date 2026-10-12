@@ -1,0 +1,453 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="465.282098pt" height="296.016429pt" viewBox="0 0 465.282098 296.016429" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-1-3-groups-figure_1">
+  <g id="fig-1-3-groups-patch_1">
+   <path d="M 0 296.016429 
+L 465.282098 296.016429 
+L 465.282098 0 
+L 0 0 
+L 0 296.016429 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-1-3-groups-axes_1">
+   <g id="fig-1-3-groups-patch_2">
+    <path d="M 46.827813 227.345 
+L 245.284955 227.345 
+L 245.284955 23.345 
+L 46.827813 23.345 
+L 46.827813 227.345 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-3-groups-matplotlib.axis_1">
+    <g id="fig-1-3-groups-xtick_1">
+     <g id="fig-1-3-groups-line2d_1">
+      <defs>
+       <path id="fig-1-3-groups-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-1-3-groups-m04e37d9cc8" x="79.904003" y="227.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="79.904003" y="241.5175" transform="rotate(-0 79.904003 241.5175)">Bản 1</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-xtick_2">
+     <g id="fig-1-3-groups-line2d_2">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m04e37d9cc8" x="146.056384" y="227.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="146.056384" y="241.5175" transform="rotate(-0 146.056384 241.5175)">Bản 2</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-xtick_3">
+     <g id="fig-1-3-groups-line2d_3">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m04e37d9cc8" x="212.208765" y="227.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="212.208765" y="241.5175" transform="rotate(-0 212.208765 241.5175)">Bản 3</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-matplotlib.axis_2">
+    <g id="fig-1-3-groups-ytick_1">
+     <g id="fig-1-3-groups-line2d_4">
+      <defs>
+       <path id="fig-1-3-groups-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="46.827813" y="40.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.827813" y="43.992852" transform="rotate(-0 39.827813 43.992852)">Người 0</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_2">
+     <g id="fig-1-3-groups-line2d_5">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="46.827813" y="74.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.827813" y="77.992852" transform="rotate(-0 39.827813 77.992852)">Người 1</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_3">
+     <g id="fig-1-3-groups-line2d_6">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="46.827813" y="108.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.827813" y="111.992852" transform="rotate(-0 39.827813 111.992852)">Người 2</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_4">
+     <g id="fig-1-3-groups-line2d_7">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="46.827813" y="142.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.827813" y="145.992852" transform="rotate(-0 39.827813 145.992852)">Người 3</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_5">
+     <g id="fig-1-3-groups-line2d_8">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="46.827813" y="176.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.827813" y="179.992852" transform="rotate(-0 39.827813 179.992852)">Người 4</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_6">
+     <g id="fig-1-3-groups-line2d_9">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="46.827813" y="210.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.827813" y="213.992852" transform="rotate(-0 39.827813 213.992852)">Người 5</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_1">
+    <defs>
+     <path id="fig-1-3-groups-me741d2a7d8" d="M -5.244044 5.244044 
+L 5.244044 5.244044 
+L 5.244044 -5.244044 
+L -5.244044 -5.244044 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="79.904003" y="40.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_2">
+    <defs>
+     <path id="fig-1-3-groups-m1eeabf3aca" d="M -5.244044 5.244044 
+L 5.244044 5.244044 
+L 5.244044 -5.244044 
+L -5.244044 -5.244044 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="146.056384" y="40.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_3">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="212.208765" y="40.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_4">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="79.904003" y="74.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_5">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="146.056384" y="74.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_6">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="212.208765" y="74.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_7">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="79.904003" y="108.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_8">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="146.056384" y="108.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_9">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="212.208765" y="108.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_10">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="79.904003" y="142.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_11">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="146.056384" y="142.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_12">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="212.208765" y="142.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_13">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="79.904003" y="176.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_14">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="146.056384" y="176.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_15">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="212.208765" y="176.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_16">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="79.904003" y="210.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_17">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="146.056384" y="210.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_18">
+    <g clip-path="url(#fig-1-3-groups-p5ee92254f5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="212.208765" y="210.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-text_10">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="146.056384" y="13.345" transform="rotate(-0 146.056384 13.345)">Random split</text>
+   </g>
+  </g>
+  <g id="fig-1-3-groups-axes_2">
+   <g id="fig-1-3-groups-patch_3">
+    <path d="M 261.784955 227.345 
+L 460.242098 227.345 
+L 460.242098 23.345 
+L 261.784955 23.345 
+L 261.784955 227.345 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-3-groups-matplotlib.axis_3">
+    <g id="fig-1-3-groups-xtick_4">
+     <g id="fig-1-3-groups-line2d_10">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m04e37d9cc8" x="294.861146" y="227.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="294.861146" y="241.5175" transform="rotate(-0 294.861146 241.5175)">Bản 1</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-xtick_5">
+     <g id="fig-1-3-groups-line2d_11">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m04e37d9cc8" x="361.013527" y="227.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="361.013527" y="241.5175" transform="rotate(-0 361.013527 241.5175)">Bản 2</text>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-xtick_6">
+     <g id="fig-1-3-groups-line2d_12">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m04e37d9cc8" x="427.165908" y="227.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-3-groups-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="427.165908" y="241.5175" transform="rotate(-0 427.165908 241.5175)">Bản 3</text>
+     </g>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-matplotlib.axis_4">
+    <g id="fig-1-3-groups-ytick_7">
+     <g id="fig-1-3-groups-line2d_13">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="261.784955" y="40.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_8">
+     <g id="fig-1-3-groups-line2d_14">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="261.784955" y="74.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_9">
+     <g id="fig-1-3-groups-line2d_15">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="261.784955" y="108.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_10">
+     <g id="fig-1-3-groups-line2d_16">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="261.784955" y="142.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_11">
+     <g id="fig-1-3-groups-line2d_17">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="261.784955" y="176.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-3-groups-ytick_12">
+     <g id="fig-1-3-groups-line2d_18">
+      <g>
+       <use xlink:href="#fig-1-3-groups-m9fce3a8e10" x="261.784955" y="210.345" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_19">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="294.861146" y="40.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_20">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="361.013527" y="40.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_21">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="427.165908" y="40.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_22">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="294.861146" y="74.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_23">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="361.013527" y="74.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_24">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="427.165908" y="74.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_25">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="294.861146" y="108.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_26">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="361.013527" y="108.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_27">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="427.165908" y="108.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_28">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="294.861146" y="142.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_29">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="361.013527" y="142.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_30">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="427.165908" y="142.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_31">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="294.861146" y="176.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_32">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="361.013527" y="176.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_33">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-me741d2a7d8" x="427.165908" y="176.345" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_34">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="294.861146" y="210.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_35">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="361.013527" y="210.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-PathCollection_36">
+    <g clip-path="url(#fig-1-3-groups-p7f60f629c5)">
+     <use xlink:href="#fig-1-3-groups-m1eeabf3aca" x="427.165908" y="210.345" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-1-3-groups-text_14">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="361.013527" y="13.345" transform="rotate(-0 361.013527 13.345)">Group split</text>
+   </g>
+  </g>
+  <g id="fig-1-3-groups-legend_1">
+   <g id="fig-1-3-groups-patch_4">
+    <path d="M 170.758504 284.426429 
+L 190.758504 284.426429 
+L 190.758504 277.426429 
+L 170.758504 277.426429 
+z
+" style="fill: var(--t-n, #3b6ea8)"/>
+   </g>
+   <g id="fig-1-3-groups-text_15">
+    <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="198.758504" y="284.426429" transform="rotate(-0 198.758504 284.426429)">Train</text>
+   </g>
+   <g id="fig-1-3-groups-patch_5">
+    <path d="M 243.527254 284.426429 
+L 263.527254 284.426429 
+L 263.527254 277.426429 
+L 243.527254 277.426429 
+z
+" style="fill: var(--accent, #c2603e)"/>
+   </g>
+   <g id="fig-1-3-groups-text_16">
+    <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="271.527254" y="284.426429" transform="rotate(-0 271.527254 284.426429)">Valid</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-1-3-groups-p5ee92254f5">
+   <rect x="46.827813" y="23.345" width="198.457143" height="204"/>
+  </clipPath>
+  <clipPath id="fig-1-3-groups-p7f60f629c5">
+   <rect x="261.784955" y="23.345" width="198.457143" height="204"/>
+  </clipPath>
+ </defs>
+</svg>

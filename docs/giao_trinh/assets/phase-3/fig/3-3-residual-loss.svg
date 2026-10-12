@@ -1,0 +1,247 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="450.946406pt" height="220.560115pt" viewBox="0 0 450.946406 220.560115" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-3-3-residual-loss-figure_1">
+  <g id="fig-3-3-residual-loss-patch_1">
+   <path d="M 0 220.560115 
+L 450.946406 220.560115 
+L 450.946406 0 
+L 0 0 
+L 0 220.560115 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-3-3-residual-loss-axes_1">
+   <g id="fig-3-3-residual-loss-patch_2">
+    <path d="M 46.406406 179.584802 
+L 445.906406 179.584802 
+L 445.906406 32.060722 
+L 46.406406 32.060722 
+L 46.406406 179.584802 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-3-residual-loss-matplotlib.axis_1">
+    <g id="fig-3-3-residual-loss-xtick_1">
+     <g id="fig-3-3-residual-loss-line2d_1">
+      <defs>
+       <path id="fig-3-3-residual-loss-maf2fc3d3a6" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-maf2fc3d3a6" x="64.565497" y="179.584802" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="64.565497" y="193.757302" transform="rotate(-0 64.565497 193.757302)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-xtick_2">
+     <g id="fig-3-3-residual-loss-line2d_2">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-maf2fc3d3a6" x="137.201861" y="179.584802" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="137.201861" y="193.757302" transform="rotate(-0 137.201861 193.757302)">2</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-xtick_3">
+     <g id="fig-3-3-residual-loss-line2d_3">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-maf2fc3d3a6" x="209.838224" y="179.584802" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="209.838224" y="193.757302" transform="rotate(-0 209.838224 193.757302)">4</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-xtick_4">
+     <g id="fig-3-3-residual-loss-line2d_4">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-maf2fc3d3a6" x="282.474588" y="179.584802" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="282.474588" y="193.757302" transform="rotate(-0 282.474588 193.757302)">6</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-xtick_5">
+     <g id="fig-3-3-residual-loss-line2d_5">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-maf2fc3d3a6" x="355.110952" y="179.584802" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="355.110952" y="193.757302" transform="rotate(-0 355.110952 193.757302)">8</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-xtick_6">
+     <g id="fig-3-3-residual-loss-line2d_6">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-maf2fc3d3a6" x="427.747315" y="179.584802" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="427.747315" y="193.757302" transform="rotate(-0 427.747315 193.757302)">10</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="246.156406" y="212.539802" transform="rotate(-0 246.156406 212.539802)">|r|</text>
+    </g>
+   </g>
+   <g id="fig-3-3-residual-loss-matplotlib.axis_2">
+    <g id="fig-3-3-residual-loss-ytick_1">
+     <g id="fig-3-3-residual-loss-line2d_7">
+      <defs>
+       <path id="fig-3-3-residual-loss-m01ad4ddd8d" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-m01ad4ddd8d" x="46.406406" y="172.879162" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.406406" y="176.465412" transform="rotate(-0 39.406406 176.465412)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-ytick_2">
+     <g id="fig-3-3-residual-loss-line2d_8">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-m01ad4ddd8d" x="46.406406" y="146.056602" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.406406" y="149.642852" transform="rotate(-0 39.406406 149.642852)">20</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-ytick_3">
+     <g id="fig-3-3-residual-loss-line2d_9">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-m01ad4ddd8d" x="46.406406" y="119.234042" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.406406" y="122.820292" transform="rotate(-0 39.406406 122.820292)">40</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-ytick_4">
+     <g id="fig-3-3-residual-loss-line2d_10">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-m01ad4ddd8d" x="46.406406" y="92.411482" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.406406" y="95.997732" transform="rotate(-0 39.406406 95.997732)">60</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-ytick_5">
+     <g id="fig-3-3-residual-loss-line2d_11">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-m01ad4ddd8d" x="46.406406" y="65.588922" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.406406" y="69.175172" transform="rotate(-0 39.406406 69.175172)">80</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-ytick_6">
+     <g id="fig-3-3-residual-loss-line2d_12">
+      <g>
+       <use xlink:href="#fig-3-3-residual-loss-m01ad4ddd8d" x="46.406406" y="38.766362" style="stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-3-residual-loss-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.406406" y="42.352612" transform="rotate(-0 39.406406 42.352612)">100</text>
+     </g>
+    </g>
+    <g id="fig-3-3-residual-loss-text_14">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="105.822762" transform="rotate(-90 13.345 105.822762)">loss</text>
+    </g>
+   </g>
+   <g id="fig-3-3-residual-loss-line2d_13">
+    <path d="M 64.565497 172.879162 
+L 75.497391 172.757652 
+L 86.429286 172.393121 
+L 97.36118 171.78557 
+L 108.293074 170.934999 
+L 119.224968 169.841406 
+L 130.156862 168.504794 
+L 141.088757 166.925161 
+L 152.020651 165.102507 
+L 162.952545 163.036833 
+L 173.884439 160.728139 
+L 184.816333 158.176424 
+L 195.748227 155.381688 
+L 206.680122 152.343932 
+L 217.612016 149.063156 
+L 228.54391 145.539359 
+L 239.475804 141.772541 
+L 250.407698 137.762704 
+L 261.339593 133.509845 
+L 272.271487 129.013966 
+L 283.203381 124.275067 
+L 294.135275 119.293147 
+L 305.067169 114.068207 
+L 315.999064 108.600246 
+L 326.930958 102.889265 
+L 337.862852 96.935264 
+L 348.794746 90.738241 
+L 359.72664 84.298199 
+L 370.658535 77.615136 
+L 381.590429 70.689052 
+L 392.522323 63.519948 
+L 403.454217 56.107824 
+L 415.600766 47.587106 
+L 427.747315 38.766362 
+L 427.747315 38.766362 
+" clip-path="url(#fig-3-3-residual-loss-p45b672308f)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-residual-loss-line2d_14">
+    <path d="M 64.565497 172.879162 
+L 427.747315 159.467882 
+L 427.747315 159.467882 
+" clip-path="url(#fig-3-3-residual-loss-p45b672308f)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-residual-loss-patch_3">
+    <path d="M 46.406406 179.584802 
+L 46.406406 32.060722 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-residual-loss-patch_4">
+    <path d="M 46.406406 179.584802 
+L 445.906406 179.584802 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-3-residual-loss-legend_1">
+    <g id="fig-3-3-residual-loss-line2d_15">
+     <path d="M 187.859805 12.7125 
+L 197.859805 12.7125 
+L 207.859805 12.7125 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.5; stroke-linecap: square"/>
+    </g>
+    <g id="fig-3-3-residual-loss-text_15">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="215.859805" y="16.2125" transform="rotate(-0 215.859805 16.2125)">MSE</text>
+    </g>
+    <g id="fig-3-3-residual-loss-line2d_16">
+     <path d="M 255.876602 12.7125 
+L 265.876602 12.7125 
+L 275.876602 12.7125 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.5; stroke-linecap: square"/>
+    </g>
+    <g id="fig-3-3-residual-loss-text_16">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="283.876602" y="16.2125" transform="rotate(-0 283.876602 16.2125)">MAE</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-3-3-residual-loss-p45b672308f">
+   <rect x="46.406406" y="32.060722" width="399.5" height="147.52408"/>
+  </clipPath>
+ </defs>
+</svg>

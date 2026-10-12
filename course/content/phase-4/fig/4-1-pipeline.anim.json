@@ -1,0 +1,32 @@
+{
+ "w": 960,
+ "h": 400,
+ "n": 6,
+ "cols": 2,
+ "dur": [
+  1500,
+  1300,
+  1300,
+  1300,
+  1800,
+  2600
+ ],
+ "hold": 1000,
+ "labels": [
+  "ảnh gốc 300 × 451 × 3, giá trị 0–255",
+  "resize cạnh ngắn về 256: 256 × 385",
+  "cắt giữa một ô 224 × 224",
+  "ảnh vào model: 224 × 224 × 3",
+  "chia 255, trừ mean, chia std từng kênh R, G, B: số nằm quanh 0",
+  "ResNet-18 trả 1000 xác suất; 5 lớp cao nhất cộng lại 1.000"
+ ],
+ "key": [
+  0,
+  2,
+  4,
+  5
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

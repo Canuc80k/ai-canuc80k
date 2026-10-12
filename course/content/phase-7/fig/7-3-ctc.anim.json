@@ -1,0 +1,38 @@
+{
+ "w": 960,
+ "h": 470,
+ "n": 9,
+ "cols": 3,
+ "dur": [
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  900,
+  1600
+ ],
+ "hold": 2400,
+ "labels": [
+  "4/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "8/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "12/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "16/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "20/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "24/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "28/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "32/36 khung (đầu câu) đã đọc: hàng giữa là ký tự argmax của mỗi khung 20 ms, chấm là blank; dòng dưới là kết quả sau khi gộp",
+  "36 khung đầu, 16 khung là blank. Cả câu 161 khung cho: “DEEP LEARNING MODELS LEARN PATTERNS FROM DATA”"
+ ],
+ "key": [
+  1,
+  3,
+  5,
+  8
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

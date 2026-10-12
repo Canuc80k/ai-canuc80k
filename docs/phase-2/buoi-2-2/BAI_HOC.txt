@@ -1,0 +1,71 @@
+BUỔI 2.2 — Logistic Regression và Softmax
+
+HỌC SINH CẦN HIỂU
+- Sigmoid cho binary probability; softmax tạo phân bố qua nhiều classes.
+- Logit là số trước activation; probability sau activation.
+- Decision threshold là lựa chọn sau khi học, theo metric/chi phí.
+
+CÂU HỎI MỞ BÀI
+Một số bất kỳ từ linear layer chuyển thành probability ra sao?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+sigmoid(z)=1/(1+exp(-z))
+
+CẦN PHÂN BIỆT
+predict_proba cột1 phải khớp label trong classes_, không đoán ý nghĩa từ vị trí.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Tính sigmoid ổn định cho mọi logit; không exp overflow.
+Input:
+{
+  "logits": [
+    0,
+    1.0986122886681098,
+    1000,
+    -1000
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  0.5,
+  0.75,
+  1.0,
+  0.0
+]
+
+Bài trên lớp 2: Stable softmax theo từng hàng: trừ max trước exp.
+Input:
+{
+  "rows": [
+    [
+      1000,
+      1001
+    ],
+    [
+      0,
+      0
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    0.2689414213699951,
+    0.7310585786300049
+  ],
+  [
+    0.5,
+    0.5
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Tính sigmoid ổn định cho mọi logit; không exp overflow.; xem BTVN_01.txt.
+- BTVN 2: Stable softmax theo từng hàng: trừ max trước exp.; xem BTVN_02.txt.
+- BTVN 3: Phân loại bằng probabilities; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO chương 26–27; KHTN 3.6–3.7.
+AIO 26.2 Thực hành, 26.3 trắc nghiệm; AIO 27.4 Credit Card Fraud Detection hoặc 27.5 Twitter Sentiment Analysis.

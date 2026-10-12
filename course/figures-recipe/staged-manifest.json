@@ -1,0 +1,3014 @@
+{
+  "0-1-default": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-default.svg",
+    "sha256": "3a31de5eec09246efe7b6db5ee0e8d02a344b41d3975e9440c5c64216ab6f98f",
+    "caption": "List mặc định tạo một lần và dùng chung; None cho mỗi lần gọi một list mới.",
+    "retain": true
+  },
+  "0-1-float": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-float.svg",
+    "sha256": "9f8e9a161cc4a43c2a8149eedb38db67d8d88f110f417698c727d76240db4fc2",
+    "caption": "0.3 và 0.1 + 0.2 rơi vào hai số float64 liền kề.",
+    "retain": true
+  },
+  "0-1-floordiv": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-floordiv.svg",
+    "sha256": "2783b8f2831cb2e8a7960b99ef21f0ac599781dcd0bfa77b5653d1e658c6b362",
+    "caption": "// làm tròn xuống; phép chia nguyên của C++ cắt về 0.",
+    "retain": true
+  },
+  "0-1-grid": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-grid.svg",
+    "sha256": "530197cd1be24f41ba22ffe54ce93dcd05213f23d75a0e6b3b91ec4b2c6a3e77",
+    "caption": "Gán 9 vào ô đầu: bên trái cả ba hàng đổi, bên phải chỉ một hàng đổi.",
+    "retain": true
+  },
+  "0-1-lookup": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-lookup.svg",
+    "sha256": "b70fe8eac951d268ec93f162874b5a7cf36c1b16dc8af1a1efd2ef5ff26d33f1",
+    "caption": "List so từng phần tử; set nhảy thẳng tới một ngăn của bảng băm.",
+    "retain": true
+  },
+  "0-1-names": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-names.svg",
+    "sha256": "d191b22185ec8f3b66a14ca161dde76b81b8a5d3617c3386073cc069551bb170",
+    "caption": "Gán chỉ dán thêm tên; copy() tạo list mới; int bất biến.",
+    "retain": true
+  },
+  "0-1-notebook": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-notebook.svg",
+    "sha256": "f9d2373aaaff98ee4b76a7909f573ece2def9903ad2d2cbb73e7b9e476a482db",
+    "caption": "Sửa n rồi chỉ chạy lại ô đầu: total vẫn giữ kết quả cũ.",
+    "retain": true
+  },
+  "0-1-speed": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-speed.svg",
+    "sha256": "ffe9eaef540acaa2798ae6c691501c4d5802120085daa4b3a5a703c42540c13c",
+    "caption": "Cùng một tổng của 500 000 số, đo trên một máy CPU.",
+    "retain": true
+  },
+  "0-1-traceback": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-1-traceback.svg",
+    "sha256": "4bc97a686d6793e9857f7787073f84d39907fd12368d90cb71649d40c50231b7",
+    "caption": "Traceback thật của Python 3.13: đọc từ dòng cuối lên.",
+    "retain": true
+  },
+  "0-2-axis": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-axis.svg",
+    "sha256": "1c94d9cc869beba0df5958d37f5c906ecde0a1146c6423f2b8ef108bccc2ea90",
+    "caption": "Trục ghi trong axis là trục bị gộp và biến mất.",
+    "retain": true
+  },
+  "0-2-broadcast": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-broadcast.svg",
+    "sha256": "67fb4df0aa696e4879d4c35c2a09d4cfa5b824fd32aa9fce8d5fd67f48246f8c",
+    "caption": "Trục độ dài 1 được kéo dãn cho khớp; ô nét đứt không bị chép thật.",
+    "retain": true
+  },
+  "0-2-digits": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-digits.svg",
+    "sha256": "1a4630cc1703f8fef0e19800335b88df22e7628885936254d5bf08a7e84b32d7",
+    "caption": "1797 chữ số viết tay 8 × 8: độ sáng từng ảnh và ảnh trung bình.",
+    "retain": true
+  },
+  "0-2-image": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-image.svg",
+    "sha256": "de8998a32e8705ff2dc3fe22d97479593238b339d72a86c4b5b91c9bc710e7ed",
+    "caption": "Ảnh màu là mảng (cao, rộng, 3): mỗi điểm ảnh là ba số R, G, B.",
+    "retain": true
+  },
+  "0-2-indexing": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-indexing.svg",
+    "sha256": "8f6ac313e479b3839774e9611189a5b7da16055a4e9a98ea19f3368f39c57393",
+    "caption": "Bốn cách lấy dữ liệu từ cùng một mảng 3 × 4.",
+    "retain": true
+  },
+  "0-2-matmul": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-matmul.svg",
+    "sha256": "e01b74fdf3313574c3837f4c589b73f2af0116037450771dd829fb06d2064e62",
+    "caption": "@ là tích vô hướng từng hàng; * nhân từng ô.",
+    "retain": true
+  },
+  "0-2-pairwise": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-pairwise.svg",
+    "sha256": "2b988f25b43beb4a93b5cf5a37bdc74be1af25bbed45368bfede0b23c6dd1ae9",
+    "caption": "Ô (i, j) của D là khoảng cách từ Ai tới Bj.",
+    "retain": true
+  },
+  "0-2-reshape": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-reshape.svg",
+    "sha256": "f11e5fe2e5ca423cbb7f31e46139c11a1ce35ad83af1c7c2f4d3763a8839ccdd",
+    "caption": "Cùng 12 số, cùng thứ tự; reshape chỉ đổi cách chia hàng.",
+    "retain": true
+  },
+  "0-2-rng": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-rng.svg",
+    "sha256": "c4898df267cc23fb347ad07a556e467b58504a605d127f991c928a01df6eed0a",
+    "caption": "Seed cố định cả dãy; mỗi lần gọi lấy phần tiếp theo.",
+    "retain": true
+  },
+  "0-2-shape-mismatch": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-shape-mismatch.svg",
+    "sha256": "6418ad4d2fdfc3106a7b9a562fac52822a2dc54a2f2a8ab6fd6c52ff298d0128",
+    "caption": "(3, 1) − (3,) thành bảng 3 × 3; chỉ đường chéo là phần dư thật.",
+    "retain": true
+  },
+  "0-2-speed": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-speed.svg",
+    "sha256": "496ed68049785e7d6523847a4943c790b613026407fc3b66abb0fc1646d2d6ff",
+    "caption": "Hai cách tính sigmoid cho cùng dãy đầu vào.",
+    "retain": true
+  },
+  "0-2-stack": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-stack.svg",
+    "sha256": "6ea3a4e82f52696c97ad40dabfd3ce58ffa9da1350e02389fd2982abdbdef1c8",
+    "caption": "concatenate nối trục đã có; stack thêm một trục mới.",
+    "retain": true
+  },
+  "0-2-view": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-view.svg",
+    "sha256": "0f4b43e44baa2b78cd17bea3d75b6232bf1442393aeda7df0a6bdd92be0e6b26",
+    "caption": "Lát cắt là view của cùng vùng nhớ; fancy indexing chép ra bản sao.",
+    "retain": true
+  },
+  "0-2-wrap": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-2-wrap.svg",
+    "sha256": "02d52a07f456dd7fd862829710fa23660a291faee6633a91a1a978e9610a8930",
+    "caption": "uint8 chạy trên một vòng 256 giá trị: 200 + 100 thành 44.",
+    "retain": true
+  },
+  "0-3-align": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-align.svg",
+    "sha256": "ba19116ba55fb0733f21c7a23de0aa22e55e7fdc94bb217224afaf85f5cb73aa",
+    "caption": "pandas ghép theo nhãn index, không theo vị trí.",
+    "retain": true
+  },
+  "0-3-bar": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-bar.svg",
+    "sha256": "81d07f804895ee207a12aaab4d16321c6d06d9aa390d933fff8f2c527847adde",
+    "caption": "Cùng trung bình, cắt trục y làm chênh lệch trông lớn hơn.",
+    "retain": true
+  },
+  "0-3-chained": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-chained.svg",
+    "sha256": "76258ff9c953a64d0f31d303b05c5087569ad222336d1d6fb537ae20b4ea9b75",
+    "caption": "Gán nối chuỗi rơi vào bảng tạm; một lần loc sửa thẳng bảng gốc.",
+    "retain": true
+  },
+  "0-3-dataframe": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-dataframe.svg",
+    "sha256": "8da3a1b7e818f6910d5487f7e63ab56a13368fe81357af5b5df275b05c1ad3bc",
+    "caption": "DataFrame: index, các cột Series, mỗi cột một dtype.",
+    "retain": true
+  },
+  "0-3-eda": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-eda.svg",
+    "sha256": "008f8c975ed51ec89ee5657c2b2aa85c794100c4fd478695d25ffb2f84f2bbd2",
+    "caption": "Phân bố điểm và quan hệ giữa giờ tự học với điểm.",
+    "retain": true
+  },
+  "0-3-files": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-files.svg",
+    "sha256": "e21b23e4c334ad2433c554aedfc48dc59816121d69f1611662c7a7b31fa89b54",
+    "caption": "Bốn file của đề và hai khóa ghép: lop và id.",
+    "retain": true
+  },
+  "0-3-fillna": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-fillna.svg",
+    "sha256": "331a41072a0e773196b40e7dd8b0de60c084a918c5e4e516d353e85fad89c740",
+    "caption": "Ô thiếu nhận median của lớp mình; lớp lạ nhận median chung.",
+    "retain": true
+  },
+  "0-3-groupby": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-groupby.svg",
+    "sha256": "1c63c820da68914e93533374f8ec4dd1a8df797c284db320cf0e2654c098f7f5",
+    "caption": "transform giữ mọi dòng; agg thu về một dòng mỗi lớp.",
+    "retain": true
+  },
+  "0-3-merge": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-merge.svg",
+    "sha256": "506e2c4d6cccc117541c9b4408c5a21a2da6ea20f2bc5cc86929118635c66c07",
+    "caption": "Khóa lặp ở bảng phải làm left merge nhân bản dòng.",
+    "retain": true
+  },
+  "0-3-skew": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-skew.svg",
+    "sha256": "dcd7ba4790f1165b3fc961898a193f282bbdc2aa00028e9933b10cbcc3959371",
+    "caption": "Giờ tự học lệch phải: đuôi dài kéo mean lên trên median.",
+    "retain": true
+  },
+  "0-3-submission": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-0\\fig\\0-3-submission.svg",
+    "sha256": "02622d862ccc81912f06947cee9e38e21c57634919f8ef39a44eaf49a67879b0",
+    "caption": "Ghép theo id vào khung sample: đúng học sinh, đúng thứ tự.",
+    "retain": true
+  },
+  "1-1-baseline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-1-baseline.svg",
+    "sha256": "82514547201c90f4b445fa4739194d54570c76fceb59bdc3a9ec10f2e202e8c2",
+    "caption": "Trên 20 buổi validation: đường hằng số lệch xa, linear bám sát số người thật.",
+    "retain": true
+  },
+  "1-1-contract": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-1-contract.svg",
+    "sha256": "f36aa94ece4d25159bdd6ca1ee46b680ec40a7a2dc2110415069b7a15074fbd4",
+    "caption": "Từ thông tin chiều thứ Sáu, mô hình đoán số người đến; nhãn chỉ có sau buổi.",
+    "retain": true
+  },
+  "1-1-mae": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-1-mae.svg",
+    "sha256": "e9fa5b7e601b75bd32d7bde3dde7061282945fdb20c8719331f0367e332ee71f",
+    "caption": "MAE là trung bình độ dài các đoạn sai số, tính theo đơn vị người.",
+    "retain": true
+  },
+  "1-1-task-types": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-1-task-types.svg",
+    "sha256": "2e21c23c665eceb00a2e44d319c258b052f7674e068a0051e1b0cf543b946b72",
+    "caption": "Loại bài toán do đầu ra quyết định: một nhãn, một số, hay chưa có nhãn.",
+    "retain": true
+  },
+  "1-1-timeline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-1-timeline.svg",
+    "sha256": "e7b1c6a920137adbc8246829d84a08a9b2163c7a22a6d73ed227c8f530f0645b",
+    "caption": "Chia theo thứ tự buổi: học trên quá khứ, chọn và chấm trên các buổi sau.",
+    "retain": true
+  },
+  "1-2-fits": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-2-fits.svg",
+    "sha256": "d11218d21923b18776693263e948e1860641f988191e0786292e73fcdf967eeb",
+    "caption": "k nhỏ bám nhiễu; k quá lớn bỏ mất xu hướng.",
+    "retain": true
+  },
+  "1-2-learning": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-2-learning.svg",
+    "sha256": "baf761fc493ce6310b6f81b9e266727807423b7e173f5d4300a46cd87a410576",
+    "caption": "Thêm dữ liệu làm train và validation tiến gần nhau.",
+    "retain": true
+  },
+  "1-2-variance": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-2-variance.svg",
+    "sha256": "cc14b9fb87eb44dee85fa460549abd51de21b00ffc518b27375d23006a35280e",
+    "caption": "Năm bộ train: k = 1 đổi theo từng bộ, k = 80 lần nào cũng sai như nhau.",
+    "retain": true
+  },
+  "1-3-groups": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-3-groups.svg",
+    "sha256": "3a9410d417b549e069031164e9add5aa654a039f1fed0190985da217ccc25645",
+    "caption": "Tách theo người giữ các mẫu cùng nguồn ở cùng phía.",
+    "retain": true
+  },
+  "1-3-oof-mapping": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-3-oof-mapping.svg",
+    "sha256": "cf667176b68b62c3ff903e51445ff58310455678b30a69eaab2562b9c24f632b",
+    "caption": "Mỗi fold chấm một phần; OOF ghép về đúng vị trí, mỗi mẫu một lần.",
+    "retain": true
+  },
+  "1-3-time": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-3-time.svg",
+    "sha256": "3ce92cfae2cc1e7d185d5dbf826fe0a913f144b04ae6c17c706b94ef6d0556bd",
+    "caption": "Validation nằm sau train và cách bởi một khoảng thời gian.",
+    "retain": true
+  },
+  "1-3-window": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-3-window.svg",
+    "sha256": "abf7d917852b681809511e6afa90482d0710deed8934fc82510c06728f20d8c2",
+    "caption": "Nhãn là tổng ba tuần sau, nên hàng train sát ranh giới đã nhìn vào validation.",
+    "retain": true
+  },
+  "1-4-columns": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-4-columns.svg",
+    "sha256": "2fc3b09c4f52bbe01b6b736c64823748a686abf20ca9835f4c0fc19d7502cf46",
+    "caption": "Cột số và cột chữ đi hai nhánh riêng rồi ghép thành 4 cột.",
+    "retain": true
+  },
+  "1-4-leakage": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-4-leakage.svg",
+    "sha256": "082a1b0bba89eb7616a8dfbecc203a7669b61af183428c5ae0c0a13028a2ed23",
+    "caption": "Fit trên toàn bảng để validation lọt vào tiền xử lý; Pipeline chỉ fit trên train.",
+    "retain": true
+  },
+  "1-4-onehot": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-4-onehot.svg",
+    "sha256": "33a434eb05384919da6aba9960cbcd33a0459f7a6f33e14c7cbb51782a382735",
+    "caption": "Mã số áp một thứ tự cách đều; one-hot cho mỗi danh mục một cột riêng.",
+    "retain": true
+  },
+  "1-4-pipeline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-4-pipeline.svg",
+    "sha256": "eb3c2513ffbcb6488d4e4a477ce0ff7eea72064303e12402696a6f0efdf61d94",
+    "caption": "Validation phải dùng μ, σ học từ train; fit riêng biến buổi đông nhất thành 0.",
+    "retain": true
+  },
+  "1-5-confusion": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-5-confusion.svg",
+    "sha256": "1557c341a94f8c04659ca9e76eb076a18e7f4518c63877b119c8516e0c5976e3",
+    "caption": "Đối chiếu nhãn thật theo hàng với dự đoán theo cột.",
+    "retain": true
+  },
+  "1-5-imbalance": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-5-imbalance.svg",
+    "sha256": "aa60c53c6d7e8b1ab977ec89a1453e418629edeb9f30e266290e9b484159e89a",
+    "caption": "Đoán toàn lớp đông: accuracy 0.97 mà bỏ sót cả ba buổi cần hỗ trợ.",
+    "retain": true
+  },
+  "1-5-logloss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-5-logloss.svg",
+    "sha256": "0491b749ad88c079f985beb1eafc18be52d90f190012a090c5953d88bb238ef9",
+    "caption": "Sai càng tự tin càng bị phạt nặng: p = 0.01 mất 4.6, p = 0.4 chỉ mất 0.9.",
+    "retain": true
+  },
+  "1-5-roc": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-5-roc.svg",
+    "sha256": "29f0eb8f429e4b6f8642c9e21b3be68087cf108f24eb2cc045df4676ec9a39a5",
+    "caption": "Đổi threshold tạo các cặp FPR, TPR trên ROC.",
+    "retain": true
+  },
+  "1-5-scores": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-5-scores.svg",
+    "sha256": "4e1c74928f2b339ed62d38a73f9ab6896b3b7be35239bb9c4ceb28207b5bf49a",
+    "caption": "Ngưỡng 0.5 chia mười score thành bốn ô của confusion matrix.",
+    "retain": true
+  },
+  "1-5-threshold": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-5-threshold.svg",
+    "sha256": "0cd062fccf5afd79dcaa4d41348e8eec2fc6cd3a52d19be32b4364591416115c",
+    "caption": "Precision và recall đổi theo threshold.",
+    "retain": true
+  },
+  "1-6-center": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-6-center.svg",
+    "sha256": "dd2bfbe8514352017e02ca7d07188b0ebc00d5394626e469529dc5697d8dd232",
+    "caption": "Target 10, 10, 10, 50: mean bị điểm 50 kéo lên, median thì không.",
+    "retain": true
+  },
+  "1-6-losses": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-6-losses.svg",
+    "sha256": "72cd90d2bbd81dea8478fcad65784b6c384dcfcd7d1f5550c7f16c82cc471e2f",
+    "caption": "Lỗi bình phương tăng nhanh hơn lỗi tuyệt đối.",
+    "retain": true
+  },
+  "1-6-r2": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-6-r2.svg",
+    "sha256": "c7e892f07877a2cec6cd8f48bfe9304bccea546b4460c1146800c1d74d788d86",
+    "caption": "Mỗi ô vuông là một lỗi bình phương: tổng 17 của model so với 200 của mốc trung bình.",
+    "retain": true
+  },
+  "1-6-ranking": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-6-ranking.svg",
+    "sha256": "873038cecbc2ef2b626c16eeb9d0a818ea9a3d0816aa2bb1e0c4c9488f3f2aa0",
+    "caption": "Cùng hai bài đúng trong top 3; đặt bài đúng sớm hơn cho AP cao hơn.",
+    "retain": true
+  },
+  "1-6-relative": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-6-relative.svg",
+    "sha256": "413ea1ac7e2feff324c734304d241e071e316a76c00a26e61685957ed4ee40aa",
+    "caption": "Cùng lỗi tuyệt đối, lỗi tương đối phụ thuộc độ lớn target.",
+    "retain": true
+  },
+  "1-7-cost": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-7-cost.svg",
+    "sha256": "e5a66f325904a26c41d6a59be562ac517cc4c1adc44f64166b9848e812cb2e02",
+    "caption": "Grid của bài: 6 cấu hình × 3 fold, cộng một lần refit, tổng 19 lần fit.",
+    "retain": true
+  },
+  "1-7-grid-log": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-7-grid-log.svg",
+    "sha256": "2b3f5f5c8b7f126a04fc7f77326f44d364c948844dab937e9e8e91f9886fd8da",
+    "caption": "F1 trên train (nét đứt) và trên CV (nét liền) theo k, cho hai kiểu weights.",
+    "retain": true
+  },
+  "1-7-nested": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-7-nested.svg",
+    "sha256": "3c78d3667a1cba7d9830acb3880e9e9ce80c5ba0811b2844e02d690c7656cdda",
+    "caption": "Nested CV: phần chấm ở vòng ngoài không tham gia lựa chọn nào.",
+    "retain": true
+  },
+  "1-7-search": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-7-search.svg",
+    "sha256": "00232adf0a7c5ba58eff2b9a4ace6f3133b2e8a60bfdee014ed8e9b4b1ae2428",
+    "caption": "Grid search và random search phân bố lượt thử khác nhau.",
+    "retain": true
+  },
+  "1-7-workflow": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-1\\fig\\1-7-workflow.svg",
+    "sha256": "490dc358d99bbe55b1a7ffc9c69ac8f3dbd3ee26bb6bac4db49ed37560759018",
+    "caption": "Chọn cấu hình trên validation rồi mới chấm test riêng.",
+    "retain": false
+  },
+  "2-1-gd1d": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-gd1d.svg",
+    "sha256": "878c2fb1552580d72e844998ee60caf4e35e602a41ca3e385ff4ed154d9caaf3",
+    "caption": "Learning rate quyết định tiến gần đáy hay vượt đáy.",
+    "retain": true
+  },
+  "2-1-hand": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-hand.svg",
+    "sha256": "a81855cc23fe35fd29a4b5ceaf010609353875064b8ecb99c45874a73788fa21",
+    "caption": "Ba điểm của ví dụ tính tay: nghiệm đóng và vị trí sau một bước gradient descent.",
+    "retain": true
+  },
+  "2-1-loglog": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-loglog.svg",
+    "sha256": "06b3e3f8508c9071383c17a3d80e0b42b234eef99d26673dcc8f4ca35d6800c2",
+    "caption": "Độ dốc trên log–log biểu diễn tốc độ tăng của thời gian theo n.",
+    "retain": true
+  },
+  "2-1-lr": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-lr.svg",
+    "sha256": "98b56ccca276f56928ffed960e36ed0b9a20828eafa75842d8014ee4a5e0afc4",
+    "caption": "Learning rate ảnh hưởng tốc độ giảm và tính ổn định của loss.",
+    "retain": true
+  },
+  "2-1-projection": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-projection.svg",
+    "sha256": "d2cd021454a953d861d3bf67630ad5d31c6be159eefabcbdaae53be5c835a0f6",
+    "caption": "Least squares chiếu y lên không gian cột của X.",
+    "retain": true
+  },
+  "2-1-residual-plots": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-residual-plots.svg",
+    "sha256": "a6652d103ec861e09e30d1efc04ed11adbbfcc257a19730fad28aba049259552",
+    "caption": "Phần dư ngẫu nhiên, uốn cong và loe dần cho các cấu trúc lỗi khác nhau.",
+    "retain": true
+  },
+  "2-1-residuals": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-residuals.svg",
+    "sha256": "81f04e66520388863c4823a26654dc9f1818de12943f1edeee171812aaa27b89",
+    "caption": "Phần dư giữa điểm dữ liệu và đường dự đoán.",
+    "retain": true
+  },
+  "2-1-scaling": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-1-scaling.svg",
+    "sha256": "0957126ca55df5f359ce8fe77554f97b708ce66ba37a902d54fb7d2cd4b84a0e",
+    "caption": "Chuẩn hóa đổi hình thung lũng và đường đi gradient descent.",
+    "retain": true
+  },
+  "2-10-circles": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-circles.svg",
+    "sha256": "6a05ceda866a0147f7ecc9cfe147fd82063bf1a7304fe0d9a98f8b08f7a7fa7a",
+    "caption": "Hai vòng đồng tâm: K-Means cắt đôi theo một đường thẳng; spectral clustering trên đồ thị láng giềng tách đúng từng vòng.",
+    "retain": true
+  },
+  "2-10-density": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-density.svg",
+    "sha256": "418f6d7a2f0f8df942dc5f924022d5547df2abbaee63912a877d73e81c22b811",
+    "caption": "eps = 0.16, min_samples = 3: 0.1 và 0.2 là core (đoạn ngang là bán kính quanh chúng); 0 và 0.35 là border, vẫn vào cụm; 3 là noise.",
+    "retain": true
+  },
+  "2-10-elbow": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-elbow.svg",
+    "sha256": "1bb466a684df6f1ba416fba1010c6da46f45d23691a655b2d2519a304132aa4f",
+    "caption": "Bốn cụm sinh sẵn: inertia giảm mãi theo K nhưng gãy khúc ở K = 4; silhouette cao nhất cũng ở K = 4.",
+    "retain": true
+  },
+  "2-10-kmeans-assign": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-kmeans-assign.svg",
+    "sha256": "c3a6de0138bfed299ec3d4830433fd8498ae45a2cbadfabe4b4eadb4a3392cb6",
+    "caption": "Gán cụm rồi lấy trung bình tạo các tâm mới.",
+    "retain": true
+  },
+  "2-10-linkage": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-linkage.svg",
+    "sha256": "d53426d6ae5612d4c3c634055e15eb7d4f42945348030f1ab1432ecfbdcf5939",
+    "caption": "Hai cụm {0, 1} và {3, 10}: single linkage đo cặp gần nhất (2), complete linkage đo cặp xa nhất (10).",
+    "retain": true
+  },
+  "2-10-lloyd": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-lloyd.svg",
+    "sha256": "e0151ed78561bd391ea8b727542357735141f9876af563082b95fe3aa105d0ba",
+    "caption": "Ví dụ tính tay với khởi tạo tệ (tâm 1 và 2): sau hai vòng điểm 2 đổi cụm, J giảm 194 → 50 → 15 → 2.5.",
+    "retain": true
+  },
+  "2-10-moons": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-10-moons.svg",
+    "sha256": "89964f92555457f50defa301d40096d9049c5abff3e3af8ceb4ac6506658cd32",
+    "caption": "K-Means và DBSCAN tạo hình cụm khác nhau trên dữ liệu trăng khuyết.",
+    "retain": true
+  },
+  "2-11-cyclic": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-11-cyclic.svg",
+    "sha256": "da3baee27b3103a3d141590a2a1589780250c0fbe9fc21382dfa752971a9be9b",
+    "caption": "Số giờ thô đặt 23 giờ xa 0 giờ nhất; mã hóa (sin, cos) đặt chúng cạnh nhau trên vòng tròn.",
+    "retain": true
+  },
+  "2-11-log": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-11-log.svg",
+    "sha256": "0ba1b73afdd1bb93f881830419e57b16a2e4e451537fb0057e819139a6fcf7bb",
+    "caption": "Cùng 3000 giá trị thu nhập: phân phối gốc dồn sát 0 với đuôi dài; sau log(1 + x) gần cân đối, hợp với mô hình tuyến tính và kNN.",
+    "retain": true
+  },
+  "2-11-te": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-11-te.svg",
+    "sha256": "a1aa31a79ad9d78ef47efa45bcbc5c11205fd9c8fcb97781b479d4b04bda9c6b",
+    "caption": "Target encoding làm mượt với m = 10: giá trị ít mẫu bị kéo về tỉ lệ chung 0.3, nhiều mẫu thì tiến dần về trung bình riêng.",
+    "retain": true
+  },
+  "2-11-time": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-11-time.svg",
+    "sha256": "0d2b4ff9399557d02faf17b5cadbc637b697bb96447d8e9960a3c35aa58ebf6e",
+    "caption": "Feature tại thời điểm dự đoán chỉ lấy các giá trị đã có trong quá khứ.",
+    "retain": true
+  },
+  "2-2-collinear": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-collinear.svg",
+    "sha256": "6b807d50e7cccf0f6beea68d8b667f577f743cd580aefa8aa3321c785c8a874e",
+    "caption": "Hai đặc trưng gần trùng nhau: lỗi gần như không đổi dọc rãnh w₁ + w₂ ≈ 1; Ridge chọn điểm gần gốc nhất trên rãnh.",
+    "retain": true
+  },
+  "2-2-enet": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-enet.svg",
+    "sha256": "22cfa82afc3bfc7d2717e74be6edb282e439330f37a06e165cea6894f7027ca9",
+    "caption": "Vùng ràng buộc của ba khoản phạt: Elastic Net vẫn có góc trên trục như Lasso nhưng cạnh cong như Ridge.",
+    "retain": true
+  },
+  "2-2-geometry": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-geometry.svg",
+    "sha256": "78304101d944e9e05608940b92a8985e63192782481547f3dc4e2c66cf216cdd",
+    "caption": "Vùng L1 và L2 chạm các đường đồng mức ở vị trí khác nhau.",
+    "retain": true
+  },
+  "2-2-hand": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-hand.svg",
+    "sha256": "f4c381ee8a3e794d3b6312fe830e70c9a793059c536fd60d83871d9422d0f25c",
+    "caption": "Ví dụ tính tay với z = (3, 0.5, −1.2) và λ = 1: vòng rỗng là z, chấm đặc là hệ số sau khi phạt.",
+    "retain": true
+  },
+  "2-2-overfit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-overfit.svg",
+    "sha256": "6694b7a749cac8fd0cfbe95f19c363de89c66ea3180ab7118650ac5e76fc55b0",
+    "caption": "Hệ số least squares trên 40 căn: cột rác cũng nhận trọng số đáng kể.",
+    "retain": true
+  },
+  "2-2-path": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-path.svg",
+    "sha256": "d7c4913c6dc6a0c51cf6ace1da5621a1863201b6874603eb214ec2f518b98927",
+    "caption": "Hệ số Lasso thay đổi khi mức phạt tăng.",
+    "retain": true
+  },
+  "2-2-shrink": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-shrink.svg",
+    "sha256": "d97fd54f510d8f7ac5d9bbafee05d935c2d5678ad12290f9f9648c6eed6a9dda",
+    "caption": "Ridge co hệ số; Lasso có vùng đưa hệ số về 0.",
+    "retain": true
+  },
+  "2-2-units": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-units.svg",
+    "sha256": "946162617fa15bcee513f5a6a8d201a91f25ca7641c580b1a5e6d130c6198e69",
+    "caption": "Cùng Ridge(alpha=1000), chỉ đổi đơn vị: tính theo m thì hệ số khoảng cách gần như không bị phạt.",
+    "retain": true
+  },
+  "2-2-validation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-2-validation.svg",
+    "sha256": "919762fc1a29e23b880ae7172127f9b3c66788c38457559680c651e433e564b4",
+    "caption": "Regularization ảnh hưởng khác nhau lên train và tập giữ lại.",
+    "retain": true
+  },
+  "2-3-boundary": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-boundary.svg",
+    "sha256": "a0c0bc2f40fae9e4c28df0429d464fe577a8f0da56b85c79824bc294ed3bfdd7",
+    "caption": "Các mức xác suất logistic tạo những đường song song.",
+    "retain": true
+  },
+  "2-3-linfail": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-linfail.svg",
+    "sha256": "000c13b79a434804a877762e1c57738595955506109cc0e1598958f0fae99d94",
+    "caption": "Thêm điểm xa kéo đường linear regression trên nhãn 0/1.",
+    "retain": true
+  },
+  "2-3-loss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-loss.svg",
+    "sha256": "df47eb95030604f26f57a32a4c4fd2b19ffe3f0335ce3797a89c6cbc8cd27e6a",
+    "caption": "Loss và gradient của cross-entropy so với lỗi bình phương.",
+    "retain": true
+  },
+  "2-3-odds": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-odds.svg",
+    "sha256": "2b38f1dd4009369dee1e999a5695a109586443fb42f3f4ccd63a352e3448c019",
+    "caption": "Mỗi link nhân odds lên khoảng 3 lần, nhưng xác suất tăng nhiều ở giữa và gần như đứng yên khi đã gần 1.",
+    "retain": true
+  },
+  "2-3-sigmoid": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-sigmoid.svg",
+    "sha256": "319bf8982137ea003af7503ea12d035dccf70a77d3a12112f507eeb56a1bca31",
+    "caption": "Sigmoid chuyển logit thành xác suất.",
+    "retain": true
+  },
+  "2-3-softmax": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-softmax.svg",
+    "sha256": "e94ff2578fbf3797b29cbc8d8ec531e8dfe8488976c06cbf53d4f8ee0b6e0998",
+    "caption": "Softmax chuẩn hóa ba logits thành phân phối có tổng bằng 1.",
+    "retain": true
+  },
+  "2-3-threshold": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-threshold.svg",
+    "sha256": "db8689df4b386f576ccfed75ef75eb86b8422b0cb89ab46d80752919228041e4",
+    "caption": "100 email test theo xác suất dự đoán: email bên phải ngưỡng bị chặn; dời ngưỡng là đổi số thư thật bị chặn nhầm lấy số spam lọt.",
+    "retain": true
+  },
+  "2-3-weights": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-3-weights.svg",
+    "sha256": "461e180f88e98843e7304090bb5613ff8c348afd94e421caa883f3de00ec8272",
+    "caption": "Dấu của hệ số cho biết nét mực làm tăng hay giảm score từng lớp.",
+    "retain": true
+  },
+  "2-4-curse": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-4-curse.svg",
+    "sha256": "28b605ddbecd0a88ca3ed1cfc7d62a34f8d85ca7cad5c49774033b644756dfb5",
+    "caption": "Muốn gom 10% dữ liệu rải đều, cạnh của khối lân cận dài 0.1 ở 1 chiều nhưng 0.98 ở 100 chiều.",
+    "retain": true
+  },
+  "2-4-k": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-4-k.svg",
+    "sha256": "9678f8c54dada792049af701a790399d496c037eca433eeb074d8e5693de9553",
+    "caption": "k thay đổi độ gấp khúc của ranh giới kNN.",
+    "retain": true
+  },
+  "2-4-knn-vote": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-4-knn-vote.svg",
+    "sha256": "c850636975d4d90cd9b93647ef6d9ffc63bfb5a023ece4fd5a79ec8aa7a6083b",
+    "caption": "Truy vấn q = (2, 2), số trên nét đứt là d²: ba láng giềng gần nhất B, E, A; đỏ thắng 2–1.",
+    "retain": true
+  },
+  "2-4-metrics": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-4-metrics.svg",
+    "sha256": "fadb0cb0f94baaf36c5bfa054e95ae0db4f62af32280a34ea7743a3f0c9ae1f0",
+    "caption": "Euclid và Manhattan: các điểm cách gốc đúng 1. Cosine chỉ xét hướng: A = 2B có khoảng cách 0 tới B, còn C khác hướng thì xa.",
+    "retain": true
+  },
+  "2-4-units": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-4-units.svg",
+    "sha256": "d503dd66ea343ccde7b07fa70d66f0e40324932e63379f8c92e62f207e30040f",
+    "caption": "Đổi đơn vị một feature làm đổi khoảng cách Euclid.",
+    "retain": true
+  },
+  "2-4-wine": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-4-wine.svg",
+    "sha256": "5dfb7df4c48885ad8bc155f7cc9f3c0a00af752c283d8d05f568d8f9996716a3",
+    "caption": "Bộ wine: chưa chuẩn hóa, proline chiếm 99.8% bình phương khoảng cách; sau StandardScaler mỗi cột góp như nhau.",
+    "retain": true
+  },
+  "2-5-extrapolate": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-extrapolate.svg",
+    "sha256": "a7709f8dade50105f9f29e765b6fdf9e6041bda816bd08f4c5b29c030e280243",
+    "caption": "Cây hồi quy là hằng số từng khúc: ra ngoài vùng train nó giữ nguyên giá trị lá cuối, còn đường thẳng kéo dài xu hướng.",
+    "retain": true
+  },
+  "2-5-gini": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-gini.svg",
+    "sha256": "1790f3dbaa83968191fcd8cdc3e28641c6316eabd47de7766bcf3a738010da51",
+    "caption": "Gini và entropy của nút hai lớp: bằng 0 khi nút thuần, lớn nhất khi hai lớp chia đều; 3 mẫu lớp 0, 1 mẫu lớp 1 cho Gini 0.375.",
+    "retain": true
+  },
+  "2-5-partition": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-partition.svg",
+    "sha256": "c489e4a08268fdbf23d55c3f2003eb4ca5b63f54dccbb26f90d39043bb149b78",
+    "caption": "Các phép chia của decision tree tạo những vùng hình chữ nhật.",
+    "retain": true
+  },
+  "2-5-splits": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-splits.svg",
+    "sha256": "ec481d966ab4c7413d3969e63f125b885b8be247408a9676d5d8ce8977f373e5",
+    "caption": "Hai cách chia cùng nút 5+, 5−: B có một lá thuần nhưng chỉ 2 mẫu; A giảm Gini nhiều hơn.",
+    "retain": true
+  },
+  "2-5-staircase": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-staircase.svg",
+    "sha256": "4fe9d4caf61b5041f41decd6596ef79d482ba743b30fb58063956d9950b76e75",
+    "caption": "Ranh giới thật là đường chéo x₂ = x₁ (nét đứt): cây chỉ xấp xỉ được bằng bậc thang, càng sát càng nhiều lá.",
+    "retain": true
+  },
+  "2-5-stump-tree": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-stump-tree.svg",
+    "sha256": "f7d0bff781ebcb015fb428273e9232c03c828c79bd4f3bf4aa1f5c9981197a67",
+    "caption": "Decision stump ngưỡng 2.5: hai lá thuần, Gini sau chia bằng 0.",
+    "retain": true
+  },
+  "2-5-stump": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-stump.svg",
+    "sha256": "64342214b89c476e3c1c30633b2338c2666b13242db237ac1ffc3c64019345a9",
+    "caption": "So ba ngưỡng chia trên cùng bốn mẫu.",
+    "retain": true
+  },
+  "2-5-tree": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-tree.svg",
+    "sha256": "4b7d7ab7c0e59cc2ba47e6f26705d96f45c5a1dad49aa60aee1a3714b985f869",
+    "caption": "Cây độ sâu 2 học trên bộ breast cancer (569 mẫu): mỗi lá ghi số mẫu ác tính và lành tính rơi vào đó.",
+    "retain": true
+  },
+  "2-5-xor": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-5-xor.svg",
+    "sha256": "289c39303892ee2d7f5e6b2222222b334c3a11108e2a96c475150f7f5ec75d4e",
+    "caption": "XOR: chia ở gốc theo x₁ hay x₂ đều để mỗi bên một mẫu mỗi lớp, nên giảm Gini bằng 0 dù tầng sau tách được hết.",
+    "retain": true
+  },
+  "2-6-bootstrap": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-6-bootstrap.svg",
+    "sha256": "9668447294288b1747439462187d507030c28222536de71292f216283fbef283",
+    "caption": "Một lượt bootstrap từ code bài: rút 4, 3, 3, 4, 2; mẫu 3 và 4 lặp hai lần, mẫu 0 và 1 không được rút nên là OOB.",
+    "retain": true
+  },
+  "2-6-ntrees": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-6-ntrees.svg",
+    "sha256": "65cc7bb206ca3852f484de5b2023f8b188daccd3e7c58f4eace18585f3393c1c",
+    "caption": "Breast cancer: OOB accuracy theo số cây. Với √d feature mỗi nút, sau khoảng 80 cây đường gần như đứng yên; bagging thuần cần nhiều cây hơn mới bắt kịp.",
+    "retain": true
+  },
+  "2-6-oob-table": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-6-oob-table.svg",
+    "sha256": "5519b3af38d8f3fa06a0d878ff35cfcfc4578aa50ce5555f66cd5caacde18b51",
+    "caption": "Ví dụ tính tay: ba tập bootstrap trên 5 mẫu; ô nét đứt là mẫu cây đó chưa thấy, dùng để chấm OOB.",
+    "retain": true
+  },
+  "2-6-trees": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-6-trees.svg",
+    "sha256": "8ad7ec7acc45814a4940f1b9d34d6d1494f8f67231675a4cc0ab0749afde3773",
+    "caption": "Ba cây trong cùng một rừng, mỗi cây học một tập bootstrap nên ranh giới khác nhau; trung bình 200 cây cho ranh giới mượt hơn.",
+    "retain": true
+  },
+  "2-6-variance": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-6-variance.svg",
+    "sha256": "fbe7bf234feb8ef83ea29857c63170eb1fcecdd16c0ffabd7c442dee80f96fc2",
+    "caption": "Tương quan giữa các cây giới hạn mức giảm phương sai.",
+    "retain": true
+  },
+  "2-6-vote": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-6-vote.svg",
+    "sha256": "b732201236799f3de1cabed66012154b833b0f78d76f7f45ca4af240d859edc1",
+    "caption": "Ba cây cho xác suất 0.9, 0.4, 0.4: trung bình xác suất chọn lớp 1, bỏ phiếu chọn lớp 0.",
+    "retain": true
+  },
+  "2-7-boosting": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-boosting.svg",
+    "sha256": "6a3ddfb68f0c4ab71739509a88bc45a45b7954226fd257974ca58c516c7d7008",
+    "caption": "Theo dõi train và validation khi tăng số cây.",
+    "retain": false
+  },
+  "2-7-early-stop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-early-stop.svg",
+    "sha256": "5a1bb0dcb262ebb95edc14176e5083b57edc02bb085c8fcfa1ff1deb714e1a45",
+    "caption": "MSE train giảm mãi; MSE validation thấp nhất ở vòng 31 rồi tăng lại.",
+    "retain": true
+  },
+  "2-7-fit-stages": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-fit-stages.svg",
+    "sha256": "9c46e2ebb219a856ca8759e38e569afe284aa3ed89bed6f21c752775b35d8f53",
+    "caption": "Tổng các cây nông dần xấp xỉ đường cong.",
+    "retain": true
+  },
+  "2-7-hand": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-hand.svg",
+    "sha256": "10014e56b56e155f3f9efbda653f441f82505cc8cc440a225df7385d93a15a5f",
+    "caption": "Ví dụ tính tay: F₀ = 4, stump chia ở 2.5 khớp phần dư; cộng một nửa bản sửa cho F₁, MSE từ 6.5 xuống 1.81.",
+    "retain": true
+  },
+  "2-7-lr": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-lr.svg",
+    "sha256": "429be7f71f03569256d0de1cca9b48f169484edcaf1035e5540514e5726c8d60",
+    "caption": "Friedman1, cây sâu 3: learning rate 0.01 cần nhiều cây hơn hẳn 0.1 mới tới đáy (chấm tròn là vòng tốt nhất).",
+    "retain": true
+  },
+  "2-7-pseudo": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-pseudo.svg",
+    "sha256": "88bc883ea154356aa4fad2341c7864f2c95ca8ed0d5c7c48e91b1808838a01d7",
+    "caption": "Pseudo-residual mà cây phải khớp: với bình phương là chính phần dư; với trị tuyệt đối chỉ còn ±1, nên outlier lệch xa không có tiếng nói lớn hơn.",
+    "retain": true
+  },
+  "2-7-rf-vs-boost": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-rf-vs-boost.svg",
+    "sha256": "c095be8cbbc2e1a43f52280af59f16b42e34dafd6518393d227b78a93b6848ce",
+    "caption": "Random forest học các cây độc lập rồi lấy trung bình; boosting học các cây nối tiếp, cây sau sửa lỗi của tổng trước nó.",
+    "retain": true
+  },
+  "2-7-stages": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-7-stages.svg",
+    "sha256": "40d370c999e12126215e686159b6896e66f227b770727dbdce62cae0442ac388",
+    "caption": "Boosting cộng các bước sửa phần dư vào dự đoán.",
+    "retain": true
+  },
+  "2-8-c": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-8-c.svg",
+    "sha256": "0982dc266d00087870a5271e5dce8e99213502c9b6d3e4833100e40cda757791",
+    "caption": "Cùng dữ liệu chồng nhau: C nhỏ chịu nhiều vi phạm, lề rộng, nhiều support vector; C lớn ép lề hẹp quanh vùng chồng lấn.",
+    "retain": true
+  },
+  "2-8-gamma": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-8-gamma.svg",
+    "sha256": "ade5be4892b9ff06c0adfa63e9c4b0f0283239c570870c07b75cffa775641778",
+    "caption": "SVM RBF, C = 1: γ nhỏ cho ranh giới gần thẳng; γ = 1 theo dáng hai mặt trăng; γ = 100 khoanh từng điểm, dấu hiệu overfit.",
+    "retain": true
+  },
+  "2-8-hand": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-8-hand.svg",
+    "sha256": "054be7911aabe157b2f5ba5430ddb465b7824a9d13989622bd8049c6960fa0bc",
+    "caption": "Ví dụ tính tay: vạch 3x₁ + 4x₂ = 10 và hai đường lề; điểm (2, 1.1) đúng phía nhưng nằm trong lề nên vẫn chịu hinge 0.6.",
+    "retain": true
+  },
+  "2-8-hinge": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-8-hinge.svg",
+    "sha256": "34103bbf644b9c148b0ed7afcf04a0f31e24fc947f076f68b7d2b56285d0e03f",
+    "caption": "Hinge loss bằng 0 khi signed margin ít nhất bằng 1.",
+    "retain": true
+  },
+  "2-8-kernel": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-8-kernel.svg",
+    "sha256": "a252f3312f185d4e8447e22193817130856555c97acb7ee0d49f40e996f7421b",
+    "caption": "Hai lớp xen kẽ trên một trục không tách được bằng một ngưỡng; thêm tọa độ x² thì một đường thẳng tách được ngay.",
+    "retain": true
+  },
+  "2-8-margin": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-8-margin.svg",
+    "sha256": "1239321216377a7ef26b02b447c2f9a9afce3b997c05b43ad6789f62f03273bf",
+    "caption": "Support vectors nằm trên hai đường lề của SVM.",
+    "retain": true
+  },
+  "2-9-hand": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-9-hand.svg",
+    "sha256": "e091d0b00810bab8b30c432505fc2fd5872af2f8e9c51cb844c2bd113d050e60",
+    "caption": "Ví dụ tính tay: bốn điểm gần một đường thẳng; chiếu xuống PC1 rồi tái tạo, mỗi điểm chỉ lệch một đoạn ngắn.",
+    "retain": true
+  },
+  "2-9-label": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-9-label.svg",
+    "sha256": "483e0d5d558ae140d90ff5c30df32a09bf110fe006f551b19cfec1be5fb02283",
+    "caption": "PCA có thể bỏ hướng biến thiên nhỏ nhưng mang nhãn.",
+    "retain": true
+  },
+  "2-9-pca": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-9-pca.svg",
+    "sha256": "c6d049011cc3522ddab5ca4b55cbecda67d9df95d53dcb981c668cacd320cd92",
+    "caption": "PC1 theo hướng dữ liệu trải dài nhất; PC2 vuông góc PC1.",
+    "retain": true
+  },
+  "2-9-recon": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-9-recon.svg",
+    "sha256": "2db6ad85974fb3adbfa8d278cdf4816e328098cc6fc6924b2fb819b341d2efdc",
+    "caption": "Ảnh chữ số 8 × 8 tái tạo từ k thành phần chính: 2 thành phần chỉ còn vệt mờ, 10 đã đọc được, 29 gần như ảnh gốc.",
+    "retain": true
+  },
+  "2-9-scree": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-9-scree.svg",
+    "sha256": "5123b6fb1b73d251b6f8c57085327799e12df48b07aea97fb26afe328e764915",
+    "caption": "Digits: giữ 95% phương sai cần 29 thành phần trên dữ liệu thô nhưng 40 sau khi chuẩn hóa từng pixel.",
+    "retain": true
+  },
+  "2-9-tsne": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-9-tsne.svg",
+    "sha256": "c3b838769d5e7fcc698fbfaac305b926e8ea9be838bac5b957f85853119f4052",
+    "caption": "Digits xuống 2 chiều: PCA để các chữ số chồng lên nhau, t-SNE tách thành cụm; khoảng cách giữa các cụm t-SNE không mang nghĩa.",
+    "retain": true
+  },
+  "2-kt1-folds": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-kt1-folds.svg",
+    "sha256": "fca6e7d33c220da8f5712286041d18db7f96af3fdf78408b50bcb8e3ba027ddd",
+    "caption": "MAE của median baseline và Ridge trên đúng ba fold: Ridge thấp hơn ở mọi fold, không chỉ ở trung bình.",
+    "retain": true
+  },
+  "2-kt1-splits": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-2\\fig\\2-kt1-splits.svg",
+    "sha256": "59083dd2f2d95eea756f1f4a3b8d59dadc2585e84cfe88345e48ed61971732fb",
+    "caption": "Ba cách chia cùng một bảng học sinh × lần đo: random theo hàng để mỗi người nằm cả hai phía; group giữ người mới cho validation; theo thời gian giữ lần đo sau mốc cắt.",
+    "retain": true
+  },
+  "3-1-autograd-sum": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-1-autograd-sum.svg",
+    "sha256": "74f1d3989b92d17d523e37476b6ed91ca88961621417ba110c034f49b9af461c",
+    "caption": "Mỗi lần backward cộng thêm vào v.grad: 30 rồi 60; đặt grad = None xong thì lượt mới lại ra 30.",
+    "retain": true
+  },
+  "3-1-broadcast": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-1-broadcast.svg",
+    "sha256": "5771ddce838d079da0aef33366fd7b491222d6fdf06921324c81b71c9e84bafa",
+    "caption": "Trừ (2, 1) cho (2,) không báo lỗi mà broadcast thành (2, 2): hai ô lệch đường chéo làm MSE thành 0.5 thay vì 0.",
+    "retain": true
+  },
+  "3-1-detach": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-1-detach.svg",
+    "sha256": "948a0dd48a87c90d64165ff40141e57e8f0b8a8be5519c50ab680c97087237d6",
+    "caption": "Cùng giá trị forward 8: giữ graph thì gradient là 12; detach v² thì đường qua v² bị cắt, chỉ còn 4.",
+    "retain": true
+  },
+  "3-1-graph": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-1-graph.svg",
+    "sha256": "af00d561f6152b3d1b3253ff895bf28aa45d497b1aedba2062da98f13a6bbdc7",
+    "caption": "Forward tính 2 → 6 → 25; backward đi ngược, nhân các đạo hàm cục bộ: dJ/dw = 10 × 3 = 30.",
+    "retain": true
+  },
+  "3-1-reshape": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-1-reshape.svg",
+    "sha256": "13b6999f99ac6542687b3b0de623a37c3b08d35377752cbc4d76ff6aed14bbb3",
+    "caption": "Cùng shape (3, 2), khác nội dung: reshape giữ thứ tự 0, 1, 2, …; transpose đưa cột cũ thành hàng mới (màu là hàng gốc của A).",
+    "retain": true
+  },
+  "3-1-shapes": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-1-shapes.svg",
+    "sha256": "fc0f6b9447ea08a196a73bc4a29b9fd9324aa2eb46183f778f2d24552cb294a5",
+    "caption": "X @ W + b: hàng đầu của X nhân cột đầu của W rồi cộng bias cho ô 4.5; chiều 3 bị gộp, hai mẫu giữ nguyên.",
+    "retain": true
+  },
+  "3-10-ae-pca": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-10-ae-pca.svg",
+    "sha256": "b2529abbbfed53277ebbac5802c2d5bcaa590148873d3fdd7613e7ce31812445",
+    "caption": "Linear autoencoder 4 → 1 → 4 của bài: train MSE giảm từ 0.228 xuống sát cận dưới PCA 0.001006 sau 300 bước, không bao giờ xuống dưới mức đó.",
+    "retain": true
+  },
+  "3-10-bottleneck": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-10-bottleneck.svg",
+    "sha256": "98b2d996f468e5bad9aa36e66630682016b37646bf58da300abc4c4374e6b2e7",
+    "caption": "Autoencoder 4 → 1 → 4 của bài: encoder nén bốn cảm biến thành một số z, decoder dựng lại bốn số từ z.",
+    "retain": true
+  },
+  "3-10-denoise": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-10-denoise.svg",
+    "sha256": "43b2da8212b30597e8c2635e4e52e27a2a1eb878317b5f67a571844635c398f4",
+    "caption": "Tín hiệu sạch nằm trên một đường; nhiễu đẳng hướng rải ra mọi phía. Chiếu lên đường bỏ phần nhiễu vuông góc, chỉ giữ phần dọc theo nó; trong 4 chiều, đó là khoảng 1/4 năng lượng nhiễu.",
+    "retain": true
+  },
+  "3-10-errors": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-10-errors.svg",
+    "sha256": "fb7ee06dac61274bab66f2a439a8d6c4d49c112acbc8833abc422fc409df10a5",
+    "caption": "Lỗi tái tạo của 48 mẫu test trên thang log; vạch đứt là ngưỡng. Nhóm bất thường nằm cách ngưỡng hơn một bậc độ lớn, hai mẫu bình thường vượt ngưỡng là hai FP.",
+    "retain": true
+  },
+  "3-10-reconstruction": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-10-reconstruction.svg",
+    "sha256": "77c2234d96989aac841bf3ed3451698a5bf761d77645dd29cf5e8944fe7f8fd4",
+    "caption": "Điểm lệch khỏi quan hệ đã học có lỗi tái tạo lớn hơn.",
+    "retain": true
+  },
+  "3-2-backprop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-2-backprop.svg",
+    "sha256": "59f2195c3b4e981239a724cdb003542e37a89085cb0f1a19e70a120a96dd85b0",
+    "caption": "Mạng 2 → 3 → 1: forward đi từ trái sang; gradient đi ngược từ J, nhân W₂ᵀ để về lớp ẩn, qua cổng ReLU′ rồi mới tới W₁.",
+    "retain": true
+  },
+  "3-2-hand-backprop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-2-hand-backprop.svg",
+    "sha256": "cdcc050c0c2e74ff981cf1908c6c89a2e627d84d64c95db6352f8917dfe843aa",
+    "caption": "Ví dụ tính tay x = 2, y = 0: forward 2 → 1 → 2 → 4; backward nhân dần 4 → 8 → 16 để ra dJ/dw₁ = 16.",
+    "retain": true
+  },
+  "3-2-learned": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-2-learned.svg",
+    "sha256": "706a55e6ee1b936840654c3bd8a2d869111d96dd5972a2b0f2a086f80a5d61fb",
+    "caption": "200 điểm quanh bốn góc XOR, cùng 500 bước Adam: mô hình linear chỉ đúng 57%; thêm một lớp ẩn 8 neuron ReLU thì học được cả bốn vùng.",
+    "retain": true
+  },
+  "3-2-mask": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-2-mask.svg",
+    "sha256": "71268af60b34d7f80792b0eec54bdac13edf1000fff76bf7c055c928a2e073ed",
+    "caption": "Ở batch hai mẫu của bài, Z₁ chỉ có một ô âm; mask (Z₁ > 0) chặn gradient qua đúng ô đó, ba ô còn lại cho gradient đi qua.",
+    "retain": true
+  },
+  "3-2-xor": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-2-xor.svg",
+    "sha256": "7120bdd40e59830d5b6fa38d0d98b968b7dd319655639d92b64fe756d4df12f0",
+    "caption": "Hai lớp XOR ở những góc đối diện không tách bằng một đường thẳng.",
+    "retain": true
+  },
+  "3-3-activation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-activation.svg",
+    "sha256": "3cb44b33f6a26c5de41d0e4a1c101f11b4336c6bd935b7218a1d580f4334ab5b",
+    "caption": "Hình dạng của ReLU, tanh và sigmoid.",
+    "retain": true
+  },
+  "3-3-bce": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-bce.svg",
+    "sha256": "499f40fc93f62518e6e85ea9e909d7b90d4751616b3c029bc57ee9aee99dc963",
+    "caption": "BCEWithLogits theo logit: đoán đúng tự tin thì loss về 0; đoán sai tự tin thì loss tăng gần tuyến tính và gradient σ(z) − y dần tới ±1, không tắt.",
+    "retain": true
+  },
+  "3-3-constant": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-constant.svg",
+    "sha256": "a496951a4d905539e9d1ecdeba272cc5b9d03dbed39d092d611b18490ef0c61b",
+    "caption": "Năm thời gian 10, 12, 13, 15, 90: hằng số tốt nhất theo MSE là trung bình 28, bị bài 90 phút kéo đi; theo MAE là trung vị 13.",
+    "retain": true
+  },
+  "3-3-depth-scale": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-depth-scale.svg",
+    "sha256": "b3a29da4ab12310f50cdc709094339899691aca4aa0a421680f9ee88f122d657",
+    "caption": "Độ lệch chuẩn pre-activation qua 10 lớp ReLU (trục log): khởi tạo N(0, 0.01²) co khoảng 9 lần mỗi lớp, He giữ quanh 1.4.",
+    "retain": true
+  },
+  "3-3-loss-metrics": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-loss-metrics.svg",
+    "sha256": "e9c091fda3c7d2e6273587af9b22d8227d628ca88a8f9b13c0c5bd54a63cd43a",
+    "caption": "Phần dư 1, 2, 10 của ví dụ: bình phương biến chúng thành diện tích 1, 4, 100, nên một mẫu đóng gần hết MSE = 35.",
+    "retain": true
+  },
+  "3-3-multilabel": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-multilabel.svg",
+    "sha256": "fdd21ea348f5efd01651830aa7e1f70443d538b2d46a0c26ddde2831467d6781",
+    "caption": "Logits (1.2, −0.4, 0.1) với ngưỡng 0.5: sigmoid từng thuộc tính bật được cả 0 và 2; softmax bắt ba thuộc tính chia nhau tổng 1 nên chỉ ô lớn nhất vượt 0.5.",
+    "retain": true
+  },
+  "3-3-residual-loss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-residual-loss.svg",
+    "sha256": "ca79675222561fe6973b554d70311baffb134ead4cd5d886f587fc00adea2a4e",
+    "caption": "So độ phạt của MSE và MAE theo phần dư.",
+    "retain": true
+  },
+  "3-3-softmax-twice": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-3-softmax-twice.svg",
+    "sha256": "836c4bc41dcfc58e89fb6741af473920d38d238f36e486d5b4f777b4710c3c27",
+    "caption": "Logits (log 2, 0) cho xác suất (0.667, 0.333); softmax thêm lần nữa nén chênh lệch còn (0.583, 0.417), nên CrossEntropyLoss nhận nhầm một bài toán khác.",
+    "retain": true
+  },
+  "3-4-batches": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-4-batches.svg",
+    "sha256": "bed6875b41157d35f4473ff76debaa21e71df215502e343ebcba168a735d2cb5",
+    "caption": "72 mẫu train, batch size 16: mỗi epoch có 5 batch (bốn batch 16 và một batch 8), mỗi batch một step, nên 20 epoch là 100 step.",
+    "retain": true
+  },
+  "3-4-checkpoint": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-4-checkpoint.svg",
+    "sha256": "5ff94483f4f840c2690204d563699cd273498c099512ce0046a348eafc39208c",
+    "caption": "Packet checkpoint của bài: trọng số, mean và scale của train, cùng đầu vào kiểm và logits mong đợi; một tiến trình Python mới chỉ dùng packet mà vẫn cho cùng kết quả.",
+    "retain": true
+  },
+  "3-4-curves": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-4-curves.svg",
+    "sha256": "c0cb539052a29e69432c8a9dac4aea8a31e52b88ddc3d6682747958222ba64a6",
+    "caption": "Log 35 epoch của bài: train loss giảm đều; validation loss thấp nhất ở epoch 32 rồi tăng nhẹ, nên checkpoint lấy epoch 32. Accuracy đạt 1.0 từ epoch 7 và không còn phân biệt được các epoch.",
+    "retain": true
+  },
+  "3-4-loop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-4-loop.svg",
+    "sha256": "1783848e13c902d6264ab59d8c66ec29e889d4bb8471a0080f0925259e79caab",
+    "caption": "Mỗi batch đi đúng một vòng zero_grad → forward → loss → backward → step rồi mới sang batch tiếp theo.",
+    "retain": true
+  },
+  "3-4-weighted-mean": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-4-weighted-mean.svg",
+    "sha256": "efdea04566ef6d0ea9cf615c1fbac88e8dc18a9240b27d6ee7367d05dbb19ce5",
+    "caption": "Batch 16 mẫu loss 0.2 và batch 8 mẫu loss 0.8: chiều rộng là số mẫu; trung bình theo mẫu là 0.4, không phải 0.5.",
+    "retain": true
+  },
+  "3-5-adam-scale": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-5-adam-scale.svg",
+    "sha256": "aa6837d70b959628e1564d6a627be9c6f96e8da41cac37d223a1c4346ee8d9fc",
+    "caption": "Gradient 0.01, 1 hay 100: bước SGD tỉ lệ với g, còn bước đầu của Adam luôn dài cỡ η = 0.1 vì gradient đã được chia cho độ lớn của chính nó.",
+    "retain": true
+  },
+  "3-5-budget": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-5-budget.svg",
+    "sha256": "be58f686ff99808f5d03a7b458cf188bd433882ebc9988808700492c43b6ded2",
+    "caption": "Loss theo bước (thang log) trên J=w₁²+8w₂²: SGD giảm đều, Adam và momentum vừa giảm vừa dao động.",
+    "retain": true
+  },
+  "3-5-momentum": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-5-momentum.svg",
+    "sha256": "162af795b4e3f4fdd498b8955e48e8a424e30f30c2911f003180c423bc65779a",
+    "caption": "Gradient không đổi g, μ = 0.9: v = g(1 + 0.9 + 0.9² + …) tăng dần tới 10g, nên bước momentum về sau dài gấp 10 bước SGD.",
+    "retain": true
+  },
+  "3-5-paths": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-5-paths.svg",
+    "sha256": "768d255f890f632ee56fd3a77ac566b5c5a4b6a53f72bf72946b81284b6989f6",
+    "caption": "Cùng η=0.09 từ (−2, 1): SGD zigzag theo w₂ rồi về đáy; momentum μ=0.8 vượt qua đáy rồi vòng lại.",
+    "retain": true
+  },
+  "3-5-schedule": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-5-schedule.svg",
+    "sha256": "a1740544d15b7037c88c1328b2c9f768d51576a217622db5db32a2fe55a44bd1",
+    "caption": "StepLR giảm learning rate theo các mốc epoch.",
+    "retain": true
+  },
+  "3-5-threshold": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-5-threshold.svg",
+    "sha256": "18a86fdf323d7c2aa3e8942109c4ded6ca103dcf7c65df938a9b33b9b5d4c936",
+    "caption": "SGD trên J = w₁² + 8w₂²: mỗi bước nhân w₂ với |1 − 16η| và w₁ với |1 − 2η|; η vượt 1/8 thì chiều w₂ nổ, còn ngay dưới ngưỡng chiều w₁ vẫn chỉ co 0.75.",
+    "retain": true
+  },
+  "3-6-bn-deep": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-bn-deep.svg",
+    "sha256": "7a80a2e8cf176a9d151932e2d48992e1350a7b052d9e87770892cf98862c397f",
+    "caption": "10 lớp ReLU rộng 64, khởi tạo N(0, 0.01²) (số từ code bài): không BatchNorm, std co còn cỡ 10⁻¹³; chèn BatchNorm sau mỗi Linear, std giữ quanh 0.58 ở mọi lớp.",
+    "retain": true
+  },
+  "3-6-bn-ln": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-bn-ln.svg",
+    "sha256": "686fb91c2dcd7869668e60601390d5f197ffa5d6628dbf10ea95de06aa573792",
+    "caption": "Trên bảng (mẫu × feature): BatchNorm lấy mean theo cột, gộp qua các mẫu trong batch; LayerNorm lấy mean theo hàng, chỉ trong một mẫu nên không phụ thuộc batch.",
+    "retain": true
+  },
+  "3-6-bn-stats": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-bn-stats.svg",
+    "sha256": "c82f472eeeecf3f2ab953d63ea281c3023c180ec65f3eabd05acf5c87a1a91ae",
+    "caption": "BatchNorm affine=False, momentum=1 trên hai hàng (1, 2) và (3, 4): train chuẩn hóa bằng phương sai chia B (ra ±1); running variance ghi chia B − 1 nên eval ra ±0.707.",
+    "retain": true
+  },
+  "3-6-capacity": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-capacity.svg",
+    "sha256": "d07227ca172849c3764e3de019a17c3de45aced023ed12dcb103c9ab50503c5c",
+    "caption": "Tăng độ phức tạp làm train loss và validation loss tách nhau.",
+    "retain": true
+  },
+  "3-6-dropout": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-dropout.svg",
+    "sha256": "c839c89b9be2c0d4f1f29ef2b7d8c70f24d376f35b27f9c052b8d6f1b480824f",
+    "caption": "Dropout p = 0.5 trên h = (1, 2, 3, 4), output của code bài: mỗi lượt train bốc một mask mới và nhân phần còn lại với 2; eval giữ nguyên h.",
+    "retain": true
+  },
+  "3-6-early-stop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-early-stop.svg",
+    "sha256": "05b10907472662895325f4abe6606c10a3cb0eabd1a78c803883b6f42b059981",
+    "caption": "Validation MSE dao động mạnh, chạm một đáy hẹp ở epoch 26 rồi nhích dần lên tới epoch 160; train loss xuống dưới MSE của nhiễu và gần như đi ngang.",
+    "retain": true
+  },
+  "3-6-patience": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-6-patience.svg",
+    "sha256": "feac9e16c669da09de6d63d7974be0d1c8acd617b07f0c4ff56791a828ad1d59",
+    "caption": "Patience 3, min_delta 0.01: tốt nhất là 0.46 ở epoch 2; ba epoch sau chỉ giảm chưa tới 0.01 (vùng tô) nên được đếm 1, 2, 3 và huấn luyện dừng sau epoch 5.",
+    "retain": true
+  },
+  "3-7-accum": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-accum.svg",
+    "sha256": "e4380e91190bf04534cb6e0cb6b9b3e27dcb5ae2df553b4e015845dc4fa94385",
+    "caption": "Gradient accumulation: bốn microbatch 8 mẫu, mỗi cái backward với loss chia 4, .grad cộng dồn rồi mới step một lần; kết quả trùng gradient của batch 32.",
+    "retain": true
+  },
+  "3-7-attention": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-attention.svg",
+    "sha256": "51fbd1c09158871dbae3675e9676268d7a826b369c4780146938622537c1e2e0",
+    "caption": "Tensor attention score (16, 8, L, L) ở FP32: 512 MiB với L = 1024 nhưng chỉ 128 MiB với L = 512, vì kích thước tỉ lệ với L².",
+    "retain": true
+  },
+  "3-7-budget": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-budget.svg",
+    "sha256": "114c8b508abfa2f7f5114c0fba88065957560401da95b3f3f7ce8ca23b8997e6",
+    "caption": "Ước lượng ngân sách: train 20 × 391 × 0.12 s ≈ 15.6 phút, cộng validation 5 phút đã vượt 20 phút trước khi tính đọc dữ liệu và checkpoint.",
+    "retain": true
+  },
+  "3-7-debug": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-debug.svg",
+    "sha256": "d863e81b07cb6877935debce466baf4f3447ea83ab7b453736a22b2677933a3a",
+    "caption": "Model và xb đã ở GPU nên forward chạy được; target yb còn ở CPU nên lỗi device chỉ hiện ra ở dòng tính loss.",
+    "retain": true
+  },
+  "3-7-fp16": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-fp16.svg",
+    "sha256": "091dff051cd73a3b9ff0710b76aa297550d42424dddbfaf711e0cd9ec92fcd6a",
+    "caption": "Gradient 10⁻⁸ nằm dưới số dương nhỏ nhất của FP16 nên thành 0; GradScaler nhân 65536 đưa nó vào khoảng biểu diễn được (6.55·10⁻⁴), rồi chia lại ở FP32.",
+    "retain": true
+  },
+  "3-7-memory": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-memory.svg",
+    "sha256": "ad93a235641d1ec5c72aff62bf615c76fdc02c72f95198a3b6a8d6d8ea6ccdf0",
+    "caption": "Mỗi tham số FP32 cần 4 byte cho trọng số, 4 cho gradient, cộng trạng thái optimizer: SGD 8 byte, SGD momentum 12, Adam 16.",
+    "retain": true
+  },
+  "3-7-overfit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-7-overfit.svg",
+    "sha256": "5388872ebd21e4d20c7a70ba181ced938c62e9d9e6a6d89ca8df0b769603e259",
+    "caption": "Overfit một batch bốn mẫu (code bài): loss đi từ gần ln 2 xuống cỡ 10⁻⁵ sau 100 bước, chứng tỏ forward, loss, backward và step đã nối đúng.",
+    "retain": true
+  },
+  "3-8-lookup": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-lookup.svg",
+    "sha256": "92725c5785823713e36e47e48cb3c85c49e071d17d3f924bdd3b3f278b57fdfc",
+    "caption": "Bảng embedding đặt tay của bài: câu đầu (2, 3, PAD) tra ra ba hàng của bảng, nên vectors có thêm chiều cuối d = 2.",
+    "retain": true
+  },
+  "3-8-lstm": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-lstm.svg",
+    "sha256": "7d37a441a781fb8b391451006890ebb8e904cb1c118d4db38596089c5d9a6460",
+    "caption": "Cell state của LSTM: từ c₁ tới c₃ chỉ nhân với cổng quên f rồi cộng nội dung mới, nên khi f gần 1 gradient đi qua nhiều bước mà không tắt dần.",
+    "retain": true
+  },
+  "3-8-padding": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-padding.svg",
+    "sha256": "bc9cfc3dfcb5c5cfa85e7a3848bf64ec41a01f076d38b4afd2a5fe8349283859",
+    "caption": "Ba câu của bài sau pad_sequence thành bảng (3, 3); mask đánh dấu 1 ở token thật, nên tổng mỗi hàng chính là độ dài câu.",
+    "retain": true
+  },
+  "3-8-pooling": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-pooling.svg",
+    "sha256": "9611adbb1d025c2afd3242d4b0b55166f82fb64fbfe0573b728d50e660316a5f",
+    "caption": "Masked mean của câu đầu: cộng vector theo mask được (2, 4), chia cho 2 token thật ra (1, 2); chia cho cả 3 ô thì ra (0.67, 1.33).",
+    "retain": true
+  },
+  "3-8-rnn-pad": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-rnn-pad.svg",
+    "sha256": "45f3197d89cdee47c114c33457fc95943c4d70a1ec6e23a90df5396c99c71ecc",
+    "caption": "Câu “dp” dài 1: trạng thái cần đọc là h₁; cột cuối h₃ đã đi qua hai PAD.",
+    "retain": true
+  },
+  "3-8-space": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-space.svg",
+    "sha256": "c17a2b44403e23b5040f95ad57ad14c74d4bf2d1a7293bf7d3ac839f72af63c2",
+    "caption": "Vector token đặt tay trong mặt phẳng: câu 1 là trung điểm của đồ_thị và dp; mean ngây thơ chia cho 3 ô (tính cả PAD) kéo điểm về phía gốc.",
+    "retain": true
+  },
+  "3-8-vanish": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-8-vanish.svg",
+    "sha256": "d490d435a80ea74161312cd9353b2b09a61a0d0fb2afb3be0b517d8fa21bad97",
+    "caption": "RNN của bài trên chuỗi dài 40 (số từ code): độ lớn gradient của trạng thái cuối theo từng token giảm hai đến ba bậc mỗi mười bước, token đầu chỉ còn cỡ 10⁻¹⁰.",
+    "retain": true
+  },
+  "3-9-attention": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-attention.svg",
+    "sha256": "e9f937c8952729b630c247bb882734461f4f9438761be425f48d8fc05923e323",
+    "caption": "Ví dụ tính tay: score 1 và 0 qua softmax thành 0.731 và 0.269, rồi trộn hai value (2, 0) và (0, 4) thành (1.462, 1.076).",
+    "retain": true
+  },
+  "3-9-cost": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-cost.svg",
+    "sha256": "c73fb0dd5e0ba11da470e129ca49810236ca510382ae68633dee587e8a25c0cd",
+    "caption": "Số ô của ma trận score L × L: từ 128 lên 2048 token, độ dài gấp 16 nhưng số ô gấp 256.",
+    "retain": true
+  },
+  "3-9-encoder": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-encoder.svg",
+    "sha256": "721bd35b4a65f39a722a95a9bc75286c22a4d634dc2173d117a6d0fb6baa5d89",
+    "caption": "Encoder block của bài (post-norm): attention trộn ngữ cảnh, cộng residual rồi LayerNorm; FFN biến đổi từng vị trí, lại cộng residual rồi LayerNorm.",
+    "retain": true
+  },
+  "3-9-heads": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-heads.svg",
+    "sha256": "ccb8cd6ce718731143b011f908a3701ece9e663cea3d0f0e9adc3190c939c90b",
+    "caption": "Trọng số attention thật của TinyEncoder (mẫu đầu, 2 head): mỗi head có phân phối riêng, mỗi hàng cộng bằng 1, cột PAD bằng 0 nhờ key_padding_mask.",
+    "retain": true
+  },
+  "3-9-mask-flow": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-mask-flow.svg",
+    "sha256": "b9a83fcd27af9ef09e7f8207f58f8749f45d0edf968179a9b43b6ce0a2e4d422",
+    "caption": "Key thứ ba bị cấm: đặt score thành −∞ trước softmax, nên trọng số của nó bằng 0 và hai key còn lại nhận 0.731 và 0.269, tổng vẫn bằng 1.",
+    "retain": true
+  },
+  "3-9-masks": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-masks.svg",
+    "sha256": "151686528ceecb190e06d6eaf686dd8c167d9b0a5b9f2a26d60ba9fc138af83d",
+    "caption": "Vùng màu là các key mà query được phép đọc.",
+    "retain": true
+  },
+  "3-9-pe": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-pe.svg",
+    "sha256": "3ffb39f32f675ebad8b43f92b63059c23218bedbc1416d867a00e645966d90c2",
+    "caption": "Positional encoding sin/cos với d = 16 cho 48 vị trí: các chiều đầu dao động nhanh, chiều sau dao động chậm, nên mỗi vị trí có một mẫu riêng.",
+    "retain": true
+  },
+  "3-9-scale": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-3\\fig\\3-9-scale.svg",
+    "sha256": "334ac0ee99e36c58e3a9d1b6441d6bf91f55df3dae341f02eb8006f9c754b39f",
+    "caption": "Thí nghiệm của bài (8 key mỗi query): không chia √d_k, key mạnh nhất chiếm 0.52 → 0.97 trọng số khi d_k tăng; có chia, giữ quanh 0.35 ở mọi độ rộng.",
+    "retain": true
+  },
+  "4-1-batches": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-1-batches.svg",
+    "sha256": "2b7c7feafabb25ac625e7aa05ebcf450e35192d2381157888f92d8112f5bcf31",
+    "caption": "Năm mẫu chia batch 2, 2, 1: batch cuối thiếu mẫu vẫn phải chạy, và kết quả nối lại theo đúng thứ tự id ban đầu.",
+    "retain": true
+  },
+  "4-1-flow": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-1-flow.svg",
+    "sha256": "3a2d34927350fbee92640995823077145aeb8d42b1692e9cd9bccbb44b3403f3",
+    "caption": "Một mẫu đi qua ba phần của gói: processor, trọng số trong state_dict, rồi bảng nhãn.",
+    "retain": true
+  },
+  "4-1-memory": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-1-memory.svg",
+    "sha256": "65e4ed9cfe34125c42a0b2daecbc76c63de39e5b862430f304d456f806c50012",
+    "caption": "Bộ nhớ thô của trọng số và của tensor input: gấp đôi batch và gấp đôi cạnh ảnh làm input gấp 8, từ 9.19 lên 73.5 MiB.",
+    "retain": true
+  },
+  "4-1-package": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-1-package.svg",
+    "sha256": "a7100cd79fd889533f6511bde427816e98451fa83216ff28f685e14416db1bae",
+    "caption": "Processor, kiến trúc, weights và labels cùng xác định phép dự đoán.",
+    "retain": false
+  },
+  "4-1-processor": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-1-processor.svg",
+    "sha256": "93b49c8f77c893daf9366509395fef328d01e4f5177e68c52b47834e9ef6044c",
+    "caption": "Cùng một ảnh thật đưa vào processor RGB: đọc bằng cv2 thì đỏ và lam bị đảo; chia 255 trước khi processor chia lần nữa thì mọi pixel gần 0, mạng thấy gần như một màu.",
+    "retain": true
+  },
+  "4-1-transfer": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-1-transfer.svg",
+    "sha256": "6d17964a1b213fa38f746f13934faee38b582e752f642fb6edf3f5cf40b555ae",
+    "caption": "Các tầng của mạng ImageNet học đặc trưng chung (cạnh, kết cấu, hình dạng, bộ phận) dùng lại được; chỉ head cuối gắn với 1000 lớp cũ.",
+    "retain": true
+  },
+  "4-2-clusters": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-2-clusters.svg",
+    "sha256": "67888ae94123cadbbc0cc29e7960ee231f0e8656b15ffb599b0d6d65a947b459",
+    "caption": "Bảng đếm chữ số thật × cụm KMeans trên validation (cột đã xếp lại): phần lớn khối nằm trên đường chéo, nhưng vài chữ số tách đôi hoặc dồn chung một cụm.",
+    "retain": true
+  },
+  "4-2-cosine": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-2-cosine.svg",
+    "sha256": "374b992726746095c5a39adba6b0c1cc82b41536dc3f39cd6a1d206ca21ccd32",
+    "caption": "Chuẩn hóa giữ hướng và bỏ ảnh hưởng của độ dài vector.",
+    "retain": true
+  },
+  "4-2-results": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-2-results.svg",
+    "sha256": "daf5014fa43aedd6360ca28cd67e9d38238ba64be51f4a4f6e264274334048c4",
+    "caption": "Ảnh validation đầu tiên (chữ số 0) và 5 ảnh train gần nhất theo cosine trên embedding 16 chiều: cả năm đều là chữ số 0, cosine từ 0.972 giảm dần.",
+    "retain": true
+  },
+  "4-2-reuse": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-2-reuse.svg",
+    "sha256": "72df5cd5122f6fc5b96d06227a3098d97c7d71eee5544bcd2d6ac71c2557ec17",
+    "caption": "Encoder PCA đứng yên biến mỗi ảnh 8 × 8 thành 16 số; cùng ma trận ấy dùng cho linear probe, kNN, tìm kiếm và phân cụm (số từ code bài).",
+    "retain": true
+  },
+  "4-2-scatter": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-2-scatter.svg",
+    "sha256": "44e54ffb178a849e640eec21329b53176062e6734c59af45a9476be02ec12a2e",
+    "caption": "540 ảnh validation theo hai tọa độ đầu của embedding PCA (số là trung vị từng chữ số): cùng chữ số tụ lại gần nhau, dù chỉ nhìn 2 trên 16 chiều.",
+    "retain": true
+  },
+  "4-2-scores": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-2-scores.svg",
+    "sha256": "7d17be3d7fb1d450cc2bef2190ef7ab1db12f46a31381adf6b70c0f115d6e23a",
+    "caption": "Accuracy trên cùng 540 ảnh validation: kNN trên 16 tọa độ PCA gần bằng kNN trên đủ 64 pixel (chênh một ảnh); linear probe thấp hơn.",
+    "retain": true
+  },
+  "4-3-bn": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-3-bn.svg",
+    "sha256": "2f0512f026f488aa2c3f0c63b24d93e5e9a5a3faa3c9cec2c69d15a9418d6cc6",
+    "caption": "BatchNorm đã đóng băng hết tham số vẫn cập nhật running_mean khi chạy ở train(): từ (0, 0) thành (1.5, 3); chỉ eval() giữ buffer đứng yên.",
+    "retain": true
+  },
+  "4-3-hand": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-3-hand.svg",
+    "sha256": "dacd047ee629e0fc48106dbe0e53c8fbbac68ef5c4768b8d9ce3488053fdb08f",
+    "caption": "Ví dụ tính tay ŷ = a(wx): gradient về encoder phải nhân qua a của head; với learning rate 0.1 cho head và 0.01 cho encoder, a lên 1.4 còn w chỉ nhích tới 2.02.",
+    "retain": true
+  },
+  "4-3-params": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-3-params.svg",
+    "sha256": "8b4381d433f0e6ef1cab192ac9e5551a3da923888a8ed3a8f81d4fae9f477aae",
+    "caption": "Số tham số được học và accuracy validation ở checkpoint (số từ code bài): mở encoder tăng từ 66 lên 2146 tham số, accuracy từ 0.902 lên 0.938.",
+    "retain": true
+  },
+  "4-3-transfer": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-3-transfer.svg",
+    "sha256": "b4c9e451b9a8af9a6f17f83a9c1bb1ae6fd31e5ee88edc4fafb6762ee2aa6ec9",
+    "caption": "Learning curve thực tế khi chỉ học head và khi mở cả encoder.",
+    "retain": true
+  },
+  "4-3-unfreeze": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-3-unfreeze.svg",
+    "sha256": "d948a3b11efa9c8c17a294a635587ac2c62367d55aadae7f56fc5da85d542541",
+    "caption": "Ba mức mở tham số, thử theo thứ tự: chỉ head, thêm block cuối, rồi toàn bộ encoder.",
+    "retain": true
+  },
+  "4-3-validation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-3-validation.svg",
+    "sha256": "ab4e732f3bd01fd37844bf064f06583f51f279d9f3c99031e288cdf28f82c587",
+    "caption": "Checkpoint head-only được chọn tại validation loss thấp nhất.",
+    "retain": true
+  },
+  "4-4-adapters": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-adapters.svg",
+    "sha256": "6df269f2f112e8b11da31069190dd8224ea0b3b6dee144e9989f24e6acaf6b33",
+    "caption": "Một base, mỗi nhiệm vụ một adapter kèm head riêng: đổi adapter là đổi nhiệm vụ, không merge hai adapter vào cùng một W₀.",
+    "retain": true
+  },
+  "4-4-count": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-count.svg",
+    "sha256": "04edefe6cce192727e684cec7754777e891ed8e6ce96bffdcbf233576b9294f3",
+    "caption": "Với lớp 6×8, LoRA học 14r tham số; từ r = 4 đã vượt 48 của full update.",
+    "retain": true
+  },
+  "4-4-curves": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-curves.svg",
+    "sha256": "79f9ee3c2f0beb9334ff7ccb7162933d075ab1096bf3638f61f3ffeda0b46aac",
+    "caption": "Validation MSE theo bước (số từ code bài, trục log): full về 3·10⁻¹⁴; rank 2 có lúc xuống dưới 10⁻⁹ nhưng dao động, dừng ở 5·10⁻⁶; rank 1 nằm ở sàn 0.00204 từ khoảng bước 40.",
+    "retain": true
+  },
+  "4-4-distil": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-distil.svg",
+    "sha256": "fef268e89e5cacc471da7489b5cb5ca26df027fa4f1390a41d2ef9d08e14c8f7",
+    "caption": "Phần được học khi chèn LoRA rank 4 vào q_lin, v_lin của DistilBERT (số từ output bài): khoảng 1% tổng tham số, trong đó head mới gấp tám lần adapter.",
+    "retain": true
+  },
+  "4-4-grad": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-grad.svg",
+    "sha256": "8e9ec231ca32a0869ef0863945012401afc591aef1e2218af135d46c416cbdd7",
+    "caption": "Gradient ở bước đầu (số từ code bài): ∂L/∂A chứa B = 0 nên bằng 0, ∂L/∂B thì không; sau một bước, A bắt đầu nhận gradient. Màu theo dấu, đậm theo độ lớn trong từng ma trận.",
+    "retain": true
+  },
+  "4-4-path": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-path.svg",
+    "sha256": "2c79aeaac7713ceee322f2831c90fb719693c6c47a48ccaadfd0c4d9c02815db",
+    "caption": "LoRA giữ W₀ cố định và học phần sửa (α/r)·BA từ hai ma trận mỏng: với lớp 6×8 và r = 2, B có 12 số, A có 16 số.",
+    "retain": true
+  },
+  "4-4-rank1": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-rank1.svg",
+    "sha256": "57481e118460f9d2a05f3ac23de198ec394f5198d58cbb5047f71522cd78d305",
+    "caption": "LoRA rank 1: adapter đo aᵀx rồi đẩy output dọc đúng một hướng b, tỉ lệ với con số ấy; input vuông góc với a đi qua như model gốc.",
+    "retain": true
+  },
+  "4-4-spectrum": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-4-spectrum.svg",
+    "sha256": "87baf74305e644eba7f3dc349227e544345705e81b6559b5f3b55c745145da2c",
+    "caption": "Giá trị kỳ dị của phần sửa thật (số từ code bài): chỉ hai giá trị khác 0. Rank 1 giữ σ₁, phần σ₂ bị bỏ góp khoảng 0.108²/6 ≈ 0.0019 vào MSE.",
+    "retain": true
+  },
+  "4-5-angles": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-angles.svg",
+    "sha256": "008525e42d41d105234a8f5d7a4990805ac251e5f7697f32f3f96f6b35c660d4",
+    "caption": "Ảnh 1 (0.8, 0.6) so với ba vector lớp dài 1 (số từ code bài): cosine 0.8, 0.6, −0.8; nhân scale 5 rồi softmax cho “bàn” 0.7309.",
+    "retain": true
+  },
+  "4-5-candidates": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-candidates.svg",
+    "sha256": "fb13e66ccc881e93e9f17324632ba08e340b7602e7faa3b62351c041d0685d12",
+    "caption": "Softmax của ảnh 1 trước và sau khi thêm một lớp trùng hướng ảnh (số từ code bài): “bàn” từ 0.731 xuống 0.245, lớp mới thắng với 0.665.",
+    "retain": true
+  },
+  "4-5-contrastive": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-contrastive.svg",
+    "sha256": "bec273cf5c2806438c540cdc92fd610043ea9a8d564cd59a4436896444b50241",
+    "caption": "Score trên đường chéo ứng với các cặp ảnh–caption đúng.",
+    "retain": true
+  },
+  "4-5-matrix": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-matrix.svg",
+    "sha256": "155aeca7b2fe47ac6aa48e9231b49cd8fba2a6db878a8ea1ef6489f32d093334",
+    "caption": "Cùng ma trận logits, softmax theo hàng và theo cột cho hai phân phối khác nhau (số từ code bài): loss ảnh tìm chữ 0.2114, chữ tìm ảnh 0.2135.",
+    "retain": true
+  },
+  "4-5-ranking": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-ranking.svg",
+    "sha256": "1eed20aba4c4dd0b8a04ea677bf4a9ce816e66edcc3381ec12775a4434f8a7dd",
+    "caption": "Log-probability tích lũy qua từng token của hai ứng viên (số từ code bài): tổng log là điểm cuối nên chọn A; mean log là độ dốc từ gốc nên chọn B.",
+    "retain": true
+  },
+  "4-5-shift": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-shift.svg",
+    "sha256": "4bbf2b9293b9846544274ac6c1ac5108189fdcb02f0c4535d98a646c658df646",
+    "caption": "Chấm một ứng viên bằng causal language model: logits ở vị trí j dự đoán token j + 1; chỉ cộng log-prob của các token thuộc ứng viên.",
+    "retain": true
+  },
+  "4-5-shots": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-shots.svg",
+    "sha256": "ea5bf52d9e9b7dbdc136f1f726b9a43b67ba3ee8d3adac74055a5210e7245dc6",
+    "caption": "Ba cách dùng ví dụ có nhãn của nhiệm vụ mới: zero-shot không dùng, few-shot đặt vài ví dụ vào prompt, fine-tuning dùng chúng để cập nhật trọng số.",
+    "retain": true
+  },
+  "4-5-tokens": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-5-tokens.svg",
+    "sha256": "98fcd5ffe6e0a11bb8ef7b91d4e5908c60ecf9d935ad7577d86b30b82942c148",
+    "caption": "Cùng một câu và cùng tổng log-probability −6, tokenizer tách 3 hay 6 token cho PPL 7.39 hay 2.72: PPL chỉ so được trong cùng một tokenizer.",
+    "retain": true
+  },
+  "4-kt2-floor": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-kt2-floor.svg",
+    "sha256": "8ca3d3dc3f6879a06d962f0313f0e11389674522c0d992aa5eb02acd5edd866d",
+    "caption": "Cross-entropy của một mẫu ba lớp khi logit lớp đúng tăng dần: đưa logits vào loss thì về 0; áp softmax trước thì loss kẹt ở sàn −ln(e/(e+2)) ≈ 0.551.",
+    "retain": true
+  },
+  "4-kt2-flow": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-kt2-flow.svg",
+    "sha256": "c341e76f7edfd97c5779baf1b69a83af7a5bbdcd08147174597bb55faea68d08",
+    "caption": "Quy trình ôn khóa 2: đọc đề, nộp baseline, debug một batch, thử từng thay đổi trên cùng split, chọn checkpoint, tải lại rồi nộp.",
+    "retain": true
+  },
+  "4-kt2-order": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-kt2-order.svg",
+    "sha256": "9a6c065cb9601ab1286afbd50532bd227c787771cb072d59af8eecd3ec432a5b",
+    "caption": "File nộp giữ thứ tự input 43, 41, 42, 44; judge bỏ cột id và chấm theo thứ tự 41, 42, 43, 44 nên cả bốn hàng đều sai.",
+    "retain": true
+  },
+  "4-kt2-prob": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-kt2-prob.svg",
+    "sha256": "071325630b7163d7a47ff0b752b47670755e80266c8114a92c8288a704c907b7",
+    "caption": "Một mẫu sai có xác suất lớp đúng giảm từ 0.3 xuống 0.1: argmax vẫn sai nên accuracy giữ nguyên, còn loss của mẫu tăng từ 1.20 lên 2.30.",
+    "retain": true
+  },
+  "4-kt2-regions": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-kt2-regions.svg",
+    "sha256": "9f70f3ca37fed3b7c0f10ddf04bc823cbc19474b6c623696a431bcac97dc1c4d",
+    "caption": "Ba vùng quyết định của head đặt tay. Mẫu (1.5, 0) có nhãn 1 (vòng rỗng) nằm trong vùng của lớp 0.",
+    "retain": true
+  },
+  "4-kt2-split": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-4\\fig\\4-kt2-split.svg",
+    "sha256": "6d1e2d8be902e3d66bf0c5c549b4db51ec815c9f9e7caeb9a4ae4a85c8bb73f9",
+    "caption": "Hai cách chia cùng 8 buổi ảnh: chia ngẫu nhiên rải ảnh validation vào mọi buổi; chia theo buổi giữ riêng cả buổi, đúng tình huống test là buổi mới.",
+    "retain": true
+  },
+  "5-1-channels": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-channels.svg",
+    "sha256": "eaa11ddc6ddacda00e9a3e6447b760c1677fd149a45200e458e9a668fb276870",
+    "caption": "Một kernel đọc cả ba kênh RGB, cộng lại thêm bias thành một kênh ra; tám kernel độc lập cho tám kênh, tổng 8·(3·9 + 1) = 224 tham số dù ảnh lớn hay nhỏ.",
+    "retain": true
+  },
+  "5-1-edges": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-edges.svg",
+    "sha256": "1622b5654d5e9800ddb0692b7613d2fa4f8b3ff69adb42fa7a368f0ff81b280c",
+    "caption": "Ảnh thật qua hai kernel 3×3 đặt tay: kernel nét dọc làm sáng các cạnh dựng đứng của tháp, kernel ngang làm sáng mái và lan can.",
+    "retain": true
+  },
+  "5-1-equiv": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-equiv.svg",
+    "sha256": "9ae1c924deb586001aeac990a37358ea0de055f5592a78f915862696ee4beefc",
+    "caption": "Đồng biến với phép dịch trên ảnh thật: dịch ảnh sang phải 20 px thì feature map nét dọc dịch theo đúng 20 px, giá trị giữ nguyên trừ sát biên.",
+    "retain": true
+  },
+  "5-1-padding": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-padding.svg",
+    "sha256": "4ab74f5d4edaefe3d18b1017acc3198161be27d6638ace3151daf51092f837d4",
+    "caption": "Kernel 3 trên chiều dài 7: thêm vành 0 hai đầu và dịch 2 ô thì cửa sổ bắt đầu ở 0, 2, 4, 6, ra 4 ô; dilation 2 đọc cách một ô, phủ 5 ô nên chỉ còn 3 vị trí.",
+    "retain": true
+  },
+  "5-1-pool-shift": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-pool-shift.svg",
+    "sha256": "8de00ae936b435429d561e9184d6e18becb94d0830978b14ffbb6666c63a6a1a",
+    "caption": "Max pool cửa sổ 2, stride 2 (số từ code bài): đỉnh 4 dịch một ô qua ranh giới hai cửa sổ thì đầu ra đổi từ (4, 0) thành (0, 4).",
+    "retain": true
+  },
+  "5-1-pool": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-pool.svg",
+    "sha256": "db70650e7a2881202b0593815061df4395aa36c26b22e70f85f6ee417a8e5201",
+    "caption": "Bản đồ nét của ảnh thật qua ba lần max pool 2×2: từ 128×128 xuống 16×16, đường nét vẫn còn nhưng chi tiết và vị trí chính xác mất dần.",
+    "retain": true
+  },
+  "5-1-receptive": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-receptive.svg",
+    "sha256": "d864e204893901a3d00c6df6ea764db014d7930c5b1e83dfaf331083d3be1416",
+    "caption": "Hai lớp kernel 3, stride 1: ô ở lớp 2 đọc ba ô lớp 1, mỗi ô ấy đọc ba ô đầu vào chồng lấn nhau, nên vùng nhìn gồm 5 ô.",
+    "retain": true
+  },
+  "5-1-window": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-1-window.svg",
+    "sha256": "49b9f6e6d7b591959ae11ce05ea33be3ac74e75804022e8e1fe4e14f71f67dcd",
+    "caption": "Cửa sổ 2×2 đầu tiên (tô cam) nhân từng ô với kernel rồi cộng: 1·1 + 2·0 + 0·0 + 1·2 = 3, ô đầu của đầu ra; trượt kernel qua bốn vị trí được 3, 8, 2, 1.",
+    "retain": true
+  },
+  "5-2-bottleneck": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-bottleneck.svg",
+    "sha256": "429d0241bbabeaa8e96a2688582a67db6c0cb8150e2362d4052f9006c6e305ab",
+    "caption": "Bottleneck của ResNet-50 (layer1): conv 1×1 thu 256 kênh về 64, conv 3×3 chạy ở 64 kênh, conv 1×1 mở lại 256; 69 632 tham số so với 1 179 648 của hai conv 3×3 ở 256 kênh.",
+    "retain": true
+  },
+  "5-2-cnn": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-cnn.svg",
+    "sha256": "05a75d2fbe62c0077827fc79aff212e4557bfe7a7cd2ac187c3f8a0fa397b9b5",
+    "caption": "TinyCNN theo shape: hai lần conv + ReLU xen max pool, trung bình mỗi feature map thành một số, rồi linear head ra hai logits.",
+    "retain": true
+  },
+  "5-2-depth": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-depth.svg",
+    "sha256": "6a73782281cfe62075aa6a74670f325c09bdf879af530937bc8699da2790d1cd",
+    "caption": "Loss train theo bước của bốn mạng 18 lớp: không BatchNorm, plain kẹt ở ln 2 còn residual học nhưng có lúc vọt lên; có BatchNorm, residual hội tụ nhanh hơn plain.",
+    "retain": true
+  },
+  "5-2-grad": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-grad.svg",
+    "sha256": "776eafde74b955fb543cf35db406f1a8f7074f43330cfed855d4cf78bc13dc60",
+    "caption": "Norm gradient tới conv đầu ở bước đầu tiên (số từ code bài, trục log): mạng plain không BatchNorm chỉ còn cỡ 10⁻¹¹; thêm đường tắt hoặc BatchNorm đưa nó lên cỡ 10⁻² đến 10⁻¹.",
+    "retain": true
+  },
+  "5-2-metrics": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-metrics.svg",
+    "sha256": "6a50c3ab77443bba7a72830b0d3aed3cf4044c2e5ba88731707888a35139892b",
+    "caption": "Hai ảnh validation và ba kênh thật sau Conv + ReLU đầu tiên của TinyCNN đã train (kênh có phương sai lớn nhất): mỗi kênh là một bộ dò riêng, nhấn những phần khác nhau của nét.",
+    "retain": true
+  },
+  "5-2-residual": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-residual.svg",
+    "sha256": "9261f98d3830b664e2eb11600d49c24a8909363c956b2cbfaf653c8bdd6f7061",
+    "caption": "Residual block của bài: nhánh F(x) gồm conv, ReLU, conv; đường tắt mang x cộng thẳng vào F(x) rồi mới qua ReLU.",
+    "retain": true
+  },
+  "5-2-resnet": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-resnet.svg",
+    "sha256": "105bcc132de19118fc1718a36b010d4e0879c81ef9c7f00b58be35f4e6efe5e5",
+    "caption": "ResNet-18 theo stage (shape từ code bài): stem đưa ảnh 224×224 về 56×56; mỗi stage sau chia đôi cạnh và nhân đôi số kênh, tới 512 kênh 7×7 trước global pooling và lớp linear.",
+    "retain": true
+  },
+  "5-2-samples": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-2-samples.svg",
+    "sha256": "b8d8851f6f8fd073c4209782197838d8cfedb9552ec311708fca776d5a2c4b90",
+    "caption": "Tám ảnh train đầu tiên do make_lines sinh (dữ liệu từ code bài): nét đứng và nét ngang dài 8 ô, rộng 2 ô, ở một trong 5 vị trí, cộng nhiễu nhỏ.",
+    "retain": true
+  },
+  "5-3-ablation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-ablation.svg",
+    "sha256": "ebf704794b962d64996e70015b8b6be4bdc9ea09b53f98550916baee65fade03",
+    "caption": "Ablation trên load_digits (số từ output bài, trung bình ba seed): phép dời gần như không đổi cột ảnh gốc nhưng nâng cột ảnh dời từ 0.627 lên 0.846; phép lật kéo cả hai cột xuống.",
+    "retain": true
+  },
+  "5-3-boxflip": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-boxflip.svg",
+    "sha256": "0a8ac0dcaea60fc4601cebfc02aa22020cbfa6a90f808ce499e1bc6f1d6ac6b6",
+    "caption": "Lật ngang mask 4×10 và box xyxy cùng lúc (số từ code bài): mask sáng ở cột 1–3 chuyển sang cột 6–8, box (1, 1, 4, 3) thành (6, 1, 9, 3).",
+    "retain": true
+  },
+  "5-3-crop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-crop.svg",
+    "sha256": "b2458a6fa2b0b608babb4c2f05e84d3efb16d180bf1df4928c75b83866e689f7",
+    "caption": "RandomResizedCrop mặc định (scale 0.08–1) trên ảnh thật với một vật chiếm 4% ở góc: trên 2000 crop, khoảng 76% không chứa nổi nửa vật mà vẫn giữ nhãn.",
+    "retain": true
+  },
+  "5-3-digit-aug": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-digit-aug.svg",
+    "sha256": "4806de14d9361b2d454a5154af6b2e18a0af9f12ceb6e626a3e130477c9b31e6",
+    "caption": "Dời một pixel vẫn là chữ 2; lật ngang tạo một hình không còn là chữ 2 nhưng vẫn mang nhãn 2.",
+    "retain": true
+  },
+  "5-3-gray": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-gray.svg",
+    "sha256": "1c823084b0344e6b1fb76bd9bd72967278306cd85e4ae52ff1c6cf014d6a0965",
+    "caption": "Ảnh xám vào conv RGB: chép kênh xám thành ba kênh cho cùng đầu ra với một conv một kênh có weight bằng tổng ba lát W₁ + W₂ + W₃.",
+    "retain": true
+  },
+  "5-3-labels": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-labels.svg",
+    "sha256": "f7897fedabd333bbdba76e5e7c1f8ae90ace2fd76477b6abc864d7513e8ad28d",
+    "caption": "Cùng một phép biến đổi, ba kết quả khác nhau: lật ảnh hoa vẫn là hoa; lật biển rẽ trái thành rẽ phải; xoay chữ số 6 (ảnh load_digits) thành hình số 9.",
+    "retain": true
+  },
+  "5-3-photo-aug": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-photo-aug.svg",
+    "sha256": "a38198b8e79dcf0d8d26bb4ea8e5ed506277aa42f1d345c7133827f8e2ae85c1",
+    "caption": "Năm phép augmentation thường gặp trên một ảnh thật: lật ngang, crop rồi phóng, xoay, đổi sáng và tương phản, cutout. Với nhãn “tháp”, cả năm đều giữ nhãn.",
+    "retain": true
+  },
+  "5-3-split": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-3-split.svg",
+    "sha256": "1f1c0c851c5045ca85b1e16f430e803bc17f3cab15f8458c4173e08ef3a9847f",
+    "caption": "Chia theo nguồn trước khi augment: mọi frame của nguồn C nằm trọn trong validation; các biến thể augmentation chỉ sinh từ ảnh train.",
+    "retain": true
+  },
+  "5-4-cost": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-cost.svg",
+    "sha256": "4f66791557370f87d762a89c0214250dc236fd132fe88dcac9931e26b0462a67",
+    "caption": "Số ô của ma trận attention mỗi head, mỗi lớp của ViT patch 16: 197² ở ảnh 224, 577² ở ảnh 384, 785² ở ảnh 448, tức gấp khoảng 16 lần khi cạnh ảnh gấp đôi.",
+    "retain": true
+  },
+  "5-4-patches": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-patches.svg",
+    "sha256": "44a3e171d2c55f60d4ca0a85286e4f33e75ca28f82102b34322e9d3a068b0f13",
+    "caption": "Ảnh thật 224×224 chia patch 16×16 thành lưới 14×14; mỗi patch trải thành một token 768 số, đánh số theo hàng từ 0 đến 195.",
+    "retain": true
+  },
+  "5-4-posinterp": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-posinterp.svg",
+    "sha256": "33ee8ef1c129c16b3ce0397379e4a166bf0a471a302059c756628e5c9cb8114e",
+    "caption": "Nội suy bảng vị trí từ lưới 4×4 sang 7×7 (số từ code bài): mỗi vector mới nhận tọa độ của đúng chỗ tương ứng trên lưới cũ; CLS được tách ra trước và ghép lại sau.",
+    "retain": true
+  },
+  "5-4-position": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-position.svg",
+    "sha256": "b46c53fb6affc38824c0918f0df356eb4493a97d1d3a7527c2b2ba9aa8ce9094",
+    "caption": "Hai ảnh có cùng tập 16 patch, chỉ khác bố cục: thiếu position embedding, self-attention rồi mean pooling cho cùng kết quả; cộng mã vị trí cố định tại chỗ thì hai ảnh tách được.",
+    "retain": true
+  },
+  "5-4-reach": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-reach.svg",
+    "sha256": "b24b1ac5e4459909cdc2eb87b8d7b4ed0309abea4a236255534a396662452a3c",
+    "caption": "Từ ô góc (0, 0) của lưới 14×14: conv 3×3 stride 1 cần 13 lớp mới với tới góc đối diện; một lớp attention đã có đường đọc mọi patch.",
+    "retain": true
+  },
+  "5-4-sequence": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-sequence.svg",
+    "sha256": "a86fcb68101a62d91180e44d97b4dded96a98a0bf8e11d980e336dffd71e107f",
+    "caption": "Chuỗi vào ViT-B/16: một class token ghép trước 196 patch token, cộng bảng vị trí học được, qua encoder với shape (B, 197, 768); output của CLS đi vào head.",
+    "retain": true
+  },
+  "5-4-unfold": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-4-unfold.svg",
+    "sha256": "1f3c56786fbb22bc77a087fbaed8672b20adde4f1d8034054a41b3f4bc9022ee",
+    "caption": "Ảnh 4×4 đánh số theo hàng (số từ code bài): unfold rồi permute cho patch đúng (0, 1, 4, 5); flatten rồi cắt mỗi 4 số chỉ lấy một hàng ảnh.",
+    "retain": true
+  },
+  "5-5-classnms": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-classnms.svg",
+    "sha256": "71622dc56219d32003c30ddbb1453c0d78db072bb1f3800828f3f6f06a7038d4",
+    "caption": "Người ngồi trên xe đạp (số từ code bài): hai box khác lớp chồng nhau với IoU 0.667; nms trộn lớp xóa box xe đạp, batched_nms chỉ so box cùng lớp nên giữ cả hai.",
+    "retain": true
+  },
+  "5-5-formats": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-formats.svg",
+    "sha256": "74230fcfe683087f0666e2f2834b70d2fb65bdb1613f3bddfced3a528268d303",
+    "caption": "Cùng một box quanh tháp trên ảnh thật 640×427 ghi theo ba quy ước: xyxy pixel của TorchVision, xywh pixel của COCO, cxcywh chuẩn hóa 0–1 của nhãn YOLO.",
+    "retain": true
+  },
+  "5-5-iou": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-iou.svg",
+    "sha256": "f48fc5a93d5c169fef6ae047c13bf9df299e71acff8d03d87d6e1096e4fddcbd",
+    "caption": "Ví dụ tính tay: A = (0, 0, 4, 4), B = (1, 1, 5, 5) giao nhau ở ô 3×3; IoU = 9 / (16 + 16 − 9) = 9/23 ≈ 0.39.",
+    "retain": true
+  },
+  "5-5-letterbox": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-letterbox.svg",
+    "sha256": "9f2859707d9120651af3422ed3e0c6b9f9b4387cfa6b8a87860cb379f0a2b354",
+    "caption": "Letterbox: ảnh 1280×720 thu về 640×360 rồi đệm 140 pixel trên và dưới; box trên ảnh vuông phải trừ đệm trước, chia hệ số 0.5 sau mới về đúng ảnh gốc.",
+    "retain": true
+  },
+  "5-5-match": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-match.svg",
+    "sha256": "e196da72aa8a23616c736750366c5d817501d325a9eb04c51b71772b56c848f2",
+    "caption": "Hai chai thật, ba dự đoán theo score giảm dần (số từ code bài): lần khoanh chai A thứ hai là FP vì A đã được ghép; precision 1, 1/2, 2/3 và recall 1/2, 1/2, 1.",
+    "retain": true
+  },
+  "5-5-nms": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-nms.svg",
+    "sha256": "c8da7857b51cc8ef9642494c5ede71d27c89db99e6f7d2b34b432215607c5f73",
+    "caption": "NMS một lớp, ngưỡng 0.5 (số từ code bài): giữ box 0 (score 0.9) và box 2 (0.7), bỏ box 1 vì chồng box 0 với IoU khoảng 0.62.",
+    "retain": true
+  },
+  "5-5-pr": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-pr.svg",
+    "sha256": "e0592d531325b64252627e55a3981aa208ba739a2e6dd0204cef4dcb914a7723",
+    "caption": "Đường bao precision của chuỗi TP, FP, TP: điểm FP (recall 0.5, precision 1/2) nằm dưới đường bao; diện tích dưới đường bao là 1/2 + 1/3 = 5/6.",
+    "retain": true
+  },
+  "5-5-shift": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-shift.svg",
+    "sha256": "c92e52e5e1b98599f3147b93d84f9ab7eb0c70397bf6b1fa42aba33f298657cd",
+    "caption": "IoU khi box dự đoán cùng cỡ lệch ngang d pixel, IoU = (s − d)/(s + d): lệch 1 pixel, box 40×40 còn 0.95 nhưng box 4×4 chỉ còn 0.6.",
+    "retain": true
+  },
+  "5-5-yolo": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-5-yolo.svg",
+    "sha256": "bf34f45e6c3195d4505a6c56b75368e58bc91cd3ecc4ca44c10693ae04aa39ae",
+    "caption": "Head YOLO kiểu anchor trên lưới 13×13: mỗi ô có 3 anchor, mỗi anchor 4 tọa độ, 1 objectness và 80 score lớp, tổng 169 · 255 = 43 095 số.",
+    "retain": true
+  },
+  "5-6-aggregate": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-aggregate.svg",
+    "sha256": "10bcb3cf751f070543cef53b8f894899013175e0e76b98062e27fa6f1025cfb6",
+    "caption": "Hai ảnh trong câu hỏi: Dice từng ảnh 0.947 và 0.182, trung bình theo ảnh 0.565; gộp pixel hai ảnh cho 0.905 vì vật lớn chiếm gần hết pixel.",
+    "retain": true
+  },
+  "5-6-area": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-area.svg",
+    "sha256": "63c19f5a4cc138cebf7020a62ad79cc32f844acaa8437bfbea888b159846b108",
+    "caption": "Box quanh bông hoa trên ảnh thật vẫn chứa nền ở bốn góc: mask (đặt bằng ngưỡng màu) cho thấy pixel hoa chỉ chiếm khoảng 75% diện tích box.",
+    "retain": true
+  },
+  "5-6-mask-metrics": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-mask-metrics.svg",
+    "sha256": "f4338536059e2b8ef09ccbe42f3dfa3c84264062c00f96772da3efe30b8f8ff2",
+    "caption": "Ví dụ tính tay: so từng pixel cho TP = 2, FN = 1, FP = 1; IoU = 2/4 = 0.5, Dice = 4/6 ≈ 0.667.",
+    "retain": true
+  },
+  "5-6-masks": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-masks.svg",
+    "sha256": "0d6ce7f0d3392e2d2d7446959f5c2bef6993316769fd1a891177e25d5630580b",
+    "caption": "Ảnh thật có hai bông hoa: semantic mask gán cùng lớp “hoa” cho mọi pixel hoa; instance mask còn tách hai bông bằng hai ID riêng.",
+    "retain": true
+  },
+  "5-6-rects": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-rects.svg",
+    "sha256": "4f3058c23aa021114a5ce98f5e92a8f2e6b170962593acee9fa6964bd492c760",
+    "caption": "Năm ảnh validation tự tạo (số từ code bài), mask thật và mask TinyUNet dự đoán sau 80 bước: dữ liệu sạch nên hai mask gần như trùng nhau.",
+    "retain": true
+  },
+  "5-6-resize": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-resize.svg",
+    "sha256": "f91b63f27466ae70520f6405d361c7d6894687d0e44a32371dc80c74fe0278fc",
+    "caption": "Phóng mask một hàng (0, 0, 2, 2) lên 8 cột: bilinear sinh 0.5 và 1.5, ép kiểu thành lớp 1 “giấy” không hề có; nearest chỉ chép nhãn có sẵn.",
+    "retain": true
+  },
+  "5-6-rle": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-rle.svg",
+    "sha256": "7fa7c66f3bf95587c0a8b541512e6e6b3089f18ae31f3463bc0cbb019821bc30",
+    "caption": "Cùng mask 2×3: trải theo hàng cho chuỗi 0 1 0 1 1 0 và RLE (2, 1, 4, 2); trải theo cột cho 0 1 1 1 0 0 và RLE (2, 3).",
+    "retain": true
+  },
+  "5-6-unet": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-6-unet.svg",
+    "sha256": "8dd7fb2ef3f273df7b6f224cd0c6740370082f4245afd27ddd2e08c9bf7dec38",
+    "caption": "TinyUNet của bài theo shape: encode 4 kênh ở 12×12, pool xuống 6×6 lấy 8 kênh, phóng to rồi nối với 4 kênh skip thành 12 kênh trước khi decode ra một logit mỗi pixel.",
+    "retain": true
+  },
+  "5-7-chance": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-chance.svg",
+    "sha256": "b5473fc8251fcbb9e3d33da803bfb904d60a98a87e9482f2d8b8a04de42aa8ef",
+    "caption": "Mốc đoán mò log K của loss contrastive theo số ứng viên: đội A (batch 1024, loss 2.9) và đội B (batch 64, loss 2.1) đo trên hai thang khác nhau, nên không so trực tiếp được.",
+    "retain": true
+  },
+  "5-7-matrix": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-matrix.svg",
+    "sha256": "212ec740302f962d2b96550a8c0521217eeaa91195622e44a03947ff6c057aa5",
+    "caption": "Ma trận logits 3×3 kiểu CLIP và gradient của loss đối xứng (số từ code bài): ô đường chéo nhận gradient âm nên được tăng, ô ngoài đường chéo nhận gradient dương nên bị giảm.",
+    "retain": true
+  },
+  "5-7-neighbors": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-neighbors.svg",
+    "sha256": "090673613d92e32df9b5a33b6f3f2776c42ac76ac705c5c87f82664d0c81c4f3",
+    "caption": "Tỉ lệ ảnh cùng hình trong 5 láng giềng cosine của mỗi ảnh test, tách theo lớp. Contrastive cao nhất ở cả ba lớp; chữ nhật vẫn khó nhất.",
+    "retain": true
+  },
+  "5-7-pairs": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-pairs.svg",
+    "sha256": "e6a4a8d6a67189113a5d1faf34ad48e4fe6b9c87169bca4a4758c7dc246840b6",
+    "caption": "SimCLR trên ảnh thật: hai view augmentation của cùng một ảnh là cặp positive; view của ảnh khác trong batch là negative.",
+    "retain": true
+  },
+  "5-7-probe": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-probe.svg",
+    "sha256": "2b18814a7d48575623cea56d1ca60e362f5babd3c2f9da0120580e7bfafea57c",
+    "caption": "Linear probe trên 200 ảnh có nhãn và tỉ lệ cùng hình trong 5 láng giềng (số từ output bài): pixel thô 0.536, encoder chưa train 0.764, sau contrastive 0.968.",
+    "retain": true
+  },
+  "5-7-recall": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-recall.svg",
+    "sha256": "423368ac782b522716feb87cd0268b55b77380411997d34e1156d590e0727f92",
+    "caption": "Recall@k của bốn query có ảnh đúng ở hạng 1, 3, 7, 2: recall@1 = 0.25, recall@5 = 0.75, đủ 1 từ k = 7.",
+    "retain": true
+  },
+  "5-7-shapes": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-shapes.svg",
+    "sha256": "667288689e97319d1d1c4d666a84be1238905f2eea3f383f3ae2004702d308c4",
+    "caption": "Sáu ảnh hình học do code bài sinh và hai view augmentation của mỗi ảnh (xoay, co giãn, dịch, đổi sáng): lớp của hình giữ nguyên qua mọi view.",
+    "retain": true
+  },
+  "5-7-tau": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-7-tau.svg",
+    "sha256": "81a6b01b9a4e6053d0b1473cc73c62e1d44976ba6bffc0460ad79d751c1f97bf",
+    "caption": "Phần lực đẩy dồn vào negative khó theo temperature (số từ code bài): 0.251 ở τ = 1, 0.403 ở τ = 0.5, 0.995 ở τ = 0.1.",
+    "retain": true
+  },
+  "5-8-alphabar": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-alphabar.svg",
+    "sha256": "1e8406fd6c120691c0ce3eed92b8bc883b483b402a65bf30059d60e5193292f5",
+    "caption": "Hai hệ số của x_t = √ᾱ·x₀ + √(1 − ᾱ)·ε theo lịch nhiễu của bài: hệ số tín hiệu giảm từ gần 1 xuống 0.18 ở mức cuối, hệ số nhiễu tăng lên gần 1.",
+    "retain": true
+  },
+  "5-8-cfg": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-cfg.svg",
+    "sha256": "968e5827c8a4e63e7b5908ed9a7d9cb0f8d71f869419d22f0de0ffc7fdcd0f7e",
+    "caption": "Classifier-free guidance: lấy dự đoán không prompt rồi đi tiếp theo hướng chênh lệch sang dự đoán có prompt, w lần; w = 1 là dự đoán có điều kiện thường.",
+    "retain": true
+  },
+  "5-8-diffusion": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-diffusion.svg",
+    "sha256": "ed4c73a9ad131bc5b1552327ea2c7c1c9be54ce55f986e8b8ff9ec81b1b524e0",
+    "caption": "Một ảnh thật đi qua forward diffusion với đúng lịch nhiễu của bài (40 mức, β từ 0.01 đến 0.15): ᾱ giảm dần, đến mức cuối ảnh gần như chỉ còn nhiễu.",
+    "retain": true
+  },
+  "5-8-gan": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-gan.svg",
+    "sha256": "166b1a850808d05bb7bd1a077a8f0b8c8056592aae836fe66bea8a68873acd34",
+    "caption": "GAN: bước D học phân biệt ảnh thật với ảnh giả đã detach; bước G giữ D đóng băng nhưng cho gradient đi qua D về generator.",
+    "retain": true
+  },
+  "5-8-hist": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-hist.svg",
+    "sha256": "bad4fbb8adf950fc49981a5d040ddc2b6aec57947d51d88801632ecaa150950b",
+    "caption": "Dữ liệu một chiều của bài (hai cụm quanh −2 và +2) sau forward diffusion ở các mức nhiễu: hai đỉnh nhòe dần và gộp thành phân phối gần chuẩn ở mức cuối.",
+    "retain": true
+  },
+  "5-8-latent": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-latent.svg",
+    "sha256": "a3378d1a26e3fe42b91d54115d51b488f88bb7598c42a77586a0fdf9f21c53f2",
+    "caption": "Latent diffusion khử nhiễu trên latent 64×64×4 = 16 384 số thay vì ảnh 512×512×3 = 786 432 số, ít hơn 48 lần mỗi lần gọi denoiser.",
+    "retain": true
+  },
+  "5-8-mse": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-mse.svg",
+    "sha256": "fb23658e672f4437849784d4642ecdec11b90817ab5218c20dd36ab7f58c3f20",
+    "caption": "MSE của noise predictor đã train (code bài) theo từng mức nhiễu: khó ở mức thấp, nơi noise nhỏ hơn độ lệch của x₀, và ở mức giữa, nơi không biết x_t đến từ cụm nào; dễ dần ở mức cao, nơi x_t gần bằng chính noise.",
+    "retain": true
+  },
+  "5-8-saturate": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-8-saturate.svg",
+    "sha256": "e173caf93f834946fd3cff50b6aa691de27dfcbb832051ddc5e5292d3fd1d743",
+    "caption": "Độ lớn gradient của loss generator theo logit của ảnh giả: khi D(G(z)) = 0.01, minimax chỉ còn 0.01 còn non-saturating còn 0.99.",
+    "retain": true
+  },
+  "5-9-baseline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-baseline.svg",
+    "sha256": "93787075a341018b51606df029b88aafe67036da4b6818a8e4565d8d9ea98ee4",
+    "caption": "Cùng phép “che bằng 0” trên ảnh thật: gán trước Normalize cho ô đen; gán sau Normalize cho ô màu trung bình ImageNet, khoảng (124, 116, 104).",
+    "retain": true
+  },
+  "5-9-crosstab": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-crosstab.svg",
+    "sha256": "0abe096ecc3c3f4039be3fd335327e5cb3bbc5546b6390da84c8d8124289c2de",
+    "caption": "Bảng chéo đúng/sai theo ID của câu hỏi: A và B cùng đúng 90 ảnh nhưng mỗi model đúng riêng 6 ảnh mà model kia sai; 4 ảnh cả hai cùng sai.",
+    "retain": true
+  },
+  "5-9-filter": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-filter.svg",
+    "sha256": "f518979f1f822bd5c28c15e62da86fedf32b50edadfe985adbdc3ee0eaeeb88a",
+    "caption": "Filter hướng nét của model B (từ code bài): bốn ô +¼ chỉ thuộc nét ngang, bốn ô −¼ chỉ thuộc nét đứng; ô góc không có trọng số nào.",
+    "retain": true
+  },
+  "5-9-gradcam": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-gradcam.svg",
+    "sha256": "e5617c98b4bd61d605f7f7c5c6dd2ce0d63412c272870dc0b7b6d1fdefa9136c",
+    "caption": "Grad-CAM tính tay của câu hỏi: α₁ = 0.5, α₂ = −0.5; tổng có trọng số cho ô −1.5 ở góc trên phải, ReLU đưa về 0.",
+    "retain": true
+  },
+  "5-9-matrix": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-matrix.svg",
+    "sha256": "a92f2d25110e82cd616a0b98a7b53f1d151e10ebd8df59a8e5d311d13ab49d3e",
+    "caption": "Ma trận kiểm (số từ output bài): A sụp khi đổi dấu góc nhưng không bị ảnh hưởng khi dịch nét; B giữ được khi đổi góc nhưng rơi xuống 0.775 rồi 0.5 khi nét dịch một, hai hàng.",
+    "retain": true
+  },
+  "5-9-occlusion-scores": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-occlusion-scores.svg",
+    "sha256": "ebb63c26c63e8ed25f5263f8a99ff7a6e0659ea6a0ea4aff1d5ef0ac1769ea6c",
+    "caption": "Che góc kéo xác suất lớp 1 của A xuống; che nét kéo xác suất của B xuống.",
+    "retain": true
+  },
+  "5-9-occlusion": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-occlusion.svg",
+    "sha256": "ee979ae9214d4970d6c8fadb510da0c3db908263462d13d86240e0219ed77bbd",
+    "caption": "Che từng vùng ảnh để kiểm phần nào ảnh hưởng dự đoán.",
+    "retain": false
+  },
+  "5-9-occmap": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-occmap.svg",
+    "sha256": "575237b81a66304d1d957263289b4079763d6d6b12afcbad094d79193df07e7b",
+    "caption": "Bản đồ occlusion trượt cửa sổ 2×2 trên ảnh ngang (tính từ model của bài): A chỉ giảm score khi che ô góc, B giảm khi che vùng nét ở giữa.",
+    "retain": true
+  },
+  "5-9-saliency": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-saliency.svg",
+    "sha256": "215f65b882cd86467af4bd1ac7982d04dfc79a2e8ecbabdb203e0ec65598dbc1",
+    "caption": "Saliency |∂logit/∂pixel| của hai model (tính bằng autograd từ code bài): A dồn hết vào ô góc, B vào vùng nét; map giống hệt nhau giữa ảnh ngang và ảnh đứng.",
+    "retain": true
+  },
+  "5-9-shortcut": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-9-shortcut.svg",
+    "sha256": "f629d27541a8bfc62761f857bdf1f200647abd4b09275b504504abaeaec9bfde",
+    "caption": "Ảnh của bài (dữ liệu từ code): ở tập nguồn, ô góc sáng luôn đi với nét ngang; tập đổi góc đảo dấu góc nhưng giữ nguyên nét và nhãn.",
+    "retain": true
+  },
+  "5-kt3-budget": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-budget.svg",
+    "sha256": "fe369b046979cfc52ef3be92ec049ee78fa7a5c11cf28a2ee77bb246708e71c3",
+    "caption": "Ngân sách 4 giờ của câu hỏi: trừ 20 phút chạy test, 10 phút nạp lại và kiểm file, 30 phút dự phòng; còn 180 phút cho 15 epoch, mỗi epoch 12 phút.",
+    "retain": true
+  },
+  "5-kt3-contract": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-contract.svg",
+    "sha256": "0a8a58afbe3585131e2822461d9c4f62dc7b40d34444991970af1e925e2a2ce5",
+    "caption": "Cùng ảnh thật, bốn dạng đầu ra: phân loại nộp nhãn, phát hiện nộp lớp kèm box và score, phân đoạn nộp mask, truy xuất nộp thứ hạng ảnh cho một câu truy vấn.",
+    "retain": true
+  },
+  "5-kt3-leaderboard": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-leaderboard.svg",
+    "sha256": "cd70fec098c86a36afb74bfb6e3efc8c2ef035f096d9d958ef326746bfc4aae6",
+    "caption": "Hai cấu hình của câu hỏi: khoảng dao động validation chồng nhau, và trên 60 ảnh public mỗi ảnh đổi điểm khoảng 0.017, nên chênh 0.02 chỉ cỡ một ảnh: coi như ngang nhau.",
+    "retain": true
+  },
+  "5-kt3-logloss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-logloss.svg",
+    "sha256": "305b1329f998c5fea6f52f5e736451bc42af01c02d3af01256f1de2d7103b677",
+    "caption": "Log loss của câu hỏi: nộp one-hot dù đúng 90% cho khoảng 3.45, tệ hơn cả đoán đều ba lớp (1.10); nộp xác suất với p đúng khoảng 0.9 chỉ khoảng 0.11.",
+    "retain": true
+  },
+  "5-kt3-loop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-loop.svg",
+    "sha256": "44df7d8adce8eb7c9fcb6d724463f1c763dafcae835921fe2ccab528c0bffc5b",
+    "caption": "Giữ cùng validation khi so sánh một thay đổi của mô hình.",
+    "retain": false
+  },
+  "5-kt3-merge": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-merge.svg",
+    "sha256": "c321eea71dcd987b657c76233e35816bd2f49f4f1c5cfd3c64ae39e3c4dda325",
+    "caption": "Prediction có thứ tự c, a, b; ghép theo ID với sample a, b, c (số từ code bài) cho đúng nhãn 0, 1, 1; chép theo vị trí hàng sẽ gán nhầm nhãn của c cho a.",
+    "retain": true
+  },
+  "5-kt3-threshold": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-5\\fig\\5-kt3-threshold.svg",
+    "sha256": "f3684726c15c67f048cc46cb940fce1688840155e0c43c7d009b310d3e5df128",
+    "caption": "Hàng trên: tám xác suất validation, chấm đặc là ảnh dương. Hàng dưới: accuracy và F1 theo threshold. Tại 0.5 và 0.65 accuracy cùng 0.875, còn F1 là 0.857 và 0.8.",
+    "retain": true
+  },
+  "6-1-bpe": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-bpe.svg",
+    "sha256": "875b8d65a200c63f46ccd6482d179406db6ef6a5c47bffe695fbaf34e65fb422",
+    "caption": "BPE trên corpus của bài: low ×3, lower ×2, new ×1. Bước một gộp l,o (5 lần), bước hai gộp lo,w (5 lần), nên low thành một token.",
+    "retain": true
+  },
+  "6-1-coef": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-coef.svg",
+    "sha256": "e670eb36d0e84324662bb1213605829faea98638a019b2f0cf345c8da7ebccb6",
+    "caption": "Sáu đặc trưng có trọng số âm nhất và sáu dương nhất của logistic regression trên TF-IDF (học từ 12 câu train của bài): toàn từ khen, chê trực tiếp; không có cột nào cho “không”.",
+    "retain": true
+  },
+  "6-1-confusion": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-confusion.svg",
+    "sha256": "ea08c11dc546864313385c44e5e5abcdbf86ef4c54d662d611ac926d5a05bb31",
+    "caption": "Confusion matrix của baseline trên sáu câu validation (số từ code bài): hai ô lệch là hai câu chứa “không”, mỗi câu đoán ngược một chiều.",
+    "retain": true
+  },
+  "6-1-nfc": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-nfc.svg",
+    "sha256": "c238665930a65ebfa9ca61cdbb5b4483ebaa5a87c69903540da74bb72451b535",
+    "caption": "Hai chuỗi cùng hiện là “học”: bản gõ sẵn có 3 ký tự, bản dấu rời có 4 (chữ o rồi dấu nặng U+0323); NFC gộp bản thứ hai về bản thứ nhất mà vẫn giữ dấu.",
+    "retain": true
+  },
+  "6-1-pattern": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-pattern.svg",
+    "sha256": "1f01cd92674c4960a976b45b96eed4aaba682945cf44fd3ff42313fb4ddf33e5",
+    "caption": "TfidfVectorizer mặc định chỉ giữ token từ hai ký tự chữ hoặc số trở lên: “C++” chỉ còn “c” rồi bị bỏ, “R” cũng bị bỏ, chỉ “go” ở lại.",
+    "retain": true
+  },
+  "6-1-text-pipeline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-text-pipeline.svg",
+    "sha256": "b7f70db054d69444fffc7808ea3e0ddab9551b945e109eb000146e81afaba0d2",
+    "caption": "Pipeline baseline: chuẩn hóa văn bản, TF-IDF với vocabulary và IDF fit trên train (69 cột), rồi logistic regression cho xác suất tích cực.",
+    "retain": true
+  },
+  "6-1-token-levels": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-token-levels.svg",
+    "sha256": "abf2d982eb84f17838790bf52093d746c8b73aa851d62557221bae068e5a313b",
+    "caption": "Câu “học sinh học máy” ở bốn mức: 16 ký tự, 4 âm tiết, 2 từ (sau tách từ), hoặc các mảnh subword; cùng một câu, số token tùy tokenizer.",
+    "retain": true
+  },
+  "6-1-valid": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-valid.svg",
+    "sha256": "050edbdba2bd165d7332c5bbe35d9a4f6f30d515da72a23266413def3aff48d7",
+    "caption": "Xác suất tích cực baseline gán cho sáu câu validation (số từ code bài): hai câu sai đều chứa “không”, từ chưa có trong vocabulary, nên model chỉ còn thấy “hay” hoặc “tệ”.",
+    "retain": true
+  },
+  "6-1-wordpiece": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-1-wordpiece.svg",
+    "sha256": "5217ad77dbbb2aedfae2c1a44434f90d040644e88016975d7f74e371794c054f",
+    "caption": "WordPiece mã hóa tham lam: lấy “una”, mảnh dài nhất khớp đầu từ; phần “ble” không khớp mảnh nào nên cả từ thành token UNK, dù cách cắt un + ##able có tồn tại.",
+    "retain": true
+  },
+  "6-2-chunks": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-chunks.svg",
+    "sha256": "de7facf55eb89dd0a78c88bbb3e562261842df6d5fc4fffe3734b4d73a57ccbf",
+    "caption": "Minh họa tài liệu 40 đoạn trong câu hỏi, chỉ đoạn 17 trả lời query: điểm lớn nhất giữ được tín hiệu của đoạn ấy, còn trung bình bị 39 đoạn không liên quan pha loãng.",
+    "retain": true
+  },
+  "6-2-cosine": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-cosine.svg",
+    "sha256": "8df7b7dbae7e0befc9dc85a123a57e503b0dd4ac519111afde06647941ecdbc1",
+    "caption": "Góc giữa các vector quyết định cosine similarity.",
+    "retain": true
+  },
+  "6-2-dotcos": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-dotcos.svg",
+    "sha256": "a369aec93a3c188b23347fa018d4d883793968c7e6da67980c21eb9c06f550e9",
+    "caption": "Query (1, 1): tích vô hướng thô xếp A = (3, 0) trên vì A dài, cosine xếp B = (1, 1) trên vì cùng hướng; sau chuẩn hóa hai cách xếp trùng nhau.",
+    "retain": true
+  },
+  "6-2-guess": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-guess.svg",
+    "sha256": "4858f90515f6f047c33de04c9f86caaaf3b8ff566ad63eedd2c59ad2a8067c07",
+    "caption": "Bốn từ đoán trong câu hỏi, mỗi ứng viên là một khoảng cosine ± 0.05: chỉ với G3 ba khoảng rời nhau, nên một phản hồi đủ chỉ ra đúng một ứng viên.",
+    "retain": true
+  },
+  "6-2-inbatch": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-inbatch.svg",
+    "sha256": "ee0049e14dfd03c2bbe78f5ca37d4e87c2bc94c318a17b62d61be38ed34b3acd",
+    "caption": "Contrastive loss với in-batch negatives: mỗi query q_i phải chấm tài liệu của chính cặp mình cao hơn tài liệu của các cặp khác trong batch và cao hơn một hard negative được thêm cho hàng ấy.",
+    "retain": true
+  },
+  "6-2-masked-pooling": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-masked-pooling.svg",
+    "sha256": "579d4a0296d5d6dbf993f0ae962751d1c1b0ae5e389dae72b324cd9903906d17",
+    "caption": "Mean pooling trên hidden state đặt tay của bài: hai token thật (2, 0), (0, 2) và hai vị trí padding (9, 9); có mask ra (1, 1), lấy trung bình cả padding bị kéo về (5, 5).",
+    "retain": true
+  },
+  "6-2-ranks": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-ranks.svg",
+    "sha256": "fedbf9f6dd8af179f80410155047c1c7e08899e136489af8ceecf7b4dc9dcb33",
+    "caption": "Thứ hạng của tài liệu đúng cho ba query (số từ code bài): TF-IDF được hạng 1, 1, 3, trong đó lần trúng đầu chỉ nhờ phá hòa; embedding nhỏ đạt hạng 1 cả ba.",
+    "retain": true
+  },
+  "6-2-scores": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-scores.svg",
+    "sha256": "fdc1417e03920053cedac309c9475241086bc49aea0d328bf6491460f4b9b38b",
+    "caption": "Ma trận điểm query × tài liệu (số từ code bài): TF-IDF chỉ khớp được “mượn sách”, hai hàng còn lại toàn 0; embedding nhỏ học từ nhãn chủ đề đưa tài liệu mật khẩu lên đầu cho “quên truy_cập” với 0.845.",
+    "retain": true
+  },
+  "6-2-words": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-2-words.svg",
+    "sha256": "2efe691858ee066cb13173484680f1a012a300871d4fecd24623d20bcb1131cf",
+    "caption": "Vector ba chiều của “quên” và “mật_khẩu” sau khi học (số từ code bài): chiều hai, ba đối dấu nhau nên trung bình rơi đúng (1, 0, 0); MSE chỉ ràng buộc trung bình câu, không ràng buộc từng từ.",
+    "retain": true
+  },
+  "6-3-attention-masks": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-attention-masks.svg",
+    "sha256": "0368dbd4bc5b1bbd937c608fd57a4a5f653ec08f881876ec5bae0ac3fd4c5b8a",
+    "caption": "Padding mask chặn cột PAD; causal mask chặn key tương lai.",
+    "retain": true
+  },
+  "6-3-attn": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-attn.svg",
+    "sha256": "56159c639dcdb4d4d8045378181bd43de7c3632a683a5bb0a231b32b411da3f6",
+    "caption": "Trọng số attention thật của encoder nhỏ đã train (code bài, seed 63) trên hai câu khác nhãn: hàng CLS ở cả hai head gần như giống hệt, nên head phân loại nhận gần cùng một vector.",
+    "retain": true
+  },
+  "6-3-bio": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-bio.svg",
+    "sha256": "e06fcf4d42c60e6723f2acab4bb5c771790fbf2b086f112062cd31b124130979",
+    "caption": "Đọc BIO ở mức subword: hai B-LOC liền nhau là hai thực thể “Hà” và “Nội”, đều sai biên; subword tiếp nối phải mang I-LOC thì “Hà Nội” mới thành một thực thể.",
+    "retain": true
+  },
+  "6-3-mlm": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-mlm.svg",
+    "sha256": "694722f0ce1b9294136c5ec47b590becab359a4b4e3e65809c9aa821d6d2d4e1",
+    "caption": "Masked language modeling của BERT gốc: 15% vị trí được chọn; trong số đó 80% thay bằng token MASK, 10% thay token ngẫu nhiên, 10% giữ nguyên, và nhãn luôn là token gốc.",
+    "retain": true
+  },
+  "6-3-ner-alignment": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-ner-alignment.svg",
+    "sha256": "d4d2f09722fbfc8782ae768f9939714832f33d4f74e557f6476cf17437396d7e",
+    "caption": "Căn nhãn NER theo subword đầu (số từ code bài): Hà và ##Nội cùng word_id 2, chỉ Hà mang B-LOC; CLS, SEP và ##Nội nhận -100 nên chỉ 4 vị trí góp loss.",
+    "retain": true
+  },
+  "6-3-probs": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-probs.svg",
+    "sha256": "f50803ec25c8154b174427cb95f0cd6a7aca92c67ae922ae766aec6f8e4da512",
+    "caption": "Xác suất nhãn 1 cho mười câu train sau 100 bước (seed 63, số từ code bài): bốn câu “không hay”, “không tệ” với “bài”, “ví_dụ” đứng ở 0.50, model chưa tách được hai cặp đối nhau.",
+    "retain": true
+  },
+  "6-3-seeds": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-seeds.svg",
+    "sha256": "5f3319eacfe723e75afc2a09add5e47cec6ecb729d821561468a4ed9353fff82",
+    "caption": "Cùng recipe với sáu seed (số từ output bài): hai seed kẹt ở loss gần 0.4 ln 2, bốn seed học thuộc train nhưng validation hai câu dao động từ 0/2 đến 2/2.",
+    "retain": true
+  },
+  "6-3-two-heads": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-two-heads.svg",
+    "sha256": "7f80e72784844e4dc11be63e987ec4db857b4a1bf99973793db6c67b43b2504a",
+    "caption": "Ba cách đặt head trên cùng hidden states (B, L, d): head câu đọc CLS cho (B, C), head token cho một nhãn mỗi vị trí (B, L, C), head trích đoạn cho điểm bắt đầu và kết thúc (B, L, 2).",
+    "retain": true
+  },
+  "6-3-window": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-3-window.svg",
+    "sha256": "2041679789d9a11b5cdd31306ec5a7a7cbae5ace27ebe7ab86bc32e753499f5e",
+    "caption": "Hồ sơ 700 subword vượt 512 vị trí: chia hai cửa sổ 512 chồng lấp nhau, căn nhãn và ghép dự đoán theo word_ids; ở vùng chồng lấp, giữ dự đoán của cửa sổ mà từ nằm gần giữa hơn.",
+    "retain": true
+  },
+  "6-4-beamx": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-beamx.svg",
+    "sha256": "9c92aedff397c4e22788c857f608b17dfe26642fba0039fd195cb27873c990a4",
+    "caption": "Greedy luôn trả A EOS với xác suất 0.30; chuỗi B EOS có 0.4x, nên greedy không kém chỉ khi x ≤ 0.75.",
+    "retain": true
+  },
+  "6-4-causal-shift": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-causal-shift.svg",
+    "sha256": "b04a80bf2d08af90ca7a02262ab86e9fdd25a5ffbbf201a0ff2949e992fa8be5",
+    "caption": "Next-token prediction trên chuỗi của bài: input bỏ token cuối, label bỏ token đầu, nên vị trí i đọc tiền tố đến i và dự đoán token i + 1.",
+    "retain": true
+  },
+  "6-4-counts": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-counts.svg",
+    "sha256": "dc82ac0a9f71ad99d582b7dd020fb521a598bb8d8a8d0a89f7094303caa95f07",
+    "caption": "Số đếm bigram trên năm câu train của bài (hàng: token trước, cột: token sau): hầu hết các ô bằng 0, nên một cặp chưa gặp có xác suất 0 nếu không làm trơn.",
+    "retain": true
+  },
+  "6-4-greedy-paths": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-greedy-paths.svg",
+    "sha256": "ca528cce050e4d36eef1a2cebd7244a06ce09b0c4fe91bed628832c1c51782b5",
+    "caption": "Greedy chọn A (0.6) ở bước đầu nên được A EOS với xác suất 0.30; chuỗi B EOS có 0.4 · 0.95 = 0.38 cao hơn, và beam độ rộng 2 giữ cả hai nhánh nên tìm ra nó.",
+    "retain": true
+  },
+  "6-4-nll": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-nll.svg",
+    "sha256": "36fefcb0e8feffd4b6543cb248de1c237c007c8747051b2b2c5d10caf6341084",
+    "caption": "NLL từng token của ba câu probe dưới bigram add-1 (số từ code bài): “em học toán” có PPL 3.785; đảo trật tự thành “em sách học” lên 8.629; từ lạ “robot” bị đổi thành UNK cho 6.557.",
+    "retain": true
+  },
+  "6-4-smooth": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-smooth.svg",
+    "sha256": "41ae5fbb5eb12d51c5cfd133dd40392ba415b32649f88669fc95f5d58168fc58",
+    "caption": "Phân phối token sau “em” (số từ code bài): không làm trơn, “học” chiếm 2/3 và bảy token còn lại bằng 0; add-1 hạ “học” xuống 0.25 và cho mọi token một phần xác suất.",
+    "retain": true
+  },
+  "6-4-temperature": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-temperature.svg",
+    "sha256": "c7a5f2e7c9f011714c0f6e9cf4e23cc558867cd55dfbe6fe3baf2c5a6c7c8931",
+    "caption": "Temperature đổi độ tập trung của phân phối sampling.",
+    "retain": true
+  },
+  "6-4-topp": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-4-topp.svg",
+    "sha256": "2036f2ceb0f44dc34b91a564b206b3b0ebbbe2be09d6ef5572d2a009c81306d4",
+    "caption": "Top-p 0.9 trên hai phân phối của câu hỏi: bước nhọn chỉ cần giữ 1 token (0.97), bước phẳng phải giữ cả 4 token mới đạt tổng 0.9.",
+    "retain": true
+  },
+  "6-5-beam": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-beam.svg",
+    "sha256": "3f78704ef085ae7a86ad2a3e52ac7266575220cdfe398269b0e2bdf6c760c5e4",
+    "caption": "Beam rộng 3 trên hai nguồn validation (số từ output bài): C B ra đúng B C với −0.759; C C ra C A với −0.009, còn đáp án C C không lọt vào top 3.",
+    "retain": true
+  },
+  "6-5-bleu": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-bleu.svg",
+    "sha256": "e26b0f86d87852189fe0c6eb3403888b9314b0d8a3b31ea83f3342b85c96fe8e",
+    "caption": "BLEU-2 của ba câu (số từ output bài): clipping đưa câu lặp “họp” về 0; câu đúng nhưng thiếu “vào” bị brevity penalty còn 0.757; câu sai thứ bảy vẫn được 0.845.",
+    "retain": true
+  },
+  "6-5-cross-attention": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-cross-attention.svg",
+    "sha256": "9e6376dcdde5b95324938ed13607e873e69bb030dfb34faabae6fc498f42516d",
+    "caption": "Phép tính tay của bài: query (1, 0) gần key thứ nhất hơn, softmax cho trọng số 0.67 và 0.33, context là tổ hợp (1.34, 0.66) của hai value (2, 0) và (0, 2).",
+    "retain": true
+  },
+  "6-5-encoder-decoder": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-encoder-decoder.svg",
+    "sha256": "9c80ab37dff7c1614f66ba015d94716bb323c0b2dba25bb0a566bb0a1c856719",
+    "caption": "Ba chỗ dùng attention trong transformer encoder–decoder: self-attention của encoder mask PAD nguồn, self-attention của decoder có causal mask, cross-attention lấy query từ đích và key, value từ nguồn, vẫn mask PAD nguồn.",
+    "retain": true
+  },
+  "6-5-loss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-loss.svg",
+    "sha256": "629b7032dbaf83b9a46473faaa761b31474a4afd3faa90d606e4edccd632c72e",
+    "caption": "Train loss của GRU seq2seq qua 220 bước (số từ code bài, trục log) xuống 0.0003, trong khi validation teacher-forced loss trên hai cặp chưa thấy vẫn là 1.2613.",
+    "retain": true
+  },
+  "6-5-nll": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-nll.svg",
+    "sha256": "6e77b409f9a687fed1cd91139b01ff024400385d10ea455171e492e00d703ca6",
+    "caption": "NLL từng vị trí trên hai cặp validation (số từ code bài): lỗi dồn vào vị trí thứ hai của C C, nơi model đặt 0.994 vào A dù được cho tiền tố đúng BOS C.",
+    "retain": true
+  },
+  "6-5-padctx": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-padctx.svg",
+    "sha256": "b429b29b189b65fac990aa5b9d44e266247b9c76a105e906f5a70e3f94510416",
+    "caption": "Câu hỏi về mask PAD: điểm (0, ln 3, ln 3) cho trọng số (0.25, 0.75) khi mask key PAD, context (1, 4.5); quên mask thì trọng số (1, 3, 3)/7 và context bị kéo tới khoảng (4.43, 6.43).",
+    "retain": true
+  },
+  "6-5-t5shift": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-t5shift.svg",
+    "sha256": "c653b9517251b3d82b18a8e001950a1f1fe77277d108e13fd2e8dc78d296b4fd",
+    "caption": "T5 tự dịch labels thành decoder input (số từ code bài): labels 4 3 1 cho input 0 4 3 1; nếu labels đã có sẵn token mở đầu 0 thì bị dịch hai lần thành 0 0 4 3.",
+    "retain": true
+  },
+  "6-5-teacher-forcing": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-5-teacher-forcing.svg",
+    "sha256": "e93b1b6d5bc338658bd77c3b830c076bd2acdf429e6d9aa70906f7922eacff49",
+    "caption": "Teacher forcing cho cặp A B của bài (ID từ code): decoder input BOS B A, label B A EOS; token đúng của bước trước được đưa làm input bước sau.",
+    "retain": true
+  },
+  "6-6-checks": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-checks.svg",
+    "sha256": "ea5937ab2eb1bcaaaabeb88c70f3f118cdb4738d06606750939340ede2110837",
+    "caption": "Năm chuỗi kiểm validator của bài (kết quả từ code): chỉ chuỗi đầu hợp schema; số dạng chuỗi, boolean, lời dẫn trước JSON và khóa thừa đều bị từ chối.",
+    "retain": true
+  },
+  "6-6-extraction-grid": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-extraction-grid.svg",
+    "sha256": "25966e203d623f497c9dfd36a42adcf9df5aea5b844034aae1a0e328e8899273",
+    "caption": "Regex hợp schema ở cả bốn ca nhưng sai nội dung ở ca “7 em” và ca kế hoạch bị đổi.",
+    "retain": true
+  },
+  "6-6-leftpad": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-leftpad.svg",
+    "sha256": "101c956116273edfa85afdf7276fea828858dd9d6ec74a4f92a362560444c3c4",
+    "caption": "Sinh theo batch với decoder-only: generate nối token mới vào cuối mỗi hàng; pad phải làm prompt ngắn có token mới đứng sau pad, pad trái để token mới nối ngay sau token thật.",
+    "retain": true
+  },
+  "6-6-levels": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-levels.svg",
+    "sha256": "2b2476f988450883c0ff4477dca1e68f359727c4dd0b7388a5adc3696c13aa10",
+    "caption": "Ba mức kiểm output của LLM: cú pháp JSON, schema (khóa, kiểu, miền) và nội dung so với gold; qua mức trên chưa chắc qua mức dưới.",
+    "retain": true
+  },
+  "6-6-llm-pipeline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-llm-pipeline.svg",
+    "sha256": "758357ce987e5f6bb3b0695a8d1c21bbba1df3adb61eb234f788090a32d74859",
+    "caption": "Trích thông tin trong văn bản vào các trường schema.",
+    "retain": false
+  },
+  "6-6-memory-budget": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-memory-budget.svg",
+    "sha256": "1f1c745d8e15bbc3073130dce68bc734036e2a016c112a29bbf4647a9e123f60",
+    "caption": "KV cache theo công thức 2·B·L·n·h·d_h·b của config nhỏ trong bài: 12 MiB với một chuỗi 1024 token; batch 4 và độ dài 2048 thành 96 MiB, gấp 8 lần.",
+    "retain": true
+  },
+  "6-6-messages": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-messages.svg",
+    "sha256": "08895451eec9d3950550d0c324429af5fc2d98da2a1f3e6cb87a02f734fad7cf",
+    "caption": "Danh sách message do make_messages dựng (từ code bài): một system chỉ dẫn, hai cặp user – assistant few-shot, rồi user chứa thông báo cần trích, bọc trong JSON.",
+    "retain": true
+  },
+  "6-6-rag": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-rag.svg",
+    "sha256": "9e8d09e4051110461bbcfebcfa0e75552bc583c419b3d802418312fdd81c8012",
+    "caption": "Hệ RAG của câu hỏi tách theo hai tầng: retriever chỉ đưa đoạn đúng vào top-3 ở 60/100 câu, còn khi có đoạn đúng thì LLM trả đúng 57/60; nút thắt là retriever.",
+    "retain": true
+  },
+  "6-6-stages": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-6\\fig\\6-6-stages.svg",
+    "sha256": "a047d082f034e81a16d76b4278920bc16fe2c8b5cb4a1c7ddbf8aea8afbd4196",
+    "caption": "Từ base model đến instruct model: pretraining dạy đoán token kế tiếp; post-training gồm SFT trên cặp chỉ dẫn – trả lời mẫu rồi thường tối ưu theo ưu tiên bằng RLHF hoặc DPO.",
+    "retain": true
+  },
+  "7-1-alias": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-alias.svg",
+    "sha256": "c72abe427fd71db83a8302172854528cda933629f04d3c3a62725cb65e27b3ce",
+    "caption": "Aliasing: lấy mẫu 1000 Hz, cosine 350 Hz và cosine 650 Hz đi qua đúng cùng các chấm mẫu, nên từ dãy số không thể phân biệt hai âm.",
+    "retain": true
+  },
+  "7-1-downsample": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-downsample.svg",
+    "sha256": "0c825d2ccf9b2825fd630010def4c4f4d855f75b69a5a9a28961040130eee588",
+    "caption": "Phổ nửa sau sau khi hạ về 1000 Hz (số từ code bài): bỏ mẫu sinh âm giả 400 Hz biên độ 0.400, đúng bằng đoạn 600 Hz bị gập; resample_poly lọc trước nên ở 400 Hz bằng 0.",
+    "retain": true
+  },
+  "7-1-frames": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-frames.svg",
+    "sha256": "1f0c470dcc76b25ae4d79c66db09207c5cdef24988dd4f3f4df4a20de0138b2f",
+    "caption": "Chia waveform của bài thành frame cho STFT: window 200 mẫu (100 ms) nhân với cửa sổ Hann, frame sau bắt đầu sau 100 mẫu (50 ms) nên chồng nửa frame trước.",
+    "retain": true
+  },
+  "7-1-logmel": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-logmel.svg",
+    "sha256": "5507f3dfcfe31154624762aa1843083c5db6006fcee8fc15de6b04ccbb3a3407",
+    "caption": "Log-mel 20 × 19 tính từ code bài, 0 dB là đỉnh của chính clip: năng lượng dồn vào band thấp ở nửa đầu (200 Hz) và band cao hơn ở nửa sau (600 Hz).",
+    "retain": true
+  },
+  "7-1-mel": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-mel.svg",
+    "sha256": "5e5679778a20c26cadc7bbf0766918f25188303c8621959c8d5a8b86ab5d0cc2",
+    "caption": "Các bộ lọc tam giác gom phổ thành các mel band.",
+    "retain": true
+  },
+  "7-1-peaknorm": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-peaknorm.svg",
+    "sha256": "f5576d2542c69590d63965c2cc0a2ea0410a6b97db9e9dc630ca95ae500cddfe",
+    "caption": "Minh họa câu hỏi máy bơm: clip kẹt có cùng dạng sóng nhưng biên độ gấp 3 clip bình thường; peak normalize từng clip làm hai clip gần như trùng nhau, xóa khác biệt chính giữa hai lớp.",
+    "retain": true
+  },
+  "7-1-sampling": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-sampling.svg",
+    "sha256": "cb6cac719b1e6a28f62e6036e4cdfcfb0856138332e6a9cbb035da7378296cd5",
+    "caption": "Các mẫu rời rạc lấy từ cùng tín hiệu liên tục.",
+    "retain": true
+  },
+  "7-1-specaug": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-specaug.svg",
+    "sha256": "e01cd30000d8742ea171e902db7ac717014b750aba047bf9443b42d9406c8cc2",
+    "caption": "SpecAugment trên log-mel của bài: che một dải frame (time mask) và một dải mel band (frequency mask) trong lúc train để model bớt dựa vào một mảnh nhỏ.",
+    "retain": true
+  },
+  "7-1-spectrogram": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-spectrogram.svg",
+    "sha256": "884a059e37b85517df9490fd45a83136f386a67d0c75f494c110f300e81cd985",
+    "caption": "Tần số đổi từ 200 Hz sang 600 Hz được nhìn theo thời gian.",
+    "retain": true
+  },
+  "7-1-tradeoff": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-1-tradeoff.svg",
+    "sha256": "5ccba0dfe68ed81a5d349320e30b2eafdb9a893a2e7ebcac0458e2065674e1e8",
+    "caption": "Cùng tín hiệu gồm hai âm 300 Hz và 330 Hz cộng một tiếng gõ ở 0.5 s: window 20 ms định vị tiếng gõ sắc nhưng nhòe hai âm thành một dải; window 200 ms tách được hai âm nhưng tiếng gõ nhòe theo thời gian.",
+    "retain": true
+  },
+  "7-2-confusion": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-confusion.svg",
+    "sha256": "97715f99847926c88695374f398b553bae6fa01078900ff3f9b33963311a193f",
+    "caption": "CNN giữ vị trí phân biệt được hai thứ tự mà mean pooling bỏ mất.",
+    "retain": true
+  },
+  "7-2-maskpool": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-maskpool.svg",
+    "sha256": "74dc325002748e0187d08d962e974d13134b635ba838a98e0a4a850d6fc5b378",
+    "caption": "Mean pooling có mask trên hidden states đặt tay của bài: clip đầu có hai bước thật (1, 2), (3, 4); chia cho 2 bước thật ra (2, 3), chia cho cả 4 bước đã pad ra (1, 1.5).",
+    "retain": true
+  },
+  "7-2-order": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-order.svg",
+    "sha256": "74b1e476a740bded067df491e93fbe91ad98089a0911ec4b50881f380562006b",
+    "caption": "Đảo thứ tự thời gian giữ mean nhưng đổi cấu trúc chuỗi.",
+    "retain": true
+  },
+  "7-2-pair": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-pair.svg",
+    "sha256": "cda0464c7ba5a25c2412400c7373c0d20c7c4e5793bb68606cc2e2e3adbc444b",
+    "caption": "Log-mel 24 × 8 của một cặp clip đầu tiên trong dữ liệu bài (từ code): nhãn 1 có âm thấp ở bốn frame đầu, nhãn 0 đảo lại; hai clip có cùng tập frame, chỉ khác thứ tự.",
+    "retain": true
+  },
+  "7-2-pooling": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-pooling.svg",
+    "sha256": "b8bee3645d6be8008362a2e6399cca233c59b204f214056dab0f78e0fc960f73",
+    "caption": "Mean theo thời gian đặt sau conv (số từ output bài): kernel 3×3 phủ ba frame kề nhau nên thấy chỗ chuyển thấp → cao, valid 0.950; kernel 3×1 xử lý từng frame riêng nên vẫn kẹt ở 0.500.",
+    "retain": true
+  },
+  "7-2-split": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-split.svg",
+    "sha256": "e953ec9dad51129d97c9119c0c7635bac3300722dc1db23436e6aab1849c6df4",
+    "caption": "GroupShuffleSplit của bài (từ code): 5 trong 20 phiên vào validation, mỗi phiên giữ trọn bốn clip ở một phía, nên không phiên nào nằm ở cả train lẫn validation.",
+    "retain": true
+  },
+  "7-2-task": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-task.svg",
+    "sha256": "962c3e78f5b565b8d3679ec1c0ecd2d5eacf71fecd374268f59f0c54a1492f04",
+    "caption": "Ba dạng bài trên cùng một clip: một nhãn loại trừ cho cả clip, nhiều nhãn có/không độc lập (sigmoid, BCE), hoặc một dự đoán cho mỗi frame theo thời gian.",
+    "retain": true
+  },
+  "7-2-timemask": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-timemask.svg",
+    "sha256": "693343fc7ba5089aa3de066d7fd9d85fcb8d90a96e5898328798f98bdb914674",
+    "caption": "Time mask 40 frame (0.4 s) so với tiếng gõ chỉ dài 5 frame: mask có thể che trọn sự kiện, sinh mẫu mang nhãn “gõ cửa” mà không còn tiếng gõ.",
+    "retain": true
+  },
+  "7-2-windows": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-2-windows.svg",
+    "sha256": "3aac16cdb0f2bf603bea7270c6a19e751466eca9b5975319030da9d6659270a2",
+    "caption": "Ví dụ tính tay: năm cửa sổ của một clip cho xác suất có còi 0.05, 0.10, 0.92, 0.08, 0.06; trung bình 0.242 bỏ sót tiếng còi, max 0.92 bắt được.",
+    "retain": true
+  },
+  "7-3-align": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-align.svg",
+    "sha256": "f342be1bd34b8c938fdf24f2e89d4627cb010b4c479000a58d5eae1c3cc8f3ad",
+    "caption": "Cùng câu “em học AI hôm nay” trong 3 giây: người nói ngừng giữa câu, nên chia đều thời gian cho năm từ gán nhãn “AI” vào khoảng lặng và lệch mọi từ phía sau.",
+    "retain": true
+  },
+  "7-3-asr": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-asr.svg",
+    "sha256": "40f69b6129e9f34ecb9825a9ceb328ae62a02076479a5d6124bd69419de1c028",
+    "caption": "Hai hướng ASR: CTC cho mỗi frame một nhãn (kể cả blank) rồi gộp thành chữ; encoder–decoder sinh từng token sau token trước, mỗi bước đọc toàn bộ hidden của encoder.",
+    "retain": true
+  },
+  "7-3-corpus": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-corpus.svg",
+    "sha256": "9ccdb14611ef954db34947d4a00570dac03213748c808bcb2b82d393ecb33608",
+    "caption": "Một lỗi ở câu 3 token, câu 8 token đúng hết (số từ output bài): corpus WER chia tổng lỗi cho 11 token được 0.091, trung bình WER từng câu được 0.167.",
+    "retain": true
+  },
+  "7-3-ctc-dp": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-ctc-dp.svg",
+    "sha256": "08ac86fba0ad8319a1ecc62d404aeba0539d32ecedc62310e0c3ec336d62b422",
+    "caption": "Lưới α của target `a`: mỗi ô cộng các ô được phép đi tới ở frame trước rồi nhân xác suất frame; hai ô cuối cộng ra 0.76.",
+    "retain": true
+  },
+  "7-3-ctc": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-ctc.svg",
+    "sha256": "a9d3c6b50aed8669815194166fddae7960687d37dc06f39d8458b8d28d5d0288",
+    "caption": "Ba frame với P(_, a) = (0.6, 0.4), (0.5, 0.5), (0.4, 0.6): tám path gộp thành ba transcript; rỗng 0.12, a 0.76 (sáu path), aa 0.12.",
+    "retain": true
+  },
+  "7-3-greedy": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-greedy.svg",
+    "sha256": "8a7c34b8b354ff5605167c404442fb039c74a61a617752c82840a2843ebdba8d",
+    "caption": "Hai frame cùng P(_) = 0.6: greedy theo path tốt nhất __ (0.36) ra chuỗi rỗng, còn transcript a gom ba path a_, _a, aa nên có tổng 0.64.",
+    "retain": true
+  },
+  "7-3-lengths": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-lengths.svg",
+    "sha256": "e612cd2595a59a652fcfbeab54fb606bfb3fe96220e93c564270e451ee04c6d2",
+    "caption": "Batch pad về T = 100: clip 1 giây chỉ có 25 bước thật, nên input_lengths đúng là 100 và 25; truyền 100 cho cả hai clip không báo lỗi nhưng bắt CTC giải thích cả phần pad.",
+    "retain": true
+  },
+  "7-3-pad": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-pad.svg",
+    "sha256": "7cc475a673506835374192e09e23a58f85238f5416a1b9e1c7a8e0509083ca31",
+    "caption": "Whisper pad clip 3 giây lên đủ cửa sổ 30 giây, nên encoder vẫn xử lý 1500 vị trí như clip 30 giây; thời gian mỗi clip ngắn giảm ít hơn nhiều so với tỉ lệ 1/10.",
+    "retain": true
+  },
+  "7-3-repeat": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-repeat.svg",
+    "sha256": "2a57bbcdd3d5e2940d66dc590f620b00096bac9cf633590a50c527c399fbc315",
+    "caption": "Target aa có chuỗi mở rộng _ a _ a _: với 2 frame, không ô nào trong hai ô cuối đi tới được (ô xanh là ô tới được); với 3 frame chỉ có path a _ a.",
+    "retain": true
+  },
+  "7-3-underflow": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-underflow.svg",
+    "sha256": "dad6c99c17ec52dc79046ff8f2ff421d566ef8a88d97e373bef199a3229aa4a3",
+    "caption": "Tích các xác suất cỡ 0.1 giảm mười lần mỗi frame: qua mức nhỏ nhất của float32 sau khoảng 38 frame, của float64 sau khoảng 308 frame; trong log-space, frame 1000 chỉ là −2303.",
+    "retain": true
+  },
+  "7-3-wer-dp": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-wer-dp.svg",
+    "sha256": "41e05ed4808eab6389f763260725c788a749862d25b760862afd5f7e6d230bd0",
+    "caption": "Bảng edit distance của ví dụ: ô (i, j) là số phép ít nhất để biến i token đầu của reference thành j token đầu của prediction; đường tô màu là một alignment tối ưu, kết thúc ở 2.",
+    "retain": true
+  },
+  "7-3-wer": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-wer.svg",
+    "sha256": "01f1b00e62199909ef17c32d3576437bdc94dbdc1c1af7d854d542d662a79ee2",
+    "caption": "Reference em học ai hôm nay và prediction em học toán nay: một substitution (ai → toán), một deletion (hôm), WER 2/5 = 0.4.",
+    "retain": true
+  },
+  "7-3-whisper": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-3-whisper.svg",
+    "sha256": "38fa85dbadf0ab88e60004e7e9f72385603c7e9ba71338842911eae84bf014b3",
+    "caption": "Whisper: audio 16 kHz được pad hoặc cắt về 30 giây, thành 3000 frame log-mel và 1500 vị trí encoder; decoder bắt đầu bằng token khởi đầu, token ngôn ngữ và token task.",
+    "retain": true
+  },
+  "7-4-ablation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-ablation.svg",
+    "sha256": "966afa674fa0aefcd3880391fcde0f9b41fb3eb553236bc42174992a74ae3770",
+    "caption": "Ablation trên bảng tám mẫu (số từ output bài): mỗi nhánh riêng 0.500, ghép đúng cặp 1.000, dịch vòng caption bốn vị trí thì về 0.500 dù shape vẫn đúng.",
+    "retain": true
+  },
+  "7-4-align": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-align.svg",
+    "sha256": "ede901cce0dd181716ffb36f36f0de958904d90a1eb4deb22492f3f7e7db0ec0",
+    "caption": "Cosine giữa 20 ảnh (hàng) và 20 caption (cột) validation, từ code bài: chưa căn chỉnh thì không có đường chéo; W học từ cặp đúng làm đường chéo sáng lên; W học từ cặp xáo thì không.",
+    "retain": true
+  },
+  "7-4-crossattn": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-crossattn.svg",
+    "sha256": "7ae159cad7277e17958210d0ed75583bbb119133928fe6d319be4d7c9d42b569",
+    "caption": "Hai cách đọc ảnh: chèn 576 visual tokens trước 40 token câu hỏi thành chuỗi 616; cross-attention giữ chuỗi chữ 40 token, mỗi head có ma trận điểm 40 × 576 (query chữ, key ảnh).",
+    "retain": true
+  },
+  "7-4-fusion": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-fusion.svg",
+    "sha256": "65fd21fdb1febf964adefc66f800130351eb5f937e67c400569c60fbe96b3a8b",
+    "caption": "Early fusion nối vector hai nguồn thành một input cho một head; late fusion cho mỗi nguồn một head trên cùng các lớp, rồi gộp xác suất bằng trọng số α.",
+    "retain": true
+  },
+  "7-4-join": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-join.svg",
+    "sha256": "481a269f4fcabf679b81be29929dd4ffb5415cfbdb20e4dad73c0d35f2f7f57a",
+    "caption": "Năm ảnh, bốn caption (thiếu id 3): ghép theo thứ tự hàng làm mọi hàng sau lệch một bậc mà shape vẫn đúng; join theo id giữ đúng cặp và để lộ chỗ thiếu.",
+    "retain": true
+  },
+  "7-4-late": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-late.svg",
+    "sha256": "6e7fbcb048f9abee9c14fc3119485866a36a60fa9bd64ba3523a576c2beca3a5",
+    "caption": "Bảng tám mẫu của bài: nhánh ảnh sai bốn mẫu, nhánh chữ sai bốn mẫu khác, nên trung bình hai xác suất đúng cả tám (accuracy 0.5, 0.5 rồi 1.0).",
+    "retain": true
+  },
+  "7-4-missing": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-missing.svg",
+    "sha256": "445a775ce683a344a09f5173f65c79983793db3fb516fdb4fe9707e20755f6fb",
+    "caption": "Một mẫu mất ảnh, nhánh chữ cho 0.8: điền 0 rồi chia 2 ra 0.4 (đổi cả đáp án), điền 0.5 kéo về 0.65, bỏ nhánh thiếu và chuẩn hóa lại trọng số giữ 0.8.",
+    "retain": true
+  },
+  "7-4-sync": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-sync.svg",
+    "sha256": "005fd45228e393c1a87e9abdb0cd1237c439ec2d412d1da25b8d0bcdd62330ef",
+    "caption": "Hai nhịp khác nhau: âm 100 frame mỗi giây, video 25 khung mỗi giây. Frame âm 430 bắt đầu ở 4.30 s, rơi vào khung hình 107 (4.28 đến 4.32 s).",
+    "retain": true
+  },
+  "7-4-vlm": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-vlm.svg",
+    "sha256": "e9b55b86547ac14231f4d670c60ca79b2fcc25a19c861020b03d45ea03d0bbf8",
+    "caption": "VLM kiểu LLaVA: image encoder rồi projector biến ảnh thành 576 visual tokens; chúng được nối với token câu hỏi và language model đọc cả chuỗi để sinh đáp án.",
+    "retain": true
+  },
+  "7-4-xor": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-4-xor.svg",
+    "sha256": "3b0177d448c4d1932a2fc8ef69c7469c685226f2a127d07420d48a314f45d455",
+    "caption": "Dữ liệu XOR của bài (từ code): 100 điểm validation, cam là lớp 1. Một đường thẳng chỉ chia mặt phẳng làm hai nửa nên logistic regression đạt 0.470; MLP 8 nút ẩn tách đúng bốn góc.",
+    "retain": true
+  },
+  "7-kt4-ids": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-ids.svg",
+    "sha256": "42f00bd49b8a4e60e580c57487feaa5f98f2f098e85ba648ec44a161c2c4a6b6",
+    "caption": "Cùng dictionary dự đoán theo ID của bài: ghi theo insertion order thì mỗi hàng nộp mang dự đoán của ID khác (đúng 0/3); sắp theo manifest thì đúng 2/3 như code.",
+    "retain": true
+  },
+  "7-kt4-loop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-loop.svg",
+    "sha256": "44df7d8adce8eb7c9fcb6d724463f1c763dafcae835921fe2ccab528c0bffc5b",
+    "caption": "Giữ cùng validation khi so sánh một thay đổi của mô hình.",
+    "retain": false
+  },
+  "7-kt4-normalize": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-normalize.svg",
+    "sha256": "6487cdc06d7aa47e08a065b11be0350b6c1c3fe51f0bf9d9cfca250e2977627e",
+    "caption": "Transcript “Em học AI.” qua hai scorer: scorer local chỉ hạ chữ thường nên còn token “ai.” khác “ai” (WER 1/3); scorer của đề bỏ thêm dấu câu nên khớp hoàn toàn (WER 0).",
+    "retain": true
+  },
+  "7-kt4-paired": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-paired.svg",
+    "sha256": "3f80600034e04396abb752a8ee8f2adb9610f3b8f83291f20612076f996b074e",
+    "caption": "Mỗi ô là một mẫu validation, ô đặc là dự đoán đúng. Fusion sửa ba ID mà nhánh ảnh sai (xanh) và làm sai thêm hai ID mà nhánh ảnh đúng (đỏ); ID 5 và 14 cả ba cùng sai.",
+    "retain": true
+  },
+  "7-kt4-schedule": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-schedule.svg",
+    "sha256": "bdd1d47db87444b857ef2c999598d9a82bcb7efe5167ffe8f3765dee1a180f86",
+    "caption": "Lịch mẫu 360 phút: đọc hai đề, dựng hai baseline, mỗi bài một khoảng cải tiến, rồi 60 phút cuối khóa model, suy luận và kiểm file. Khi trễ, chỉ phần cải tiến co lại.",
+    "retain": true
+  },
+  "7-kt4-score": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-score.svg",
+    "sha256": "10e6b6a1e26c7f7743c0df0c8dca5c894081872643a6f192ee1827e3054ba9a2",
+    "caption": "Điểm chuẩn hóa theo metric của hai bài; vạch đứt là baseline của đề. Macro-F1 càng cao càng tốt, WER càng thấp càng tốt, kém baseline thì điểm bằng 0. Các chấm là bốn trường hợp trong code.",
+    "retain": true
+  },
+  "7-kt4-segments": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-segments.svg",
+    "sha256": "a9d45a8e2cc05169766ee8e20ce815ad2e18ed3c55843e5f96e7a61ac550ec06",
+    "caption": "Một file 30 giây cắt thành ba đoạn 10 giây (xác suất đặt tay): trung bình xác suất ba đoạn theo ID rồi argmax, để file nộp có đúng một hàng cho ID ấy.",
+    "retain": true
+  },
+  "7-kt4-time": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-7\\fig\\7-kt4-time.svg",
+    "sha256": "3a8eed2af2fed0d33b4425336a707a704455c5178004ff9dd7fe7a27ed6fb6b2",
+    "caption": "Lịch phân bổ thời gian của buổi luyện.",
+    "retain": false
+  },
+  "8-1-budget": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-budget.svg",
+    "sha256": "4bad006b8c59d5b0edd6218aaaceaf96770cc0bc4913d2228cf688d3675cd8f2",
+    "caption": "Phân bổ thời gian của buổi luyện.",
+    "retain": false
+  },
+  "8-1-logloss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-logloss.svg",
+    "sha256": "380e4ab38d25bb422013ea421a15aff2de72c6c965123d7403fc3248a763c87d",
+    "caption": "Cùng 90/100 mẫu đúng: nộp nhãn cứng 0/1 bị cắt ở 10⁻¹⁵ nên mỗi mẫu sai tốn 34.5, log loss 3.45, tệ hơn nộp hằng 0.5 (0.693); nộp xác suất 0.9 cho lớp đoán (đúng 90%) tốn 0.325.",
+    "retain": true
+  },
+  "8-1-noise": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-noise.svg",
+    "sha256": "783baf1f97e09843a249bf0cfc4718c5b89693c2699132aa345fa76b25da03ae",
+    "caption": "Chênh lệch accuracy public của B so với A qua 5000 lần rút. Đường đứng sẫm là 0, đường nét đứt là chênh lệch thật 0.01.",
+    "retain": true
+  },
+  "8-1-normalize": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-normalize.svg",
+    "sha256": "06c2562af7b337e316f3522783d46f3a9ff0fa159304f49deb8815936c4ec008",
+    "caption": "Hai bài với baseline khác nhau (số từ code bài): accuracy 0.70 ở A thành 37.5 điểm, 0.75 ở B thành 50 điểm; đạt đúng baseline cho 0, đạt mốc u = 0.90 cho 100.",
+    "retain": true
+  },
+  "8-1-plans": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-plans.svg",
+    "sha256": "893164e759beeaa967e4a40580ff42dd6e651ecef5121e817a00d3c1f2ed356a",
+    "caption": "Mỗi chấm là một kế hoạch; đường bậc thang là điểm tối đa trong từng ngân sách. Ở 130 phút, duyệt hết đạt 40 điểm, tham lam dừng ở 30.",
+    "retain": true
+  },
+  "8-1-priority": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-priority.svg",
+    "sha256": "8a9d18eee083d0790739dbcc47163159fd844a86d057f5e1e29384ff2865fa95",
+    "caption": "So mức tăng điểm kỳ vọng trên mỗi phút của các phương án.",
+    "retain": true
+  },
+  "8-1-runtime": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-runtime.svg",
+    "sha256": "f73964ed4cd8a5f5585dfbdd1017512e7909e5d3e0692dbc5a90536f79ce3cfd",
+    "caption": "Máy chấm chạy lại cả notebook: đọc dữ liệu, nạp asset và train 6 phút đã vượt giới hạn 5 phút trước khi tới predict 40 giây mà đội đã bấm giờ.",
+    "retain": true
+  },
+  "8-1-xyz": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-1-xyz.svg",
+    "sha256": "4b7db0856429f9ed27042924f6e9b742df718ab6326c078a57f49476a3f9d34c",
+    "caption": "Ngân sách 30 phút: chọn X vì V cao nhất còn thừa 10 phút không đủ cho việc nào, được 20 điểm dự kiến; làm Y rồi Z dùng đủ 30 phút, được 24.",
+    "retain": true
+  },
+  "8-2-domains": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-domains.svg",
+    "sha256": "641b50eeea164c25808ddb865a94741dd7af4842ca756ef2ee45cb045a160fff",
+    "caption": "Dữ liệu tự sinh của bài (300 điểm mỗi miền, cam là nhãn 1): signal tách hai lớp như nhau ở cả hai miền; shortcut (±1, rải dọc cho dễ nhìn) trùng nhãn ở miền nguồn nhưng bị đảo ở miền mới.",
+    "retain": true
+  },
+  "8-2-groups": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-groups.svg",
+    "sha256": "d1df7162992d4a3452bedae52bc535437a33cab80ba8ba23f8b009d961a4f92d",
+    "caption": "Split của bài trên 60 tài liệu × 4 đoạn (từ code): chia ngẫu nhiên theo dòng để 39 tài liệu có đoạn ở cả hai phía; chia theo tài liệu giữ mỗi cột trọn ở một phía.",
+    "retain": true
+  },
+  "8-2-hash": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-hash.svg",
+    "sha256": "b2cbb045d24b93aef6401b11677b4d51ec9140f31617feab359d99d2d9ca79cb",
+    "caption": "Hai bài chỉ khác chữ hoa đầu câu và một dấu cách thừa (··): băm bytes gốc cho hai hash khác nhau; hạ chữ thường và gộp khoảng trắng trước khi băm thì ra cùng một hash.",
+    "retain": true
+  },
+  "8-2-se": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-se.svg",
+    "sha256": "1f77d4772cdd612cfec83dc04b4fb3d97157c8c50b43a97158eaae763661e41a",
+    "caption": "Khoảng accuracy ± 2 sai số chuẩn: camera cũ 0.90 ± 0.06 với 90 mẫu, camera mới 0.20 ± 0.25 với 10 mẫu, trải từ gần 0 đến khoảng 0.45.",
+    "retain": true
+  },
+  "8-2-shift": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-shift.svg",
+    "sha256": "c0ecf8898ef7d71330be4d3fc73ec203360345e096f869b625c1f967ffed13a8",
+    "caption": "Shortcut bị đảo làm hai cách chọn feature có kết quả khác nhau.",
+    "retain": true
+  },
+  "8-2-sizes": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-sizes.svg",
+    "sha256": "a86e9ff98b2a7e19f6fe662afedf4a30a08764a14dd843cacc911f1eb7b7ab0c",
+    "caption": "GroupShuffleSplit chọn 10 trong 40 tài liệu: nếu cả 10 là tài liệu ngắn thì validation có 50 dòng; nếu gồm 4 tài liệu dài và 6 ngắn thì có 430 dòng, xa mốc 145 dòng.",
+    "retain": true
+  },
+  "8-2-table": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-table.svg",
+    "sha256": "ced9d0b4310a77d8ef7af833c8872c98170d46c65375af3a79ca4dadc89600b3",
+    "caption": "Bảng tám dòng của bài: id 003 xuất hiện hai lần, một ô signal bị thiếu, và nhóm doc-b (dải vàng) cùng đặc trưng nhưng mang cả nhãn 0 lẫn 1.",
+    "retain": true
+  },
+  "8-2-validation-slices": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-2-validation-slices.svg",
+    "sha256": "7ff413072201d5f04e9d4e3a037c299bfc90726e66f755e093ee68c72457b690",
+    "caption": "Cùng một ô là một mẫu: camera mới có ít mẫu và tỉ lệ lỗi cao hơn.",
+    "retain": true
+  },
+  "8-3-ablation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-ablation.svg",
+    "sha256": "0a4c7ad18c1e181d743c70c662bb9aef279236bcfaf2effddd59d2e907f57920",
+    "caption": "Lọc cứng mất ba hidden dù số lượt trung bình trên ván giải được thấp nhất; tính cả ván thất bại, lọc mềm cân đối đứng đầu.",
+    "retain": true
+  },
+  "8-3-field": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-field.svg",
+    "sha256": "971011363e620f074e62e48f3859d33fcaa986645fc656348a744cd9c59a32b8",
+    "caption": "Trường lực tự sinh của bài với f(r) = sin 5r (vẽ thưa, mỗi mũi tên cùng độ dài): lực đổi chiều theo khoảng cách nhưng mọi mũi tên vẫn nằm trên đường qua nguồn; bình phương tối thiểu tìm lại nguồn (0.35, −0.20).",
+    "retain": true
+  },
+  "8-3-mismatch": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-mismatch.svg",
+    "sha256": "2a52869f2c77be0f1529f01e0faec7051cfaf0ac3afff0814db528ec756b37fb",
+    "caption": "Judge đổi chỗ 4 và 5 so với public (từ code bài): judge thấy A = 4 gần hidden 6 hơn nên trả “A thắng”; public dự đoán ngược lại, nên lọc cứng chỉ giữ 0 đến 4 và loại mất hidden 6.",
+    "retain": true
+  },
+  "8-3-partition": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-partition.svg",
+    "sha256": "5764dc52277131e8593b1e094efad6c9bfb68b423e5e797128c213536d8b0d18",
+    "caption": "So A tại 0 với B tại 6 trên biểu diễn public (từ code bài): trung điểm 3 cho hòa, ba ứng viên 0, 1, 2 nghiêng về A, bốn ứng viên 4 đến 7 nghiêng về B.",
+    "retain": true
+  },
+  "8-3-penalty": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-penalty.svg",
+    "sha256": "8a593e74540700055ab8bd5dba09d047cbdbd30f720e9d6c4cdadd4c436ba0c9",
+    "caption": "Ràng buộc mềm sau phản hồi “A thắng” (từ code bài, m = 0): ứng viên 5, 6, 7 bị phạt 1 thay vì bị xóa, nên hidden 6 vẫn có thể được hỏi ở lượt sau.",
+    "retain": true
+  },
+  "8-3-split": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-split.svg",
+    "sha256": "27a337d133c952722bb5d1acf709c73dab96836795e4ba55d212671299c6d1d5",
+    "caption": "Champion 0, tám ứng viên đồng xác suất (từ code bài): đề xuất 1 chia thành 1 và 7 nên còn 6.25 ứng viên kỳ vọng; đề xuất 6 chia 3, 1, 4, còn 3.25.",
+    "retain": true
+  },
+  "8-3-turns": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-3-turns.svg",
+    "sha256": "04ff142c89edfa7bd5dac22b52c5b8e0c5d7da5a204ea68370834a09ab1fe06b",
+    "caption": "Player nhỏ của bài chơi đủ tám hidden khi public trùng judge (từ code): mọi ván đều giải được trong 1 đến 3 lượt, trung bình 2.375.",
+    "retain": true
+  },
+  "8-4-correlation": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-correlation.svg",
+    "sha256": "ef08138d0b5a383cab590bde020e28d1b188ba5736d45d4a62f39c2a6b3252cb",
+    "caption": "Các lỗi tương quan cao làm lợi ích ensemble chạm một giới hạn.",
+    "retain": true
+  },
+  "8-4-extreme": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-extreme.svg",
+    "sha256": "0faa9b85a3cc4341d9ae7af19abfd8d8554e6d0b7ad1c3fbdaa82a218f3b441f",
+    "caption": "Xác suất lớp 1 của kNN (15 hàng xóm) trên 120 mẫu tune, từ code bài: 71 mẫu nhận đúng 0 hoặc 1, và một mẫu tự tin sai một mình góp khoảng 36 trên tổng 50.4 của log loss.",
+    "retain": true
+  },
+  "8-4-logit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-logit.svg",
+    "sha256": "011ce8a9db726cd9980a16f1d626db71231d6849c2f7963d8d3e8800cefc05ad",
+    "caption": "Ba logit +5, −2, −2: trung bình logit là 1/3, qua sigmoid được 0.583 (lớp 1); trung bình ba xác suất 0.993, 0.119, 0.119 là 0.411 (lớp 0), vì sigmoid ép logit +5 về gần 1.",
+    "retain": true
+  },
+  "8-4-moons": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-moons.svg",
+    "sha256": "18624eaeb1840df798f1bf39601bff3b562c5abbab4e1fbd591c846f1ba08282",
+    "caption": "Dữ liệu make_moons của bài (từ code): 360 mẫu để fit model, 120 mẫu tune để chọn trọng số, 120 mẫu audit giữ riêng; hai bán nguyệt chồng lên nhau ở giữa, nơi mọi model đều dễ sai.",
+    "retain": true
+  },
+  "8-4-rank": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-rank.svg",
+    "sha256": "c5a4773a0cfaea5e56c3eb090e4b0c92bfc8b66b92c905cba6df0f126be71c0d",
+    "caption": "Sáu mẫu của bài trên bốn thang điểm: A và B mỗi model sai một cặp; trung bình điểm thô để B lấn át nên vẫn sai cặp của B; trung bình hạng tách hẳn ba mẫu dương khỏi ba mẫu âm, AUC 1.000.",
+    "retain": true
+  },
+  "8-4-seeds": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-seeds.svg",
+    "sha256": "5470436c56b75ef3dbabdca93d4a53d31de66e02a643fa89d92d14350b605e79",
+    "caption": "Log loss tune của năm seed forest (số từ output bài) trải 0.031, lớn hơn sáu lần mức chênh 0.005 giữa equal weights và forest; trung bình năm seed 0.219 nằm sát trung bình các bản đơn.",
+    "retain": true
+  },
+  "8-4-stacking": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-stacking.svg",
+    "sha256": "6ccdb9eb3aee611577ea4f848368dee970cecc9306d8664a759c617c823a1c17",
+    "caption": "Hệ số của meta-model logistic regression (số từ output bài): học trên dự đoán in-sample, cây quyết định đúng 100% trên train nhận hệ số 4.85; học trên OOF, hệ số của cây còn 1.73 và log loss tune tốt hơn.",
+    "retain": true
+  },
+  "8-4-tune-audit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-tune-audit.svg",
+    "sha256": "99a5d1971ffa67e09d8c2ba1f53f2958070cb34912552061259d5a6579348c32",
+    "caption": "Lưới 15 bộ trọng số; tổng trọng số của forest và kNN không quá 1, phần còn lại thuộc linear. Màu là log loss trên tune.",
+    "retain": true
+  },
+  "8-4-vote": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-vote.svg",
+    "sha256": "058ed840dcb2bf941d24f102cc964bd6d6c04a06602d40131b95792226732d7f",
+    "caption": "Bỏ phiếu đa số của K model sai độc lập: mỗi model đúng 70% thì 3 model đạt 0.784, 15 model đạt 0.950; mỗi model chỉ đúng 45% thì thêm model làm bỏ phiếu tệ đi, 15 model còn 0.346.",
+    "retain": true
+  },
+  "8-4-voting": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-4-voting.svg",
+    "sha256": "161eee974c59218fa1556af5c12668a9a80568d20b83be6f6a490aa86b55ed5f",
+    "caption": "Hard voting và trung bình xác suất có thể chọn hai lớp khác nhau.",
+    "retain": true
+  },
+  "8-5-causes": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-causes.svg",
+    "sha256": "69bce4ff38acebed44e1fd98b75654bb951744cc2b571d4b01cf456be4a02e38",
+    "caption": "Ba lần mất giờ trong nhật ký: hai lỗi quy trình (35 và 20 phút) chiếm 55 trên 60 phút, lỗi kiến thức chỉ 5 phút; việc luyện tiếp nên bắt đầu từ quy trình.",
+    "retain": true
+  },
+  "8-5-column-order": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-column-order.svg",
+    "sha256": "8877f132750a45fdf6183391af096528c07225ec2b0a222b0b5033ace28c4265",
+    "caption": "Accuracy validation của cùng một model theo sáu thứ tự cột: chỉ thứ tự x0, x1, x2 lúc fit cho 0.933, thứ tự x2, x0, x1 tụt xuống 0.700.",
+    "retain": true
+  },
+  "8-5-hash": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-hash.svg",
+    "sha256": "b338077941bfe6138bce3bc1274662befe9551684dc810597d61ce0e89c01a31",
+    "caption": "SHA-256 của CSV trong bài và của cùng file chỉ đổi chữ số cuối của xác suất cuối: hai hash khác hẳn nhau, nên hash nhận diện đúng từng byte của file đã kiểm, không nói gì về chất lượng.",
+    "retain": true
+  },
+  "8-5-pickle": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-pickle.svg",
+    "sha256": "4a971fc3f7d0a61183aa28345e42ce5e2f2ec68ebb36684e6cc928020fab7d43",
+    "caption": "Pickle của FunctionTransformer(clip_log) chỉ chứa tên __main__.clip_log, không chứa thân hàm; tiến trình máy chấm không có hàm ấy nên dừng với AttributeError.",
+    "retain": true
+  },
+  "8-5-pipeline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-pipeline.svg",
+    "sha256": "a5ac62057dcf96bf2243d75c6588d5f243a516dc5f09746fffb834c327c643f5",
+    "caption": "Đường chạy của bài: fit pipeline, lưu artifact, nạp ở một tiến trình mới, dự đoán với cột chọn theo tên, ghi CSV rồi đọc lại, cuối cùng ghi hash của đúng file sẽ nộp.",
+    "retain": true
+  },
+  "8-5-refit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-refit.svg",
+    "sha256": "93383dd0e4f9016d864fc2c701b638e8a8800cacd5ddc7294ab1bd8189308e8b",
+    "caption": "Ba dòng test của bài: chuẩn hóa x0 bằng thống kê train (đã lưu trong pipeline) và bằng thống kê tính lại trên chính ba dòng test cho các giá trị khác hẳn, nên cùng một mẫu nhận đầu vào khác.",
+    "retain": true
+  },
+  "8-5-reproduce": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-reproduce.svg",
+    "sha256": "c41bd4070c2c9ff2109aad41815316434d2c84c6144ef229dde8143b1808910f",
+    "caption": "Khôi phục cùng tham số và preprocessing để tái tạo dự đoán.",
+    "retain": false
+  },
+  "8-5-seedsplit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-seedsplit.svg",
+    "sha256": "99dc0090e921ad2e7256ee645d9c5a7049bb9535525fb9c14ee892bb51b68a26",
+    "caption": "Mười mẫu đọc theo hai thứ tự, cùng train_test_split với random_state = 85: các vị trí được chọn giống nhau nhưng mẫu nằm ở đó khác, nên validation gồm những mẫu khác.",
+    "retain": true
+  },
+  "8-5-sessions": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-sessions.svg",
+    "sha256": "2c61c181339061b297a0648227946cda09a58def37c62b1584098a283623b49b",
+    "caption": "Ba lịch 360 phút; tam giác đánh dấu phút đóng thí nghiệm. Buổi 2 đóng ở phút 275 để chừa 70 phút chạy lại; buổi 1 chưa chạy lại và dùng 35 phút cuối để sửa file.",
+    "retain": true
+  },
+  "8-5-timeline": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-8\\fig\\8-5-timeline.svg",
+    "sha256": "26e55878ddb0fca1eac32b819a9023cd93c0a30ecb80ba28bceda3d25e107268",
+    "caption": "Các mốc thời gian trong buổi thi thử.",
+    "retain": false
+  },
+  "9-1-bandit": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-bandit.svg",
+    "sha256": "b0b2286a6a249b599990deee01ef0f1b4701cc2379ae6646fe65820b01233de4",
+    "caption": "REINFORCE với baseline 2 trên bandit của bài (seed 11): xác suất chọn phải tăng nhanh lúc đầu rồi chậm dần, đạt 0.9641 sau 400 mẫu, vì gradient kỳ vọng 2p(1 − p) nhỏ dần khi p gần 1.",
+    "retain": true
+  },
+  "9-1-egreedy": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-egreedy.svg",
+    "sha256": "523e9bb51d7efa0eba1f50d74aaefb0ad60e47f7a831d6ef7dfed949bb488489",
+    "caption": "Epsilon-greedy với ε = 0.2 và 4 hành động: hành động tốt nhất nhận 0.8 từ nhánh khai thác cộng 0.05 từ nhánh chọn đều, tổng 0.85; mỗi hành động khác 0.05.",
+    "retain": true
+  },
+  "9-1-grid": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-grid.svg",
+    "sha256": "ba1175d779aab1a38586d5f923a732168a9be885681a065e3f494c4164dfa2c5",
+    "caption": "Grid world của bài với V* tính bằng value iteration (từ code) và một hành động tối ưu ở mỗi ô; ô đen bị chắn. Từ S cần 5 bước, V*(S) = 3.122.",
+    "retain": true
+  },
+  "9-1-learning": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-learning.svg",
+    "sha256": "0571aa893d422b691fc40cedd98433518b5c3dbd3157ec35982a6f4508558240",
+    "caption": "Q-learning của bài (cùng seed 7, α = 0.3, ε = 0.2): giá trị lớn nhất của Q tại S qua 300 episode đầu tiến tới V*(S) = 3.122 mà value iteration đã tính.",
+    "retain": true
+  },
+  "9-1-loop": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-loop.svg",
+    "sha256": "021e0f2527b299c64457850fd54b7bfe679a191e48c5a2123d8bb73ca11d7949",
+    "caption": "Vòng tương tác: agent chọn hành động theo trạng thái hiện tại; environment trả phần thưởng và trạng thái mới. Agent học khi trải nghiệm làm thay đổi Q hoặc policy.",
+    "retain": true
+  },
+  "9-1-replay": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-replay.svg",
+    "sha256": "cae743306fef56ec543dfbe5b3e8b2dcccae31385491c2ae81a953ddaf41cc62",
+    "caption": "Năm transition của episode đầu, α = 1, Q khởi tạo 0: phát lại xuôi thì chỉ cặp cuối nhận thưởng 10; phát lại ngược thì mỗi cặp dùng giá trị vừa tính phía sau, Q tại S lên 3.122 sau một lượt.",
+    "retain": true
+  },
+  "9-1-return": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-return.svg",
+    "sha256": "c5c20e1b9fe65793d5357076eb8961cf8e1a2e661864c53c96f7c131c1d2d728",
+    "caption": "Đường 5 bước của bài: bốn thưởng −1 rồi +10. Nhân mỗi thưởng với 0.9ᵗ, thưởng 10 đến sau bốn lần chiết khấu chỉ còn 6.56, và return G₀ = 3.122 trong khi tổng thưởng là 6.",
+    "retain": true
+  },
+  "9-1-vi": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-1-vi.svg",
+    "sha256": "ded8b35157ac33c1e6632029905dd1ea674c6f7a8bf1c25bd1723dbdf2f42b2a",
+    "caption": "Value iteration đồng bộ của bài từ V = 0 (tính lại bằng step của bài): sau 1 vòng S là −1, sau 2 vòng −1.9, và chỉ từ vòng 5 thưởng ở G mới lan tới S, cho 3.122.",
+    "retain": true
+  },
+  "9-2-alphabeta": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-alphabeta.svg",
+    "sha256": "91a932ba283dbaa0f7ea4ede43d778050f7755cd2e0055d95353f944e0ec48e0",
+    "caption": "Alpha-beta trên cây A (6, 4), B (3, 8), C (5, 1): A cho 4; ở B, lá 3 đã không quá 4 nên bỏ lá 8; ở C, lá 5 còn hơn 4 nên phải đọc lá 1. Giá trị gốc vẫn là 4.",
+    "retain": true
+  },
+  "9-2-astar-frontier": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-astar-frontier.svg",
+    "sha256": "952d127ea92c971aa6e1867a31268182aca695cc082920d46184ec6088f5fcb0",
+    "caption": "Thứ tự mở đỉnh trong code bài: Dijkstra mở S, B, A, G; A* với h đúng chỉ mở S, A, G; khi h(A) = 100, A* lấy G qua B ra trước và dừng ở chi phí 11 thay vì 4.",
+    "retain": true
+  },
+  "9-2-constraints": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-constraints.svg",
+    "sha256": "102ce090f6f024fffebc9a3452f2c5c6803fa5132dd662cf00c88b93585105ae",
+    "caption": "CSP xếp phòng của bài: A khác B, B khác C, A ở phòng 0 buộc B ở phòng 1 và C ở phòng 0. A và C chung phòng được vì đề không cấm.",
+    "retain": true
+  },
+  "9-2-forward": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-forward.svg",
+    "sha256": "2113bd1f9cbe4dafbc956ac14f14e9fbba8f26f289eef01f2be60097aead68e0",
+    "caption": "Forward checking với nhóm D khác phòng với A và B: gán A = 0 loại 0 khỏi domain của B và D; gán B = 1 loại 1 khỏi C và D, nên D hết giá trị và nhánh bị bỏ ngay.",
+    "retain": true
+  },
+  "9-2-king": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-king.svg",
+    "sha256": "14a91aa96ba04bc7ae482a582e3ccc0b93f5a79b42466429e3356266909ddd73",
+    "caption": "Đi 8 hướng, mỗi bước 1, tới ô lệch (3, 3): chỉ cần 3 bước chéo. Manhattan cho 6 và Euclid 4.24 đều vượt chi phí thật; max(|Δx|, |Δy|) đúng bằng 3.",
+    "retain": true
+  },
+  "9-2-maps": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-maps.svg",
+    "sha256": "6f5982c4cb2b8afbf3150341bd41e9fa40e62f64dd2796ddabcb10c82d787583",
+    "caption": "Một bản đồ 30 × 30 trong thí nghiệm của bài (seed 0): Dijkstra mở gần như mọi ô tới được, A* Manhattan mở ít hơn nhiều mà vẫn tối ưu, weighted A* w = 2 mở ít nhất nhưng có thể trả đường dài hơn.",
+    "retain": true
+  },
+  "9-2-minimax": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-minimax.svg",
+    "sha256": "967671a7aba4c84459708b298a458e9e95852afafa67aac3d3b13f899edcfca9",
+    "caption": "Cây minimax của bài: MIN ở A chọn 3, ở B chọn 2; MAX so hai giá trị bảo đảm 3 và 2 nên chọn A. Nhắm lá 9 là giả định đối thủ hợp tác.",
+    "retain": true
+  },
+  "9-2-models": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-models.svg",
+    "sha256": "5a5083a24f99a5d15302d14ac6e91e1c1159b5aeecb1b718bb4cbee3fc9fd5d8",
+    "caption": "Bảng chân trị tám thế giới của P, Q, R (từ code bài): KB = P ∧ (P ⊕ Q) ∧ (Q ⊕ R) chỉ có một model và R đúng ở đó, nên KB ⊨ R; bỏ P thì có thêm model với R sai.",
+    "retain": true
+  },
+  "9-2-search": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-2-search.svg",
+    "sha256": "3943ef50c48c8a51e02e350e383dad10deac7b0545afe915db7de1f4196ccc9e",
+    "caption": "Đồ thị của bài: hai đường từ S tới G đều có 2 cạnh, nhưng đường qua A tốn 4 giây còn đường qua B tốn 11 giây; BFS đếm cạnh nên trả đường qua B.",
+    "retain": true
+  },
+  "9-3-attention": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-attention.svg",
+    "sha256": "6a1e563732633d59eecf9b156bd38c55ac99db74b8c40aa0b9c7fc1846aa4309",
+    "caption": "Causal mask đưa trọng số của key tương lai về 0.",
+    "retain": true
+  },
+  "9-3-bayes": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-bayes.svg",
+    "sha256": "284f465b87a7e7482ed395ca151eb0754fd5a21ee59cb4871184f46a08cac011",
+    "caption": "Một nghìn bài của ví dụ, mỗi ô một bài: 18 bài lỗi bị cảnh báo (cam đậm), 2 bài lỗi bị sót, 98 bài sạch bị cảnh báo nhầm (vàng). Trong 116 cảnh báo chỉ có 18 bài thật sự lỗi.",
+    "retain": true
+  },
+  "9-3-confusion-metrics": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-confusion-metrics.svg",
+    "sha256": "f065f3b48e6caf0d9b22705c5aa50c2a431306695364093b52b9ebe6d59e43f7",
+    "caption": "Confusion matrix của detector: cột cảnh báo (khung đứt) có 18 đúng và 98 nhầm, nên precision chỉ 0.155 dù recall 0.9; baseline luôn đoán sạch có accuracy 0.98 mà không bắt được bài lỗi nào.",
+    "retain": true
+  },
+  "9-3-conv": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-conv.svg",
+    "sha256": "05289a8161f6cf1467a0e60912b6a3ac511ad1e671b574cab4aee98fbbef79c2",
+    "caption": "Conv2d của bài: input (4, 3, 8, 8), hai output channel, kernel 3, padding 1, stride 2 cho output (4, 2, 4, 4); mỗi output channel có 27 weight và 1 bias, tổng 56 tham số.",
+    "retain": true
+  },
+  "9-3-gradient": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-gradient.svg",
+    "sha256": "1b0c757d85d920140618b0db5a73d2de0bae53134dc0afc70ecb5b7d9080231c",
+    "caption": "Một mẫu của bài với nhãn 1: lượt xuôi cho logit 0, xác suất 0.5, loss 0.693; lượt ngược dùng p − y = −0.5 nhân với từng feature, và một bước η = 0.1 hạ loss còn 0.554.",
+    "retain": true
+  },
+  "9-3-logloss": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-logloss.svg",
+    "sha256": "c3ed5a34c855a96b62348b61f2d3e4c58003704b25dde6e5ec72dbe55344c2ad",
+    "caption": "Kỳ vọng log-loss của một dự đoán cố định p khi tỉ lệ nhãn 1 là q: nhỏ nhất đúng tại p = q, bằng 0.098 khi q = 0.02 và 0.611 khi q = 0.3.",
+    "retain": true
+  },
+  "9-3-null": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-null.svg",
+    "sha256": "57ece86479d2e990fa7359f3ebceebe1f94c996ca68414c7617d20c2d8296ced",
+    "caption": "Ma trận có cột thứ hai gấp đôi cột thứ nhất (hạng 1): cộng t(2, −1) vào trọng số không đổi dự đoán, nên mọi điểm trên đường cam là một nghiệm như nhau và hệ số không duy nhất.",
+    "retain": true
+  },
+  "9-3-prior": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-prior.svg",
+    "sha256": "5a6977bc65c07f9f7539923a85ca890e9fc757a7f07400913462c53398776539",
+    "caption": "Cùng detector (bắt 90% bài lỗi, báo nhầm 10% bài sạch): xác suất một cảnh báo là đúng tăng theo tỉ lệ lỗi, 0.155 khi 2% bài lỗi và 0.9 khi một nửa số bài lỗi.",
+    "retain": true
+  },
+  "9-3-se": {
+    "path": "D:\\Project\\Canuc80k Problemset\\05. AI Canuc80k\\course\\figures-recipe\\staged\\phase-9\\fig\\9-3-se.svg",
+    "sha256": "d82d7df63df495eb9620c9ad680d1b33a435de867dc9c26f69685028550fe539",
+    "caption": "Độ lệch chuẩn của accuracy đo được, √(0.9 · 0.1 / n): 0.03 với 100 mẫu và 0.0095 với 1000 mẫu; giảm số mẫu 10 lần làm nó tăng √10 lần.",
+    "retain": true
+  }
+}

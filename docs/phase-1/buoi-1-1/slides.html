@@ -1,0 +1,83 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Học máy và quy trình làm bài</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 1.1</small><h1>Buổi 1.1: Học máy và quy trình làm bài</h1><p>Model là thuật toán hay là kết quả sau khi học?</p></section><section class="slide"><small>Buổi 1.1</small><h1>Ý tưởng chính</h1><p>X:(n,d), y:(n,), predictions:(m,)</p><ul><li>Một mẫu là một đối tượng/quan sát; feature mô tả; target là đáp án cần dự đoán.</li><li>fit học từ dữ liệu có nhãn; predict nhận dữ liệu mới không có đáp án.</li><li>Baseline đơn giản tạo mốc so sánh trước khi thử model phức tạp.</li></ul></section><section class="slide"><small>Buổi 1.1</small><h1>Ví dụ</h1><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;x&quot;: 2,
+      &quot;y&quot;: 5
+    },
+    {
+      &quot;x&quot;: 3,
+      &quot;y&quot;: 7
+    }
+  ],
+  &quot;features&quot;: [
+    &quot;x&quot;
+  ],
+  &quot;target&quot;: &quot;y&quot;
+}</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Đáp án ví dụ</h1><pre>{
+  &quot;X&quot;: [
+    [
+      2
+    ],
+    [
+      3
+    ]
+  ],
+  &quot;y&quot;: [
+    5,
+    7
+  ]
+}</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Code minh họa (1)</h1><pre>import numpy as np
+from sklearn.dummy import DummyClassifier
+
+# Mỗi dòng X là một mẫu, mỗi cột là một feature.
+X_train = np.array([[1,2],[2,2],[3,4],[5,6]])
+y_train = np.array([0,0,0,1])
+X_new = np.array([[4,3],[8,7]])
+# Baseline cố ý đơn giản: dự đoán lớp phổ biến trong train.
+model = DummyClassifier(strategy=&quot;most_frequent&quot;)
+model.fit(X_train, y_train)
+pred = model.predict(X_new)
+print(&quot;Train shape:&quot;, X_train.shape)
+print(&quot;Target:&quot;, y_train)
+print(&quot;Dự đoán hai mẫu mới:&quot;, pred)
+print(&quot;Baseline dùng nhãn train, không biết đáp án của mẫu mới.&quot;)</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Code minh họa (2)</h1><pre>assert pred.tolist() == [0,0]</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Kết quả</h1><pre>Train shape: (4, 2)
+Target: [0 0 0 1]
+Dự đoán hai mẫu mới: [0 0]
+Baseline dùng nhãn train, không biết đáp án của mẫu mới.</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Điểm dễ nhầm</h1><ul><li>Cột target hoặc thông tin chỉ có sau sự kiện không được nằm trong X.</li><li>Đọc bảng X, y và xác định đây là regression hay classification.</li></ul></section><section class="slide"><small>Buổi 1.1</small><h1>Bài trên lớp 1</h1><p>Tách target khỏi records, giữ features theo danh sách tên cột đã cấp.</p><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;x&quot;: 2,
+      &quot;y&quot;: 5
+    },
+    {
+      &quot;x&quot;: 3,
+      &quot;y&quot;: 7
+    }
+  ],
+  &quot;features&quot;: [
+    &quot;x&quot;
+  ],
+  &quot;target&quot;: &quot;y&quot;
+}</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Bài trên lớp 2</h1><p>Dự đoán lớp phổ biến; hòa thì chọn integer nhỏ nhất.</p><pre>{
+  &quot;labels&quot;: [
+    0,
+    1,
+    0,
+    1
+  ],
+  &quot;n_new&quot;: 3
+}</pre></section><section class="slide"><small>Buổi 1.1</small><h1>Bài tập về nhà 1</h1><p>Tách target khỏi records, giữ features theo danh sách tên cột đã cấp.</p><ul><li>Input: rows: list dict; features: list tên; target: tên khác features.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 1.1</small><h1>Bài tập về nhà 2</h1><p>Dự đoán lớp phổ biến; hòa thì chọn integer nhỏ nhất.</p><ul><li>Input: labels: list integer không rỗng; n_new: integer&gt;=0.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 1.1</small><h1>Bài tập về nhà 3</h1><p>Ghép predictions vào IDs theo khóa, không theo thứ tự dòng.</p><ul><li>Input: ids: list integer khác nhau; predictions: list {id, label}, đủ đúng các IDs.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 1.1</small><h1>Tổng kết</h1><p>Đọc bảng X, y và xác định đây là regression hay classification.</p><ul><li>NT chương 1, 7; KHTN chương 1.</li><li>NT 9.6 “So sánh mô hình classification”: làm phần đọc dữ liệu và xác định X,y trước, hoàn thành phần model sau Phase 2.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

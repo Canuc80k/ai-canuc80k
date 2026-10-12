@@ -1,0 +1,51 @@
+BTVN 3 — Regularization và best checkpoint
+Mã local: aicanuc80kp3b07h3
+
+BÀI TOÁN
+Ảnh handwritten digits 8× 8 từ sklearn.load_digits(); pixels 0..16.
+
+MỤC TIÊU CỦA BUỔI
+Ablation dropout/weight_decay/early_stop trên validation.
+
+DỮ LIỆU ĐƯỢC CẤP
+Thư mục ../../data/hw_3_7/ tính từ thư mục buổi học:
+- train.csv: dữ liệu dùng học; các target theo task có trong train nếu supervised.
+- valid.csv và valid_answers.json: dữ liệu/đáp án validation để chọn phương án.
+- test.csv: dữ liệu cần dự đoán, không có target để chọn model.
+- sample_submission.csv: mẫu định dạng output.
+- DATA_NOTE.json: schema, số mẫu, nguồn, hashes và split.
+Số mẫu: {
+  "train": 500,
+  "valid": 120,
+  "test": 200
+}
+Giữ các split/IDs đã cấp; không lấy nhãn của bộ gốc public hoặc đưa test labels vào notebook. Với dữ liệu tổng hợp, đây là bài luyện lớp, không đề IOAI chính thức.
+
+OUTPUT
+[
+  "id",
+  "label"
+]
+Dùng đúng header và đủ mỗi test ID một lần, không NaN/Inf. Thứ tự dòng CSV không ảnh hưởng nếu ID đúng. Đọc miền giá trị của task trong DATA_NOTE; các quy ước probability/mask/label/box chỉ áp dụng khi task có những trường này.
+
+MẪU OUTPUT
+id,label
+test_0000,0
+test_0001,0
+test_0002,0
+Input mẫu submission chỉ minh họa schema; các số 0/uniform không phải đáp án test.
+
+CHẤM ĐIỂM
+Accuracy, labels từ 0 đến 9.
+Code score_prediction.py chấm validation cùng quy ước; test answers được giáo viên giữ riêng. Output sai schema/IDs/shape/dtype bị từ chối, không âm thầm cắt số. Giáo viên còn đọc code để kiểm đúng phương pháp học trong buổi; điểm predictions riêng không chứng minh thuật toán đã dùng.
+
+CÁC BƯỚC LÀM
+1. Đọc train/valid/test và DATA_NOTE, in shapes/schema.
+2. Làm một baseline phù hợp và ghi validation score.
+3. Làm thí nghiệm theo mục tiêu buổi; ghi params,seed,score và thời gian.
+4. Chốt phương án bằng validation. Tạo test output theo mẫu.
+5. Chạy lại notebook từ đầu; nộp code/notebook,output và ghi chú lỗi mô hình.
+
+LỆNH CHẤM VALIDATION
+python -X utf8 ../../utils/score_prediction.py --data ../../data/hw_3_7 --submission valid_submission.csv
+Không dùng teacher_private test answers khi học. Bài này là gói local; không tự suy được truy cập LQDOJ hoặc quy chế thi từ trạng thái local.

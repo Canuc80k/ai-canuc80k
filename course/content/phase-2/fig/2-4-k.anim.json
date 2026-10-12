@@ -1,0 +1,31 @@
+{
+ "w": 960,
+ "h": 690,
+ "n": 12,
+ "cols": 3,
+ "dur": 900,
+ "hold": 2400,
+ "labels": [
+  "k = 1: accuracy 5-fold CV 0.880",
+  "k = 2: accuracy 5-fold CV 0.880",
+  "k = 3: accuracy 5-fold CV 0.875",
+  "k = 5: accuracy 5-fold CV 0.890",
+  "k = 8: accuracy 5-fold CV 0.905",
+  "k = 12: accuracy 5-fold CV 0.905",
+  "k = 15: accuracy 5-fold CV 0.905",
+  "k = 20: accuracy 5-fold CV 0.910",
+  "k = 30: accuracy 5-fold CV 0.905",
+  "k = 50: accuracy 5-fold CV 0.875",
+  "k = 80: accuracy 5-fold CV 0.795",
+  "k = 120: accuracy 5-fold CV 0.750"
+ ],
+ "key": [
+  0,
+  6,
+  9,
+  11
+ ],
+ "dark": true,
+ "dw": 600,
+ "pcols": 2
+}

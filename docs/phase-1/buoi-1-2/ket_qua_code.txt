@@ -1,0 +1,5 @@
+depth | train_accuracy | valid_accuracy
+1 0.8269 0.7857
+3 0.9038 0.8571
+10 1.0 0.75
+None 1.0 0.75

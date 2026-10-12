@@ -1,0 +1,24 @@
+GIÁO ÁN BUỔI 4.3 — Vision encoders và transfer learning
+
+TRÌNH TỰ DẠY
+1. Hỏi: Freeze một encoder chưa pretrained có phải transfer learning tốt?
+2. Cho học sinh đọc input và tự dự đoán output; chưa chạy code ngay.
+3. Giải thích:
+- Pretraining tạo weights đã học; architecture weights=None chưa có tri thức đó.
+- Freeze giữ base; thay head/fine-tune khi dữ liệu và budget cho phép.
+- ViT chia patch tokens, cần đúng preprocess/position theo checkpoint.
+4. Chạy code từng đoạn; giữ file/outputs đã chạy để đối chiếu.
+5. Làm hai bài trên lớp theo BAI_HOC.txt, chữa cả cases biên trong đề.
+6. Giao đúng3BTVN; cho học sinh mở từng statement và sample trước khi về.
+
+DẤU HIỆU HIỂU SAI CẦN HỎI LẠI
+Không gọi demo architecture randomly initialized là kết quả pretrained.
+
+CÂU HỎI CHỐT
+Chỉ ra weights bịfreeze và head được train trong demoResNet.
+
+GHI CHÚ TÀI NGUYÊN
+Code minh họa nhỏ đã chạy CPU. Các tệp pretrained thực hành bổ sung cần checkpoint/thư viện trong README. Không gọi fixture/weights=None là model pretrained đã kiểm chất lượng.
+
+BTVN
+Các sample của bài standardJSON có đáp án công khai. Reference/tests nằm teacher_private và không đưa vào gói học sinh/contest statement. BTVN 3 prediction có data local và scorer; mô hình/thuật toán học sinh sẽ làm sau, không tính códata như đã đạt điểm test.

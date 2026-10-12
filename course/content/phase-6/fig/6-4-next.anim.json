@@ -1,0 +1,29 @@
+{
+ "w": 960,
+ "h": 400,
+ "n": 10,
+ "cols": 3,
+ "dur": 1700,
+ "hold": 2400,
+ "labels": [
+  "bước 1: 5 token có xác suất cao nhất; greedy chọn “Việt” (0.10)",
+  "bước 2: 5 token có xác suất cao nhất; greedy chọn “Nam” (0.98)",
+  "bước 3: 5 token có xác suất cao nhất; greedy chọn “,” (0.34)",
+  "bước 4: 5 token có xác suất cao nhất; greedy chọn “là” (0.13)",
+  "bước 5: 5 token có xác suất cao nhất; greedy chọn “nơi” (0.20)",
+  "bước 6: 5 token có xác suất cao nhất; greedy chọn “có” (0.13)",
+  "bước 7: 5 token có xác suất cao nhất; greedy chọn “nhiều” (0.44)",
+  "bước 8: 5 token có xác suất cao nhất; greedy chọn “người” (0.09)",
+  "bước 9: 5 token có xác suất cao nhất; greedy chọn “dân” (0.16)",
+  "sau 9 bước greedy"
+ ],
+ "key": [
+  0,
+  1,
+  5,
+  9
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

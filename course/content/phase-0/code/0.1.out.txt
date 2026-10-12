@@ -1,0 +1,64 @@
+5 6
+5 15
+
+[7.0, 5.0]
+[1, 2, 3, 4]
+
+1267650600228229401496703205376
+9223372036854775808
+
+3.5 3.0
+3 -4
+1 2
+-3
+
+0.30000000000000004 False
+True
+2 4 0.12
+
+[1, 2, 3, 4] [1, 2, 3, 4] True
+
+5 6
+
+[1, 2, 3] [1, 2, 3, 4]
+
+[[9, 0, 0], [9, 0, 0], [9, 0, 0]]
+[[9, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+[3, 8, 1] 2 [9, 2] [2, 9, 1, 8, 3, 5]
+[25, 9, 1, 81]
+0.0 3 True
+
+[('mèo', 3), ('chó', 2)]
+[('Chi', 9.0), ('An', 8.5), ('Bình', 6.0)]
+
+True 500
+
+1. An: 8.5
+2. Bình: 6.0
+3. Chi: 9.0
+
+7.833 1.722 2.583
+
+[1, 2] [1, 2]
+[1] [2]
+
+124999750000 124999750000
+True
+
+['for', 'sum', 'numpy'] True
+
+  logistic | accuracy = 0.854 | 85.4%
+['12', ' 7.5 ', 'An'] ['12', '7.5', 'An']
+a - b - c
+
+[['id', 'prediction'], ['1', '0.91'], ['2', '0.15'], ['3', '0.67']]
+<class 'str'> 1.9100000000000001
+
+TypeError: can only concatenate str (not "int") to str
+KeyError: 'Dũng'
+IndexError: list index out of range
+ValueError: invalid literal for int() with base 10: '7.5'
+
+TypeError: 'int' object is not callable
+6

@@ -1,0 +1,42 @@
+{
+ "w": 960,
+ "h": 360,
+ "n": 11,
+ "cols": 3,
+ "dur": [
+  1600,
+  260,
+  260,
+  260,
+  1200,
+  260,
+  260,
+  260,
+  260,
+  800,
+  1800
+ ],
+ "hold": 1400,
+ "labels": [
+  "ảnh hoa trải thành lưới 60 × 60 điểm trên mặt phẳng",
+  "cùng một lớp tuyến tính: xoay, kéo giãn, dịch, lưới vẫn thẳng",
+  "cùng một lớp tuyến tính: xoay, kéo giãn, dịch, lưới vẫn thẳng",
+  "cùng một lớp tuyến tính: xoay, kéo giãn, dịch, lưới vẫn thẳng",
+  "cùng một lớp tuyến tính: xoay, kéo giãn, dịch, lưới vẫn thẳng",
+  "activation: ReLU gập phần âm về trục, tanh ép vào hình vuông (−1, 1), sigmoid ép vào (0, 1)",
+  "activation: ReLU gập phần âm về trục, tanh ép vào hình vuông (−1, 1), sigmoid ép vào (0, 1)",
+  "activation: ReLU gập phần âm về trục, tanh ép vào hình vuông (−1, 1), sigmoid ép vào (0, 1)",
+  "activation: ReLU gập phần âm về trục, tanh ép vào hình vuông (−1, 1), sigmoid ép vào (0, 1)",
+  "activation: ReLU gập phần âm về trục, tanh ép vào hình vuông (−1, 1), sigmoid ép vào (0, 1)",
+  "activation: ReLU gập phần âm về trục, tanh ép vào hình vuông (−1, 1), sigmoid ép vào (0, 1)"
+ ],
+ "key": [
+  0,
+  4,
+  7,
+  10
+ ],
+ "dark": false,
+ "dw": 640,
+ "pcols": 4
+}

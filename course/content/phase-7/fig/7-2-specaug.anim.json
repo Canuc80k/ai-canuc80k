@@ -1,0 +1,29 @@
+{
+ "w": 960,
+ "h": 380,
+ "n": 10,
+ "cols": 2,
+ "dur": 1300,
+ "hold": 1300,
+ "labels": [
+  "log-mel gốc: 64 dải mel × 1 khung mỗi 10 ms",
+  "epoch 1: che 290 ms thời gian (khung cam), 8 dải mel (khung xanh)",
+  "epoch 2: che 350 ms thời gian (khung cam), 14 dải mel (khung xanh)",
+  "epoch 3: che 410 ms thời gian (khung cam), 12 dải mel (khung xanh)",
+  "epoch 4: che 260 ms thời gian (khung cam), 13 dải mel (khung xanh)",
+  "epoch 5: che 450 ms thời gian (khung cam), 13 dải mel (khung xanh)",
+  "epoch 6: che 370 ms thời gian (khung cam), 13 dải mel (khung xanh)",
+  "epoch 7: che 460 ms thời gian (khung cam), 16 dải mel (khung xanh)",
+  "epoch 8: che 360 ms thời gian (khung cam), 13 dải mel (khung xanh)",
+  "epoch 9: che 360 ms thời gian (khung cam), 10 dải mel (khung xanh)"
+ ],
+ "key": [
+  0,
+  1,
+  2,
+  3
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

@@ -1,0 +1,53 @@
+BTVN 1 — Embeddings, pooling, attention và Transformers: masked_mean
+Mã local: aicanuc80kp3b08h1
+
+YÊU CẦU
+Mean token vectors chỉ tại mask=1; nếu toàn 0 trả zero vector.
+
+INPUT
+Đọc đúng một JSON object từ stdin.
+tokens: nxd; mask: n0/1.
+Trừ giới hạn riêng ở trên: list 1D tối đa 1000 phần tử; ma trận tối đa 100 hàng, 64 cột; |số thực|<=1e6. Các ma trận hình chữ nhật và kích thước tương thích. Không có dữ liệu sai schema.
+
+OUTPUT
+In đúng một JSON value chứa kết quả yêu cầu, không thêm dòng giải thích. Thứ tự list giữ theo quy định; dict không yêu cầu thứ tự keys. Sai số số thực được chấp nhận: abs_error <=1e-6+1e-6*abs(expected). Booleans khác numbers.
+
+VÍ DỤ INPUT
+{
+  "tokens": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      9,
+      9
+    ]
+  ],
+  "mask": [
+    1,
+    1,
+    0
+  ]
+}
+
+VÍ DỤ OUTPUT
+[
+  0.5,
+  0.5
+]
+
+GIẢI THÍCH VÍ DỤ
+Áp dụng yêu cầu lên chính input đã cấp. Với dữ liệu của lớp, không tự đổi positive class, quy ước tie, axes hoặc denominator.
+
+CẦN NỘP
+Một chương trình đọc stdin/in stdout và code đã dùng. Có thể dùng json,math,collections; ở bài primitive này không gọi một model/thư viện đã làm sẵn toàn bộ phép toán cần cài.
+
+TỰ KIỂM TRA
+- Chạy input mẫu và so semantic JSON với output mẫu.
+- Kiểm trường hợp biên đã nêu trong yêu cầu, không thêm giả định ngoài đề.
+- Không dùng print debug trong output nộp.

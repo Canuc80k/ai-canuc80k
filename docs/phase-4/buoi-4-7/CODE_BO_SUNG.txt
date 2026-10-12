@@ -1,0 +1,3 @@
+ssl_demo.py: transformers + local DINOv2 checkpoint
+Trạng thái: code hoàn chỉnh, đã kiểm cú pháp; chưa chạy checkpoint lớn trong gói này. Script dùng local cache/file, không tự gọi API ngoài.
+

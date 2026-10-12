@@ -1,0 +1,624 @@
+
+=== PAGE 1 ===
+2026 USA-North America AI Olympiad
+(USA-NA-AIO) Round 1 Problems
+USA AI Olympiad (USAAIO)
+January 30, 2026
+Problem 1.
+(50 Points)
+Part 1.1.
+(10 Points)
+Which of the following tasks is an example of unsupervised learning?
+A. Predicting house prices given historical data and labeled prices.
+B. Classifying emails as spam or not spam.
+C. Grouping customers based on purchasing behavior without predefined labels.
+D. Predicting whether a tumor is malignant or benign.
+E. Recognizing handwritten digits using labeled images.
+Part 1.2.
+(10 Points)
+Consider two regularized linear regression models trained on the same dataset: Model
+A uses l1-regularization. Model B uses l2-regularization. Both use the same regular-
+ization strength λ > 0.
+Which statement is most likely true?
+Page 1 of 24
+
+=== PAGE 2 ===
+A. Models A and B have the same number of non-zero weights.
+B. Model A has fewer non-zero weights than Model B.
+C. Model B has fewer non-zero weights than Model A.
+D. Neither model can produce zero weights.
+E. There is no way to know which model has fewer non-zero weights.
+Part 1.3.
+(10 Points)
+Which of the following best describes the typical behavior of the error components at-
+tributed to bias and variance as you increase the complexity of a model (for example,
+by increasing the degree of a polynomial in a regression model),?
+A. Both bias and variance increase.
+B. Both bias and variance decrease.
+C. Bias and variance remain constant regardless of complexity.
+D. Bias decreases and variance increases.
+E. Bias increases and variance decreases.
+Part 1.4.
+(10 Points)
+Under which circumstances is the f1 score generally preferred over classification
+accuracy?
+A. When the dataset is very large.
+B. When the classes are well balanced.
+C. When the model is linear.
+Page 2 of 24
+
+=== PAGE 3 ===
+D. When the dataset is highly imbalanced.
+E. When the number of features is large.
+Part 1.5.
+(10 Points)
+Which of the following statement is correct about Uniform Manifold Approxi-
+mation and Projection (UMAP)?
+A. UMAP preserves all pairwise distances exactly.
+B. UMAP prioritizes preserving local neighborhood structure over global distances.
+C. UMAP guarantees linear projections of the data.
+D. UMAP minimizes reconstruction error like PCA.
+E. UMAP forces all clusters to have equal size.
+Page 3 of 24
+
+=== PAGE 4 ===
+Problem 2.
+(15 Points)
+Consider a sample data point x ∈Rd. Let ˆe ∈Rd be a principal component of unit
+length.
+Part 2.1.
+(5 Points)
+Let d = 3. Consider the vector
+v =
+
+
+1
+−2
+3
+
+.
+Let ˆe point in the same direction as v. We can write ˆe in the following form:
+ˆe =
+1
+√a
+
+
+b
+c
+d
+
+,
+where a is a positive integer, b, c, d are integers and gcd (a, b2, c2, d2) = 1. What is
+the value of a + b + c + d?
+A. 0.
+B. 12.
+C. 14.
+D. 16.
+E. 20.
+Page 4 of 24
+
+=== PAGE 5 ===
+Part 2.2.
+(5 Points)
+Let
+x =
+
+
+−1
+−4
+6
+
+.
+Compute the projection of x onto ˆe (the inner product of these two vectors). Your
+answer can be written as
+b
+√a,
+where a is a positive integer, b is an integer and gcd (a, b2) = 1. What is the value of
+a + b?
+A. 14.
+B. -6.
+C. -11.
+D. 34.
+E. 39.
+Part 2.3.
+(5 Points)
+Let r be the residual after x is projected onto ˆe. We can write r in the form
+r = 1
+a
+
+
+b
+c
+d
+
+,
+where b, c, d are integers, a is a positive integer and gcd (a, b, c, d) = 1. What is the
+value of a + b + c + d?
+Page 5 of 24
+
+=== PAGE 6 ===
+A. 14.
+B. -22.
+C. -36.
+D. 50.
+E. 64.
+Page 6 of 24
+
+=== PAGE 7 ===
+Problem 3.
+(10 Points)
+Consider a matrix A ∈R3×4. For any vector
+x =
+
+
+x0
+x1
+x2
+x3
+
+,
+we have
+Ax =
+
+
+x2 −x3
+x3
+x0 + 2x1
+
+.
+Part 3.1.
+(5 Points)
+Compute A. Reasoning is not required.
+Part 3.2.
+(5 Points)
+We can write A in the following decomposition form:
+A =
+I−1
+X
+i=0
+u(i)v(i),⊤,
+where u(i) and v(i) are column vectors.
+Compute
+1. I
+2. u(i) and v(i) for all i ∈{0, 1, · · · , I −1}.
+Reasoning is required.
+Page 7 of 24
+
+=== PAGE 8 ===
+Problem 4.
+(20 points)
+Part 4.1.
+(5 points)
+This is a math task. Compute the following derivative:
+d tanh x
+dx
+,
+where
+tanh x = ex −e−x
+ex + e−x.
+Reasoning is required.
+Part 4.2.
+(15 points)
+This is a coding task.
+Run the following starter code:
+import numpy as np
+Write a function called my_fun_derivative:
+1. Inputs:
+(a) NumPy array X with shape (N,d).
+(b) NumPy array y with shape (N,).
+(c) NumPy array theta with shape (d,).
+2. Output:
+∇θ
+1
+N
+N−1
+X
+n=0
+
+y[n] −θ⊤X[n]
+2 .
+Page 8 of 24
+
+=== PAGE 9 ===
+So the output is a NumPy array with shape (d,).
+In this task, you are not allowed to
+1. import any additional libraries/modules/methods;
+2. use autograd in PyTorch;
+3. use any method in np.linalg, including @ and .T;
+4. use any loop.
+You will receive 0 points if you violate any of these rules.
+Page 9 of 24
+
+=== PAGE 10 ===
+Problem 5.
+(90 Points)
+In this problem, we study word/token embeddings. Each token is embedded as a
+vector of length 100.
+Run the following starter code:
+!pip install gensim
+import gensim.downloader as api
+from gensim.utils import simple_preprocess
+import requests
+import numpy as np
+import matplotlib.pyplot as plt
+glove = api.load("glove-wiki-gigaword-100")
+url_part1 = "https://huggingface.co/datasets/usaaio-official/"
+url_part2 = "2026_USAAIO_Round1_public/raw/main/"
+url_part3 = "2026_USAAIO_Round1_NLP.txt"
+url = url_part1 + url_part2 + url_part3
+text = requests.get(url).text
+tokens = simple_preprocess(text)
+tokens = [token for token in tokens if token in glove]
+print(len(tokens))
+tokens = list(set(tokens))
+print(len(tokens))
+vectors = [glove[word] for word in tokens]
+Do not import any additional libraries, modules, or methods beyond those included
+Page 10 of 24
+
+=== PAGE 11 ===
+in the given starter code.
+Part 5.1.
+(5 Points)
+In the starter code, we run the following line twice.
+print(len(tokens))
+Why do we get two different results?
+Part 5.2.
+(5 Points)
+Explain what the following code does:
+tokens = list(set(tokens))
+Part 5.3.
+(5 Points)
+Write code to convert vectors into a NumPy array. Name it vectors_arr. So
+vectors_arr =
+
+
+v(0),⊤
+v(1),⊤
+...
+v(N−1),⊤
+
+,
+where N is the total number of tokens and v(n) is the embedding of the nth token.
+Part 5.4.
+(5 Points)
+Define
+ˆv(n) =
+v(n)
+||v(n)||2
+.
+Page 11 of 24
+
+=== PAGE 12 ===
+Thus, ˆv(n) has unit length. Let
+W =
+
+
+ˆv(0),⊤
+ˆv(1),⊤
+...
+ˆv(N−1),⊤
+
+.
+Write code to compute W from vectors_arr.
+Do not use np.linalg or any loop.
+Part 5.5.
+(5 Points)
+Define the similarity between tokens i and j as
+simij = ˆv(i),⊤ˆv(j).
+What is the range of simij?
+Reasoning is not required.
+Part 5.6.
+(5 Points)
+Define a similarity matrix
+S =
+
+
+sim00
+sim01
+· · ·
+sim0(N−1)
+sim10
+sim11
+· · ·
+sim1(N−1)
+...
+...
+...
+...
+sim(N−1)0
+sim(N−1)1
+· · ·
+sim(N−1)(N−1)
+
+∈RN×N.
+Express S in terms of W.
+Reasoning is not required. Coding is not needed.
+Part 5.7.
+(5 Points)
+Write one line of code to compute S using W.
+Do not use np.linalg, @ or any loop.
+Page 12 of 24
+
+=== PAGE 13 ===
+Part 5.8.
+(5 Points)
+1. (Coding task) Print out the diagonal values of S.
+2. (Non-coding task) Interpret your result.
+Part 5.9.
+(10 Points)
+Create a dictionary called sim_dict. Each token serves as a key.
+For each given token (the key), its value should be the token (excluding itself) that
+has the highest similarity score with that key.
+For example, if your solution is correct, you should obtain the following key-value
+pair:
+"bright": "lights"
+Part 5.10.
+(5 Points)
+Is S invertible?
+Mathematical reasoning is required. Coding is not allowed.
+Part 5.11.
+(5 Points)
+Let the singular value decomposition (SVD) of W be
+W = UΣV⊤.
+Write code to compute
+1. U,
+2. the diagonal of Σ, sorted in decreasing order and denoted by σ,
+3. V.
+Hint: You may use np.linalg.svd.
+Page 13 of 24
+
+=== PAGE 14 ===
+Part 5.12.
+(5 Points)
+Denote by
+S = QΛQ⊤
+a spectral decomposition of S, such that
+1. Q ∈RN×N is an orthonormal matrix.
+2. Λ ∈RN×N is a diagonal matrix whose diagonal entries are sorted in decreasing
+order.
+Write code to compute Q and the diagonal of Λ (denoted by λ) using U, σ, and V
+obtained in Part 5.11.
+Part 5.13.
+(10 Points)
+The Frobenius norm of the matrix S is defined as
+||S||F =
+v
+u
+u
+u
+t
+N−1
+X
+i=0
+N−1
+X
+j=0
+S2
+ij.
+Mathematically express ||S||F in terms of the SVD of W.
+Reasoning is required.
+Part 5.14.
+(10 Points)
+Consider a large N (N > 100). Recall that S ∈RN×N can be expressed in terms of
+W ∈RN×100.
+Thus, the amount of data needed to store the relationship between each pair of tokens
+is not N 2, but 100N.
+However, this is still too much. Our goal is to approximate S using only rN numbers,
+where r << 100.
+Page 14 of 24
+
+=== PAGE 15 ===
+Denote by Wr ∈RN×r a matrix constructed from W. Denote by Sr ∈RN×N a
+matrix constructed from Wr.
+To measure the error between Sr and S, we use the following relative squared Frobe-
+nius metric:
+||S −Sr||2
+F
+||S||2
+F
+.
+For each given r, mathematically construct Wr and Sr, such that the above metric
+is minimized.
+Reasoning is not required.
+Part 5.15.
+(5 points)
+This is a coding task based on your findings in Part 5.14.
+Generate a plot. The x-axis is r ∈{1, 2, · · · , 100}. The y-axis is the relative squared
+Frobenius metric.
+Page 15 of 24
+
+=== PAGE 16 ===
+Problem 6.
+(10 points)
+Figure 1 is an image. We send it to a pretrained convolutional neural network.
+Figure 1: Original image
+We obtain five feature maps that are outputs from five different layers (indexed from
+0 to 4), as shown in Figure 2.
+Figure 2: Feature maps from different layers
+However, these feature maps are not given in order. For instance, feature map (1) is
+not necessarily the output from layer 0.
+Page 16 of 24
+
+=== PAGE 17 ===
+For each feature map, determine which layer it outputs from.
+Reasoning is required.
+Page 17 of 24
+
+=== PAGE 18 ===
+Problem 7.
+(30 points)
+Run the following starter code:
+import torch
+import torch.nn as nn
+Part 7.1.
+(5 points)
+Build a threshold module that subclasses torch.nn.Module and is named My_Threshold.
+The threshold activation function is defined as
+Θ (x) =
+
+
+
+1
+if x ≥0
+0
+if x < 0 .
+Part 7.2.
+(5 points)
+Consider the following transformation
+y =
+C−1
+X
+c=0
+wcxc.
+Suppose x0, · · · , xC−1 and w0, · · · , wC−1 are all independent random variables. For
+c ∈{0, · · · , C −1}, E[wc] = E[xc] = 0, Var [wc] = σ2
+w and Var [xc] = σ2.
+We want y to have the same variance as each input xc. That is, we want Var [y] = σ2.
+Compute σw that achieves this.
+Reasoning is required.
+Part 7.3.
+(5 points)
+Build a linear module that subclasses torch.nn.Module and is named My_Linear.
+Page 18 of 24
+
+=== PAGE 19 ===
+1. The input argument bias is True by default. But it can be set to False. If
+bias is True, its initial value is 0.
+2. The initial value of each entry in weight is drawn from a normal distribution
+with mean 0 and standard deviation σw that you find in Part 7.2.
+Part 7.4.
+(15 points)
+Use PyTorch to build a multi-layer perceptron (MLP) model that performs the fol-
+lowing inference task.
+On a 2-dim plane, consider a triangle with vertices (0, 0), (3, 1), (1, 5). Each input
+sample to your model is a point in the 2-dim plane. The output is 1 if the point lies
+inside the triangle and 0 otherwise.
+1. Define your neural network module as a Python class named My_Triangle
+that inherits from nn.Module, and then create an instance of that class named
+my_triangle to serve as your model.
+2. Your module architecture may consist only of the threshold module you built
+in Part 7.1 and the linear module you built in Part 7.3. Any other module is
+prohibited.
+3. In the forward method in My_Module, the input is a tensor of shape (B,2),
+where B is the batch size. The output is a binary tensor (0 or 1) of shape (B,).
+4. In my_triangle, for each linear module, you must manually determine the
+values of weight and bias. So that the model is ready for inference.
+Note: This problem is inference only. There is no training.
+5. In my_triangle, the attribute requires_grad for all learnable parameters
+must be set to False.
+Page 19 of 24
+
+=== PAGE 20 ===
+Problem 8.
+(25 points)
+Run the following starter code:
+import torch
+import torch.nn as nn
+from torchvision.models import resnet50
+import torchsummary
+model = resnet50(pretrained=True)
+Part 8.1.
+(5 points)
+What is the total number of learnable parameters in model?
+Hint: For an object of type torch.nn.parameter.Parameter, you can use the
+method numel() to count the number of learnable parameters it contains.
+Part 8.2.
+(5 points)
+Suppose the input has shape (B,3,224,224). What is the shape of the output from
+model.layer2?
+Part 8.3.
+(5 points)
+What is the total number of learnable parameters in all convolutional modules in
+model.layer3[2]?
+To solve this problem, you are not allowed to use the method numel for any object
+of type torch.nn.parameter.Parameter.
+Reasoning is required.
+Page 20 of 24
+
+=== PAGE 21 ===
+Part 8.4.
+(10 points)
+We want to use a truncated pretrained resnet50 model (up to the output from
+model.layer3[4]) as a backbone for a classification task with 5 classes. Build such
+a model.
+In your solution, all parameters in the backbone must be frozen (that is, fixed and
+not learnable).
+Page 21 of 24
+
+=== PAGE 22 ===
+Problem 9.
+(50 points)
+In this problem, we study a tabular dataset for a binary classification task.
+All
+features are numeric.
+You can access the training dataset by running the following starter code:
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+url_part1 = "https://huggingface.co/datasets/usaaio-official/"
+url_part2 = "2026_USAAIO_Round1_public/raw/main/"
+url_part3 = "2026_USAAIO_Round1_breast_cancer_train.csv"
+url = url_part1 + url_part2 + url_part3
+df = pd.read_csv(url)
+X = df.drop("target", axis=1)
+y = df["target"]
+In this training dataset, X contains 30 input features, and y contains the binary target
+labels.
+We also have a hidden test dataset that you cannot access during the competition.
+You must submit a single Jupyter notebook (.ipynb) containing your complete
+solution, including (but not limited to):
+1. Data preprocessing (if needed)
+2. Model construction
+3. Model training
+4. Inference logic
+Inference requirements
+Page 22 of 24
+
+=== PAGE 23 ===
+For inference, you must define a function with the following signature:
+def my_prediction(X_test):
+###INSERT YOUR CODE HERE###
+return y_pred
+In this function:
+1. X_test is a pandas DataFrame containing all input features from the hidden
+test set.
+2. y_pred must be a pandas Series containing your predicted labels.
+After the competition, we will execute all code in your submitted notebook from
+top to bottom. During evaluation, we will load the hidden test features as X_test
+and call your function:
+my_prediction(X_test)
+Your predictions y_pred will be evaluated using the macro-averaged f1 score
+(f1-macro).
+Model constraints
+1. In your solution, you must use k-Nearest Neighbors (kNN) for classifica-
+tion.
+2. However, this does not mean you must directly apply kNN to the raw training
+and test data. You may use any data preprocessing, feature engineering, or
+pipeline you find appropriate.
+3. Beyond kNN, you are not allowed to use any other supervised learning models.
+Page 23 of 24
+
+=== PAGE 24 ===
+4. You may import any module or method from scikit-learn, numpy, pandas, and
+matplotlib.
+One restriction is that in scikit-learn, among all supervised learning models,
+you can only import kNN.
+5. Do not use deep neural network to solve this problem.
+Notebook requirements
+In your submitted notebook, please ensure the following:
+1. Your code includes sufficient comments to make it readable.
+2. At the end of the notebook, include a text cell summarizing:
+• Your overall approach.
+• The intuition behind your design choices.
+• Any alternative approaches or models you considered but did not pursue,
+or you tried but did not submit.
+Your report does not need to be long, but it should be clear, concise, and well-
+reasoned.
+Grading criteria
+Your submission will be evaluated based on:
+1. Whether the entire notebook runs successfully from start to finish.
+2. Performance on the hidden test dataset.
+3. The quality of your reasoning and problem-solving approach.
+We do not evaluate code style or quality.
+Page 24 of 24

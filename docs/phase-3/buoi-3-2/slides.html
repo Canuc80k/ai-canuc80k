@@ -1,0 +1,59 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dataset và DataLoader</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 3.2</small><h1>Buổi 3.2: Dataset và DataLoader</h1><p>Batch cuối ít mẫu hơn có bị mất khỏi dữ liệu không?</p></section><section class="slide"><small>Buổi 3.2</small><h1>Ý tưởng chính</h1><p>n_batches = ceil(n_samples/batch_size)</p><ul><li>Dataset trả sample; DataLoader tạo batch và có thể shuffle.</li><li>drop_last quyết định có loại batch cuối thiếu phần tử.</li><li>Inference phải giữ IDs để ghép predictions đúng mẫu.</li></ul></section><section class="slide"><small>Buổi 3.2</small><h1>Ví dụ</h1><pre>{
+  &quot;n&quot;: 9,
+  &quot;batch_size&quot;: 4,
+  &quot;drop_last&quot;: false
+}</pre></section><section class="slide"><small>Buổi 3.2</small><h1>Đáp án ví dụ</h1><pre>[
+  4,
+  4,
+  1
+]</pre></section><section class="slide"><small>Buổi 3.2</small><h1>Code minh họa</h1><pre>import torch
+from torch.utils.data import TensorDataset,DataLoader
+torch.manual_seed(42)
+
+X = torch.arange(18,dtype=torch.float32).reshape(9,2)
+y = torch.arange(9)%2
+ids = torch.arange(9)
+dataset = TensorDataset(X,y,ids)
+loader = DataLoader(dataset,batch_size=4,shuffle=False,drop_last=False)
+seen = []
+for features,labels,batch_ids in loader:
+    print(&quot;batch shape&quot;,tuple(features.shape),&quot;ids&quot;,batch_ids.tolist())
+    seen.extend(batch_ids.tolist())
+assert seen==list(range(9))
+# Khi shuffle inference, phải sắp output lại theo ID, không theo thứ tự batch.</pre></section><section class="slide"><small>Buổi 3.2</small><h1>Kết quả</h1><pre>batch shape (4, 2) ids [0, 1, 2, 3]
+batch shape (4, 2) ids [4, 5, 6, 7]
+batch shape (1, 2) ids [8]</pre></section><section class="slide"><small>Buổi 3.2</small><h1>Điểm dễ nhầm</h1><ul><li>Shuffle output mà quên IDs làm nhãn đúng bị gán sang mẫu khác.</li><li>Dự đoán batch sizes của9 mẫu, batch4, drop_lastFalse/True.</li></ul></section><section class="slide"><small>Buổi 3.2</small><h1>Bài trên lớp 1</h1><p>Trả kích thước từng batch; drop_last loại batch cuối không đủ.</p><pre>{
+  &quot;n&quot;: 9,
+  &quot;batch_size&quot;: 4,
+  &quot;drop_last&quot;: false
+}</pre></section><section class="slide"><small>Buổi 3.2</small><h1>Bài trên lớp 2</h1><p>Trả predictions theo ids_order; batch_ids/pred có thể bị shuffle.</p><pre>{
+  &quot;ids_order&quot;: [
+    1,
+    2,
+    3
+  ],
+  &quot;batch_ids&quot;: [
+    3,
+    1,
+    2
+  ],
+  &quot;pred&quot;: [
+    8,
+    6,
+    7
+  ]
+}</pre></section><section class="slide"><small>Buổi 3.2</small><h1>Bài tập về nhà 1</h1><p>Trả kích thước từng batch; drop_last loại batch cuối không đủ.</p><ul><li>Input: n&gt;=0; batch_size&gt;=1; drop_last: boolean.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 3.2</small><h1>Bài tập về nhà 2</h1><p>Trả predictions theo ids_order; batch_ids/pred có thể bị shuffle.</p><ul><li>Input: ids_order: list unique; batch_ids: list permutation; pred: list same length.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 3.2</small><h1>Bài tập về nhà 3</h1><p>DataLoader giữ đúng IDs</p><ul><li>Data: cls</li><li>Metric: Accuracy, classes 0/1/2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 3.2</small><h1>Tổng kết</h1><p>Dự đoán batch sizes của9 mẫu, batch4, drop_lastFalse/True.</p><ul><li>PyTorch Learn the Basics: Datasets &amp; DataLoaders, Transforms.</li><li>Thực hành FashionMNIST của tutorial và xem batch theo hướng dẫn.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

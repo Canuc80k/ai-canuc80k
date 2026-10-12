@@ -1,0 +1,44 @@
+{
+ "w": 960,
+ "h": 480,
+ "n": 12,
+ "cols": 3,
+ "dur": [
+  700,
+  700,
+  700,
+  700,
+  700,
+  700,
+  2200,
+  700,
+  700,
+  700,
+  700,
+  700
+ ],
+ "hold": 2600,
+ "labels": [
+  "epoch 1: train MSE 0.2035, validation MSE 0.10965",
+  "epoch 3: train MSE 0.1775, validation MSE 0.12578",
+  "epoch 6: train MSE 0.1618, validation MSE 0.09046",
+  "epoch 10: train MSE 0.1500, validation MSE 0.08043",
+  "epoch 15: train MSE 0.1255, validation MSE 0.06566",
+  "epoch 20: train MSE 0.0876, validation MSE 0.02580",
+  "epoch 26: train MSE 0.0408, validation MSE 0.00367 (tốt nhất)",
+  "epoch 40: train MSE 0.0377, validation MSE 0.00887",
+  "epoch 60: train MSE 0.0378, validation MSE 0.01061",
+  "epoch 80: train MSE 0.0366, validation MSE 0.01117",
+  "epoch 110: train MSE 0.0363, validation MSE 0.01191",
+  "epoch 160: train MSE 0.0359, validation MSE 0.01294"
+ ],
+ "key": [
+  2,
+  6,
+  9,
+  11
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

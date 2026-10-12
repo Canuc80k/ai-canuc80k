@@ -1,0 +1,63 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bagging, Random Forest và boosting — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/2.6?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 2.6: Bagging, Random Forest và boosting</h1><p>Nhiều model sửa được những loại lỗi khác nhau thế nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Bagging học các model trên các mẫu biến đổi, giúp giảm phương sai.</li><li>Random Forest thêm ngẫu nhiên khi chọn features; averaging giảm dao động.</li><li>Boosting thêm model để sửa lỗi theo objective; cần quản lý capacity/số vòng.</li></ul><p class="note">ensemble_prob = mean(model_probabilities)</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier,HistGradientBoostingClassifier
+X,y = load_breast_cancer(return_X_y=True)
+Xtr,Xva,ytr,yva = train_test_split(X,y,test_size=.25,stratify=y,random_state=42)
+models = [DecisionTreeClassifier(random_state=42),
+          RandomForestClassifier(n_estimators=30,max_depth=5,random_state=42),
+          HistGradientBoostingClassifier(max_iter=30,max_leaf_nodes=7,random_state=42)]
+for model in models:
+    model.fit(Xtr,ytr)
+    print(type(model).__name__,&quot;validation_accuracy&quot;,round(model.score(Xva,yva),4))
+# Các điểm ở đây chỉ là kết quả một split, không benchmark tổng quát.
+</pre><h3>Kết quả</h3><pre>DecisionTreeClassifier validation_accuracy 0.9231
+RandomForestClassifier validation_accuracy 0.951
+HistGradientBoostingClassifier validation_accuracy 0.958
+</pre><p class="note">Không so models bằng train score hoặc ngân sách hoàn toàn khác nhau.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trung bình probabilities từ các models cho từng sample.</p><pre>{
+  &quot;predictions&quot;: [
+    [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.1,
+        0.9
+      ]
+    ],
+    [
+      [
+        0.4,
+        0.6
+      ],
+      [
+        0.3,
+        0.7
+      ]
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    0.6000000000000001,
+    0.4
+  ],
+  [
+    0.2,
+    0.8
+  ]
+]</pre></details><h3>Bài 2</h3><p>Cập nhật prediction + learning_rate*weak_prediction cho từng mẫu.</p><pre>{
+  &quot;pred&quot;: [
+    2,
+    4
+  ],
+  &quot;weak&quot;: [
+    1,
+    1
+  ],
+  &quot;lr&quot;: 0.5
+}</pre><details><summary>Đáp án</summary><pre>[
+  2.5,
+  4.5
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trung bình probabilities từ các models cho từng sample.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Cập nhật prediction + learning_rate*weak_prediction cho từng mẫu.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>So model đơn và ensemble</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO chương 16–18; KHTN chương 6.</p><p>AIO 16.3 Housing, 16.4 trắc nghiệm; 17.2–17.4 Gradient Boosting; NT 9.5 phần Random Forest.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-2/buoi-2-5/BAI_HOC.html">← Decision Trees</a><a href="../../phase-2/buoi-2-7/BAI_HOC.html">SVM →</a></nav></body></html>

@@ -1,0 +1,7 @@
+* text=auto
+*.ipynb text eol=lf
+*.webp binary
+*.png binary
+*.pdf binary
+*.zip binary
+*.woff binary

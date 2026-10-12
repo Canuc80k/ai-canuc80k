@@ -1,0 +1,2 @@
+Input: (200, 1, 8, 8) logits: (200, 10)
+Training accuracy: 0.97

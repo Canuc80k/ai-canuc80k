@@ -1,0 +1,43 @@
+BTVN 1 — Diffusion: forward_noise
+Mã local: aicanuc80kp4b10h1
+
+YÊU CẦU
+xt=sqrt(alpha_bar)*x0+sqrt(1-alpha_bar)*noise.
+
+INPUT
+Đọc đúng một JSON object từ stdin.
+x0/noise: cùng số chiều;0<alpha_bar<=1.
+Trừ giới hạn riêng ở trên: list 1D tối đa 1000 phần tử; ma trận tối đa 100 hàng, 64 cột; |số thực|<=1e6. Các ma trận hình chữ nhật và kích thước tương thích. Không có dữ liệu sai schema.
+
+OUTPUT
+In đúng một JSON value chứa kết quả yêu cầu, không thêm dòng giải thích. Thứ tự list giữ theo quy định; dict không yêu cầu thứ tự keys. Sai số số thực được chấp nhận: abs_error <=1e-6+1e-6*abs(expected). Booleans khác numbers.
+
+VÍ DỤ INPUT
+{
+  "x0": [
+    1,
+    2
+  ],
+  "noise": [
+    0.5,
+    -1
+  ],
+  "alpha_bar": 0.25
+}
+
+VÍ DỤ OUTPUT
+[
+  0.9330127018922193,
+  0.1339745962155614
+]
+
+GIẢI THÍCH VÍ DỤ
+Áp dụng yêu cầu lên chính input đã cấp. Với dữ liệu của lớp, không tự đổi positive class, quy ước tie, axes hoặc denominator.
+
+CẦN NỘP
+Một chương trình đọc stdin/in stdout và code đã dùng. Có thể dùng json,math,collections; ở bài primitive này không gọi một model/thư viện đã làm sẵn toàn bộ phép toán cần cài.
+
+TỰ KIỂM TRA
+- Chạy input mẫu và so semantic JSON với output mẫu.
+- Kiểm trường hợp biên đã nêu trong yêu cầu, không thêm giả định ngoài đề.
+- Không dùng print debug trong output nộp.

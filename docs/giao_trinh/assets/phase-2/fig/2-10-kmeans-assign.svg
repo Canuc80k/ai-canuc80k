@@ -1,0 +1,304 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="501.08pt" height="227.632321pt" viewBox="0 0 501.08 227.632321" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-10-kmeans-assign-figure_1">
+  <g id="fig-2-10-kmeans-assign-patch_1">
+   <path d="M 0 227.632321 
+L 501.08 227.632321 
+L 501.08 0 
+L 0 0 
+L 0 227.632321 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-10-kmeans-assign-axes_1">
+   <g id="fig-2-10-kmeans-assign-patch_2">
+    <path d="M 5.04 186.249665 
+L 242.29 186.249665 
+L 242.29 23.477344 
+L 5.04 23.477344 
+L 5.04 186.249665 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-10-kmeans-assign-matplotlib.axis_1">
+    <g id="fig-2-10-kmeans-assign-xtick_1">
+     <g id="fig-2-10-kmeans-assign-line2d_1">
+      <defs>
+       <path id="fig-2-10-kmeans-assign-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="30.013684" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="30.013684" y="200.422165" transform="rotate(-0 30.013684 200.422165)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-xtick_2">
+     <g id="fig-2-10-kmeans-assign-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="61.230789" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="61.230789" y="200.422165" transform="rotate(-0 61.230789 200.422165)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-xtick_3">
+     <g id="fig-2-10-kmeans-assign-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="186.099211" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="186.099211" y="200.422165" transform="rotate(-0 186.099211 200.422165)">5</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-xtick_4">
+     <g id="fig-2-10-kmeans-assign-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="217.316316" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="217.316316" y="200.422165" transform="rotate(-0 217.316316 200.422165)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="123.665" y="219.612009" transform="rotate(-0 123.665 219.612009)">giá trị x</text>
+    </g>
+   </g>
+   <g id="fig-2-10-kmeans-assign-matplotlib.axis_2"/>
+   <g id="fig-2-10-kmeans-assign-PathCollection_1">
+    <defs>
+     <path id="fig-2-10-kmeans-assign-m8419bec4a1" d="M 0 4.743416 
+C 1.257969 4.743416 2.464584 4.24362 3.354102 3.354102 
+C 4.24362 2.464584 4.743416 1.257969 4.743416 0 
+C 4.743416 -1.257969 4.24362 -2.464584 3.354102 -3.354102 
+C 2.464584 -4.24362 1.257969 -4.743416 0 -4.743416 
+C -1.257969 -4.743416 -2.464584 -4.24362 -3.354102 -3.354102 
+C -4.24362 -2.464584 -4.743416 -1.257969 -4.743416 0 
+C -4.743416 1.257969 -4.24362 2.464584 -3.354102 3.354102 
+C -2.464584 4.24362 -1.257969 4.743416 0 4.743416 
+z
+" style="stroke: #ffffff; stroke-width: 0.6"/>
+    </defs>
+    <g clip-path="url(#fig-2-10-kmeans-assign-p600ad5b253)">
+     <use xlink:href="#fig-2-10-kmeans-assign-m8419bec4a1" x="30.013684" y="126.197741" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.6"/>
+     <use xlink:href="#fig-2-10-kmeans-assign-m8419bec4a1" x="61.230789" y="126.197741" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="fig-2-10-kmeans-assign-PathCollection_2">
+    <defs>
+     <path id="fig-2-10-kmeans-assign-m826e2976df" d="M 0 4.743416 
+C 1.257969 4.743416 2.464584 4.24362 3.354102 3.354102 
+C 4.24362 2.464584 4.743416 1.257969 4.743416 0 
+C 4.743416 -1.257969 4.24362 -2.464584 3.354102 -3.354102 
+C 2.464584 -4.24362 1.257969 -4.743416 0 -4.743416 
+C -1.257969 -4.743416 -2.464584 -4.24362 -3.354102 -3.354102 
+C -4.24362 -2.464584 -4.743416 -1.257969 -4.743416 0 
+C -4.743416 1.257969 -4.24362 2.464584 -3.354102 3.354102 
+C -2.464584 4.24362 -1.257969 4.743416 0 4.743416 
+z
+" style="stroke: #ffffff; stroke-width: 0.6"/>
+    </defs>
+    <g clip-path="url(#fig-2-10-kmeans-assign-p600ad5b253)">
+     <use xlink:href="#fig-2-10-kmeans-assign-m826e2976df" x="186.099211" y="126.197741" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.6"/>
+     <use xlink:href="#fig-2-10-kmeans-assign-m826e2976df" x="217.316316" y="126.197741" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="fig-2-10-kmeans-assign-patch_3">
+    <path d="M 5.04 186.249665 
+L 5.04 23.477344 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-10-kmeans-assign-patch_4">
+    <path d="M 5.04 186.249665 
+L 242.29 186.249665 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_6">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="30.013684" y="107.233975" transform="rotate(-0 30.013684 107.233975)">0</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_7">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="61.230789" y="107.233975" transform="rotate(-0 61.230789 107.233975)">1</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_8">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="186.099211" y="107.233975" transform="rotate(-0 186.099211 107.233975)">5</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_9">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="217.316316" y="107.233975" transform="rotate(-0 217.316316 107.233975)">6</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_10">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="30.013684" y="53.503306" transform="rotate(-0 30.013684 53.503306)">tâm = 0</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_11">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="217.316316" y="53.503306" transform="rotate(-0 217.316316 53.503306)">tâm = 6</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_12">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="123.665" y="13.477344" transform="rotate(-0 123.665 13.477344)">trước update</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-PathCollection_3">
+    <defs>
+     <path id="fig-2-10-kmeans-assign-C0_0_97b6abfb42" d="M -3.259601 6.519202 
+L 0 3.259601 
+L 3.259601 6.519202 
+L 6.519202 3.259601 
+L 3.259601 -0 
+L 6.519202 -3.259601 
+L 3.259601 -6.519202 
+L 0 -3.259601 
+L -3.259601 -6.519202 
+L -6.519202 -3.259601 
+L -3.259601 0 
+L -6.519202 3.259601 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-10-kmeans-assign-p600ad5b253)">
+     <use xlink:href="#fig-2-10-kmeans-assign-C0_0_97b6abfb42" x="30.013684" y="126.197741" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.8"/>
+    </g>
+    <g clip-path="url(#fig-2-10-kmeans-assign-p600ad5b253)">
+     <use xlink:href="#fig-2-10-kmeans-assign-C0_0_97b6abfb42" x="217.316316" y="126.197741" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.8"/>
+    </g>
+   </g>
+  </g>
+  <g id="fig-2-10-kmeans-assign-axes_2">
+   <g id="fig-2-10-kmeans-assign-patch_5">
+    <path d="M 258.79 186.249665 
+L 496.04 186.249665 
+L 496.04 23.477344 
+L 258.79 23.477344 
+L 258.79 186.249665 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-10-kmeans-assign-matplotlib.axis_3">
+    <g id="fig-2-10-kmeans-assign-xtick_5">
+     <g id="fig-2-10-kmeans-assign-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="283.763684" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="283.763684" y="200.422165" transform="rotate(-0 283.763684 200.422165)">0</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-xtick_6">
+     <g id="fig-2-10-kmeans-assign-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="314.980789" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="314.980789" y="200.422165" transform="rotate(-0 314.980789 200.422165)">1</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-xtick_7">
+     <g id="fig-2-10-kmeans-assign-line2d_7">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="439.849211" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="439.849211" y="200.422165" transform="rotate(-0 439.849211 200.422165)">5</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-xtick_8">
+     <g id="fig-2-10-kmeans-assign-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-10-kmeans-assign-m04e37d9cc8" x="471.066316" y="186.249665" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-10-kmeans-assign-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="471.066316" y="200.422165" transform="rotate(-0 471.066316 200.422165)">6</text>
+     </g>
+    </g>
+    <g id="fig-2-10-kmeans-assign-text_17">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="377.415" y="219.612009" transform="rotate(-0 377.415 219.612009)">giá trị x</text>
+    </g>
+   </g>
+   <g id="fig-2-10-kmeans-assign-matplotlib.axis_4"/>
+   <g id="fig-2-10-kmeans-assign-PathCollection_4">
+    <g clip-path="url(#fig-2-10-kmeans-assign-p077b617d8b)">
+     <use xlink:href="#fig-2-10-kmeans-assign-m8419bec4a1" x="283.763684" y="126.197741" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.6"/>
+     <use xlink:href="#fig-2-10-kmeans-assign-m8419bec4a1" x="314.980789" y="126.197741" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="fig-2-10-kmeans-assign-PathCollection_5">
+    <g clip-path="url(#fig-2-10-kmeans-assign-p077b617d8b)">
+     <use xlink:href="#fig-2-10-kmeans-assign-m826e2976df" x="439.849211" y="126.197741" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.6"/>
+     <use xlink:href="#fig-2-10-kmeans-assign-m826e2976df" x="471.066316" y="126.197741" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="fig-2-10-kmeans-assign-patch_6">
+    <path d="M 258.79 186.249665 
+L 258.79 23.477344 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-10-kmeans-assign-patch_7">
+    <path d="M 258.79 186.249665 
+L 496.04 186.249665 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_18">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="283.763684" y="107.233975" transform="rotate(-0 283.763684 107.233975)">0</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_19">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="314.980789" y="107.233975" transform="rotate(-0 314.980789 107.233975)">1</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_20">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="439.849211" y="107.233975" transform="rotate(-0 439.849211 107.233975)">5</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_21">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="471.066316" y="107.233975" transform="rotate(-0 471.066316 107.233975)">6</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_22">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="299.372237" y="53.503306" transform="rotate(-0 299.372237 53.503306)">tâm mới = 0.5</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_23">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="455.457763" y="53.503306" transform="rotate(-0 455.457763 53.503306)">tâm mới = 5.5</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-text_24">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="377.415" y="13.477344" transform="rotate(-0 377.415 13.477344)">sau update</text>
+   </g>
+   <g id="fig-2-10-kmeans-assign-PathCollection_6">
+    <defs>
+     <path id="fig-2-10-kmeans-assign-C1_0_97b6abfb42" d="M -3.259601 6.519202 
+L 0 3.259601 
+L 3.259601 6.519202 
+L 6.519202 3.259601 
+L 3.259601 -0 
+L 6.519202 -3.259601 
+L 3.259601 -6.519202 
+L 0 -3.259601 
+L -3.259601 -6.519202 
+L -6.519202 -3.259601 
+L -3.259601 0 
+L -6.519202 3.259601 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-10-kmeans-assign-p077b617d8b)">
+     <use xlink:href="#fig-2-10-kmeans-assign-C1_0_97b6abfb42" x="299.372237" y="126.197741" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff; stroke-width: 0.8"/>
+    </g>
+    <g clip-path="url(#fig-2-10-kmeans-assign-p077b617d8b)">
+     <use xlink:href="#fig-2-10-kmeans-assign-C1_0_97b6abfb42" x="455.457763" y="126.197741" style="fill: var(--accent, #c2603e); stroke: #ffffff; stroke-width: 0.8"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-10-kmeans-assign-p600ad5b253">
+   <rect x="5.04" y="23.477344" width="237.25" height="162.772321"/>
+  </clipPath>
+  <clipPath id="fig-2-10-kmeans-assign-p077b617d8b">
+   <rect x="258.79" y="23.477344" width="237.25" height="162.772321"/>
+  </clipPath>
+ </defs>
+</svg>

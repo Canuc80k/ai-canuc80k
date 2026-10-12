@@ -1,0 +1,84 @@
+BUỔI 2.6 — Bagging, Random Forest và boosting
+
+HỌC SINH CẦN HIỂU
+- Bagging học các model trên các mẫu biến đổi, giúp giảm phương sai.
+- Random Forest thêm ngẫu nhiên khi chọn features; averaging giảm dao động.
+- Boosting thêm model để sửa lỗi theo objective; cần quản lý capacity/số vòng.
+
+CÂU HỎI MỞ BÀI
+Nhiều model sửa được những loại lỗi khác nhau thế nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+ensemble_prob = mean(model_probabilities)
+
+CẦN PHÂN BIỆT
+Không so models bằng train score hoặc ngân sách hoàn toàn khác nhau.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trung bình probabilities từ các models cho từng sample.
+Input:
+{
+  "predictions": [
+    [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.1,
+        0.9
+      ]
+    ],
+    [
+      [
+        0.4,
+        0.6
+      ],
+      [
+        0.3,
+        0.7
+      ]
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    0.6000000000000001,
+    0.4
+  ],
+  [
+    0.2,
+    0.8
+  ]
+]
+
+Bài trên lớp 2: Cập nhật prediction + learning_rate*weak_prediction cho từng mẫu.
+Input:
+{
+  "pred": [
+    2,
+    4
+  ],
+  "weak": [
+    1,
+    1
+  ],
+  "lr": 0.5
+}
+Output để đối chiếu sau khi làm:
+[
+  2.5,
+  4.5
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Trung bình probabilities từ các models cho từng sample.; xem BTVN_01.txt.
+- BTVN 2: Cập nhật prediction + learning_rate*weak_prediction cho từng mẫu.; xem BTVN_02.txt.
+- BTVN 3: So model đơn và ensemble; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO chương 16–18; KHTN chương 6.
+AIO 16.3 Housing, 16.4 trắc nghiệm; 17.2–17.4 Gradient Boosting; NT 9.5 phần Random Forest.

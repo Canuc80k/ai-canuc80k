@@ -1,0 +1,51 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chia dữ liệu và cross-validation — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/1.3?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 1.3: Chia dữ liệu và cross-validation</h1><p>Ảnh cùng con vật vào cả train và valid có công bằng không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Train học tham số; validation chọn cấu hình; test đánh giá cuối.</li><li>Stratified giữ tỉ lệ lớp; group split giữ đối tượng độc lập.</li><li>Time split mô phỏng dự đoán tương lai; CV lặp protocol hợp lý qua folds.</li></ul><p class="note">groups_train ∩ groups_valid = ∅</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.model_selection import GroupKFold,StratifiedKFold
+# Hai ảnh cùng con vật phải thuộc cùng một group khi đánh giá cá thể mới.
+ids = np.arange(8)
+groups = np.array([0,0,1,1,2,2,3,3])
+y = np.array([0,0,1,1,0,0,1,1])
+X = ids.reshape(-1,1)
+print(&quot;Group folds:&quot;)
+for train,valid in GroupKFold(n_splits=2).split(X,y,groups):
+    print(&quot;train&quot;,train.tolist(),&quot;valid&quot;,valid.tolist())
+    assert set(groups[train]).isdisjoint(set(groups[valid]))
+print(&quot;Stratified giữ tỉ lệ lớp, không tự giữ group:&quot;)
+for train,valid in StratifiedKFold(2,shuffle=True,random_state=42).split(X,y):
+    overlap = sorted(set(groups[train]) &amp; set(groups[valid]))
+    print(&quot;groups trùng:&quot;,overlap)
+</pre><h3>Kết quả</h3><pre>Group folds:
+train [0, 1, 4, 5] valid [2, 3, 6, 7]
+train [2, 3, 6, 7] valid [0, 1, 4, 5]
+Stratified giữ tỉ lệ lớp, không tự giữ group:
+groups trùng: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]
+groups trùng: [np.int64(0), np.int64(1), np.int64(2), np.int64(3)]
+</pre><p class="note">Không shuffle thời gian khi task yêu cầu dự đoán tương lai.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả các group có mặt trong cả train và valid, sorted tăng.</p><pre>{
+  &quot;train_groups&quot;: [
+    1,
+    1,
+    2
+  ],
+  &quot;valid_groups&quot;: [
+    2,
+    3
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  2
+]</pre></details><h3>Bài 2</h3><p>Tách indices theo time&lt;=cutoff là train, còn lại valid. Giữ thứ tự input.</p><pre>{
+  &quot;time&quot;: [
+    5,
+    1,
+    8,
+    3
+  ],
+  &quot;cutoff&quot;: 3
+}</pre><details><summary>Đáp án</summary><pre>{
+  &quot;train&quot;: [
+    1,
+    3
+  ],
+  &quot;valid&quot;: [
+    0,
+    2
+  ]
+}</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả các group có mặt trong cả train và valid, sorted tăng.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Tách indices theo time&lt;=cutoff là train, còn lại valid. Giữ thứ tự input.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Không shuffle; chia indices 0..n-1 thành k folds, fold đầu nhận phần dư. Trả list {train, valid}.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>Slide trang 2,11,14–16; NT 7.3–7.4.</p><p>NT 9.5 dùng KFold; NT 9.6 dùng Stratified CV; làm đúng split và seed đã ghi trong hai đề.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-1/buoi-1-2/BAI_HOC.html">← Generalization, underfitting và overfitting</a><a href="../../phase-1/buoi-1-4/BAI_HOC.html">Data leakage và Pipeline →</a></nav></body></html>

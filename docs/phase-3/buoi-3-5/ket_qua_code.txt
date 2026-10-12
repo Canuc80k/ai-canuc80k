@@ -1,0 +1,9 @@
+epoch 0 loss 0.484902
+epoch 1 loss 0.232143
+epoch 2 loss 0.109975
+epoch 3 loss 0.050168
+epoch 4 loss 0.022364
+epoch 5 loss 0.009853
+epoch 6 loss 0.004316
+epoch 7 loss 0.001886
+x=0 -> 1.0108

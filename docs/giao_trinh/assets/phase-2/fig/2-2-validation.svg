@@ -1,0 +1,713 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="465.304219pt" height="239.291031pt" viewBox="0 0 465.304219 239.291031" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-2-2-validation-figure_1">
+  <g id="fig-2-2-validation-patch_1">
+   <path d="M 0 239.291031 
+L 465.304219 239.291031 
+L 465.304219 0 
+L 0 0 
+L 0 239.291031 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-2-validation-axes_1">
+   <g id="fig-2-2-validation-patch_2">
+    <path d="M 45.284219 198.546031 
+L 460.264219 198.546031 
+L 460.264219 32.612991 
+L 45.284219 32.612991 
+L 45.284219 198.546031 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-2-validation-matplotlib.axis_1">
+    <g id="fig-2-2-validation-xtick_1">
+     <g id="fig-2-2-validation-line2d_1">
+      <defs>
+       <path id="fig-2-2-validation-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-2-validation-m04e37d9cc8" x="64.146946" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_1">
+      <!-- $\mathdefault{10^{-2}}$ -->
+      <g style="fill: currentColor" transform="translate(55.739446 212.718531)">
+       <text>
+        <tspan x="0" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">1</tspan>
+        <tspan x="3.457993" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">0</tspan>
+        <tspan x="9.440608" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">−</tspan>
+        <tspan x="12.9651" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_2">
+     <g id="fig-2-2-validation-line2d_2">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m04e37d9cc8" x="139.597855" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_2">
+      <!-- $\mathdefault{10^{-1}}$ -->
+      <g style="fill: currentColor" transform="translate(131.760355 212.718531)">
+       <text>
+        <tspan x="0" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">1</tspan>
+        <tspan x="3.457993" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">0</tspan>
+        <tspan x="9.440608" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">−</tspan>
+        <tspan x="12.9651" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_3">
+     <g id="fig-2-2-validation-line2d_3">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m04e37d9cc8" x="215.048764" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_3">
+      <!-- $\mathdefault{10^{0}}$ -->
+      <g style="fill: currentColor" transform="translate(208.113764 212.718531)">
+       <text>
+        <tspan x="0" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">1</tspan>
+        <tspan x="3.457993" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">0</tspan>
+        <tspan x="9.440608" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">0</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_4">
+     <g id="fig-2-2-validation-line2d_4">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m04e37d9cc8" x="290.499673" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_4">
+      <!-- $\mathdefault{10^{1}}$ -->
+      <g style="fill: currentColor" transform="translate(284.419673 212.718531)">
+       <text>
+        <tspan x="0" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">1</tspan>
+        <tspan x="3.457993" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">0</tspan>
+        <tspan x="9.440608" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_5">
+     <g id="fig-2-2-validation-line2d_5">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m04e37d9cc8" x="365.950582" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_5">
+      <!-- $\mathdefault{10^{2}}$ -->
+      <g style="fill: currentColor" transform="translate(359.300582 212.718531)">
+       <text>
+        <tspan x="0" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">1</tspan>
+        <tspan x="3.457993" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">0</tspan>
+        <tspan x="9.440608" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_6">
+     <g id="fig-2-2-validation-line2d_6">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m04e37d9cc8" x="441.401491" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_6">
+      <!-- $\mathdefault{10^{3}}$ -->
+      <g style="fill: currentColor" transform="translate(434.703991 212.718531)">
+       <text>
+        <tspan x="0" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">1</tspan>
+        <tspan x="3.457993" y="-0.917188" style="font-size: 9.5px; font-family: 'Lora'; fill: currentColor">0</tspan>
+        <tspan x="9.440608" y="-4.242188" style="font-size: 6.65px; font-family: 'Lora'; fill: currentColor">3</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_7">
+     <g id="fig-2-2-validation-line2d_7">
+      <defs>
+       <path id="fig-2-2-validation-mc5290e7a41" d="M 0 0 
+L 0 2 
+" style="stroke: currentColor; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="47.408256" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_8">
+     <g id="fig-2-2-validation-line2d_8">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="52.459452" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_9">
+     <g id="fig-2-2-validation-line2d_9">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="56.834997" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_10">
+     <g id="fig-2-2-validation-line2d_10">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="60.694502" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_11">
+     <g id="fig-2-2-validation-line2d_11">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="86.859933" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_12">
+     <g id="fig-2-2-validation-line2d_12">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="100.146178" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_13">
+     <g id="fig-2-2-validation-line2d_13">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="109.57292" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_14">
+     <g id="fig-2-2-validation-line2d_14">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="116.884868" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_15">
+     <g id="fig-2-2-validation-line2d_15">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="122.859165" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_16">
+     <g id="fig-2-2-validation-line2d_16">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="127.910361" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_17">
+     <g id="fig-2-2-validation-line2d_17">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="132.285907" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_18">
+     <g id="fig-2-2-validation-line2d_18">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="136.145411" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_19">
+     <g id="fig-2-2-validation-line2d_19">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="162.310842" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_20">
+     <g id="fig-2-2-validation-line2d_20">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="175.597088" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_21">
+     <g id="fig-2-2-validation-line2d_21">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="185.023829" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_22">
+     <g id="fig-2-2-validation-line2d_22">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="192.335777" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_23">
+     <g id="fig-2-2-validation-line2d_23">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="198.310074" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_24">
+     <g id="fig-2-2-validation-line2d_24">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="203.361271" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_25">
+     <g id="fig-2-2-validation-line2d_25">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="207.736816" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_26">
+     <g id="fig-2-2-validation-line2d_26">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="211.59632" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_27">
+     <g id="fig-2-2-validation-line2d_27">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="237.761751" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_28">
+     <g id="fig-2-2-validation-line2d_28">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="251.047997" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_29">
+     <g id="fig-2-2-validation-line2d_29">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="260.474738" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_30">
+     <g id="fig-2-2-validation-line2d_30">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="267.786686" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_31">
+     <g id="fig-2-2-validation-line2d_31">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="273.760983" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_32">
+     <g id="fig-2-2-validation-line2d_32">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="278.81218" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_33">
+     <g id="fig-2-2-validation-line2d_33">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="283.187725" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_34">
+     <g id="fig-2-2-validation-line2d_34">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="287.047229" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_35">
+     <g id="fig-2-2-validation-line2d_35">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="313.21266" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_36">
+     <g id="fig-2-2-validation-line2d_36">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="326.498906" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_37">
+     <g id="fig-2-2-validation-line2d_37">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="335.925647" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_38">
+     <g id="fig-2-2-validation-line2d_38">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="343.237596" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_39">
+     <g id="fig-2-2-validation-line2d_39">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="349.211893" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_40">
+     <g id="fig-2-2-validation-line2d_40">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="354.263089" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_41">
+     <g id="fig-2-2-validation-line2d_41">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="358.638634" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_42">
+     <g id="fig-2-2-validation-line2d_42">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="362.498138" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_43">
+     <g id="fig-2-2-validation-line2d_43">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="388.663569" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_44">
+     <g id="fig-2-2-validation-line2d_44">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="401.949815" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_45">
+     <g id="fig-2-2-validation-line2d_45">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="411.376556" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_46">
+     <g id="fig-2-2-validation-line2d_46">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="418.688505" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_47">
+     <g id="fig-2-2-validation-line2d_47">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="424.662802" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_48">
+     <g id="fig-2-2-validation-line2d_48">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="429.713998" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_49">
+     <g id="fig-2-2-validation-line2d_49">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="434.089543" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-xtick_50">
+     <g id="fig-2-2-validation-line2d_50">
+      <g>
+       <use xlink:href="#fig-2-2-validation-mc5290e7a41" x="437.949047" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-text_7">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="252.774219" y="231.446031" transform="rotate(-0 252.774219 231.446031)">λ</text>
+    </g>
+   </g>
+   <g id="fig-2-2-validation-matplotlib.axis_2">
+    <g id="fig-2-2-validation-ytick_1">
+     <g id="fig-2-2-validation-line2d_51">
+      <defs>
+       <path id="fig-2-2-validation-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-2-2-validation-m9fce3a8e10" x="45.284219" y="198.546031" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.284219" y="202.132281" transform="rotate(-0 38.284219 202.132281)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-ytick_2">
+     <g id="fig-2-2-validation-line2d_52">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m9fce3a8e10" x="45.284219" y="166.939738" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.284219" y="170.525988" transform="rotate(-0 38.284219 170.525988)">0.2</text>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-ytick_3">
+     <g id="fig-2-2-validation-line2d_53">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m9fce3a8e10" x="45.284219" y="135.333445" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.284219" y="138.919695" transform="rotate(-0 38.284219 138.919695)">0.4</text>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-ytick_4">
+     <g id="fig-2-2-validation-line2d_54">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m9fce3a8e10" x="45.284219" y="103.727151" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.284219" y="107.313401" transform="rotate(-0 38.284219 107.313401)">0.6</text>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-ytick_5">
+     <g id="fig-2-2-validation-line2d_55">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m9fce3a8e10" x="45.284219" y="72.120858" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.284219" y="75.707108" transform="rotate(-0 38.284219 75.707108)">0.8</text>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-ytick_6">
+     <g id="fig-2-2-validation-line2d_56">
+      <g>
+       <use xlink:href="#fig-2-2-validation-m9fce3a8e10" x="45.284219" y="40.514565" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-2-2-validation-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="38.284219" y="44.100815" transform="rotate(-0 38.284219 44.100815)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-2-2-validation-text_14">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="115.579511" transform="rotate(-90 13.345 115.579511)">R²</text>
+    </g>
+   </g>
+   <g id="fig-2-2-validation-line2d_57">
+    <path d="M 64.146946 42.861632 
+L 70.541091 42.862139 
+L 76.935236 42.862859 
+L 83.329381 42.863873 
+L 89.723525 42.865288 
+L 96.11767 42.867242 
+L 102.511815 42.869908 
+L 108.90596 42.873493 
+L 115.300105 42.878241 
+L 121.69425 42.884419 
+L 128.088394 42.892305 
+L 134.482539 42.902171 
+L 140.876684 42.914256 
+L 147.270829 42.928751 
+L 153.664974 42.945795 
+L 160.059119 42.965491 
+L 166.453263 42.987947 
+L 172.847408 43.013363 
+L 179.241553 43.042137 
+L 185.635698 43.075009 
+L 192.029843 43.113227 
+L 198.423988 43.15875 
+L 204.818132 43.214468 
+L 211.212277 43.284471 
+L 217.606422 43.374371 
+L 224.000567 43.491678 
+L 230.394712 43.646249 
+L 236.788857 43.85082 
+L 243.183001 44.121588 
+L 249.577146 44.478847 
+L 255.971291 44.947623 
+L 262.365436 45.558249 
+L 268.759581 46.346809 
+L 275.153726 47.355346 
+L 281.547871 48.631734 
+L 287.942015 50.229111 
+L 294.33616 52.204797 
+L 300.730305 54.618578 
+L 307.12445 57.530289 
+L 313.518595 60.996547 
+L 319.91274 65.066506 
+L 326.306884 69.776584 
+L 332.701029 75.144344 
+L 339.095174 81.162133 
+L 345.489319 87.791523 
+L 351.883464 94.959973 
+L 358.277609 102.561063 
+L 364.671753 110.459106 
+L 371.065898 118.498034 
+L 377.460043 126.513345 
+L 383.854188 134.345167 
+L 390.248333 141.850259 
+L 396.642478 148.911154 
+L 403.036622 155.441427 
+L 409.430767 161.386991 
+L 415.824912 166.724039 
+L 422.219057 171.454653 
+L 428.613202 175.601215 
+L 435.007347 179.200575 
+L 441.401491 182.298685 
+" clip-path="url(#fig-2-2-validation-p1c01ee4069)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-validation-line2d_58">
+    <path d="M 64.146946 134.96864 
+L 70.541091 133.350775 
+L 76.935236 131.461047 
+L 83.329381 129.270977 
+L 89.723525 126.756041 
+L 96.11767 123.898831 
+L 102.511815 120.692764 
+L 108.90596 117.146031 
+L 115.300105 113.285212 
+L 121.69425 109.157789 
+L 128.088394 104.832658 
+L 134.482539 100.397864 
+L 140.876684 95.955186 
+L 147.270829 91.61191 
+L 153.664974 87.470921 
+L 160.059119 83.620892 
+L 166.453263 80.128515 
+L 172.847408 77.034294 
+L 179.241553 74.352518 
+L 185.635698 72.074992 
+L 192.029843 70.17731 
+L 198.423988 68.626158 
+L 204.818132 67.386241 
+L 211.212277 66.425908 
+L 217.606422 65.721039 
+L 224.000567 65.257174 
+L 230.394712 65.030159 
+L 236.788857 65.045638 
+L 243.183001 65.317785 
+L 249.577146 65.86757 
+L 255.971291 66.720814 
+L 262.365436 67.906203 
+L 268.759581 69.453409 
+L 275.153726 71.391381 
+L 281.547871 73.746834 
+L 287.942015 76.542851 
+L 294.33616 79.797471 
+L 300.730305 83.522103 
+L 307.12445 87.719688 
+L 313.518595 92.382656 
+L 319.91274 97.490877 
+L 326.306884 103.009931 
+L 332.701029 108.890022 
+L 339.095174 115.065897 
+L 345.489319 121.457974 
+L 351.883464 127.974855 
+L 358.277609 134.517195 
+L 364.671753 140.982726 
+L 371.065898 147.271993 
+L 377.460043 153.294145 
+L 383.854188 158.972022 
+L 390.248333 164.245867 
+L 396.642478 169.075247 
+L 403.036622 173.439095 
+L 409.430767 177.334114 
+L 415.824912 180.772022 
+L 422.219057 183.776162 
+L 428.613202 186.377996 
+L 435.007347 188.613861 
+L 441.401491 190.522228 
+" clip-path="url(#fig-2-2-validation-p1c01ee4069)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-validation-line2d_59">
+    <path d="M 230.394712 198.546031 
+L 230.394712 32.612991 
+" clip-path="url(#fig-2-2-validation-p1c01ee4069)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: var(--t-n, #3b6ea8); stroke-opacity: 0.55; stroke-width: 0.9"/>
+   </g>
+   <g id="fig-2-2-validation-patch_3">
+    <path d="M 45.284219 198.546031 
+L 45.284219 32.612991 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-validation-patch_4">
+    <path d="M 45.284219 198.546031 
+L 460.264219 198.546031 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-2-validation-PathCollection_1">
+    <defs>
+     <path id="fig-2-2-validation-mde8fefb055" d="M 0 3.605551 
+C 0.956203 3.605551 1.873372 3.225648 2.54951 2.54951 
+C 3.225648 1.873372 3.605551 0.956203 3.605551 0 
+C 3.605551 -0.956203 3.225648 -1.873372 2.54951 -2.54951 
+C 1.873372 -3.225648 0.956203 -3.605551 0 -3.605551 
+C -0.956203 -3.605551 -1.873372 -3.225648 -2.54951 -2.54951 
+C -3.225648 -1.873372 -3.605551 -0.956203 -3.605551 0 
+C -3.605551 0.956203 -3.225648 1.873372 -2.54951 2.54951 
+C -1.873372 3.225648 -0.956203 3.605551 0 3.605551 
+z
+" style="stroke: #ffffff"/>
+    </defs>
+    <g clip-path="url(#fig-2-2-validation-p1c01ee4069)">
+     <use xlink:href="#fig-2-2-validation-mde8fefb055" x="230.394712" y="65.030159" style="fill: var(--t-n, #3b6ea8); stroke: #ffffff"/>
+    </g>
+   </g>
+   <g id="fig-2-2-validation-text_15">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(234.108256 39.099957)">tốt nhất</text>
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(234.108256 51.290457)">λ ≈ 1.6</text>
+   </g>
+   <g id="fig-2-2-validation-legend_1">
+    <g id="fig-2-2-validation-line2d_60">
+     <path d="M 195.760117 12.7125 
+L 205.760117 12.7125 
+L 215.760117 12.7125 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-2-validation-text_16">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="223.760117" y="16.2125" transform="rotate(-0 223.760117 16.2125)">train</text>
+    </g>
+    <g id="fig-2-2-validation-line2d_61">
+     <path d="M 264.887227 12.7125 
+L 274.887227 12.7125 
+L 284.887227 12.7125 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+    </g>
+    <g id="fig-2-2-validation-text_17">
+     <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="292.887227" y="16.2125" transform="rotate(-0 292.887227 16.2125)">test</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-2-validation-p1c01ee4069">
+   <rect x="45.284219" y="32.612991" width="414.98" height="165.93304"/>
+  </clipPath>
+ </defs>
+</svg>

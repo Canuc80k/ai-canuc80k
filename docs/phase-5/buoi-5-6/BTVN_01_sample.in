@@ -1,0 +1,8 @@
+{
+  "translation": [
+    "hello",
+    "there"
+  ],
+  "bos": "BOS",
+  "eos": "EOS"
+}

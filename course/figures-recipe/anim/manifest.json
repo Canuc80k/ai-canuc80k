@@ -1,0 +1,1268 @@
+{
+ "0-1-count": {
+  "name": "0-1-count",
+  "caption": "Đếm “mèo chó mèo gà mèo chó” bằng dict: mỗi từ chỉ chạm đúng một khóa, khóa mới bắt đầu từ 1.",
+  "frames": 8,
+  "size": [
+   960,
+   330
+  ],
+  "bytes": {
+   "0-1-count.anim.webp": 12986,
+   "0-1-count.anim.dark.webp": 12680,
+   "0-1-count.anim.json": 579
+  },
+  "sha256": {
+   "0-1-count.anim.webp": "54a18305c47326c8ed8c89de9ab20297a5fcd2c7fc44a25902b622cab77f2812",
+   "0-1-count.anim.dark.webp": "6ed4dcd249bc2f8219471b4ebc61510c802bd604b6b7522fad9e925329edf8ea",
+   "0-1-count.anim.json": "b1ba307aab3c6b062936add18153f4344c73e7c8c2f02db52b28efd3ac82e8a6"
+  }
+ },
+ "0-2-photo": {
+  "name": "0-2-photo",
+  "caption": "Một ảnh thật (320, 480, 3) qua mười dòng NumPy: lát cắt, chọn kênh, gộp trục, broadcast, và cái bẫy tràn số uint8.",
+  "frames": 11,
+  "size": [
+   960,
+   520
+  ],
+  "bytes": {
+   "0-2-photo.anim.webp": 700766,
+   "0-2-photo.anim.json": 1024
+  },
+  "sha256": {
+   "0-2-photo.anim.webp": "2144f80b3bcce42374020ff834177541c715b1419f408917d4d0cc05ac85a949",
+   "0-2-photo.anim.json": "7f05e8140920ae5923369d0890adb6594bba6b45b2406f90fadacc2caad0a240"
+  }
+ },
+ "0-3-groupby": {
+  "name": "0-3-groupby",
+  "caption": "groupby trên 400 học sinh của bài: tách dòng theo lớp, tính trung bình điểm toán trong từng nhóm, rồi gộp thành một bảng bốn dòng.",
+  "frames": 6,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "0-3-groupby.anim.webp": 102234,
+   "0-3-groupby.anim.dark.webp": 100858,
+   "0-3-groupby.anim.json": 572
+  },
+  "sha256": {
+   "0-3-groupby.anim.webp": "1fbc3b37c3614704cfc2c1e5c53ec263fb50700192731287b0a915c94118d7f4",
+   "0-3-groupby.anim.dark.webp": "c49261cb6bd80215c81a1782516cc01cd2aada3e9893ca871d7b33b57a1a396c",
+   "0-3-groupby.anim.json": "396d4994344ca6610c944fca257c0d5411bd427f95bfcf52e77ab7258a2c3def"
+  }
+ },
+ "1-1-row": {
+  "name": "1-1-row",
+  "caption": "Ảnh chữ số viết tay thật 8 × 8 trải thành một hàng 64 số: mỗi ảnh là một hàng của X, chữ số đúng là giá trị y.",
+  "frames": 13,
+  "size": [
+   960,
+   450
+  ],
+  "bytes": {
+   "1-1-row.anim.webp": 15158,
+   "1-1-row.anim.dark.webp": 15464,
+   "1-1-row.anim.json": 1270
+  },
+  "sha256": {
+   "1-1-row.anim.webp": "ff4e5543cd4fa04d45c94c4705dcc889b322ace1841c39f4c37f7f7f21dee956",
+   "1-1-row.anim.dark.webp": "a4275e235506e2608d09c3cb42efba90c5a9a929c5f6fc3fe7b5e683b6e933de",
+   "1-1-row.anim.json": "c963504fb9c00a97374f77e91ff5a1d1ab54920392f8b77c94174afc5be21b90"
+  }
+ },
+ "1-2-k": {
+  "name": "1-2-k",
+  "caption": "kNN hồi quy trên 80 điểm train của bài khi giảm k từ 80 về 1: đường cam đi từ quá phẳng tới bám từng điểm nhiễu; nét đứt là quy luật thật.",
+  "frames": 10,
+  "size": [
+   960,
+   460
+  ],
+  "bytes": {
+   "1-2-k.anim.webp": 79464,
+   "1-2-k.anim.dark.webp": 80746,
+   "1-2-k.anim.json": 691
+  },
+  "sha256": {
+   "1-2-k.anim.webp": "30da598be85e0715ffbda58f95358ce04736c93ed34b3382f26aa15eaadddaeb",
+   "1-2-k.anim.dark.webp": "a4a08c6d9f1679c62c19bd0e626b33de3ebff2786314cfabf42ba7d6ab68231b",
+   "1-2-k.anim.json": "05343bf54f40c57be1b1499052586ff8ab3c5ca8a321e92e54bc1878db274376"
+  }
+ },
+ "1-3-oof": {
+  "name": "1-3-oof",
+  "caption": "StratifiedKFold 3 fold của bài trên 96 mẫu: mỗi fold, model chưa thấy các ô viền cam sẽ đoán chúng; xác suất (xanh 0, cam 1) ghi về đúng vị trí cho đủ cột OOF.",
+  "frames": 7,
+  "size": [
+   960,
+   330
+  ],
+  "bytes": {
+   "1-3-oof.anim.webp": 7828,
+   "1-3-oof.anim.dark.webp": 7830,
+   "1-3-oof.anim.json": 743
+  },
+  "sha256": {
+   "1-3-oof.anim.webp": "6cd44ac977ce95f403a46bbeeefc7e8cdad62b9307e11aca551614064db7731a",
+   "1-3-oof.anim.dark.webp": "5957213bb6857a3245d716e58d8e910cbcab8df6f27b36ffbe62dc8f6a2eaf2c",
+   "1-3-oof.anim.json": "fe2ae89387e6bd8377e9c8cafae7144c64afe9a4d2782c919cb08d5c21c7ea0f"
+  }
+ },
+ "1-4-table": {
+  "name": "1-4-table",
+  "caption": "Sáu hàng validation của bài đi qua Pipeline đã fit trên train: điền trung vị, chuẩn hóa, one-hot, rồi model dự đoán; mọi con số dùng thống kê của train.",
+  "frames": 5,
+  "size": [
+   960,
+   380
+  ],
+  "bytes": {
+   "1-4-table.anim.webp": 15708,
+   "1-4-table.anim.dark.webp": 15612,
+   "1-4-table.anim.json": 490
+  },
+  "sha256": {
+   "1-4-table.anim.webp": "85b6e667e5fd2f2a3b66163558d82839483ba5493b89b19d71a491ce8f077cb9",
+   "1-4-table.anim.dark.webp": "b33cf65a75dea553dd002418fb146db6499bdcb598440e9b5b487f8b7075a888",
+   "1-4-table.anim.json": "b8576617a7c00efab3f8d0548ad5b99484be3af506ef44b4b080bd338039d79e"
+  }
+ },
+ "1-5-threshold": {
+  "name": "1-5-threshold",
+  "caption": "Mười mẫu validation của bài khi hạ threshold từ 1 xuống 0: confusion matrix đổi theo, và điểm (FPR, TPR) chạy dọc đường ROC.",
+  "frames": 12,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "1-5-threshold.anim.webp": 51370,
+   "1-5-threshold.anim.dark.webp": 51546,
+   "1-5-threshold.anim.json": 1036
+  },
+  "sha256": {
+   "1-5-threshold.anim.webp": "821b14ca5b82ed2a67bb164cab9e09fe6c260bdd488f289fab6cc0207e9c931e",
+   "1-5-threshold.anim.dark.webp": "b1fcdaa97fe22940f3858cd3e6b210904cd19460ca29e15ef1a4bd961563b0df",
+   "1-5-threshold.anim.json": "7672e0c72fb5e01770e6ab2f7564823816ffb2b019bd14ae7bd6f0ab82268f0c"
+  }
+ },
+ "1-6-outlier": {
+  "name": "1-6-outlier",
+  "caption": "Ba mẫu của ví dụ trong bài, chỉ mẫu 3 lệch ngày càng xa: MAE tăng theo đúng phần lệch chia 3, RMSE tăng nhanh hơn vì bình phương dồn trọng số vào lỗi lớn.",
+  "frames": 7,
+  "size": [
+   960,
+   400
+  ],
+  "bytes": {
+   "1-6-outlier.anim.webp": 13838,
+   "1-6-outlier.anim.dark.webp": 13892,
+   "1-6-outlier.anim.json": 475
+  },
+  "sha256": {
+   "1-6-outlier.anim.webp": "d5ba0f6022c0d1f8954f2dc1cf6fb2d61dbf551777faedb68d3e0f3a7ed255a5",
+   "1-6-outlier.anim.dark.webp": "bb7a1652e04352be2f79162f32055fd6797099900f7793a465c9f7ad8e32d43a",
+   "1-6-outlier.anim.json": "c5a82b1ccc66a8048e91f60e1d017491bb3f72e12438830b20a3b785266f8304"
+  }
+ },
+ "1-7-search": {
+  "name": "1-7-search",
+  "caption": "Cùng pipeline và cross-validation của bài: grid search thử 6 tổ hợp cố định (ô vuông), random search bốc 4 tổ hợp (chấm tròn); vòng lớn là tổ hợp tốt nhất đã thấy.",
+  "frames": 11,
+  "size": [
+   960,
+   439
+  ],
+  "bytes": {
+   "1-7-search.anim.webp": 56516,
+   "1-7-search.anim.dark.webp": 56332,
+   "1-7-search.anim.json": 1278
+  },
+  "sha256": {
+   "1-7-search.anim.webp": "87efdcfee87aee2a85b2b24506790ce8a4ffa47ae88eb6862dbee615ded1dbba",
+   "1-7-search.anim.dark.webp": "354376f33cd7e14b5737bd1d8936edd8bf04096dbea9551ca82f3eaf3a1e6516",
+   "1-7-search.anim.json": "ea58ab85c3edfb63d5857d7b2fc4531f0d309918bda038cf63175cf161b61a17"
+  }
+ },
+ "2-1-race": {
+  "name": "2-1-race",
+  "caption": "Cùng gradient descent trên 200 căn hộ: dữ liệu gốc tiến nhanh vài vòng đầu rồi gần như đứng yên; dữ liệu đã chuẩn hóa về sát đường chéo sau khoảng 20 vòng.",
+  "frames": 13,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "2-1-race.anim.webp": 137066,
+   "2-1-race.anim.dark.webp": 138336,
+   "2-1-race.anim.json": 977
+  },
+  "sha256": {
+   "2-1-race.anim.webp": "7b3f7ef5d4ff90f9888b83b88ff59bf7b4c13377de1156f0f2b84142e62c4856",
+   "2-1-race.anim.dark.webp": "c6c689eff86def6dcac4def04b176c17ce8bd1781221964cb183efbe65b9b106",
+   "2-1-race.anim.json": "f09ca17f2f776feec679a65d0633e28984b4c73883592486443a68ae2078911f"
+  }
+ },
+ "2-10-colors": {
+  "name": "2-10-colors",
+  "caption": "K-Means gom các màu của ảnh hoa thành 6 cụm: sau mỗi vòng gán rồi lấy trung bình, mỗi điểm ảnh được tô bằng màu tâm cụm của nó.",
+  "frames": 12,
+  "size": [
+   960,
+   330
+  ],
+  "bytes": {
+   "2-10-colors.anim.webp": 311268,
+   "2-10-colors.anim.json": 669
+  },
+  "sha256": {
+   "2-10-colors.anim.webp": "1e8ea1cb4e2696ea88d8320346e3d2247bf95d581d74a3475b9a4d05ab16f95f",
+   "2-10-colors.anim.json": "d01b9c5fc788f78bdcb51555cdfa184fbd9901e96b53cb15801726501e8654d8"
+  }
+ },
+ "2-11-cyclic": {
+  "name": "2-11-cyclic",
+  "caption": "Giờ trong ngày chạy từ 18 giờ qua nửa đêm: trên trục số 23 và 0 cách nhau xa nhất; mã hóa (sin, cos) đặt chúng cạnh nhau trên vòng tròn.",
+  "frames": 13,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "2-11-cyclic.anim.webp": 52806,
+   "2-11-cyclic.anim.dark.webp": 52864,
+   "2-11-cyclic.anim.json": 818
+  },
+  "sha256": {
+   "2-11-cyclic.anim.webp": "b716a67445b24a6011043e2acc7fd2b9f90babd62a6eba4c749a6ae10dfcaaf8",
+   "2-11-cyclic.anim.dark.webp": "5f2063dfae81f47739afc1119c3b50450e5344fcb777bbe54df42ff7f23be146",
+   "2-11-cyclic.anim.json": "d18dfb52c4774d08e95390f10dbb87c9d3e5aa467b3a81bc4e0a74f0086e9fda"
+  }
+ },
+ "2-2-shrink": {
+  "name": "2-2-shrink",
+  "caption": "Hệ số của Ridge và Lasso khi λ tăng (cam: diện tích, xanh: khoảng cách, xám: 30 cột rác): Ridge co đều, Lasso đưa từng hệ số về đúng 0.",
+  "frames": 12,
+  "size": [
+   960,
+   439
+  ],
+  "bytes": {
+   "2-2-shrink.anim.webp": 7774,
+   "2-2-shrink.anim.dark.webp": 7778,
+   "2-2-shrink.anim.json": 1143
+  },
+  "sha256": {
+   "2-2-shrink.anim.webp": "17adb69d4aa04acc1a3a495f9da6504ccde320492b47adf1b473f2a20b5ef515",
+   "2-2-shrink.anim.dark.webp": "ed7469ec0614c94d91a9795d10fc4ce1378abff54fd5ac0094355c9245e6b48b",
+   "2-2-shrink.anim.json": "bf18dd37947351df1adce6b90e210a3074149a3bb898ff616987e6d09b915237"
+  }
+ },
+ "2-3-boundary": {
+  "name": "2-3-boundary",
+  "caption": "Gradient descent của bài trên 300 email: ranh giới p = 0.5 (nét liền) và hai mức 0.1, 0.9 (nét đứt) dịch dần về chỗ tách spam.",
+  "frames": 12,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "2-3-boundary.anim.webp": 387070,
+   "2-3-boundary.anim.dark.webp": 404688,
+   "2-3-boundary.anim.json": 921
+  },
+  "sha256": {
+   "2-3-boundary.anim.webp": "ff529d2d3a13a9ba383aa56f1580b192e6733ce68732dfea47a7be1fd3f61781",
+   "2-3-boundary.anim.dark.webp": "cb3f239757a8745717ce429589ccc5c1722809bff32589d381e67ff1dc644475",
+   "2-3-boundary.anim.json": "a4a1cd25df408f99c0ead63625582059c02acd6cf8ba7e9d693c831ef1b5b94d"
+  }
+ },
+ "2-4-k": {
+  "name": "2-4-k",
+  "caption": "Cùng 200 điểm của hình trên, tăng k từ 1 tới 120: ranh giới đi từ bám từng điểm nhiễu tới quá phẳng.",
+  "frames": 12,
+  "size": [
+   960,
+   690
+  ],
+  "bytes": {
+   "2-4-k.anim.webp": 45308,
+   "2-4-k.anim.dark.webp": 46094,
+   "2-4-k.anim.json": 617
+  },
+  "sha256": {
+   "2-4-k.anim.webp": "4d881f2d5057640de400c481dcbac254dde64dd163f6adb2e4be3e1b8a9d5e57",
+   "2-4-k.anim.dark.webp": "f54451632f11bbde62fc0cf12325f8132c752be6b3f71a6203a9d088f421d7b0",
+   "2-4-k.anim.json": "f850d35dc3ea037eba12e0bad09825513f2f5aabe07ca759669cfd9ddd11fda7"
+  }
+ },
+ "2-5-photo": {
+  "name": "2-5-photo",
+  "caption": "Decision tree đoán màu theo tọa độ, học từ 25% điểm ảnh (trái): mỗi lá là một hình chữ nhật một màu; càng sâu càng thuộc điểm train, còn điểm chưa thấy dừng ở mức sai cỡ 25.",
+  "frames": 11,
+  "size": [
+   920,
+   440
+  ],
+  "bytes": {
+   "2-5-photo.anim.webp": 325824,
+   "2-5-photo.anim.json": 999
+  },
+  "sha256": {
+   "2-5-photo.anim.webp": "199963b5a6c1d001a92872f7c6c0aebb00b6db6394290bb6ce55a7ac662c898a",
+   "2-5-photo.anim.json": "af0593ad759d630f4eb1d2c9fc2009e2caf461695056f1119bcc9b805eed3919"
+  }
+ },
+ "2-6-photo": {
+  "name": "2-6-photo",
+  "caption": "Random forest trên cùng bài đoán màu: mỗi cây học một mẫu bootstrap nên sai theo kiểu riêng; lấy trung bình nhiều cây thì ảnh mượt hơn và sai số trên điểm chưa thấy giảm.",
+  "frames": 10,
+  "size": [
+   920,
+   440
+  ],
+  "bytes": {
+   "2-6-photo.anim.webp": 404164,
+   "2-6-photo.anim.json": 773
+  },
+  "sha256": {
+   "2-6-photo.anim.webp": "3965828d34baf1e1acf727b6e5af766f185d1e3db7ba4fc3248a9863698f93f0",
+   "2-6-photo.anim.json": "209b684be1f309c1c0f4d9e5b0d736b1fc01e900f5ce8a147347525ffb90c485"
+  }
+ },
+ "2-7-photo": {
+  "name": "2-7-photo",
+  "caption": "Gradient boosting trên cùng bài đoán màu: ảnh gốc, dự đoán sau m cây, và phần dư (càng đậm càng sai) mà cây tiếp theo phải sửa.",
+  "frames": 10,
+  "size": [
+   960,
+   330
+  ],
+  "bytes": {
+   "2-7-photo.anim.webp": 388180,
+   "2-7-photo.anim.json": 963
+  },
+  "sha256": {
+   "2-7-photo.anim.webp": "1580dcde26b9adbd889030b1e3e4f70c86d4de43047cb5d3451913f3238f9212",
+   "2-7-photo.anim.json": "1432a63dce95f9464cc3432e0315de309fbeb749135a1de469fc2cf71a5f53af"
+  }
+ },
+ "2-8-gamma": {
+  "name": "2-8-gamma",
+  "caption": "SVM kernel RBF, C = 1, trên dữ liệu trăng khuyết: tăng γ thì vùng ảnh hưởng của mỗi điểm hẹp lại, ranh giới uốn theo từng điểm (vòng tròn là support vector).",
+  "frames": 10,
+  "size": [
+   720,
+   720
+  ],
+  "bytes": {
+   "2-8-gamma.anim.webp": 418076,
+   "2-8-gamma.anim.dark.webp": 420396,
+   "2-8-gamma.anim.json": 757
+  },
+  "sha256": {
+   "2-8-gamma.anim.webp": "bdb17e34ba18667e0fdd3bbc2a8ca47c317ca96bdf1292da80668dc3a2a87313",
+   "2-8-gamma.anim.dark.webp": "da8231e2fd3c64348eca2921c33cf04d3baa00b0d0427ab7f66bd9766c1f6058",
+   "2-8-gamma.anim.json": "f15befadd2c6f422091a6a0e3f3d0ce23ed872d6d1168622eff17fc0e3181ce9"
+  }
+ },
+ "2-8-lift": {
+  "name": "2-8-lift",
+  "caption": "Nâng mười điểm từ trục x lên (x, x²): hai lớp không tách được bằng một ngưỡng trên trục lại tách được bằng một đường thẳng.",
+  "frames": 11,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "2-8-lift.anim.webp": 41566,
+   "2-8-lift.anim.dark.webp": 41952,
+   "2-8-lift.anim.json": 812
+  },
+  "sha256": {
+   "2-8-lift.anim.webp": "50b5deaf4b82799c5c56a3a76d1f4c1cb618397871ac851d8dc1e980b66de7a6",
+   "2-8-lift.anim.dark.webp": "5256ba7032103305550ef52b248527782f5f37b9c6ad86644437461c73adcea2",
+   "2-8-lift.anim.json": "022db91ec0763f741fa020c2f42f7d922a08946db407a292a3336456241dc08d"
+  }
+ },
+ "2-9-svd": {
+  "name": "2-9-svd",
+  "caption": "PCA trên 256 hàng của ảnh tháp (tính bằng SVD): ảnh gốc và ảnh dựng lại từ k thành phần đầu.",
+  "frames": 11,
+  "size": [
+   900,
+   440
+  ],
+  "bytes": {
+   "2-9-svd.anim.webp": 524846,
+   "2-9-svd.anim.json": 1133
+  },
+  "sha256": {
+   "2-9-svd.anim.webp": "655808c9697094572802cbe760ba916f2b28282e165c4e8c2013f4affb656a3b",
+   "2-9-svd.anim.json": "ca93c5ae31e2cef2952e7e79d80e631a665aeb7338cf85f54c54cc28576c5192"
+  }
+ },
+ "2-kt1-folds": {
+  "name": "2-kt1-folds",
+  "caption": "Ba fold của buổi kiểm tra: baseline trung vị đoán một hằng số cho mọi mẫu, Ridge đoán gần đường chéo; cả hai được chấm trên đúng cùng những mẫu.",
+  "frames": 3,
+  "size": [
+   960,
+   439
+  ],
+  "bytes": {
+   "2-kt1-folds.anim.webp": 25244,
+   "2-kt1-folds.anim.dark.webp": 25192,
+   "2-kt1-folds.anim.json": 457
+  },
+  "sha256": {
+   "2-kt1-folds.anim.webp": "b9f99e57d06fba600281bbb977e97708aa4f54b6ed0b28f05838cea9b7cb5eff",
+   "2-kt1-folds.anim.dark.webp": "ccb3cec1b9e56bd7e293b83c878c379667de4370cd55c97124c704ee58a94da0",
+   "2-kt1-folds.anim.json": "67edb7f8744f791d0bfcbf0a6329e70e83a3df92440cd19707656076ad2a006a"
+  }
+ },
+ "3-1-permute": {
+  "name": "3-1-permute",
+  "caption": "Ảnh hoa thật đổi từ (H, W, 3) sang (3, H, W): permute giữ đúng ba kênh màu; reshape cho cùng shape nhưng trộn lẫn các kênh.",
+  "frames": 4,
+  "size": [
+   960,
+   320
+  ],
+  "bytes": {
+   "3-1-permute.anim.webp": 162860,
+   "3-1-permute.anim.json": 536
+  },
+  "sha256": {
+   "3-1-permute.anim.webp": "90e346101f4b5cbc5052c751238097d6314f04d3b00651cfa5abf71f28b4aa48",
+   "3-1-permute.anim.json": "16bb6e207f772944d05f14a4c590d44f6b3151338aee1e5405fb36564dbd7eae"
+  }
+ },
+ "3-10-denoise": {
+  "name": "3-10-denoise",
+  "caption": "Denoising autoencoder trên ảnh Fashion-MNIST thật: hàng trên là input có nhiễu, hàng giữa là output sau từng mốc huấn luyện, hàng dưới là ảnh sạch dùng làm target.",
+  "frames": 8,
+  "size": [
+   960,
+   350
+  ],
+  "bytes": {
+   "3-10-denoise.anim.webp": 301314,
+   "3-10-denoise.anim.json": 816
+  },
+  "sha256": {
+   "3-10-denoise.anim.webp": "190b53327668c8b839759609cc72c24ffffb0e9fb878d181c911b25b57edc196",
+   "3-10-denoise.anim.json": "db49810d3b6bc1f649b1853823c01cdecf62a2ce30878740d458ad02e0d8d313"
+  }
+ },
+ "3-2-fold": {
+  "name": "3-2-fold",
+  "caption": "Lớp ẩn đặt tay của bài biến 200 điểm XOR: phép tuyến tính dồn mọi điểm lên một đường thẳng, ReLU gập phần âm về trục, rồi một đường thẳng tách được hai lớp.",
+  "frames": 15,
+  "size": [
+   960,
+   520
+  ],
+  "bytes": {
+   "3-2-fold.anim.webp": 52066,
+   "3-2-fold.anim.dark.webp": 52280,
+   "3-2-fold.anim.json": 1691
+  },
+  "sha256": {
+   "3-2-fold.anim.webp": "10f3ff5fb539727fd28d62bb991f579f2e14cf6db7858f412893d89b226063c3",
+   "3-2-fold.anim.dark.webp": "4202817b2b035b50adaebd037f929d3b0b1f50b80dc2781793332a1deee2e30b",
+   "3-2-fold.anim.json": "989701bf26d94319e172b9b6d42cc7c1681fd6d4075de5958afc803cc5133b02"
+  }
+ },
+ "3-3-bend": {
+  "name": "3-3-bend",
+  "caption": "Lưới điểm tô theo ảnh hoa qua cùng một lớp tuyến tính rồi ba activation: phép tuyến tính giữ lưới thẳng, activation mới uốn cong mặt phẳng.",
+  "frames": 11,
+  "size": [
+   960,
+   360
+  ],
+  "bytes": {
+   "3-3-bend.anim.webp": 820546,
+   "3-3-bend.anim.json": 1348
+  },
+  "sha256": {
+   "3-3-bend.anim.webp": "b17260015907bc695d88a4df19e25fc2d3c8335618c1a947f87992f6e2b41313",
+   "3-3-bend.anim.json": "5c4425c883821c35c9abc2e2bd04d1fcdd1d4fbfc2a319c69270292f8450c221"
+  }
+ },
+ "3-4-fashion": {
+  "name": "3-4-fashion",
+  "caption": "Cùng vòng train, chấm validation, lần này trên 6000 ảnh Fashion-MNIST thật: viền xanh là đoán đúng, viền cam là đoán sai.",
+  "frames": 12,
+  "size": [
+   960,
+   290
+  ],
+  "bytes": {
+   "3-4-fashion.anim.webp": 325528,
+   "3-4-fashion.anim.dark.webp": 318568,
+   "3-4-fashion.anim.json": 974
+  },
+  "sha256": {
+   "3-4-fashion.anim.webp": "a1d9ffccabefc80b3013d22d7343ac5b4edeefd03a756fc4816a329d382aa180",
+   "3-4-fashion.anim.dark.webp": "2b6aee8da57ce6876fbef7a2321396da71c498d0bb792d229a6cecb00519fa38",
+   "3-4-fashion.anim.json": "59f3c1578f76401538f18d93ab98d1d7c7b3ab01f60bc3c895115fa70a46cfd5"
+  }
+ },
+ "3-5-race": {
+  "name": "3-5-race",
+  "caption": "Ba optimizer chạy cùng lúc trên J = w₁² + 8w₂² từ (−2, 1), như hình trên: SGD (η = 0.09) zigzag, momentum (η = 0.09, μ = 0.8) vượt đáy rồi vòng lại, Adam (η = 0.15) đi chéo.",
+  "frames": 26,
+  "size": [
+   960,
+   560
+  ],
+  "bytes": {
+   "3-5-race.anim.webp": 306754,
+   "3-5-race.anim.dark.webp": 310548,
+   "3-5-race.anim.json": 1978
+  },
+  "sha256": {
+   "3-5-race.anim.webp": "d049dcffb3937f616457a9e5538ed048d0713bc5422b2138160895834abaffd8",
+   "3-5-race.anim.dark.webp": "4dfe109ccfbbb2cb3433785481538d9cf612f66040ffc9ff047b43599ff1f133",
+   "3-5-race.anim.json": "791f33d06528890f313a43f2e1de6ef61b752b23ebfc1ce3b779fb6dc557495c"
+  }
+ },
+ "3-6-curve": {
+  "name": "3-6-curve",
+  "caption": "Mạng nhỏ của bài trên 16 điểm nhiễu (chấm xanh), quy tắc thật y = x² (nét đứt): đường cam khớp nhất ở epoch 26, sau đó uốn theo nhiễu.",
+  "frames": 12,
+  "size": [
+   960,
+   480
+  ],
+  "bytes": {
+   "3-6-curve.anim.webp": 70168,
+   "3-6-curve.anim.dark.webp": 70264,
+   "3-6-curve.anim.json": 936
+  },
+  "sha256": {
+   "3-6-curve.anim.webp": "16bbbfe56b68165a801916b876fa7662d453c30c17692f034485107debeed341",
+   "3-6-curve.anim.dark.webp": "1f372ee5b0ec982b49602b0ecf06e592cd24386b2088248ea49acf62fe34aca1",
+   "3-6-curve.anim.json": "62d30b0737ed2e008ca3aabe54fa87b3528859c776ad55c798532137bd2d7794"
+  }
+ },
+ "3-7-onebatch": {
+  "name": "3-7-onebatch",
+  "caption": "Overfit một batch 16 ảnh Fashion-MNIST: lặp lại trên cùng batch, loss phải về gần 0 và cả 16 ảnh được đoán đúng.",
+  "frames": 10,
+  "size": [
+   960,
+   290
+  ],
+  "bytes": {
+   "3-7-onebatch.anim.webp": 251566,
+   "3-7-onebatch.anim.dark.webp": 241742,
+   "3-7-onebatch.anim.json": 577
+  },
+  "sha256": {
+   "3-7-onebatch.anim.webp": "983c5ecad353e41035ba796b92934d3309075b291cadf941dbb11ab1bf127026",
+   "3-7-onebatch.anim.dark.webp": "ba1519af58088b0db59f268ea80423edb3c703fc4edc0a6efc968e8c9207dfff",
+   "3-7-onebatch.anim.json": "fadf44aec616d0263e0dba81047f01a5650cd1aebadb3b9f68809f4e906d5109"
+  }
+ },
+ "3-8-skipgram": {
+  "name": "3-8-skipgram",
+  "caption": "Embedding hai chiều học bằng skip-gram trên 64 câu ngắn: chỉ nhờ đoán từ đứng cạnh, các từ cùng loại dần đứng gần nhau.",
+  "frames": 11,
+  "size": [
+   960,
+   560
+  ],
+  "bytes": {
+   "3-8-skipgram.anim.webp": 57662,
+   "3-8-skipgram.anim.dark.webp": 56542,
+   "3-8-skipgram.anim.json": 420
+  },
+  "sha256": {
+   "3-8-skipgram.anim.webp": "33046ddc5991f85c5832dbae51171168215c8cf710e9c63631739d9460e27e43",
+   "3-8-skipgram.anim.dark.webp": "0893ec3ca7a743208ae815da0664c0ffa25bf64c1d255df77c1370f846c13807",
+   "3-8-skipgram.anim.json": "f7edda8120e1a027b4d1ec57ac7f75845ee7e845808ba28956a872f8ef63bc9c"
+  }
+ },
+ "3-9-heads": {
+  "name": "3-9-heads",
+  "caption": "Một head thật của MiniLM (lớp 4, head 2) trên một câu: mỗi khung là một query, cột là trọng số softmax đặt lên từng token, cộng lại bằng 1.",
+  "frames": 15,
+  "size": [
+   960,
+   380
+  ],
+  "bytes": {
+   "3-9-heads.anim.webp": 58344,
+   "3-9-heads.anim.dark.webp": 57958,
+   "3-9-heads.anim.json": 1402
+  },
+  "sha256": {
+   "3-9-heads.anim.webp": "38ec470135f5af989fbe912fc66876ce194bd1d8a384cce083fdd1b056d4aa73",
+   "3-9-heads.anim.dark.webp": "9339fd6b8d678ac33b8b3a10553e38eda0e6e25eeeaf89a562e846e928849e3c",
+   "3-9-heads.anim.json": "763338845cae31428911a7ecdcb1ea16e17eb81ebe6dcbb7ec14b0531b98d6a4"
+  }
+ },
+ "4-1-pipeline": {
+  "name": "4-1-pipeline",
+  "caption": "Ảnh mèo thật qua đúng preprocessing của ResNet-18 ImageNet rồi qua model: ba lớp mèo đứng đầu, chia nhau gần hết xác suất.",
+  "frames": 6,
+  "size": [
+   960,
+   400
+  ],
+  "bytes": {
+   "4-1-pipeline.anim.webp": 109910,
+   "4-1-pipeline.anim.dark.webp": 110040,
+   "4-1-pipeline.anim.json": 542
+  },
+  "sha256": {
+   "4-1-pipeline.anim.webp": "fa5ff8fecad30eb428811837018a29773a1e333acddb6b071e98eb4a2f0b54ce",
+   "4-1-pipeline.anim.dark.webp": "cc1708c4d6939fd9ac794107e1d3a54bea88672e0aa9a0dca068d1ae4ece1030",
+   "4-1-pipeline.anim.json": "74937ab421a37ec2c51bacca2e6534ca6b1d5bddafebe0389ed1a1092787b9d6"
+  }
+ },
+ "4-2-morph": {
+  "name": "4-2-morph",
+  "caption": "320 ảnh CIFAR-10 thật của bốn lớp: đặt theo PCA của pixel thô, rồi trượt sang PCA của vector đặc trưng ResNet-18.",
+  "frames": 12,
+  "size": [
+   960,
+   600
+  ],
+  "bytes": {
+   "4-2-morph.anim.webp": 271762,
+   "4-2-morph.anim.dark.webp": 264854,
+   "4-2-morph.anim.json": 1077
+  },
+  "sha256": {
+   "4-2-morph.anim.webp": "780a65a3ef868611dd79e95ed092ed917580fb80f253da035b3e8a20d7d8bdaf",
+   "4-2-morph.anim.dark.webp": "6375be331b2a6fdfcfd9af571bdd4a0d36af67c432c5c5e5ad808e999669267a",
+   "4-2-morph.anim.json": "cdb89734f161f532e1ae872463ae085f23bb6701910205b78078d6ea216292ef"
+  }
+ },
+ "4-3-transfer": {
+  "name": "4-3-transfer",
+  "caption": "ResNet-18 học bốn lớp CIFAR-10 từ 800 ảnh, cùng số bước: bắt đầu từ trọng số ImageNet đoán đúng sớm hơn hẳn bắt đầu từ ngẫu nhiên.",
+  "frames": 6,
+  "size": [
+   960,
+   400
+  ],
+  "bytes": {
+   "4-3-transfer.anim.webp": 148636,
+   "4-3-transfer.anim.dark.webp": 148940,
+   "4-3-transfer.anim.json": 735
+  },
+  "sha256": {
+   "4-3-transfer.anim.webp": "0c1878e3ac10f27577960ed6865b9a6ce2c5b82b3a8f879b8875c3bc01d9edd4",
+   "4-3-transfer.anim.dark.webp": "0e73d9959c5bf9dc31ca2d7cafda262fe1678d51c904c300b92c97cabd7f1fcf",
+   "4-3-transfer.anim.json": "8f055324722488eb2b45ae5dd74bec3fd6580d84f8488bb2cc3cc3d1bad33da5"
+  }
+ },
+ "4-4-heat": {
+  "name": "4-4-heat",
+  "caption": "Thí nghiệm của bài: phần sửa ΔW mà full update, LoRA rank 1 và rank 2 học được sau từng số bước; ô cam dương, ô xanh âm.",
+  "frames": 9,
+  "size": [
+   960,
+   330
+  ],
+  "bytes": {
+   "4-4-heat.anim.webp": 6298,
+   "4-4-heat.anim.dark.webp": 6304,
+   "4-4-heat.anim.json": 834
+  },
+  "sha256": {
+   "4-4-heat.anim.webp": "caf22c47c3058ed22e064bc3854244c08aa48cbcd8aad2461117b01070371fb7",
+   "4-4-heat.anim.dark.webp": "50c4fd51330d4ff05173eff123223dc4e36bb06309c216ae3414446750a002e2",
+   "4-4-heat.anim.json": "1ecb75ebe97fa3e0b0d575887cde921576a8458edc25ae688b9fa620cd76a796"
+  }
+ },
+ "4-5-zeroshot": {
+  "name": "4-5-zeroshot",
+  "caption": "Zero-shot với CLIP ViT-B/32 trên ảnh thật: mỗi lớp chỉ là một câu “a photo of a …”, ảnh chọn câu có cosine cao nhất; không ảnh nào được dùng để train.",
+  "frames": 6,
+  "size": [
+   960,
+   400
+  ],
+  "bytes": {
+   "4-5-zeroshot.anim.webp": 106626,
+   "4-5-zeroshot.anim.dark.webp": 109762,
+   "4-5-zeroshot.anim.json": 543
+  },
+  "sha256": {
+   "4-5-zeroshot.anim.webp": "c6106cd1fc79ca9c4b1e849d8103ab97444cf432f1fc2acb0f1c47bddbea080b",
+   "4-5-zeroshot.anim.dark.webp": "b369d9a2cd6455ebe6dba7e0a57b5136056b8cae1d20c7b272368fd0e8afb234",
+   "4-5-zeroshot.anim.json": "ab83223ccc0b609fb76149c070fbab965460242741ac7ffe247021fe7b635c02"
+  }
+ },
+ "4-kt2-floor": {
+  "name": "4-kt2-floor",
+  "caption": "Head của buổi kiểm tra học ba mẫu đầu (mỗi lớp một mẫu) với hai cách tính loss: đưa logits vào thì loss về gần 0; softmax trước thì loss chỉ tiến sát sàn 0.551.",
+  "frames": 10,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "4-kt2-floor.anim.webp": 48314,
+   "4-kt2-floor.anim.dark.webp": 48718,
+   "4-kt2-floor.anim.json": 851
+  },
+  "sha256": {
+   "4-kt2-floor.anim.webp": "2a0559210a7a0f84644ff362157798500bf36408a46f144cc18b812afda1eaa7",
+   "4-kt2-floor.anim.dark.webp": "0296750fb87e9d51af603cb7d3cf5259c751d6e84f5a712670ac9296d137644f",
+   "4-kt2-floor.anim.json": "684f478dfc328168bf52489dac10c1d67fae4729a113ddc46d37a3751ada2898"
+  }
+ },
+ "5-1-scan": {
+  "name": "5-1-scan",
+  "caption": "Kernel nét dọc trượt qua ảnh tháp; mỗi vị trí cho một ô của bảng đầu ra.",
+  "frames": 18,
+  "size": [
+   960,
+   480
+  ],
+  "bytes": {
+   "5-1-scan.anim.webp": 299376,
+   "5-1-scan.anim.dark.webp": 304178,
+   "5-1-scan.anim.json": 1007
+  },
+  "sha256": {
+   "5-1-scan.anim.webp": "8a6faf4764ea532a6474a898763e0b1a2aa536cb542b983fcd4a272b87829338",
+   "5-1-scan.anim.dark.webp": "68eeb2a6e9740b6910174ed93ed30dee1b08d5d4bba11db8941bc0a51cb53539",
+   "5-1-scan.anim.json": "d07938f79e80bd16158ef936c6f4a70b541da4b3710435a981b4b133fc582c41"
+  }
+ },
+ "5-2-stages": {
+  "name": "5-2-stages",
+  "caption": "Feature map thật của ResNet-18 trên ảnh tháp: càng sâu, bảng càng nhỏ và nét càng trừu tượng.",
+  "frames": 6,
+  "size": [
+   960,
+   480
+  ],
+  "bytes": {
+   "5-2-stages.anim.webp": 346892,
+   "5-2-stages.anim.json": 543
+  },
+  "sha256": {
+   "5-2-stages.anim.webp": "7716fe812e72aabe87bed9726b036e4750f408ab3fd2796d6c141c206d87b8da",
+   "5-2-stages.anim.json": "e29610d2b6081ddcd568acce2494b9ce8d53ccb1be127fdfd6b8b9c955e5f601"
+  }
+ },
+ "5-3-epochs": {
+  "name": "5-3-epochs",
+  "caption": "Mỗi epoch, cùng một ảnh hoa được crop, xoay, lật và đổi sáng ngẫu nhiên; nhãn vẫn là hoa.",
+  "frames": 10,
+  "size": [
+   960,
+   400
+  ],
+  "bytes": {
+   "5-3-epochs.anim.webp": 409610,
+   "5-3-epochs.anim.dark.webp": 410422,
+   "5-3-epochs.anim.json": 808
+  },
+  "sha256": {
+   "5-3-epochs.anim.webp": "a4e43ffbc40cc3f27a94fa266fb42bb1f4da53b8834b3283480961dc843b81e9",
+   "5-3-epochs.anim.dark.webp": "3bdfa5ed04bf34d5262d144007f4ec11964dfd079b148c4387024f1c1c16a408",
+   "5-3-epochs.anim.json": "283e9de0ff318ff9df14d03dcfa66108fe9c2a6719671771995c48749674632b"
+  }
+ },
+ "5-4-tokens": {
+  "name": "5-4-tokens",
+  "caption": "Ảnh tháp chia lưới 4 × 4 (patch 56 × 56 cho dễ nhìn); các hàng patch trải thành chuỗi token, rồi ghép CLS ở đầu.",
+  "frames": 17,
+  "size": [
+   960,
+   390
+  ],
+  "bytes": {
+   "5-4-tokens.anim.webp": 250660,
+   "5-4-tokens.anim.dark.webp": 250656,
+   "5-4-tokens.anim.json": 1117
+  },
+  "sha256": {
+   "5-4-tokens.anim.webp": "22d12e9b08712c160bcfbe1752a3f18e76d9079912d818d5b1f7ea0716eeaded",
+   "5-4-tokens.anim.dark.webp": "c9df62ea52c68dd6ae53b48d726b02646e11e3ddb35888883f1b684c14eb5566",
+   "5-4-tokens.anim.json": "7cfea3ab013c4a492cc32cb9bdd5a27404f1ffe1cda9169b50badfd182802730"
+  }
+ },
+ "5-5-nms": {
+  "name": "5-5-nms",
+  "caption": "NMS trên ảnh đồng xu thật: giữ box score cao nhất, bỏ các box chồng lên nó quá ngưỡng IoU, lặp lại.",
+  "frames": 14,
+  "size": [
+   684,
+   540
+  ],
+  "bytes": {
+   "5-5-nms.anim.webp": 652614,
+   "5-5-nms.anim.json": 1111
+  },
+  "sha256": {
+   "5-5-nms.anim.webp": "c46936bd04544116dcbd6de76fd912eddc2b8b8604748e961193e43dff4b0dcb",
+   "5-5-nms.anim.json": "d2a402166be68350aba0d3c682de3f121f00b88f1380d0279294ad2d23277527"
+  }
+ },
+ "5-6-unet": {
+  "name": "5-6-unet",
+  "caption": "U-Net nhỏ học mask hoa trên ảnh thật: màu xanh là xác suất model cho là hoa, viền cam là mask đặt bằng ngưỡng màu.",
+  "frames": 12,
+  "size": [
+   960,
+   321
+  ],
+  "bytes": {
+   "5-6-unet.anim.webp": 246086,
+   "5-6-unet.anim.dark.webp": 242670,
+   "5-6-unet.anim.json": 693
+  },
+  "sha256": {
+   "5-6-unet.anim.webp": "06dc53db17ee84fe89e8cd3da80e7086b2b323cf6df2940e7d73b9ab3dff9c27",
+   "5-6-unet.anim.dark.webp": "a1416fd14bc9e2c5d4fb2b721b6962e35579905d87d1047833f2d2aeac3ad41e",
+   "5-6-unet.anim.json": "4a92e96b89adca9439968680ba19b2140fc362ea4182e997eff0b532e1a2860d"
+  }
+ },
+ "5-7-search": {
+  "name": "5-7-search",
+  "caption": "CLIP ViT-B/32 xếp 12 ảnh thật theo cosine với từng câu truy vấn; vạch dưới ảnh là cosine.",
+  "frames": 22,
+  "size": [
+   960,
+   360
+  ],
+  "bytes": {
+   "5-7-search.anim.webp": 952346,
+   "5-7-search.anim.json": 1232
+  },
+  "sha256": {
+   "5-7-search.anim.webp": "6b8f24b1b960f881a9f7918085852324e7fb8e66b0a54030cfb81bb15d3b068a",
+   "5-7-search.anim.json": "eec33db74e09570d5df7458eba560ad0956f1db71ae140645c533c66dbf9a34f"
+  }
+ },
+ "5-8-sampling": {
+  "name": "5-8-sampling",
+  "caption": "Sampler DDPM dùng noise predictor đã train của bài: 4000 điểm từ noise chuẩn dần tách về hai cụm ±2.",
+  "frames": 11,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "5-8-sampling.anim.webp": 7576,
+   "5-8-sampling.anim.dark.webp": 7580,
+   "5-8-sampling.anim.json": 723
+  },
+  "sha256": {
+   "5-8-sampling.anim.webp": "be9755eac0d6f09968e22bdd9a69e1b876fa083df5827b5ac517889b87b65f17",
+   "5-8-sampling.anim.dark.webp": "61d32274256dcbf538d319deb546aee772cf1038c0258040cc9da1411e6278af",
+   "5-8-sampling.anim.json": "1ec24f0eabb2bcff9bdccbe3075d5571dcf35448e8cfca1ced1c0bc55f711366"
+  }
+ },
+ "5-9-occlusion": {
+  "name": "5-9-occlusion",
+  "caption": "Occlusion trên ảnh thật với ResNet-18: che từng vùng bằng màu trung bình; che ô nào làm xác suất lớp giảm càng nhiều thì ô đó càng cam.",
+  "frames": 17,
+  "size": [
+   960,
+   460
+  ],
+  "bytes": {
+   "5-9-occlusion.anim.webp": 289938,
+   "5-9-occlusion.anim.dark.webp": 289294,
+   "5-9-occlusion.anim.json": 1492
+  },
+  "sha256": {
+   "5-9-occlusion.anim.webp": "76ce800e2f7696704b1f466972675e49ab6bfb98a97695054bbf6cf2897b73f5",
+   "5-9-occlusion.anim.dark.webp": "81be6965bea49317dee1e1865df081302bebefae0518892588203b7b1d3e58b1",
+   "5-9-occlusion.anim.json": "229f607c6ceee604fa7b0ab794d98d5373865e546e4d6ecc61f01e6d315853eb"
+  }
+ },
+ "5-kt3-sweep": {
+  "name": "5-kt3-sweep",
+  "caption": "Tám xác suất validation của buổi kiểm tra (chấm cam là ảnh dương, viền đậm là đoán dương): kéo threshold từ phải sang trái, accuracy và F1 không đạt đỉnh ở cùng chỗ.",
+  "frames": 10,
+  "size": [
+   960,
+   439
+  ],
+  "bytes": {
+   "5-kt3-sweep.anim.webp": 40018,
+   "5-kt3-sweep.anim.dark.webp": 40156,
+   "5-kt3-sweep.anim.json": 622
+  },
+  "sha256": {
+   "5-kt3-sweep.anim.webp": "33a84f96c8a9a980061edb299fe6b346a7892950165016c2b131df2a74bae507",
+   "5-kt3-sweep.anim.dark.webp": "75a93cdd546050a73830996ff11e72df4b4d6ac43a77560d257eff1ac7a2e396",
+   "5-kt3-sweep.anim.json": "994a0739e26f1dbdf3ad1e12547e6cc868b57135c5dfffa0888036cf3882a3c1"
+  }
+ },
+ "6-1-bpe": {
+  "name": "6-1-bpe",
+  "caption": "BPE học trên chính lời giảng của giáo trình (khoảng 327 nghìn từ): từ vựng càng lớn, câu càng ít token; từ hiếm như “tokenization” vẫn ghép được từ mảnh quen.",
+  "frames": 7,
+  "size": [
+   960,
+   330
+  ],
+  "bytes": {
+   "6-1-bpe.anim.webp": 17866,
+   "6-1-bpe.anim.dark.webp": 17716,
+   "6-1-bpe.anim.json": 538
+  },
+  "sha256": {
+   "6-1-bpe.anim.webp": "0753677138687bbf11958e744705ca4bd0ca47e92172f0c0ae0865c85e714352",
+   "6-1-bpe.anim.dark.webp": "dfa7cdc4e7808f0b22ffa83908304699f4f7995a3a6e4a634ae1e5dbeb4139d8",
+   "6-1-bpe.anim.json": "32000bc6469b0c3c777f76e6e94582e646ba372c3588e2c0d31fc438cecd5bbc"
+  }
+ },
+ "6-2-search": {
+  "name": "6-2-search",
+  "caption": "Model câu đa ngôn ngữ xếp tám câu thông báo theo cosine với từng câu hỏi: ba câu hỏi sau tìm đúng câu trả lời dù gần như không trùng từ; câu hỏi đầu bị kéo về câu cũng nói “vào phòng thi”.",
+  "frames": 14,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "6-2-search.anim.webp": 69960,
+   "6-2-search.anim.dark.webp": 70638,
+   "6-2-search.anim.json": 1118
+  },
+  "sha256": {
+   "6-2-search.anim.webp": "777499550ab4f3bd77c8483f2bda79216cc4fefaa51b6ecda18fd6b42601e64d",
+   "6-2-search.anim.dark.webp": "177524e9874470f2aca97a30cb2847ba1a34604b12ce27f4c94806cdcdd8ea6b",
+   "6-2-search.anim.json": "3d273528f983ee010c267edd8f01bdcfafb2a4b41aef6eff68cc77130079f137"
+  }
+ },
+ "6-3-context": {
+  "name": "6-3-context",
+  "caption": "Vector của chữ “đường” trong 12 câu, qua từng lớp của một encoder kiểu BERT (MiniLM đa ngôn ngữ): càng lên cao, hai nghĩa càng tách xa.",
+  "frames": 13,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "6-3-context.anim.webp": 29522,
+   "6-3-context.anim.dark.webp": 29644,
+   "6-3-context.anim.json": 1241
+  },
+  "sha256": {
+   "6-3-context.anim.webp": "b096d75e387771985c12801698df28f91abb7dc1897aca40cb3bd4210dbac2f0",
+   "6-3-context.anim.dark.webp": "ff357a2aa69f9547955c851f4bf37a66b23df03483ce63fd833ec25db8bc213b",
+   "6-3-context.anim.json": "8e12a14e10990a3882bff7c153e85d4d4f7f5d6479342f52e4f08525d6091f7e"
+  }
+ },
+ "6-4-next": {
+  "name": "6-4-next",
+  "caption": "Qwen2.5-0.5B viết tiếp “Hà Nội là thủ đô của” từng token: mỗi bước model trả một phân phối, greedy lấy token cao nhất rồi nối vào.",
+  "frames": 10,
+  "size": [
+   960,
+   400
+  ],
+  "bytes": {
+   "6-4-next.anim.webp": 35044,
+   "6-4-next.anim.dark.webp": 34908,
+   "6-4-next.anim.json": 950
+  },
+  "sha256": {
+   "6-4-next.anim.webp": "5def44c2978898d5a195312fb7cb62c39cb4c43ad24262b44aa1600ba13bae39",
+   "6-4-next.anim.dark.webp": "87110959b1a5a8ac386b16aeeaf0192e729ba4034191556488782f5b7fbbb787",
+   "6-4-next.anim.json": "989ef3e8cde0559fd21e33231ed45cbd3806c946fec5fa9d1e50efe9a5e8d490"
+  }
+ },
+ "6-5-xattn": {
+  "name": "6-5-xattn",
+  "caption": "Whisper chép một câu đọc thật: encoder đọc phổ âm thanh; mỗi token decoder sinh ra, một head cross-attention (lớp 3, head 1) dồn trọng số vào đoạn âm của từ ấy.",
+  "frames": 9,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "6-5-xattn.anim.webp": 253394,
+   "6-5-xattn.anim.dark.webp": 248940,
+   "6-5-xattn.anim.json": 825
+  },
+  "sha256": {
+   "6-5-xattn.anim.webp": "88e5809b43f5bc0a36caccba094c86ebc4140eb6be2ce92f153e9bcca17261ae",
+   "6-5-xattn.anim.dark.webp": "4a39be7d676d9c97a8e1ac416e7d56e3032dc0c9122842841cd47513278dbe88",
+   "6-5-xattn.anim.json": "4adda5aa8fc4b96fcc6bf08c91b0351562e7fa43418246c0d037549e5e3daf20"
+  }
+ },
+ "6-6-rag": {
+  "name": "6-6-rag",
+  "caption": "Truy hồi trên chính lời giảng bài này: 24 đoạn văn (mỗi ô một đoạn, càng đậm cosine càng cao); mỗi câu hỏi lấy 3 đoạn gần nhất để ghép vào prompt.",
+  "frames": 6,
+  "size": [
+   960,
+   440
+  ],
+  "bytes": {
+   "6-6-rag.anim.webp": 46494,
+   "6-6-rag.anim.dark.webp": 46424,
+   "6-6-rag.anim.json": 953
+  },
+  "sha256": {
+   "6-6-rag.anim.webp": "92935820bcbc136d2adc93cf3c406058ca6e93dc0999a694e357dec844ff6568",
+   "6-6-rag.anim.dark.webp": "d7d68b1e563a3840f9244d5f3ec5b1e3afa79f43534c761eae6bcc838ca145f9",
+   "6-6-rag.anim.json": "89da1ed1f7e680804a4f9b45cf87fd42ed2345ac1451a349999fd72ff4758e5b"
+  }
+ },
+ "7-1-stft": {
+  "name": "7-1-stft",
+  "caption": "Một câu đọc thật (16 kHz): cửa sổ 25 ms trượt trên waveform, mỗi vị trí qua FFT thành một cột của spectrogram bên dưới.",
+  "frames": 18,
+  "size": [
+   960,
+   500
+  ],
+  "bytes": {
+   "7-1-stft.anim.webp": 610880,
+   "7-1-stft.anim.json": 2105
+  },
+  "sha256": {
+   "7-1-stft.anim.webp": "a7a462c7b6099af9a6748f3f9c7e4c81cb487ec93d1d2616212a88ead0878d98",
+   "7-1-stft.anim.json": "d15d39e58f72b512d78cf6e132b0aeec437716c0692033ae79d439b38d1d6528"
+  }
+ },
+ "7-2-specaug": {
+  "name": "7-2-specaug",
+  "caption": "SpecAugment trên log-mel của một câu đọc thật: mỗi epoch che ngẫu nhiên vài đoạn thời gian và vài dải tần, nhãn giữ nguyên.",
+  "frames": 10,
+  "size": [
+   960,
+   380
+  ],
+  "bytes": {
+   "7-2-specaug.anim.webp": 329102,
+   "7-2-specaug.anim.dark.webp": 333644,
+   "7-2-specaug.anim.json": 904
+  },
+  "sha256": {
+   "7-2-specaug.anim.webp": "f5192b2cb47316c59d24d9e7d84af191106c57dde25562c1802294892f09a826",
+   "7-2-specaug.anim.dark.webp": "22c94237de300c2982d44d04962c74d9bd59827817d417fe517a46f223af42bf",
+   "7-2-specaug.anim.json": "107c63aef08cdfcea619df1f79e5aca3608dabe14d186894c3e7673ca8934512"
+  }
+ },
+ "7-3-ctc": {
+  "name": "7-3-ctc",
+  "caption": "wav2vec2 đọc một câu thật (phóng to hai từ đầu): mỗi khung 20 ms cho một ký tự hoặc blank; gộp ký tự lặp liền nhau rồi bỏ blank là được transcript.",
+  "frames": 9,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "7-3-ctc.anim.webp": 149698,
+   "7-3-ctc.anim.dark.webp": 150818,
+   "7-3-ctc.anim.json": 1656
+  },
+  "sha256": {
+   "7-3-ctc.anim.webp": "a16754f371ce37d3246ceed98ce4607f725da6962aac93e0df3c8b62fe2b66be",
+   "7-3-ctc.anim.dark.webp": "012d58bef12fa34a72cac55201f264108add4a0be4dc9925f3d835bb46724603",
+   "7-3-ctc.anim.json": "25a063333e507a9f3ec0d83f321dd4a08fa54a9ca1babcb8bf8c9246834580b2"
+  }
+ },
+ "7-4-align": {
+  "name": "7-4-align",
+  "caption": "Cosine giữa 8 ảnh thật và 8 caption: hai encoder học riêng, chỉ ép về cùng số chiều, không có đường chéo; CLIP học chung từ cặp ảnh–chữ nên đúng cặp sáng nhất.",
+  "frames": 9,
+  "size": [
+   960,
+   480
+  ],
+  "bytes": {
+   "7-4-align.anim.webp": 115050,
+   "7-4-align.anim.dark.webp": 115180,
+   "7-4-align.anim.json": 939
+  },
+  "sha256": {
+   "7-4-align.anim.webp": "4f4bce53c6465d83614850313e9b1f9fcaa2dbb977a113e670f3ccc0a6db8b6f",
+   "7-4-align.anim.dark.webp": "e0fe90ca8a4da694508d6600d91d75397dcf7384e2731f68b174cb3c521b6389",
+   "7-4-align.anim.json": "25e9f021354db977a475cd6c81d6a20faba8e9cd626ce224f4f166568360affb"
+  }
+ },
+ "7-kt4-ids": {
+  "name": "7-kt4-ids",
+  "caption": "Đúng/sai theo từng ID của ba cấu hình trên 25 mẫu validation của buổi kiểm tra, rồi khoanh các nhóm ID cần đọc: fusion sửa, fusion làm sai, cả ba cùng sai.",
+  "frames": 6,
+  "size": [
+   960,
+   200
+  ],
+  "bytes": {
+   "7-kt4-ids.anim.webp": 4664,
+   "7-kt4-ids.anim.dark.webp": 4644,
+   "7-kt4-ids.anim.json": 399
+  },
+  "sha256": {
+   "7-kt4-ids.anim.webp": "2fccb0f080deb83f04425931ea75101f42ac75df3dd2b69d2df951afb39ae457",
+   "7-kt4-ids.anim.dark.webp": "17e639a39eff4b90506fefb11e6b90c7fddf76cc2b8d02ca26faa51d36ad2868",
+   "7-kt4-ids.anim.json": "50ba23a20969769dde56c90bb3ccf510cdf9e7885bfbc28c829d2ec292fb1011"
+  }
+ },
+ "8-1-draws": {
+  "name": "8-1-draws",
+  "caption": "Mô phỏng của bài: B thật sự hơn A 0.01 trên 2000 dòng, nhưng mỗi lần rút 200 dòng public cho một chênh lệch khác; phần cam là những lần public nói ngược.",
+  "frames": 8,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "8-1-draws.anim.webp": 3904,
+   "8-1-draws.anim.dark.webp": 3952,
+   "8-1-draws.anim.json": 679
+  },
+  "sha256": {
+   "8-1-draws.anim.webp": "aa73d85c06f405f2e6737d96b113c3b6e1dcb811ad4b7fc0a94fb39468fcef08",
+   "8-1-draws.anim.dark.webp": "a9235b961cbddd545f346194ea2a2ea22070c4ff9778b918a5edfc3393dce39f",
+   "8-1-draws.anim.json": "785f0dba5498eb03c18629efc490afef5d6ef82e9bf8925d7cb693eb94c71675"
+  }
+ },
+ "8-2-hash": {
+  "name": "8-2-hash",
+  "caption": "dHash: thu ảnh về 9 × 8 điểm xám, mỗi bit ghi điểm bên phải sáng hơn bên trái hay không; bản sửa nhẹ của cùng ảnh chỉ lệch vài bit, lật ngang hay ảnh khác lệch rất nhiều.",
+  "frames": 7,
+  "size": [
+   960,
+   360
+  ],
+  "bytes": {
+   "8-2-hash.anim.webp": 334736,
+   "8-2-hash.anim.dark.webp": 332642,
+   "8-2-hash.anim.json": 781
+  },
+  "sha256": {
+   "8-2-hash.anim.webp": "6d62d8bd1dca4c67f6351554af0b9aa5e60802da24dbe1963208c0670a1c020a",
+   "8-2-hash.anim.dark.webp": "bf7ca5f23f4a3f16fd63cd41864f019dace765f22e9016c0aa0831b8ec66d717",
+   "8-2-hash.anim.json": "549b16980c85f94ea054cb7b1a877e59a43b816aa9d77ad4735d24d2c2afc3e8"
+  }
+ },
+ "8-3-game": {
+  "name": "8-3-game",
+  "caption": "Một ván của player nhỏ trong bài, hidden là 5: mỗi lượt chọn đề xuất chia đều ứng viên nhất, rồi bỏ mọi ứng viên mâu thuẫn với phản hồi.",
+  "frames": 6,
+  "size": [
+   960,
+   260
+  ],
+  "bytes": {
+   "8-3-game.anim.webp": 8052,
+   "8-3-game.anim.dark.webp": 7738,
+   "8-3-game.anim.json": 500
+  },
+  "sha256": {
+   "8-3-game.anim.webp": "78850b4c9c7f1c0ff7130ec2bb436285ecc18ed542e20ee26f5f64dace8f6d62",
+   "8-3-game.anim.dark.webp": "8e9d2028fd6a5458cec1fa71c67db0ff99949b80ddfb4c66535812719c018eb3",
+   "8-3-game.anim.json": "ebcead95a5a9491151bc444d38da2344658a98be005a99134f008a281354a97b"
+  }
+ },
+ "8-4-blend": {
+  "name": "8-4-blend",
+  "caption": "Bản đồ xác suất lớp 1 của ba model trong bài (nét đậm là mức 0.5), rồi của trung bình đều và trung bình có trọng số chọn trên tập tune.",
+  "frames": 5,
+  "size": [
+   960,
+   660
+  ],
+  "bytes": {
+   "8-4-blend.anim.webp": 165802,
+   "8-4-blend.anim.dark.webp": 164300,
+   "8-4-blend.anim.json": 436
+  },
+  "sha256": {
+   "8-4-blend.anim.webp": "7db264b57f64babf02fa2c0e8b057ccc6c27795b8d63874e8512f5f1010decb7",
+   "8-4-blend.anim.dark.webp": "edd2e3ae0190eee14c8d1042a0fcda608d7e8f4d8300d146ff43ca2631d8abad",
+   "8-4-blend.anim.json": "6a2e8a94c93f77f895e32a759200035ac4fc1449b97fe13c2b64922da24e7070"
+  }
+ },
+ "8-5-clock": {
+  "name": "8-5-clock",
+  "caption": "Bảng phút của bài theo đồng hồ 360 phút: kế hoạch, buổi 1 và buổi 2 chia thời gian cho đọc đề, baseline, cải tiến, chạy lại, kiểm.",
+  "frames": 13,
+  "size": [
+   960,
+   300
+  ],
+  "bytes": {
+   "8-5-clock.anim.webp": 13582,
+   "8-5-clock.anim.dark.webp": 13500,
+   "8-5-clock.anim.json": 569
+  },
+  "sha256": {
+   "8-5-clock.anim.webp": "0bb20542bab521c9f006fb2282bdf65be6c11ee9c24f5e5b4de6f2f3f1f5efc5",
+   "8-5-clock.anim.dark.webp": "b04df3075e3c66020b9591d2f90ab189c655775ad6ee8006de8545a8559d932e",
+   "8-5-clock.anim.json": "8f4cdc0142fc93b5135b6dee92dde41989176a00f93e798eabb83992ee4ba25a"
+  }
+ },
+ "9-1-vi": {
+  "name": "9-1-vi",
+  "caption": "Value iteration của bài: mỗi vòng, mỗi ô lấy thưởng tốt nhất của một bước cộng giá trị chiết khấu của ô kế; giá trị lan dần từ đích G về S.",
+  "frames": 7,
+  "size": [
+   960,
+   490
+  ],
+  "bytes": {
+   "9-1-vi.anim.webp": 16828,
+   "9-1-vi.anim.dark.webp": 16726,
+   "9-1-vi.anim.json": 488
+  },
+  "sha256": {
+   "9-1-vi.anim.webp": "b4f9731fa3f2de7d7747fba498edded6ec8b2d6b7de799594f61496285f0dce4",
+   "9-1-vi.anim.dark.webp": "f79807de785d66cbff129795e17efb680f517943ed2389849d435dca8d92b999",
+   "9-1-vi.anim.json": "a8776441b6868ad745b6739c4fdb4118a048e68474199a75be4fd262c3ddaf17"
+  }
+ },
+ "9-2-frontier": {
+  "name": "9-2-frontier",
+  "caption": "Bản đồ 30 × 30 seed 0 của bài: Dijkstra mở ô loang đều mọi hướng, A* với heuristic Manhattan mở lệch về phía đích; cả hai cho cùng độ dài đường đi.",
+  "frames": 17,
+  "size": [
+   960,
+   470
+  ],
+  "bytes": {
+   "9-2-frontier.anim.webp": 25088,
+   "9-2-frontier.anim.dark.webp": 25140,
+   "9-2-frontier.anim.json": 1015
+  },
+  "sha256": {
+   "9-2-frontier.anim.webp": "0ea4b96b4ad3544090c45a17044a615cb4bb8689c379b8ff33f73787841839ff",
+   "9-2-frontier.anim.dark.webp": "904c88baa881c412fef8f0fa8b0f9ec0f5228665e0cdd66b5b34db4d5f081761",
+   "9-2-frontier.anim.json": "b39f99d0fa49114a35b5f0ad89ae2e1af43556d5ca35fe11e49c6b97290a9a9a"
+  }
+ },
+ "9-3-base": {
+  "name": "9-3-base",
+  "caption": "Cùng detector bắt 90% bài lỗi và báo nhầm 10% bài sạch, trên 1000 bài: tỉ lệ lỗi càng thấp thì phần cảnh báo đúng trong mọi cảnh báo càng nhỏ.",
+  "frames": 7,
+  "size": [
+   960,
+   420
+  ],
+  "bytes": {
+   "9-3-base.anim.webp": 832,
+   "9-3-base.anim.dark.webp": 830,
+   "9-3-base.anim.json": 1012
+  },
+  "sha256": {
+   "9-3-base.anim.webp": "9127a6936089832007d818512982952ed33da6a31d0f1d24bb08b569ac858112",
+   "9-3-base.anim.dark.webp": "7347fb49ac362a91035e5a0764c52ec62476aa23932d1c0f6c4a1333830896dc",
+   "9-3-base.anim.json": "48c18b77331a728aa12aa577279ba19f69e880dec2c792cdc6175ed27d88fae7"
+  }
+ }
+}

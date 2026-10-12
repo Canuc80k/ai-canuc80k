@@ -1,0 +1,586 @@
+id,text,target
+train_0000,matc,10
+train_0001,city,2
+train_0002,play,7
+train_0003,cher,19
+train_0004,ts r,7
+train_0005, goa,13
+train_0006,d bo,16
+train_0007,cien,5
+train_0008,xpla,11
+train_0009, tea,14
+train_0010, boo,12
+train_0011,"
+the",1
+train_0012,loud,19
+train_0013,"
+the",1
+train_0014,"y.
+t",10
+train_0015,"ch.
+",17
+train_0016,matc,10
+train_0017,ns t,10
+train_0018,yers,1
+train_0019,teac,10
+train_0020,"y.
+t",10
+train_0021,alls,1
+train_0022,rain,1
+train_0023,ain ,8
+train_0024,nts ,18
+train_0025,"ch.
+",17
+train_0026,"
+stu",6
+train_0027,nts ,18
+train_0028,laye,18
+train_0029,ind ,14
+train_0030,s ov,7
+train_0031,lls ,16
+train_0032,tude,15
+train_0033,als.,0
+train_0034,wins,1
+train_0035,fall,19
+train_0036,m wi,15
+train_0037,he m,3
+train_0038,s ov,7
+train_0039, exp,13
+train_0040,ead ,4
+train_0041,rain,1
+train_0042,"s.
+t",7
+train_0043,in f,3
+train_0044,r th,7
+train_0045,ents,1
+train_0046,city,2
+train_0047,m wi,15
+train_0048, win,6
+train_0049,d mo,22
+train_0050,"
+tea",5
+train_0051,"
+pla",25
+train_0052,in s,5
+train_0053, sco,18
+train_0054,nd m,16
+train_0055,s ov,7
+train_0056,teac,10
+train_0057, the,1
+train_0058,e ma,20
+train_0059,"
+the",1
+train_0060,atch,2
+train_0061,"
+the",1
+train_0062,lls ,16
+train_0063,".
+th",7
+train_0064,rs e,24
+train_0065,uds.,0
+train_0066,ves ,5
+train_0067,ls o,22
+train_0068,s ov,7
+train_0069,n fa,13
+train_0070,"
+the",1
+train_0071,uden,20
+train_0072,ad b,16
+train_0073,"
+stu",6
+train_0074,ity.,0
+train_0075,s sc,16
+train_0076,rs s,5
+train_0077,d mo,22
+train_0078, sco,18
+train_0079, boo,12
+train_0080,"
+stu",6
+train_0081,als.,0
+train_0082,the ,5
+train_0083,matc,10
+train_0084,".
+te",3
+train_0085,ers ,7
+train_0086, goa,13
+train_0087,ents,1
+train_0088, mat,5
+train_0089,".
+th",7
+train_0090,oks.,0
+train_0091,d mo,22
+train_0092,m wi,15
+train_0093,nts ,18
+train_0094,ts r,7
+train_0095,ents,1
+train_0096,the ,14
+train_0097,d mo,22
+train_0098,am w,11
+train_0099,e go,3
+train_0100,"e.
+r",3
+train_0101,e wi,15
+train_0102,tch.,0
+train_0103,scor,7
+train_0104,"y.
+t",10
+train_0105,".
+ra",11
+train_0106,oves,1
+train_0107,team,1
+train_0108,"ty.
+",20
+train_0109,oves,1
+train_0110,ayer,19
+train_0111,s cl,16
+train_0112,s ex,17
+train_0113,re g,16
+train_0114,dent,19
+train_0115,dent,19
+train_0116,ind ,14
+train_0117,d bo,16
+train_0118,ore ,9
+train_0119,ienc,7
+train_0120,m wi,15
+train_0121,s cl,16
+train_0122, rea,6
+train_0123,"ls.
+",19
+train_0124,"ce.
+",18
+train_0125,he w,11
+train_0126,cher,19
+train_0127,".
+th",7
+train_0128,"
+rai",15
+train_0129,he m,3
+train_0130,ad b,16
+train_0131,r th,7
+train_0132, the,1
+train_0133,city,2
+train_0134,loud,19
+train_0135, clo,21
+train_0136,ead ,4
+train_0137,r th,7
+train_0138,team,1
+train_0139,ity.,0
+train_0140,uden,20
+train_0141,s ex,17
+train_0142, boo,12
+train_0143,xpla,11
+train_0144,wind,1
+train_0145,ers ,7
+train_0146,tch.,0
+train_0147,teac,10
+train_0148,e go,3
+train_0149,xpla,11
+train_0150,d mo,22
+train_0151,ead ,4
+train_0152, exp,13
+train_0153,lls ,16
+train_0154,alls,1
+train_0155,"
+stu",6
+train_0156,cher,19
+train_0157,e ci,20
+train_0158,cien,5
+train_0159,ns t,10
+train_0160,hers,1
+train_0161,loud,19
+train_0162,stud,7
+train_0163, mat,5
+train_0164,"s.
+t",10
+train_0165,ooks,2
+train_0166,xpla,11
+train_0167,move,19
+train_0168,"s.
+s",20
+train_0169,in f,3
+train_0170,ver ,20
+train_0171,ver ,20
+train_0172,".
+te",3
+train_0173,nd m,16
+train_0174,move,19
+train_0175,ayer,19
+train_0176,the ,20
+train_0177,teac,10
+train_0178,"
+pla",25
+train_0179,fall,19
+train_0180,hers,1
+train_0181,the ,5
+train_0182,move,19
+train_0183,goal,19
+train_0184, clo,21
+train_0185,es c,13
+train_0186,ind ,14
+train_0187, rea,6
+train_0188,the ,20
+train_0189,"
+pla",25
+train_0190,r th,7
+train_0191,"ls.
+",19
+train_0192,"s.
+t",7
+train_0193,als.,0
+train_0194,"ks.
+",20
+train_0195,m wi,15
+train_0196,r th,7
+train_0197,am w,11
+train_0198,he w,11
+train_0199,n fa,13
+train_0200,over,1
+train_0201, fal,13
+train_0202,"ds.
+",20
+train_0203, mat,5
+train_0204,ts r,7
+train_0205,n fa,13
+train_0206,xpla,11
+train_0207,in s,5
+train_0208, exp,13
+train_0209,"ls.
+",19
+train_0210,".
+th",7
+train_0211,tude,15
+train_0212,over,1
+train_0213,plai,15
+train_0214,eam ,23
+train_0215,ain ,8
+train_0216,city,2
+train_0217,n fa,13
+train_0218,"
+tea",5
+train_0219,ooks,2
+train_0220, goa,13
+train_0221,the ,14
+train_0222,"s.
+t",10
+train_0223,matc,10
+train_0224, tea,14
+train_0225,e wi,15
+train_0226,yers,1
+train_0227,wins,1
+train_0228,core,1
+train_0229,re g,16
+train_0230,"e.
+r",3
+train_0231,s ov,7
+train_0232,ves ,5
+train_0233, fal,13
+train_0234,d bo,16
+train_0235,play,7
+train_0236,each,7
+train_0237,m wi,15
+train_0238,goal,19
+train_0239,ore ,9
+train_0240,matc,10
+train_0241,scie,15
+train_0242, fal,13
+train_0243,s th,7
+train_0244,uds.,0
+train_0245,rs s,5
+train_0246,n sc,11
+train_0247,n fa,13
+train_0248,lls ,16
+train_0249,ns t,10
+train_0250, the,1
+train_0251,ls o,22
+train_0252,ves ,5
+train_0253,goal,19
+train_0254,"ch.
+",17
+train_0255, cit,25
+train_0256, rea,6
+train_0257, tea,14
+train_0258,nce.,0
+train_0259,cien,5
+train_0260,"e.
+r",3
+train_0261, cit,25
+train_0262,scor,7
+train_0263,rs e,24
+train_0264, tea,14
+train_0265,ayer,19
+train_0266,he m,3
+train_0267,er t,10
+train_0268,"ks.
+",20
+train_0269,"
+the",1
+train_0270,am w,11
+train_0271,s ov,7
+train_0272,nts ,18
+train_0273,each,7
+train_0274,rs s,5
+train_0275, win,19
+train_0276,"ks.
+",20
+train_0277,n sc,11
+train_0278,ves ,5
+train_0279, ove,18
+train_0280, tea,14
+train_0281,s ov,7
+train_0282,"s.
+s",20
+train_0283,uden,20
+train_0284,m wi,15
+train_0285,oves,1
+train_0286,rs e,24
+train_0287,he m,3
+train_0288, sci,7
+train_0289,the ,5
+train_0290,each,7
+train_0291,".
+te",3
+train_0292,rs s,5
+train_0293,teac,10
+train_0294,"h.
+p",13
+train_0295,n fa,13
+train_0296,oks.,0
+train_0297,".
+te",3
+train_0298,m wi,15
+train_0299,ver ,20
+train_0300,ls o,22
+train_0301,n sc,11
+train_0302,over,1
+train_0303,dent,19
+train_0304,".
+pl",3
+train_0305,stud,7
+train_0306,ind ,14
+train_0307,book,19
+train_0308,"s.
+t",7
+train_0309,"
+pla",25
+train_0310,s ex,17
+train_0311,".
+ra",11
+train_0312,he t,7
+train_0313,ayer,19
+train_0314,hers,1
+train_0315, mov,7
+train_0316,lls ,16
+train_0317,expl,3
+train_0318,plai,15
+train_0319,play,7
+train_0320,over,1
+train_0321,e te,3
+train_0322, tea,14
+train_0323,ns t,10
+train_0324,tude,15
+train_0325,".
+pl",3
+train_0326,".
+ra",11
+train_0327,s cl,16
+train_0328,"ch.
+",17
+train_0329,the ,5
+train_0330,ns t,10
+train_0331,".
+st",21
+train_0332, ove,18
+train_0333,alls,1
+train_0334,"ds.
+",20
+train_0335,ain ,19
+train_0336, cit,25
+train_0337,expl,3
+train_0338, exp,13
+train_0339,oals,2
+train_0340,ore ,9
+train_0341,oals,2
+train_0342,matc,10
+train_0343,dent,19
+train_0344,ain ,8
+train_0345,"ls.
+",19
+train_0346,teac,10
+train_0347,ls o,22
+train_0348,ind ,14
+train_0349,ers ,7
+train_0350,cher,19
+train_0351,re g,16
+train_0352,ind ,14
+train_0353,xpla,11
+train_0354,ain ,19
+train_0355, ove,18
+train_0356,".
+th",7
+train_0357,expl,3
+train_0358, mat,5
+train_0359,tch.,0
+train_0360,r th,7
+train_0361,".
+ra",11
+train_0362,goal,19
+train_0363,".
+ra",11
+train_0364, win,6
+train_0365,ayer,19
+train_0366,read,1
+train_0367,play,7
+train_0368,"s.
+t",7
+train_0369, clo,21
+train_0370,ouds,2
+train_0371,ayer,19
+train_0372,ore ,9
+train_0373,ooks,2
+train_0374,oals,2
+train_0375,re g,16
+train_0376,xpla,11
+train_0377,als.,0
+train_0378,cher,19
+train_0379,core,1
+train_0380,r th,7
+train_0381,over,1
+train_0382,ls o,22
+train_0383,"
+the",1
+train_0384,".
+th",7
+train_0385,ver ,20
+train_0386,scor,7
+train_0387,m wi,15
+train_0388, fal,13
+train_0389,s th,7
+train_0390,"ds.
+",20
+train_0391,ind ,14
+train_0392, fal,13
+train_0393, mov,7
+train_0394,in f,3
+train_0395,core,1
+train_0396, goa,13
+train_0397,"ks.
+",20
+train_0398,"
+pla",25
+train_0399,e te,3
+train_0400,s ov,7
+train_0401,core,1
+train_0402,ad b,16
+train_0403,".
+ra",11
+train_0404,ves ,5
+train_0405, win,19
+train_0406,ienc,7
+train_0407,rs s,5
+train_0408,"ks.
+",20
+train_0409, exp,13
+train_0410,yers,1
+train_0411,s ov,7
+train_0412,".
+pl",3
+train_0413,ind ,14
+train_0414,city,2
+train_0415, sci,7
+train_0416,ins ,20
+train_0417, cit,25
+train_0418,atch,2
+train_0419,oks.,0
+train_0420,ead ,4
+train_0421,in f,3
+train_0422,ins ,20
+train_0423,ver ,20
+train_0424,ind ,14
+train_0425,ad b,16
+train_0426, the,1
+train_0427,stud,7
+train_0428,s ov,7
+train_0429,".
+te",3
+train_0430,he c,11
+train_0431,e ma,20
+train_0432,ity.,0
+train_0433,er t,10
+train_0434,"
+rai",15
+train_0435,nts ,18
+train_0436,ts r,7
+train_0437,m wi,15
+train_0438,ad b,16
+train_0439,scor,7
+train_0440,d mo,22
+train_0441,wind,1
+train_0442,city,2
+train_0443,"
+stu",6
+train_0444,e wi,15
+train_0445, win,6
+train_0446,"
+rai",15
+train_0447,in f,3
+train_0448,laye,18
+train_0449,atch,2
+train_0450,"
+the",1
+train_0451,"e.
+r",3
+train_0452,in s,5
+train_0453,ts r,7
+train_0454,tude,15
+train_0455, the,1
+train_0456,cher,19
+train_0457,stud,7
+train_0458,e go,3
+train_0459,ouds,2
+train_0460,he m,3
+train_0461,tude,15
+train_0462, sco,18
+train_0463,ity.,0
+train_0464,"h.
+p",13
+train_0465,".
+th",7
+train_0466,nts ,18
+train_0467, the,1
+train_0468,laye,18
+train_0469,".
+pl",3
+train_0470,teac,10
+train_0471,ain ,8
+train_0472,ad b,16
+train_0473,"s.
+s",20
+train_0474,the ,14
+train_0475,uds.,0
+train_0476,nts ,18
+train_0477,cien,5
+train_0478,als.,0
+train_0479,"s.
+t",7
+train_0480,uds.,0
+train_0481,d bo,16
+train_0482,e ci,20
+train_0483,ls o,22
+train_0484, cit,25
+train_0485,wins,1
+train_0486,the ,20
+train_0487, sci,7
+train_0488,each,7
+train_0489,rs e,24
+train_0490,play,7
+train_0491,"y.
+t",10
+train_0492,laye,18
+train_0493, tea,14
+train_0494,"ch.
+",17
+train_0495, win,6
+train_0496,ache,18
+train_0497,nce.,0
+train_0498,tch.,0
+train_0499, boo,12

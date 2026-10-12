@@ -1,0 +1,1 @@
+Predictions: [0, 1] Macro F1: 1.0

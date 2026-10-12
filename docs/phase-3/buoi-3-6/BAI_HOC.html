@@ -1,0 +1,32 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Optimizers, learning rate và initialization — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/3.5?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 3.6: Optimizers, learning rate và initialization</h1><p>Hai optimizer chạy cùng epochs có chắc cùng số updates không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>SGD/mini-batch tính gradient từ batch; momentum giúp ổn định quỹ đạo.</li><li>Adam/AdamW điều chỉnh update theo thống kê gradient; dùng đúng weight decay.</li><li>So bằng cùng updates/budget và khởi tạo; chọn LR theo validation.</li></ul><p class="note">SGD: w_new=w-lr×grad</p><h2>Code minh họa</h2><pre>import torch
+from torch import nn
+torch.set_num_threads(1)
+X = torch.linspace(-1,1,50).reshape(-1,1); y = 3*X-2
+for name,optimizer_type in [(&quot;SGD&quot;,torch.optim.SGD),(&quot;AdamW&quot;,torch.optim.AdamW)]:
+    torch.manual_seed(42)  # Hai lần bắt đầu cùng weights.
+    model = nn.Linear(1,1)
+    optimizer = optimizer_type(model.parameters(),lr=.1)
+    for step in range(40):
+        optimizer.zero_grad(); loss = ((model(X)-y)**2).mean()
+        loss.backward(); optimizer.step()
+    print(name,&quot;loss&quot;,round(loss.item(),6),&quot;w&quot;,round(model.weight.item(),4))
+# Đây là so sánh 40 updates trên fixture, không khẳng định optimizer nào luôn tốt.
+</pre><h3>Kết quả</h3><pre>SGD loss 0.006353 w 2.8741
+AdamW loss 0.015593 w 3.2021
+</pre><p class="note">Không kết luận optimizer luôn hơn từ một fixture1D.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Update w←w-lr*grad từng phần tử.</p><pre>{
+  &quot;w&quot;: [
+    1,
+    2
+  ],
+  &quot;grad&quot;: [
+    2,
+    -1
+  ],
+  &quot;lr&quot;: 0.1
+}</pre><details><summary>Đáp án</summary><pre>[
+  0.8,
+  2.1
+]</pre></details><h3>Bài 2</h3><p>Số optimizer steps khi cón_batches, accumulation; step cuối vẫn thực hiện kể cả chưa đủ.</p><pre>{
+  &quot;n_batches&quot;: 10,
+  &quot;accumulation&quot;: 4
+}</pre><details><summary>Đáp án</summary><pre>3</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Update w←w-lr*grad từng phần tử.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Số optimizer steps khi cón_batches, accumulation; step cuối vẫn thực hiện kể cả chưa đủ.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>So optimizers bằng cùng budget</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>AIO 31.1; KHTN 3.2,9.</p><p>AIO 31.2 “Bài Tập và Gợi Ý”;31.1/31.2 có lý thuyết và bài thực hành optimizer/initializer.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-3/buoi-3-5/BAI_HOC.html">← Training loop và inference</a><a href="../../phase-3/buoi-3-7/BAI_HOC.html">Dropout, weight decay, early stopping và normalization →</a></nav></body></html>

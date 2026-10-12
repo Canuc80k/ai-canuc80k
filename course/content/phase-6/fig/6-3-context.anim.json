@@ -1,0 +1,46 @@
+{
+ "w": 960,
+ "h": 470,
+ "n": 13,
+ "cols": 3,
+ "dur": [
+  1600,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  800,
+  1200
+ ],
+ "hold": 2600,
+ "labels": [
+  "lớp 0, embedding tra bảng: cosine trung bình cùng nghĩa 0.76, khác nghĩa 0.77",
+  "sau lớp 1: cosine trung bình cùng nghĩa 0.75, khác nghĩa 0.76",
+  "sau lớp 2: cosine trung bình cùng nghĩa 0.73, khác nghĩa 0.72",
+  "sau lớp 3: cosine trung bình cùng nghĩa 0.69, khác nghĩa 0.66",
+  "sau lớp 4: cosine trung bình cùng nghĩa 0.66, khác nghĩa 0.58",
+  "sau lớp 5: cosine trung bình cùng nghĩa 0.63, khác nghĩa 0.48",
+  "sau lớp 6: cosine trung bình cùng nghĩa 0.62, khác nghĩa 0.42",
+  "sau lớp 7: cosine trung bình cùng nghĩa 0.61, khác nghĩa 0.36",
+  "sau lớp 8: cosine trung bình cùng nghĩa 0.59, khác nghĩa 0.30",
+  "sau lớp 9: cosine trung bình cùng nghĩa 0.58, khác nghĩa 0.23",
+  "sau lớp 10: cosine trung bình cùng nghĩa 0.55, khác nghĩa 0.19",
+  "sau lớp 11: cosine trung bình cùng nghĩa 0.60, khác nghĩa 0.31",
+  "sau lớp 12: cosine trung bình cùng nghĩa 0.46, khác nghĩa 0.13"
+ ],
+ "key": [
+  0,
+  3,
+  7,
+  12
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

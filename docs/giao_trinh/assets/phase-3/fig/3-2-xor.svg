@@ -1,0 +1,153 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="343.038906pt" height="260.013571pt" viewBox="0 0 343.038906 260.013571" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-3-2-xor-figure_1">
+  <g id="fig-3-2-xor-patch_1">
+   <path d="M 0 260.013571 
+L 343.038906 260.013571 
+L 343.038906 0 
+L 0 0 
+L 0 260.013571 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-3-2-xor-axes_1">
+   <g id="fig-3-2-xor-patch_2">
+    <path d="M 37.048906 219.268571 
+L 337.998906 219.268571 
+L 337.998906 5.04 
+L 37.048906 5.04 
+L 37.048906 219.268571 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-3-2-xor-matplotlib.axis_1">
+    <g id="fig-3-2-xor-xtick_1">
+     <g id="fig-3-2-xor-line2d_1">
+      <defs>
+       <path id="fig-3-2-xor-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-2-xor-m04e37d9cc8" x="93.477031" y="219.268571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-2-xor-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="93.477031" y="233.441071" transform="rotate(-0 93.477031 233.441071)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-2-xor-xtick_2">
+     <g id="fig-3-2-xor-line2d_2">
+      <g>
+       <use xlink:href="#fig-3-2-xor-m04e37d9cc8" x="281.570781" y="219.268571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-2-xor-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="281.570781" y="233.441071" transform="rotate(-0 281.570781 233.441071)">1</text>
+     </g>
+    </g>
+    <g id="fig-3-2-xor-text_3">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="187.523906" y="252.168571" transform="rotate(-0 187.523906 252.168571)">x₁</text>
+    </g>
+   </g>
+   <g id="fig-3-2-xor-matplotlib.axis_2">
+    <g id="fig-3-2-xor-ytick_1">
+     <g id="fig-3-2-xor-line2d_3">
+      <defs>
+       <path id="fig-3-2-xor-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-3-2-xor-m9fce3a8e10" x="37.048906" y="193.301472" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-2-xor-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="196.887722" transform="rotate(-0 30.048906 196.887722)">0</text>
+     </g>
+    </g>
+    <g id="fig-3-2-xor-ytick_2">
+     <g id="fig-3-2-xor-line2d_4">
+      <g>
+       <use xlink:href="#fig-3-2-xor-m9fce3a8e10" x="37.048906" y="63.465974" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-3-2-xor-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="30.048906" y="67.052224" transform="rotate(-0 30.048906 67.052224)">1</text>
+     </g>
+    </g>
+    <g id="fig-3-2-xor-text_6">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="112.154286" transform="rotate(-90 13.345 112.154286)">x₂</text>
+    </g>
+   </g>
+   <g id="fig-3-2-xor-line2d_5">
+    <path d="M 55.858281 154.350823 
+L 319.189531 154.350823 
+" clip-path="url(#fig-3-2-xor-pd8e6ef63e6)" style="fill: none; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: currentColor; stroke-width: 1.2"/>
+   </g>
+   <g id="fig-3-2-xor-patch_3">
+    <path d="M 37.048906 219.268571 
+L 37.048906 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-2-xor-patch_4">
+    <path d="M 37.048906 219.268571 
+L 337.998906 219.268571 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-3-2-xor-PathCollection_1">
+    <defs>
+     <path id="fig-3-2-xor-m792ba7f2b3" d="M 0 6.708204 
+C 1.779036 6.708204 3.485448 6.001385 4.743416 4.743416 
+C 6.001385 3.485448 6.708204 1.779036 6.708204 0 
+C 6.708204 -1.779036 6.001385 -3.485448 4.743416 -4.743416 
+C 3.485448 -6.001385 1.779036 -6.708204 0 -6.708204 
+C -1.779036 -6.708204 -3.485448 -6.001385 -4.743416 -4.743416 
+C -6.001385 -3.485448 -6.708204 -1.779036 -6.708204 0 
+C -6.708204 1.779036 -6.001385 3.485448 -4.743416 4.743416 
+C -3.485448 6.001385 -1.779036 6.708204 0 6.708204 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#fig-3-2-xor-pd8e6ef63e6)">
+     <use xlink:href="#fig-3-2-xor-m792ba7f2b3" x="93.477031" y="193.301472" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#fig-3-2-xor-m792ba7f2b3" x="281.570781" y="63.465974" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="fig-3-2-xor-PathCollection_2">
+    <defs>
+     <path id="fig-3-2-xor-ma9c5273d36" d="M -6.708204 6.708204 
+L 6.708204 6.708204 
+L 6.708204 -6.708204 
+L -6.708204 -6.708204 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#fig-3-2-xor-pd8e6ef63e6)">
+     <use xlink:href="#fig-3-2-xor-ma9c5273d36" x="93.477031" y="63.465974" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-3-2-xor-ma9c5273d36" x="281.570781" y="193.301472" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-3-2-xor-text_7">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="97.238906" y="177.721212" transform="rotate(-0 97.238906 177.721212)">y = 0</text>
+   </g>
+   <g id="fig-3-2-xor-text_8">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="285.332656" y="47.885714" transform="rotate(-0 285.332656 47.885714)">y = 0</text>
+   </g>
+   <g id="fig-3-2-xor-text_9">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="97.238906" y="47.885714" transform="rotate(-0 97.238906 47.885714)">y = 1</text>
+   </g>
+   <g id="fig-3-2-xor-text_10">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="285.332656" y="177.721212" transform="rotate(-0 285.332656 177.721212)">y = 1</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-3-2-xor-pd8e6ef63e6">
+   <rect x="37.048906" y="5.04" width="300.95" height="214.228571"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,24 @@
+{
+ "w": 960,
+ "h": 380,
+ "n": 5,
+ "cols": 2,
+ "dur": 2100,
+ "hold": 1500,
+ "labels": [
+  "6 hàng validation thô: có ô trống (—) và cột chữ slot",
+  "SimpleImputer: ô trống thay bằng trung vị học từ train (40.0 và 0.46)",
+  "StandardScaler: trừ mean, chia std đã học từ train",
+  "OneHotEncoder: slot thành hai cột 0/1",
+  "LinearRegression đọc 4 cột và cho dự đoán"
+ ],
+ "key": [
+  0,
+  1,
+  3,
+  4
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

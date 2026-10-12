@@ -1,0 +1,30 @@
+{
+ "w": 920,
+ "h": 440,
+ "n": 11,
+ "cols": 3,
+ "dur": 1000,
+ "hold": 2600,
+ "labels": [
+  "độ sâu 1: 2 lá, RMSE train 64.3, RMSE điểm chưa thấy 65.1",
+  "độ sâu 2: 4 lá, RMSE train 54.0, RMSE điểm chưa thấy 54.6",
+  "độ sâu 3: 8 lá, RMSE train 46.7, RMSE điểm chưa thấy 46.6",
+  "độ sâu 4: 16 lá, RMSE train 39.4, RMSE điểm chưa thấy 40.1",
+  "độ sâu 5: 32 lá, RMSE train 35.7, RMSE điểm chưa thấy 36.9",
+  "độ sâu 6: 63 lá, RMSE train 32.9, RMSE điểm chưa thấy 34.9",
+  "độ sâu 8: 236 lá, RMSE train 24.4, RMSE điểm chưa thấy 30.2",
+  "độ sâu 10: 663 lá, RMSE train 18.5, RMSE điểm chưa thấy 27.6",
+  "độ sâu 12: 1342 lá, RMSE train 13.7, RMSE điểm chưa thấy 26.4",
+  "độ sâu 16: 2464 lá, RMSE train 5.7, RMSE điểm chưa thấy 25.6",
+  "độ sâu 24: 3024 lá, RMSE train 0.1, RMSE điểm chưa thấy 25.5"
+ ],
+ "key": [
+  1,
+  4,
+  7,
+  10
+ ],
+ "dark": false,
+ "dw": 600,
+ "pcols": 4
+}

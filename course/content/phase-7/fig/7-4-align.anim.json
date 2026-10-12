@@ -1,0 +1,38 @@
+{
+ "w": 960,
+ "h": 480,
+ "n": 9,
+ "cols": 3,
+ "dur": [
+  1800,
+  600,
+  600,
+  600,
+  600,
+  600,
+  600,
+  600,
+  2400
+ ],
+ "hold": 1200,
+ "labels": [
+  "8 ảnh thật (hàng) và 8 caption (cột, cùng thứ tự): ô đúng nằm trên đường chéo",
+  "ảnh 1: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "ảnh 2: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "ảnh 3: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "ảnh 4: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "ảnh 5: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "ảnh 6: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "ảnh 7: ô viền đậm là caption có cosine cao nhất trong hàng",
+  "caption cao nhất đúng cặp: học riêng 2/8, CLIP 8/8"
+ ],
+ "key": [
+  0,
+  3,
+  6,
+  8
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 4
+}

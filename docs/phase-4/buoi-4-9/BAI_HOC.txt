@@ -1,0 +1,58 @@
+BUỔI 4.9 — GAN
+
+HỌC SINH CẦN HIỂU
+- Discriminator phân biệt real/fake; generator tạo samples đánh lừaD.
+- Training luân phiên; detach fake khi cập nhậtD, giữ graph khi cậpnhậtG.
+- Mode collapse: samples thiếuđa dạng; loss đơn lẻ không đủ chấm chất lượng.
+
+CÂU HỎI MỞ BÀI
+Generator và discriminator học hai mục tiêu nào?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+G loss=-mean(log D(G(z))) trong non-saturating variant
+
+CẦN PHÂN BIỆT
+Không gọi mộtupdateGAN1D làGAN ảnh đã train thành công.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Dloss=-mean(logrealprob)-mean(log(1-fakeprob)); Gloss=-mean(logfakeprob). Prob in(0,1).
+Input:
+{
+  "real_prob": [
+    0.8
+  ],
+  "fake_prob": [
+    0.2
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "D": 0.4462871026284194,
+  "G": 1.6094379124341003
+}
+
+Bài trên lớp 2: Trả mean, population variance; phân biệt generator collapse với cùng mean.
+Input:
+{
+  "values": [
+    1,
+    2,
+    3
+  ]
+}
+Output để đối chiếu sau khi làm:
+{
+  "mean": 2.0,
+  "variance": 0.6666666666666666
+}
+
+BÀI VỀ NHÀ
+- BTVN 1: Dloss=-mean(logrealprob)-mean(log(1-fakeprob)); Gloss=-mean(logfakeprob). Prob in(0,1).; xem BTVN_01.txt.
+- BTVN 2: Trả mean, population variance; phân biệt generator collapse với cùng mean.; xem BTVN_02.txt.
+- BTVN 3: Sinh phân bố 1D; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO50; PyTorch DCGAN tutorial.
+AIO50.2 chương trình DCGAN-BERTs và50.3 trắc nghiệm; tutorial DCGAN là nhánh PyTorch có sẵn.

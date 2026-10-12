@@ -1,0 +1,6 @@
+pred: [1, 0, 1, 0]
+Confusion [TN FP; FN TP]: [[1, 1], [1, 1]]
+Precision: 0.5
+Recall: 0.5
+F1: 0.5
+ROC AUC: 0.75

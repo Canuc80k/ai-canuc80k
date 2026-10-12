@@ -1,0 +1,1262 @@
+<svg   xmlns:xlink="http://www.w3.org/1999/xlink" width="399.484668pt" height="163.280668pt" viewBox="0 0 399.484668 163.280668" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  
+ </defs>
+ <g id="fig-2-1-residual-plots-figure_1">
+  <g id="fig-2-1-residual-plots-patch_1">
+   <path d="M 0 163.280668 
+L 399.484668 163.280668 
+L 399.484668 0 
+L 0 0 
+L 0 163.280668 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-2-1-residual-plots-axes_1">
+   <g id="fig-2-1-residual-plots-patch_2">
+    <path d="M 17.164668 146.116 
+L 128.764668 146.116 
+L 128.764668 18.604 
+L 17.164668 18.604 
+L 17.164668 146.116 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-1-residual-plots-PathCollection_1">
+    <defs>
+     <path id="fig-2-1-residual-plots-C0_0_a30e9d8963" d="M 0 1.414214 
+C 0.375054 1.414214 0.734797 1.265203 1 1 
+C 1.265203 0.734797 1.414214 0.375054 1.414214 -0 
+C 1.414214 -0.375054 1.265203 -0.734797 1 -1 
+C 0.734797 -1.265203 0.375054 -1.414214 0 -1.414214 
+C -0.375054 -1.414214 -0.734797 -1.265203 -1 -1 
+C -1.265203 -0.734797 -1.414214 -0.375054 -1.414214 0 
+C -1.414214 0.375054 -1.265203 0.734797 -1 1 
+C -0.734797 1.265203 -0.375054 1.414214 0 1.414214 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="22.237395" y="80.30434" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="22.265841" y="112.481107" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="22.422916" y="97.152885" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="23.621263" y="103.025051" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="24.025853" y="110.863703" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="26.745313" y="110.515836" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="27.099247" y="99.993464" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="27.624988" y="95.316751" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="27.963207" y="105.369432" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="28.323402" y="99.267973" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="28.670142" y="92.314387" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="29.611137" y="96.746396" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="30.866541" y="90.789371" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="32.943515" y="95.030075" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="33.027609" y="94.753001" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="36.350948" y="80.814672" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="37.290969" y="93.345597" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="37.679857" y="98.486204" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="38.126474" y="92.442093" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="41.21765" y="109.404588" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="41.863066" y="103.350625" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="41.978321" y="91.57498" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="42.800859" y="93.266308" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="44.69484" y="83.712154" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="45.246697" y="99.72526" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="45.9776" y="115.060644" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="46.079867" y="79.558803" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="46.14874" y="88.454677" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="46.549291" y="110.858302" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="48.37929" y="85.508688" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="49.732019" y="99.496918" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="50.468312" y="118.721653" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="51.190412" y="104.2112" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="54.305497" y="105.133217" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="54.38942" y="83.269768" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="54.644192" y="108.081642" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="55.168408" y="102.475073" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="55.413053" y="102.716052" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="56.868965" y="103.780323" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="59.532282" y="109.35201" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="60.409545" y="97.553089" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="60.812296" y="88.622193" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="61.106369" y="93.337207" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="61.826941" y="109.491797" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="62.024691" y="111.806646" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="62.738207" y="98.595509" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="62.921194" y="107.191501" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="63.008473" y="106.395843" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="63.314804" y="117.323953" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="63.657765" y="79.525019" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="64.848008" y="90.290108" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="66.3484" y="109.975017" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="66.523156" y="90.377664" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="67.585845" y="85.855802" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="67.730241" y="124.715284" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="68.361955" y="105.550139" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="69.283201" y="103.87404" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="70.875099" y="93.084427" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="70.978079" y="101.099055" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="72.123944" y="102.233651" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="72.250712" y="100.442095" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="73.30168" y="80.536748" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="73.608713" y="77.343738" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="73.678142" y="105.299009" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="74.517358" y="109.478728" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="75.714673" y="71.79838" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="78.367214" y="110.035798" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="78.37169" y="105.804798" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="78.610126" y="99.453408" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="78.667411" y="94.802558" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="84.395177" y="89.119584" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="86.317877" y="95.763299" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="86.719393" y="108.917907" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="87.283789" y="94.561656" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="88.445335" y="97.232068" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="89.931591" y="80.291086" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="90.683328" y="99.990493" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="90.917044" y="113.7554" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="91.170329" y="110.71547" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="91.680894" y="84.734741" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="92.495682" y="105.458369" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="93.134917" y="121.746842" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="94.047934" y="105.880784" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="94.596206" y="99.834152" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="94.633566" y="87.455733" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="95.692406" y="110.397353" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="97.495903" y="92.892538" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="103.239339" y="91.55334" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="103.299247" y="107.116617" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="103.341541" y="101.787567" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="103.437078" y="81.410093" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="103.957778" y="81.919941" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="104.080997" y="90.926275" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="104.256358" y="96.377952" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="104.348134" y="87.981779" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="105.812465" y="101.299096" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="106.376121" y="100.824456" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="107.9446" y="108.792719" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="108.015312" y="99.776381" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="108.289471" y="100.688298" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="109.347921" y="70.954159" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="109.991924" y="101.842268" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="110.57254" y="86.602049" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="110.786674" y="86.084769" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="111.544411" y="101.775999" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="112.568566" y="87.658083" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="113.149894" y="122.500154" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="113.376469" y="98.845889" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="116.018791" y="90.908164" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="116.469714" y="124.801831" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="116.989101" y="111.904058" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="117.165655" y="88.838053" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="117.316169" y="102.510407" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="117.779499" y="111.269188" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="118.798053" y="103.724335" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="119.560293" y="105.483953" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="121.152171" y="92.291077" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="122.6436" y="95.10827" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="122.929764" y="102.752157" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-p98d20002c5)">
+     <use xlink:href="#fig-2-1-residual-plots-C0_0_a30e9d8963" x="123.691941" y="106.76212" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-matplotlib.axis_1">
+    <g id="fig-2-1-residual-plots-text_1">
+     <text style="font-size: 8.5px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="72.964668" y="158.350375" transform="rotate(-0 72.964668 158.350375)">dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-matplotlib.axis_2">
+    <g id="fig-2-1-residual-plots-text_2">
+     <text style="font-size: 8.5px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="11.114375" y="82.36" transform="rotate(-90 11.114375 82.36)">phần dư</text>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-line2d_1">
+    <path d="M 17.164668 99.834309 
+L 128.764668 99.834309 
+" clip-path="url(#fig-2-1-residual-plots-p98d20002c5)" style="fill: none; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-patch_3">
+    <path d="M 17.164668 146.116 
+L 17.164668 18.604 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-patch_4">
+    <path d="M 17.164668 146.116 
+L 128.764668 146.116 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-text_3">
+    <text style="font-size: 8.8px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="72.964668" y="12.604" transform="rotate(-0 72.964668 12.604)">Ổn</text>
+   </g>
+  </g>
+  <g id="fig-2-1-residual-plots-axes_2">
+   <g id="fig-2-1-residual-plots-patch_5">
+    <path d="M 151.084668 146.116 
+L 262.684668 146.116 
+L 262.684668 18.604 
+L 151.084668 18.604 
+L 151.084668 146.116 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-1-residual-plots-PathCollection_2">
+    <defs>
+     <path id="fig-2-1-residual-plots-C1_0_27b70f9380" d="M 0 1.414214 
+C 0.375054 1.414214 0.734797 1.265203 1 1 
+C 1.265203 0.734797 1.414214 0.375054 1.414214 -0 
+C 1.414214 -0.375054 1.265203 -0.734797 1 -1 
+C 0.734797 -1.265203 0.375054 -1.414214 0 -1.414214 
+C -0.375054 -1.414214 -0.734797 -1.265203 -1 -1 
+C -1.265203 -0.734797 -1.414214 -0.375054 -1.414214 0 
+C -1.414214 0.375054 -1.265203 0.734797 -1 1 
+C -0.734797 1.265203 -0.375054 1.414214 0 1.414214 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="156.157395" y="34.347086" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="156.185841" y="24.4" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="156.342916" y="32.089178" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="157.541263" y="34.300203" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="157.945853" y="41.492043" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="160.665313" y="59.157951" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="161.019247" y="56.10083" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="161.544988" y="47.905291" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="161.883207" y="53.003453" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="162.243402" y="61.510005" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="162.590142" y="67.828361" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="163.531137" y="58.208988" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="164.786541" y="65.365825" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="166.863515" y="71.607463" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="166.947609" y="71.696722" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="170.270948" y="76.416453" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="171.210969" y="78.794329" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="171.599857" y="74.924667" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="172.046474" y="76.301692" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="175.13765" y="80.794748" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="175.783066" y="86.091929" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="175.898321" y="94.673886" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="176.720859" y="94.440251" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="178.61484" y="94.440373" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="179.166697" y="101.42027" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="179.8976" y="96.598307" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="179.999867" y="92.393715" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="180.06874" y="106.775626" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="180.469291" y="114.609564" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="182.29929" y="96.376993" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="183.652019" y="107.284256" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="184.388312" y="103.46465" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="185.110412" y="119.495379" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="188.225497" y="101.702933" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="188.30942" y="109.063462" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="188.564192" y="115.705463" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="189.088408" y="118.035927" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="189.333053" y="114.952598" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="190.788965" y="118.767373" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="193.452282" y="122.423772" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="194.329545" y="129.376256" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="194.732296" y="112.371023" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="195.026369" y="122.118703" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="195.746941" y="121.88466" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="195.944691" y="121.909086" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="196.658207" y="140.32" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="196.841194" y="119.423496" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="196.928473" y="125.727798" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="197.234804" y="125.65367" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="197.577765" y="123.271688" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="198.768008" y="131.61725" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="200.2684" y="119.180175" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="200.443156" y="130.481621" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="201.505845" y="132.449619" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="201.650241" y="132.202686" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="202.281955" y="124.985662" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="203.203201" y="120.98242" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="204.795099" y="131.086672" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="204.898079" y="137.771914" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="206.043944" y="119.137145" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="206.170712" y="134.651422" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="207.22168" y="118.193582" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="207.528713" y="127.287069" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="207.598142" y="131.977941" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="208.437358" y="131.483932" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="209.634673" y="123.265946" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="212.287214" y="119.367766" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="212.29169" y="127.292759" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="212.530126" y="118.851165" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="212.587411" y="110.518247" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="218.315177" y="123.700272" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="220.237877" y="128.837626" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="220.639393" y="127.751482" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="221.203789" y="129.627344" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="222.365335" y="122.90497" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="223.851591" y="121.775173" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="224.603328" y="125.215715" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="224.837044" y="111.391834" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="225.090329" y="133.958411" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="225.600894" y="123.870826" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="226.415682" y="98.42923" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="227.054917" y="104.636413" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="227.967934" y="107.029022" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="228.516206" y="106.66035" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="228.553566" y="97.026915" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="229.612406" y="104.3319" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="231.415903" y="104.590507" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="237.159339" y="102.747581" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="237.219247" y="94.187069" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="237.261541" y="98.906394" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="237.357078" y="98.494367" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="237.877778" y="97.396635" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="238.000997" y="92.239651" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="238.176358" y="93.921931" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="238.268134" y="84.961683" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="239.732465" y="97.578344" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="240.296121" y="87.797916" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="241.8646" y="69.133263" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="241.935312" y="82.224093" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="242.209471" y="73.074105" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="243.267921" y="70.781629" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="243.911924" y="67.762941" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="244.49254" y="70.413805" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="244.706674" y="85.2717" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="245.464411" y="75.067098" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="246.488566" y="72.997026" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="247.069894" y="79.837972" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="247.296469" y="71.270103" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="249.938791" y="69.031419" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="250.389714" y="70.649315" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="250.909101" y="55.329812" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="251.085655" y="56.621856" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="251.236169" y="60.835798" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="251.699499" y="61.258263" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="252.718053" y="54.938731" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="253.480293" y="51.32027" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="255.072171" y="45.97059" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="256.5636" y="38.106184" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="256.849764" y="39.86622" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)">
+     <use xlink:href="#fig-2-1-residual-plots-C1_0_27b70f9380" x="257.611941" y="31.098163" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-matplotlib.axis_3">
+    <g id="fig-2-1-residual-plots-text_4">
+     <text style="font-size: 8.5px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="206.884668" y="158.350375" transform="rotate(-0 206.884668 158.350375)">dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-matplotlib.axis_4"/>
+   <g id="fig-2-1-residual-plots-line2d_2">
+    <path d="M 151.084668 99.834309 
+L 262.684668 99.834309 
+" clip-path="url(#fig-2-1-residual-plots-pebfba44b7d)" style="fill: none; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-patch_6">
+    <path d="M 151.084668 146.116 
+L 151.084668 18.604 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-patch_7">
+    <path d="M 151.084668 146.116 
+L 262.684668 146.116 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-text_5">
+    <text style="font-size: 8.8px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="206.884668" y="12.604" transform="rotate(-0 206.884668 12.604)">Uốn cong</text>
+   </g>
+  </g>
+  <g id="fig-2-1-residual-plots-axes_3">
+   <g id="fig-2-1-residual-plots-patch_8">
+    <path d="M 285.004668 146.116 
+L 396.604668 146.116 
+L 396.604668 18.604 
+L 285.004668 18.604 
+L 285.004668 146.116 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-2-1-residual-plots-PathCollection_3">
+    <defs>
+     <path id="fig-2-1-residual-plots-C2_0_279758634b" d="M 0 1.414214 
+C 0.375054 1.414214 0.734797 1.265203 1 1 
+C 1.265203 0.734797 1.414214 0.375054 1.414214 -0 
+C 1.414214 -0.375054 1.265203 -0.734797 1 -1 
+C 0.734797 -1.265203 0.375054 -1.414214 0 -1.414214 
+C -0.375054 -1.414214 -0.734797 -1.265203 -1 -1 
+C -1.265203 -0.734797 -1.414214 -0.375054 -1.414214 0 
+C -1.414214 0.375054 -1.265203 0.734797 -1 1 
+C -0.734797 1.265203 -0.375054 1.414214 0 1.414214 
+z
+"/>
+    </defs>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="290.077395" y="98.518053" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="290.105841" y="98.931418" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="290.262916" y="101.52778" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="291.461263" y="101.554103" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="291.865853" y="98.586611" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="294.585313" y="100.505064" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="294.939247" y="99.984206" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="295.464988" y="108.748542" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="295.803207" y="109.672617" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="296.163402" y="98.581962" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="296.510142" y="98.587675" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="297.451137" y="94.305396" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="298.706541" y="96.79476" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="300.783515" y="98.809134" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="300.867609" y="99.758389" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="304.190948" y="107.386923" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="305.130969" y="94.995808" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="305.519857" y="103.187242" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="305.966474" y="96.998852" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="309.05765" y="98.583862" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="309.703066" y="98.098903" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="309.818321" y="94.120683" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="310.640859" y="103.048989" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="312.53484" y="102.519756" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="313.086697" y="105.862553" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="313.8176" y="102.544997" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="313.919867" y="87.827253" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="313.98874" y="102.457804" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="314.389291" y="91.179651" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="316.21929" y="93.507319" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="317.572019" y="94.054181" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="318.308312" y="93.353482" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="319.030412" y="108.164216" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="322.145497" y="96.538476" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="322.22942" y="85.78968" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="322.484192" y="106.021358" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="323.008408" y="100.258045" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="323.253053" y="106.066573" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="324.708965" y="96.876694" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="327.372282" y="110.461684" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="328.249545" y="83.695437" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="328.652296" y="103.642361" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="328.946369" y="115.512701" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="329.666941" y="81.380296" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="329.864691" y="89.795365" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="330.578207" y="94.398128" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="330.761194" y="94.231382" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="330.848473" y="103.604558" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="331.154804" y="102.200712" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="331.497765" y="92.112579" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="332.688008" y="89.832913" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="334.1884" y="89.394311" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="334.363156" y="97.44763" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="335.425845" y="105.168751" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="335.570241" y="102.036817" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="336.201955" y="86.973558" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="337.123201" y="82.884084" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="338.715099" y="103.959" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="338.818079" y="105.6121" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="339.963944" y="84.451452" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="340.090712" y="90.893341" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="341.14168" y="91.075263" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="341.448713" y="116.39927" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="341.518142" y="104.557175" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="342.357358" y="106.426901" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="343.554673" y="97.123901" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="346.207214" y="122.679694" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="346.21169" y="82.590054" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="346.450126" y="95.750613" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="346.507411" y="93.912868" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="352.235177" y="117.29364" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="354.157877" y="100.233851" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="354.559393" y="79.545622" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="355.123789" y="123.870307" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="356.285335" y="95.082365" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="357.771591" y="88.769875" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="358.523328" y="110.892481" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="358.757044" y="86.776278" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="359.010329" y="105.140841" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="359.520894" y="79.939799" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="360.335682" y="91.215957" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="360.974917" y="96.140464" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="361.887934" y="66.39975" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="362.436206" y="85.899266" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="362.473566" y="77.903821" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="363.532406" y="120.016373" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="365.335903" y="111.034402" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="371.079339" y="84.398683" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="371.139247" y="83.114093" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="371.181541" y="100.863895" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="371.277078" y="85.41716" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="371.797778" y="119.511679" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="371.920997" y="95.853409" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="372.096358" y="121.23249" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="372.188134" y="93.476123" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="373.652465" y="109.050798" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="374.216121" y="112.056939" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="375.7846" y="98.743421" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="375.855312" y="64.5927" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="376.129471" y="119.507522" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="377.187921" y="111.660344" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="377.831924" y="78.716555" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="378.41254" y="108.260579" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="378.626674" y="64.56273" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="379.384411" y="95.364848" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="380.408566" y="97.995728" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="380.989894" y="92.553659" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="381.216469" y="64.235603" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="383.858791" y="86.094699" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="384.309714" y="88.955642" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="384.829101" y="94.506056" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="385.005655" y="132.942792" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="385.156169" y="118.619903" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="385.619499" y="68.22235" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="386.638053" y="82.154361" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="387.400293" y="88.872147" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="388.992171" y="85.83504" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="390.4836" y="111.939086" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="390.769764" y="92.289467" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+    <g clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)">
+     <use xlink:href="#fig-2-1-residual-plots-C2_0_279758634b" x="391.531941" y="120.079041" style="fill: var(--t-n, #3b6ea8); fill-opacity: 0.75"/>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-matplotlib.axis_5">
+    <g id="fig-2-1-residual-plots-text_6">
+     <text style="font-size: 8.5px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="340.804668" y="158.350375" transform="rotate(-0 340.804668 158.350375)">dự đoán</text>
+    </g>
+   </g>
+   <g id="fig-2-1-residual-plots-matplotlib.axis_6"/>
+   <g id="fig-2-1-residual-plots-line2d_3">
+    <path d="M 285.004668 99.834309 
+L 396.604668 99.834309 
+" clip-path="url(#fig-2-1-residual-plots-pcacaa72a18)" style="fill: none; stroke: currentColor; stroke-opacity: 0.5; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-patch_9">
+    <path d="M 285.004668 146.116 
+L 285.004668 18.604 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-patch_10">
+    <path d="M 285.004668 146.116 
+L 396.604668 146.116 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-2-1-residual-plots-text_7">
+    <text style="font-size: 8.8px; font-family: 'Lora', 'Lora'; text-anchor: middle; fill: currentColor" x="340.804668" y="12.604" transform="rotate(-0 340.804668 12.604)">Loe dần</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-2-1-residual-plots-p98d20002c5">
+   <rect x="17.164668" y="18.604" width="111.6" height="127.512"/>
+  </clipPath>
+  <clipPath id="fig-2-1-residual-plots-pebfba44b7d">
+   <rect x="151.084668" y="18.604" width="111.6" height="127.512"/>
+  </clipPath>
+  <clipPath id="fig-2-1-residual-plots-pcacaa72a18">
+   <rect x="285.004668" y="18.604" width="111.6" height="127.512"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,50 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Đánh giá classification — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/1.5?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 1.5: Đánh giá classification</h1><p>Báo động giả và bỏ sót nên phạt giống nhau không?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>Chốt positive class trước khi tính TP, FP, FN, TN.</li><li>Precision quan tâm báo nhầm; recall quan tâm bỏ sót; F1 kết hợp hai đại lượng.</li><li>AUC dùng scores/probabilities; threshold thay đổi labels và F1.</li></ul><p class="note">F1 = 2TP / (2TP + FP + FN)</p><h2>Code minh họa</h2><pre>from sklearn.metrics import confusion_matrix,precision_score,recall_score,f1_score,roc_auc_score
+# Positive=1; xác suất dùng cho AUC, nhãn dùng cho F1.
+y = [1,1,0,0]
+prob = [0.9,0.4,0.6,0.1]
+pred = [int(p&gt;=0.5) for p in prob]
+print(&quot;pred:&quot;,pred)
+print(&quot;Confusion [TN FP; FN TP]:&quot;,confusion_matrix(y,pred).tolist())
+print(&quot;Precision:&quot;,precision_score(y,pred,zero_division=0))
+print(&quot;Recall:&quot;,recall_score(y,pred,zero_division=0))
+print(&quot;F1:&quot;,f1_score(y,pred,zero_division=0))
+print(&quot;ROC AUC:&quot;,roc_auc_score(y,prob))
+assert f1_score(y,pred)==0.5
+</pre><h3>Kết quả</h3><pre>pred: [1, 0, 1, 0]
+Confusion [TN FP; FN TP]: [[1, 1], [1, 1]]
+Precision: 0.5
+Recall: 0.5
+F1: 0.5
+ROC AUC: 0.75
+</pre><p class="note">Binary F1, macro F1 và weighted F1 không thay thế tùy tiện cho nhau.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Trả [TN, FP, FN, TP] theo positive class 1.</p><pre>{
+  &quot;y&quot;: [
+    1,
+    1,
+    0,
+    0
+  ],
+  &quot;pred&quot;: [
+    1,
+    0,
+    1,
+    0
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  1,
+  1,
+  1,
+  1
+]</pre></details><h3>Bài 2</h3><p>Tính binary F1=2TP/(2TP+FP+FN); denominator bằng 0 trả 0.</p><pre>{
+  &quot;y&quot;: [
+    1,
+    1,
+    0,
+    0
+  ],
+  &quot;pred&quot;: [
+    1,
+    0,
+    1,
+    0
+  ]
+}</pre><details><summary>Đáp án</summary><pre>0.5</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Trả [TN, FP, FN, TP] theo positive class 1.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Tính binary F1=2TP/(2TP+FP+FN); denominator bằng 0 trả 0.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Tính AUC bằng xác suất score positive lớn hơn score negative; tie tính 0.5.</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>Slide trang 17–21; KHTN 2.4–2.7; NT 7.</p><p>NT 9.6 yêu cầu các metrics/confusion matrix/ROC; NT 9.10 trắc nghiệm; bài aidiabetes để luyện F1 sau khi biết model.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-1/buoi-1-4/BAI_HOC.html">← Data leakage và Pipeline</a><a href="../../phase-1/buoi-1-6/BAI_HOC.html">Đánh giá regression →</a></nav></body></html>

@@ -1,0 +1,50 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perceptron, MLP và backpropagation</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 3.3</small><h1>Buổi 3.3: Perceptron, MLP và backpropagation</h1><p>Tại sao ghép hai linear layers không activation vẫn tuyến tính?</p></section><section class="slide"><small>Buổi 3.3</small><h1>Ý tưởng chính</h1><p>Linear(in,out) params = in×out + out</p><ul><li>Neuron linear kết hợp features; activation tạo phi tuyến.</li><li>MLP nhiều lớp dùng phi tuyến để biểu diễn quan hệ như XOR.</li><li>Backprop tính gradient; optimizer cập nhật parameters.</li></ul></section><section class="slide"><small>Buổi 3.3</small><h1>Ví dụ</h1><pre>{
+  &quot;in&quot;: 2,
+  &quot;out&quot;: 3,
+  &quot;use_bias&quot;: true
+}</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Đáp án ví dụ</h1><pre>9</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Code minh họa (1)</h1><pre>import torch
+from torch import nn
+torch.manual_seed(7)
+torch.set_num_threads(1)
+
+X = torch.tensor([[0.,0.],[0.,1.],[1.,0.],[1.,1.]])
+y = torch.tensor([[0.],[1.],[1.],[0.]])  # XOR
+model = nn.Sequential(nn.Linear(2,8),nn.Tanh(),nn.Linear(8,1))
+optimizer = torch.optim.Adam(model.parameters(),lr=.05)
+loss_fn = nn.BCEWithLogitsLoss()
+for step in range(200):
+    optimizer.zero_grad()
+    logits = model(X)
+    loss = loss_fn(logits,y)
+    loss.backward()</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Code minh họa (2)</h1><pre>    optimizer.step()
+with torch.no_grad():
+    probabilities = model(X).sigmoid()
+print(&quot;Params:&quot;,sum(p.numel() for p in model.parameters()))
+print(&quot;P(XOR=1):&quot;,probabilities.flatten().round(decimals=3).tolist())
+print(&quot;Labels:&quot;,(probabilities&gt;=.5).int().flatten().tolist())
+assert (probabilities&gt;=.5).int().flatten().tolist()==[0,1,1,0]</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Kết quả</h1><pre>Params: 33
+P(XOR=1): [0.0010000000474974513, 0.9990000128746033, 1.0, 0.0010000000474974513]
+Labels: [0, 1, 1, 0]</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Điểm dễ nhầm</h1><ul><li>Training XOR thành công chỉ minh họa khả năng biểu diễn, không là score data thật.</li><li>Tính parameters MLP2→8→1 và so output cho4 điểm XOR.</li></ul></section><section class="slide"><small>Buổi 3.3</small><h1>Bài trên lớp 1</h1><p>Tính parameter count Linear(in, out), gồm bias nếu use_bias=true.</p><pre>{
+  &quot;in&quot;: 2,
+  &quot;out&quot;: 3,
+  &quot;use_bias&quot;: true
+}</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Bài trên lớp 2</h1><p>Với loss=(w*x+b-y)^2, trả grad_w và grad_b.</p><pre>{
+  &quot;w&quot;: 1,
+  &quot;b&quot;: 0,
+  &quot;x&quot;: 2,
+  &quot;y&quot;: 0
+}</pre></section><section class="slide"><small>Buổi 3.3</small><h1>Bài tập về nhà 1</h1><p>Tính parameter count Linear(in, out), gồm bias nếu use_bias=true.</p><ul><li>Input: in/out số nguyên dương; use_bias: boolean.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 3.3</small><h1>Bài tập về nhà 2</h1><p>Với loss=(w*x+b-y)^2, trả grad_w và grad_b.</p><ul><li>Input: w, b, x, y: số.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 3.3</small><h1>Bài tập về nhà 3</h1><p>MLP chữ số</p><ul><li>Data: digits</li><li>Metric: Accuracy, labels từ 0 đến 9.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 3.3</small><h1>Tổng kết</h1><p>Tính parameters MLP2→8→1 và so output cho4 điểm XOR.</p><ul><li>AIO chương 28; KHTN chương 8; PyTorch Autograd.</li><li>AIO 28.2 Thực hành,28.3 trắc nghiệm; phần Build Model của PyTorch Learn the Basics.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

@@ -1,0 +1,821 @@
+{
+  "version": "2026-10-02",
+  "audience": "Học sinh THCS/THPT đã biết lập trình thi đấu, chưa học AI.",
+  "goal": "Giỏi AI thực chiến; mục tiêu chính VOAI → IOAI, đồng thời đủ năng lực cho APOAI và IAIO.",
+  "compute": "GPU T4 16GB trên Google Colab hoặc Kaggle.",
+  "courses": [
+    {
+      "id": "K1",
+      "title": "Học máy",
+      "short": "Học máy",
+      "phases": [
+        0,
+        1,
+        2
+      ],
+      "result": "Tự giải một bài dữ liệu bảng từ đọc đề đến nộp bài trong giới hạn thời gian, chọn mô hình bằng validation đúng cách."
+    },
+    {
+      "id": "K2",
+      "title": "Học sâu",
+      "short": "Học sâu",
+      "phases": [
+        3,
+        4
+      ],
+      "result": "Tự dựng, huấn luyện, debug mạng neural bằng PyTorch trên T4; dùng và fine-tune model pretrained cho ảnh, chữ, âm thanh."
+    },
+    {
+      "id": "K3",
+      "title": "Ảnh, chữ và âm thanh",
+      "short": "Ảnh, chữ và âm thanh",
+      "phases": [
+        5,
+        6,
+        7
+      ],
+      "result": "Giải được bài thị giác máy tính, NLP, âm thanh và đa phương thức kiểu đề VOAI/IOAI."
+    },
+    {
+      "id": "K4",
+      "title": "Luyện thi",
+      "short": "Luyện thi",
+      "phases": [
+        8,
+        9
+      ],
+      "result": "Làm đề mới trong 6 giờ, đúng môi trường thi; có thêm phần lý thuyết và học tăng cường cho IAIO."
+    }
+  ],
+  "phases": [
+    {
+      "id": 0,
+      "title": "Python và dữ liệu",
+      "short": "Python",
+      "description": "Công cụ làm việc với dữ liệu."
+    },
+    {
+      "id": 1,
+      "title": "Nền tảng học máy",
+      "short": "Nền tảng học máy",
+      "description": "Đặt bài toán, chia dữ liệu và chấm điểm cho đúng."
+    },
+    {
+      "id": 2,
+      "title": "Học máy cổ điển",
+      "short": "Học máy cổ điển",
+      "description": "Các mô hình kinh điển cho dữ liệu bảng."
+    },
+    {
+      "id": 3,
+      "title": "Mạng neural",
+      "short": "Mạng neural",
+      "description": "Tự xây và huấn luyện mạng neural."
+    },
+    {
+      "id": 4,
+      "title": "Model pretrained",
+      "short": "Model pretrained",
+      "description": "Dùng lại model lớn đã huấn luyện sẵn."
+    },
+    {
+      "id": 5,
+      "title": "Thị giác máy tính",
+      "short": "Thị giác máy tính",
+      "description": "Các bài toán về ảnh."
+    },
+    {
+      "id": 6,
+      "title": "Xử lý ngôn ngữ",
+      "short": "Ngôn ngữ",
+      "description": "Các bài toán về văn bản."
+    },
+    {
+      "id": 7,
+      "title": "Âm thanh và đa phương thức",
+      "short": "Âm thanh",
+      "description": "Âm thanh, giọng nói và đa phương thức."
+    },
+    {
+      "id": 8,
+      "title": "Luyện thi",
+      "short": "Luyện thi",
+      "description": "Chiến lược làm bài và thi thử."
+    },
+    {
+      "id": 9,
+      "title": "Mở rộng",
+      "short": "Mở rộng",
+      "description": "Các chủ đề ngoài phần thi chính."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "0.1",
+      "phase": 0,
+      "title": "Python",
+      "summary": "Python cho người đã quen C++.",
+      "outcome": "Viết hàm, đọc/ghi file, debug trong notebook; tránh được các bẫy khi chuyển từ C++ (tham chiếu, copy, số nguyên lớn, vòng lặp chậm). Có bài kiểm tra đầu vào để bỏ qua.",
+      "syllabus": "P",
+      "legacy": [
+        "0.1",
+        "0.2"
+      ]
+    },
+    {
+      "id": "0.2",
+      "phase": 0,
+      "title": "NumPy",
+      "summary": "Tính trên cả mảng thay cho vòng lặp.",
+      "outcome": "Viết lại vòng lặp thành phép toán mảng; dùng thành thạo axis, broadcasting, fancy indexing; đo được tốc độ chênh lệch.",
+      "syllabus": "P",
+      "legacy": [
+        "0.3"
+      ]
+    },
+    {
+      "id": "0.3",
+      "phase": 0,
+      "title": "Pandas và Matplotlib",
+      "summary": "Đọc, xử lý và vẽ dữ liệu bảng.",
+      "outcome": "Đọc CSV, lọc, groupby, merge; vẽ biểu đồ trả lời một câu hỏi cụ thể; tạo file nộp đúng định dạng.",
+      "syllabus": "P",
+      "legacy": [
+        "0.4",
+        "0.5"
+      ]
+    },
+    {
+      "id": "1.1",
+      "phase": 1,
+      "title": "Bài toán học máy",
+      "summary": "Đọc đề và nộp mô hình đầu tiên.",
+      "outcome": "Xác định input, output, metric từ đề; dựng baseline bằng scikit-learn và nộp lên judge thật ngay trong buổi đầu.",
+      "syllabus": "P",
+      "legacy": [
+        "1.1"
+      ]
+    },
+    {
+      "id": "1.2",
+      "phase": 1,
+      "title": "Generalization",
+      "summary": "Vì sao mô hình tốt trên train mà tệ trên test.",
+      "outcome": "Đọc learning curve, chẩn đoán underfit hay overfit và chọn cách xử lý phù hợp.",
+      "syllabus": "T",
+      "legacy": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "1.3",
+      "phase": 1,
+      "title": "Data split và cross-validation",
+      "summary": "Chia dữ liệu để điểm validation đáng tin.",
+      "outcome": "Chọn đúng kiểu chia (ngẫu nhiên, stratified, group, theo thời gian); phát hiện cách chia sai; dựng dự đoán out-of-fold.",
+      "syllabus": "P",
+      "legacy": [
+        "1.3"
+      ]
+    },
+    {
+      "id": "1.4",
+      "phase": 1,
+      "title": "Pipeline và data leakage",
+      "summary": "Gói tiền xử lý và chặn rò rỉ dữ liệu.",
+      "outcome": "Viết Pipeline và ColumnTransformer; tìm ra rò rỉ dữ liệu trong một notebook có sẵn.",
+      "syllabus": "P",
+      "legacy": [
+        "1.4"
+      ]
+    },
+    {
+      "id": "1.5",
+      "phase": 1,
+      "title": "Classification metrics",
+      "summary": "Đo mô hình phân loại cho đúng.",
+      "outcome": "Tính tay confusion matrix, precision, recall, F1, ROC-AUC; chọn ngưỡng; xử lý dữ liệu mất cân bằng.",
+      "syllabus": "B",
+      "legacy": [
+        "1.5"
+      ]
+    },
+    {
+      "id": "1.6",
+      "phase": 1,
+      "title": "Regression và ranking metrics",
+      "summary": "Đo mô hình hồi quy và xếp hạng.",
+      "outcome": "Phân biệt MAE, MSE, RMSE, R², MAPE, MAP@k; phân biệt hàm loss tối ưu với metric chấm điểm.",
+      "syllabus": "B",
+      "legacy": [
+        "1.6"
+      ]
+    },
+    {
+      "id": "1.7",
+      "phase": 1,
+      "title": "Hyperparameter tuning",
+      "summary": "Thử tham số có hệ thống.",
+      "outcome": "Grid/random search trên cross-validation; ghi log thí nghiệm; đọc lỗi để quyết định thử gì tiếp.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "2.1",
+      "phase": 2,
+      "title": "Linear regression",
+      "summary": "Định giá căn hộ bằng một đường thẳng.",
+      "outcome": "Tự cài gradient descent bằng NumPy khớp với scikit-learn; dùng đặc trưng đa thức. Toán đi kèm: vector, ma trận, đạo hàm, gradient.",
+      "syllabus": "B",
+      "legacy": [
+        "2.1",
+        "1.9",
+        "1.7"
+      ]
+    },
+    {
+      "id": "2.2",
+      "phase": 2,
+      "title": "Regularization",
+      "summary": "Phạt hệ số lớn để mô hình bớt học thuộc.",
+      "outcome": "Giải thích vì sao L1 cho hệ số bằng 0; chọn alpha bằng cross-validation; biết khi nào phải chuẩn hóa thang đo.",
+      "syllabus": "B",
+      "legacy": [
+        "2.3"
+      ]
+    },
+    {
+      "id": "2.3",
+      "phase": 2,
+      "title": "Logistic regression và softmax",
+      "summary": "Dự đoán xác suất để phân loại.",
+      "outcome": "Đi từ xác suất đến cross-entropy rồi gradient; kiểm gradient bằng sai phân; làm được bài nhiều lớp.",
+      "syllabus": "B",
+      "legacy": [
+        "2.2",
+        "1.8"
+      ]
+    },
+    {
+      "id": "2.4",
+      "phase": 2,
+      "title": "k-Nearest Neighbors",
+      "summary": "Đoán theo những điểm gần nhất.",
+      "outcome": "Cài kNN; hiểu tác động của thang đo và số chiều — nền cho tìm kiếm bằng embedding về sau.",
+      "syllabus": "B",
+      "legacy": [
+        "2.4"
+      ]
+    },
+    {
+      "id": "2.5",
+      "phase": 2,
+      "title": "Decision tree",
+      "summary": "Dự đoán bằng chuỗi câu hỏi có/không.",
+      "outcome": "Tính tay gini và entropy, chọn điểm cắt; giải thích vì sao cây dễ overfit.",
+      "syllabus": "B",
+      "legacy": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "2.6",
+      "phase": 2,
+      "title": "Random forest",
+      "summary": "Gộp nhiều cây để dự đoán ổn định.",
+      "outcome": "Giải thích cơ chế giảm phương sai; dùng OOB score; đọc độ quan trọng của đặc trưng.",
+      "syllabus": "P",
+      "legacy": [
+        "2.6"
+      ]
+    },
+    {
+      "id": "2.7",
+      "phase": 2,
+      "title": "Gradient boosting",
+      "summary": "Mỗi cây mới sửa lỗi của các cây trước.",
+      "outcome": "Huấn luyện có early stopping, xử lý cột phân loại, tinh chỉnh các tham số chính — vũ khí chính cho dữ liệu bảng.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "2.8",
+      "phase": 2,
+      "title": "SVM",
+      "summary": "Tìm đường phân chia có lề rộng nhất.",
+      "outcome": "Hiểu margin, hinge loss, kernel; biết khi nào SVM là lựa chọn tốt.",
+      "syllabus": "B",
+      "legacy": [
+        "2.7"
+      ]
+    },
+    {
+      "id": "2.9",
+      "phase": 2,
+      "title": "Dimensionality reduction",
+      "summary": "Nén dữ liệu xuống ít chiều.",
+      "outcome": "Tính PCA bằng SVD, đọc phương sai giữ lại; biết giới hạn của hình t-SNE và UMAP.",
+      "syllabus": "B",
+      "legacy": [
+        "2.8"
+      ]
+    },
+    {
+      "id": "2.10",
+      "phase": 2,
+      "title": "Clustering",
+      "summary": "Chia nhóm dữ liệu khi không có nhãn.",
+      "outcome": "Chọn thuật toán theo hình dạng cụm; đánh giá kết quả phân cụm khi không có nhãn.",
+      "syllabus": "B",
+      "legacy": [
+        "2.9"
+      ]
+    },
+    {
+      "id": "2.11",
+      "phase": 2,
+      "title": "Feature engineering",
+      "summary": "Biến dữ liệu thô thành đặc trưng tốt.",
+      "outcome": "Mã hóa cột phân loại, điền thiếu, đặc trưng lag, rolling, cửa sổ trượt, thống kê gộp; dùng ablation để chứng minh đặc trưng có ích.",
+      "syllabus": "P",
+      "legacy": [
+        "2.10"
+      ]
+    },
+    {
+      "id": "kt1",
+      "phase": 2,
+      "kind": "checkpoint",
+      "title": "Kiểm tra khóa 1",
+      "summary": "Một bài dữ liệu bảng trọn vẹn, có giới hạn giờ.",
+      "outcome": "Làm một bài dữ liệu bảng mới trong giới hạn thời gian, nộp qua scorer có validation riêng.",
+      "syllabus": "",
+      "legacy": []
+    },
+    {
+      "id": "3.1",
+      "phase": 3,
+      "title": "Tensor và autograd",
+      "summary": "Làm quen PyTorch và GPU.",
+      "outcome": "Thao tác shape thành thạo; tính gradient tự động; đưa dữ liệu và model lên GPU T4.",
+      "syllabus": "P",
+      "legacy": [
+        "3.1"
+      ]
+    },
+    {
+      "id": "3.2",
+      "phase": 3,
+      "title": "MLP và backpropagation",
+      "summary": "Tự xây mạng neural và lan truyền ngược.",
+      "outcome": "Tính tay backprop cho mạng hai lớp; cài bằng NumPy và đối chiếu với autograd.",
+      "syllabus": "B",
+      "legacy": [
+        "3.3"
+      ]
+    },
+    {
+      "id": "3.3",
+      "phase": 3,
+      "title": "Activation và loss",
+      "summary": "Chọn hàm kích hoạt và hàm loss cho đúng.",
+      "outcome": "Ghép đúng logits với loss (MSE, MAE, BCE, CE); tránh lỗi áp softmax hai lần.",
+      "syllabus": "B",
+      "legacy": [
+        "3.4"
+      ]
+    },
+    {
+      "id": "3.4",
+      "phase": 3,
+      "title": "Training loop",
+      "summary": "Viết vòng huấn luyện hoàn chỉnh.",
+      "outcome": "Dataset và DataLoader, chế độ train và eval, lưu checkpoint tốt nhất, suy luận lại ở tiến trình mới, kết quả tái lập được.",
+      "syllabus": "B",
+      "legacy": [
+        "3.5",
+        "3.2"
+      ]
+    },
+    {
+      "id": "3.5",
+      "phase": 3,
+      "title": "Optimizer",
+      "summary": "Chọn optimizer và learning rate.",
+      "outcome": "Dùng SGD, momentum, Adam/AdamW và lịch learning rate; đọc đường loss để chỉnh.",
+      "syllabus": "B",
+      "legacy": [
+        "3.6"
+      ]
+    },
+    {
+      "id": "3.6",
+      "phase": 3,
+      "title": "Regularization cho mạng neural",
+      "summary": "Chống overfit cho mạng neural.",
+      "outcome": "Dùng dropout, weight decay, early stopping, BatchNorm; hiểu khác biệt giữa chế độ train và eval.",
+      "syllabus": "P",
+      "legacy": [
+        "3.7"
+      ]
+    },
+    {
+      "id": "3.7",
+      "phase": 3,
+      "title": "Huấn luyện trên GPU",
+      "summary": "Gỡ lỗi và tăng tốc trên GPU.",
+      "outcome": "Kiểm overfit-một-batch; xử lý lỗi shape, NaN, hết bộ nhớ; dùng mixed precision; ước lượng thời gian chạy trên T4.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "3.8",
+      "phase": 3,
+      "title": "Embedding và dữ liệu chuỗi",
+      "summary": "Đưa câu dài ngắn khác nhau vào mạng.",
+      "outcome": "Dùng embedding layer, padding, mask, pooling cho dữ liệu dài ngắn khác nhau.",
+      "syllabus": "B",
+      "legacy": [
+        "3.8"
+      ]
+    },
+    {
+      "id": "3.9",
+      "phase": 3,
+      "title": "Attention và Transformer",
+      "summary": "Hiểu và tự cài attention.",
+      "outcome": "Tính tay scaled dot-product attention; cài một encoder block; hiểu mã hóa vị trí và causal mask.",
+      "syllabus": "B",
+      "legacy": []
+    },
+    {
+      "id": "3.10",
+      "phase": 3,
+      "title": "Autoencoder",
+      "summary": "Nén rồi tái tạo dữ liệu, tìm mẫu bất thường.",
+      "outcome": "Học biểu diễn nén, khử nhiễu, dùng sai số tái tạo để phát hiện bất thường.",
+      "syllabus": "P",
+      "legacy": [
+        "3.9"
+      ]
+    },
+    {
+      "id": "4.1",
+      "phase": 4,
+      "title": "Sử dụng model pretrained",
+      "summary": "Nạp và chạy model có sẵn.",
+      "outcome": "Nạp model và processor từ bộ nhớ đệm khi không có internet; suy luận theo batch; tính được bộ nhớ GPU cần dùng.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "4.2",
+      "phase": 4,
+      "title": "Feature extraction",
+      "summary": "Biến ảnh, chữ, âm thanh thành vector.",
+      "outcome": "Trích embedding rồi dùng linear probe, kNN, tìm kiếm tương đồng, phân cụm — một cách làm dùng chung cho ảnh, chữ và âm thanh.",
+      "syllabus": "B",
+      "legacy": []
+    },
+    {
+      "id": "4.3",
+      "phase": 4,
+      "title": "Fine-tuning",
+      "summary": "Huấn luyện tiếp model có sẵn.",
+      "outcome": "Đóng băng rồi mở dần từng phần; chọn learning rate; chống overfit khi ít dữ liệu.",
+      "syllabus": "P",
+      "legacy": [
+        "3.10"
+      ]
+    },
+    {
+      "id": "4.4",
+      "phase": 4,
+      "title": "LoRA",
+      "summary": "Fine-tune model lớn trên GPU nhỏ.",
+      "outcome": "Áp LoRA; so sánh với fine-tune toàn bộ về điểm, thời gian và bộ nhớ.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "4.5",
+      "phase": 4,
+      "title": "Zero-shot",
+      "summary": "Giải bài khi không có dữ liệu huấn luyện.",
+      "outcome": "Phân loại zero-shot bằng CLIP; dùng log-prob và perplexity của mô hình ngôn ngữ để chấm hoặc xếp hạng.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "kt2",
+      "phase": 4,
+      "kind": "checkpoint",
+      "title": "Kiểm tra khóa 2",
+      "summary": "Dựng mạng neural và dùng model có sẵn, có giới hạn giờ.",
+      "outcome": "Tự dựng và debug một mạng neural; giải một bài mới bằng embedding hoặc fine-tune trên T4 trong giới hạn thời gian.",
+      "syllabus": "",
+      "legacy": []
+    },
+    {
+      "id": "5.1",
+      "phase": 5,
+      "title": "Convolution và pooling",
+      "summary": "Phép tích chập trên ảnh.",
+      "outcome": "Tính tay kích thước đầu ra và phép tích chập; hiểu receptive field.",
+      "syllabus": "B",
+      "legacy": [
+        "4.1"
+      ]
+    },
+    {
+      "id": "5.2",
+      "phase": 5,
+      "title": "CNN và ResNet",
+      "summary": "Phân loại ảnh bằng CNN.",
+      "outcome": "Huấn luyện CNN nhỏ; hiểu residual connection.",
+      "syllabus": "P",
+      "legacy": [
+        "4.2"
+      ]
+    },
+    {
+      "id": "5.3",
+      "phase": 5,
+      "title": "Augmentation và transfer learning",
+      "summary": "Tăng dữ liệu ảnh và dùng model có sẵn.",
+      "outcome": "Chọn phép biến đổi hợp lệ với nhãn; fine-tune encoder ảnh có sẵn.",
+      "syllabus": "P",
+      "legacy": [
+        "4.4",
+        "4.3"
+      ]
+    },
+    {
+      "id": "5.4",
+      "phase": 5,
+      "title": "Vision Transformer",
+      "summary": "Đưa ảnh vào Transformer.",
+      "outcome": "Chia ảnh thành patch và token; so sánh ViT với CNN.",
+      "syllabus": "B",
+      "legacy": []
+    },
+    {
+      "id": "5.5",
+      "phase": 5,
+      "title": "Object detection",
+      "summary": "Tìm và khoanh vùng vật thể.",
+      "outcome": "Tính IoU, NMS, mAP; dùng detector có sẵn; đếm vật thể.",
+      "syllabus": "P",
+      "legacy": [
+        "4.5"
+      ]
+    },
+    {
+      "id": "5.6",
+      "phase": 5,
+      "title": "Image segmentation",
+      "summary": "Gán nhãn cho từng điểm ảnh.",
+      "outcome": "Tính Dice và IoU; mã hóa RLE; fine-tune U-Net.",
+      "syllabus": "P",
+      "legacy": [
+        "4.6"
+      ]
+    },
+    {
+      "id": "5.7",
+      "phase": 5,
+      "title": "Self-supervised và CLIP",
+      "summary": "Tìm ảnh bằng câu chữ.",
+      "outcome": "Hiểu học tương phản; tìm kiếm ảnh–chữ; phân loại zero-shot.",
+      "syllabus": "P",
+      "legacy": [
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "id": "5.8",
+      "phase": 5,
+      "title": "GAN và diffusion",
+      "summary": "Sinh ảnh mới.",
+      "outcome": "Chạy và điều khiển model sinh ảnh; hiểu quá trình thêm và khử nhiễu.",
+      "syllabus": "P",
+      "legacy": [
+        "4.9",
+        "4.10"
+      ]
+    },
+    {
+      "id": "5.9",
+      "phase": 5,
+      "title": "Phân tích hành vi model",
+      "summary": "Tìm chỗ model nhìn sai.",
+      "outcome": "Tìm ví dụ làm model sai, so sánh hai model, xem vùng ảnh model chú ý — dạng bài từng xuất hiện ở IOAI 2026.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "kt3",
+      "phase": 5,
+      "kind": "checkpoint",
+      "title": "Kiểm tra thị giác máy tính",
+      "summary": "Một bài thị giác máy tính, có giới hạn giờ.",
+      "outcome": "Giải một bài thị giác mới trên T4 trong giới hạn thời gian và runtime.",
+      "syllabus": "",
+      "legacy": []
+    },
+    {
+      "id": "6.1",
+      "phase": 6,
+      "title": "Tokenization và text classification",
+      "summary": "Cắt câu thành token và phân loại văn bản.",
+      "outcome": "Hiểu BPE và WordPiece; dựng baseline TF-IDF kết hợp logistic; phân loại văn bản.",
+      "syllabus": "P",
+      "legacy": [
+        "5.1"
+      ]
+    },
+    {
+      "id": "6.2",
+      "phase": 6,
+      "title": "Sentence embedding",
+      "summary": "Tìm câu gần nghĩa bằng vector.",
+      "outcome": "Tìm kiếm ngữ nghĩa; giải bài dạng đoán từ bằng phản hồi gần nghĩa.",
+      "syllabus": "B",
+      "legacy": [
+        "5.2"
+      ]
+    },
+    {
+      "id": "6.3",
+      "phase": 6,
+      "title": "BERT",
+      "summary": "Fine-tune BERT cho câu và từng từ.",
+      "outcome": "Fine-tune cho phân loại câu và gán nhãn từng token (NER, tách từ).",
+      "syllabus": "B",
+      "legacy": [
+        "5.3",
+        "5.4"
+      ]
+    },
+    {
+      "id": "6.4",
+      "phase": 6,
+      "title": "Language model",
+      "summary": "Mô hình đoán từ tiếp theo.",
+      "outcome": "Từ n-gram đến GPT; perplexity; các chiến lược sinh; phát hiện văn bản do máy sửa.",
+      "syllabus": "B",
+      "legacy": [
+        "5.5"
+      ]
+    },
+    {
+      "id": "6.5",
+      "phase": 6,
+      "title": "Encoder–decoder",
+      "summary": "Đọc một chuỗi, viết ra chuỗi khác.",
+      "outcome": "Dịch máy, tóm tắt, mô tả ảnh.",
+      "syllabus": "P",
+      "legacy": [
+        "5.6"
+      ]
+    },
+    {
+      "id": "6.6",
+      "phase": 6,
+      "title": "Large language model",
+      "summary": "Chạy và điều khiển LLM trên T4.",
+      "outcome": "Suy luận LLM mã nguồn mở trên T4; viết prompt; ép đầu ra theo cấu trúc; few-shot.",
+      "syllabus": "P",
+      "legacy": [
+        "5.7"
+      ]
+    },
+    {
+      "id": "7.1",
+      "phase": 7,
+      "title": "Dữ liệu âm thanh",
+      "summary": "Biến âm thanh thành số và ảnh phổ.",
+      "outcome": "Hiểu sóng âm, tần số lấy mẫu, spectrogram, log-mel; augmentation cho âm thanh.",
+      "syllabus": "—",
+      "legacy": [
+        "6.1"
+      ]
+    },
+    {
+      "id": "7.2",
+      "phase": 7,
+      "title": "Audio classification",
+      "summary": "Phân loại âm thanh.",
+      "outcome": "CNN trên mel; embedding từ HuBERT hoặc wav2vec2 kết hợp bộ phân loại.",
+      "syllabus": "P",
+      "legacy": [
+        "6.2"
+      ]
+    },
+    {
+      "id": "7.3",
+      "phase": 7,
+      "title": "Speech recognition",
+      "summary": "Chuyển giọng nói thành chữ.",
+      "outcome": "Dùng Whisper, Qwen-Audio, Voxtral; nối nhận dạng tiếng nói với mô hình ngôn ngữ.",
+      "syllabus": "P",
+      "legacy": [
+        "6.3"
+      ]
+    },
+    {
+      "id": "7.4",
+      "phase": 7,
+      "title": "Multimodal",
+      "summary": "Kết hợp ảnh, chữ và âm thanh.",
+      "outcome": "Ghép sớm và ghép muộn; VLM; hỏi đáp trên ảnh.",
+      "syllabus": "P",
+      "legacy": [
+        "6.4"
+      ]
+    },
+    {
+      "id": "kt4",
+      "phase": 7,
+      "kind": "checkpoint",
+      "title": "Kiểm tra khóa 3",
+      "summary": "Hai bài thuộc hai lĩnh vực trong 6 giờ.",
+      "outcome": "Giải hai bài mới thuộc hai lĩnh vực khác nhau trong 6 giờ.",
+      "syllabus": "",
+      "legacy": []
+    },
+    {
+      "id": "8.1",
+      "phase": 8,
+      "title": "Chiến lược thi",
+      "summary": "Chia thời gian và lượt nộp trong phòng thi.",
+      "outcome": "Tận dụng cách chấm chuẩn hóa (baseline được 0 điểm); chia thời gian cho 3 bài; dùng hợp lý số lượt nộp và giới hạn runtime.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "8.2",
+      "phase": 8,
+      "title": "Phân tích dữ liệu trước huấn luyện",
+      "summary": "Soi dữ liệu trước khi huấn luyện.",
+      "outcome": "Tìm trùng lặp, lệch phân phối, nhãn nhiễu và đường tắt trong dữ liệu.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "8.3",
+      "phase": 8,
+      "title": "Bài toán mở",
+      "summary": "Kết hợp thuật toán với model cho bài mở.",
+      "outcome": "Kết hợp thuật toán với model: tìm kiếm có model phản hồi, tối ưu, khai thác điểm yếu model — thế mạnh của học sinh lập trình thi đấu.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "8.4",
+      "phase": 8,
+      "title": "Ensemble",
+      "summary": "Gộp nhiều model để điểm ổn định.",
+      "outcome": "Kết hợp nhiều seed và nhiều model; chọn bài nộp cuối theo validation, không theo bảng điểm công khai.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "8.5",
+      "phase": 8,
+      "title": "Thi thử",
+      "summary": "Thi thử đúng điều kiện thật.",
+      "outcome": "Thi thử theo điều kiện VOAI (360 phút, GPU) và IOAI (ngày 1 nối với bài làm ở nhà, ngày 2 bài mới); chữa và lập kế hoạch luyện tiếp.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "9.1",
+      "phase": 9,
+      "title": "Reinforcement learning",
+      "summary": "Học hành động qua phần thưởng.",
+      "outcome": "Hiểu MDP, phần thưởng, Q-learning và policy gradient đơn giản; giải bài gridworld.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "9.2",
+      "phase": 9,
+      "title": "Tìm kiếm và suy luận",
+      "summary": "Tìm đường, chơi cờ và suy luận logic.",
+      "outcome": "Dùng BFS, A*, minimax, ràng buộc và logic mệnh đề cho các bài AI cổ điển.",
+      "syllabus": "—",
+      "legacy": []
+    },
+    {
+      "id": "9.3",
+      "phase": 9,
+      "title": "Bài tập lý thuyết",
+      "summary": "Bài lý thuyết cho vòng thi viết.",
+      "outcome": "Giải và trình bày bài lý thuyết viết về gradient, xác suất, kiến trúc mạng — chuẩn bị cho vòng lý thuyết IAIO.",
+      "syllabus": "—",
+      "legacy": []
+    }
+  ]
+}

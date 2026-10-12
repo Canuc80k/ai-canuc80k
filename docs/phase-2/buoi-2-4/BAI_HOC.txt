@@ -1,0 +1,69 @@
+BUỔI 2.4 — K-Nearest Neighbors
+
+HỌC SINH CẦN HIỂU
+- kNN tìm k mẫu gần query và bỏ phiếu hoặc lấy trung bình.
+- Khoảng cách phụ thuộc scale features; cần preprocessing học từ train.
+- k nhỏ nhạy chi tiết; k lớn có thể làm mờ ranh giới.
+
+CÂU HỎI MỞ BÀI
+Đổi đơn vị một feature có làm đổi hàng xóm gần nhất không?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+distance²(x,q)=sum_j(x_j-q_j)²
+
+CẦN PHÂN BIỆT
+Ties cần quy ước; fit kNN nhẹ nhưng predict có thể tốn thời gian.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Trả cosine của hai vector; có norm bằng 0 thì trả 0.
+Input:
+{
+  "a": [
+    1,
+    0
+  ],
+  "b": [
+    1,
+    1
+  ]
+}
+Output để đối chiếu sau khi làm:
+0.7071067811865475
+
+Bài trên lớp 2: Euclidean squared, ties neighbor theo index nhỏ; k voters, ties label nhỏ.
+Input:
+{
+  "X": [
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      10
+    ]
+  ],
+  "y": [
+    0,
+    0,
+    1
+  ],
+  "query": [
+    3
+  ],
+  "k": 1
+}
+Output để đối chiếu sau khi làm:
+0
+
+BÀI VỀ NHÀ
+- BTVN 1: Trả cosine của hai vector; có norm bằng 0 thì trả 0.; xem BTVN_01.txt.
+- BTVN 2: Euclidean squared, ties neighbor theo index nhỏ; k voters, ties label nhỏ.; xem BTVN_02.txt.
+- BTVN 3: kNN trên dữ liệu nhiều thang đo; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 12.2.
+AIO 12.2 thực hành thuật toán KNN, 12.4 trắc nghiệm; NT 9.6 phần KNN.

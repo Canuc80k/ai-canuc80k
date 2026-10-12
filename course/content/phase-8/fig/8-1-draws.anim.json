@@ -1,0 +1,27 @@
+{
+ "w": 960,
+ "h": 420,
+ "n": 8,
+ "cols": 2,
+ "dur": 1000,
+ "hold": 2400,
+ "labels": [
+  "1 lần rút public 200 dòng: B ≤ A ở 0% số lần",
+  "3 lần rút public 200 dòng: B ≤ A ở 33% số lần",
+  "10 lần rút public 200 dòng: B ≤ A ở 20% số lần",
+  "30 lần rút public 200 dòng: B ≤ A ở 27% số lần",
+  "100 lần rút public 200 dòng: B ≤ A ở 29% số lần",
+  "300 lần rút public 200 dòng: B ≤ A ở 33% số lần",
+  "1000 lần rút public 200 dòng: B ≤ A ở 34% số lần",
+  "5000 lần rút public 200 dòng: B ≤ A ở 33% số lần"
+ ],
+ "key": [
+  1,
+  3,
+  5,
+  7
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

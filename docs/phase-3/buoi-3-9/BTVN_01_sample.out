@@ -1,0 +1,4 @@
+{
+  "latent": 512,
+  "reconstruction": 8192
+}

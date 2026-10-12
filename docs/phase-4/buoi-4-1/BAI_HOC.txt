@@ -1,0 +1,86 @@
+BUỔI 4.1 — Convolution và pooling
+
+HỌC SINH CẦN HIỂU
+- Convolution/cross-correlation kết hợp vùng cục bộ; stride/padding đổi shape.
+- Channels là loại thông tin, không cùng ý nghĩa với batch dimension.
+- Pooling gom vùng; max và average giữ thông tin khác nhau.
+
+CÂU HỎI MỞ BÀI
+Kernel2× 2 nhìn một phần ảnh3× 3 ra sao?
+
+VÍ DỤ VÀ CODE
+Chạy python -X utf8 code_minh_hoa.py trong thư mục buổi. Notebook code_minh_hoa.ipynb có code và output đã chạy.
+Hout=floor((H+2P-K)/S)+1
+
+CẦN PHÂN BIỆT
+Conv2d của PyTorch không lật kernel trong thao tác cross-correlation.
+
+THỰC HÀNH TRÊN LỚP
+
+Bài trên lớp 1: Output floor((input+2padding-kernel)/stride)+1 cho H/W, không dilation.
+Input:
+{
+  "h": 5,
+  "w": 5,
+  "kh": 3,
+  "kw": 3,
+  "stride": 1,
+  "padding": 0
+}
+Output để đối chiếu sau khi làm:
+[
+  3,
+  3
+]
+
+Bài trên lớp 2: 2D valid cross-correlation, stride1, padding0; KHÔNG lật kernel.
+Input:
+{
+  "image": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ],
+    [
+      7,
+      8,
+      9
+    ]
+  ],
+  "kernel": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      -1
+    ]
+  ]
+}
+Output để đối chiếu sau khi làm:
+[
+  [
+    -4,
+    -4
+  ],
+  [
+    -4,
+    -4
+  ]
+]
+
+BÀI VỀ NHÀ
+- BTVN 1: Output floor((input+2padding-kernel)/stride)+1 cho H/W, không dilation.; xem BTVN_01.txt.
+- BTVN 2: 2D valid cross-correlation, stride1, padding0; KHÔNG lật kernel.; xem BTVN_02.txt.
+- BTVN 3: Đọc ảnh và dùng filters; xem BTVN_03.txt.
+
+NGUỒN VÀ BÀI AI TIẾP THEO
+AIO 34.1; KHTN chương 12.
+AIO 34.2 Thực hành và34.3 trắc nghiệm.

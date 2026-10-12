@@ -1,0 +1,29 @@
+{
+ "w": 960,
+ "h": 460,
+ "n": 10,
+ "cols": 3,
+ "dur": 1000,
+ "hold": 2400,
+ "labels": [
+  "k = 80: train MSE 0.5861, validation MSE 0.5654",
+  "k = 60: train MSE 0.3606, validation MSE 0.3533",
+  "k = 40: train MSE 0.1261, validation MSE 0.1662",
+  "k = 25: train MSE 0.0841, validation MSE 0.1360",
+  "k = 15: train MSE 0.0649, validation MSE 0.1003",
+  "k = 10: train MSE 0.0574, validation MSE 0.0820",
+  "k = 6: train MSE 0.0529, validation MSE 0.0771",
+  "k = 3: train MSE 0.0464, validation MSE 0.0714",
+  "k = 2: train MSE 0.0331, validation MSE 0.0835",
+  "k = 1: train MSE 0.0000, validation MSE 0.1011"
+ ],
+ "key": [
+  0,
+  3,
+  6,
+  9
+ ],
+ "dark": true,
+ "dw": 640,
+ "pcols": 2
+}

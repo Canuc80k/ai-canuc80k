@@ -1,0 +1,24 @@
+== Linear regression không phạt ==
+R² train = 0.985   R² test = 0.349
+|hệ số rác| lớn nhất = 0.44
+
+== Ridge theo λ ==
+λ =   0.1: R² train = 0.985   R² test = 0.644
+λ =     1: R² train = 0.982   R² test = 0.839
+λ =     3: R² train = 0.974   R² test = 0.839
+λ =    10: R² train = 0.934   R² test = 0.764
+λ =    30: R² train = 0.814   R² test = 0.603
+λ =   100: R² train = 0.547   R² test = 0.356
+Trùng scikit-learn Ridge: True
+
+== Lasso ==
+λ = 8: giữ lại các cột [0 1], hệ số [ 1.037 -0.408], R² test = 0.891
+Trùng scikit-learn Lasso (alpha = λ/n): True
+
+== Chọn λ bằng cross-validation ==
+RidgeCV: alpha = 3.16   R² test = 0.837
+LassoCV: alpha = 0.061   giữ 8 cột   R² test = 0.926
+
+== Đơn vị đo ảnh hưởng mức phạt (chưa chuẩn hóa) ==
+khoảng cách theo km: hệ số quy về mỗi km = -0.058
+khoảng cách theo  m: hệ số quy về mỗi km = -0.175

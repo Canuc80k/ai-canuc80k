@@ -1,0 +1,314 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="487.065324pt" height="245.599821pt" viewBox="0 0 487.065324 245.599821" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-4-4-count-figure_1">
+  <g id="fig-4-4-count-patch_1">
+   <path d="M 0 245.599821 
+L 487.065324 245.599821 
+L 487.065324 0 
+L 0 0 
+L 0 245.599821 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-4-4-count-axes_1">
+   <g id="fig-4-4-count-patch_2">
+    <path d="M 42.539609 204.854821 
+L 482.025324 204.854821 
+L 482.025324 8.62625 
+L 42.539609 8.62625 
+L 42.539609 204.854821 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-4-4-count-matplotlib.axis_1">
+    <g id="fig-4-4-count-xtick_1">
+     <g id="fig-4-4-count-line2d_1">
+      <defs>
+       <path id="fig-4-4-count-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-4-4-count-m04e37d9cc8" x="71.201721" y="204.854821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="71.201721" y="219.027321" transform="rotate(-0 71.201721 219.027321)">1</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-xtick_2">
+     <g id="fig-4-4-count-line2d_2">
+      <g>
+       <use xlink:href="#fig-4-4-count-m04e37d9cc8" x="166.742094" y="204.854821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="166.742094" y="219.027321" transform="rotate(-0 166.742094 219.027321)">2</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-xtick_3">
+     <g id="fig-4-4-count-line2d_3">
+      <g>
+       <use xlink:href="#fig-4-4-count-m04e37d9cc8" x="262.282467" y="204.854821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="262.282467" y="219.027321" transform="rotate(-0 262.282467 219.027321)">3</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-xtick_4">
+     <g id="fig-4-4-count-line2d_4">
+      <g>
+       <use xlink:href="#fig-4-4-count-m04e37d9cc8" x="357.822839" y="204.854821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="357.822839" y="219.027321" transform="rotate(-0 357.822839 219.027321)">4</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-xtick_5">
+     <g id="fig-4-4-count-line2d_5">
+      <g>
+       <use xlink:href="#fig-4-4-count-m04e37d9cc8" x="453.363212" y="204.854821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="453.363212" y="219.027321" transform="rotate(-0 453.363212 219.027321)">5</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-text_6">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="262.282467" y="237.754821" transform="rotate(-0 262.282467 237.754821)">rank r</text>
+    </g>
+   </g>
+   <g id="fig-4-4-count-matplotlib.axis_2">
+    <g id="fig-4-4-count-ytick_1">
+     <g id="fig-4-4-count-line2d_6">
+      <path d="M 42.539609 204.854821 
+L 482.025324 204.854821 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_7">
+      <defs>
+       <path id="fig-4-4-count-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="204.854821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="208.441071" transform="rotate(-0 35.539609 208.441071)">0</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_2">
+     <g id="fig-4-4-count-line2d_8">
+      <path d="M 42.539609 180.32625 
+L 482.025324 180.32625 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_9">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="180.32625" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="183.9125" transform="rotate(-0 35.539609 183.9125)">10</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_3">
+     <g id="fig-4-4-count-line2d_10">
+      <path d="M 42.539609 155.797679 
+L 482.025324 155.797679 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_11">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="155.797679" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="159.383929" transform="rotate(-0 35.539609 159.383929)">20</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_4">
+     <g id="fig-4-4-count-line2d_12">
+      <path d="M 42.539609 131.269107 
+L 482.025324 131.269107 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_13">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="131.269107" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_10">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="134.855357" transform="rotate(-0 35.539609 134.855357)">30</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_5">
+     <g id="fig-4-4-count-line2d_14">
+      <path d="M 42.539609 106.740536 
+L 482.025324 106.740536 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_15">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="106.740536" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_11">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="110.326786" transform="rotate(-0 35.539609 110.326786)">40</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_6">
+     <g id="fig-4-4-count-line2d_16">
+      <path d="M 42.539609 82.211964 
+L 482.025324 82.211964 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_17">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="82.211964" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_12">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="85.798214" transform="rotate(-0 35.539609 85.798214)">50</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_7">
+     <g id="fig-4-4-count-line2d_18">
+      <path d="M 42.539609 57.683393 
+L 482.025324 57.683393 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_19">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="57.683393" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_13">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="61.269643" transform="rotate(-0 35.539609 61.269643)">60</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_8">
+     <g id="fig-4-4-count-line2d_20">
+      <path d="M 42.539609 33.154821 
+L 482.025324 33.154821 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_21">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="33.154821" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="36.741071" transform="rotate(-0 35.539609 36.741071)">70</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-ytick_9">
+     <g id="fig-4-4-count-line2d_22">
+      <path d="M 42.539609 8.62625 
+L 482.025324 8.62625 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.13; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="fig-4-4-count-line2d_23">
+      <g>
+       <use xlink:href="#fig-4-4-count-m9fce3a8e10" x="42.539609" y="8.62625" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-4-4-count-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="35.539609" y="12.2125" transform="rotate(-0 35.539609 12.2125)">80</text>
+     </g>
+    </g>
+    <g id="fig-4-4-count-text_16">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="106.740536" transform="rotate(-90 13.345 106.740536)">tham số được học</text>
+    </g>
+   </g>
+   <g id="fig-4-4-count-line2d_24">
+    <path d="M 71.201721 170.514821 
+L 166.742094 136.174821 
+L 262.282467 101.834821 
+L 357.822839 67.494821 
+L 453.363212 33.154821 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="fig-4-4-count-m211009cce3" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#fig-4-4-count-pe5df387057)">
+     <use xlink:href="#fig-4-4-count-m211009cce3" x="71.201721" y="170.514821" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-4-4-count-m211009cce3" x="166.742094" y="136.174821" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-4-4-count-m211009cce3" x="262.282467" y="101.834821" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-4-4-count-m211009cce3" x="357.822839" y="67.494821" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#fig-4-4-count-m211009cce3" x="453.363212" y="33.154821" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-4-4-count-line2d_25">
+    <path d="M 42.539609 87.117679 
+L 482.025324 87.117679 
+" clip-path="url(#fig-4-4-count-pe5df387057)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-4-count-patch_3">
+    <path d="M 42.539609 204.854821 
+L 42.539609 8.62625 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-4-count-patch_4">
+    <path d="M 42.539609 204.854821 
+L 482.025324 204.854821 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-4-count-text_17">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="295.721597" y="25.79625" transform="rotate(-0 295.721597 25.79625)">LoRA: 14r</text>
+   </g>
+   <g id="fig-4-4-count-patch_5">
+    <path d="M 204.295536 153.612392 
+Q 186.425333 145.314539 169.822687 137.605264 
+" style="fill: none; stroke: #b8892b; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 172.747626 141.278782 
+L 169.822687 137.605264 
+L 174.516464 137.469423 
+" style="fill: none; stroke: #b8892b; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="fig-4-4-count-text_18">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="198.270417" y="164.382679" transform="rotate(-0 198.270417 164.382679)">r = 2 → 28</text>
+   </g>
+   <g id="fig-4-4-count-PathCollection_1">
+    <defs>
+     <path id="fig-4-4-count-m9d646cc1fc" d="M 0 3.937004 
+C 1.044106 3.937004 2.045588 3.522176 2.783882 2.783882 
+C 3.522176 2.045588 3.937004 1.044106 3.937004 0 
+C 3.937004 -1.044106 3.522176 -2.045588 2.783882 -2.783882 
+C 2.045588 -3.522176 1.044106 -3.937004 0 -3.937004 
+C -1.044106 -3.937004 -2.045588 -3.522176 -2.783882 -2.783882 
+C -3.522176 -2.045588 -3.937004 -1.044106 -3.937004 0 
+C -3.937004 1.044106 -3.522176 2.045588 -2.783882 2.783882 
+C -2.045588 3.522176 -1.044106 3.937004 0 3.937004 
+z
+" style="stroke: #b8892b"/>
+    </defs>
+    <g clip-path="url(#fig-4-4-count-pe5df387057)">
+     <use xlink:href="#fig-4-4-count-m9d646cc1fc" x="166.742094" y="136.174821" style="fill: #b8892b; stroke: #b8892b"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-4-4-count-pe5df387057">
+   <rect x="42.539609" y="8.62625" width="439.485714" height="196.228571"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,29 @@
+{
+ "w": 960,
+ "h": 330,
+ "n": 10,
+ "cols": 2,
+ "dur": 1000,
+ "hold": 2600,
+ "labels": [
+  "1 cây độ sâu 5, η = 0.2: RMSE train 66.0, điểm chưa thấy 66.2",
+  "2 cây độ sâu 5, η = 0.2: RMSE train 56.8, điểm chưa thấy 57.2",
+  "3 cây độ sâu 5, η = 0.2: RMSE train 49.6, điểm chưa thấy 50.2",
+  "5 cây độ sâu 5, η = 0.2: RMSE train 40.1, điểm chưa thấy 41.0",
+  "10 cây độ sâu 5, η = 0.2: RMSE train 30.1, điểm chưa thấy 32.1",
+  "20 cây độ sâu 5, η = 0.2: RMSE train 24.7, điểm chưa thấy 28.3",
+  "40 cây độ sâu 5, η = 0.2: RMSE train 21.1, điểm chưa thấy 26.3",
+  "80 cây độ sâu 5, η = 0.2: RMSE train 16.4, điểm chưa thấy 24.1",
+  "150 cây độ sâu 5, η = 0.2: RMSE train 12.0, điểm chưa thấy 22.7",
+  "300 cây độ sâu 5, η = 0.2: RMSE train 7.4, điểm chưa thấy 21.7"
+ ],
+ "key": [
+  0,
+  3,
+  6,
+  9
+ ],
+ "dark": false,
+ "dw": 640,
+ "pcols": 4
+}

@@ -1,0 +1,77 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pretrained LMs, prompting và VLM</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 5.7</small><h1>Buổi 5.7: Pretrained LMs, prompting và VLM</h1><p>Một câu trả lời đúng ý nhưng sai schema có nộp được không?</p></section><section class="slide"><small>Buổi 5.7</small><h1>Ý tưởng chính</h1><p>valid output = đúng schema + đúnglabel/task</p><ul><li>Prompt quy định task/context/output; source và model version cầnrõ.</li><li>Validate structuredoutput, labelmap vàgrounding; VLM có thêm image inputs.</li><li>API được đề cấp mới dùng; syllabus nêuAPI không cấp phép dùng ởmọikỳthi.</li></ul></section><section class="slide"><small>Buổi 5.7</small><h1>Ví dụ</h1><pre>{
+  &quot;objects&quot;: [
+    {
+      &quot;label&quot;: &quot;weather&quot;
+    },
+    {
+      &quot;label&quot;: &quot;music&quot;
+    },
+    &quot;weather&quot;
+  ],
+  &quot;allowed&quot;: [
+    &quot;weather&quot;,
+    &quot;sport&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.7</small><h1>Đáp án ví dụ</h1><pre>[
+  true,
+  false,
+  false
+]</pre></section><section class="slide"><small>Buổi 5.7</small><h1>Code minh họa</h1><pre>import json
+
+# Không gọi API: minh họa hợp đồng structured output trong lab lớp.
+allowed={&quot;weather&quot;,&quot;sport&quot;}
+responses=[&#39;{&quot;label&quot;:&quot;weather&quot;}&#39;,&#39;{&quot;label&quot;:&quot;music&quot;}&#39;,&#39;label: sport&#39;]
+for text in responses:
+    try:
+        obj=json.loads(text)
+        if set(obj)!={&quot;label&quot;} or obj[&quot;label&quot;] not in allowed:
+            raise ValueError(&quot;Sai schema/label&quot;)
+        print(&quot;Hợp lệ:&quot;,obj[&quot;label&quot;])
+    except (ValueError,TypeError,json.JSONDecodeError):
+        print(&quot;Không hợp lệ:&quot;,text)
+# VLM thật có ảnh+question; không chỉ một câu text. Nguồn AIO39 có ví dụ đầy đủ.</pre></section><section class="slide"><small>Buổi 5.7</small><h1>Kết quả</h1><pre>Hợp lệ: weather
+Không hợp lệ: {&quot;label&quot;:&quot;music&quot;}
+Không hợp lệ: label: sport</pre></section><section class="slide"><small>Buổi 5.7</small><h1>Điểm dễ nhầm</h1><ul><li>Không đưa dữ liệu test riêng sangAPI hoặc tinoutput màkhôngparse.</li><li>Phân biệt JSON hợp lệ, sailabel, và chuỗi không phải JSON.</li></ul></section><section class="slide"><small>Buổi 5.7</small><h1>Bài trên lớp 1</h1><p>Check parsedobjects: dictđúngduynhất keylabel và label trongallowed; invalid→false.</p><pre>{
+  &quot;objects&quot;: [
+    {
+      &quot;label&quot;: &quot;weather&quot;
+    },
+    {
+      &quot;label&quot;: &quot;music&quot;
+    },
+    &quot;weather&quot;
+  ],
+  &quot;allowed&quot;: [
+    &quot;weather&quot;,
+    &quot;sport&quot;
+  ]
+}</pre></section><section class="slide"><small>Buổi 5.7</small><h1>Bài trên lớp 2</h1><p>Tách target khỏi records, giữ features theo danh sách tên cột đã cấp.</p><pre>{
+  &quot;rows&quot;: [
+    {
+      &quot;x&quot;: 2,
+      &quot;y&quot;: 5
+    },
+    {
+      &quot;x&quot;: 3,
+      &quot;y&quot;: 7
+    }
+  ],
+  &quot;features&quot;: [
+    &quot;x&quot;
+  ],
+  &quot;target&quot;: &quot;y&quot;
+}</pre></section><section class="slide"><small>Buổi 5.7</small><h1>Bài tập về nhà 1</h1><p>Check parsedobjects: dictđúngduynhất keylabel và label trongallowed; invalid→false.</p><ul><li>Input: objects: list giá trị JSON; allowed: list chuỗi.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 5.7</small><h1>Bài tập về nhà 2</h1><p>Tách target khỏi records, giữ features theo danh sách tên cột đã cấp.</p><ul><li>Input: rows: list dict; features: list tên; target: tên khác features.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 5.7</small><h1>Bài tập về nhà 3</h1><p>Phân loại và structured output</p><ul><li>Data: text</li><li>Metric: Macro F1 theo đúng classes 0/1/2.</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 5.7</small><h1>Tổng kết</h1><p>Phân biệt JSON hợp lệ, sailabel, và chuỗi không phải JSON.</p><ul><li>AIO57; AIO39 VQA; syllabus LMs.</li><li>AIO57.3 câu hỏi về prompting; AIO39.2 chương trình Visual Question Answering và39.3 trắc nghiệm.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

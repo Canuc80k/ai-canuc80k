@@ -1,0 +1,58 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PCA, t-SNE và UMAP — AI Canuc80k</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/portal.css"><script>try{var t=JSON.parse(localStorage.getItem("aicanuc80k.portal.v2")||"{}").theme;if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script></head><body class="legacy-page"><header class="legacy-bar"><a class="wordmark" href="../../START_HERE.html"><span class="wordmark-dot" aria-hidden="true"></span>Canuc80k<span class="wordmark-sub">AI</span></a><a class="back" href="../../START_HERE.html#/lesson/2.9?part=0">Mở trong giáo trình</a></header><main class="prose"><h1>Buổi 2.8: PCA, t-SNE và UMAP</h1><p>Giảm chiều để nén dữ liệu khác giảm chiều để vẽ thế nào?</p><p><a href="slides.pptx">Bộ slide PowerPoint</a> · <a href="slides.html">Trình chiếu trong trình duyệt</a> · <a href="code_minh_hoa.ipynb">Notebook</a> · <a href="code_minh_hoa.py">Python</a></p><h2>Kiến thức</h2><ul><li>PCA tìm directions giữ variance, cần centering và xử lý scale.</li><li>t-SNE/UMAP tập trung cấu trúc lân cận để khám phá/trực quan.</li><li>PCA trước classifier phải fit trong folds; hình2D không thay validation.</li></ul><p class="note">Z = (X - mean) × componentsᵀ</p><h2>Code minh họa</h2><pre>import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.manifold import TSNE
+X,y = load_iris(return_X_y=True)
+X = StandardScaler().fit_transform(X)  # Đây là lab visualization, không test model.
+pca = PCA(n_components=2).fit(X)
+Z = pca.transform(X)
+print(&quot;PCA shape:&quot;,Z.shape)
+print(&quot;Explained variance:&quot;,pca.explained_variance_ratio_.round(4).tolist())
+T = TSNE(n_components=2,perplexity=20,max_iter=250,
+         random_state=42,init=&quot;pca&quot;,learning_rate=&quot;auto&quot;).fit_transform(X)
+print(&quot;t-SNE shape:&quot;,T.shape,&quot;finite:&quot;,bool(np.isfinite(T).all()))
+# UMAP là thư viện riêng; code đầy đủ nằm trong nguồn của bài.
+# Phép chiếu đẹp không chứng minh một classifier tổng quát tốt.
+</pre><h3>Kết quả</h3><pre>PCA shape: (150, 2)
+Explained variance: [0.7296, 0.2285]
+t-SNE shape: (150, 2) finite: True
+</pre><p class="note">90% variance không đồng nghĩa90% thông tin phân loại.</p><h3>Code bổ sung: <a href="umap_demo.py">umap_demo.py</a></h3><p>umap-learn. Chạy khi có checkpoint/thư viện đã cấp; không đồng nhất với fixture nhỏ ở trên.</p><h2>Bài trên lớp</h2><h3>Bài 1</h3><p>Center bằng mean vector cấp sẵn, rồi dot với từng component.</p><pre>{
+  &quot;X&quot;: [
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      3
+    ]
+  ],
+  &quot;mean&quot;: [
+    2,
+    2
+  ],
+  &quot;components&quot;: [
+    [
+      0.7071067811865475,
+      0.7071067811865475
+    ]
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  [
+    -1.414213562373095
+  ],
+  [
+    1.414213562373095
+  ]
+]</pre></details><h3>Bài 2</h3><p>Trả explained_variance_ratio cho eigenvalues nonnegative; tổng bằng 0 thì ratios bằng 0.</p><pre>{
+  &quot;eigenvalues&quot;: [
+    3,
+    1,
+    0
+  ]
+}</pre><details><summary>Đáp án</summary><pre>[
+  0.75,
+  0.25,
+  0.0
+]</pre></details><h2>Bài tập về nhà</h2><table><tr><th>Bài</th><th>Yêu cầu</th><th>Tài liệu</th></tr><tr><td>Bài 1</td><td>Center bằng mean vector cấp sẵn, rồi dot với từng component.</td><td><a href="BTVN_01.txt">Đề bài</a> · <a href="BTVN_01_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 2</td><td>Trả explained_variance_ratio cho eigenvalues nonnegative; tổng bằng 0 thì ratios bằng 0.</td><td><a href="BTVN_02.txt">Đề bài</a> · <a href="BTVN_02_starter.py">Code khởi đầu</a></td></tr><tr><td>Bài 3</td><td>Classifier trước/sau PCA</td><td><a href="BTVN_03.txt">Đề bài</a> · <a href="BTVN_03_starter.py">Code khởi đầu</a></td></tr></table><h2>Tham khảo</h2><p>NT 8.2; KHTN chương 7; UMAP Basic Usage.</p><p>NT 9.8 phần PCA; ví dụ t-SNE trong sklearn; phần Iris trong UMAP Basic Usage.</p></main><script>document.querySelectorAll("pre").forEach(function(p){var t=p.textContent;if(/^\s*[\[{]/.test(t))p.textContent=t.replace(/\[([^\[\]{}]*)\]/g,function(m,i){return i.indexOf("\n")<0?m:"["+i.replace(/\n\s*/g," ").trim()+"]";});});</script><nav class="legacy-footer" aria-label="Bài liền kề"><a href="../../phase-2/buoi-2-7/BAI_HOC.html">← SVM</a><a href="../../phase-2/buoi-2-9/BAI_HOC.html">K-Means và các phương pháp clustering →</a></nav></body></html>

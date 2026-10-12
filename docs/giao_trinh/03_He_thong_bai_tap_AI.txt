@@ -1,0 +1,386 @@
+CẬP NHẬT BÀN GIAO 01/10/2026
+Bộ 55 bài thuộc 7 phase đã được soạn thành tài liệu từng buổi. Mở ../START_HERE.html để xem slide, code, hai bài trên lớp và ba BTVN của từng bài. Bài nguồn trong file này vẫn dùng để học thêm. Tạo contest trên LQDOJ là bước sau; chưa triển khai trong bàn giao này.
+
+GIÁO TRÌNH AI — BẢN SỬA THEO NỘI DUNG VÀ BÀI TẬP CÓ SẴN
+Ngày 01/10/2026.
+
+Chia 7 phase để sắp thứ tự học. Syllabus không quy định phải có 7 phase; đây là cách nhóm kiến thức, không phải 7 cấp thi hoặc chứng nhận trình độ. Số bài mỗi phase theo nội dung cần học, không ép bằng nhau.
+Không ấn định tổng số buổi, giờ, số bài tập hay điểm qua phase. Một bài học có thể dạy trong một hoặc nhiều buổi, tùy kiến thức đầu vào và thời gian thực hành.
+Mỗi bài có phần học và bài tập lấy từ tài liệu/bài gốc. Bài tập trong sách, bài làm lại tutorial và bài nộp judge được ghi rõ. Không gọi một tutorial thành competition mới.
+
+Ba file:
+  01_Giao_trinh_note.txt: cần học những gì và thứ tự.
+  02_Giao_trinh_tung_buoi.txt: nội dung dạy của từng bài, bài tập đi kèm; không lịch ép 100 buổi.
+  03_He_thong_bai_tap_AI.txt: chỉ dẫn mở đúng nguồn bài tập và đầu ra theo bài gốc.
+
+TÀI LIỆU LOCAL
+  Gốc: C:\Users\Admin\Desktop\Giáo trình dạy AI
+  NT = Tài liệu\ai_olympiad_260909_221030.pdf, tài liệu nền tảng 64 trang.
+  AIO = Tài liệu\AIO_Exercise_Book_v2025.pdf, sách bài tập có phần lời giải.
+  KHTN = Tài liệu\AI-CKHTN.pdf, ghi chép đội tuyển.
+  Syllabus = Tài liệu\Syllabus.pdf, IOAI 2026.
+  Bank = Ngân hàng đề\Ngan_hang_bai_tap_AI_V2.xlsx.
+  Các số như NT9.5, AIO37.2 là chương/mục của tài liệu, không số trang PDF. Các bài nâng cao có yêu cầu dữ liệu/model/GPU ghi trong nguồn; cần kiểm môi trường trước buổi thực hành, không coi mọi bài đều chạy được trên máy yếu.
+  Link slide đầu: https://docs.google.com/presentation/d/1gTYDtpGAEriMPos_6Eyfg1sXmYlNaERFBamptQn55uk/edit
+
+BÀI TẬP THEO TỪNG BÀI HỌC
+  [Sách]: đề/câu hỏi có sẵn trong PDF, có phần lời giải hoặc chương trình hướng dẫn theo nguồn.
+  [Tutorial]: làm lại ví dụ code/dữ liệu nguồn; là bài thực hành có hướng dẫn, không judge riêng.
+  [LQDOJ]: đề cần dự đoán/nộp theo format gốc. Có notebook không có nghĩa hidden scorer đã được kiểm thử trong lượt này.
+  Bài nguồn dưới đây là tham khảo bổ sung. Bộ tài liệu từng buổi hiện có ba BTVN tự soạn cho mỗi bài; đề, sample, code và dữ liệu nằm trong thư mục buổi tương ứng.
+
+
+[Bài 0.1] Python cơ bản
+  Làm bài: AIO 1.2 Câu hỏi tự luận và 1.3 Câu hỏi trắc nghiệm; làm các bài Python/activation theo đề sách.
+  Mở nguồn: AIO 1.1. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Code và đáp án; giải thích được input, output của hàm.
+
+[Bài 0.2] Cấu trúc dữ liệu và thao tác tệp
+  Làm bài: AIO 2.2: Character Counting, Word Counting, Getting Max Over Kernel; AIO 3.1 phần class; NT 9.3 yêu cầu ghi CSV.
+  Mở nguồn: AIO chương 2–3; NT 3.8. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Các hàm theo đề sách và CSV không có cột index thừa.
+
+[Bài 0.3] NumPy
+  Làm bài: NT 9.2 “NumPy và mảng nhiều chiều”; có dữ liệu x=np.arange(1,61).reshape(3,4,5) và assert tự kiểm tra.
+  Mở nguồn: NT chương 2; AIO 6.1. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Notebook chạy qua các assert của bài gốc.
+
+[Bài 0.4] Pandas
+  Làm bài: NT 9.3 “Làm sạch và tổng hợp dữ liệu bằng pandas”, dùng đúng hai bảng students/classes cấp trong tài liệu.
+  Mở nguồn: NT chương 3; AIO 11.2. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: students_clean, active_students, class_summary, students_full và CSV theo đề.
+
+[Bài 0.5] Matplotlib và Seaborn
+  Làm bài: NT 9.4 “Vẽ dữ liệu bằng Matplotlib”; AIO 11.3 phần phân tích IMDB Movie Dataset.
+  Mở nguồn: NT chương 4; AIO 11.3. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: student_scores.png đúng yêu cầu; các biểu đồ IMDB có giải thích.
+
+[Bài 1.1] Học máy và quy trình làm bài
+  Làm bài: NT 9.6 “So sánh mô hình classification”: làm phần đọc dữ liệu và xác định X,y trước, hoàn thành phần model sau Phase 2.
+  Mở nguồn: NT chương 1, 7; KHTN chương 1. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Shape, target/label map, sơ đồ train→predict→evaluate.
+
+[Bài 1.2] Generalization, underfitting và overfitting
+  Làm bài: Chạy notebook generalization được slide trang 10 dẫn tới; NT 9.5 yêu cầu so metric train/test.
+  Mở nguồn: Slide buổi 1, trang 3–13; KHTN 3.4. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Bảng train/validation score và nhận xét, không chọn model bằng điểm train.
+
+[Bài 1.3] Chia dữ liệu và cross-validation
+  Làm bài: NT 9.5 dùng KFold; NT 9.6 dùng Stratified CV; làm đúng split và seed đã ghi trong hai đề.
+  Mở nguồn: Slide trang 2,11,14–16; NT 7.3–7.4. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Chỉ số split/folds và bảng CV; giải thích vì sao test không dùng để chọn.
+
+[Bài 1.4] Data leakage và Pipeline
+  Làm bài: NT 9.7 “Pipeline với giá trị thiếu và cột phân loại”, có dữ liệu tạo sẵn và tình huống category mới.
+  Mở nguồn: NT chương 5–6; tài liệu sklearn Common Pitfalls. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Pipeline chạy CV và dự đoán khu_vuc='Tay' theo bài gốc.
+
+[Bài 1.5] Đánh giá classification
+  Làm bài: NT 9.6 yêu cầu các metrics/confusion matrix/ROC; NT 9.10 trắc nghiệm; bài aidiabetes để luyện F1 sau khi biết model.
+  Mở nguồn: Slide trang 17–21; KHTN 2.4–2.7; NT 7. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Metrics và ROC đúng positive class; output.csv nếu làm LQDOJ.
+
+[Bài 1.6] Đánh giá regression
+  Làm bài: NT 9.5 “So sánh mô hình regression”; dùng load_diabetes() theo đề, đây là hồi quy khác bài aidiabetes phân loại trên LQDOJ.
+  Mở nguồn: Slide trang 22; KHTN 1.1.3; NT 9.5. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Bảng MAE/RMSE/R2 và kết quả test sau khi chọn bằng CV.
+
+[Bài 1.7] Đại số tuyến tính dùng trong AI
+  Làm bài: AIO 6.2 Câu hỏi tự luận, 6.3 Câu hỏi trắc nghiệm.
+  Mở nguồn: AIO 6.1; NT 2; KHTN phần PCA. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Lời giải các phép tính và code NumPy theo câu hỏi sách.
+
+[Bài 1.8] Xác suất và thống kê dùng trong AI
+  Làm bài: AIO 7.2 Câu hỏi tự luận, 7.3 và 8.2 Câu hỏi trắc nghiệm.
+  Mở nguồn: AIO chương 7–8. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Đáp án có phép tính; giải thích xác suất/độ tương đồng theo bài.
+
+[Bài 1.9] Đạo hàm và gradient descent
+  Làm bài: AIO 21.4 thực hành huấn luyện Linear Regression và 21.6 trắc nghiệm; trở lại khi học mạng neural.
+  Mở nguồn: KHTN 3.1–3.2; AIO 21.2–21.4. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Loss theo bước và cách cập nhật tham số từ bài sách.
+
+[Bài 2.1] Linear Regression
+  Làm bài: AIO 22.3 “Linear Regression cho bài toán advertising”; NT 9.5 phần Linear Regression.
+  Mở nguồn: AIO chương 21–22; KHTN 3.1. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Notebook bài advertising và kết quả baseline regression.
+
+[Bài 2.2] Logistic Regression và Softmax
+  Làm bài: AIO 26.2 Thực hành, 26.3 trắc nghiệm; AIO 27.4 Credit Card Fraud Detection hoặc 27.5 Twitter Sentiment Analysis.
+  Mở nguồn: AIO chương 26–27; KHTN 3.6–3.7. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Model/probabilities và confusion matrix đúng loại bài.
+
+[Bài 2.3] Regularization L1/L2
+  Làm bài: NT 9.5 phần Ridge; làm ví dụ Ridge/Lasso trong KHTN 3.5.
+  Mở nguồn: KHTN 3.5; NT phụ lục A. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Hệ số và metric của mô hình regularized so với Linear Regression.
+
+[Bài 2.4] K-Nearest Neighbors
+  Làm bài: AIO 12.2 thực hành thuật toán KNN, 12.4 trắc nghiệm; NT 9.6 phần KNN.
+  Mở nguồn: AIO 12.2. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: KNN với pipeline scaling; kết quả CV và tham số k.
+
+[Bài 2.5] Decision Trees
+  Làm bài: AIO 13.2/13.3 thực hành, 13.4 trắc nghiệm; NT 9.5/9.6 phần cây.
+  Mở nguồn: AIO 13.2–13.3; KHTN chương 5. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Cây và predictions; so train/validation, giải thích depth.
+
+[Bài 2.6] Bagging, Random Forest và boosting
+  Làm bài: AIO 16.3 Housing, 16.4 trắc nghiệm; 17.2–17.4 Gradient Boosting; NT 9.5 phần Random Forest.
+  Mở nguồn: AIO chương 16–18; KHTN chương 6. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Bảng model/metric; không bắt dùng thư viện ngoài đề thi.
+
+[Bài 2.7] SVM
+  Làm bài: NT 9.6 phần SVC(probability=True), trong cùng pipeline/CV của bài.
+  Mở nguồn: KHTN chương 4; NT 7.2 và phụ lục A. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Kết quả SVC và ROC, không nhầm classes_ khi lấy probability.
+
+[Bài 2.8] PCA, t-SNE và UMAP
+  Làm bài: NT 9.8 phần PCA; ví dụ t-SNE trong sklearn; phần Iris trong UMAP Basic Usage.
+  Mở nguồn: NT 8.2; KHTN chương 7; UMAP Basic Usage. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Explained variance/projection và hình 2D, không coi hình đẹp là bằng chứng model tốt.
+
+[Bài 2.9] K-Means và các phương pháp clustering
+  Làm bài: NT 9.8 phần KMeans/DBSCAN; sklearn “Comparing different clustering algorithms on toy datasets” có code và dữ liệu sẵn.
+  Mở nguồn: AIO 12.3; NT 8.3–8.5. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Cluster plots và metrics theo bài; không đưa nhãn thật vào fit.
+
+[Bài 2.10] Feature engineering, tuning và phân tích lỗi
+  Làm bài: NT 9.5 phần nâng cao GridSearchCV; 9.7 Pipeline; 9.9 Mô phỏng submission. Sau đó luyện aicalhouse/aititanic bằng data của đề.
+  Mở nguồn: KHTN 1.3–1.7,2.9; NT phụ lục A. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Pipeline, bảng CV/trials và file predictions đúng mẫu.
+
+[Bài 3.1] PyTorch tensors và autograd
+  Làm bài: Làm code trong hai tutorial trên; không thay tensor shape hoặc bỏ requires_grad mà không hiểu tác dụng.
+  Mở nguồn: PyTorch Learn the Basics: Tensors, Automatic Differentiation. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Code chạy, giải thích tensor/gradient trong chính ví dụ tutorial.
+
+[Bài 3.2] Dataset và DataLoader
+  Làm bài: Thực hành FashionMNIST của tutorial và xem batch theo hướng dẫn.
+  Mở nguồn: PyTorch Learn the Basics: Datasets & DataLoaders, Transforms. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Dataset/DataLoader và batch images/labels.
+
+[Bài 3.3] Perceptron, MLP và backpropagation
+  Làm bài: AIO 28.2 Thực hành,28.3 trắc nghiệm; phần Build Model của PyTorch Learn the Basics.
+  Mở nguồn: AIO chương 28; KHTN chương 8; PyTorch Autograd. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Model và tính/đọc gradient theo bài sách/tutorial.
+
+[Bài 3.4] Activation, loss và output head
+  Làm bài: AIO 1.2/1.3 phần activation;27.6 và28.3 trắc nghiệm; loss trong tutorial PyTorch.
+  Mở nguồn: AIO 1,26–28; PyTorch Optimization. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Giải thích vì sao loss/output/dtype phải khớp task.
+
+[Bài 3.5] Training loop và inference
+  Làm bài: Hoàn thành training loop FashionMNIST và phần save/load của tutorial.
+  Mở nguồn: PyTorch Learn the Basics: Optimization, Save & Load Model. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Model reload được và inference theo hướng dẫn.
+
+[Bài 3.6] Optimizers, learning rate và initialization
+  Làm bài: AIO 31.2 “Bài Tập và Gợi Ý”;31.1/31.2 có lý thuyết và bài thực hành optimizer/initializer.
+  Mở nguồn: AIO 31.1; KHTN 3.2,9. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Loss/gradient logs và đáp án các bài tương ứng trong sách.
+
+[Bài 3.7] Dropout, weight decay, early stopping và normalization
+  Làm bài: AIO 31.2 phần liên quan và32.2 chương trình gradient vanishing;32.3 trắc nghiệm; đọc/check checkpoint trong tutorial PyTorch.
+  Mở nguồn: KHTN chương 9; AIO chương 31–32. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Curves/checkpoint và giải thích cơ chế đang áp dụng.
+
+[Bài 3.8] Embeddings, pooling, attention và Transformers
+  Làm bài: AIO 37.1 các phần thực hành Transformer;37.4 trắc nghiệm, gồm text/image Transformer.
+  Mở nguồn: KHTN chương 19–20; AIO 37.1–37.3. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Code/shape và các câu hỏi theo sách; chưa phải tự train LM lớn.
+
+[Bài 3.9] Autoencoders
+  Làm bài: AIO 51.3 câu hỏi về VAE; dùng ví dụ autoencoder của KHTN15 cho reconstruction. VAE là mở rộng, không gọi đồng nhất với autoencoder thường.
+  Mở nguồn: KHTN chương 15; AIO 51.1 về VAE. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Reconstruction/latent outputs theo ví dụ sách và đáp án câu hỏi.
+
+[Bài 3.10] Fine-tuning đầy đủ và PEFT
+  Làm bài: AIO 58.3 trắc nghiệm;59.2 PEFT for Multiple-choice QA và59.3 trắc nghiệm.
+  Mở nguồn: AIO 58.1–58.2 và59.2. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Model/adapter và inference theo chương; thực hành cần GPU như nguồn.
+
+[Bài 4.1] Convolution và pooling
+  Làm bài: AIO 34.2 Thực hành và34.3 trắc nghiệm.
+  Mở nguồn: AIO 34.1; KHTN chương 12. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Feature maps/output shapes và đáp án theo sách.
+
+[Bài 4.2] CNN và image classification
+  Làm bài: AIO 35.2 Bài tập: phần lập trình và trắc nghiệm.
+  Mở nguồn: AIO chương 34–35. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Notebook model ảnh và predictions trên data cấp trong chương.
+
+[Bài 4.3] Vision encoders và transfer learning
+  Làm bài: AIO 40.2 Bài Tập và Gợi Ý;37.3 thực hành Vision Transformer.
+  Mở nguồn: AIO 35,37.3,40; PyTorch Transfer Learning tutorial. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Model, trainable parameters và kết quả theo nguồn.
+
+[Bài 4.4] Image augmentation
+  Làm bài: Chạy transforms trong tutorial Transfer Learning; làm phần augmentation của bài tập AIO40.2 theo chương.
+  Mở nguồn: PyTorch transfer learning/data transforms; AIO40. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Ảnh sau transform và đúng đồng bộ annotations nếu có.
+
+[Bài 4.5] Object detection
+  Làm bài: AIO41.2 các bài classification+bbox,41.3 trắc nghiệm; tutorial Penn-Fudan có data và code tải sẵn.
+  Mở nguồn: AIO41–42; PyTorch TorchVision Object Detection Finetuning tutorial. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Boxes/masks từ model theo tutorial; metric đúng nguồn.
+
+[Bài 4.6] Image segmentation và U-Net
+  Làm bài: AIO40.2 phần segmentation; ioai25radarpre baseline.ipynb và bài LQDOJ cùng tên.
+  Mở nguồn: AIO40; IOAI Radar/Weather baseline. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Mask prediction và kết quả validation; giữ đúng label map/scorer.
+
+[Bài 4.7] Self-supervised vision
+  Làm bài: Chạy ví dụ lấy embeddings trong trang DINOv2; đây là bài thực hành theo code tài liệu, không một competition mới.
+  Mở nguồn: Tài liệu Hugging Face DINOv2. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Embeddings/shape theo ví dụ; giải thích supervision của model.
+
+[Bài 4.8] CLIP và image-text retrieval
+  Làm bài: ioai25restroom: chạy notebook baseline và làm bài bằng training/validation/test đính kèm.
+  Mở nguồn: IOAI Restroom baseline; syllabus vision-text encoders. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: test_answer.csv theo đề, kèm kết quả validation.
+
+[Bài 4.9] GAN
+  Làm bài: AIO50.2 chương trình DCGAN-BERTs và50.3 trắc nghiệm; tutorial DCGAN là nhánh PyTorch có sẵn.
+  Mở nguồn: AIO50; PyTorch DCGAN tutorial. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Samples và training logs theo nguồn, không đặt leaderboard tự nghĩ.
+
+[Bài 4.10] Diffusion
+  Làm bài: AIO52.2 Image Inpainting using DDPM,52.3 trắc nghiệm;54.2 chương trình tô màu ảnh nếu học tiếp.
+  Mở nguồn: AIO52 và54. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Ảnh inpainting/colorization theo code của sách; cần tài nguyên nguồn yêu cầu.
+
+[Bài 5.1] Text processing và baseline NLP
+  Làm bài: AIO27.5 Twitter Sentiment Analysis và27.6 trắc nghiệm; bank K04 Disaster Tweets để luyện thêm.
+  Mở nguồn: AIO14,27.5; KHTN19. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Text classifier và labels theo dữ liệu của nguồn.
+
+[Bài 5.2] Word embeddings và sentence embeddings
+  Làm bài: ioai25chameleon: notebook sentence-transformers, validation queries và test queries được cấp.
+  Mở nguồn: KHTN19; IOAI Chameleon baseline. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Top-10 options theo đề và score validation.
+
+[Bài 5.3] BERT và pretrained text encoders
+  Làm bài: AIO37.2 Text classification using BERT và37.4 câu hỏi liên quan.
+  Mở nguồn: AIO37.2. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: BERT classifier và predictions trên data chương.
+
+[Bài 5.4] Sequence labeling và phân tách từ
+  Làm bài: ioai25wordseg: notebook/data có sẵn; AIO43.2 POS hoặc43.3 NER nếu học mở rộng.
+  Mở nguồn: AIO36,43; IOAI WordSeg baseline. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: JSON arrays đúng độ dài và span F1 theo WordSeg.
+
+[Bài 5.5] Language modeling
+  Làm bài: AIO56.2 câu hỏi trắc nghiệm; thực hành trong AIO48 để nối language modeling với text generation.
+  Mở nguồn: AIO56; AIO48 sinh thơ. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Đáp án và generated text theo bài sách; không yêu cầu tự pretrain model lớn.
+
+[Bài 5.6] Encoder-decoder và text generation
+  Làm bài: AIO46.2 Transformer-based Translation và46.3 trắc nghiệm; AIO47 Anh–Việt là bài tiếp theo có sẵn.
+  Mở nguồn: AIO46. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Translation outputs và evaluation theo chương.
+
+[Bài 5.7] Pretrained LMs, prompting và VLM
+  Làm bài: AIO57.3 câu hỏi về prompting; AIO39.2 chương trình Visual Question Answering và39.3 trắc nghiệm.
+  Mở nguồn: AIO57; AIO39 VQA; syllabus LMs. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Đáp án và VQA outputs theo chương; không coi CLIP retrieval là VQA.
+
+[Bài 6.1] Audio data và spectrograms
+  Làm bài: Đọc/chạy SpectrogramDataset trong ioai25speech_baseline.ipynb; xem các samples validation được cấp.
+  Mở nguồn: IOAI Synthetic Speech baseline; tài liệu HuBERT. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Tensor shapes, label mapping và pipeline đọc dữ liệu.
+
+[Bài 6.2] Audio classification
+  Làm bài: ioai25speech: làm baseline từ notebook, dùng validation_set.zip và val_answer.csv để chấm.
+  Mở nguồn: IOAI Synthetic Speech baseline. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: test_answer.csv đúng filename order; macro F1 validation.
+
+[Bài 6.3] Pretrained audio encoders và ASR
+  Làm bài: Chạy ví dụ audio/ASR trong trang HuBERT và notebook LibriSpeech của repo Whisper, dùng đúng dữ liệu mẫu được nguồn cung cấp.
+  Mở nguồn: Hugging Face HuBERT; repo Whisper và notebook LibriSpeech. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Transcript/encoder outputs; WER theo ground truth và cách chấm trong notebook.
+
+[Bài 6.4] Audio-language và multimodal
+  Làm bài: Phần Inference của Qwen2Audio có audio mẫu tiếng kính vỡ và code sinh mô tả; Voxtral có ví dụ Transcription/Audio Understanding. Chạy hoặc đọc code theo nguồn trên môi trường đủ tài nguyên; AIO39.2/39.3 cho bài image-text.
+  Mở nguồn: Hugging Face Qwen2Audio/Voxtral; AIO39 VQA. (đường dẫn sách và tutorial ở đầu/cuối file).
+  Làm xong có: Output theo từng ví dụ, giải thích input/processor/model; đây là thực hành tài liệu, không đề có leaderboard/hidden scorer.
+
+BÀI LQDOJ DÙNG ĐỂ LUYỆN, GIỮ ĐÚNG ĐỀ GỐC
+  Iris — đọc dữ liệu, classification cơ bản: https://lqdoj.edu.vn/problem/aiiris
+    Accuracy; output.csv có Id,Species theo sample. Dùng files của chính đề.
+  Wine — scaling/kNN/SVM/classification: https://lqdoj.edu.vn/problem/aiwine
+    Accuracy; dùng class và IDs theo sample, không lẫn labels bản sklearn.
+  Mushroom — categorical/tree: https://lqdoj.edu.vn/problem/aimushroom
+    Accuracy; 22 categorical features; dùng label map của đề.
+  Titanic — mixed data/pipeline: https://lqdoj.edu.vn/problem/aititanic
+    ROC AUC; nộp xác suất Survived. Khác Kaggle Titanic chấm Accuracy và nộp nhãn.
+  Diabetes — F1/threshold: https://lqdoj.edu.vn/problem/aidiabetes
+    F1; output.csv với Outcome. Không nhầm với load_diabetes() regression trong NT9.5.
+  Glass — multiclass/macro-F1: https://lqdoj.edu.vn/problem/aiglass
+    Type; lớp4 không có mẫu trong dữ liệu; theo sample file.
+  Wine Quality — regression: https://lqdoj.edu.vn/problem/aiwinequality
+    RMSE và cách quy đổi điểm trong đề; dự đoán quality số thực.
+  California — regression/feature engineering: https://lqdoj.edu.vn/problem/aicalhouse
+    RMSE; median_house_value USD. Bản LQDOJ khác features/đơn vị của sklearn California.
+  Antique — mở rộng semi-supervised: https://lqdoj.edu.vn/problem/ioai25antique
+    Accuracy; 0 là unlabeled, dự đoán -1/+1. Có notebook baseline và data.
+  Restroom — image retrieval: https://lqdoj.edu.vn/problem/ioai25restroom
+    Precision@1; tìm ảnh khác giới cùng location; notebook/data có trong đề.
+  WordSeg — sequence labeling: https://lqdoj.edu.vn/problem/ioai25wordseg
+    Word-span F1; JSON nhãn0/1 theo ký tự; giữ độ dài và đủ keys.
+  Chameleon — embeddings/ranking: https://lqdoj.edu.vn/problem/ioai25chameleon
+    Hits@10/nDCG@10 theo công thức đề; notebook,icons,descriptions,queries có sẵn.
+  Speech — audio classification: https://lqdoj.edu.vn/problem/ioai25speech
+    Macro F1; input spectrogram tensors; train tải nguồn trong đề, validation/test đính kèm.
+  Radar Practice — binary segmentation: https://lqdoj.edu.vn/problem/ioai25radarpre
+    Weighted pixel accuracy; labels0/1, weights background1/object5000.
+  Radar — semantic segmentation: https://lqdoj.edu.vn/problem/ioai25radar
+    Labels{-1,0,1,2,3}, weights background1/object50; data gốc tải theo repo trong đề.
+  Weather — bài ảnh nhiều kênh nâng cao: https://lqdoj.edu.vn/problem/ioai25weather
+    MeanDice và image-level rain accuracy theo đề; baseline U-Net; nguồn data/model có giới hạn riêng.
+  Form/header/thứ tự dòng/ZIP/NPZ lấy từ đề và sample của từng bài, không dùng một mẫu chung.
+
+KHI NÀO DÙNG NGÂN HÀNG V2
+  Các sheets 06_Bai_nho,03_Giao_an,04_De_va_cham giúp tìm thêm bài theo model/metric.
+  Giữ ID K/N/R/D cũ của bank để tra nguồn; không gán chúng thành các bài LQDOJ đã triển khai.
+  K01 Titanic, K03 Digit Recognizer, K04 Disaster Tweets, K09 TGS Salt, K10 Wheat là các nguồn luyện tiếp được bank dẫn. Chưa kiểm lại quyền nộp/data toàn bộ các bài trong lần sửa này; không bắt lớp đi theo cả bank như một giáo trình đã sẵn sàng.
+
+PHẦN CẦN PHÂN BIỆT
+  Có bài tập sách/tutorial cụ thể: có thể mở nguồn và làm theo phần được dẫn.
+  Có đề LQDOJ/notebook: dùng data/format gốc; quyền tải và môi trường vẫn cần kiểm trước lớp.
+  Chưa có bài chấm riêng cho mọi tên thuật toán: không tự đặt judge giả. SSL/audio-language có bài thực hành tutorial, không cùng mức kiểm chứng với một competition có hidden labels.
+  Bản sửa này không tạo contest/upload/submit, không hứa mọi notebook bên ngoài chạy nguyên trạng trên mọi phiên bản thư viện.
+
+TUTORIAL/NOTEBOOK ĐƯỢC DẪN
+  PyTorch Learn the Basics (Tensors, DataLoader, Autograd, Build Model, Optimization, Save/Load):
+    https://docs.pytorch.org/tutorials/beginner/basics/intro.html
+  Sklearn Common Pitfalls (pipeline/leakage):
+    https://scikit-learn.org/stable/common_pitfalls.html
+  Clustering comparison, có code/dữ liệu mẫu:
+    https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html
+  t-SNE, có ví dụ và code:
+    https://scikit-learn.org/stable/auto_examples/manifold/plot_t_sne_perplexity.html
+  UMAP Basic Usage, ví dụ Iris; bản source đã đọc:
+    https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+    https://raw.githubusercontent.com/lmcinnes/umap/master/doc/basic_usage.rst
+  DINOv2, ví dụ lấy embeddings:
+    https://huggingface.co/docs/transformers/model_doc/dinov2
+  PyTorch Transfer Learning:
+    https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
+  TorchVision Detection, dữ liệu Penn-Fudan và code:
+    https://docs.pytorch.org/tutorials/intermediate/torchvision_tutorial.html
+  DCGAN tutorial:
+    https://docs.pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+  HuBERT:
+    https://huggingface.co/docs/transformers/model_doc/hubert
+  Whisper LibriSpeech notebook:
+    https://github.com/openai/whisper/blob/main/notebooks/LibriSpeech.ipynb
+  Qwen2Audio, ví dụ Inference có audio mẫu:
+    https://huggingface.co/docs/transformers/model_doc/qwen2_audio
+  Voxtral, ví dụ Transcription/Audio Understanding:
+    https://huggingface.co/docs/transformers/model_doc/voxtral
+
+NGUỒN PHẠM VI THI
+  https://ioai-official.org/syllabus/
+  https://ioai-official.org/republic-of-kazakhstan/2026-contest-rules/
+  Dùng syllabus để biết nội dung; dùng rules/task cụ thể để biết package, model, API và output được phép. Không suy việc được dùng API trong thi từ việc syllabus có mục pretrained LMs/API.

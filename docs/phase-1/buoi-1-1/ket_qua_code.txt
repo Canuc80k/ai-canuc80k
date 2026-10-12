@@ -1,0 +1,4 @@
+Train shape: (4, 2)
+Target: [0 0 0 1]
+Dự đoán hai mẫu mới: [0 0]
+Baseline dùng nhãn train, không biết đáp án của mẫu mới.

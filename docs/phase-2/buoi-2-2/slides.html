@@ -1,0 +1,61 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Logistic Regression và Softmax</title><link rel="icon" href="../../ui/favicon.svg"><link rel="stylesheet" href="../../ui/slides.css"><body><div class="deck"><section class="slide active"><small>Buổi 2.2</small><h1>Buổi 2.2: Logistic Regression và Softmax</h1><p>Một số bất kỳ từ linear layer chuyển thành probability ra sao?</p></section><section class="slide"><small>Buổi 2.2</small><h1>Ý tưởng chính</h1><p>sigmoid(z)=1/(1+exp(-z))</p><ul><li>Sigmoid cho binary probability; softmax tạo phân bố qua nhiều classes.</li><li>Logit là số trước activation; probability sau activation.</li><li>Decision threshold là lựa chọn sau khi học, theo metric/chi phí.</li></ul></section><section class="slide"><small>Buổi 2.2</small><h1>Ví dụ</h1><pre>{
+  &quot;logits&quot;: [
+    0,
+    1.0986122886681098,
+    1000,
+    -1000
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.2</small><h1>Đáp án ví dụ</h1><pre>[
+  0.5,
+  0.75,
+  1,
+  0
+]</pre></section><section class="slide"><small>Buổi 2.2</small><h1>Code minh họa</h1><pre>import numpy as np
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+
+X = np.array([[-2],[-1],[1],[2]],dtype=float)
+y = np.array([0,0,1,1])
+model = make_pipeline(StandardScaler(),LogisticRegression(random_state=42))
+model.fit(X,y)
+new = np.array([[-1.5],[0],[1.5]])
+print(&quot;classes:&quot;,model[-1].classes_.tolist())
+print(&quot;P(y=1):&quot;,model.predict_proba(new)[:,1].round(4).tolist())
+print(&quot;predict:&quot;,model.predict(new).tolist())
+# Mô hình học logits; threshold là quyết định sau đó.
+assert model.predict(new)[0]==0 and model.predict(new)[2]==1</pre></section><section class="slide"><small>Buổi 2.2</small><h1>Kết quả</h1><pre>classes: [0, 1]
+P(y=1): [0.2796, 0.5, 0.7204]
+predict: [0, 1, 1]</pre></section><section class="slide"><small>Buổi 2.2</small><h1>Điểm dễ nhầm</h1><ul><li>predict_proba cột1 phải khớp label trong classes_, không đoán ý nghĩa từ vị trí.</li><li>So probability và label ở x=0; thay threshold mà không fit lại model.</li></ul></section><section class="slide"><small>Buổi 2.2</small><h1>Bài trên lớp 1</h1><p>Tính sigmoid ổn định cho mọi logit; không exp overflow.</p><pre>{
+  &quot;logits&quot;: [
+    0,
+    1.0986122886681098,
+    1000,
+    -1000
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.2</small><h1>Bài trên lớp 2</h1><p>Stable softmax theo từng hàng: trừ max trước exp.</p><pre>{
+  &quot;rows&quot;: [
+    [
+      1000,
+      1001
+    ],
+    [
+      0,
+      0
+    ]
+  ]
+}</pre></section><section class="slide"><small>Buổi 2.2</small><h1>Bài tập về nhà 1</h1><p>Tính sigmoid ổn định cho mọi logit; không exp overflow.</p><ul><li>Input: logits: list số trong[-1000,1000].</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_01.txt</li></ul></section><section class="slide"><small>Buổi 2.2</small><h1>Bài tập về nhà 2</h1><p>Stable softmax theo từng hàng: trừ max trước exp.</p><ul><li>Input: rows: ma trận số; mỗi hàng không rỗng; |logit|&lt;=1000.</li><li>Output JSON theo đề; có sample đầy đủ.</li><li>BTVN_02.txt</li></ul></section><section class="slide"><small>Buổi 2.2</small><h1>Bài tập về nhà 3</h1><p>Phân loại bằng probabilities</p><ul><li>Data: prob</li><li>Metric: Mean log loss; score=exp(-mean log loss).</li><li>BTVN_03.txt</li></ul></section><section class="slide"><small>Buổi 2.2</small><h1>Tổng kết</h1><p>So probability và label ở x=0; thay threshold mà không fit lại model.</p><ul><li>AIO chương 26–27; KHTN 3.6–3.7.</li><li>AIO 26.2 Thực hành, 26.3 trắc nghiệm; AIO 27.4 Credit Card Fraud Detection hoặc 27.5 Twitter Sentiment Analysis.</li></ul></section><div class="progress"><i id="bar"></i></div></div><div class="bar"><button id="prev" onclick="move(-1)" aria-label="Slide trước">&larr;</button><span class="count" id="count"></span><button id="next" onclick="move(1)" aria-label="Slide sau">&rarr;</button></div><script>
+(function(){var t=new URLSearchParams(location.hash.slice(1)).get('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+var n=0,s=[].slice.call(document.querySelectorAll('.slide'));
+function over(el){if(el.scrollHeight>el.clientHeight+1)return true;return [].some.call(el.querySelectorAll('pre'),function(p){return p.scrollHeight>p.clientHeight+1;});}
+function fit(el){el.style.removeProperty('--pre-size');var size=1.45;while(over(el)&&size>1.0){size-=0.05;el.style.setProperty('--pre-size',size.toFixed(2)+'cqw');}}
+function show(){s.forEach(function(x,i){x.classList.toggle('active',i===n);});fit(s[n]);s[n].scrollTop=0;
+document.getElementById('count').textContent=(n+1)+' / '+s.length;document.getElementById('bar').style.width=((n+1)/s.length*100)+'%';
+document.getElementById('prev').disabled=n===0;document.getElementById('next').disabled=n===s.length-1;}
+function move(d){n=Math.max(0,Math.min(s.length-1,n+d));show();}
+document.addEventListener('keydown',function(e){if(['ArrowRight','PageDown',' '].indexOf(e.key)>=0){e.preventDefault();move(1);}if(['ArrowLeft','PageUp'].indexOf(e.key)>=0){e.preventDefault();move(-1);}if(e.key==='Home'){n=0;show();}if(e.key==='End'){n=s.length-1;show();}});
+document.querySelector('.deck').addEventListener('click',function(e){if(e.target.closest('a,pre,button'))return;var r=this.getBoundingClientRect();move(e.clientX<r.left+r.width*0.3?-1:1);});
+window.addEventListener('resize',function(){fit(s[n]);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){fit(s[n]);});
+show();
+</script></body></html>

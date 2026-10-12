@@ -1,0 +1,1127 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="496.807366pt" height="198.89pt" viewBox="0 0 496.807366 198.89" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-1-2-fits-figure_1">
+  <g id="fig-1-2-fits-patch_1">
+   <path d="M -0 198.89 
+L 496.807366 198.89 
+L 496.807366 0 
+L -0 0 
+L -0 198.89 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-1-2-fits-axes_1">
+   <g id="fig-1-2-fits-patch_2">
+    <path d="M 50.883438 158.145 
+L 184.844747 158.145 
+L 184.844747 23.345 
+L 50.883438 23.345 
+L 50.883438 158.145 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-2-fits-matplotlib.axis_1">
+    <g id="fig-1-2-fits-xtick_1">
+     <g id="fig-1-2-fits-line2d_1">
+      <defs>
+       <path id="fig-1-2-fits-m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="56.972588" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="56.972588" y="172.3175" transform="rotate(-0 56.972588 172.3175)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-xtick_2">
+     <g id="fig-1-2-fits-line2d_2">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="117.864092" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="117.864092" y="172.3175" transform="rotate(-0 117.864092 172.3175)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-xtick_3">
+     <g id="fig-1-2-fits-line2d_3">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="178.755597" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="178.755597" y="172.3175" transform="rotate(-0 178.755597 172.3175)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-text_4">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="117.864092" y="191.045" transform="rotate(-0 117.864092 191.045)">x</text>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-matplotlib.axis_2">
+    <g id="fig-1-2-fits-ytick_1">
+     <g id="fig-1-2-fits-line2d_4">
+      <defs>
+       <path id="fig-1-2-fits-m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="155.306804" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="158.893054" transform="rotate(-0 43.883438 158.893054)">−1.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_2">
+     <g id="fig-1-2-fits-line2d_5">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="133.580398" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="137.166648" transform="rotate(-0 43.883438 137.166648)">−1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_3">
+     <g id="fig-1-2-fits-line2d_6">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="111.853993" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="115.440243" transform="rotate(-0 43.883438 115.440243)">−0.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_4">
+     <g id="fig-1-2-fits-line2d_7">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="90.127588" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="93.713838" transform="rotate(-0 43.883438 93.713838)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_5">
+     <g id="fig-1-2-fits-line2d_8">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="68.401183" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_9">
+      <text style="font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="71.856808" transform="rotate(-0 43.883438 71.856808)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_6">
+     <g id="fig-1-2-fits-line2d_9">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="46.674777" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_10">
+      <text style="font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="50.130402" transform="rotate(-0 43.883438 50.130402)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_7">
+     <g id="fig-1-2-fits-line2d_10">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="50.883438" y="24.948372" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_11">
+      <text style="font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="43.883438" y="28.403997" transform="rotate(-0 43.883438 28.403997)">1.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-text_12">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.455313" y="90.745" transform="rotate(-90 14.455313 90.745)">Mức tham gia chuẩn hóa</text>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-PathCollection_1">
+    <defs>
+     <path id="fig-1-2-fits-ma0b56a7112" d="M 0 1.414214 
+C 0.375054 1.414214 0.734797 1.265203 1 1 
+C 1.265203 0.734797 1.414214 0.375054 1.414214 0 
+C 1.414214 -0.375054 1.265203 -0.734797 1 -1 
+C 0.734797 -1.265203 0.375054 -1.414214 0 -1.414214 
+C -0.375054 -1.414214 -0.734797 -1.265203 -1 -1 
+C -1.265203 -0.734797 -1.414214 -0.375054 -1.414214 0 
+C -1.414214 0.375054 -1.265203 0.734797 -1 1 
+C -0.734797 1.265203 -0.375054 1.414214 0 1.414214 
+z
+" style="stroke: currentColor; stroke-opacity: 0.28"/>
+    </defs>
+    <g clip-path="url(#fig-1-2-fits-p1573ec697c)">
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="87.518745" y="39.45499" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="172.27101" y="96.506191" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="80.028594" y="43.355784" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="78.807235" y="42.374432" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="99.583152" y="46.158434" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="85.048595" y="66.033489" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="138.621488" y="136.239446" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="70.987301" y="56.430983" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="166.12784" y="109.994985" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="161.478301" y="140.357755" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="57.316872" y="76.612583" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="122.913966" y="106.088237" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="69.985258" y="65.622367" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="88.387119" y="43.754497" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="107.743442" y="60.312" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="112.215324" y="93.210516" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="113.984888" y="70.735227" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="169.928362" y="108.400432" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="88.48651" y="55.11425" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="79.854423" y="52.932125" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="138.629371" y="152.017727" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="172.254662" y="111.465345" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="169.355273" y="108.409283" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="164.172081" y="127.52585" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="64.810018" y="76.595249" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="171.04626" y="108.553124" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="136.039033" y="124.633774" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="163.113281" y="110.42365" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="106.672047" y="66.678186" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="83.690554" y="50.300054" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="153.54287" y="126.154858" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="137.548424" y="104.494469" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="151.822078" y="136.592273" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="81.492951" y="43.118155" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="73.334347" y="74.785053" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="149.969149" y="118.804893" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="59.436103" y="77.456541" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="172.130684" y="90.213822" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="73.423994" y="58.158878" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="130.055824" y="127.02118" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="108.000527" y="59.331009" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="96.417502" y="43.08904" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="77.705691" y="61.436073" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="152.009953" y="148.791815" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="168.346144" y="107.479479" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="145.736738" y="135.059922" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="130.077075" y="87.354885" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="143.615581" y="138.984889" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="122.259071" y="105.638236" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="124.959821" y="106.885605" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="167.318208" y="132.39423" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="91.393387" y="57.243728" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="84.034465" y="29.472273" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="172.297225" y="105.767175" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="171.828174" y="111.9385" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="114.94095" y="97.415974" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="154.493742" y="125.081628" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="147.487806" y="126.390103" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="172.577072" y="100.959744" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="66.92266" y="73.015702" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="166.352874" y="112.754704" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="117.879175" y="86.01612" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="111.648699" y="83.827638" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="140.608301" y="123.434488" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="132.04899" y="142.144198" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="110.135295" y="87.259093" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="92.424492" y="51.417632" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="168.850245" y="112.558702" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="156.689801" y="142.229796" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="69.450911" y="60.47462" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="106.230507" y="54.117321" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="149.942" y="128.526585" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="164.02708" y="117.62067" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="174.155783" y="91.345942" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="86.288302" y="42.355017" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="165.570984" y="129.868381" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="141.596016" y="133.200005" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="65.278577" y="58.043378" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="82.623602" y="60.354294" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="79.952066" y="49.182269" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-line2d_11">
+    <path d="M 56.972588 90.127588 
+L 63.317995 76.154743 
+L 66.734753 69.155691 
+L 69.663402 63.666151 
+L 72.103944 59.547235 
+L 74.300431 56.2525 
+L 76.252864 53.687478 
+L 78.205297 51.491903 
+L 79.913676 49.891431 
+L 81.622055 48.603344 
+L 83.086379 47.755551 
+L 84.550704 47.149489 
+L 86.015029 46.788617 
+L 87.479354 46.674993 
+L 88.943678 46.809265 
+L 90.408003 47.190668 
+L 91.872328 47.817025 
+L 93.336653 48.684764 
+L 94.800977 49.788933 
+L 96.509356 51.367475 
+L 98.217735 53.246943 
+L 100.170168 55.744564 
+L 102.122601 58.590776 
+L 104.319088 62.173381 
+L 106.75963 66.572494 
+L 109.688279 72.337186 
+L 113.349091 80.096821 
+L 119.694498 94.225029 
+L 124.819635 105.388493 
+L 128.236393 112.286886 
+L 130.920988 117.235247 
+L 133.361529 121.285514 
+L 135.558016 124.510612 
+L 137.510449 127.008233 
+L 139.462882 129.131942 
+L 141.171261 130.666439 
+L 142.87964 131.886201 
+L 144.343965 132.673962 
+L 145.80829 133.218996 
+L 147.272614 133.518194 
+L 148.736939 133.56985 
+L 150.201264 133.373668 
+L 151.665589 132.930767 
+L 153.129913 132.243676 
+L 154.594238 131.316312 
+L 156.302617 129.937844 
+L 158.010996 128.250298 
+L 159.719375 126.266776 
+L 161.671808 123.657328 
+L 163.868295 120.316819 
+L 166.308836 116.152952 
+L 168.993432 111.099485 
+L 172.166135 104.61739 
+L 176.315055 95.584525 
+L 178.755597 90.127588 
+L 178.755597 90.127588 
+" clip-path="url(#fig-1-2-fits-p1573ec697c)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.55"/>
+   </g>
+   <g id="fig-1-2-fits-line2d_12">
+    <path d="M 56.972588 76.612583 
+L 58.192859 76.612583 
+L 58.436913 77.456541 
+L 62.097725 77.456541 
+L 62.341779 76.595249 
+L 65.026374 76.595249 
+L 65.270428 58.043378 
+L 66.002591 58.043378 
+L 66.246645 73.015702 
+L 67.955024 73.015702 
+L 68.199078 60.47462 
+L 69.663402 60.47462 
+L 69.907457 65.622367 
+L 70.395565 65.622367 
+L 70.639619 56.430983 
+L 72.103944 56.430983 
+L 72.347998 74.785053 
+L 73.324214 74.785053 
+L 73.568268 58.158878 
+L 75.520701 58.158878 
+L 75.764756 61.436073 
+L 78.205297 61.436073 
+L 78.449351 42.374432 
+L 79.181513 42.374432 
+L 79.425567 52.932125 
+L 79.669622 52.932125 
+L 79.913676 49.182269 
+L 80.15773 43.355784 
+L 80.645838 43.355784 
+L 80.889892 43.118155 
+L 81.866109 43.118155 
+L 82.110163 60.354294 
+L 83.086379 60.354294 
+L 83.330433 50.300054 
+L 83.818542 50.300054 
+L 84.062596 29.472273 
+L 84.30665 29.472273 
+L 84.550704 66.033489 
+L 85.526921 66.033489 
+L 85.770975 42.355017 
+L 86.747191 42.355017 
+L 86.991245 39.45499 
+L 87.723408 39.45499 
+L 87.967462 43.754497 
+L 88.211516 43.754497 
+L 88.45557 55.11425 
+L 89.919895 55.11425 
+L 90.163949 57.243728 
+L 91.872328 57.243728 
+L 92.116382 51.417632 
+L 94.312869 51.417632 
+L 94.556923 43.08904 
+L 97.973681 43.08904 
+L 98.217735 46.158434 
+L 102.854764 46.158434 
+L 103.098818 54.117321 
+L 106.271521 54.117321 
+L 106.515575 66.678186 
+L 107.003684 66.678186 
+L 107.247738 60.312 
+L 107.735846 60.312 
+L 107.9799 59.331009 
+L 108.956117 59.331009 
+L 109.200171 87.259093 
+L 110.664496 87.259093 
+L 110.90855 83.827638 
+L 111.884766 83.827638 
+L 112.12882 93.210516 
+L 112.860983 93.210516 
+L 113.105037 70.735227 
+L 114.325307 70.735227 
+L 114.569362 97.415974 
+L 116.27774 97.415974 
+L 116.521795 86.01612 
+L 119.938552 86.01612 
+L 120.182606 105.638236 
+L 122.379094 105.638236 
+L 122.623148 106.088237 
+L 123.843418 106.088237 
+L 124.087472 106.885605 
+L 127.50423 106.885605 
+L 127.748284 127.02118 
+L 129.944771 127.02118 
+L 130.188826 87.354885 
+L 130.920988 87.354885 
+L 131.165042 142.144198 
+L 133.849637 142.144198 
+L 134.093692 124.633774 
+L 136.778287 124.633774 
+L 137.022341 104.494469 
+L 137.998558 104.494469 
+L 138.242612 136.239446 
+L 138.486666 136.239446 
+L 138.73072 152.017727 
+L 139.462882 152.017727 
+L 139.706937 123.434488 
+L 140.927207 123.434488 
+L 141.171261 133.200005 
+L 142.391532 133.200005 
+L 142.635586 138.984889 
+L 144.588019 138.984889 
+L 144.832073 135.059922 
+L 146.540452 135.059922 
+L 146.784506 126.390103 
+L 148.492885 126.390103 
+L 148.736939 128.526585 
+L 149.713156 128.526585 
+L 149.95721 118.804893 
+L 150.689372 118.804893 
+L 150.933426 136.592273 
+L 151.909643 136.592273 
+L 152.153697 148.791815 
+L 152.641805 148.791815 
+L 152.885859 126.154858 
+L 153.862076 126.154858 
+L 154.10613 125.081628 
+L 155.570455 125.081628 
+L 155.814509 142.229796 
+L 158.987212 142.229796 
+L 159.231267 140.357755 
+L 162.159916 140.357755 
+L 162.40397 110.42365 
+L 163.380187 110.42365 
+L 163.624241 117.62067 
+L 163.868295 117.62067 
+L 164.112349 127.52585 
+L 164.844511 127.52585 
+L 165.088566 129.868381 
+L 165.820728 129.868381 
+L 166.064782 109.994985 
+L 166.308836 112.754704 
+L 166.796944 112.754704 
+L 167.040999 132.39423 
+L 167.773161 132.39423 
+L 168.017215 107.479479 
+L 168.505323 107.479479 
+L 168.749377 112.558702 
+L 168.993432 112.558702 
+L 169.237486 108.409283 
+L 170.457756 108.400432 
+L 170.70181 108.553124 
+L 171.433973 108.553124 
+L 171.678027 111.9385 
+L 171.922081 111.9385 
+L 172.166135 90.213822 
+L 172.410189 105.767175 
+L 172.654243 100.959744 
+L 173.142352 100.959744 
+L 173.386406 91.345942 
+L 178.755597 91.345942 
+L 178.755597 91.345942 
+" clip-path="url(#fig-1-2-fits-p1573ec697c)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-patch_3">
+    <path d="M 50.883438 158.145 
+L 50.883438 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-patch_4">
+    <path d="M 50.883438 158.145 
+L 184.844747 158.145 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-text_13">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="117.864092" y="13.345" transform="rotate(-0 117.864092 13.345)">k = 1</text>
+   </g>
+  </g>
+  <g id="fig-1-2-fits-axes_2">
+   <g id="fig-1-2-fits-patch_5">
+    <path d="M 204.344747 158.145 
+L 338.306057 158.145 
+L 338.306057 23.345 
+L 204.344747 23.345 
+L 204.344747 158.145 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-2-fits-matplotlib.axis_3">
+    <g id="fig-1-2-fits-xtick_4">
+     <g id="fig-1-2-fits-line2d_13">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="210.433897" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_14">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="210.433897" y="172.3175" transform="rotate(-0 210.433897 172.3175)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-xtick_5">
+     <g id="fig-1-2-fits-line2d_14">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="271.325402" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_15">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="271.325402" y="172.3175" transform="rotate(-0 271.325402 172.3175)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-xtick_6">
+     <g id="fig-1-2-fits-line2d_15">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="332.216906" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_16">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="332.216906" y="172.3175" transform="rotate(-0 332.216906 172.3175)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-text_17">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="271.325402" y="191.045" transform="rotate(-0 271.325402 191.045)">x</text>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-matplotlib.axis_4">
+    <g id="fig-1-2-fits-ytick_8">
+     <g id="fig-1-2-fits-line2d_16">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="155.306804" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_9">
+     <g id="fig-1-2-fits-line2d_17">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="133.580398" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_10">
+     <g id="fig-1-2-fits-line2d_18">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="111.853993" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_11">
+     <g id="fig-1-2-fits-line2d_19">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="90.127588" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_12">
+     <g id="fig-1-2-fits-line2d_20">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="68.401183" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_13">
+     <g id="fig-1-2-fits-line2d_21">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="46.674777" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_14">
+     <g id="fig-1-2-fits-line2d_22">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="204.344747" y="24.948372" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-PathCollection_2">
+    <g clip-path="url(#fig-1-2-fits-p16fe017a8e)">
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="240.980055" y="39.45499" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="325.732319" y="96.506191" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="233.489903" y="43.355784" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="232.268545" y="42.374432" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="253.044462" y="46.158434" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="238.509904" y="66.033489" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="292.082797" y="136.239446" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="224.448611" y="56.430983" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="319.58915" y="109.994985" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="314.93961" y="140.357755" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="210.778182" y="76.612583" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="276.375276" y="106.088237" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="223.446567" y="65.622367" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="241.848428" y="43.754497" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="261.204752" y="60.312" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="265.676634" y="93.210516" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="267.446198" y="70.735227" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="323.389672" y="108.400432" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="241.947819" y="55.11425" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="233.315733" y="52.932125" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="292.09068" y="152.017727" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="325.715971" y="111.465345" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="322.816582" y="108.409283" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="317.633391" y="127.52585" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="218.271328" y="76.595249" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="324.50757" y="108.553124" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="289.500343" y="124.633774" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="316.574591" y="110.42365" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="260.133357" y="66.678186" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="237.151864" y="50.300054" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="307.004179" y="126.154858" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="291.009734" y="104.494469" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="305.283387" y="136.592273" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="234.954261" y="43.118155" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="226.795656" y="74.785053" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="303.430458" y="118.804893" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="212.897412" y="77.456541" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="325.591993" y="90.213822" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="226.885304" y="58.158878" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="283.517134" y="127.02118" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="261.461836" y="59.331009" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="249.878811" y="43.08904" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="231.167001" y="61.436073" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="305.471263" y="148.791815" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="321.807453" y="107.479479" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="299.198047" y="135.059922" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="283.538385" y="87.354885" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="297.07689" y="138.984889" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="275.720381" y="105.638236" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="278.42113" y="106.885605" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="320.779517" y="132.39423" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="244.854697" y="57.243728" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="237.495775" y="29.472273" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="325.758535" y="105.767175" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="325.289484" y="111.9385" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="268.40226" y="97.415974" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="307.955052" y="125.081628" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="300.949116" y="126.390103" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="326.038382" y="100.959744" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="220.38397" y="73.015702" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="319.814183" y="112.754704" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="271.340484" y="86.01612" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="265.110009" y="83.827638" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="294.06961" y="123.434488" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="285.5103" y="142.144198" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="263.596604" y="87.259093" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="245.885802" y="51.417632" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="322.311554" y="112.558702" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="310.151111" y="142.229796" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="222.912221" y="60.47462" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="259.691816" y="54.117321" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="303.40331" y="128.526585" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="317.488389" y="117.62067" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="327.617092" y="91.345942" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="239.749612" y="42.355017" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="319.032294" y="129.868381" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="295.057325" y="133.200005" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="218.739886" y="58.043378" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="236.084912" y="60.354294" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="233.413375" y="49.182269" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-line2d_23">
+    <path d="M 210.433897 90.127588 
+L 216.779305 76.154743 
+L 220.196062 69.155691 
+L 223.124712 63.666151 
+L 225.565253 59.547235 
+L 227.76174 56.2525 
+L 229.714173 53.687478 
+L 231.666606 51.491903 
+L 233.374985 49.891431 
+L 235.083364 48.603344 
+L 236.547689 47.755551 
+L 238.012014 47.149489 
+L 239.476338 46.788617 
+L 240.940663 46.674993 
+L 242.404988 46.809265 
+L 243.869313 47.190668 
+L 245.333637 47.817025 
+L 246.797962 48.684764 
+L 248.262287 49.788933 
+L 249.970666 51.367475 
+L 251.679045 53.246943 
+L 253.631478 55.744564 
+L 255.583911 58.590776 
+L 257.780398 62.173381 
+L 260.220939 66.572494 
+L 263.149589 72.337186 
+L 266.8104 80.096821 
+L 273.155808 94.225029 
+L 278.280944 105.388493 
+L 281.697702 112.286886 
+L 284.382298 117.235247 
+L 286.822839 121.285514 
+L 289.019326 124.510612 
+L 290.971759 127.008233 
+L 292.924192 129.131942 
+L 294.632571 130.666439 
+L 296.34095 131.886201 
+L 297.805274 132.673962 
+L 299.269599 133.218996 
+L 300.733924 133.518194 
+L 302.198249 133.56985 
+L 303.662573 133.373668 
+L 305.126898 132.930767 
+L 306.591223 132.243676 
+L 308.055548 131.316312 
+L 309.763927 129.937844 
+L 311.472305 128.250298 
+L 313.180684 126.266776 
+L 315.133117 123.657328 
+L 317.329604 120.316819 
+L 319.770146 116.152952 
+L 322.454741 111.099485 
+L 325.627445 104.61739 
+L 329.776365 95.584525 
+L 332.216906 90.127588 
+L 332.216906 90.127588 
+" clip-path="url(#fig-1-2-fits-p16fe017a8e)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.55"/>
+   </g>
+   <g id="fig-1-2-fits-line2d_24">
+    <path d="M 210.433897 67.719535 
+L 220.928225 67.719535 
+L 221.172279 66.201884 
+L 222.39255 66.201884 
+L 222.636604 62.693673 
+L 225.565253 62.693673 
+L 225.809307 60.327361 
+L 226.053361 60.327361 
+L 226.297416 59.44125 
+L 226.785524 59.44125 
+L 227.029578 56.475258 
+L 228.737957 56.475258 
+L 228.982011 54.739612 
+L 229.714173 54.739612 
+L 229.958228 54.212804 
+L 230.69039 54.212804 
+L 230.934444 53.599712 
+L 231.910661 53.599712 
+L 232.154715 49.068434 
+L 232.642823 49.068434 
+L 232.886877 49.855895 
+L 235.327418 49.855895 
+L 235.571472 47.947789 
+L 236.547689 47.947789 
+L 236.791743 47.655845 
+L 237.523905 47.655845 
+L 237.76796 47.33128 
+L 238.98823 47.33128 
+L 239.232284 48.720075 
+L 240.208501 48.720075 
+L 240.452555 49.550022 
+L 242.893096 49.550022 
+L 243.13715 47.823497 
+L 245.089583 47.823497 
+L 245.333637 47.409335 
+L 248.506341 47.409335 
+L 248.750395 49.87384 
+L 250.458774 49.93831 
+L 250.702828 51.734008 
+L 251.190936 51.734008 
+L 251.434991 53.72161 
+L 252.655261 53.72161 
+L 252.899315 58.072069 
+L 253.387424 58.072069 
+L 253.631478 60.943408 
+L 255.095802 60.943408 
+L 255.339857 64.540087 
+L 256.560127 64.540087 
+L 256.804181 66.471846 
+L 259.000668 66.471846 
+L 259.244723 71.90454 
+L 262.173372 71.90454 
+L 262.417426 75.890309 
+L 267.542563 75.890309 
+L 267.786617 81.0424 
+L 268.030671 81.0424 
+L 268.274725 84.983405 
+L 269.73905 84.983405 
+L 269.983104 89.640766 
+L 272.423645 89.640766 
+L 272.667699 96.409783 
+L 275.108241 96.419362 
+L 275.352295 102.251018 
+L 277.548782 102.251018 
+L 277.792836 105.393344 
+L 279.013107 105.393344 
+L 279.257161 108.769268 
+L 280.233377 108.769268 
+L 280.477431 112.651615 
+L 281.697702 112.651615 
+L 281.941756 119.251776 
+L 284.870406 119.251776 
+L 285.11446 121.031401 
+L 285.602568 121.031401 
+L 285.846622 123.742578 
+L 287.555001 123.742578 
+L 287.799055 126.952506 
+L 291.215813 126.952506 
+L 291.459867 127.756381 
+L 292.19203 127.756381 
+L 292.436084 131.659902 
+L 294.388517 131.659902 
+L 294.632571 130.298141 
+L 296.34095 130.298141 
+L 296.585004 129.715253 
+L 298.049329 129.715253 
+L 298.293383 132.925033 
+L 298.537437 132.925033 
+L 298.781491 134.18027 
+L 299.513653 134.18027 
+L 299.757707 131.593983 
+L 300.977978 131.593983 
+L 301.222032 131.758697 
+L 302.442303 131.758697 
+L 302.686357 132.661676 
+L 305.859061 132.661676 
+L 306.103115 132.798963 
+L 307.811494 132.798963 
+L 308.055548 130.335336 
+L 309.031764 130.335336 
+L 309.275818 129.458392 
+L 311.228251 129.358319 
+L 311.472305 130.464668 
+L 312.204468 130.464668 
+L 312.692576 124.201228 
+L 313.668793 124.201228 
+L 313.912847 124.825165 
+L 314.645009 124.825165 
+L 314.889063 123.06495 
+L 316.109334 123.06495 
+L 316.353388 120.097841 
+L 318.793929 120.097841 
+L 319.037983 116.902993 
+L 319.770146 116.902993 
+L 320.0142 116.700671 
+L 320.990416 116.700671 
+L 321.23447 115.793917 
+L 321.478525 114.235182 
+L 322.210687 114.235182 
+L 322.454741 110.269726 
+L 322.698795 110.416762 
+L 322.942849 108.791911 
+L 323.186903 108.791911 
+L 323.430958 106.129205 
+L 323.919066 106.129205 
+L 324.16312 105.477232 
+L 324.895282 105.477232 
+L 325.139336 103.355956 
+L 332.216906 103.355956 
+L 332.216906 103.355956 
+" clip-path="url(#fig-1-2-fits-p16fe017a8e)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-patch_6">
+    <path d="M 204.344747 158.145 
+L 204.344747 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-patch_7">
+    <path d="M 204.344747 158.145 
+L 338.306057 158.145 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-text_18">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="271.325402" y="13.345" transform="rotate(-0 271.325402 13.345)">k = 10</text>
+   </g>
+  </g>
+  <g id="fig-1-2-fits-axes_3">
+   <g id="fig-1-2-fits-patch_8">
+    <path d="M 357.806057 158.145 
+L 491.767366 158.145 
+L 491.767366 23.345 
+L 357.806057 23.345 
+L 357.806057 158.145 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-1-2-fits-matplotlib.axis_5">
+    <g id="fig-1-2-fits-xtick_7">
+     <g id="fig-1-2-fits-line2d_25">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="363.895207" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_19">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="363.895207" y="172.3175" transform="rotate(-0 363.895207 172.3175)">0.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-xtick_8">
+     <g id="fig-1-2-fits-line2d_26">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="424.786711" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_20">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="424.786711" y="172.3175" transform="rotate(-0 424.786711 172.3175)">0.5</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-xtick_9">
+     <g id="fig-1-2-fits-line2d_27">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m04e37d9cc8" x="485.678216" y="158.145" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="fig-1-2-fits-text_21">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="485.678216" y="172.3175" transform="rotate(-0 485.678216 172.3175)">1.0</text>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-text_22">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="424.786711" y="191.045" transform="rotate(-0 424.786711 191.045)">x</text>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-matplotlib.axis_6">
+    <g id="fig-1-2-fits-ytick_15">
+     <g id="fig-1-2-fits-line2d_28">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="155.306804" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_16">
+     <g id="fig-1-2-fits-line2d_29">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="133.580398" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_17">
+     <g id="fig-1-2-fits-line2d_30">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="111.853993" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_18">
+     <g id="fig-1-2-fits-line2d_31">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="90.127588" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_19">
+     <g id="fig-1-2-fits-line2d_32">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="68.401183" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_20">
+     <g id="fig-1-2-fits-line2d_33">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="46.674777" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+    <g id="fig-1-2-fits-ytick_21">
+     <g id="fig-1-2-fits-line2d_34">
+      <g>
+       <use xlink:href="#fig-1-2-fits-m9fce3a8e10" x="357.806057" y="24.948372" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-PathCollection_3">
+    <g clip-path="url(#fig-1-2-fits-p5c8c796d14)">
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="394.441364" y="39.45499" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="479.193629" y="96.506191" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="386.951213" y="43.355784" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="385.729854" y="42.374432" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="406.505771" y="46.158434" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="391.971214" y="66.033489" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="445.544107" y="136.239446" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="377.90992" y="56.430983" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="473.050459" y="109.994985" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="468.40092" y="140.357755" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="364.239491" y="76.612583" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="429.836585" y="106.088237" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="376.907877" y="65.622367" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="395.309738" y="43.754497" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="414.666061" y="60.312" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="419.137943" y="93.210516" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="420.907507" y="70.735227" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="476.850981" y="108.400432" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="395.409129" y="55.11425" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="386.777042" y="52.932125" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="445.55199" y="152.017727" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="479.177281" y="111.465345" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="476.277892" y="108.409283" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="471.0947" y="127.52585" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="371.732637" y="76.595249" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="477.968879" y="108.553124" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="442.961652" y="124.633774" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="470.0359" y="110.42365" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="413.594666" y="66.678186" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="390.613173" y="50.300054" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="460.465489" y="126.154858" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="444.471043" y="104.494469" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="458.744697" y="136.592273" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="388.41557" y="43.118155" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="380.256966" y="74.785053" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="456.891768" y="118.804893" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="366.358722" y="77.456541" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="479.053303" y="90.213822" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="380.346613" y="58.158878" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="436.978443" y="127.02118" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="414.923146" y="59.331009" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="403.340121" y="43.08904" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="384.62831" y="61.436073" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="458.932572" y="148.791815" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="475.268763" y="107.479479" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="452.659357" y="135.059922" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="436.999694" y="87.354885" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="450.5382" y="138.984889" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="429.18169" y="105.638236" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="431.88244" y="106.885605" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="474.240827" y="132.39423" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="398.316007" y="57.243728" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="390.957084" y="29.472273" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="479.219844" y="105.767175" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="478.750793" y="111.9385" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="421.863569" y="97.415974" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="461.416361" y="125.081628" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="454.410425" y="126.390103" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="479.499691" y="100.959744" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="373.845279" y="73.015702" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="473.275493" y="112.754704" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="424.801794" y="86.01612" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="418.571318" y="83.827638" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="447.53092" y="123.434488" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="438.971609" y="142.144198" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="417.057914" y="87.259093" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="399.347111" y="51.417632" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="475.772864" y="112.558702" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="463.61242" y="142.229796" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="376.37353" y="60.47462" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="413.153126" y="54.117321" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="456.864619" y="128.526585" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="470.949699" y="117.62067" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="481.078402" y="91.345942" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="393.210921" y="42.355017" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="472.493604" y="129.868381" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="448.518635" y="133.200005" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="372.201196" y="58.043378" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="389.546221" y="60.354294" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+     <use xlink:href="#fig-1-2-fits-ma0b56a7112" x="386.874685" y="49.182269" style="fill: currentColor; fill-opacity: 0.28; stroke: currentColor; stroke-opacity: 0.28"/>
+    </g>
+   </g>
+   <g id="fig-1-2-fits-line2d_35">
+    <path d="M 363.895207 90.127588 
+L 370.240614 76.154743 
+L 373.657372 69.155691 
+L 376.586022 63.666151 
+L 379.026563 59.547235 
+L 381.22305 56.2525 
+L 383.175483 53.687478 
+L 385.127916 51.491903 
+L 386.836295 49.891431 
+L 388.544674 48.603344 
+L 390.008998 47.755551 
+L 391.473323 47.149489 
+L 392.937648 46.788617 
+L 394.401973 46.674993 
+L 395.866297 46.809265 
+L 397.330622 47.190668 
+L 398.794947 47.817025 
+L 400.259272 48.684764 
+L 401.723596 49.788933 
+L 403.431975 51.367475 
+L 405.140354 53.246943 
+L 407.092787 55.744564 
+L 409.04522 58.590776 
+L 411.241707 62.173381 
+L 413.682249 66.572494 
+L 416.610898 72.337186 
+L 420.27171 80.096821 
+L 426.617117 94.225029 
+L 431.742254 105.388493 
+L 435.159012 112.286886 
+L 437.843607 117.235247 
+L 440.284148 121.285514 
+L 442.480635 124.510612 
+L 444.433068 127.008233 
+L 446.385501 129.131942 
+L 448.09388 130.666439 
+L 449.802259 131.886201 
+L 451.266584 132.673962 
+L 452.730909 133.218996 
+L 454.195233 133.518194 
+L 455.659558 133.56985 
+L 457.123883 133.373668 
+L 458.588208 132.930767 
+L 460.052532 132.243676 
+L 461.516857 131.316312 
+L 463.225236 129.937844 
+L 464.933615 128.250298 
+L 466.641994 126.266776 
+L 468.594427 123.657328 
+L 470.790914 120.316819 
+L 473.231455 116.152952 
+L 475.916051 111.099485 
+L 479.088754 104.61739 
+L 483.237674 95.584525 
+L 485.678216 90.127588 
+L 485.678216 90.127588 
+" clip-path="url(#fig-1-2-fits-p5c8c796d14)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: currentColor; stroke-opacity: 0.55"/>
+   </g>
+   <g id="fig-1-2-fits-line2d_36">
+    <path d="M 363.895207 91.544399 
+L 485.678216 91.544399 
+L 485.678216 91.544399 
+" clip-path="url(#fig-1-2-fits-p5c8c796d14)" style="fill: none; stroke: #b8892b; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-patch_9">
+    <path d="M 357.806057 158.145 
+L 357.806057 23.345 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-patch_10">
+    <path d="M 357.806057 158.145 
+L 491.767366 158.145 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-1-2-fits-text_23">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="424.786711" y="13.345" transform="rotate(-0 424.786711 13.345)">k = 80</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-1-2-fits-p1573ec697c">
+   <rect x="50.883438" y="23.345" width="133.96131" height="134.8"/>
+  </clipPath>
+  <clipPath id="fig-1-2-fits-p16fe017a8e">
+   <rect x="204.344747" y="23.345" width="133.96131" height="134.8"/>
+  </clipPath>
+  <clipPath id="fig-1-2-fits-p5c8c796d14">
+   <rect x="357.806057" y="23.345" width="133.96131" height="134.8"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,372 @@
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="443.078125pt" height="205.96pt" viewBox="0 0 443.078125 205.96" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="fig-4-3-validation-figure_1">
+  <g id="fig-4-3-validation-patch_1">
+   <path d="M 0 205.96 
+L 443.078125 205.96 
+L 443.078125 0 
+L 0 0 
+L 0 205.96 
+z
+" style="fill: none"/>
+  </g>
+  <g id="fig-4-3-validation-axes_1">
+   <g id="fig-4-3-validation-patch_2">
+    <path d="M 46.468125 169.72 
+L 438.038125 169.72 
+L 438.038125 5.04 
+L 46.468125 5.04 
+L 46.468125 169.72 
+z
+" style="fill: none"/>
+   </g>
+   <g id="fig-4-3-validation-matplotlib.axis_1">
+    <g id="fig-4-3-validation-xtick_1">
+     <g id="fig-4-3-validation-line2d_1">
+      <defs>
+       <path id="fig-4-3-validation-m88c259a274" d="M 0 0 
+L 0 3.5 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="58.233325" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_1">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="58.233325" y="184.27" transform="rotate(-0 58.233325 184.27)">0</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-xtick_2">
+     <g id="fig-4-3-validation-line2d_2">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="118.567686" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_2">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="118.567686" y="184.27" transform="rotate(-0 118.567686 184.27)">10</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-xtick_3">
+     <g id="fig-4-3-validation-line2d_3">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="178.902046" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_3">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="178.902046" y="184.27" transform="rotate(-0 178.902046 184.27)">20</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-xtick_4">
+     <g id="fig-4-3-validation-line2d_4">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="239.236407" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_4">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="239.236407" y="184.27" transform="rotate(-0 239.236407 184.27)">30</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-xtick_5">
+     <g id="fig-4-3-validation-line2d_5">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="299.570768" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_5">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="299.570768" y="184.27" transform="rotate(-0 299.570768 184.27)">40</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-xtick_6">
+     <g id="fig-4-3-validation-line2d_6">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="359.905128" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_6">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="359.905128" y="184.27" transform="rotate(-0 359.905128 184.27)">50</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-xtick_7">
+     <g id="fig-4-3-validation-line2d_7">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m88c259a274" x="420.239489" y="169.72" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_7">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="420.239489" y="184.27" transform="rotate(-0 420.239489 184.27)">60</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-text_8">
+     <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="242.253125" y="198.37" transform="rotate(-0 242.253125 198.37)">epoch</text>
+    </g>
+   </g>
+   <g id="fig-4-3-validation-matplotlib.axis_2">
+    <g id="fig-4-3-validation-ytick_1">
+     <g id="fig-4-3-validation-line2d_8">
+      <defs>
+       <path id="fig-4-3-validation-m1eedef7b1f" d="M 0 0 
+L -3.5 0 
+" style="stroke: currentColor; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="148.824239" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_9">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="152.599239" transform="rotate(-0 39.468125 152.599239)">0.25</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-ytick_2">
+     <g id="fig-4-3-validation-line2d_9">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="127.014551" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_10">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="130.789551" transform="rotate(-0 39.468125 130.789551)">0.50</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-ytick_3">
+     <g id="fig-4-3-validation-line2d_10">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="105.204864" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_11">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="108.979864" transform="rotate(-0 39.468125 108.979864)">0.75</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-ytick_4">
+     <g id="fig-4-3-validation-line2d_11">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="83.395177" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_12">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="87.170177" transform="rotate(-0 39.468125 87.170177)">1.00</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-ytick_5">
+     <g id="fig-4-3-validation-line2d_12">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="61.585489" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_13">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="65.360489" transform="rotate(-0 39.468125 65.360489)">1.25</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-ytick_6">
+     <g id="fig-4-3-validation-line2d_13">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="39.775802" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_14">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="43.550802" transform="rotate(-0 39.468125 43.550802)">1.50</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-ytick_7">
+     <g id="fig-4-3-validation-line2d_14">
+      <g>
+       <use xlink:href="#fig-4-3-validation-m1eedef7b1f" x="46.468125" y="17.966114" style="stroke: currentColor; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="fig-4-3-validation-text_15">
+      <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.468125" y="21.741114" transform="rotate(-0 39.468125 21.741114)">1.75</text>
+     </g>
+    </g>
+    <g id="fig-4-3-validation-text_16">
+     <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="12.59" y="87.38" transform="rotate(-90 12.59 87.38)">loss</text>
+    </g>
+   </g>
+   <g id="fig-4-3-validation-line2d_15">
+    <path d="M 64.266761 86.586799 
+L 70.300197 13.953267 
+L 76.333633 67.347416 
+L 82.36707 124.864181 
+L 88.400506 94.286163 
+L 94.433942 94.415581 
+L 100.467378 125.460747 
+L 106.500814 143.44678 
+L 112.53425 134.767351 
+L 118.567686 127.020159 
+L 124.601122 133.324351 
+L 130.634558 145.260706 
+L 136.667994 151.628209 
+L 142.70143 150.105327 
+L 148.734866 145.885019 
+L 154.768302 144.668318 
+L 160.801738 147.686733 
+L 166.835174 152.305138 
+L 172.86861 155.230665 
+L 178.902046 155.275688 
+L 184.935482 153.692787 
+L 190.968919 152.484501 
+L 197.002355 152.809132 
+L 203.035791 154.48688 
+L 209.069227 156.470784 
+L 215.102663 157.692849 
+L 221.136099 157.748735 
+L 227.169535 157.090152 
+L 233.202971 156.587119 
+L 239.236407 156.819468 
+L 245.269843 157.709199 
+L 251.303279 158.710795 
+L 257.336715 159.299931 
+L 263.370151 159.340578 
+L 269.403587 159.089006 
+L 275.437023 158.928564 
+L 281.470459 159.09238 
+L 287.503895 159.547699 
+L 293.537331 160.067605 
+L 299.570768 160.411285 
+L 305.604204 160.488893 
+L 311.63764 160.404204 
+L 317.671076 160.353203 
+L 323.704512 160.468307 
+L 329.737948 160.733725 
+L 335.771384 161.023902 
+L 341.80482 161.214695 
+L 347.838256 161.272362 
+L 353.871692 161.260005 
+L 359.905128 161.274146 
+L 365.938564 161.37108 
+L 371.972 161.53546 
+L 378.005436 161.704005 
+L 384.038872 161.818698 
+L 390.072308 161.868016 
+L 396.105744 161.888103 
+L 402.13918 161.928434 
+L 408.172617 162.012946 
+L 414.206053 162.126796 
+L 420.239489 162.234545 
+" clip-path="url(#fig-4-3-validation-p630e18eada)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-3-validation-line2d_16">
+    <path d="M 64.266761 12.525455 
+L 70.300197 65.705713 
+L 76.333633 120.607435 
+L 82.36707 85.871088 
+L 88.400506 83.134228 
+L 94.433942 114.348321 
+L 100.467378 137.161569 
+L 106.500814 132.077831 
+L 112.53425 125.43572 
+L 118.567686 131.531918 
+L 124.601122 142.018063 
+L 130.634558 145.106386 
+L 136.667994 139.190801 
+L 142.70143 131.508974 
+L 148.734866 128.994908 
+L 154.768302 132.98432 
+L 160.801738 140.190436 
+L 166.835174 146.282341 
+L 172.86861 149.071378 
+L 178.902046 149.255347 
+L 184.935482 148.804537 
+L 190.968919 149.030453 
+L 197.002355 149.833796 
+L 203.035791 150.214051 
+L 209.069227 149.302858 
+L 215.102663 147.124608 
+L 221.136099 144.63597 
+L 227.169535 143.082493 
+L 233.202971 143.185239 
+L 239.236407 144.763774 
+L 245.269843 146.987311 
+L 251.303279 148.967434 
+L 257.336715 150.233909 
+L 263.370151 150.817837 
+L 269.403587 151.006232 
+L 275.437023 151.031142 
+L 281.470459 150.916955 
+L 287.503895 150.543658 
+L 293.537331 149.830333 
+L 299.570768 148.882303 
+L 305.604204 147.989782 
+L 311.63764 147.478948 
+L 317.671076 147.525835 
+L 323.704512 148.067041 
+L 329.737948 148.859734 
+L 335.771384 149.63089 
+L 341.80482 150.205519 
+L 347.838256 150.541591 
+L 353.871692 150.679356 
+L 359.905128 150.666844 
+L 365.938564 150.52123 
+L 371.972 150.243895 
+L 378.005436 149.86249 
+L 384.038872 149.456208 
+L 390.072308 149.138205 
+L 396.105744 149.004785 
+L 402.13918 149.087512 
+L 408.172617 149.341345 
+L 414.206053 149.673727 
+L 420.239489 149.991182 
+" clip-path="url(#fig-4-3-validation-p630e18eada)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-3-validation-line2d_17">
+    <path d="M 275.437023 169.72 
+L 275.437023 5.04 
+" clip-path="url(#fig-4-3-validation-p630e18eada)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: var(--accent, #c2603e); stroke-opacity: 0.6; stroke-width: 0.8"/>
+   </g>
+   <g id="fig-4-3-validation-patch_3">
+    <path d="M 46.468125 169.72 
+L 46.468125 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-3-validation-patch_4">
+    <path d="M 46.468125 169.72 
+L 438.038125 169.72 
+" style="fill: none; stroke: currentColor; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="fig-4-3-validation-PathCollection_1">
+    <defs>
+     <path id="fig-4-3-validation-mdd086df23f" d="M 0 2.44949 
+C 0.649612 2.44949 1.272706 2.191396 1.732051 1.732051 
+C 2.191396 1.272706 2.44949 0.649612 2.44949 0 
+C 2.44949 -0.649612 2.191396 -1.272706 1.732051 -1.732051 
+C 1.272706 -2.191396 0.649612 -2.44949 0 -2.44949 
+C -0.649612 -2.44949 -1.272706 -2.191396 -1.732051 -1.732051 
+C -2.191396 -1.272706 -2.44949 -0.649612 -2.44949 0 
+C -2.44949 0.649612 -2.191396 1.272706 -1.732051 1.732051 
+C -1.272706 2.191396 -0.649612 2.44949 0 2.44949 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#fig-4-3-validation-p630e18eada)">
+     <use xlink:href="#fig-4-3-validation-mdd086df23f" x="275.437023" y="151.031142" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="fig-4-3-validation-legend_1">
+    <g id="fig-4-3-validation-line2d_18">
+     <path d="M 378.799062 18.09 
+L 388.799062 18.09 
+L 398.799062 18.09 
+" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 1.5; stroke-linecap: square"/>
+    </g>
+    <g id="fig-4-3-validation-text_17">
+     <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="406.799062" y="21.59" transform="rotate(-0 406.799062 21.59)">train</text>
+    </g>
+    <g id="fig-4-3-validation-line2d_19">
+     <path d="M 378.799062 33.19 
+L 388.799062 33.19 
+L 398.799062 33.19 
+" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 1.5; stroke-linecap: square"/>
+    </g>
+    <g id="fig-4-3-validation-text_18">
+     <text style="font-size: 10px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="406.799062" y="36.69" transform="rotate(-0 406.799062 36.69)">valid</text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="fig-4-3-validation-p630e18eada">
+   <rect x="46.468125" y="5.04" width="391.57" height="164.68"/>
+  </clipPath>
+ </defs>
+</svg>
