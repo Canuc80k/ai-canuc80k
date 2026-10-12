@@ -137,3 +137,61 @@ inference_path.write_text(inference_source, encoding='utf-8')
 result = subprocess.check_output([sys.executable, '-B', '-X', 'utf8',
     str(inference_path), str(checkpoint_path)], text=True)
 print(result.rstrip())
+
+# Bước 7
+import numpy as np
+import pandas as pd
+from PIL import Image
+from tempfile import TemporaryDirectory
+from torch.utils.data import Dataset
+
+
+class FolderDataset(Dataset):
+    def __init__(self, root, table, size=8):
+        self.root, self.table, self.size = Path(root), table.reset_index(drop=True), size
+
+    def __len__(self):
+        return len(self.table)
+
+    def __getitem__(self, i):
+        row = self.table.iloc[i]
+        image = Image.open(self.root / row["file"]).convert("L").resize((self.size, self.size))
+        x = torch.from_numpy(np.asarray(image, dtype=np.float32) / 255).unsqueeze(0)   # (1, H, W)
+        return x, int(row["label"])
+
+
+with TemporaryDirectory() as directory:
+    root = Path(directory)
+    rng = np.random.default_rng(0)
+    rows = []
+    for i in range(10):
+        w, h = rng.integers(10, 30, size=2)                    # mỗi ảnh một kích thước
+        label = i % 2                                          # nhãn 1: ảnh sáng hơn
+        pixels = rng.integers(0, 120, size=(h, w)) + 120 * label
+        Image.fromarray(pixels.astype(np.uint8)).save(root / f"{i}.png")
+        rows.append({"file": f"{i}.png", "label": label})
+    data = FolderDataset(root, pd.DataFrame(rows))
+    loader = DataLoader(data, batch_size=4, shuffle=False, num_workers=0)
+    xb, yb = next(iter(loader))
+    print(len(data), len(loader), tuple(data[0][0].shape), tuple(xb.shape), yb.tolist())
+    print(round(float(xb[yb == 0].mean()), 3), round(float(xb[yb == 1].mean()), 3))
+
+# Bước 8
+from torch.nn.utils.rnn import pad_sequence
+
+pairs = [(torch.tensor([5, 2, 9]), 1), (torch.tensor([7]), 0), (torch.tensor([3, 3, 1, 4]), 1)]
+try:
+    next(iter(DataLoader(pairs, batch_size=3)))
+except RuntimeError as error:
+    print("không có collate_fn:", str(error).split(" at entry")[0])
+
+
+def pad_collate(batch):
+    seqs, labels = zip(*batch)
+    lengths = torch.tensor([len(s) for s in seqs])
+    return pad_sequence(seqs, batch_first=True, padding_value=0), lengths, torch.tensor(labels)
+
+
+for tokens, lengths, labels in DataLoader(pairs, batch_size=3, collate_fn=pad_collate):
+    print(tokens)
+    print(lengths.tolist(), labels.tolist())

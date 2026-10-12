@@ -690,11 +690,39 @@ def nested17():
     s.save('1-7-nested', 'Nested CV: phần chấm ở vòng ngoài không tham gia lựa chọn nào.')
 
 
+def box11():
+    """1.1 mục Lần nộp đầu tiên: hộp nhỏ nhất chứa điểm nhãn 1 nằm trong hộp thật (số liệu từ code bài, seed 5)."""
+    import numpy as np
+    rng = np.random.default_rng(5)
+    pts = rng.uniform(0, 100, size=(30, 2))
+    lab = (pts[:, 0] >= 20) & (pts[:, 0] <= 65) & (pts[:, 1] >= 30) & (pts[:, 1] <= 80)
+    pos = pts[lab]
+    bx = pos[:, 0].min(), pos[:, 0].max(), pos[:, 1].min(), pos[:, 1].max()
+    s = Fig(640, 236)
+    x0, y0, side = 110, 14, 208
+    X = lambda v: x0 + v / 100 * side
+    Y = lambda v: y0 + side - v / 100 * side
+    s.box(x0, y0, side, side, SOFT_LINE, 'none', r=2, width=1)
+    s.box(X(20), Y(80), X(65) - X(20), Y(30) - Y(80), MUTED, 'none', r=0, width=1.3, dash='5 4')
+    s.box(X(bx[0]), Y(bx[3]), X(bx[1]) - X(bx[0]), Y(bx[2]) - Y(bx[3]), CLAY, ACCENT_SOFT, r=0, width=1.8, opacity=.9)
+    for (px, py), l in zip(pts, lab):
+        if l:
+            s.circle(X(px), Y(py), 4.5, CLAY)
+        else:
+            s.circle(X(px), Y(py), 4, FAINT, 'none', 1.3)
+    lx = x0 + side + 28
+    s.box(lx, 40, 22, 14, MUTED, 'none', r=0, width=1.3, dash='5 4'); s.label(lx + 32, 47, 'hộp thật', 13, 'start', MUTED)
+    s.box(lx, 72, 22, 14, CLAY, ACCENT_SOFT, r=0, width=1.8); s.label(lx + 32, 79, 'hộp nhỏ nhất · accuracy 0.917', 13, 'start', CLAY, 600)
+    s.circle(lx + 11, 111, 4.5, CLAY); s.label(lx + 32, 111, 'nhãn 1', 13, 'start', MUTED)
+    s.circle(lx + 11, 135, 4, FAINT, 'none', 1.3); s.label(lx + 32, 135, 'nhãn 0', 13, 'start', MUTED)
+    s.save('1-1-box', 'Hộp nhỏ nhất chứa năm điểm nhãn 1 nằm gọn trong hộp thật, nên chỉ sai ở dải sát biên.')
+
+
 FIGS = {'1-7-grid-log': gridlog17, '1-7-search': search17, '1-7-cost': cost17, '1-7-nested': nested17,
         '1-6-losses': losses16, '1-6-r2': r2_16, '1-6-relative': relative16, '1-6-center': center16, '1-6-ranking': ranking16,
         '1-5-confusion': confusion15, '1-5-scores': scores15, '1-5-threshold': threshold15, '1-5-roc': roc15,
         '1-5-imbalance': imbalance15, '1-5-logloss': logloss15,
-        '1-1-contract': contract11, '1-1-task-types': tasks11, '1-1-timeline': timeline11, '1-1-mae': mae11, '1-1-baseline': baseline11,
+        '1-1-contract': contract11, '1-1-task-types': tasks11, '1-1-timeline': timeline11, '1-1-mae': mae11, '1-1-baseline': baseline11, '1-1-box': box11,
         '1-2-fits': fits12, '1-2-learning': learning12, '1-2-variance': variance12,
         '1-3-groups': groups13, '1-3-time': time13, '1-3-window': window13, '1-3-oof-mapping': oof13,
         '1-4-pipeline': pipeline14, '1-4-leakage': leakage14, '1-4-columns': columns14, '1-4-onehot': onehot14}

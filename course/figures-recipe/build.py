@@ -2,7 +2,7 @@
 from pathlib import Path
 import subprocess,sys,json,hashlib,xml.etree.ElementTree as ET,re,shutil
 R=Path(__file__).resolve().parent;C=R.parent
-EXPECTED=506  # số hình sau lượt 8; thêm hình mới thì tăng số này
+EXPECTED=508  # số hình sau lượt 8; thêm hình mới thì tăng số này
 PRUNED={'1-7-workflow','4-1-package','5-kt3-loop','6-6-llm-pipeline','7-kt4-loop','7-kt4-time','8-1-budget','8-5-reproduce','8-5-timeline','5-9-occlusion','2-7-boosting'}
 CAP={
 '0-2-speed':'Hai cách tính sigmoid cho cùng dãy đầu vào.',

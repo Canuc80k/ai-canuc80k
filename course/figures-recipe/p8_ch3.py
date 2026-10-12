@@ -506,7 +506,29 @@ def wmean34():
     s.save('3-4-weighted-mean', 'Batch 16 mẫu loss 0.2 và batch 8 mẫu loss 0.8: chiều rộng là số mẫu; trung bình theo mẫu là 0.4, không phải 0.5.')
 
 
-FIGS34 = {'3-4-loop': loop34, '3-4-batches': batches34, '3-4-curves': curves34, '3-4-checkpoint': checkpoint34, '3-4-weighted-mean': wmean34}
+def collate34():
+    """3.4 mục collate_fn: ba chuỗi dài 3, 1, 4 đệm 0 thành ma trận (3, 4), giữ lengths."""
+    seqs = [[5, 2, 9], [7], [3, 3, 1, 4]]
+    s = Fig(640, 150)
+    cw, ch, g = 34, 30, 4
+    s.label(40, 14, 'ba mẫu', 13, 'start')
+    for i, q in enumerate(seqs):
+        s.tiles(40, 26 + i * (ch + g), [[str(v) for v in q]], cw, ch, BLUE, g, {}, 14)
+    s.curve(220, 76, 290, 76, .0, CLAY, 1.4)
+    s.mono(255, 66, 'pad_collate', 12, 'middle', CLAY)
+    x0 = 310
+    s.label(x0, 14, 'tokens (3, 4)', 13, 'start', CLAY)
+    vals = [[str(v) for v in q] + ['0'] * (4 - len(q)) for q in seqs]
+    fills = {(i, j): (FAINT, .12) for i, q in enumerate(seqs) for j in range(len(q), 4)}
+    colors = {(i, j): FAINT for i, q in enumerate(seqs) for j in range(len(q), 4)}
+    s.tiles(x0, 26, vals, cw, ch, BLUE, g, fills, 14, colors=colors)
+    s.label(x0 + 4 * (cw + g) + 50, 14, 'lengths', 13, 'middle', CLAY)
+    for i, q in enumerate(seqs):
+        s.mono(x0 + 4 * (cw + g) + 50, 26 + i * (ch + g) + ch / 2 + 4, str(len(q)), 14, 'middle', CLAY)
+    s.save('3-4-collate', 'collate_fn đệm số 0 cho bằng chuỗi dài nhất và giữ độ dài thật của từng mẫu.')
+
+
+FIGS34 = {'3-4-loop': loop34, '3-4-batches': batches34, '3-4-curves': curves34, '3-4-checkpoint': checkpoint34, '3-4-weighted-mean': wmean34, '3-4-collate': collate34}
 
 
 # ───────────────────────────── 3.5 ─────────────────────────────

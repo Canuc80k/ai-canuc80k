@@ -504,5 +504,7 @@
   "0-1-class": "Cú pháp quen thuộc gọi tới hàm đặc biệt của class, và PyTorch dùng lại đúng ba hàm này.",
   "2-7-oof": "Mỗi fold học trên bốn phần, chấm phần tô màu; ghép năm phần ấy được dự đoán out-of-fold cho cả tập train.",
   "0-2-argsort": "argsort(-scores) trả về order: lấy scores theo các chỉ số ấy được dãy giảm dần.",
-  "0-3-folder": "Đọc ảnh theo cột file của labels.csv: ảnh thứ i luôn đi với nhãn thứ i."
+  "0-3-folder": "Đọc ảnh theo cột file của labels.csv: ảnh thứ i luôn đi với nhãn thứ i.",
+  "1-1-box": "Hộp nhỏ nhất chứa năm điểm nhãn 1 nằm gọn trong hộp thật, nên chỉ sai ở dải sát biên.",
+  "3-4-collate": "collate_fn đệm số 0 cho bằng chuỗi dài nhất và giữ độ dài thật của từng mẫu."
 }
