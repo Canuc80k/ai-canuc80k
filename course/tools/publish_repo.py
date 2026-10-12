@@ -74,7 +74,7 @@ def readme():
 <h3 align="center">Từ dòng Python đầu tiên tới đề thi IOAI.</h3>
 
 <p align="center">Giáo trình AI cho học sinh lập trình thi đấu, hướng tới VOAI và IOAI.<br>
-<a href="{LIVE}"><b>Mở website</b></a> · <a href="{PAGES}">Bản GitHub Pages</a> · <a href="docs/giao_trinh/notebook">Notebook</a></p>
+<a href="{LIVE}"><b>Mở website</b></a> · <a href="docs/giao_trinh/notebook">Notebook</a> · <a href="course/content">Nguồn bài học</a></p>
 
 ---
 

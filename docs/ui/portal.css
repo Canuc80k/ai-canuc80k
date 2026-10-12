@@ -1077,3 +1077,9 @@ html.side-anim .side, html.side-anim .shell { transition: transform .5s var(--ea
   .strip-chip { flex: none; }
 }
 @media print { .hw-run, .hw-arrow { display: none !important; } .hw-fresh .hw-io { grid-template-columns: 1fr 1fr; gap: 14px; } }
+
+.ch-chip { align-items: center; gap: 8px; padding: 8px 12px; font-size: 13.5px; color: var(--text-2); }
+.ch-chip b { font: 500 16px/1 var(--serif); color: var(--accent-ink); }
+.ch-chip span { color: var(--faint); font-variant-numeric: tabular-nums; }
+.page-head .strip { margin-top: 20px; }
+.lead code { font: .85em var(--mono); }

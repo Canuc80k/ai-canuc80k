@@ -162,6 +162,27 @@ def default_arg():
     s.save('0-1-default', 'List mặc định tạo một lần và dùng chung; None cho mỗi lần gọi một list mới.')
 
 
+def class_fig():
+    """0.1 mục Class: ba hàm đặc biệt và chỗ chúng xuất hiện lại trong PyTorch."""
+    s = Fig(640, 206)
+    s.t(24, 18, 'viết', 13.5, 'start', MUTED, font='sans')
+    s.t(250, 18, 'Python gọi', 13.5, 'start', MUTED, font='sans')
+    rows = [('len(ds)', 'ds.__len__()', None, 'Dataset'), ('ds[i]', 'ds.__getitem__(i)', None, 'Dataset'),
+            ('model(x)', 'model.__call__(x)', 'forward(x)', 'nn.Module')]
+    for k, (left, mid, right, tag) in enumerate(rows):
+        y = 56 + k * 52
+        s.box(18, y - 17, 150, 34, LINE, CODE_BG, r=8, width=1)
+        s.code(32, y, left, 14)
+        s.arrow(176, y, 236, y, CLAY, 1.4)
+        s.code(250, y, mid, 14)
+        if right:
+            x0 = 250 + s.mono_width(mid, 14) + 10
+            s.arrow(x0, y, x0 + 34, y, CLAY, 1.4)
+            s.code(x0 + 44, y, right, 14, color=CLAY)
+        s.pill(596, y, tag, BLUE if tag == 'Dataset' else CLAY, 12.5)
+    s.save('0-1-class', 'Ba hàm đặc biệt của một class và chỗ chúng xuất hiện lại trong PyTorch: len(ds) gọi __len__, ds[i] gọi __getitem__, model(x) gọi __call__ rồi forward.')
+
+
 def traceback_fig():
     s = Fig(640, 222)
     lines = [('Traceback (most recent call last):', MUTED),
@@ -715,7 +736,7 @@ def submission03():
 FIGS = {f.__name__: f for f in []}
 FIGS = {
     '0-1-notebook': notebook, '0-1-floordiv': floordiv, '0-1-float': float_grid, '0-1-names': names, '0-1-grid': grid_alias,
-    '0-1-lookup': lookup, '0-1-default': default_arg, '0-1-traceback': traceback_fig, '0-1-speed': speed,
+    '0-1-lookup': lookup, '0-1-default': default_arg, '0-1-traceback': traceback_fig, '0-1-class': class_fig, '0-1-speed': speed,
     '0-2-image': image_array, '0-2-reshape': reshape_fig, '0-2-wrap': wrap, '0-2-indexing': indexing, '0-2-speed': speed02,
     '0-2-view': view_copy, '0-2-axis': axis_fig, '0-2-digits': digits_axis, '0-2-stack': stack_fig, '0-2-broadcast': broadcast_fig,
     '0-2-pairwise': pairwise, '0-2-shape-mismatch': mismatch, '0-2-matmul': matmul, '0-2-rng': rng_fig,

@@ -15,6 +15,7 @@ py "$S/tools/audit_sources.py" "$id"
 py "$S/tools/rebuild_lesson.py" "$id" > "$S/receipts/lessons/rebuild-$id.json"
 py -c "import json,sys; r=json.load(open(sys.argv[1],encoding='utf-8')); print({k: v for k, v in r.items() if k != 'files'})" "$S/receipts/lessons/rebuild-$id.json"
 py "$S/tools/check_all_lessons.py"
+py "$S/tools/split_site.py"
 mkdir -p "$QA"
 rm -f "$QA"/*.png
 (cd "$S/tools/qa" && node qa_lesson.cjs "$id" "$QA" > "$QA/qa-summary.json")

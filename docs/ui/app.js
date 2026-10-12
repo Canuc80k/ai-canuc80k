@@ -336,6 +336,9 @@
         <h1>${esc(p.title)}</h1>
         <p class="lead">${esc(p.description)}</p>
         ${n ? `<p class="page-meta"><span>${n}/${p.count} đã học</span>${meter(n, p.count)}</p>` : ''}
+        ${(() => { const k = PB.tiers.reduce((x, t) => x + t.tasks.filter(y => y.chapters.includes(p.id)).length, 0);
+          const q = phaseLessons(p.id).reduce((x, l) => x + ((LINKS[l.id] || {}).quiz || 0), 0);
+          return `<div class="strip">${k ? a(`#/practice/ch/${p.id}`, `${icon('flag')}${k} đề thật phase ${p.id}`, 'class="strip-chip" data-nav') : ''}${q ? a('#/quiz', `${icon('quiz')}${q} câu trắc nghiệm theo bài`, 'class="strip-chip" data-nav') : ''}</div>`; })()}
       </header>
       ${T.phases[p.id] && !S.q.trim() ? `<article class="prose theory phase-intro">${T.phases[p.id].html}</article>` : ''}
       <div class="rows">${lessons.map(lessonRow).join('') || empty()}</div>
@@ -759,7 +762,7 @@
           : l.parts.map((m, k) => `${l.parts.length > 1 ? `<p class="ex-part">${esc(m.title)}</p>` : ''}<div class="ex-list">${m.homework.map(item(l, k)).join('')}</div>`).join('')}
       </section>`).join('');
     return `<div class="page">
-      <header class="page-head"><h1>Bài tập</h1></header>
+      <header class="page-head"><h1>Bài tập</h1><p class="lead">Mỗi bài học có bài tập tự chấm: đọc đề, tải bộ kit, viết hàm <code>solve</code>, nộp trên LQDOJ. Trong đề có ví dụ input → output, bấm Chạy ví dụ để xem.</p></header>
       <div class="chips" role="group" aria-label="Lọc theo phase">${chips}</div>
       ${groups || empty()}${footer()}</div>`;
   }
@@ -877,9 +880,12 @@
          <span class="phase-meta">${d ? `<span class="phase-progress">${meter(d, n)}${d}/${n}</span>` : `${n} bài`}</span>`,
         'class="phase" data-nav');
     }).join('');
+    const byCh = D.phases.map(p => { const n = PB.tiers.reduce((x, t) => x + t.tasks.filter(y => y.chapters.includes(p.id)).length, 0);
+      return n ? a(`#/practice/ch/${p.id}`, `<b>${p.id}</b>${esc(p.short)}<span>${n}</span>`, 'class="qz-lchip ch-chip" data-nav') : ''; }).join('');
     return `<div class="page">
-      <header class="page-head"><h1>Thực hành</h1></header>
-      <div class="phases">${rows}</div>${footer()}</div>`;
+      <header class="page-head"><h1>Thực hành</h1><p class="lead">Đề thi thật từ ROAI, OJIA, AIIS, IOAI và các kỳ thi thử, chấm trên LQDOJ. Đi từ Light tới Ultra, hoặc chọn theo phase vừa học.</p></header>
+      <div class="phases">${rows}</div>
+      <section class="block"><h2 class="block-title">Theo phase</h2><div class="qz-lessons-chips">${byCh}</div></section>${footer()}</div>`;
   }
   function renderPracticeTier(t) {
     const d = pDone(t), n = t.tasks.length;
@@ -1407,7 +1413,8 @@
   function motion() {
     const main = $('#main');
     $$('#main [data-count]').forEach(x => { x.textContent = Number(x.dataset.count).toLocaleString('vi-VN'); });
-    if (NO_MOTION) { $$('#main .reveal').forEach(e => e.classList.add('in')); return; }
+    // Tab đang ẩn thì trình duyệt hoãn hiệu ứng: hiện nội dung ngay, không chờ.
+    if (NO_MOTION || document.hidden) { main.classList.remove('page-in'); $$('#main .reveal').forEach(e => e.classList.add('in')); return; }
     main.classList.remove('page-in'); void main.offsetWidth; main.classList.add('page-in');
     revealObs?.disconnect();
     if (!('IntersectionObserver' in window)) { $$('#main .reveal').forEach(e => e.classList.add('in')); return; }
