@@ -161,6 +161,54 @@ demo_directory.cleanup()
 print(data_dir.exists())
 
 # Bước 19
+log = pd.DataFrame({"thoi_diem": ["2026-03-02 07:45", "2026-03-02 21:10", "2026-03-07 09:30"],
+                    "ma_hs": [" hs001", "HS002 ", "hs003"]})
+log["thoi_diem"] = pd.to_datetime(log["thoi_diem"], format="%Y-%m-%d %H:%M")
+log["gio"] = log["thoi_diem"].dt.hour
+log["thu"] = log["thoi_diem"].dt.dayofweek          # 0 là thứ Hai, 6 là Chủ nhật
+log["ma_hs"] = log["ma_hs"].str.strip().str.upper()
+print(log)
+print(log["thoi_diem"].max() - log["thoi_diem"].min())
+
+# Bước 20
+from PIL import Image
+
+with TemporaryDirectory() as directory:
+    root = Path(directory)
+    (root / "images").mkdir()
+    for name, value in [("c.png", 120), ("a.png", 40), ("b.png", 200)]:
+        Image.new("L", (4, 3), color=value).save(root / "images" / name)   # ảnh xám rộng 4, cao 3
+    pd.DataFrame({"file": ["a.png", "b.png", "c.png"], "label": ["toi", "sang", "vua"]}).to_csv(
+        root / "labels.csv", index=False)
+
+    labels = pd.read_csv(root / "labels.csv")
+    images = [np.asarray(Image.open(root / "images" / name).convert("L")) for name in labels["file"]]
+    X = np.stack(images).astype(np.float32) / 255
+    print(X.shape, X.dtype, X.mean(axis=(1, 2)).round(3))
+    print(labels["label"].tolist())
+
+# Bước 21
+import json, wave
+
+with TemporaryDirectory() as directory:
+    root = Path(directory)
+    rows = [{"id": 1, "text": "Học máy", "tags": ["ai"]}, {"id": 2, "text": "Dữ liệu bảng", "tags": []}]
+    (root / "train.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows), encoding="utf-8")
+    print(pd.read_json(root / "train.jsonl", lines=True))
+
+    rate = 8000
+    t = np.arange(rate // 10) / rate                       # 0,1 giây
+    tone = (0.5 * np.sin(2 * np.pi * 440 * t) * 32767).astype(np.int16)
+    with wave.open(str(root / "tone.wav"), "wb") as f:
+        f.setnchannels(1)
+        f.setsampwidth(2)                                  # 2 byte = int16
+        f.setframerate(rate)
+        f.writeframes(tone.tobytes())
+    with wave.open(str(root / "tone.wav"), "rb") as f:
+        audio = np.frombuffer(f.readframes(f.getnframes()), dtype=np.int16)
+        print(f.getframerate(), audio.shape, audio.dtype, round(float(np.abs(audio).max()) / 32768, 3))
+
+# Bước 22
 hand = pd.DataFrame({
     "lop": ["A", "A", "A", "B", "B", "B"],
     "diem": pd.Series([6, 8, 7, 5, np.nan, 9], dtype="float64"),

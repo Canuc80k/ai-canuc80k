@@ -1186,8 +1186,30 @@ def lr27():
     s.save('2-7-lr', 'Friedman1, cây sâu 3: learning rate 0.01 cần nhiều cây hơn hẳn 0.1 mới tới đáy (chấm tròn là vòng tốt nhất).')
 
 
+def oof27():
+    """2.7 mục K-fold: mỗi fold chấm phần màu, ghép năm phần thành dự đoán out-of-fold."""
+    auc = [.929, .898, .920, .905, .934]
+    s = Fig(640, 236)
+    x0, w, h, g = 92, 72, 22, 4
+    for c in range(5):
+        s.t(x0 + c * (w + g) + w / 2, 14, f'phần {c + 1}', 12, 'middle', MUTED, font='sans')
+    for k in range(5):
+        y = 30 + k * 32
+        s.mono(x0 - 14, y + h / 2 + 4, f'fold {k}', 12.5, 'end', MUTED)
+        for c in range(5):
+            on = c == k
+            s.box(x0 + c * (w + g), y, w, h, CLAY if on else SOFT_LINE, ACCENT_SOFT if on else CODE_BG, r=5, width=1.4 if on else 1)
+        s.mono(x0 + 5 * (w + g) + 10, y + h / 2 + 4, f'AUC {auc[k]:.3f}', 12.5, 'start', TEXT)
+    y = 30 + 5 * 32 + 12
+    s.mono(x0 - 14, y + h / 2 + 4, 'oof', 12.5, 'end', CLAY, weight=600)
+    for c in range(5):
+        s.box(x0 + c * (w + g), y, w, h, CLAY, ACCENT_SOFT, r=5, width=1.4)
+    s.mono(x0 + 5 * (w + g) + 10, y + h / 2 + 4, 'AUC 0.917', 12.5, 'start', CLAY, weight=600)
+    s.save('2-7-oof', 'Mỗi fold học trên bốn phần, chấm phần tô màu; ghép năm phần ấy được dự đoán out-of-fold cho cả tập train.')
+
+
 FIGS27 = {'2-7-fit-stages': fitstages27, '2-7-stages': stages27, '2-7-hand': hand27, '2-7-rf-vs-boost': rfboost27,
-          '2-7-pseudo': pseudo27, '2-7-early-stop': earlystop27, '2-7-lr': lr27}
+          '2-7-pseudo': pseudo27, '2-7-early-stop': earlystop27, '2-7-lr': lr27, '2-7-oof': oof27}
 
 
 # ───────────────────────────── 2.8 ─────────────────────────────

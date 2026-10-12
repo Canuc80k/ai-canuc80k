@@ -45,3 +45,48 @@ model = HistGradientBoostingRegressor(learning_rate=0.05, max_iter=2000, max_lea
                                       n_iter_no_change=50, random_state=0)
 model.fit(X_tr, y_tr)
 print("số cây:", model.n_iter_, " R2 validation:", round(model.score(X_va, y_va), 3))
+
+# Bước 4
+import numpy as np
+import pandas as pd
+import lightgbm as lgb
+from sklearn.datasets import make_classification
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import roc_auc_score
+
+X_num, y = make_classification(n_samples=3000, n_features=8, n_informative=5, flip_y=0.08, random_state=1)
+rng = np.random.default_rng(1)
+df = pd.DataFrame(X_num, columns=[f"f{i}" for i in range(8)])
+df["city"] = rng.choice(["HN", "HCM", "DN", "HP", "CT"], size=len(df))
+y = np.where(df["city"].isin(["HN", "DN"]) & (rng.random(len(df)) < 0.25), 1, y)   # thành phố có ảnh hưởng thật
+df["city"] = df["city"].astype("category")
+train, test = df.iloc[:2400], df.iloc[2400:]
+y_train, y_test = y[:2400], y[2400:]
+
+folds = StratifiedKFold(n_splits=5, shuffle=True, random_state=0)
+oof = np.zeros(len(train))
+test_pred = np.zeros(len(test))
+for k, (tr, va) in enumerate(folds.split(train, y_train)):
+    model = lgb.LGBMClassifier(learning_rate=0.05, n_estimators=2000, num_leaves=15,
+                               subsample=0.8, subsample_freq=1, colsample_bytree=0.8,
+                               random_state=0, verbose=-1, n_jobs=1)
+    model.fit(train.iloc[tr], y_train[tr], eval_set=[(train.iloc[va], y_train[va])],
+              eval_metric="auc", callbacks=[lgb.early_stopping(100, verbose=False)])
+    oof[va] = model.predict_proba(train.iloc[va])[:, 1]
+    test_pred += model.predict_proba(test)[:, 1] / folds.n_splits
+    print(f"fold {k}: cây tốt nhất {model.best_iteration_}, AUC {roc_auc_score(y_train[va], oof[va]):.3f}")
+print("AUC out-of-fold:", round(roc_auc_score(y_train, oof), 3))
+print("AUC test (trung bình 5 model):", round(roc_auc_score(y_test, test_pred), 3))
+
+# Bước 5
+import xgboost as xgb
+
+oof_xgb = np.zeros(len(train))
+for k, (tr, va) in enumerate(folds.split(train, y_train)):
+    model = xgb.XGBClassifier(learning_rate=0.05, n_estimators=2000, max_depth=4, subsample=0.8,
+                              colsample_bytree=0.8, enable_categorical=True, tree_method="hist",
+                              early_stopping_rounds=100, eval_metric="auc", random_state=0, n_jobs=1)
+    model.fit(train.iloc[tr], y_train[tr], eval_set=[(train.iloc[va], y_train[va])], verbose=False)
+    oof_xgb[va] = model.predict_proba(train.iloc[va])[:, 1]
+print("AUC OOF XGBoost:", round(roc_auc_score(y_train, oof_xgb), 3))
+print("AUC OOF trung bình hai thư viện:", round(roc_auc_score(y_train, (oof + oof_xgb) / 2), 3))

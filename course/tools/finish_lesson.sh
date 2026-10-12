@@ -11,10 +11,18 @@ src="$(ls "$S"/content/phase-*/"$id".md)"
 py() { python -B -X utf8 "$@"; }
 
 py "$S/tools/check_code.py" "$src"
+# Hình phải khớp mẫu nhúng của render_theory (vd. chú thích có dấu ] làm hình thành link 404)
+py -c "
+import re,sys; sys.path.insert(0, sys.argv[2]); import render_theory as R
+bad=[l for l in open(sys.argv[1],encoding='utf-8').read().splitlines() if l.startswith('![') and '](' in l and ('fig/' in l) and not (R.FIGURE.match(l) or R.ANIM.match(l))]
+if bad: print('Hình không nhúng được (chú thích có [ ] ?):', *bad, sep='\n  '); sys.exit(1)
+" "$src" "$S/tools"
 py "$S/tools/audit_sources.py" "$id"
 py "$S/tools/rebuild_lesson.py" "$id" > "$S/receipts/lessons/rebuild-$id.json"
 py -c "import json,sys; r=json.load(open(sys.argv[1],encoding='utf-8')); print({k: v for k, v in r.items() if k != 'files'})" "$S/receipts/lessons/rebuild-$id.json"
 py "$S/tools/check_all_lessons.py"
+# Link "Ôn lại" trỏ mục theo vị trí <h2>: thêm/bớt mục thì dựng lại quiz-bank cho khớp
+(cd "$S" && py tools/build_quizzes.py | tail -1)
 py "$S/tools/split_site.py"
 mkdir -p "$QA"
 rm -f "$QA"/*.png

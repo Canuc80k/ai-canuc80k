@@ -141,3 +141,26 @@ print(rng.integers(0, 10, size=5), rng.normal(size=2).round(3))
 print(rng.permutation(5), rng.choice(["A", "B", "C"], size=4))
 rng2 = np.random.default_rng(42)
 print(rng2.integers(0, 10, size=5))                # cùng seed: cùng dãy số
+
+# Bước 17
+scores = np.array([7.5, 9.0, 4.0, 9.0, 6.5])
+order = np.argsort(-scores, kind="stable")       # chỉ số theo điểm giảm dần
+print(order, scores[order])
+top2 = np.argpartition(-scores, 2)[:2]           # hai chỉ số điểm cao nhất, không sắp cả mảng
+print(np.sort(top2))
+labels = np.array([2, 0, 2, 1, 2, 0])
+print(np.unique(labels, return_counts=True))
+print(np.bincount(labels, minlength=4))
+print(np.cumsum([3, 1, 4, 1, 5]))
+edges = np.array([5.0, 6.5, 8.0])                # ngưỡng điểm: dưới 5, 5–6.5, 6.5–8, từ 8
+print(np.searchsorted(edges, [4.0, 6.5, 9.0], side="right"))
+
+# Bước 18
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
+with TemporaryDirectory() as directory:
+    path = Path(directory) / "features.npz"
+    np.savez_compressed(path, X=np.arange(6, dtype=np.float32).reshape(2, 3), y=np.array([0, 1]))
+    with np.load(path) as data:
+        print(data.files, data["X"].shape, data["X"].dtype, data["y"])

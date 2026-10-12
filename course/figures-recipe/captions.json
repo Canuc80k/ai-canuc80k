@@ -501,5 +501,8 @@
   "9-3-null": "Ma trận có cột thứ hai gấp đôi cột thứ nhất (hạng 1): cộng t(2, −1) vào trọng số không đổi dự đoán, nên mọi điểm trên đường cam là một nghiệm như nhau và hệ số không duy nhất.",
   "9-3-prior": "Cùng detector (bắt 90% bài lỗi, báo nhầm 10% bài sạch): xác suất một cảnh báo là đúng tăng theo tỉ lệ lỗi, 0.155 khi 2% bài lỗi và 0.9 khi một nửa số bài lỗi.",
   "9-3-se": "Độ lệch chuẩn của accuracy đo được, √(0.9 · 0.1 / n): 0.03 với 100 mẫu và 0.0095 với 1000 mẫu; giảm số mẫu 10 lần làm nó tăng √10 lần.",
-  "0-1-class": "Cú pháp quen thuộc gọi tới hàm đặc biệt của class, và PyTorch dùng lại đúng ba hàm này."
+  "0-1-class": "Cú pháp quen thuộc gọi tới hàm đặc biệt của class, và PyTorch dùng lại đúng ba hàm này.",
+  "2-7-oof": "Mỗi fold học trên bốn phần, chấm phần tô màu; ghép năm phần ấy được dự đoán out-of-fold cho cả tập train.",
+  "0-2-argsort": "argsort(-scores) trả về order: lấy scores theo các chỉ số ấy được dãy giảm dần.",
+  "0-3-folder": "Đọc ảnh theo cột file của labels.csv: ảnh thứ i luôn đi với nhãn thứ i."
 }

@@ -626,6 +626,15 @@
       else if (looksPython(text)) pre.innerHTML = highlight(text);
     });
     wrapTables('#lesson-doc');
+    // Link tới tệp .md của bài khác thì mở trang bài; README recipe mở bản đã định dạng trên GitHub.
+    $$('#lesson-doc a[href^="giao_trinh/assets/phase-"]').forEach(x => {
+      const h = x.getAttribute('href'), m = h.match(/^giao_trinh\/assets\/phase-\d+\/((?:\d+\.\d+|kt\d+))\.md$/);
+      if (m && findLesson(m[1])) { x.setAttribute('href', `#/lesson/${m[1]}`); x.setAttribute('data-nav', ''); }
+      else if (/\/README\.md$/.test(h)) {
+        x.href = `https://github.com/Canuc80k/ai-canuc80k/blob/main/course/content/${h.replace(/^giao_trinh\/assets\//, '')}`;
+        x.target = '_blank'; x.rel = 'noopener';
+      }
+    });
     $$('#lesson-doc > .t-sec > figure.fig, #lesson-doc > .t-sec > .quiz, #lesson-doc > .t-sec > .callout, #lesson-doc > .t-sec > figure.code').forEach(x => x.classList.add('reveal'));
     $$('#lesson-doc.theory a[href^="http"]').forEach(x => { x.target = '_blank'; x.rel = 'noopener'; });
     $$('#lesson-doc .t-sec.is-check').forEach(sec => {

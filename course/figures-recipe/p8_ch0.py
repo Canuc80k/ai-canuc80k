@@ -180,7 +180,7 @@ def class_fig():
             s.arrow(x0, y, x0 + 34, y, CLAY, 1.4)
             s.code(x0 + 44, y, right, 14, color=CLAY)
         s.pill(596, y, tag, BLUE if tag == 'Dataset' else CLAY, 12.5)
-    s.save('0-1-class', 'Ba hàm đặc biệt của một class và chỗ chúng xuất hiện lại trong PyTorch: len(ds) gọi __len__, ds[i] gọi __getitem__, model(x) gọi __call__ rồi forward.')
+    s.save('0-1-class', 'Cú pháp quen thuộc gọi tới hàm đặc biệt của class, và PyTorch dùng lại đúng ba hàm này.')
 
 
 def traceback_fig():
@@ -480,6 +480,26 @@ def matmul():
     s.save('0-2-matmul', '@ là tích vô hướng từng hàng; * nhân từng ô.')
 
 
+def argsort_fig():
+    """0.2 mục Sắp xếp: argsort trả về chỉ số; đọc scores theo các chỉ số ấy được dãy giảm dần."""
+    s = Fig(640, 204)
+    vals = [7.5, 9.0, 4.0, 9.0, 6.5]
+    order = [1, 3, 0, 4, 2]
+    cw, g, x0 = 56, 6, 196
+    cx = lambda j: x0 + j * (cw + g) + cw / 2
+    s.mono(x0 - 16, 46, 'scores', 13, 'end', MUTED)
+    for j in range(5):
+        s.mono(cx(j), 18, str(j), 12, 'middle', FAINT)
+    s.tiles(x0, 30, [[f'{v:g}' for v in vals]], cw, 32, LINE, g, {}, 14)
+    s.mono(x0 - 16, 156, 'scores[order]', 13, 'end', CLAY)
+    s.mono(x0 - 16, 194, 'order', 12, 'end', CLAY)
+    s.tiles(x0, 140, [[f'{vals[i]:g}' for i in order]], cw, 32, LINE, g, {(0, j): (CLAY, .14) for j in range(5)}, 14)
+    for j, i in enumerate(order):
+        s.curve(cx(i), 66, cx(j), 132, .0, CLAY, 1.1)
+        s.mono(cx(j), 194, str(i), 12, 'middle', CLAY)
+    s.save('0-2-argsort', 'argsort(-scores) trả về order: lấy scores theo các chỉ số ấy được dãy giảm dần.')
+
+
 def rng_fig():
     s = Fig(640, 160)
     tape = [0, 7, 6, 4, 4, 8, 0, 6, 2, 0]
@@ -497,6 +517,33 @@ def rng_fig():
 
 
 # ───────────────────────────── 0.3 pandas ─────────────────────────────
+
+def folder03():
+    """0.3 mục dữ liệu không phải bảng: đọc ảnh theo thứ tự của labels.csv."""
+    s = Fig(640, 196)
+    disk = [('c.png', 120), ('a.png', 40), ('b.png', 200)]
+    table = [('a.png', 'toi'), ('b.png', 'sang'), ('c.png', 'vua')]
+    gray = lambda v: f'#{v:02x}{v:02x}{v:02x}'
+    s.mono(40, 22, 'images/', 13, 'start', MUTED)
+    s.mono(232, 22, 'labels.csv', 13, 'start', MUTED)
+    s.mono(470, 22, 'X[i], y[i]', 13, 'start', CLAY)
+    ys = [52 + k * 48 for k in range(3)]
+    for k, (name, v) in enumerate(disk):
+        s.box(40, ys[k] - 15, 30, 30, LINE, gray(v), r=4, width=1)
+        s.mono(80, ys[k] + 4, name, 13, 'start', TEXT)
+    for k, (name, lab) in enumerate(table):
+        s.box(224, ys[k] - 15, 168, 30, SOFT_LINE, CODE_BG, r=6, width=1)
+        s.mono(238, ys[k] + 4, name, 13, 'start', TEXT)
+        s.mono(326, ys[k] + 4, lab, 13, 'start', BLUE)
+        j = [n for n, _ in disk].index(name)
+        s.curve(140, ys[j], 218, ys[k], .0, FAINT, 1.1)
+        v = dict(disk)[name]
+        s.box(470, ys[k] - 15, 30, 30, LINE, gray(v), r=4, width=1)
+        s.mono(512, ys[k] + 4, lab, 13, 'start', CLAY)
+        s.curve(398, ys[k], 462, ys[k], .0, CLAY, 1.1)
+    s.mono(470, 190, 'shape (3, 3, 4)', 12, 'start', MUTED)
+    s.save('0-3-folder', 'Đọc ảnh theo cột file của labels.csv: ảnh thứ i luôn đi với nhãn thứ i.')
+
 
 def data03():
     """Dữ liệu giả lập đúng như ô đầu của bài 0.3 (seed 7)."""
@@ -739,9 +786,9 @@ FIGS = {
     '0-1-lookup': lookup, '0-1-default': default_arg, '0-1-traceback': traceback_fig, '0-1-class': class_fig, '0-1-speed': speed,
     '0-2-image': image_array, '0-2-reshape': reshape_fig, '0-2-wrap': wrap, '0-2-indexing': indexing, '0-2-speed': speed02,
     '0-2-view': view_copy, '0-2-axis': axis_fig, '0-2-digits': digits_axis, '0-2-stack': stack_fig, '0-2-broadcast': broadcast_fig,
-    '0-2-pairwise': pairwise, '0-2-shape-mismatch': mismatch, '0-2-matmul': matmul, '0-2-rng': rng_fig,
+    '0-2-pairwise': pairwise, '0-2-shape-mismatch': mismatch, '0-2-matmul': matmul, '0-2-rng': rng_fig, '0-2-argsort': argsort_fig,
     '0-3-files': files03, '0-3-dataframe': dataframe03, '0-3-skew': skew03, '0-3-chained': chained03, '0-3-fillna': fill03,
-    '0-3-align': align03, '0-3-groupby': groupby03, '0-3-merge': merge03, '0-3-submission': submission03,
+    '0-3-align': align03, '0-3-groupby': groupby03, '0-3-merge': merge03, '0-3-folder': folder03, '0-3-submission': submission03,
 }
 
 if __name__ == '__main__':
