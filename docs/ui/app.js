@@ -420,16 +420,6 @@
   }
 
   const practiceTask = code => { for (const t of PB.tiers) { const x = t.tasks.find(y => y.code === code); if (x) return {...x, tier: t}; } return null; };
-  // Liên kết phụ của bài: tải về, mở notebook trên Colab/Kaggle, trắc nghiệm và đề thật của bài.
-  function lessonLinks(l) {
-    const k = LINKS[l.id] || {}, ext = 'target="_blank" rel="noopener"';
-    return {
-      get: [l.lessonPdf ? a(l.lessonPdf, 'PDF bài học', 'download') : '', l.notebook ? a(l.notebook, 'Notebook', 'download') : ''].filter(Boolean),
-      run: [k.colab ? a(k.colab, 'Colab', ext) : '', k.kaggle ? a(k.kaggle, 'Kaggle', ext) : ''].filter(Boolean),
-      more: [k.quiz ? a(`#/quiz/L-${l.id}`, `Trắc nghiệm <span>${k.quiz}</span>`, 'data-nav') : '',
-        k.drill?.length ? a(`#/practice/bai/${l.id}`, `Đề thật <span>${k.drill.length}</span>`, 'data-nav') : ''].filter(Boolean)
-    };
-  }
   function renderLesson(r) {
     const l = findLesson(r.id);
     if (!l) return notFound();
@@ -453,13 +443,9 @@
 
     if (tab === 'learn') {
       const doc = th || m;
-      const k = th ? lessonLinks(l) : {get: [], run: [], more: []};
-      const group = (label, xs) => xs.length ? `<p class="toc-links"><span>${label}</span>${xs.join('')}</p>` : '';
-      const side = group('Tải', k.get) + group('Chạy trên', k.run) + group('Luyện', k.more);
-      body = `${side ? `<div class="learn-links">${side}</div>` : ''}
-        <div class="learn">
+      body = `<div class="learn">
         <article class="prose${th ? ' theory' : ''}" id="lesson-doc">${doc.html}</article>
-        <aside class="toc" aria-label="Mục lục bài">${side ? `<div class="toc-dl">${side}</div>` : ''}${doc.headings.filter(h => h !== INTERNAL).map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}</aside>
+        <aside class="toc" aria-label="Mục lục bài">${doc.headings.filter(h => h !== INTERNAL).map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}</aside>
       </div>`;
     }
     if (ownDeck) {
@@ -518,7 +504,6 @@
         <p class="kicker">${a(`#/phase/${p.id}`, `Phase ${p.id}`, 'data-nav')}<span class="kicker-sep">·</span>${nameLabel(l)}</p>
         <h1>${esc(l.title)}</h1>
         ${m || th ? `<button class="mark${done ? ' is-done' : ''}" data-action="complete" aria-pressed="${done}">${icon(done ? 'done' : 'circle')}<span>${done ? 'Đã học' : 'Đánh dấu đã học'}</span></button>` : ''}
-        <p class="lead">${esc(l.summary)}</p>
       </header>
       ${m || th ? `${parts}${tabs ? `<nav class="tabs" aria-label="Nội dung bài">${tabs}</nav>` : ''}<div class="tab-body">${body}</div>` : draft}
       ${lessonPager(l)}${footer()}</div>`;
