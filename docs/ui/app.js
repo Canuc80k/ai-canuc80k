@@ -560,10 +560,6 @@
       }
     });
     $$('#lesson-doc.theory a[href^="http"]').forEach(x => { x.target = '_blank'; x.rel = 'noopener'; });
-    $$('#lesson-doc .t-sec.is-check').forEach(sec => {
-      sec.insertAdjacentHTML('beforeend', '<div class="quiz-score" aria-live="polite"><span></span><button class="btn" data-action="quiz-reset">Làm lại</button></div>');
-      quizScore(sec);
-    });
     fitMath();
   }
   // ---------- nút Chạy: kết quả đã chạy thật lúc soạn bài, bấm Chạy thì in ra ----------
@@ -595,6 +591,7 @@
     const all = [...sec.querySelectorAll('.quiz')], done = all.filter(q => q.classList.contains('is-answered'));
     const right = done.filter(q => q.querySelector('.quiz-opt.is-right.is-chosen')).length;
     const box = sec.querySelector('.quiz-score');
+    if (!box) return;
     box.classList.toggle('is-done', done.length === all.length);
     box.querySelector('span').textContent = done.length === all.length
       ? `Kết quả: ${right}/${all.length} câu đúng.` : `Đã làm ${done.length}/${all.length} câu.`;
