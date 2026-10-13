@@ -833,7 +833,7 @@ html.exam-lock .top { justify-content: flex-end; }
 }
 
 /* ---------- bổ sung 13/10: logo, liên kết phụ của bài, nút Chạy, trắc nghiệm và đề thật theo bài ---------- */
-.wordmark .logo { flex: none; align-self: center; width: 26px; height: 13px; }
+.wordmark .logo { flex: none; align-self: center; width: 26px; height: 24px; }
 
 .run-btn { display: inline-flex; align-items: center; gap: 5px; height: 28px; padding: 0 9px 0 7px; border: 0; border-radius: 7px; background: transparent; color: var(--accent-ink); font: 500 13px/1 var(--sans); cursor: pointer; }
 .run-btn .i { width: 12px; height: 12px; fill: currentColor; stroke: none; }
