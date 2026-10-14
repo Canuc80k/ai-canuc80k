@@ -4,8 +4,16 @@
   "contests": [
     {
       "id": "voai",
-      "short": "Việt Nam",
-      "name": "Việt Nam: chọn đội IOAI và VAIO",
+      "short": "VOAI",
+      "name": "VOAI",
+      "level": "",
+      "summary": "",
+      "links": []
+    },
+    {
+      "id": "vaio",
+      "short": "VAIO",
+      "name": "VAIO",
       "level": "",
       "summary": "",
       "links": [
