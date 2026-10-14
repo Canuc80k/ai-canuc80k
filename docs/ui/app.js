@@ -707,7 +707,7 @@
       const k = CT.contests.indexOf(c), prev = CT.contests[k - 1], next = CT.contests[k + 1];
       return `<div class="page page-wide">
         <header class="lesson-head">
-          <p class="kicker">${a('#/contests', 'Các cuộc thi', 'data-nav')}<span class="kicker-sep">·</span>${esc(c.level || '')}</p>
+          <p class="kicker">${a('#/contests', 'Các cuộc thi', 'data-nav')}</p>
           <h1>${esc(c.name)}</h1>
           <nav class="lesson-links" aria-label="Liên kết">${(c.links || []).map(([label, url]) => a(url, `${icon('external')}${esc(label)}`, 'target="_blank" rel="noopener"')).join('')}</nav>
         </header>
@@ -715,13 +715,13 @@
           <article class="prose theory" id="lesson-doc">${pg.html}</article>
           <aside class="toc" aria-label="Mục lục">${pg.headings.map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}</aside>
         </div>
-        <nav class="pager" aria-label="Cuộc thi liền kề">${prev ? a(`#/contests/${prev.id}`, `<small>${icon('back')} ${esc(prev.short)}</small><span>${esc(prev.name)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/contests/${next.id}`, `<small>${esc(next.short)} ${icon('arrow')}</small><span>${esc(next.name)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>
+        <nav class="pager" aria-label="Cuộc thi liền kề">${prev ? a(`#/contests/${prev.id}`, `<small>${icon('back')}</small><span>${esc(prev.name)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/contests/${next.id}`, `<small>${icon('arrow')}</small><span>${esc(next.name)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>
         ${footer()}</div>`;
     }
     const rows = CT.contests.map((c, k) => a(`#/contests/${c.id}`,
       `<span class="phase-num">${k + 1}</span>
        <span class="phase-body"><span class="phase-title">${esc(c.name)}</span><span class="phase-text">${esc(c.summary || '')}</span></span>
-       <span class="phase-meta">${esc(c.level || '')}</span>`, 'class="phase" data-nav')).join('');
+      `, 'class="phase" data-nav')).join('');
     const cols = CT.columns || [];
     const table = cols.length ? `<section class="block"><h2 class="block-title">So sánh nhanh</h2><div class="table-wrap"><table>
         <thead><tr>${cols.map(col => `<th>${esc(col.label)}</th>`).join('')}</tr></thead>
