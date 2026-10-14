@@ -3322,7 +3322,7 @@
     "1.7",
     "Grid search là một bảng tổ hợp",
     [
-     "Nói chung số lần fit bằng số tổ hợp nhân số fold: 3 giá trị C và 2 kernel với cv=5 cho 30 lần, chưa kể refit."
+     "Ví dụ 3 giá trị C và 2 kernel với cv=5 cần 30 lần fit, chưa kể refit."
     ]
    ]
   ]
@@ -5046,7 +5046,7 @@
     "1.7",
     "Random search và ngân sách",
     [
-     "Tham số sát 1 như $\\beta_1$ của Adam thì lấy theo log của $1-\\beta_1$: lấy đều trong $[0.9, 0.999]$ chỉ khoảng 9% cơ hội rơi vào $(0.99, 0.999)$."
+     "Tham số sát 1, như $\\beta_1$ của Adam (bài 3.5), thì lấy theo log của $1 - \\beta_1$: lấy đều trong $[0.9, 0.999]$ chỉ có khoảng 9% khả năng rơi vào $(0.99, 0.999)$."
     ]
    ]
   ]
@@ -16938,7 +16938,7 @@
     "1.7",
     "Grid search là một bảng tổ hợp",
     [
-     "Ngân sách giờ cũng chia như vậy: mỗi lần học 1 giờ, mỗi tổ hợp 4 fold, 100 giờ chỉ đủ 25 tổ hợp."
+     "Thời gian cũng tính như vậy: mỗi lần học mất 1 giờ, mỗi tổ hợp 4 fold, thì 100 giờ chỉ đủ thử 25 tổ hợp."
     ]
    ]
   ]
@@ -17513,7 +17513,9 @@
     "1.7",
     "Random search và ngân sách",
     [
-     "Với tham số như mức phạt trải nhiều bậc độ lớn, thường cần phân bố log thay vì khoảng tuyến tính; hãy dựa vào ý nghĩa model để đặt vùng. Lấy đều trong $[0.01, 1]$ thì gần hết điểm rơi vào $0.1$–$1$; lấy $10^u$ với $u$ đều trong $[-2, 0]$ thì mỗi bậc độ lớn được thử như nhau."
+     "Với tham số trải qua nhiều bậc độ lớn, như mức phạt hay learning rate, nên lấy theo thang log:",
+     "Lấy đều trong $[0.01, 1]$ thì gần hết các điểm rơi vào $[0.1, 1]$, vùng $[0.01, 0.1]$ hầu như không được thử.",
+     "Lấy $10^u$ với $u$ đều trong $[-2, 0]$ thì mỗi bậc độ lớn được thử như nhau."
     ]
    ]
   ]
