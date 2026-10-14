@@ -195,21 +195,21 @@ def transform05():
 def tangent06():
     f = lambda x: x ** 2
     s = Fig(640, 250)
-    ax = s.axes(90, 14, 460, 196, (0, 4.6), (0, 18), xticks=[0, 1, 2, 3, 4], yticks=[0, 4, 8, 12, 16], xlabel='x')
-    _plot(ax, f, 0, 4.25, TEXT, 2)
-    for h, col, op in [(1, SAND, 1), (.5, BLUE, 1)]:
+    ax = s.axes(90, 14, 460, 196, (0, 4.8), (0, 22), xticks=[0, 1, 2, 3, 4], yticks=[0, 5, 10, 15, 20], xlabel='x')
+    for h, col in [(1.5, SAND), (.5, BLUE)]:
         k = (f(3 + h) - f(3)) / h
-        xs = np.array([1.6, 4.4])
-        ax.line(xs, f(3) + k * (xs - 3), col, 1.5, dash='5 4')
-        s.circle(ax.X(3 + h), ax.Y(f(3 + h)), 4, col)
-        s.label(110, 24 + (0 if h == 1 else 20), f'h = {h:g}: độ dốc {k:g}', 12.5, 'start', col, 600)
-    xs = np.array([1.6, 4.4])
-    ax.line(xs, 9 + 6 * (xs - 3), CLAY, 2)
+        xs = np.array([2.2, 4.7])
+        ax.line(xs, f(3) + k * (xs - 3), col, 1.6)
+        s.circle(ax.X(3 + h), ax.Y(f(3 + h)), 4.5, col)
+        s.label(110, 24 + (0 if h == 1.5 else 20), f'h = {h:g}: độ dốc {k:g}', 12.5, 'start', col, 600)
+    xs = np.array([2.2, 4.7])
+    ax.line(xs, 9 + 6 * (xs - 3), CLAY, 2.2)
+    _plot(ax, f, 0, 4.65, TEXT, 1.6)
     s.label(110, 64, 'tiếp tuyến: độ dốc 6', 12.5, 'start', CLAY, 600)
     s.circle(ax.X(3), ax.Y(9), 5, CLAY)
-    s.label(ax.X(3) - 8, ax.Y(9) - 4, '(3, 9)', 12.5, 'end', CLAY, 600)
+    s.label(ax.X(3) + 10, ax.Y(9) + 16, '(3, 9)', 12.5, 'start', CLAY, 600)
     s.label(ax.X(1.2), ax.Y(f(1.2)) - 12, 'x²', 14, 'middle', TEXT, 600)
-    s.save('0-6-tangent', 'Đường nối hai điểm xoay về tiếp tuyến khi h nhỏ dần; độ dốc tiến về f′(3) = 6.')
+    s.save('0-6-tangent', 'h càng nhỏ, đường nối hai điểm càng gần tiếp tuyến; độ dốc tiến về 6.')
 
 
 def chain06():
@@ -227,7 +227,7 @@ def chain06():
     s.label(152, y - 34, '∂ŷ/∂w = x = 2', 12.5, color=CLAY, weight=600)
     s.label(395, y - 34, '∂L/∂ŷ = 2(ŷ − y) = −8', 12.5, color=CLAY, weight=600)
     s.label(320, 156, '∂L/∂w = 2 · (−8) = −16', 14, color=CLAY, weight=700)
-    s.save('0-6-chain', 'Từ w tới loss qua hai bước; đạo hàm của loss theo w là tích đạo hàm của từng bước.')
+    s.save('0-6-chain', 'Đạo hàm của loss theo w bằng tích đạo hàm của từng bước.')
 
 
 def gradient06():
@@ -250,7 +250,7 @@ def gradient06():
     s.label(ax.X(.5) - 6, ax.Y(1.0) + 12, '−∇f', 13, 'end', CLAY, 600)
     s.label(520, 60, '∇f = (2x, 2y)', 13, 'start', BLUE, 600)
     s.label(520, 82, 'chỉ ra xa đáy', 12.5, 'start', MUTED)
-    s.save('0-6-gradient', 'Bát x² + y²: gradient (2x, 2y) chỉ ra xa đáy, vuông góc với các vòng đồng mức; −∇f chỉ về đáy.')
+    s.save('0-6-gradient', 'Gradient của x² + y² chỉ ra xa đáy; −∇f chỉ về đáy.')
 
 
 def descent06():
@@ -277,7 +277,7 @@ def descent06():
         s.line(ax.X(3), ax.Y(0), ax.X(3), ax.Y(0) - 6, TEXT, 1.4)
     s.label(205, 232, f'{path(.05, 6)[-1]:.2f} sau 6 bước', 12.5, color=BLUE)
     s.label(515, 232, '0 → 7.2 → −2.88 → 11.23', 12.5, color=CLAY)
-    s.save('0-6-descent', 'Learning rate 0.05 đi dần xuống đáy w = 3; learning rate 0.3 nhảy qua đáy và văng ra xa hơn sau mỗi bước.')
+    s.save('0-6-descent', 'η = 0.05 đi dần xuống đáy; η = 0.3 nhảy qua đáy, văng xa dần.')
 
 
 # ───────────────────────────── 0.7 Xác suất và thống kê ─────────────────────────────
@@ -302,7 +302,7 @@ def bayes07():
         if pos:
             s.box(x - 55, 168, 110, 44, 'none', col, r=8, width=0, opacity=.12)
     s.label(320, 238, 'dương tính: 95 + 495 = 590 người, có bệnh 95/590 ≈ 0.16', 13, color=CLAY, weight=600)
-    s.save('0-7-bayes', '10 000 người: 95 người bệnh dương tính và 495 người khỏe dương tính nhầm; trong 590 kết quả dương chỉ 16% là bệnh thật.')
+    s.save('0-7-bayes', 'Trong 590 người dương tính, chỉ 95 người có bệnh.')
 
 
 def normal07():
@@ -320,7 +320,6 @@ def normal07():
     s.label(ax.X(0), ax.Y(.17), '68%', 15, color=BLUE, weight=700)
     for z in (-1.5, 1.5):
         s.label(ax.X(z), ax.Y(.035), '13.5%', 11.5, color=BLUE)
-    s.label(ax.X(0), ax.Y(0) - 12, '← 95% từ μ−2σ đến μ+2σ →', 11.5, color=BLUE)
     s.save('0-7-normal', 'Phân phối chuẩn: 68% giá trị trong μ ± σ, 95% trong μ ± 2σ.')
 
 
@@ -344,7 +343,7 @@ def se07():
     s.label(ax.X(p) + 6, ax.Y(1) + 2, 'thật 0.85', 12, 'start', TEXT)
     s.label(ax.X(.775), ax.Y(.55), 'n = 200', 13, 'start', CLAY, 600)
     s.label(ax.X(.875), ax.Y(.75), 'n = 2000', 13, 'start', BLUE, 600)
-    s.save('0-7-se', 'Accuracy đo được của cùng một model (thật 0.85) trên 10 000 bộ validation: 200 ảnh dao động rộng, 2000 ảnh hẹp hơn khoảng ba lần.')
+    s.save('0-7-se', 'Cùng một model: chấm trên 200 ảnh dao động rộng, trên 2000 ảnh hẹp hơn.')
 
 
 FIGS = {
