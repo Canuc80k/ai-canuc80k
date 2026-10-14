@@ -20,5 +20,5 @@ cat > "$STAGE/wrangler.jsonc" <<'EOF'
   "assets": { "directory": "site" }
 }
 EOF
-cd "$STAGE" && npx -y wrangler@4 deploy
+cd "$STAGE" && npx -y wrangler@4.150.0 deploy
 rm -rf "$STAGE/site"

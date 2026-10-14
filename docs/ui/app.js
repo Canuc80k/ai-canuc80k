@@ -599,17 +599,19 @@
   }
 
   function renderResources() {
+    const text = d => d ? `<span class="res-text">${esc(d)}</span>` : '';
     const docs = D.resources.map(res => `<div class="res">
-        ${a(`#/resource/${res.id}`, `<span class="res-title">${esc(res.title)}</span>`, 'class="res-main" data-nav')}
+        ${a(`#/resource/${res.id}`, `<span class="res-title">${esc(res.title)}</span>${text(res.description)}`, 'class="res-main" data-nav')}
         ${a(res.path, `${icon('download')}<span class="sr">Tải ${esc(res.title)}</span>`, 'class="icon-btn" download title="Tải tệp"')}
       </div>`).join('');
-    const sources = D.sources.map(s => a(s.url,
-      `<span class="res-title">${esc(s.title)}</span>${icon('external')}`,
-      'class="res-main res-ext" target="_blank" rel="noopener"')).join('');
+    const groups = [...new Set(D.sources.map(s => s.group || 'Học thêm'))].map(g => `<section class="block"><h2 class="block-title">${esc(g)}</h2><div class="res-list">${
+      D.sources.filter(s => (s.group || 'Học thêm') === g).map(s => a(s.url,
+        `<span class="res-title">${esc(s.title)}</span>${text(s.description)}${icon('external')}`,
+        'class="res-main res-ext" target="_blank" rel="noopener"')).join('')}</div></section>`).join('');
     return `<div class="page">
       <header class="page-head"><h1>Tài liệu</h1></header>
       <div class="res-list">${docs}</div>
-      <section class="block"><h2 class="block-title">Học thêm</h2><div class="res-list">${sources}</div></section>
+      ${groups}
       ${footer()}</div>`;
   }
   function inlineMd(text) {
@@ -927,8 +929,9 @@
     const st = QS[s.id], all = qAll(s), tot = qStats(s, all);
     const cur = st.ids.length ? qStats(s, st.ids) : null;
     const resume = cur && cur.done && cur.todo
-      ? a(`#/quiz/${s.id}/play`, `<span class="resume-label">Làm tiếp</span><span class="resume-title">${esc(qModeName(s, st.mode))}</span><span class="resume-meta">${cur.done}/${st.ids.length} câu</span>${icon('arrow')}`, 'class="resume" data-nav')
-      : tot.done ? '' : qBtn(s, 'all', `<span class="resume-label">Bắt đầu</span><span class="resume-title">Cả ${all.length} câu</span>${icon('arrow')}`, 'resume');
+      ? a(`#/quiz/${s.id}/play`, `Làm tiếp<span class="qz-n">${cur.done}/${st.ids.length}</span>`, 'class="btn is-primary" data-nav')
+      : tot.done ? '' : qBtn(s, 'all', 'Làm bài', 'btn is-primary');
+    const lead = resume + (s.lesson ? a(lessonHref(s.lesson), `${icon('book')}Đọc lại bài`, 'class="btn" data-nav') : '');
     const topics = s.groups.map((g, k) => {
       const idx = qInGroup(s, g.id), t = qStats(s, idx);
       return qBtn(s, g.id,
@@ -945,8 +948,7 @@
     return `<div class="page">
       <header class="page-head"><p class="kicker">${a('#/quiz', 'Trắc nghiệm', 'data-nav')}</p><h1>${esc(s.title)}</h1>
         ${tot.done ? `<div class="page-meta"><span class="phase-progress">${meter(tot.done, all.length)}${tot.done}/${all.length} câu</span><span>${tot.right} đúng · ${tot.wrong} sai</span></div>` : ''}</header>
-      ${s.lesson ? `<div class="actions">${a(lessonHref(s.lesson), `${icon('book')}Đọc lại bài`, 'class="btn" data-nav')}</div>` : ''}
-      ${resume}
+      ${lead ? `<div class="actions">${lead}</div>` : ''}
       <section class="block"><h2 class="block-title">${s.lesson ? 'Theo mức' : 'Chủ đề'}</h2><div class="phases">${topics}</div></section>
       ${acts ? `<div class="actions qz-actions">${acts}</div>` : ''}
       ${exBlock(s)}
@@ -1047,7 +1049,7 @@
 
   // ---------- kiểm tra: đề ngẫu nhiên, tính giờ, khóa điều hướng đến khi nộp bài ----------
   const EKEY = 'aicanuc80k.exam.v1', ELOG = 'aicanuc80k.examlog.v1';
-  const EX_SIZES = [20, 40, 100];
+  const EX_SIZES = [100];
   const exSecs = s => s.id.startsWith('light') ? 45 : s.id.startsWith('medium') ? 60 : 90;
   const exMinutes = (s, n) => Math.round(n * exSecs(s) / 60);
   const exPools = {};
