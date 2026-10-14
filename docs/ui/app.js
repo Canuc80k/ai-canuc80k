@@ -720,7 +720,7 @@
     }
     const rows = CT.contests.map((c, k) => a(`#/contests/${c.id}`,
       `<span class="phase-num">${k + 1}</span>
-       <span class="phase-body"><span class="phase-title">${esc(c.name)}</span><span class="phase-text">${esc(c.summary || '')}</span></span>
+       <span class="phase-body"><span class="phase-title">${esc(c.name)}</span>${c.summary ? `<span class="phase-text">${esc(c.summary)}</span>` : ''}</span>
       `, 'class="phase" data-nav')).join('');
     const cols = CT.columns || [];
     const table = cols.length ? `<section class="block"><h2 class="block-title">So sánh nhanh</h2><div class="table-wrap"><table>

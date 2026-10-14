@@ -7,7 +7,7 @@
       "short": "Việt Nam",
       "name": "Việt Nam: chọn đội IOAI và VAIO",
       "level": "",
-      "summary": "Hai kỳ chọn đội: đi IOAI và đi IAIO.",
+      "summary": "",
       "links": [
         [
           "Thông báo VAIO 2027",
@@ -20,7 +20,7 @@
       "short": "IOAI",
       "name": "IOAI",
       "level": "",
-      "summary": "Hai ngày thực hành, mỗi ngày 6 giờ.",
+      "summary": "",
       "links": [
         [
           "ioai-official.org",
@@ -41,7 +41,7 @@
       "short": "IAIO",
       "name": "IAIO",
       "level": "",
-      "summary": "Lý thuyết viết và thực hành Python.",
+      "summary": "",
       "links": [
         [
           "iaio-official.org",
@@ -54,7 +54,7 @@
       "short": "APOAI",
       "name": "APOAI",
       "level": "",
-      "summary": "Olympiad khu vực châu Á – Thái Bình Dương.",
+      "summary": "",
       "links": [
         [
           "Olympiad khu vực 2026",
@@ -67,7 +67,7 @@
       "short": "NOAI",
       "name": "NOAI Singapore",
       "level": "",
-      "summary": "300 câu trắc nghiệm, rồi lập trình.",
+      "summary": "",
       "links": [
         [
           "noai.aisingapore.org",
@@ -84,7 +84,7 @@
       "short": "USA-NA-AIO",
       "name": "USA-NA-AIO",
       "level": "",
-      "summary": "Không lập trình và lập trình trên Colab.",
+      "summary": "",
       "links": [
         [
           "usaaio.org",
