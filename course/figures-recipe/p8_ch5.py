@@ -72,7 +72,7 @@ def window51():
     s.arrow(184, 115, 238, 115, LINE, 1.3)
     s.arrow(346, 115, 440, 115, LINE, 1.3)
     s.mono(320, 192, '1·1 + 2·0 + 0·0 + 1·2 = 3', 13, 'middle', TEXT)
-    s.save('5-1-window', 'Cửa sổ 2×2 đầu tiên (tô cam) nhân từng ô với kernel rồi cộng: 1·1 + 2·0 + 0·0 + 1·2 = 3, ô đầu của đầu ra; trượt kernel qua bốn vị trí được 3, 8, 2, 1.')
+    s.save('5-1-window', 'Nhân từng ô của cửa sổ với kernel rồi cộng: ô đầu ra đầu tiên bằng 3.')
 
 
 def edges51():
@@ -89,7 +89,7 @@ def edges51():
         fills = {(i, j): ((CLAY if v > 0 else BLUE) if v else FAINT, .1 + .14 * abs(v)) for i, r in enumerate(k) for j, v in enumerate(r)}
         s.tiles(x + w / 2 - 41, 222, [[mnum(v, '{:g}') for v in r] for r in k], 26, 18, FAINT, 2, fills, size=10.5)
     s.label(xs[0] + w / 2, 244, 'cùng 9 trọng số trượt qua mọi vị trí', 11.5, color=MUTED)
-    s.save('5-1-edges', 'Ảnh thật qua hai kernel 3×3 đặt tay: kernel nét dọc làm sáng các cạnh dựng đứng của tháp, kernel ngang làm sáng mái và lan can.')
+    s.save('5-1-edges', 'Kernel nét dọc làm sáng cạnh đứng của tháp; kernel ngang làm sáng mái và lan can.')
 
 
 def padding51():
@@ -117,7 +117,7 @@ def padding51():
     s.arrow(430, 167, 470, 167, LINE, 1.2)
     s.tiles(478, 152, [[''] * 3], c, c, CLAY, g, opacity=.3)
     s.mono(529, 200, '3 ô', 12, 'middle', CLAY)
-    s.save('5-1-padding', 'Kernel 3 trên chiều dài 7: thêm vành 0 hai đầu và dịch 2 ô thì cửa sổ bắt đầu ở 0, 2, 4, 6, ra 4 ô; dilation 2 đọc cách một ô, phủ 5 ô nên chỉ còn 3 vị trí.')
+    s.save('5-1-padding', 'Padding thêm vành 0, stride dịch nhiều ô, dilation đọc cách ô.')
 
 
 def channels51():
@@ -144,7 +144,7 @@ def channels51():
     s.mono(536, 208, '(8, 7, 7)', 12, 'middle', MUTED)
     s.label(536, 30, 'tám kênh ra', 12.5, color=TEXT, weight=600)
     s.mono(320, 236, '8 · (3·9 + 1) = 224 tham số', 12.5, 'middle', CLAY)
-    s.save('5-1-channels', 'Một kernel đọc cả ba kênh RGB, cộng lại thêm bias thành một kênh ra; tám kernel độc lập cho tám kênh, tổng 8·(3·9 + 1) = 224 tham số dù ảnh lớn hay nhỏ.')
+    s.save('5-1-channels', 'Mỗi kernel đọc cả ba kênh RGB; tám kernel cho tám kênh ra, 224 tham số.')
 
 
 def pool51():
@@ -162,7 +162,7 @@ def pool51():
         if k:
             s.arrow(x - 18, 98, x - 4, 98, CLAY, 1.3)
     s.label(320, 192, 'mỗi lần max pool 2×2 giữ một số trong bốn: nét còn, vị trí chính xác mất dần', 11.5, color=MUTED)
-    s.save('5-1-pool', 'Bản đồ nét của ảnh thật qua ba lần max pool 2×2: từ 128×128 xuống 16×16, đường nét vẫn còn nhưng chi tiết và vị trí chính xác mất dần.')
+    s.save('5-1-pool', 'Ba lần max pool 2×2: từ 128×128 xuống 16×16, nét còn nhưng chi tiết mất dần.')
 
 
 def poolshift51():
@@ -180,7 +180,7 @@ def poolshift51():
             s.arrow((a + b) / 2, 98, x0 + 42 + w * (c + g) + c / 2, 128, FAINT, 1.1)
         s.tiles(x0 + 42, 132, [[str(v) for v in out]], c, c, GREEN, g, {(0, j): (CLAY, .35) for j, v in enumerate(out) if v}, size=14)
     s.label(320, 188, 'đỉnh qua ranh giới cửa sổ: kết quả đổi chỗ, pooling không bất biến dịch tuyệt đối', 11.5, color=MUTED)
-    s.save('5-1-pool-shift', 'Max pool cửa sổ 2, stride 2 (số từ code bài): đỉnh 4 dịch một ô qua ranh giới hai cửa sổ thì đầu ra đổi từ [4, 0] thành [0, 4].'.replace('[', '(').replace(']', ')'))
+    s.save('5-1-pool-shift', 'Đỉnh dịch một ô qua ranh giới cửa sổ thì đầu ra max pool đổi từ (4, 0) thành (0, 4).'.replace('[', '(').replace(']', ')'))
 
 
 def receptive51():
@@ -202,7 +202,7 @@ def receptive51():
     s.label(x0 - 16, 72, 'lớp 1', 12, 'end', MUTED)
     s.label(x0 - 16, 175, 'đầu vào', 12, 'end', MUTED)
     s.mono(320, 214, 'r = 1 + 2 + 2 = 5', 12.5, 'middle', CLAY)
-    s.save('5-1-receptive', 'Hai lớp kernel 3, stride 1: ô ở lớp 2 đọc ba ô lớp 1, mỗi ô ấy đọc ba ô đầu vào chồng lấn nhau, nên vùng nhìn gồm 5 ô.')
+    s.save('5-1-receptive', 'Hai lớp kernel 3: mỗi ô ở lớp 2 nhìn được 5 ô đầu vào.')
 
 
 def equiv51():
@@ -229,7 +229,7 @@ def equiv51():
     s.label(xs[1] + w / 2, 20, 'feature map nét dọc', 12, color=MUTED)
     s.label(480, 160, 'cạnh mạnh nhất', 12, 'start', CLAY)
     s.label(480, 178, 'dịch đúng 20 px', 12, 'start', CLAY)
-    s.save('5-1-equiv', 'Đồng biến với phép dịch trên ảnh thật: dịch ảnh sang phải 20 px thì feature map nét dọc dịch theo đúng 20 px, giá trị giữ nguyên trừ sát biên.')
+    s.save('5-1-equiv', 'Dịch ảnh 20 px thì feature map dịch theo đúng 20 px.')
 
 
 FIGS51 = {'5-1-window': window51, '5-1-edges': edges51, '5-1-padding': padding51, '5-1-channels': channels51,
@@ -264,7 +264,7 @@ def samples52():
         s.label(x + w / 2, 122, 'đứng' if y[k] == 0 else 'ngang', 12, color=BLUE if y[k] == 0 else CLAY)
     s.label(320, 22, '8 ảnh train đầu tiên của make_lines (12×12, nhiễu σ = 0.04)', 12, color=MUTED)
     s.label(320, 166, 'chỉ 5 vị trí × 2 hướng: validation khác train ở nhiễu', 11.5, color=MUTED)
-    s.save('5-2-samples', 'Tám ảnh train đầu tiên do make_lines sinh (dữ liệu từ code bài): nét đứng và nét ngang dài 8 ô, rộng 2 ô, ở một trong 5 vị trí, cộng nhiễu nhỏ.')
+    s.save('5-2-samples', 'Tám ảnh train: nét đứng hoặc nét ngang, ở năm vị trí, cộng nhiễu nhỏ.')
 
 
 def cnn52():
@@ -294,7 +294,7 @@ def cnn52():
     s.label(580, 30, 'linear head', 12.5, color=TEXT, weight=600)
     for a, b in [(96, 126), (226, 266), (330, 364), (428, 476), (504, 554)]:
         s.arrow(a, 106, b, 106, LINE, 1.1)
-    s.save('5-2-cnn', 'TinyCNN theo shape: hai lần conv + ReLU xen max pool, trung bình mỗi feature map thành một số, rồi linear head ra hai logits.')
+    s.save('5-2-cnn', 'TinyCNN: hai lần conv + ReLU xen max pool, lấy trung bình mỗi kênh, rồi linear ra hai logits.')
 
 
 def metrics52():
@@ -318,7 +318,7 @@ def metrics52():
     s.label(106, 22, 'ảnh validation', 12, color=MUTED)
     for k, c_ in enumerate(ch):
         s.label(266 + k * 118, 22, f'kênh {c_}', 12, color=MUTED)
-    s.save('5-2-metrics', 'Hai ảnh validation và ba kênh thật sau Conv + ReLU đầu tiên của TinyCNN đã train (kênh có phương sai lớn nhất): mỗi kênh là một bộ dò riêng, nhấn những phần khác nhau của nét.')
+    s.save('5-2-metrics', 'Ba kênh sau lớp conv đầu: mỗi kênh nhấn một phần khác nhau của nét.')
 
 
 def residual52():
@@ -340,7 +340,7 @@ def residual52():
     s.box(528, 102, 64, 36, 'none', FAINT, r=7, width=0, opacity=.14)
     s.label(560, 120, 'ReLU', 12.5, color=TEXT)
     s.mono(320, 180, 'y = ReLU(x + F(x))', 12.5, 'middle', TEXT)
-    s.save('5-2-residual', 'Residual block của bài: nhánh F(x) gồm conv, ReLU, conv; đường tắt mang x cộng thẳng vào F(x) rồi mới qua ReLU.')
+    s.save('5-2-residual', 'Residual block: đường tắt cộng thẳng x vào F(x) rồi mới qua ReLU.')
 
 
 def depth52():
@@ -364,7 +364,7 @@ def depth52():
             s.label(ax.X(60), ax.Y(np.log10(C['plain + BN'][60])) - 10, 'plain + BN', 11.5, 'middle', CLAY)
             s.label(ax.X(60), ax.Y(np.log10(C['residual + BN'][60])) + 16, 'residual + BN', 11.5, 'middle', BLUE)
     s.label(60 - 8, 24, 'loss train', 11.5, 'start', FAINT)
-    s.save('5-2-depth', 'Loss train theo bước của bốn mạng 18 lớp (số từ code bài, trục log): không BatchNorm, plain kẹt ở ln 2 còn residual học nhưng có bước vọt lên 19.1; có BatchNorm, residual hội tụ nhanh hơn plain.')
+    s.save('5-2-depth', 'Mạng 18 lớp: không BatchNorm, mạng thẳng kẹt ở ln 2; residual học được.')
 
 
 def grad52():
@@ -381,7 +381,7 @@ def grad52():
         s.label(160, y + 11, nm, 12, 'end', TEXT)
         s.mono(ax.X(v) + 8, y + 11, f'{G[nm]:.1e}', 11.5, 'start', col)
     s.label(360, 196, 'norm gradient của conv đầu ở bước 1', 11.5, color=MUTED)
-    s.save('5-2-grad', 'Norm gradient tới conv đầu ở bước đầu tiên (số từ code bài, trục log): mạng plain không BatchNorm chỉ còn cỡ 10⁻¹¹; thêm đường tắt hoặc BatchNorm đưa nó lên cỡ 10⁻² đến 10⁻¹.')
+    s.save('5-2-grad', 'Gradient tới lớp conv đầu: mạng thẳng không BatchNorm gần như bằng 0; có đường tắt hoặc BatchNorm thì không.')
 
 
 def resnet52():
@@ -404,7 +404,7 @@ def resnet52():
     s.label(x + 30, 110, '1000', 12, color=TEXT)
     s.label(x + 30, 196, 'linear', 11.5, color=MUTED)
     s.label(320, 22, 'ảnh 224×224 · số trong khối là số kênh', 11.5, color=MUTED)
-    s.save('5-2-resnet', 'ResNet-18 theo stage (shape từ code bài): stem đưa ảnh 224×224 về 56×56; mỗi stage sau chia đôi cạnh và nhân đôi số kênh, tới 512 kênh 7×7 trước global pooling và lớp linear.')
+    s.save('5-2-resnet', 'ResNet-18: mỗi stage chia đôi cạnh, nhân đôi số kênh, tới 512 kênh 7×7.')
 
 
 def bottleneck52():
@@ -423,7 +423,7 @@ def bottleneck52():
     s.mono(380, 190, '1 179 648 tham số', 12.5, 'middle', MUTED, 600)
     s.label(560, 100, 'ít hơn', 12, color=MUTED)
     s.mono(560, 122, '≈ 17 lần', 13, 'middle', CLAY, 600)
-    s.save('5-2-bottleneck', 'Bottleneck của ResNet-50 (layer1): conv 1×1 thu 256 kênh về 64, conv 3×3 chạy ở 64 kênh, conv 1×1 mở lại 256; 69 632 tham số so với 1 179 648 của hai conv 3×3 ở 256 kênh.')
+    s.save('5-2-bottleneck', 'Bottleneck: conv 1×1 thu kênh lại, conv 3×3 chạy ở ít kênh, conv 1×1 mở ra; ít tham số hơn 17 lần.')
 
 
 FIGS52 = {'5-2-samples': samples52, '5-2-cnn': cnn52, '5-2-metrics': metrics52, '5-2-residual': residual52,
@@ -473,7 +473,7 @@ def labels53():
     digit(s, 444 + w + 40 + 3, 48, np.rot90(six, 2), 8)
     s.mono(444 + w + 20, 64, 'xoay', 10.5, 'middle', MUTED)
     s.label(320, 196, 'nhãn giữ hay đổi tùy điều mà nhãn mô tả', 11.5, color=MUTED)
-    s.save('5-3-labels', 'Cùng một phép biến đổi, ba kết quả khác nhau: lật ảnh hoa vẫn là hoa; lật biển rẽ trái thành rẽ phải; xoay chữ số 6 (ảnh load_digits) thành hình số 9.')
+    s.save('5-3-labels', 'Lật hoa vẫn là hoa; lật biển rẽ trái thành rẽ phải; xoay số 6 thành số 9.')
 
 
 def photoaug53():
@@ -494,7 +494,7 @@ def photoaug53():
         x, y = 40 + (k % 3) * 200, 34 + (k // 3) * 186
         s.photo(x, y, w, w, np.asarray(img), max_px=300, radius=6)
         s.label(x + w / 2, y + w + 16, lab, 12, color=TEXT if k else MUTED)
-    s.save('5-3-photo-aug', 'Năm phép augmentation thường gặp trên một ảnh thật: lật ngang, crop rồi phóng, xoay, đổi sáng và tương phản, cutout. Với nhãn “tháp”, cả năm đều giữ nhãn.')
+    s.save('5-3-photo-aug', 'Năm phép augmentation trên một ảnh tháp; cả năm đều giữ nhãn.')
 
 
 def boxflip53():
@@ -510,7 +510,7 @@ def boxflip53():
         s.label(x0 + 5 * (c + g), 28, lab, 12.5, color=TEXT, weight=600)
         s.mono(x0 + 5 * (c + g), 168, f'box {list(map(int, b))}'.replace('[', '(').replace(']', ')'), 12, 'middle', BLUE)
     s.arrow(292, 98, 328, 98, LINE, 1.3)
-    s.save('5-3-boxflip', 'Lật ngang mask 4×10 và box xyxy cùng lúc (số từ code bài): mask sáng ở cột 1–3 chuyển sang cột 6–8, box (1, 1, 4, 3) thành (6, 1, 9, 3).')
+    s.save('5-3-boxflip', 'Lật ảnh thì phải lật cả mask và box theo.')
 
 
 def split53():
@@ -536,7 +536,7 @@ def split53():
         s.photo(102 + k * 54, 178, w, w, np.asarray(img), max_px=100, radius=4)
     s.photo(483, 178, w, w, np.asarray(sample('china.jpg', (380, 120, 610, 350), 120)), max_px=100, radius=4)
     s.label(320, 262, 'các frame của một nguồn gần như trùng nhau: chia theo nguồn, không chia theo ảnh', 11.5, color=MUTED)
-    s.save('5-3-split', 'Chia theo nguồn trước khi augment: mọi frame của nguồn C nằm trọn trong validation; các biến thể augmentation chỉ sinh từ ảnh train.')
+    s.save('5-3-split', 'Chia theo nguồn trước khi augment; augmentation chỉ sinh từ ảnh train.')
 
 
 def digitaug53():
@@ -553,7 +553,7 @@ def digitaug53():
         digit(s, x, 34, im[0].numpy(), 12, CLAY if k == 3 else TEXT)
         s.label(x + 48, 150, lab, 12, color=CLAY if k == 3 else TEXT)
         s.label(x + 48, 170, 'nhãn 2', 11.5, color=MUTED)
-    s.save('5-3-digit-aug', 'Một ảnh chữ 2 thật của load_digits: dời một pixel vẫn là chữ 2; lật ngang tạo một hình không còn là chữ 2 nhưng vẫn mang nhãn 2.')
+    s.save('5-3-digit-aug', 'Dời một pixel vẫn là chữ 2; lật ngang thì không còn là chữ 2.')
 
 
 def ablation53():
@@ -573,7 +573,7 @@ def ablation53():
     s.box(540, 84, 12, 12, 'none', CLAY, r=2, width=0, opacity=.7)
     s.label(558, 90, 'ảnh dời 1 px', 12, 'start', MUTED)
     s.label(ax.x - 8, ax.y - 12, 'accuracy validation', 11.5, 'start', FAINT)
-    s.save('5-3-ablation', 'Ablation trên load_digits (số từ output bài, trung bình ba seed): phép dời gần như không đổi cột ảnh gốc nhưng nâng cột ảnh dời từ 0.627 lên 0.846; phép lật kéo cả hai cột xuống.')
+    s.save('5-3-ablation', 'Phép dời giúp model đoán đúng ảnh bị dời; phép lật làm hại cả hai.')
 
 
 def crop53():
@@ -634,7 +634,7 @@ def gray53():
     s.label(536, 102, 'cùng đầu ra', 12.5, color=GREEN, weight=600)
     s.label(361, 20, 'chép thành ba kênh', 11.5, color=MUTED)
     s.label(361, 192, 'một kênh, gộp weight', 11.5, color=MUTED)
-    s.save('5-3-gray', 'Ảnh xám vào conv RGB: chép kênh xám thành ba kênh cho cùng đầu ra với một conv một kênh có weight bằng tổng ba lát W₁ + W₂ + W₃.')
+    s.save('5-3-gray', 'Ảnh xám chép thành ba kênh cho cùng đầu ra với conv một kênh có weight là tổng ba lát.')
 
 
 FIGS53 = {'5-3-labels': labels53, '5-3-photo-aug': photoaug53, '5-3-boxflip': boxflip53, '5-3-split': split53,
@@ -670,7 +670,7 @@ def patches54():
     s.mono(282 + 6 * (w + 8) + 2, 126, '…', 12, 'start', MUTED)
     s.label(440, 196, '196 token, mỗi token 3·16·16 = 768 số thô', 12, color=TEXT)
     s.label(424, 84, 'patch 101–106 của hàng 7', 11.5, color=MUTED)
-    s.save('5-4-patches', 'Ảnh thật 224×224 chia patch 16×16 thành lưới 14×14; mỗi patch trải thành một token 768 số, đánh số theo hàng từ 0 đến 195.')
+    s.save('5-4-patches', 'Ảnh 224×224 chia patch 16×16 thành 196 token.')
 
 
 def unfold54():
@@ -692,7 +692,7 @@ def unfold54():
     s.label(518, 24, 'cắt mỗi 4 số', 12, color=CLAY, weight=600)
     s.label(518, 186, 'mỗi “patch” là một hàng ảnh', 11.5, color=CLAY)
     s.label(318, 186, 'mỗi hàng là một ô 2×2', 11.5, color=GREEN)
-    s.save('5-4-unfold', 'Ảnh 4×4 đánh số theo hàng (số từ code bài): unfold rồi permute cho patch đúng (0, 1, 4, 5); flatten rồi cắt mỗi 4 số chỉ lấy một hàng ảnh.')
+    s.save('5-4-unfold', 'unfold rồi permute cho patch đúng; flatten rồi cắt chỉ lấy một hàng ảnh.')
 
 
 def sequence54():
@@ -716,7 +716,7 @@ def sequence54():
     s.arrow(392, 173, 440, 173, CLAY, 1.4)
     s.label(500, 173, 'output CLS → head', 12, color=CLAY, weight=600)
     s.label(214, 24, '1 class token + 196 patch token', 12, color=MUTED)
-    s.save('5-4-sequence', 'Chuỗi vào ViT-B/16: một class token ghép trước 196 patch token, cộng bảng vị trí học được, qua encoder với shape (B, 197, 768); output của CLS đi vào head.')
+    s.save('5-4-sequence', 'Chuỗi vào ViT: token CLS và 196 patch token, cộng mã vị trí, shape (B, 197, 768).')
 
 
 def reach54():
@@ -729,7 +729,7 @@ def reach54():
         s.tiles(x0, 40, [[''] * n] * n, c, c, FAINT, g, fills, r=1, opacity=.08)
         s.label(x0 + 84, 24, title, 12, color=TEXT, weight=600)
     s.label(320, 228, 'vùng ô (0, 0) đọc được trên lưới 14×14 patch', 11.5, color=MUTED)
-    s.save('5-4-reach', 'Từ ô góc (0, 0) của lưới 14×14: conv 3×3 stride 1 cần 13 lớp mới với tới góc đối diện; một lớp attention đã có đường đọc mọi patch.')
+    s.save('5-4-reach', 'Conv 3×3 cần 13 lớp mới nối hai góc ảnh; một lớp attention đã nối mọi patch.')
 
 
 def cost54():
@@ -744,7 +744,7 @@ def cost54():
         s.label(140, y + 15, f'{hw}×{hw}', 12.5, 'end', TEXT)
         s.mono(150 + cells / 700000 * 380 + 8, y + 15, f'{L + 1} token · {cells:,} ô'.replace(',', ' '), 11.5, 'start', TEXT)
     s.label(340, 200, 'ô attention mỗi head, mỗi lớp = (L + 1)²; cạnh ảnh gấp đôi thì gấp khoảng 16', 11.5, color=MUTED)
-    s.save('5-4-cost', 'Số ô của ma trận attention mỗi head, mỗi lớp của ViT patch 16: 197² ở ảnh 224, 577² ở ảnh 384, 785² ở ảnh 448, tức gấp khoảng 16 lần khi cạnh ảnh gấp đôi.')
+    s.save('5-4-cost', 'Gấp đôi cạnh ảnh thì ma trận attention gấp khoảng 16 lần.')
 
 
 def shuffle54():
@@ -771,7 +771,7 @@ def shuffle54():
     s.label(530, 110, 'mean pooling bằng nhau', 12, color=CLAY, weight=600)
     s.label(530, 150, 'cộng mã vị trí cố định:', 12, color=MUTED)
     s.label(530, 170, 'output khác nhau', 12, color=GREEN, weight=600)
-    s.save('5-4-position', 'Hai ảnh có cùng tập 16 patch, chỉ khác bố cục: thiếu position embedding, self-attention rồi mean pooling cho cùng kết quả; cộng mã vị trí cố định tại chỗ thì hai ảnh tách được.')
+    s.save('5-4-position', 'Thiếu mã vị trí, hai ảnh cùng tập patch khác bố cục cho cùng kết quả.')
 
 
 def posinterp54():
@@ -790,7 +790,7 @@ def posinterp54():
     s.arrow(244, 119, 316, 119, LINE, 1.3)
     s.label(280, 106, 'nội suy 2D', 11.5, color=MUTED)
     s.label(320, 220, 'màu theo hàng + cột của vector; CLS (−1, −1) tách riêng, giữ nguyên', 11.5, color=MUTED)
-    s.save('5-4-posinterp', 'Nội suy bảng vị trí từ lưới 4×4 sang 7×7 (số từ code bài): mỗi vector mới nhận tọa độ của đúng chỗ tương ứng trên lưới cũ; CLS được tách ra trước và ghép lại sau.')
+    s.save('5-4-posinterp', 'Nội suy bảng vị trí từ lưới 4×4 sang 7×7; CLS tách ra rồi ghép lại.')
 
 
 FIGS54 = {'5-4-patches': patches54, '5-4-unfold': unfold54, '5-4-sequence': sequence54, '5-4-reach': reach54,
@@ -830,7 +830,7 @@ def formats55():
         s.label(626, y, src, 11.5, 'end', MUTED)
         s.mono(346, y + 22, v, 12, 'start', CLAY)
     s.label(170, 236, f'ảnh {W}×{H}, box đặt tay quanh tháp', 11.5, color=MUTED)
-    s.save('5-5-formats', 'Cùng một box quanh tháp trên ảnh thật 640×427 ghi theo ba quy ước: xyxy pixel của TorchVision, xywh pixel của COCO, cxcywh chuẩn hóa 0–1 của nhãn YOLO.')
+    s.save('5-5-formats', 'Cùng một box ghi theo ba quy ước: xyxy, xywh của COCO, cxcywh chuẩn hóa của YOLO.')
 
 
 def iou55():
@@ -843,7 +843,7 @@ def iou55():
     s.mono(310, 100, 'hợp   = 16 + 16 − 9 = 23', 13, 'start', TEXT)
     s.mono(310, 140, 'IoU   = 9/23 ≈ 0.391', 13.5, 'start', CLAY, 600)
     s.label(310, 176, 'chưa đạt ngưỡng 0.5', 12, 'start', MUTED)
-    s.save('5-5-iou', 'Ví dụ tính tay: A = (0, 0, 4, 4), B = (1, 1, 5, 5) giao nhau ở ô 3×3; IoU = 9 / (16 + 16 − 9) = 9/23 ≈ 0.39.')
+    s.save('5-5-iou', 'IoU = 9 / (16 + 16 − 9) ≈ 0.39.')
 
 
 def shift55():
@@ -860,7 +860,7 @@ def shift55():
     s.circle(ax.X(1), ax.Y(39 / 41), 4.5, BLUE, PAPER, 2)
     s.mono(ax.X(1), ax.Y(39 / 41) - 10, '0.95', 11.5, 'middle', BLUE)
     s.label(ax.x - 8, ax.y - 10, 'IoU', 11.5, 'start', FAINT)
-    s.save('5-5-shift', 'IoU khi box dự đoán cùng cỡ lệch ngang d pixel, IoU = (s − d)/(s + d): lệch 1 pixel, box 40×40 còn 0.95 nhưng box 4×4 chỉ còn 0.6.')
+    s.save('5-5-shift', 'Lệch 1 pixel: box 40×40 còn IoU 0.95, box 4×4 chỉ còn 0.6.')
 
 
 def nms55():
@@ -878,7 +878,7 @@ def nms55():
         s.label(40 + k * 310 + 130, 22, title, 12.5, color=TEXT, weight=600)
     s.arrow(296, 95, 334, 95, LINE, 1.3)
     s.label(320, 190, 'box 1 chồng box 0 với IoU ≈ 0.62 > 0.5 nên bị loại; box 2 ở xa nên giữ', 11.5, color=MUTED)
-    s.save('5-5-nms', 'NMS một lớp, ngưỡng 0.5 (số từ code bài): giữ box 0 (score 0.9) và box 2 (0.7), bỏ box 1 vì chồng box 0 với IoU khoảng 0.62.')
+    s.save('5-5-nms', 'NMS giữ box 0 và box 2, bỏ box 1 vì chồng box 0 quá ngưỡng.')
 
 
 def classnms55():
@@ -893,7 +893,7 @@ def classnms55():
             s.mono(ax.X(2), ax.Y(9) + 14, 'xe đạp bị xóa', 11.5, 'middle', CLAY)
         s.label(90 + k * 280 + 60, 20, title, 12.5, color=TEXT, weight=600)
     s.mono(560, 100, 'IoU 0.667', 12.5, 'middle', MUTED)
-    s.save('5-5-classnms', 'Người ngồi trên xe đạp (số từ code bài): hai box khác lớp chồng nhau với IoU 0.667; nms trộn lớp xóa box xe đạp, batched_nms chỉ so box cùng lớp nên giữ cả hai.')
+    s.save('5-5-classnms', 'NMS trộn lớp xóa nhầm box xe đạp; batched_nms chỉ so box cùng lớp.')
 
 
 def match55():
@@ -912,7 +912,7 @@ def match55():
         s.mono(hx[3], y, p, 12, 'middle', TEXT)
         s.mono(hx[4], y, rc, 12, 'middle', TEXT)
     s.label(190, 196, 'mỗi ground truth chỉ được ghép một lần', 11.5, color=MUTED)
-    s.save('5-5-match', 'Hai chai thật, ba dự đoán theo score giảm dần (số từ code bài): lần khoanh chai A thứ hai là FP vì A đã được ghép; precision 1, 1/2, 2/3 và recall 1/2, 1/2, 1.')
+    s.save('5-5-match', 'Box thứ hai trên cùng chai A là FP vì chai A đã được ghép.')
 
 
 def pr55():
@@ -928,7 +928,7 @@ def pr55():
     s.label(ax.x - 8, ax.y - 10, 'precision', 11.5, 'start', FAINT)
     s.mono(540, 100, 'AP = 1/2 + 1/3', 13, 'middle', TEXT)
     s.mono(540, 126, '= 5/6', 14, 'middle', CLAY, 600)
-    s.save('5-5-pr', 'Đường bao precision của chuỗi TP, FP, TP: điểm FP (recall 0.5, precision 1/2) nằm dưới đường bao; diện tích dưới đường bao là 1/2 + 1/3 = 5/6.')
+    s.save('5-5-pr', 'AP là diện tích dưới đường bao precision: 5/6.')
 
 
 def yolo55():
@@ -949,7 +949,7 @@ def yolo55():
     s.label(330, 178, 'mỗi ô: 3 × (4 + 1 + 80) = 255 số', 12, color=TEXT)
     s.mono(540, 90, '169 · 255', 13, 'middle', MUTED)
     s.mono(540, 114, '= 43 095', 14, 'middle', CLAY, 600)
-    s.save('5-5-yolo', 'Head YOLO kiểu anchor trên lưới 13×13: mỗi ô có 3 anchor, mỗi anchor 4 tọa độ, 1 objectness và 80 score lớp, tổng 169 · 255 = 43 095 số.')
+    s.save('5-5-yolo', 'Head YOLO trên lưới 13×13: mỗi ô 3 anchor, mỗi anchor 85 số.')
 
 
 def letterbox55():
@@ -1026,7 +1026,7 @@ def masks56():
         s.photo(x, 34, w, h, img, max_px=420, radius=6)
         s.label(x + w / 2, 22, title, 12, color=TEXT, weight=600)
     s.label(320, 190, 'mask đặt tay bằng ngưỡng màu; bông dưới bị khung ảnh cắt mất một phần', 11.5, color=MUTED)
-    s.save('5-6-masks', 'Ảnh thật có hai bông hoa: semantic mask gán cùng lớp “hoa” cho mọi pixel hoa; instance mask còn tách hai bông bằng hai ID riêng.')
+    s.save('5-6-masks', 'Semantic mask gán cùng lớp “hoa”; instance mask tách từng bông.')
 
 
 def area56():
@@ -1050,7 +1050,7 @@ def area56():
     s.label(470, 90, 'pixel hoa chiếm', 12, 'start', MUTED)
     s.mono(470, 116, f'{frac:.0%} của box', 14, 'start', CLAY, 600)
     s.label(470, 150, 'phần còn lại là nền', 12, 'start', MUTED)
-    s.save('5-6-area', f'Box quanh bông hoa trên ảnh thật vẫn chứa nền ở bốn góc: mask (đặt bằng ngưỡng màu) cho thấy pixel hoa chỉ chiếm khoảng {frac:.0%} diện tích box.')
+    s.save('5-6-area', 'Hoa chỉ chiếm khoảng 75% diện tích box.')
 
 
 def maskmetrics56():
@@ -1068,7 +1068,7 @@ def maskmetrics56():
     s.mono(390, 70, 'IoU  = 2 / 4 = 0.5', 13, 'start', TEXT)
     s.mono(390, 100, 'Dice = 4 / 6 ≈ 0.667', 13, 'start', TEXT)
     s.label(390, 134, 'TN không có trong công thức', 11.5, 'start', MUTED)
-    s.save('5-6-mask-metrics', 'Ví dụ tính tay: so từng pixel cho TP = 2, FN = 1, FP = 1; IoU = 2/4 = 0.5, Dice = 4/6 ≈ 0.667.')
+    s.save('5-6-mask-metrics', 'TP = 2, FN = 1, FP = 1: IoU = 0.5, Dice ≈ 0.667.')
 
 
 def aggregate56():
@@ -1081,7 +1081,7 @@ def aggregate56():
         s.label(190, y + 13, nm, 12, 'end', TEXT, 600 if r >= 2 else 400)
         s.mono(200 + v * 340 + 8, y + 13, f'{v:.3f}', 12, 'start', col if r >= 2 else MUTED)
     s.label(370, 196, 'vật lớn chiếm gần hết pixel nên cách gộp che lỗi bỏ sót vật nhỏ', 11.5, color=MUTED)
-    s.save('5-6-aggregate', 'Hai ảnh trong câu hỏi: Dice từng ảnh 0.947 và 0.182, trung bình theo ảnh 0.565; gộp pixel hai ảnh cho 0.905 vì vật lớn chiếm gần hết pixel.')
+    s.save('5-6-aggregate', 'Trung bình Dice theo ảnh 0.565; gộp pixel thì 0.905.')
 
 
 def unet56():
@@ -1113,7 +1113,7 @@ def unet56():
     s.path('M 113,50 L 113,22 L 395,22 L 395,46', GREEN, 1.6)
     s.arrow(395, 36, 395, 48, GREEN, 1.6)
     s.label(254, 14, 'skip: encode (4 kênh) nối với 8 kênh phóng to', 11.5, color=GREEN, weight=600)
-    s.save('5-6-unet', 'TinyUNet của bài theo shape: encode 4 kênh ở 12×12, pool xuống 6×6 lấy 8 kênh, phóng to rồi nối với 4 kênh skip thành 12 kênh trước khi decode ra một logit mỗi pixel.')
+    s.save('5-6-unet', 'TinyUNet: thu nhỏ, phóng to, nối với nhánh skip, ra một logit mỗi pixel.')
 
 
 def rects56():
@@ -1138,7 +1138,7 @@ def rects56():
             s.photo(x, y, w, w, img, max_px=160, radius=3)
     for r, lab in enumerate(['ảnh', 'mask thật', 'dự đoán']):
         s.label(108, 20 + r * (w + 4) + w / 2, lab, 12, 'end', MUTED)
-    s.save('5-6-rects', 'Năm ảnh validation tự tạo (số từ code bài), mask thật và mask TinyUNet dự đoán sau 80 bước: dữ liệu sạch nên hai mask gần như trùng nhau.')
+    s.save('5-6-rects', 'Mask thật và mask TinyUNet dự đoán gần như trùng nhau.')
 
 
 def rle56():
@@ -1155,7 +1155,7 @@ def rle56():
         seq = np.array(m).ravel(order=order)
         s.mono(x0 + 62, 176, ' '.join(map(str, seq)), 12, 'middle', MUTED)
     s.label(320, 200, 'cùng một mask, hai chuỗi khác nhau: số trong ô là chỉ số khi trải', 11.5, color=MUTED)
-    s.save('5-6-rle', 'Cùng mask 2×3: trải theo hàng cho chuỗi 0 1 0 1 1 0 và RLE (2, 1, 4, 2); trải theo cột cho 0 1 1 1 0 0 và RLE (2, 3).')
+    s.save('5-6-rle', 'Trải theo hàng hay theo cột cho hai chuỗi RLE khác nhau.')
 
 
 def resize56():
@@ -1174,7 +1174,7 @@ def resize56():
         s.label(250, y + 15, lab, 12, 'end', MUTED if r < 2 else GREEN)
     s.label(436, 64, '8 cột', 11.5, color=MUTED)
     s.label(108, 100, '0 nền, 1 giấy, 2 mực', 11.5, color=MUTED)
-    s.save('5-6-resize', 'Phóng mask một hàng (0, 0, 2, 2) lên 8 cột: bilinear sinh 0.5 và 1.5, ép kiểu thành lớp 1 “giấy” không hề có; nearest chỉ chép nhãn có sẵn.')
+    s.save('5-6-resize', 'Phóng mask bằng bilinear sinh nhãn không có; nearest chỉ chép nhãn sẵn có.')
 
 
 FIGS56 = {'5-6-masks': masks56, '5-6-area': area56, '5-6-mask-metrics': maskmetrics56, '5-6-aggregate': aggregate56,
@@ -1214,7 +1214,7 @@ def pairs57():
     s.label(350, 116, 'crop, xoay, đổi màu, lật, đổi sáng', 11.5, 'start', MUTED)
     s.label(350, 170, 'negative: view của ảnh khác', 12, 'start', CLAY)
     s.label(350, 190, 'trong cùng batch', 11.5, 'start', MUTED)
-    s.save('5-7-pairs', 'SimCLR trên ảnh thật: hai view augmentation của cùng một ảnh là cặp positive; view của ảnh khác trong batch là negative.')
+    s.save('5-7-pairs', 'Hai view của cùng một ảnh là cặp positive; ảnh khác trong batch là negative.')
 
 
 def matrix57():
@@ -1234,7 +1234,7 @@ def matrix57():
     s.tiles(380, 44, [[mnum(v, '{:+.3f}') for v in r] for r in G], 72, 34, BLUE, 6, gf, size=11.5)
     s.label(490, 178, 'gradient của loss đối xứng', 12, color=TEXT, weight=600)
     s.label(490, 200, 'âm trên đường chéo: tăng; dương ngoài: giảm', 11.5, color=MUTED)
-    s.save('5-7-matrix', 'Ma trận logits 3×3 kiểu CLIP và gradient của loss đối xứng (số từ code bài): ô đường chéo nhận gradient âm nên được tăng, ô ngoài đường chéo nhận gradient dương nên bị giảm.')
+    s.save('5-7-matrix', 'Gradient kéo ô đường chéo lên, đẩy các ô khác xuống.')
 
 
 def tau57():
@@ -1258,7 +1258,7 @@ def tau57():
     s.label(x0, 22, 'negative khó (cosine 0.7)', 11.5, 'start', CLAY)
     s.label(x0 + W, 22, 'sáu negative dễ (cosine 0)', 11.5, 'end', BLUE)
     s.label(350, 196, 'phần lực đẩy của loss dồn vào từng negative', 11.5, color=MUTED)
-    s.save('5-7-tau', 'Phần lực đẩy dồn vào negative khó theo temperature (số từ code bài): 0.251 ở τ = 1, 0.403 ở τ = 0.5, 0.995 ở τ = 0.1.')
+    s.save('5-7-tau', 'Temperature càng nhỏ, lực đẩy càng dồn vào negative khó.')
 
 
 def chance57():
@@ -1277,7 +1277,7 @@ def chance57():
         s.mono(x + 9, ax.Y(L) + 16, f'{nm}: {L}', 12, 'start', col, 600)
         s.mono(x + 9, ax.Y((L + np.log(K)) / 2) + 4, f'cách mốc {np.log(K) - L:.2f}', 11, 'start', col)
     s.label(ax.x - 8, ax.y - 10, 'loss', 11.5, 'start', FAINT)
-    s.save('5-7-chance', 'Mốc đoán mò log K của loss contrastive theo số ứng viên: đội A (batch 1024, loss 2.9) và đội B (batch 64, loss 2.1) đo trên hai thang khác nhau, nên không so trực tiếp được.')
+    s.save('5-7-chance', 'Mốc đoán mò log K phụ thuộc batch, nên loss của hai batch khác nhau không so được.')
 
 
 def shapes57():
@@ -1298,7 +1298,7 @@ def shapes57():
         s.label(x + w / 2, 256, names[y[k]], 11.5, color=MUTED)
     for r, lab in enumerate(['ảnh', 'view 1', 'view 2']):
         s.label(100, 24 + r * 76 + w / 2, lab, 12, 'end', MUTED)
-    s.save('5-7-shapes', 'Sáu ảnh hình học do code bài sinh và hai view augmentation của mỗi ảnh (xoay, co giãn, dịch, đổi sáng): lớp của hình giữ nguyên qua mọi view.')
+    s.save('5-7-shapes', 'Sáu ảnh hình học và hai view của mỗi ảnh; hình giữ nguyên qua mọi view.')
 
 
 def probe57():
@@ -1318,7 +1318,7 @@ def probe57():
     s.box(520, 84, 12, 12, 'none', CLAY, r=2, width=0, opacity=.5)
     s.label(538, 90, 'cùng hình @5', 11.5, 'start', MUTED)
     s.label(320, 206, 'cùng probe, 200 ảnh có nhãn; nhãn không dùng khi train contrastive', 11.5, color=MUTED)
-    s.save('5-7-probe', 'Linear probe trên 200 ảnh có nhãn và tỉ lệ cùng hình trong 5 láng giềng (số từ output bài): pixel thô 0.536, encoder chưa train 0.764, sau contrastive 0.968.')
+    s.save('5-7-probe', 'Linear probe: pixel thô 0.536, encoder chưa train 0.764, sau contrastive 0.968.')
 
 
 def neighbors57():
@@ -1349,7 +1349,7 @@ def neighbors57():
         s.box(520, 50 + k * 24, 12, 12, 'none', cols[nm], r=2, width=0, opacity=.6)
         s.label(538, 56 + k * 24, labs[nm], 11.5, 'start', MUTED)
     s.label(ax.x - 8, ax.y - 12, 'cùng hình trong 5 láng giềng', 11.5, 'start', FAINT)
-    s.save('5-7-neighbors', 'Tỉ lệ ảnh cùng hình trong 5 láng giềng cosine của mỗi ảnh test, tách theo lớp (số chạy lại từ code bài). Contrastive cao nhất ở cả ba lớp; chữ nhật vẫn khó nhất.')
+    s.save('5-7-neighbors', 'Tỉ lệ láng giềng cùng hình: contrastive cao nhất ở cả ba lớp.')
 
 
 def recall57():
@@ -1365,7 +1365,7 @@ def recall57():
     s.label(ax.x - 8, ax.y - 12, 'recall@k', 11.5, 'start', FAINT)
     s.label(470, 70, 'hạng ảnh đúng của 4 query', 12, 'start', MUTED)
     s.mono(470, 96, '1, 3, 7, 2', 13, 'start', TEXT)
-    s.save('5-7-recall', 'Recall@k của bốn query có ảnh đúng ở hạng 1, 3, 7, 2: recall@1 = 0.25, recall@5 = 0.75, đủ 1 từ k = 7.')
+    s.save('5-7-recall', 'Ảnh đúng ở hạng 1, 3, 7, 2: recall@1 = 0.25, recall@5 = 0.75.')
 
 
 FIGS57 = {'5-7-pairs': pairs57, '5-7-matrix': matrix57, '5-7-tau': tau57, '5-7-chance': chance57, '5-7-shapes': shapes57,
@@ -1395,7 +1395,7 @@ def gan58():
     s.arrow(110, 44, 110, 60, CLAY, 1.6)
     s.label(250, 30, 'bước G: gradient đi qua D (D đóng băng) về G', 11.5, color=CLAY)
     s.label(320, 200, 'bước D: detach ảnh giả, chỉ cập nhật D', 11.5, color=BLUE)
-    s.save('5-8-gan', 'GAN: bước D học phân biệt ảnh thật với ảnh giả đã detach; bước G giữ D đóng băng nhưng cho gradient đi qua D về generator.')
+    s.save('5-8-gan', 'D học phân biệt ảnh thật với ảnh giả; G học qua gradient đi xuyên D.')
 
 
 def saturate58():
@@ -1411,7 +1411,7 @@ def saturate58():
     s.mono(ax.X(1) + 8, ax.Y(.5), 'minimax 0.01', 11.5, 'start', BLUE)
     s.mono(ax.X(1) + 8, ax.Y(.38), 'non-saturating 0.99', 11.5, 'start', CLAY)
     s.label(ax.x - 8, ax.y - 10, '|gradient theo logit a|', 11.5, 'start', FAINT)
-    s.save('5-8-saturate', 'Độ lớn gradient của loss generator theo logit của ảnh giả: khi D(G(z)) = 0.01, minimax chỉ còn 0.01 còn non-saturating còn 0.99.')
+    s.save('5-8-saturate', 'Khi D bắt được ảnh giả, loss minimax gần như hết gradient; non-saturating thì không.')
 
 
 def schedule58():
@@ -1441,7 +1441,7 @@ def diffusion58():
         s.mono(x + w / 2, 138, sub, 11, 'middle', MUTED)
     s.arrow(40, 162, 600, 162, CLAY, 1.4)
     s.label(320, 180, 'forward: thêm nhiễu theo lịch β của bài; sinh ảnh là học đi ngược chiều này', 11.5, color=MUTED)
-    s.save('5-8-diffusion', 'Một ảnh thật đi qua forward diffusion với đúng lịch nhiễu của bài (40 mức, β từ 0.01 đến 0.15): ᾱ giảm dần, đến mức cuối ảnh gần như chỉ còn nhiễu.')
+    s.save('5-8-diffusion', 'Thêm nhiễu dần qua 40 mức, đến cuối ảnh gần như chỉ còn nhiễu.')
 
 
 def alphabar58():
@@ -1454,7 +1454,7 @@ def alphabar58():
     s.label(ax.X(39) + 8, ax.Y(np.sqrt(1 - ab[-1])), '√(1 − ᾱ): nhiễu', 12, 'start', CLAY, 600)
     s.mono(ax.X(39) - 4, ax.Y(np.sqrt(ab[-1])) - 10, f'{np.sqrt(ab[-1]):.2f}', 11, 'end', BLUE)
     s.label(ax.x - 8, ax.y - 10, 'hệ số trong x_t', 11.5, 'start', FAINT)
-    s.save('5-8-alphabar', 'Hai hệ số của x_t = √ᾱ·x₀ + √(1 − ᾱ)·ε theo lịch nhiễu của bài: hệ số tín hiệu giảm từ gần 1 xuống 0.18 ở mức cuối, hệ số nhiễu tăng lên gần 1.')
+    s.save('5-8-alphabar', 'Hệ số tín hiệu giảm dần, hệ số nhiễu tăng dần theo mức nhiễu.')
 
 
 def hist58():
@@ -1476,7 +1476,7 @@ def hist58():
                    CLAY if t is None else BLUE, 0, .55, 0)
         s.mono(x + 65, 26, 'x₀' if t is None else f't = {t}', 12, 'middle', TEXT)
     s.label(320, 192, 'hai cụm quanh ±2 nhòe dần thành một phân phối chuẩn', 11.5, color=MUTED)
-    s.save('5-8-hist', 'Dữ liệu một chiều của bài (hai cụm quanh −2 và +2) sau forward diffusion ở các mức nhiễu: hai đỉnh nhòe dần và gộp thành phân phối gần chuẩn ở mức cuối.')
+    s.save('5-8-hist', 'Hai cụm dữ liệu nhòe dần thành một phân phối chuẩn.')
 
 
 def mse58():
@@ -1502,7 +1502,7 @@ def mse58():
     s.label(ax.X(39) + 8, ax.Y(1), 'luôn đoán 0', 11.5, 'start', MUTED)
     s.label(ax.X(39) + 8, ax.Y(out[-1]), 'denoiser đã train', 12, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 10, 'MSE trên noise', 11.5, 'start', FAINT)
-    s.save('5-8-mse', 'MSE của noise predictor đã train (code bài) theo từng mức nhiễu: khó ở mức thấp, nơi noise nhỏ hơn độ lệch của x₀, và ở mức giữa, nơi không biết x_t đến từ cụm nào; dễ dần ở mức cao, nơi x_t gần bằng chính noise.')
+    s.save('5-8-mse', 'Sai số đoán nhiễu theo từng mức: khó ở mức thấp và mức giữa, dễ ở mức cao.')
 
 
 def cfg58():
@@ -1522,7 +1522,7 @@ def cfg58():
     s.mono(440, 120, 'ε̂ = ε∅ + w (ε_c − ε∅)', 12.5, 'start', TEXT)
     s.label(440, 150, 'w lớn: bám prompt hơn,', 12, 'start', MUTED)
     s.label(440, 170, 'kém đa dạng, tốn gấp đôi', 12, 'start', MUTED)
-    s.save('5-8-cfg', 'Classifier-free guidance: lấy dự đoán không prompt rồi đi tiếp theo hướng chênh lệch sang dự đoán có prompt, w lần; w = 1 là dự đoán có điều kiện thường.')
+    s.save('5-8-cfg', 'Guidance đi tiếp w lần theo hướng từ dự đoán không prompt sang có prompt.')
 
 
 def latent58():
@@ -1540,7 +1540,7 @@ def latent58():
     s.mono(286, 196, '16 384 số', 12, 'middle', MUTED)
     s.label(470, 90, 'mỗi lần gọi denoiser', 12, color=MUTED)
     s.mono(470, 118, 'ít hơn 48 lần', 14, 'middle', CLAY, 600)
-    s.save('5-8-latent', 'Latent diffusion khử nhiễu trên latent 64×64×4 = 16 384 số thay vì ảnh 512×512×3 = 786 432 số, ít hơn 48 lần mỗi lần gọi denoiser.')
+    s.save('5-8-latent', 'Khử nhiễu trên latent ít hơn 48 lần số so với ảnh gốc.')
 
 
 FIGS58 = {'5-8-gan': gan58, '5-8-saturate': saturate58, '5-8-diffusion': diffusion58, '5-8-alphabar': alphabar58,
@@ -1583,7 +1583,7 @@ def crosstab59():
     s.label(500, 140, 'ô cả hai sai: xem ảnh', 12, 'start', CLAY)
     s.label(500, 158, 'trước', 12, 'start', CLAY)
     s.label(343, 190, 'A và B cùng đúng 90 trên 100 ảnh', 11.5, color=MUTED)
-    s.save('5-9-crosstab', 'Bảng chéo đúng/sai theo ID của câu hỏi: A và B cùng đúng 90 ảnh nhưng mỗi model đúng riêng 6 ảnh mà model kia sai; 4 ảnh cả hai cùng sai.')
+    s.save('5-9-crosstab', 'A và B cùng đúng 90 ảnh, nhưng mỗi model đúng riêng 6 ảnh.')
 
 
 def shortcut59():
@@ -1600,7 +1600,7 @@ def shortcut59():
             s.box(x + 20 - 2, 40 - 2, 2 * c + 4, 2 * c + 4, CLAY, 'none', r=2, width=1.6)
             s.label(x + 20 + 4 * c, 40 + 8 * c + 18, 'đứng' if i == 0 else 'ngang', 12, color=MUTED)
     s.label(320, 196, 'khung cam: ô góc 2×2 mà model A đọc; model B chỉ đọc vùng nét ở giữa', 11.5, color=MUTED)
-    s.save('5-9-shortcut', 'Ảnh của bài (dữ liệu từ code): ở tập nguồn, ô góc sáng luôn đi với nét ngang; tập đổi góc đảo dấu góc nhưng giữ nguyên nét và nhãn.')
+    s.save('5-9-shortcut', 'Ở tập nguồn, ô góc sáng luôn đi với nét ngang; tập kiểm đảo ô góc.')
 
 
 def filter59():
@@ -1616,7 +1616,7 @@ def filter59():
     s.label(400, 130, 'ngang sạch: score +1', 12, 'start', TEXT)
     s.label(400, 150, 'đứng sạch: score −1', 12, 'start', TEXT)
     s.label(400, 170, 'ô góc nằm ngoài filter', 12, 'start', MUTED)
-    s.save('5-9-filter', 'Filter hướng nét của model B (từ code bài): bốn ô +¼ chỉ thuộc nét ngang, bốn ô −¼ chỉ thuộc nét đứng; ô góc không có trọng số nào.')
+    s.save('5-9-filter', 'Filter của model B chỉ có trọng số trên vùng nét, không có ở ô góc.')
 
 
 def occscores59():
@@ -1637,7 +1637,7 @@ def occscores59():
     s.box(560, 84, 12, 12, 'none', CLAY, r=2, width=0, opacity=.6)
     s.label(578, 90, 'B', 12, 'start', MUTED)
     s.label(320, 206, 'xác suất lớp 1 (ngang) trước và sau khi che', 11.5, color=MUTED)
-    s.save('5-9-occlusion-scores', 'Xác suất lớp 1 của một ảnh ngang (số từ code bài): che góc kéo A từ 0.891 xuống 0.106; che nét kéo B từ 0.959 xuống 0.500; vùng còn lại không đổi score.')
+    s.save('5-9-occlusion-scores', 'Che góc làm A đổi hẳn dự đoán; che nét làm B đổi dự đoán.')
 
 
 def occmap59():
@@ -1666,7 +1666,7 @@ def occmap59():
         s.label(x + 56, 26, nm, 12, color=TEXT, weight=600)
         s.mono(x + 56, 180, f'giảm tối đa {d.max():.2f}', 11, 'middle', MUTED)
     s.label(320, 214, 'mỗi ô: score lớp 1 giảm bao nhiêu khi che cửa sổ 2×2 bắt đầu ở đó', 11.5, color=MUTED)
-    s.save('5-9-occmap', 'Bản đồ occlusion trượt cửa sổ 2×2 trên ảnh ngang (tính từ model của bài): A chỉ giảm score khi che ô góc, B giảm khi che vùng nét ở giữa.')
+    s.save('5-9-occmap', 'Bản đồ occlusion: A chỉ nhạy với ô góc, B nhạy với vùng nét.')
 
 
 def saliency59():
@@ -1683,7 +1683,7 @@ def saliency59():
             s.label(x + 56, 172, 'ảnh ngang' if i == 1 else 'ảnh đứng', 11.5, color=MUTED)
         s.label(80 + k * 280 + 121, 26, f'saliency của {nm}', 12.5, color=TEXT, weight=600)
     s.label(320, 204, 'model tuyến tính: gradient chính là trọng số, giống nhau trên mọi ảnh', 11.5, color=MUTED)
-    s.save('5-9-saliency', 'Saliency |∂logit/∂pixel| của hai model (tính bằng autograd từ code bài): A dồn hết vào ô góc, B vào vùng nét; map giống hệt nhau giữa ảnh ngang và ảnh đứng.')
+    s.save('5-9-saliency', 'Saliency: A dồn vào ô góc, B dồn vào vùng nét.')
 
 
 def gradcam59():
@@ -1701,7 +1701,7 @@ def gradcam59():
     s.label(404, 44, 'M_c', 12, color=TEXT, weight=600)
     s.mono(40, 160, 'α = trung bình gradient theo không gian', 12, 'start', MUTED)
     s.mono(40, 184, '0.5·A¹ − 0.5·A² = (0.5, −1.5; 0.5, 0.5) → ReLU', 12, 'start', MUTED)
-    s.save('5-9-gradcam', 'Grad-CAM tính tay của câu hỏi: α₁ = 0.5, α₂ = −0.5; tổng có trọng số cho ô −1.5 ở góc trên phải, ReLU đưa về 0.')
+    s.save('5-9-gradcam', 'Grad-CAM tính tay: ô góc trên phải ra −1.5, ReLU đưa về 0.')
 
 
 def matrix59():
@@ -1719,7 +1719,7 @@ def matrix59():
     s.label(380, 24, 'B (đọc nét)', 12, color=MUTED)
     s.label(480, 90, 'mỗi model thắng', 12, 'start', MUTED)
     s.label(480, 110, 'ở một hàng khác', 12, 'start', MUTED)
-    s.save('5-9-matrix', 'Ma trận kiểm (số từ output bài): A sụp khi đổi dấu góc nhưng không bị ảnh hưởng khi dịch nét; B giữ được khi đổi góc nhưng rơi xuống 0.775 rồi 0.5 khi nét dịch một, hai hàng.')
+    s.save('5-9-matrix', 'A sụp khi đổi ô góc; B giữ được nhưng tụt khi nét dịch chỗ.')
 
 
 def baseline59():
@@ -1741,7 +1741,7 @@ def baseline59():
     s.mono(460, 134, '(124, 116, 104)', 12, 'start', CLAY)
     s.label(460, 160, 'che đen phải gán ≈ −2.1', 12, 'start', MUTED)
     s.label(460, 178, 'ở kênh R', 12, 'start', MUTED)
-    s.save('5-9-baseline', 'Cùng phép “che bằng 0” trên ảnh thật: gán trước Normalize cho ô đen; gán sau Normalize cho ô màu trung bình ImageNet, khoảng (124, 116, 104).')
+    s.save('5-9-baseline', 'Gán 0 trước Normalize cho ô đen; gán 0 sau Normalize cho ô màu trung bình.')
 
 
 FIGS59 = {'5-9-crosstab': crosstab59, '5-9-shortcut': shortcut59, '5-9-filter': filter59, '5-9-occlusion-scores': occscores59,
