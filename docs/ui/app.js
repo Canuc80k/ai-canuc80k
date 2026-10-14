@@ -250,11 +250,10 @@
   }
   function lessonRow(l) {
     const done = S.done.has(l.id);
-    const tag = '';
     return a(lessonHref(l.id),
       `<span class="row-id">${idLabel(l)}</span>
-       <span class="row-body"><span class="row-title">${esc(l.title)}</span><span class="row-text">${esc(l.summary)}</span></span>
-       <span class="row-end">${tag}${done ? `<span class="row-done" title="Đã học">${icon('check')}</span>` : ''}${icon('arrow')}</span>`,
+       <span class="row-body"><span class="row-title">${esc(l.title)}</span></span>
+       <span class="row-end">${done ? `<span class="row-done" title="Đã học">${icon('check')}</span>` : ''}${icon('arrow')}</span>`,
       `class="row${done ? ' is-done' : ''}${ready(l) ? '' : ' is-draft'}" data-nav`);
   }
 
@@ -291,10 +290,8 @@
       <header class="page-head">
         <p class="kicker">Phase ${p.id}</p>
         <h1>${esc(p.title)}</h1>
-        <p class="lead">${esc(p.description)}</p>
         ${n ? `<p class="page-meta"><span>${n}/${p.count} đã học</span>${meter(n, p.count)}</p>` : ''}
       </header>
-      ${T.phases[p.id] && !S.q.trim() ? `<article class="prose theory phase-intro">${T.phases[p.id].html}</article>` : ''}
       <div class="rows">${lessons.map(lessonRow).join('') || empty()}</div>
       ${pagerPhase(p)}${footer()}</div>`;
   }
@@ -1254,7 +1251,6 @@
       : r.type === 'practice' ? `Thực hành${pt ? ' ' + pt.title : ''} — AI Canuc80k` : 'AI Canuc80k';
     if (l) { tidyLessonDoc(); renderChrome(r); spy(); }
     window.Anim?.scan($('#main'));
-    wrapTables('.phase-intro');
   }
 
   function goSection(r) {

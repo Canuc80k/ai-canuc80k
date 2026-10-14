@@ -302,7 +302,6 @@ h1, h2, h3 { text-wrap: balance; }
 .fig svg { display: block; max-width: 100%; height: auto; margin: 0 auto; color: var(--text); }
 .fig svg * { stroke-linejoin: round; stroke-linecap: round; }
 .fig figcaption { max-width: 58ch; margin: .8em auto 0; font: 16px/1.5 var(--serif); color: var(--muted); text-align: center; }
-.phase-intro { margin: 0 0 2.6em; }
 /* Bài giảng: mỗi mục một nhịp, phần đặc biệt có nền riêng (giữ tiết chế) */
 .theory .t-sec > h2 { padding-top: 1.3em; border-top: 1px solid var(--line); }
 .theory > .t-sec:first-of-type > h2 { border-top: 0; padding-top: 0; }
