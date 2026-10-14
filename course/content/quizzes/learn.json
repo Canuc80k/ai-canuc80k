@@ -1983,7 +1983,7 @@
   "to": [
    [
     "3.3",
-    "Nhiều thuộc tính và bảng hợp đồng",
+    "Nhiều thuộc tính cùng lúc",
     [
      "Softmax sẽ ép các thuộc tính tranh nhau tổng xác suất 1, trái với ý nghĩa “cả hai đều đúng”. Khi suy luận, mỗi thuộc tính bật độc lập khi sigmoid của nó vượt ngưỡng; với ngưỡng 0.5, điều đó tương đương logit dương."
     ]
@@ -2006,7 +2006,8 @@
     "3.2",
     "Từ loss về lớp đầu",
     [
-     "Gradient theo $W_1$ cần $\\partial J/\\partial Z_1$, mà đại lượng này phụ thuộc mọi lớp phía sau, nên chỉ có khi backward đổ về; còn đạo hàm cục bộ của activation thì tính được ngay lúc forward."
+     "Gradient theo $W_1$ cần $\\partial J/\\partial Z_1$.",
+     "Đại lượng này phụ thuộc mọi lớp phía sau nên chỉ có khi backward đổ về; còn đạo hàm cục bộ của activation thì tính được ngay lúc forward."
     ]
    ],
    [
@@ -2189,7 +2190,7 @@
     "3.1",
     "Ví dụ tính tay",
     [
-     "Tensor trung gian không mặc định giữ .grad; điều đó không có nghĩa đường đạo hàm qua nó bị mất."
+     "Tensor trung gian như u không giữ .grad, nhưng đạo hàm vẫn đi qua nó bình thường."
     ]
    ]
   ]
@@ -2266,7 +2267,7 @@
     "3.2",
     "Dùng thư viện ở đúng tầng",
     [
-     "Đặt đầu ra nhị phân là một logit và dùng BCEWithLogitsLoss, hoặc nhiều lớp loại trừ nhau là $c$ logits và CrossEntropyLoss; không ghép loss chỉ vì tensor cùng shape."
+     "Đầu ra và loss phải đi cùng nhau: phân loại nhị phân dùng một logit với BCEWithLogitsLoss, nhiều lớp loại trừ nhau dùng $c$ logits với CrossEntropyLoss (bài 3.3)."
     ]
    ],
    [
@@ -2461,7 +2462,7 @@
     "3.1",
     "Shape đúng phải đi cùng ý nghĩa đúng",
     [
-     "Một batch ảnh màu có shape (N, C, H, W): 32 ảnh RGB $64 \\times 64$ là (32, 3, 64, 64); thư viện ảnh thường trả (H, W, 3) nên phải permute(2, 0, 1) trước khi thêm chiều batch."
+     "Thư viện ảnh thường trả (H, W, 3), nên phải permute(2, 0, 1) trước khi thêm chiều batch."
     ]
    ]
   ]
@@ -3522,7 +3523,7 @@
     "3.2",
     "Dùng thư viện ở đúng tầng",
     [
-     "Số tham số là $2\\cdot3+3+3\\cdot1+1=13$, tính cả hai bias. Layer ReLU không có tham số học."
+     "Số tham số là $2\\cdot3+3+3\\cdot1+1=13$, tính cả hai bias; layer ReLU không có tham số học."
     ]
    ],
    [
@@ -3705,7 +3706,7 @@
     "3.1",
     "Thiết bị và nơi lưu dữ liệu",
     [
-     "Với model, model.to(device) chuyển tham số và buffer của module tại chỗ."
+     "Với model, model.to(device) chuyển tham số của model tại chỗ."
     ]
    ]
   ]
@@ -3810,7 +3811,8 @@
     "3.1",
     "Thiết bị và nơi lưu dữ liệu",
     [
-     "GPU thực hiện nhiều phép số song song, nhưng mọi tensor trong một phép tính phải cùng device."
+     "GPU thực hiện nhiều phép số song song, nhưng mọi tensor trong một phép tính phải cùng device:",
+     "Với tensor, .to(device) trả về tensor mới trên device đã chọn, nên phải gán lại: X = X.to(device)."
     ]
    ]
   ]
@@ -5092,7 +5094,7 @@
     "3.2",
     "Từ loss về lớp đầu",
     [
-     "Từ đây, gradient của trọng số nối đầu vào $j$ với nơ-ron $i$ bằng 0 khi $x_j = 0$ hoặc khi nơ-ron đó đóng ($z_i < 0$), bất kể gradient đổ về là bao nhiêu."
+     "Gradient của trọng số nối đầu vào $j$ với nơ-ron $i$ bằng 0 khi $x_j = 0$ hoặc khi nơ-ron đó đóng ($z_i < 0$), bất kể gradient đổ về là bao nhiêu."
     ]
    ]
   ]
@@ -5228,7 +5230,7 @@
   "to": [
    [
     "3.3",
-    "Nhiều thuộc tính và bảng hợp đồng",
+    "Nhiều thuộc tính cùng lúc",
     [
      "Khi đó mỗi thuộc tính là một nhãn nhị phân riêng, model cho (B,K) logits và BCEWithLogitsLoss với target float cùng shape. Softmax sẽ ép các thuộc tính tranh nhau tổng xác suất 1, trái với ý nghĩa “cả hai đều đúng”."
     ]
@@ -6769,7 +6771,8 @@
     "3.2",
     "Vì sao thêm một lớp?",
     [
-     "Xếp nhiều lớp như vậy là được một mạng nơ-ron nhiều lớp (multilayer perceptron, MLP); các lớp nằm giữa đầu vào và đầu ra gọi là lớp ẩn, và nhiều lớp ẩn thì gọi là mạng sâu."
+     "Xếp nhiều lớp như vậy là được một mạng nơ-ron nhiều lớp (multilayer perceptron, MLP).",
+     "Các lớp nằm giữa đầu vào và đầu ra gọi là lớp ẩn; nhiều lớp ẩn thì gọi là mạng sâu."
     ]
    ],
    [
@@ -8247,7 +8250,7 @@
     "3.2",
     "Vì sao thêm một lớp?",
     [
-     "Xếp nhiều lớp như vậy là được một mạng nơ-ron nhiều lớp (multilayer perceptron, MLP); các lớp nằm giữa đầu vào và đầu ra gọi là lớp ẩn, và nhiều lớp ẩn thì gọi là mạng sâu."
+     "Các lớp nằm giữa đầu vào và đầu ra gọi là lớp ẩn; nhiều lớp ẩn thì gọi là mạng sâu."
     ]
    ],
    [
@@ -8303,7 +8306,8 @@
     "3.1",
     "Shape đúng phải đi cùng ý nghĩa đúng",
     [
-     "Một batch ảnh màu có shape (N, C, H, W): 32 ảnh RGB $64 \\times 64$ là (32, 3, 64, 64); thư viện ảnh thường trả (H, W, 3) nên phải permute(2, 0, 1) trước khi thêm chiều batch."
+     "Một batch ảnh màu có shape (N, C, H, W): 32 ảnh RGB $64 \\times 64$ là (32, 3, 64, 64).",
+     "Thư viện ảnh thường trả (H, W, 3), nên phải permute(2, 0, 1) trước khi thêm chiều batch."
     ]
    ]
   ]
@@ -8402,7 +8406,7 @@
     "3.1",
     "Thiết bị và nơi lưu dữ liệu",
     [
-     "GPU thực hiện nhiều phép số song song, nhưng mọi tensor trong một phép tính phải cùng device."
+     "GPU thực hiện nhiều phép số song song, nhưng mọi tensor trong một phép tính phải cùng device:"
     ]
    ]
   ]
@@ -8620,7 +8624,7 @@
    ],
    [
     "3.3",
-    "Nhiều thuộc tính và bảng hợp đồng",
+    "Nhiều thuộc tính cùng lúc",
     [
      "Một bài có thể thuộc cả “đồ thị” lẫn “DP”: hai thuộc tính không loại trừ nhau. Khi đó mỗi thuộc tính là một nhãn nhị phân riêng, model cho (B,K) logits và BCEWithLogitsLoss với target float cùng shape."
     ]
@@ -12328,7 +12332,7 @@
     "3.1",
     "Thiết bị và nơi lưu dữ liệu",
     [
-     "GPU thực hiện nhiều phép số song song, nhưng mọi tensor trong một phép tính phải cùng device."
+     "GPU thực hiện nhiều phép số song song, nhưng mọi tensor trong một phép tính phải cùng device:"
     ]
    ]
   ]
@@ -12342,7 +12346,7 @@
     "3.1",
     "Detach, no_grad và bản sao",
     [
-     "Nó vẫn có thể dùng chung vùng nhớ với tensor gốc; muốn lưu snapshot độc lập, dùng detach().clone(). no_grad() tạm ngừng ghi graph cho các phép trong khối, thích hợp cho suy luận hoặc cập nhật thủ công."
+     "with torch.no_grad(): tạm ngừng ghi graph cho các phép trong khối, dùng khi suy luận hoặc cập nhật trọng số bằng tay."
     ]
    ]
   ]
@@ -13438,7 +13442,8 @@
     "3.1",
     "Detach, no_grad và bản sao",
     [
-     "Khi lưu dự đoán để tính metric, ta không muốn giữ cả đường tính toán. detach() tạo tensor không nối gradient về nguồn."
+     "detach() tạo tensor không nối gradient về nguồn.",
+     "Nó vẫn dùng chung vùng nhớ với tensor gốc."
     ]
    ]
   ]
@@ -13564,7 +13569,7 @@
     "3.1",
     "Detach, no_grad và bản sao",
     [
-     "Ngược lại, eval() cũng không tắt gradient; lúc đánh giá nên dùng cả hai."
+     "no_grad() không tự chuyển model sang chế độ đánh giá eval() (bài 3.4 và 3.6); ngược lại, eval() cũng không tắt gradient."
     ]
    ],
    [
@@ -13634,7 +13639,8 @@
     "3.2",
     "Dùng thư viện ở đúng tầng",
     [
-     "Lớp con phải được gán làm thuộc tính của nn.Module hoặc đặt trong nn.ModuleList; để trong list Python thường thì model.parameters() không thấy, optimizer không học và .to(device) cũng bỏ sót."
+     "Lớp con phải được gán làm thuộc tính của nn.Module hoặc đặt trong nn.ModuleList.",
+     "Để trong list Python thường thì model.parameters() không thấy, optimizer không học và .to(device) cũng bỏ sót."
     ]
    ]
   ]
@@ -14728,7 +14734,7 @@
     "3.2",
     "Dùng thư viện ở đúng tầng",
     [
-     "Ngược lại, dùng cùng một đối tượng lớp ở hai chỗ, như nn.Sequential(l, nn.ReLU(), l), là chia sẻ trọng số: parameters() chỉ đếm một lần và gradient cộng từ cả hai chỗ."
+     "Dùng cùng một đối tượng lớp ở hai chỗ, như nn.Sequential(l, nn.ReLU(), l), là chia sẻ trọng số: parameters() chỉ đếm một lần và gradient cộng từ cả hai chỗ."
     ]
    ]
   ]
@@ -18917,7 +18923,7 @@
    ],
    [
     "3.3",
-    "Nhiều thuộc tính và bảng hợp đồng",
+    "Nhiều thuộc tính cùng lúc",
     [
      "Một bài có thể thuộc cả “đồ thị” lẫn “DP”: hai thuộc tính không loại trừ nhau. Khi đó mỗi thuộc tính là một nhãn nhị phân riêng, model cho (B,K) logits và BCEWithLogitsLoss với target float cùng shape."
     ]
@@ -19221,7 +19227,7 @@
     "3.2",
     "Vì sao thêm một lớp?",
     [
-     "Một nơ-ron ngưỡng, ra 1 khi $w_1x_1 + w_2x_2 + b > 0$, tính được AND, OR hay NAND, ví dụ $w = (-1, -1)$, $b = 1.5$ cho NAND; nhưng nó chỉ vẽ được một đường, nên XOR cần ít nhất hai nơ-ron ẩn."
+     "Một nơ-ron ngưỡng, ra 1 khi $w_1x_1 + w_2x_2 + b > 0$, tính được AND, OR hay NAND; ví dụ $w = (-1, -1)$, $b = 1.5$ cho NAND."
     ]
    ]
   ]
@@ -20242,7 +20248,7 @@
     "3.2",
     "Vì sao thêm một lớp?",
     [
-     "Một nơ-ron ngưỡng, ra 1 khi $w_1x_1 + w_2x_2 + b > 0$, tính được AND, OR hay NAND, ví dụ $w = (-1, -1)$, $b = 1.5$ cho NAND; nhưng nó chỉ vẽ được một đường, nên XOR cần ít nhất hai nơ-ron ẩn."
+     "Nhưng nó chỉ vẽ được một đường, nên XOR cần ít nhất hai nơ-ron ẩn."
     ]
    ]
   ]
@@ -20256,7 +20262,7 @@
     "3.2",
     "Vì sao thêm một lớp?",
     [
-     "Cũng vậy, muốn biết một điểm có nằm trong tam giác không, ba nơ-ron ẩn mỗi cái kiểm một cạnh, rồi nơ-ron ra làm phép AND."
+     "Cũng vậy, muốn biết một điểm có nằm trong tam giác không, dùng ba nơ-ron ẩn, mỗi cái kiểm một cạnh, rồi nơ-ron ra làm phép AND."
     ]
    ]
   ]
@@ -20435,7 +20441,7 @@
     "3.1",
     "Autograd lưu đường đi của phép tính",
     [
-     "Mỗi phép lưu đúng thứ nó cần cho backward: sigmoid lưu chính đầu ra $y$ vì đạo hàm là $y(1-y)$, nên sửa $y$ tại chỗ như y.add_(1) sau forward sẽ làm backward báo lỗi."
+     "Sigmoid lưu chính đầu ra $y$ vì đạo hàm là $y(1-y)$, nên sửa $y$ tại chỗ như y.add_(1) sau forward sẽ làm backward báo lỗi."
     ]
    ]
   ]
