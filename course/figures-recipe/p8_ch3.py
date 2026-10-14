@@ -34,7 +34,7 @@ def shapes31():
     s.mono(516, 36, 'Y  (2, 2)', 12.5, 'middle', MUTED)
     s.mono(320, 178, '1·1 + 2·0 + 3·1 + 0.5 = 4.5', 13, 'middle', TEXT)
     s.label(320, 200, 'chiều 3 bị gộp; hai mẫu giữ nguyên', 12, color=MUTED)
-    s.save('3-1-shapes', 'X @ W + b: hàng đầu của X nhân cột đầu của W rồi cộng bias cho ô 4.5; chiều 3 bị gộp, hai mẫu giữ nguyên.')
+    s.save('3-1-shapes', 'X @ W + b: chiều 3 bị gộp, hai mẫu giữ nguyên.')
 
 
 def reshape31():
@@ -50,7 +50,7 @@ def reshape31():
         s.mono(x0 + 62, 24, title, 12.5, 'middle', TEXT)
     s.label(310, 186, 'hàng đầu sau reshape: [0, 1]', 12, color=MUTED)
     s.label(520, 186, 'hàng đầu: [0, 3]', 12, color=MUTED)
-    s.save('3-1-reshape', 'Cùng shape (3, 2), khác nội dung: reshape giữ thứ tự 0, 1, 2, …; transpose đưa cột cũ thành hàng mới (màu là hàng gốc của A).')
+    s.save('3-1-reshape', 'Cùng shape (3, 2): reshape giữ thứ tự, transpose đưa cột thành hàng.')
 
 
 def broadcast31():
@@ -66,7 +66,7 @@ def broadcast31():
     s.mono(410, 84, 'mean((·)²) = 0.5', 13, 'start', CLAY, 600)
     s.mono(410, 110, 'MSE đúng = 0', 13, 'start', GREEN, 600)
     s.label(320, 176, 'mỗi dự đoán bị trừ cho mọi nhãn; chỉ đường chéo là cặp đúng', 12, color=MUTED)
-    s.save('3-1-broadcast', 'Trừ (2, 1) cho (2,) không báo lỗi mà broadcast thành (2, 2): hai ô lệch đường chéo làm MSE thành 0.5 thay vì 0.')
+    s.save('3-1-broadcast', '(2, 1) trừ (2,) thành bảng (2, 2), nên MSE ra 0.5 thay vì 0.')
 
 
 def node(s, x, y, val, name, col, r=24):
@@ -89,7 +89,7 @@ def graph31():
     for x, v in zip(xs, ['30', '10', '1']):
         s.mono(x, 172, v, 14, 'middle', CLAY, 600)
     s.mono(90, 194, 'dJ/dw = 10 × 3 = 30', 12, 'start', TEXT)
-    s.save('3-1-graph', 'Forward tính 2 → 6 → 25; backward đi ngược, nhân các đạo hàm cục bộ: dJ/dw = 10 × 3 = 30.')
+    s.save('3-1-graph', 'Forward 2 → 6 → 25; backward nhân đạo hàm cục bộ: 10 × 3 = 30.')
 
 
 def gradsum31():
@@ -106,7 +106,7 @@ def gradsum31():
         if k:
             s.arrow(cx - 140 + 40, 90, cx - 40, 90, LINE, 1.3)
     s.label(250, 136, '30 + 30: cộng dồn, không ghi đè', 12, color=CLAY)
-    s.save('3-1-autograd-sum', 'Mỗi lần backward cộng thêm vào v.grad: 30 rồi 60; đặt grad = None xong thì lượt mới lại ra 30.')
+    s.save('3-1-autograd-sum', 'Mỗi lần backward cộng thêm: 30 rồi 60; xóa grad thì lại 30.')
 
 
 def detach31():
@@ -127,7 +127,7 @@ def detach31():
             s.line(cxm - 6, cym - 8, cxm + 6, cym + 8, CLAY, 2.2)
             s.line(cxm + 6, cym - 8, cxm - 6, cym + 8, CLAY, 2.2)
         s.mono(470, y, f'v.grad = {g}', 13, 'start', CLAY if cut else BLUE, 600)
-    s.save('3-1-detach', 'Cùng giá trị forward 8: giữ graph thì gradient là 12; detach v² thì đường qua v² bị cắt, chỉ còn 4.')
+    s.save('3-1-detach', 'Giữ graph: gradient 12. Detach v²: chỉ còn 4.')
 
 
 # ───────────────────────────── 3.2 ─────────────────────────────
@@ -155,7 +155,7 @@ def xor32():
     s.mono(ax2.X(1) + 5, ax2.Y(0) + 22, '(0,1) và (1,0)', 11, 'middle', CLAY)
     s.mono(ax2.X(2) - 10, ax2.Y(1) - 16, '(1,1)', 11, 'end', BLUE)
     s.label(495, 16, 'lớp ẩn (h₁, h₂)', 13, color=TEXT, weight=600)
-    s.save('3-2-xor', 'Trong mặt phẳng đầu vào, không đường thẳng nào tách hai cặp góc XOR; qua lớp ẩn ReLU, hai góc nhãn 1 dồn về (1, 0) và một đường thẳng tách được.')
+    s.save('3-2-xor', 'XOR: không đường thẳng nào tách được; qua lớp ẩn ReLU thì tách được.')
 
 
 def backprop32():
@@ -181,7 +181,7 @@ def backprop32():
     for x0, x1, lab in [(570, 450, 'G₂ = 2(P − Y)/B'), (450, 260, '· W₂ᵀ  ⊙ 1[Z₁ > 0]'), (260, 70, 'Xᵀ G₁ → dW₁')]:
         s.arrow(x0 - 8, y, x1 + 8, y, CLAY, 1.6)
         s.mono((x0 + x1) / 2, y - 12, lab, 11.5, 'middle', CLAY)
-    s.save('3-2-backprop', 'Mạng 2 → 3 → 1: forward đi từ trái sang; gradient đi ngược từ J, nhân W₂ᵀ để về lớp ẩn, qua cổng ReLU′ rồi mới tới W₁.')
+    s.save('3-2-backprop', 'Forward đi từ trái sang; gradient đi ngược từ J, qua W₂ᵀ và cổng ReLU′.')
 
 
 def hand32():
@@ -202,7 +202,7 @@ def hand32():
         s.mono((x0 + x1) / 2, 146, m, 11, 'middle', CLAY)
     s.arrow(550, 94, 410, 152, CLAY, 1.5)
     s.mono(500, 136, '2(p − y)', 11, 'start', CLAY)
-    s.save('3-2-hand-backprop', 'Ví dụ tính tay x = 2, y = 0: forward 2 → 1 → 2 → 4; backward nhân dần 4 → 8 → 16 để ra dJ/dw₁ = 16.')
+    s.save('3-2-hand-backprop', 'Forward 2 → 1 → 2 → 4; backward nhân dần 4 → 8 → 16.')
 
 
 def mask32():
@@ -218,7 +218,7 @@ def mask32():
     s.label(400, 82, 'mẫu 2, neuron 2 đóng:', 12.5, 'start', TEXT)
     s.label(400, 104, 'gradient qua ô này bằng 0', 12.5, 'start', CLAY, 600)
     s.label(320, 182, 'hàng là mẫu, cột là neuron ẩn', 11.5, color=MUTED)
-    s.save('3-2-mask', 'Ở batch hai mẫu của bài, Z₁ chỉ có một ô âm; mask (Z₁ > 0) chặn gradient qua đúng ô đó, ba ô còn lại cho gradient đi qua.')
+    s.save('3-2-mask', 'Mask (Z₁ > 0) chặn gradient ở ô âm duy nhất.')
 
 
 def learned32():
@@ -252,7 +252,7 @@ def learned32():
         for c_, col in [(0, BLUE), (1, CLAY)]:
             ax.dots(X[y == c_, 0], X[y == c_, 1], col, 2.4)
         s.label(x0 + 95, 14, f'{title} · train {acc:.0%}', 12.5, color=TEXT, weight=600)
-    s.save('3-2-learned', '200 điểm quanh bốn góc XOR, cùng 500 bước Adam: mô hình linear chỉ đúng 57%; thêm một lớp ẩn 8 neuron ReLU thì học được cả bốn vùng.')
+    s.save('3-2-learned', 'Model linear chỉ đúng 57% trên XOR; thêm 8 neuron ẩn ReLU thì học được.')
 
 
 FIGS32 = {'3-2-xor': xor32, '3-2-backprop': backprop32, '3-2-hand-backprop': hand32, '3-2-mask': mask32, '3-2-learned': learned32}
@@ -279,7 +279,7 @@ def activation33():
         ax.line(z, f, col, 2.4)
         s.label(x0 + 90, 14, nm, 13.5, color=col, weight=600)
     s.label(320, 202, 'nét liền: hàm · nét đứt: đạo hàm', 11.5, color=MUTED)
-    s.save('3-3-activation', 'ReLU, tanh và sigmoid (nét liền) cùng đạo hàm của chúng (nét đứt): tanh và sigmoid có đạo hàm gần 0 ở hai đầu; ReLU có đạo hàm 0 hoặc 1.')
+    s.save('3-3-activation', 'ReLU, tanh, sigmoid (nét liền) và đạo hàm (nét đứt).')
 
 
 def depth33():
@@ -297,7 +297,7 @@ def depth33():
         ax.line(layers, lv, col, 2.2).dots(layers, lv, col, 3)
         s.label(ax.X(10) + 8, ax.Y(lv[-1]), nm, 12.5, 'start', col, 600)
     s.label(ax.x - 8, ax.y - 12, 'std pre-activation', 11.5, 'start', FAINT)
-    s.save('3-3-depth-scale', 'Độ lệch chuẩn pre-activation qua 10 lớp ReLU (trục log, số từ code bài): khởi tạo N(0, 0.01²) co khoảng 9 lần mỗi lớp, He giữ quanh 1.4.')
+    s.save('3-3-depth-scale', 'Qua 10 lớp ReLU: khởi tạo quá nhỏ làm tín hiệu co dần; He giữ ổn định.')
 
 
 def residual33():
@@ -313,7 +313,7 @@ def residual33():
     s.label(ax.X(6) + 10, ax.Y(36) + 4, 'MSE: r²', 12.5, 'start', CLAY, 600)
     s.label(ax.X(10.5) + 8, ax.Y(10) - 8, 'MAE: |r|', 12.5, 'start', BLUE, 600)
     s.label(ax.X(10.5) + 8, ax.Y(9.5) + 10, 'Huber', 12, 'start', GREEN, 600)
-    s.save('3-3-residual-loss', 'Mức phạt theo phần dư: MSE tăng theo bình phương (sai 10 phạt 100, gấp 25 lần sai 2), MAE tăng tuyến tính; Huber là bình phương gần 0 và tuyến tính ở xa.')
+    s.save('3-3-residual-loss', 'MSE phạt theo bình phương, MAE tuyến tính, Huber ở giữa.')
 
 
 def squares33():
@@ -327,7 +327,7 @@ def squares33():
         s.mono(x0 + side / 2, base + 24, f'r = {r}', 11.5, 'middle', col)
         s.mono(x0 + side + 8, base - side + 10, f'{r * r}', 13, 'start', TEXT, 600)
     s.mono(420, 100, 'MSE = (1 + 4 + 100)/3 = 35', 12, 'start', MUTED)
-    s.save('3-3-loss-metrics', 'Phần dư 1, 2, 10 của ví dụ: bình phương biến chúng thành diện tích 1, 4, 100, nên một mẫu đóng gần hết MSE = 35.')
+    s.save('3-3-loss-metrics', 'Phần dư 1, 2, 10 bình phương thành 1, 4, 100: một mẫu chiếm gần hết MSE.')
 
 
 def constant33():
@@ -342,7 +342,7 @@ def constant33():
     for v, col, lab, anc, dx in [(13, BLUE, 'median 13 (MAE)', 'end', -6), (28, CLAY, 'mean 28 (MSE)', 'start', 6)]:
         s.line(X(v), 50, X(v), 92, col, 2)
         s.label(X(v) + dx, 46, lab, 12.5, anc, col, 600)
-    s.save('3-3-constant', 'Năm thời gian 10, 12, 13, 15, 90: hằng số tốt nhất theo MSE là trung bình 28, bị bài 90 phút kéo đi; theo MAE là trung vị 13.')
+    s.save('3-3-constant', 'Hằng số tốt nhất: theo MSE là trung bình 28, theo MAE là trung vị 13.')
 
 
 def bce33():
@@ -360,7 +360,7 @@ def bce33():
         else:
             s.label(ax.X(-4), ax.Y(0) - 14, 'y = 0', 12, 'middle', BLUE, 600)
             s.label(ax.X(-4), ax.Y(-1) - 14, 'y = 1', 12, 'middle', CLAY, 600)
-    s.save('3-3-bce', 'BCEWithLogits theo logit: đoán đúng tự tin thì loss về 0; đoán sai tự tin thì loss tăng gần tuyến tính và gradient σ(z) − y dần tới ±1, không tắt.')
+    s.save('3-3-bce', 'Đoán sai càng tự tin, loss càng lớn và gradient không tắt.')
 
 
 def bars(s, x0, y0, vals, cols, labels, h=70, w=34, gap=14, vmax=1, fmt='{:.2f}', below=False):
@@ -386,7 +386,7 @@ def twice33():
         s.label(x0 + 49, 18, title, 13, color=TEXT if k_ < 2 else CLAY, weight=600)
         if k_:
             s.arrow(x0 - 80, 100, x0 - 30, 100, MUTED, 1.3)
-    s.save('3-3-softmax-twice', 'Logits (log 2, 0) cho xác suất (0.667, 0.333); softmax thêm lần nữa nén chênh lệch còn (0.583, 0.417), nên CrossEntropyLoss nhận nhầm một bài toán khác.')
+    s.save('3-3-softmax-twice', 'Softmax hai lần nén (0.667, 0.333) thành (0.583, 0.417).')
 
 
 def multilabel33():
@@ -402,7 +402,7 @@ def multilabel33():
         bars(s, x0, y0, v, [col if (k_ == 0 and x > .5) else FAINT for x in v] if k_ == 0 else [FAINT, FAINT, FAINT], ['0', '1', '2'], h=h, w=36, gap=16, below=True)
         s.label(x0 + 70, 20, title, 12.5, color=TEXT, weight=600)
     s.mono(232, 105, '0.5', 11, 'start', CLAY)
-    s.save('3-3-multilabel', 'Logits (1.2, −0.4, 0.1) với ngưỡng 0.5: sigmoid từng thuộc tính bật được cả 0 và 2; softmax bắt ba thuộc tính chia nhau tổng 1 nên chỉ ô lớn nhất vượt 0.5.')
+    s.save('3-3-multilabel', 'Sigmoid bật được nhiều nhãn; softmax bắt các nhãn chia nhau tổng 1.')
 
 
 FIGS33 = {'3-3-activation': activation33, '3-3-depth-scale': depth33, '3-3-residual-loss': residual33, '3-3-loss-metrics': squares33,
@@ -425,7 +425,7 @@ def loop34():
     s.curve(xs[4], 106, xs[0], 106, -.1, MUTED, 1.3)
     s.label(320, 168, 'batch tiếp theo', 11.5, color=MUTED)
     s.label(320, 198, 'đổi thứ tự backward / zero_grad / step là mất hoặc dùng sai gradient', 12, color=CLAY)
-    s.save('3-4-loop', 'Mỗi batch đi đúng một vòng zero_grad → forward → loss → backward → step rồi mới sang batch tiếp theo.')
+    s.save('3-4-loop', 'Mỗi batch: zero_grad → forward → loss → backward → step.')
 
 
 def batches34():
@@ -442,7 +442,7 @@ def batches34():
     s.label(40, 30, '1 epoch = 72 mẫu train', 12.5, 'start', TEXT, 600)
     s.label(x + 12, 70, '× 20 epoch = 100 step', 12.5, 'start', CLAY, 600)
     s.label(320, 150, 'batch cuối 8 mẫu vẫn là một lần cập nhật', 11.5, color=MUTED)
-    s.save('3-4-batches', '72 mẫu train, batch size 16: mỗi epoch có 5 batch (bốn batch 16 và một batch 8), mỗi batch một step, nên 20 epoch là 100 step.')
+    s.save('3-4-batches', '72 mẫu, batch 16: 5 batch mỗi epoch, 20 epoch là 100 step.')
 
 
 def curves34():
@@ -463,7 +463,7 @@ def curves34():
     ax2.step(ep, acc, GREEN, 1.6)
     s.label(ax.X(35) + 8, ax2.Y(1), 'accuracy', 12, 'start', GREEN, 600)
     s.mono(ax2.X(7), ax2.Y(1) - 10, '1.0 từ epoch 7', 11, 'start', GREEN)
-    s.save('3-4-curves', 'Log 35 epoch của bài: train loss giảm đều; validation loss thấp nhất ở epoch 32 rồi tăng nhẹ, nên checkpoint lấy epoch 32. Accuracy đạt 1.0 từ epoch 7 và không còn phân biệt được các epoch.')
+    s.save('3-4-curves', 'Validation loss thấp nhất ở epoch 32, nên lưu checkpoint ở đó.')
 
 
 def checkpoint34():
@@ -482,7 +482,7 @@ def checkpoint34():
     s.mono(530, 100, 'match: True', 12.5, 'start', GREEN, 600)
     s.mono(530, 122, '[1, 0]', 12.5, 'start', TEXT)
     s.label(125, 200, 'đủ để suy luận, chưa đủ để train tiếp', 11.5, color=MUTED)
-    s.save('3-4-checkpoint', 'Packet checkpoint của bài: trọng số, mean và scale của train, cùng đầu vào kiểm và logits mong đợi; một tiến trình Python mới chỉ dùng packet mà vẫn cho cùng kết quả.')
+    s.save('3-4-checkpoint', 'Checkpoint lưu trọng số, mean và scale, kèm đầu vào kiểm và logits mong đợi.')
 
 
 def wmean34():
@@ -503,7 +503,7 @@ def wmean34():
     s.line(110, ya, x + 6, ya, MUTED, 1.2, '4 3')
     s.mono(x + 14, ya - 8, 'trung bình hai batch: 0.5', 12, 'start', MUTED)
     s.label(60, 100, 'loss', 11.5, 'end', FAINT)
-    s.save('3-4-weighted-mean', 'Batch 16 mẫu loss 0.2 và batch 8 mẫu loss 0.8: chiều rộng là số mẫu; trung bình theo mẫu là 0.4, không phải 0.5.')
+    s.save('3-4-weighted-mean', 'Trung bình theo mẫu là 0.4, không phải 0.5.')
 
 
 def collate34():
@@ -577,7 +577,7 @@ def paths35():
         s.circle(ax.X(0), ax.Y(0), 3.5, TEXT)
         s.circle(ax.X(-2), ax.Y(1), 4, col, PAPER, 1.6)
         s.label(x0 + 97, 14, title, 13, color=col, weight=600)
-    s.save('3-5-paths', '25 bước trên J = w₁² + 8w₂² từ (−2, 1): SGD (η = 0.09) zigzag theo chiều dốc rồi về đáy; momentum vượt đáy rồi vòng lại; Adam (η = 0.15) đi gần chéo vì mỗi tọa độ bước cỡ η.')
+    s.save('3-5-paths', 'SGD zigzag, momentum vượt đáy rồi vòng lại, Adam đi gần chéo.')
 
 
 def budget35():
@@ -594,7 +594,7 @@ def budget35():
     for b in (30, 40):
         s.line(ax.X(b), ax.y, ax.X(b), ax.y + ax.h, FAINT, 1, '3 3')
     s.label(ax.x - 8, ax.y - 10, 'loss', 11.5, 'start', FAINT)
-    s.save('3-5-budget', 'Loss theo bước (thang log): SGD rate nhỏ đi xuống đều, Adam và momentum vừa xuống vừa dao động, nên thứ hạng ở bước 30 và bước 40 khác nhau.')
+    s.save('3-5-budget', 'Thứ hạng các optimizer ở bước 30 và bước 40 khác nhau.')
 
 
 def threshold35():
@@ -608,7 +608,7 @@ def threshold35():
     s.label(ax.X(.16) + 8, ax.Y(1 - 2 * .16), '|1 − 2η|  (w₁)', 12, 'start', BLUE, 600)
     s.label(ax.X(.1425), ax.Y(.25), 'nổ', 12, color=CLAY, weight=600)
     s.label(ax.x - 8, ax.y - 10, 'hệ số nhân mỗi bước', 11.5, 'start', FAINT)
-    s.save('3-5-threshold', 'SGD trên J = w₁² + 8w₂²: mỗi bước nhân w₂ với |1 − 16η| và w₁ với |1 − 2η|; η vượt 1/8 thì chiều w₂ nổ, còn ngay dưới ngưỡng chiều w₁ vẫn chỉ co 0.75.')
+    s.save('3-5-threshold', 'η vượt 1/8 thì chiều w₂ nổ; dưới ngưỡng, chiều w₁ vẫn đi chậm.')
 
 
 def momentum35():
@@ -622,7 +622,7 @@ def momentum35():
     s.label(ax.X(31) + 8, ax.Y(1), 'SGD: g', 12, 'start', BLUE, 600)
     ax.hline(1, BLUE, 1.4, None)
     s.label(ax.x - 8, ax.y - 10, 'độ dài v', 11.5, 'start', FAINT)
-    s.save('3-5-momentum', 'Gradient không đổi g, μ = 0.9: v = g(1 + 0.9 + 0.9² + …) tăng dần tới 10g, nên bước momentum về sau dài gấp 10 bước SGD.')
+    s.save('3-5-momentum', 'Gradient không đổi, μ = 0.9: bước momentum dài dần tới 10 lần bước SGD.')
 
 
 def adamscale35():
@@ -642,7 +642,7 @@ def adamscale35():
         s.mono(ax.x - 14, y, f'g = {g:g}', 12, 'end', TEXT)
     s.label(480, 60, 'SGD: ηg', 12, 'start', BLUE, 600)
     s.label(480, 80, 'Adam bước đầu: ≈ η', 12, 'start', GREEN, 600)
-    s.save('3-5-adam-scale', 'Gradient 0.01, 1 hay 100: bước SGD tỉ lệ với g, còn bước đầu của Adam luôn dài cỡ η = 0.1 vì gradient đã được chia cho độ lớn của chính nó.')
+    s.save('3-5-adam-scale', 'Bước SGD tỉ lệ với gradient; bước đầu của Adam luôn cỡ η.')
 
 
 def schedule35():
@@ -662,7 +662,7 @@ def schedule35():
         else:
             ax.line(x, y, CLAY, 2.2)
         s.label(x0 + 87, 14, title, 12.5, color=TEXT, weight=600)
-    s.save('3-5-schedule', 'Ba lịch learning rate: StepLR của bài nhân 0.5 sau mỗi 3 epoch; cosine giảm trơn về 0; warmup tăng tuyến tính vài bước đầu rồi mới giảm.')
+    s.save('3-5-schedule', 'StepLR giảm theo bậc, cosine giảm trơn, warmup tăng trước rồi giảm.')
 
 
 FIGS35 = {'3-5-paths': paths35, '3-5-budget': budget35, '3-5-threshold': threshold35, '3-5-momentum': momentum35,
@@ -685,7 +685,7 @@ def capacity36():
     s.line(ax.X(2), ax.Y(va[1]) + 8, ax.X(2.6), ax.Y(.06), FAINT, 1)
     s.label(ax.X(2.7), ax.Y(.065), 'bậc 2: đúng dạng y = x²', 11.5, 'start', MUTED)
     s.label(ax.x - 8, ax.y - 10, 'MSE', 11.5, 'start', FAINT)
-    s.save('3-6-capacity', '16 điểm có nhiễu quanh y = x²: tăng bậc đa thức thì train MSE giảm mãi, còn validation MSE thấp nhất ở bậc 2–3 rồi tăng vọt khi model bám cả nhiễu.')
+    s.save('3-6-capacity', 'Bậc càng cao train MSE càng giảm; validation thấp nhất ở bậc 2–3.')
 
 
 def dropout36():
@@ -702,7 +702,7 @@ def dropout36():
     s.label(430, 87, '× 1/(1 − p) = × 2', 12, 'start', CLAY, 600)
     s.label(430, 107, 'ô 0: bị bỏ ở lượt này', 12, 'start', MUTED)
     s.label(430, 187, 'không mask, không nhân', 12, 'start', MUTED)
-    s.save('3-6-dropout', 'Dropout p = 0.5 trên h = (1, 2, 3, 4), output của code bài: mỗi lượt train bốc một mask mới và nhân phần còn lại với 2; eval giữ nguyên h.')
+    s.save('3-6-dropout', 'Lúc train mỗi lượt bỏ ngẫu nhiên một nửa, nhân phần còn lại với 2; eval giữ nguyên.')
 
 
 def earlystop36():
@@ -728,7 +728,7 @@ def earlystop36():
     s.label(ax.X(160) + 8, ax.Y(L(va[-1])), 'validation', 12, 'start', CLAY, 600)
     s.label(ax.X(160) + 8, ax.Y(L(noise)) - 8, 'MSE của nhiễu', 11.5, 'start', SAND)
     s.label(ax.x - 8, ax.y - 10, 'MSE (thang log)', 11.5, 'start', FAINT)
-    s.save('3-6-early-stop', 'Mạng nhỏ trên 16 điểm (decay 0, số từ code bài): validation MSE chạm một đáy hẹp ở epoch 26 rồi nhích dần lên; train loss xuống dưới MSE của nhiễu, tức đã khớp một phần nhiễu.')
+    s.save('3-6-early-stop', 'Validation MSE thấp nhất ở epoch 26 rồi tăng dần.')
 
 
 def patience36():
@@ -747,7 +747,7 @@ def patience36():
     s.label(ax.X(5.5) + 6, ax.y + 8, 'dừng sau epoch 5', 12, 'start', CLAY, 600)
     s.label(ax.X(6.5) + 8, ax.Y(.455), 'vùng chưa đủ', 11.5, 'start', SAND)
     s.label(ax.X(6.5) + 8, ax.Y(.455) + 16, 'min_delta 0.01', 11.5, 'start', SAND)
-    s.save('3-6-patience', 'Patience 3, min_delta 0.01: tốt nhất là 0.46 ở epoch 2; ba epoch sau chỉ giảm chưa tới 0.01 (vùng tô) nên được đếm 1, 2, 3 và huấn luyện dừng sau epoch 5.')
+    s.save('3-6-patience', 'Patience 3: ba epoch không giảm đủ 0.01 thì dừng.')
 
 
 def bnstats36():
@@ -760,7 +760,7 @@ def bnstats36():
     s.mono(110, 136, 'mean (2, 3)', 12, 'middle', MUTED)
     s.mono(110, 156, 'var: B → 1, B − 1 → 2', 12, 'middle', MUTED)
     s.label(320, 200, 'cùng input, khác output: running variance ghi bằng ước lượng chia B − 1', 11.5, color=MUTED)
-    s.save('3-6-bn-stats', 'BatchNorm affine=False, momentum=1 trên hai hàng (1, 2) và (3, 4): train chuẩn hóa bằng phương sai chia B (ra ±1); running variance ghi chia B − 1 nên eval ra ±0.707.')
+    s.save('3-6-bn-stats', 'Train chia phương sai cho B, running variance chia B − 1, nên eval ra ±0.707.')
 
 
 def bndeep36():
@@ -786,7 +786,7 @@ def bndeep36():
         ax.line(range(1, 11), v, col, 2.2).dots(range(1, 11), v, col, 3)
         s.label(ax.X(10) + 8, ax.Y(v[-1]), nm, 12, 'start', col, 600)
     s.label(ax.x - 8, ax.y - 10, 'std activation', 11.5, 'start', FAINT)
-    s.save('3-6-bn-deep', '10 lớp ReLU rộng 64, khởi tạo N(0, 0.01²) (số từ code bài): không BatchNorm, std co còn cỡ 10⁻¹³; chèn BatchNorm sau mỗi Linear, std giữ quanh 0.58 ở mọi lớp.')
+    s.save('3-6-bn-deep', '10 lớp ReLU: không BatchNorm thì tín hiệu tắt; có BatchNorm thì giữ ổn định.')
 
 
 def bnln36():
@@ -803,7 +803,7 @@ def bnln36():
         s.label(x0 + 75, 20, title, 12.5, color=col, weight=600)
         s.label(x0 + 75, 202, 'feature →', 11, color=MUTED)
         s.label(x0 + 14, 100, 'mẫu ↓', 11, 'end', MUTED)
-    s.save('3-6-bn-ln', 'Trên bảng (mẫu × feature): BatchNorm lấy mean theo cột, gộp qua các mẫu trong batch; LayerNorm lấy mean theo hàng, chỉ trong một mẫu nên không phụ thuộc batch.')
+    s.save('3-6-bn-ln', 'BatchNorm chuẩn hóa theo cột (qua các mẫu), LayerNorm theo hàng (trong một mẫu).')
 
 
 FIGS36 = {'3-6-capacity': capacity36, '3-6-dropout': dropout36, '3-6-early-stop': earlystop36, '3-6-patience': patience36,
@@ -840,7 +840,7 @@ def overfit37():
     s.label(ax.X(100) + 8, ax.Y(L(math.log(2))), 'ln 2: đoán đều', 11.5, 'start', MUTED)
     s.label(ax.X(100) + 8, ax.Y(L(losses[-1])), f'{losses[-1]:.1e}', 12, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 10, 'loss', 11.5, 'start', FAINT)
-    s.save('3-7-overfit', 'Overfit một batch bốn mẫu (code bài): loss đi từ gần ln 2 xuống cỡ 10⁻⁵ sau 100 bước, chứng tỏ forward, loss, backward và step đã nối đúng.')
+    s.save('3-7-overfit', 'Học thuộc một batch: loss về gần 0 là các bước đã nối đúng.')
 
 
 def debug37():
@@ -859,7 +859,7 @@ def debug37():
     s.arrow(500, 130, 500, 100, CLAY, 1.4)
     s.mono(560, 73, '✗', 18, 'start', CLAY, 600)
     s.label(170, 152, 'forward chạy êm; lỗi chỉ hiện ở phép đầu tiên chạm yb', 12, color=MUTED)
-    s.save('3-7-debug', 'Model và xb đã ở GPU nên forward chạy được; target yb còn ở CPU nên lỗi device chỉ hiện ra ở dòng tính loss.')
+    s.save('3-7-debug', 'Target còn ở CPU nên lỗi device hiện ra ở dòng tính loss.')
 
 
 def memory37():
@@ -875,7 +875,7 @@ def memory37():
             s.mono(170 + k * u + (u - 4) / 2, y + 15.5, lab, 12.5, 'middle', TEXT)
         s.mono(170 + len(parts) * u + 8, y + 15.5, f'{4 * len(parts)} B', 13, 'start', TEXT, 600)
     s.label(320, 186, 'mỗi ô 4 byte (FP32), tính cho một tham số; activation tính riêng', 11.5, color=MUTED)
-    s.save('3-7-memory', 'Mỗi tham số FP32 cần 4 byte cho trọng số, 4 cho gradient, cộng trạng thái optimizer: SGD 8 byte, SGD momentum 12, Adam 16.')
+    s.save('3-7-memory', 'Số byte cho mỗi tham số FP32: SGD 8, SGD momentum 12, Adam 16.')
 
 
 def attention37():
@@ -887,7 +887,7 @@ def attention37():
         s.mono(150, y + 16, f'L = {L}', 12.5, 'end', TEXT)
         s.mono(160 + w + 8, y + 16, f'{mib} MiB', 12.5, 'start', TEXT, 600)
     s.label(320, 166, 'score (16, 8, L, L) FP32: L giảm một nửa, bộ nhớ giảm bốn lần', 11.5, color=MUTED)
-    s.save('3-7-attention', 'Tensor attention score (16, 8, L, L) ở FP32: 512 MiB với L = 1024 nhưng chỉ 128 MiB với L = 512, vì kích thước tỉ lệ với L².')
+    s.save('3-7-attention', 'Bộ nhớ của attention score tỉ lệ với L²: gấp đôi L, gấp bốn bộ nhớ.')
 
 
 def accum37():
@@ -908,7 +908,7 @@ def accum37():
     s.mono(500, 60, 'chia 4: tỉ lệ 1.0', 12.5, 'start', GREEN, 600)
     s.mono(500, 82, 'không chia: 4.0', 12.5, 'start', CLAY, 600)
     s.label(500, 104, 'so với gradient batch 32', 11.5, 'start', MUTED)
-    s.save('3-7-accum', 'Gradient accumulation: bốn microbatch 8 mẫu, mỗi cái backward với loss chia 4, .grad cộng dồn rồi mới step một lần; kết quả trùng gradient của batch 32.')
+    s.save('3-7-accum', 'Bốn microbatch 8 mẫu cộng dồn gradient, rồi step một lần như batch 32.')
 
 
 def fp16_37():
@@ -925,7 +925,7 @@ def fp16_37():
     s.curve(X(-8), 72, X(L(6.55e-4)), 72, -.25, MUTED, 1.4)
     s.circle(X(L(6.55e-4)), 80, 6, GREEN)
     s.mono(X(L(6.55e-4)), 140, '× 65536 = 6.55e-4', 12, 'middle', GREEN, 600)
-    s.save('3-7-fp16', 'Gradient 10⁻⁸ nằm dưới số dương nhỏ nhất của FP16 nên thành 0; GradScaler nhân 65536 đưa nó vào khoảng biểu diễn được (6.55·10⁻⁴), rồi chia lại ở FP32.')
+    s.save('3-7-fp16', 'GradScaler nhân gradient lên để không bị làm tròn về 0 trong FP16.')
 
 
 def budget37():
@@ -941,7 +941,7 @@ def budget37():
         s.mono(60 + m * u, 112, str(m), 11, 'middle', FAINT)
     s.label(60 + 20.6 * u + 8, 67, '20.6', 12, 'start', CLAY, 600)
     s.label(320, 142, '20 epoch × 391 step × 0.12 s, cộng 20 lần validation 15 s', 11.5, color=MUTED)
-    s.save('3-7-budget', 'Ước lượng ngân sách: train 20 × 391 × 0.12 s ≈ 15.6 phút, cộng validation 5 phút đã vượt 20 phút trước khi tính đọc dữ liệu và checkpoint.')
+    s.save('3-7-budget', '20 epoch train cộng validation đã vượt 20 phút.')
 
 
 FIGS37 = {'3-7-overfit': overfit37, '3-7-debug': debug37, '3-7-memory': memory37, '3-7-attention': attention37,
@@ -967,7 +967,7 @@ def padding38():
     s.label(500, 88, 'độ dài 1', 12, 'start', MUTED)
     s.label(500, 126, 'độ dài 3', 12, 'start', MUTED)
     s.label(320, 182, 'bảng rộng bằng câu dài nhất trong batch; ô xám là PAD', 11.5, color=MUTED)
-    s.save('3-8-padding', 'Ba câu của bài sau pad_sequence thành bảng (3, 3); mask đánh dấu 1 ở token thật, nên tổng mỗi hàng chính là độ dài câu.')
+    s.save('3-8-padding', 'Pad ba câu thành bảng (3, 3); tổng mỗi hàng của mask là độ dài câu.')
 
 
 def lookup38():
@@ -985,7 +985,7 @@ def lookup38():
     s.label(520, 18, 'vectors[0] (3, 2)', 12.5, color=TEXT, weight=600)
     s.tiles(470, 34, [['2', '0'], ['0', '4'], ['0', '0']], 44, 28, CLAY, 4, {(2, 0): (FAINT, .12), (2, 1): (FAINT, .12)}, size=13, opacity=.28)
     s.label(320, 206, 'ID là địa chỉ hàng, không phải độ lớn', 11.5, color=MUTED)
-    s.save('3-8-lookup', 'Bảng embedding đặt tay của bài: câu đầu (2, 3, PAD) tra ra ba hàng của bảng, nên vectors có thêm chiều cuối d = 2.')
+    s.save('3-8-lookup', 'Mỗi token ID tra ra một hàng của bảng embedding.')
 
 
 def space38():
@@ -1003,7 +1003,7 @@ def space38():
     s.mono(ax.X(4 / 3) + 4, ax.Y(2) + 22, 'câu 3 (1.33, 2)', 11.5, 'start', GREEN)
     s.circle(ax.X(2 / 3), ax.Y(4 / 3), 5, MUTED, PAPER, 1.6)
     s.mono(ax.X(2 / 3) - 10, ax.Y(4 / 3) + 4, 'mean ngây thơ', 11.5, 'end', MUTED)
-    s.save('3-8-space', 'Vector token đặt tay trong mặt phẳng: câu 1 là trung điểm của đồ_thị và dp; mean ngây thơ chia cho 3 ô (tính cả PAD) kéo điểm về phía gốc.')
+    s.save('3-8-space', 'Tính cả PAD vào trung bình kéo điểm về phía gốc.')
 
 
 def pooling38():
@@ -1021,7 +1021,7 @@ def pooling38():
         s.tiles(410, y, [res], 50, 30, col, 4, size=13, opacity=.22)
         s.label(522, y + 8, lab, 12.5, 'start', col, 600)
         s.mono(522, y + 26, op, 11.5, 'start', MUTED)
-    s.save('3-8-pooling', 'Masked mean của câu đầu: cộng vector theo mask được (2, 4), chia cho 2 token thật ra (1, 2); chia cho cả 3 ô thì ra (0.67, 1.33).')
+    s.save('3-8-pooling', 'Chia cho 2 token thật ra (1, 2); chia cho cả 3 ô ra (0.67, 1.33).')
 
 
 def rnnpad38():
@@ -1043,7 +1043,7 @@ def rnnpad38():
     s.mono(450, 30, 'outputs[:, −1]', 12, 'middle', MUTED)
     s.arrow(450, 38, 450, 54, MUTED, 1.3)
     s.label(500, 80, 'vẫn đổi qua PAD', 11.5, 'start', MUTED)
-    s.save('3-8-rnn-pad', 'Câu “dp” dài 1 trong bảng rộng 3: trạng thái cần đọc là h₁; cột cuối h₃ đã đi qua hai bước PAD và vẫn bị W_hh, bias làm đổi.')
+    s.save('3-8-rnn-pad', 'Câu dài 1: cần đọc h₁, còn h₃ đã bị hai bước PAD làm đổi.')
 
 
 def vanish38():
@@ -1058,7 +1058,7 @@ def vanish38():
     ax.line(range(1, 41), L(g), CLAY, 2).dots(range(1, 41), L(g), CLAY, 2.4)
     s.label(ax.X(40) + 8, ax.Y(L(g[-1])), f'{g[-1]:.2f}', 12, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 10, '‖∂h₄₀/∂xₜ‖', 11.5, 'start', FAINT)
-    s.save('3-8-vanish', 'RNN của bài trên chuỗi dài 40 (số từ code): độ lớn gradient của trạng thái cuối theo từng token giảm hai đến ba bậc mỗi mười bước, token đầu chỉ còn cỡ 10⁻¹⁰.')
+    s.save('3-8-vanish', 'Gradient về các token đầu giảm hai, ba bậc mỗi mười bước.')
 
 
 def lstm38():
@@ -1076,7 +1076,7 @@ def lstm38():
     s.label(466, 64, 'f ≈ 1: gradient đi qua', 12, 'start', TEXT, 600)
     s.label(466, 82, 'gần nguyên vẹn', 12, 'start', MUTED)
     s.label(320, 156, 'đường cell state chỉ nhân với cổng quên, không nhân W_hh và tanh′ mỗi bước', 11.5, color=MUTED)
-    s.save('3-8-lstm', 'Cell state của LSTM: từ c₁ tới c₃ chỉ nhân với cổng quên f rồi cộng nội dung mới, nên khi f gần 1 gradient đi qua nhiều bước mà không tắt dần.')
+    s.save('3-8-lstm', 'Cell state chỉ nhân với cổng quên f, nên gradient đi xa mà không tắt.')
 
 
 FIGS38 = {'3-8-padding': padding38, '3-8-lookup': lookup38, '3-8-space': space38, '3-8-pooling': pooling38,
@@ -1101,7 +1101,7 @@ def attention39():
     s.label(272, 22, 'softmax', 12, 'start', MUTED)
     s.line(430, 175, 600, 175, LINE, 1)
     s.mono(440, 196, 'output = [1.462, 1.076]', 13, 'start', TEXT, 600)
-    s.save('3-9-attention', 'Ví dụ tính tay: score 1 và 0 qua softmax thành 0.731 và 0.269, rồi trộn hai value (2, 0) và (0, 4) thành (1.462, 1.076).')
+    s.save('3-9-attention', 'Score (1, 0) qua softmax thành (0.731, 0.269), rồi trộn hai value.')
 
 
 def scale39():
@@ -1120,7 +1120,7 @@ def scale39():
     s.label(ax.X(2.5) + 8, ax.Y(.32), 'chia √d_k', 12, 'start', BLUE, 600)
     s.label(ax.X(2.5) + 8, ax.Y(.125), 'chia đều: 1/8', 11.5, 'start', FAINT)
     s.label(ax.x - 8, ax.y - 10, 'trọng số lớn nhất (TB)', 11.5, 'start', FAINT)
-    s.save('3-9-scale', 'Thí nghiệm của bài (8 key mỗi query): không chia √d_k, key mạnh nhất chiếm 0.52 → 0.97 trọng số khi d_k tăng; có chia, giữ quanh 0.35 ở mọi độ rộng.')
+    s.save('3-9-scale', 'Không chia √d_k, một key chiếm gần hết trọng số khi d_k lớn.')
 
 
 def heads39():
@@ -1138,7 +1138,7 @@ def heads39():
         for i, l in enumerate(labs):
             s.mono(x0 - 8, 52 + i * 40, l, 11, 'end', MUTED)
     s.label(320, 192, 'hàng: query · cột: key · cột PAD bằng 0 ở cả hai head', 11.5, color=MUTED)
-    s.save('3-9-heads', 'Trọng số attention thật của TinyEncoder (mẫu đầu, 2 head): mỗi head có phân phối riêng, mỗi hàng cộng bằng 1, cột PAD bằng 0 nhờ key_padding_mask.')
+    s.save('3-9-heads', 'Hai head có phân phối riêng; cột PAD bằng 0.')
 
 
 def masks39():
@@ -1153,7 +1153,7 @@ def masks39():
         for j in range(L):
             s.mono(x0 + j * 34 + 15, 184, 'PAD' if j == 3 and k_ != 1 else str(j + 1), 10.5, 'middle', MUTED)
     s.label(320, 206, 'hàng: query · cột: key · ô tô: được đọc', 11.5, color=MUTED)
-    s.save('3-9-masks', 'Các key mỗi query được đọc (ô tô) trong câu 3 token và một PAD: padding mask bỏ cột PAD, causal mask bỏ tương lai, dùng cùng lúc thì bỏ cả hai.')
+    s.save('3-9-masks', 'Padding mask bỏ cột PAD, causal mask bỏ tương lai.')
 
 
 def maskflow39():
@@ -1170,7 +1170,7 @@ def maskflow39():
             s.arrow(x0 - 100, 98, x0 - 10, 98, MUTED, 1.3)
     s.mono(40, 141, 'key 3', 11.5, 'end', MUTED)
     s.label(320, 198, 'cấm trước softmax: hai key còn lại tự chia lại tổng 1', 11.5, color=MUTED)
-    s.save('3-9-mask-flow', 'Key thứ ba bị cấm: đặt score thành −∞ trước softmax, nên trọng số của nó bằng 0 và hai key còn lại nhận 0.731 và 0.269, tổng vẫn bằng 1.')
+    s.save('3-9-mask-flow', 'Score −∞ trước softmax cho trọng số 0; tổng vẫn bằng 1.')
 
 
 def encoder39():
@@ -1191,7 +1191,7 @@ def encoder39():
     s.label(142, 26, 'residual', 11.5, color=MUTED)
     s.label(441, 138, 'residual', 11.5, color=MUTED)
     s.label(320, 176, 'post-norm: norm(x + attention(x)) rồi norm(x + FFN(x)); shape (B, L, d) giữ nguyên', 11.5, color=MUTED)
-    s.save('3-9-encoder', 'Encoder block của bài (post-norm): attention trộn ngữ cảnh, cộng residual rồi LayerNorm; FFN biến đổi từng vị trí, lại cộng residual rồi LayerNorm.')
+    s.save('3-9-encoder', 'Encoder block: attention, cộng residual, LayerNorm; FFN, cộng residual, LayerNorm.')
 
 
 def pe39():
@@ -1217,7 +1217,7 @@ def pe39():
     s.label(x0 - 10, y0 + d * ch - 6, 'tần số thấp', 11, 'end', MUTED)
     s.label(x0 + P * cw + 12, y0 + 30, 'xanh: dương', 11.5, 'start', BLUE)
     s.label(x0 + P * cw + 12, y0 + 50, 'cam: âm', 11.5, 'start', CLAY)
-    s.save('3-9-pe', 'Positional encoding sin/cos với d = 16 cho 48 vị trí: các chiều đầu dao động nhanh, chiều sau dao động chậm, nên mỗi vị trí có một mẫu riêng.')
+    s.save('3-9-pe', 'Positional encoding: chiều đầu dao động nhanh, chiều sau chậm.')
 
 
 def cost39():
@@ -1230,7 +1230,7 @@ def cost39():
         s.mono(140, y + 11, f'L = {l}', 12, 'end', TEXT)
         s.mono(150 + max(w, 1.5) + 8, y + 11, f'{l * l / 1e6:.2f} triệu ô', 11.5, 'start', MUTED)
     s.label(320, 186, 'số ô score L × L của một head, một câu: L gấp đôi thì gấp bốn', 11.5, color=MUTED)
-    s.save('3-9-cost', 'Số ô của ma trận score L × L: từ 128 lên 2048 token, độ dài gấp 16 nhưng số ô gấp 256.')
+    s.save('3-9-cost', 'Độ dài gấp 16 thì số ô của ma trận score gấp 256.')
 
 
 FIGS39 = {'3-9-attention': attention39, '3-9-scale': scale39, '3-9-heads': heads39, '3-9-masks': masks39,
@@ -1258,7 +1258,7 @@ def bottleneck310():
     s.label(425, 176, 'decoder 1 → 4', 12.5, color=MUTED)
     s.label(110, 196, '4 cảm biến', 11.5, color=FAINT)
     s.label(530, 196, 'dựng lại 4 số', 11.5, color=FAINT)
-    s.save('3-10-bottleneck', 'Autoencoder 4 → 1 → 4 của bài: encoder nén bốn cảm biến thành một số z, decoder dựng lại bốn số từ z.')
+    s.save('3-10-bottleneck', 'Autoencoder 4 → 1 → 4: nén bốn số thành một, rồi dựng lại.')
 
 
 def recon310():
@@ -1276,7 +1276,7 @@ def recon310():
     s.label(ax.X(1) - 12, ax.Y(1) - 2, '[1, 1]: lỗi 0', 12, 'end', GREEN, 600)
     s.label(ax.X(.9) + 12, ax.Y(.1) + 4, '[0.9, 0.1] → [0.5, 0.5]: lỗi 0.16', 12, 'start', CLAY, 600)
     s.label(ax.X(2.2) - 12, ax.Y(2.2) - 2, '[2.2, 2.2]: xa gốc, lỗi vẫn 0', 12, 'end', GREEN, 600)
-    s.save('3-10-reconstruction', 'Encoder (x₁ + x₂)/2, decoder (z, z) chiếu mọi điểm lên đường x₂ = x₁: điểm lệch khỏi đường có lỗi tái tạo, điểm nằm trên đường thì lỗi 0 dù xa gốc đến đâu.')
+    s.save('3-10-reconstruction', 'Điểm trên đường x₂ = x₁ được dựng lại đúng; điểm lệch khỏi đường thì có lỗi.')
 
 
 def ae_curve310():
@@ -1317,7 +1317,7 @@ def ae_curve310():
     s.label(ax.X(300) + 8, ax.Y(L(.001006)) + 10, 'cận dưới PCA 0.001006', 11.5, 'start', GREEN, 600)
     s.label(ax.X(300) + 8, ax.Y(L(hist[-1])) - 8, f'AE {hist[-1]:.6f}', 11.5, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 10, 'train MSE', 11.5, 'start', FAINT)
-    s.save('3-10-ae-pca', 'Linear autoencoder 4 → 1 → 4 của bài: train MSE giảm từ 0.228 xuống sát cận dưới PCA 0.001006 sau 300 bước, không bao giờ xuống dưới mức đó.')
+    s.save('3-10-ae-pca', 'Loss của linear autoencoder giảm sát mức PCA nhưng không xuống dưới.')
 
 
 def errors310():
@@ -1341,7 +1341,7 @@ def errors310():
     s.line(ax.X(L(thr)), ax.y - 4, ax.X(L(thr)), ax.y + ax.h, SAND, 1.6, '5 4')
     s.label(ax.X(L(thr)), ax.y - 10, f'ngưỡng {thr:.4f}', 11.5, color=SAND, weight=600)
     s.label(320, 192, 'TP 16 · FP 2 · FN 0', 12, color=TEXT)
-    s.save('3-10-errors', 'Lỗi tái tạo của 48 mẫu test (số từ code bài, thang log); vạch đứt là ngưỡng phân vị 95% của validation. Nhóm bất thường nằm xa ngưỡng hơn một bậc độ lớn; hai mẫu bình thường vượt ngưỡng là hai FP.')
+    s.save('3-10-errors', 'Lỗi tái tạo trên test; vạch đứt là ngưỡng 95% của validation.')
 
 
 def denoise310():
@@ -1363,7 +1363,7 @@ def denoise310():
     s.label(500, 114, 'cấu trúc sạch', 12, 'start', BLUE, 600)
     s.label(500, 150, 'chỉ giữ phần nhiễu', 11.5, 'start', MUTED)
     s.label(500, 166, 'nằm dọc theo đường', 11.5, 'start', MUTED)
-    s.save('3-10-denoise', 'Tín hiệu sạch nằm trên một đường; nhiễu đẳng hướng rải ra mọi phía. Chiếu lên đường bỏ phần nhiễu vuông góc, chỉ giữ phần dọc theo nó; trong 4 chiều, đó là khoảng 1/4 năng lượng nhiễu.')
+    s.save('3-10-denoise', 'Chiếu lên đường tín hiệu bỏ được phần nhiễu vuông góc với nó.')
 
 
 FIGS310 = {'3-10-bottleneck': bottleneck310, '3-10-reconstruction': recon310, '3-10-ae-pca': ae_curve310,
