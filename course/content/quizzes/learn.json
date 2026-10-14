@@ -809,7 +809,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Một mạng đủ lớn còn học thuộc được cả nhãn bị xáo ngẫu nhiên, đạt 100% trên train, nên điểm train cao chưa chứng minh mô hình học được quy luật."
+     "Một mạng neural đủ lớn còn học thuộc được cả nhãn bị xáo ngẫu nhiên, đúng 100% trên train; vì vậy điểm train cao không chứng minh model đã học được quy luật."
     ]
    ]
   ]
@@ -1716,7 +1716,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Underfitting cần mô hình mạnh hơn hoặc đặc trưng tốt hơn; giảm regularization hay thêm dữ liệu cùng loại không đủ, vì mô hình chưa khớp nổi cả train."
+     "Thêm dữ liệu cùng loại không giúp, vì model còn chưa khớp nổi train; cần model linh hoạt hơn hoặc thêm đặc trưng tốt hơn."
     ]
    ]
   ]
@@ -1772,7 +1772,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Overfitting (học quá sát) là tình huống mô hình khai thác những chi tiết của train mà không ổn định trên mẫu mới."
+     "Overfitting (học quá sát): model học thuộc cả nhiễu của train."
     ]
    ]
   ]
@@ -3565,7 +3565,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Underfitting (học chưa đủ) là tình huống mô hình không biểu diễn hoặc không học được cấu trúc cần thiết."
+     "Underfitting (học chưa đủ): model quá đơn giản, không bắt được quy luật.",
+     "Thêm dữ liệu cùng loại không giúp, vì model còn chưa khớp nổi train; cần model linh hoạt hơn hoặc thêm đặc trưng tốt hơn."
     ]
    ]
   ]
@@ -4655,14 +4656,14 @@
     "1.2",
     "Learning curve: thêm dữ liệu có đáng làm không?",
     [
-     "Khoảng cách lớn giữa hai đường mà đường validation còn giảm thì thêm dữ liệu có ích; đường validation đã đi ngang thì nên giảm độ phức tạp, tăng regularization hay bỏ bớt đặc trưng."
+     "Hai đường cách xa, đường validation đã đi ngang: overfitting; nên giảm độ phức tạp hoặc thêm regularization."
     ]
    ],
    [
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Để giảm điều ấy, có thể tăng $k$, dùng regularization ở chương 2, hoặc tăng dữ liệu có ích."
+     "Cách chữa: giảm độ linh hoạt (ở đây là tăng $k$), dùng regularization (chương 2), hoặc thêm dữ liệu."
     ]
    ]
   ]
@@ -6145,8 +6146,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Overfitting (học quá sát) là tình huống mô hình khai thác những chi tiết của train mà không ổn định trên mẫu mới.",
-     "Dấu hiệu thường gặp: train tốt mà validation kém hẳn là overfitting; train và validation cùng kém, gần nhau, là underfitting."
+     "Overfitting (học quá sát): model học thuộc cả nhiễu của train.",
+     "Dấu hiệu: lỗi train thấp mà lỗi validation cao hơn hẳn."
     ]
    ]
   ]
@@ -6160,7 +6161,7 @@
     "1.2",
     "Viết rõ đang đo lỗi ở đâu",
     [
-     "Khả năng làm tốt trên mẫu chưa gặp lúc học gọi là khái quát hóa (generalization); đó là thứ ta cần, không phải điểm trên train."
+     "Khả năng đoán tốt trên mẫu chưa gặp lúc học gọi là tổng quát hóa, hay khái quát hóa (generalization); đó là thứ ta cần, không phải điểm trên train."
     ]
    ]
   ]
@@ -7665,8 +7666,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Underfitting (học chưa đủ) là tình huống mô hình không biểu diễn hoặc không học được cấu trúc cần thiết.",
-     "Dấu hiệu thường gặp: train tốt mà validation kém hẳn là overfitting; train và validation cùng kém, gần nhau, là underfitting."
+     "Underfitting (học chưa đủ): model quá đơn giản, không bắt được quy luật.",
+     "Dấu hiệu: lỗi train và lỗi validation cùng cao và gần nhau."
     ]
    ]
   ]
@@ -7680,14 +7681,15 @@
     "1.2",
     "Learning curve: thêm dữ liệu có đáng làm không?",
     [
-     "Khoảng cách lớn giữa hai đường mà đường validation còn giảm thì thêm dữ liệu có ích; đường validation đã đi ngang thì nên giảm độ phức tạp, tăng regularization hay bỏ bớt đặc trưng."
+     "Hai đường cách xa, đường validation đã đi ngang: overfitting; nên giảm độ phức tạp hoặc thêm regularization."
     ]
    ],
    [
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Overfitting (học quá sát) là tình huống mô hình khai thác những chi tiết của train mà không ổn định trên mẫu mới."
+     "Overfitting (học quá sát): model học thuộc cả nhiễu của train.",
+     "Dấu hiệu: lỗi train thấp mà lỗi validation cao hơn hẳn."
     ]
    ]
   ]
@@ -7701,7 +7703,8 @@
     "1.2",
     "Trở lại câu chuyện câu lạc bộ",
     [
-     "Mô hình chỉ đáng tin trong vùng dữ liệu đã học: học giá nhà 40–120 m² rồi đoán căn 600 m² là ngoại suy; nhận diện khuôn mặt học trên người lớn sẽ kém với trẻ em; ảnh chụp ban ngày không dạy được ảnh ban đêm; dữ liệu năm 2023 có thể đã khác năm 2025."
+     "Model chỉ đáng tin trong vùng dữ liệu đã học.",
+     "Nhận diện khuôn mặt học trên người lớn, dùng cho trẻ em."
     ]
    ],
    [
@@ -8411,7 +8414,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Overfitting dễ xảy ra khi mô hình có rất nhiều tham số mà dữ liệu ít, hay có nhiều đặc trưng hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
+     "Overfitting dễ xảy ra khi model có rất nhiều tham số mà dữ liệu ít, hay số đặc trưng nhiều hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
     ]
    ],
    [
@@ -9352,7 +9355,9 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Bias là khuynh hướng sai có hệ thống do giả định mô hình, chẳng hạn ép mọi $x$ về cùng một dự đoán. Variance là mức mô hình thay đổi khi ta thay bộ train. Mô hình linh hoạt thường giảm được bias nhưng có thể tăng variance."
+     "Bias là phần sai do model quá cứng nhắc, sai cùng một kiểu dù học từ bộ train nào, như $k = 80$ lần nào cũng đoán một đường phẳng.",
+     "Variance là mức model thay đổi khi đổi sang bộ train khác, như $k = 1$ đổi theo từng điểm nhiễu.",
+     "Model linh hoạt hơn thường giảm bias nhưng tăng variance."
     ]
    ],
    [
@@ -10510,7 +10515,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Dấu hiệu thường gặp: train tốt mà validation kém hẳn là overfitting; train và validation cùng kém, gần nhau, là underfitting."
+     "Dấu hiệu: lỗi train thấp mà lỗi validation cao hơn hẳn."
     ]
    ]
   ]
@@ -10615,7 +10620,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Overfitting dễ xảy ra khi mô hình có rất nhiều tham số mà dữ liệu ít, hay có nhiều đặc trưng hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
+     "Overfitting dễ xảy ra khi model có rất nhiều tham số mà dữ liệu ít, hay số đặc trưng nhiều hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
     ]
    ],
    [
@@ -10872,7 +10877,7 @@
     "1.2",
     "Trở lại câu chuyện câu lạc bộ",
     [
-     "Mô hình chỉ đáng tin trong vùng dữ liệu đã học: học giá nhà 40–120 m² rồi đoán căn 600 m² là ngoại suy; nhận diện khuôn mặt học trên người lớn sẽ kém với trẻ em; ảnh chụp ban ngày không dạy được ảnh ban đêm; dữ liệu năm 2023 có thể đã khác năm 2025."
+     "Học giá nhà 40–120 m² rồi đoán căn 600 m²: đoán ra ngoài vùng đã học (ngoại suy)."
     ]
    ],
    [
@@ -12007,7 +12012,7 @@
     "1.2",
     "Learning curve: thêm dữ liệu có đáng làm không?",
     [
-     "Đổi tỉ lệ chia cũng vậy: thêm train thường có ích nhưng không chắc, còn tập đánh giá nhỏ đi thì con số đo được dao động nhiều hơn."
+     "Đổi tỉ lệ chia, chẳng hạn từ 70% train và 30% test sang 90% và 10%, cũng theo cách đọc này: train nhiều hơn thường giúp nhưng không chắc, còn tập chấm nhỏ đi thì con số đo được dao động nhiều hơn."
     ]
    ]
   ]
@@ -13166,7 +13171,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Mô hình linh hoạt thường giảm được bias nhưng có thể tăng variance."
+     "Model linh hoạt hơn thường giảm bias nhưng tăng variance."
     ]
    ],
    [
@@ -15288,8 +15293,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Dấu hiệu thường gặp: train tốt mà validation kém hẳn là overfitting; train và validation cùng kém, gần nhau, là underfitting.",
-     "Underfitting cần mô hình mạnh hơn hoặc đặc trưng tốt hơn; giảm regularization hay thêm dữ liệu cùng loại không đủ, vì mô hình chưa khớp nổi cả train."
+     "Dấu hiệu: lỗi train và lỗi validation cùng cao và gần nhau.",
+     "Thêm dữ liệu cùng loại không giúp, vì model còn chưa khớp nổi train; cần model linh hoạt hơn hoặc thêm đặc trưng tốt hơn."
     ]
    ]
   ]
@@ -15303,7 +15308,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Dấu hiệu thường gặp: train tốt mà validation kém hẳn là overfitting; train và validation cùng kém, gần nhau, là underfitting. Overfitting dễ xảy ra khi mô hình có rất nhiều tham số mà dữ liệu ít, hay có nhiều đặc trưng hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
+     "Dấu hiệu: lỗi train thấp mà lỗi validation cao hơn hẳn.",
+     "Overfitting dễ xảy ra khi model có rất nhiều tham số mà dữ liệu ít, hay số đặc trưng nhiều hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
     ]
    ]
   ]
@@ -15317,7 +15323,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Overfitting dễ xảy ra khi mô hình có rất nhiều tham số mà dữ liệu ít, hay có nhiều đặc trưng hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
+     "Overfitting dễ xảy ra khi model có rất nhiều tham số mà dữ liệu ít, hay số đặc trưng nhiều hơn số mẫu, như 100 chỉ số xét nghiệm cho 50 bệnh nhân."
     ]
    ],
    [
@@ -15829,7 +15835,8 @@
     "1.2",
     "Trở lại câu chuyện câu lạc bộ",
     [
-     "Mô hình chỉ đáng tin trong vùng dữ liệu đã học: học giá nhà 40–120 m² rồi đoán căn 600 m² là ngoại suy; nhận diện khuôn mặt học trên người lớn sẽ kém với trẻ em; ảnh chụp ban ngày không dạy được ảnh ban đêm; dữ liệu năm 2023 có thể đã khác năm 2025. Cách sửa gốc là đưa loại dữ liệu lúc dùng thật vào train và đánh giá trên dữ liệu gần thời điểm dùng."
+     "Hiện tượng dữ liệu lúc dùng khác dữ liệu lúc học gọi là distribution shift (thay đổi phân phối).",
+     "Học trên dữ liệu năm 2023, dùng cho năm 2025."
     ]
    ],
    [
@@ -16500,7 +16507,7 @@
     "1.2",
     "Trở lại câu chuyện câu lạc bộ",
     [
-     "Mô hình chỉ đáng tin trong vùng dữ liệu đã học: học giá nhà 40–120 m² rồi đoán căn 600 m² là ngoại suy; nhận diện khuôn mặt học trên người lớn sẽ kém với trẻ em; ảnh chụp ban ngày không dạy được ảnh ban đêm; dữ liệu năm 2023 có thể đã khác năm 2025. Cách sửa gốc là đưa loại dữ liệu lúc dùng thật vào train và đánh giá trên dữ liệu gần thời điểm dùng."
+     "Học trên ảnh chụp ban ngày, dùng cho ảnh ban đêm."
     ]
    ]
   ]
@@ -17222,7 +17229,8 @@
     "1.2",
     "Learning curve: thêm dữ liệu có đáng làm không?",
     [
-     "Hai đường gặp nhau rồi cùng đi ngang ở mức lỗi cao là underfitting: thêm dữ liệu không giúp, cần mô hình mạnh hơn."
+     "Hai đường sát nhau và cùng đi ngang ở mức lỗi cao: underfitting.",
+     "Thêm dữ liệu không giúp; cần model mạnh hơn hoặc đặc trưng tốt hơn."
     ]
    ]
   ]
@@ -17452,7 +17460,7 @@
     "1.2",
     "Learning curve: thêm dữ liệu có đáng làm không?",
     [
-     "(Trên một tập validation hữu hạn, lỗi đo được có thể thấp hơn 0.0625 đôi chút do ngẫu nhiên.) Với dữ liệu thật ta không biết mức nhiễu; kết quả tốt nhất mà con người đạt được, như một nhóm bác sĩ hội chẩn, thường được dùng làm ước lượng cho mức lỗi thấp nhất có thể (sai số Bayes)."
+     "Với dữ liệu thật ta không biết mức nhiễu; người ta thường lấy kết quả tốt nhất mà con người làm được, như một nhóm bác sĩ hội chẩn, làm ước lượng cho mức lỗi thấp nhất có thể, gọi là sai số Bayes."
     ]
    ]
   ]
@@ -18543,7 +18551,7 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Bias và variance thường đánh đổi nhau khi chỉnh độ phức tạp, nhưng không có luật nào buộc chúng ngược chiều: đoán bừa có cả bias lẫn variance cao."
+     "Bias và variance thường đổi ngược chiều nhau khi chỉnh độ phức tạp, nhưng không phải luôn luôn: đoán bừa thì cả hai đều cao."
     ]
    ]
   ]
@@ -18778,15 +18786,14 @@
     "1.2",
     "Nhớ một ví dụ khác với học một quy luật",
     [
-     "$\\varepsilon$ là nhiễu, ở đây sinh ngẫu nhiên với trung bình 0 và độ lệch chuẩn 0.25.",
-     "Dạng sóng này do ta tự đặt ra để thí nghiệm, nhờ đó biết chính xác đâu là quy luật, đâu là nhiễu."
+     "$\\varepsilon$ là nhiễu, ở đây sinh ngẫu nhiên với trung bình 0 và độ lệch chuẩn 0.25."
     ]
    ],
    [
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "$\\sigma^2$ là phương sai của nhiễu, sai số không thể giảm (irreducible error): không mô hình nào đoán được phần nhiễu."
+     "Ở đây bias là độ lệch giữa dự đoán trung bình (lấy trên nhiều bộ train) và giá trị thật; variance là phương sai của dự đoán quanh trung bình ấy; $\\sigma^2$ là phương sai của nhiễu, phần không model nào giảm được (irreducible error)."
     ]
    ]
   ]
@@ -20084,7 +20091,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Với MSE, tại một điểm $x$, lỗi kỳ vọng tách thành ba phần: $\\mathbb E[(y-\\hat f(x))^2] = \\sigma^2 + \\text{bias}^2 + \\text{variance}$, trong đó bias là độ lệch giữa dự đoán trung bình (trên nhiều bộ train) và giá trị thật, variance là phương sai của dự đoán quanh trung bình ấy. $\\sigma^2$ là phương sai của nhiễu, sai số không thể giảm (irreducible error): không mô hình nào đoán được phần nhiễu."
+     "Với MSE, lỗi trên mẫu mới tách được thành ba phần: $\\mathbb E[(y-\\hat f(x))^2] = \\sigma^2 + \\text{bias}^2 + \\text{variance}$.",
+     "Ở đây bias là độ lệch giữa dự đoán trung bình (lấy trên nhiều bộ train) và giá trị thật; variance là phương sai của dự đoán quanh trung bình ấy; $\\sigma^2$ là phương sai của nhiễu, phần không model nào giảm được (irreducible error)."
     ]
    ]
   ]
@@ -20973,7 +20981,8 @@
     "1.2",
     "Underfit và overfit là chẩn đoán có điều kiện",
     [
-     "Với MSE, tại một điểm $x$, lỗi kỳ vọng tách thành ba phần: $\\mathbb E[(y-\\hat f(x))^2] = \\sigma^2 + \\text{bias}^2 + \\text{variance}$, trong đó bias là độ lệch giữa dự đoán trung bình (trên nhiều bộ train) và giá trị thật, variance là phương sai của dự đoán quanh trung bình ấy. $\\sigma^2$ là phương sai của nhiễu, sai số không thể giảm (irreducible error): không mô hình nào đoán được phần nhiễu."
+     "Với MSE, lỗi trên mẫu mới tách được thành ba phần: $\\mathbb E[(y-\\hat f(x))^2] = \\sigma^2 + \\text{bias}^2 + \\text{variance}$.",
+     "Ở đây bias là độ lệch giữa dự đoán trung bình (lấy trên nhiều bộ train) và giá trị thật; variance là phương sai của dự đoán quanh trung bình ấy; $\\sigma^2$ là phương sai của nhiễu, phần không model nào giảm được (irreducible error)."
     ]
    ]
   ]
