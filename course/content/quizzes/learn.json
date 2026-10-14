@@ -2776,7 +2776,8 @@
     "3.9",
     "Mask bỏ vị trí nào?",
     [
-     "Trong nn.MultiheadAttention, boolean key_padding_mask=True nghĩa là bỏ key; attn_mask=True nghĩa là cấm cặp query-key; causal mask vì vậy thường viết torch.triu(torch.ones(L, L, dtype=torch.bool), diagonal=1), True ở các ô trên đường chéo, tức key tương lai."
+     "Trong nn.MultiheadAttention, key_padding_mask=True nghĩa là bỏ key; attn_mask=True nghĩa là cấm cặp query-key.",
+     "Code bài 3.8 có valid_mask True ở token thật, nên truyền key_padding_mask=~valid_mask."
     ]
    ]
   ]
@@ -2858,7 +2859,7 @@
     "3.9",
     "Một encoder block nhỏ",
     [
-     "Pre-norm, x + attention(norm(x)), để đường residual đi thẳng không qua norm nào, nên mạng rất sâu học ổn định hơn và ít phụ thuộc warmup."
+     "Nhiều model dùng pre-norm, x + attention(norm(x)): đường residual đi thẳng không qua norm nào, nên mạng rất sâu học ổn định hơn và ít phụ thuộc warmup."
     ]
    ]
   ]
@@ -5132,7 +5133,7 @@
     "3.8",
     "Chuỗi dài: gradient tắt dần và LSTM",
     [
-     "Trải theo $L$ bước, RNN là một mạng sâu $L$ lớp dùng chung $W_{hh}$, nên gặp đúng vanishing gradient của bài 3.3, chỉ là theo chiều thời gian. Đạo hàm của trạng thái cuối $\\mathbf h_L$ theo token thứ $t$ đi qua $L-t$ bước, mỗi bước nhân một ma trận Jacobian gồm $W_{hh}$ và đạo hàm tanh (không quá 1)."
+     "Trải theo $L$ bước, RNN là một mạng sâu $L$ lớp dùng chung $W_{hh}$, nên gặp đúng hiện tượng gradient tắt dần của bài 3.3, chỉ là theo chiều thời gian."
     ]
    ]
   ]
@@ -5146,7 +5147,7 @@
     "3.8",
     "Chuỗi dài: gradient tắt dần và LSTM",
     [
-     "Đường trực tiếp từ $\\mathbf c_{t-1}$ tới $\\mathbf c_t$ chỉ nhân với $\\mathbf f_t$: khi cổng quên gần 1, gradient đi qua nhiều bước mà không bị nhân nhỏ dần, cùng ý với residual connection ở bài 3.6."
+     "Đường trực tiếp từ $\\mathbf c_{t-1}$ tới $\\mathbf c_t$ chỉ nhân với $\\mathbf f_t$: khi cổng quên gần 1, gradient đi qua nhiều bước mà không bị nhân nhỏ dần, cùng ý với kết nối residual ở bài 3.9."
     ]
    ]
   ]
@@ -7382,7 +7383,8 @@
     "3.9",
     "Một encoder block nhỏ",
     [
-     "Attention tạo output cùng chiều token, residual cộng input để giữ đường thông tin trực tiếp, LayerNorm chuẩn hóa theo feature trong từng token. Feed-forward network dùng cùng MLP độc lập ở mỗi vị trí, giúp biến đổi feature sau trộn ngữ cảnh."
+     "Một encoder block ghép bốn thành phần:",
+     "Attention trộn thông tin giữa các token, cho output cùng shape với input."
     ]
    ]
   ]
@@ -7410,7 +7412,8 @@
     "3.8",
     "Padding tạo bảng, mask giữ ý nghĩa",
     [
-     "Ba câu của bài sau pad_sequence thành bảng (3, 3); mask đánh dấu 1 ở token thật, nên tổng mỗi hàng chính là độ dài câu."
+     "Mask cũng là thông tin ấy nhưng biểu diễn theo từng ô. pad_sequence tạo độ dài bằng chuỗi dài nhất trong batch, không nhất thiết độ dài toàn dataset.",
+     "Pad ba câu thành bảng (3, 3); tổng mỗi hàng của mask là độ dài câu."
     ]
    ],
    [
@@ -9175,7 +9178,7 @@
     "3.10",
     "Từ reconstruction error tới ngưỡng báo",
     [
-     "Nhóm bất thường nằm xa ngưỡng hơn một bậc độ lớn; hai mẫu bình thường vượt ngưỡng là hai FP."
+     "Bài toán này gọi là phát hiện bất thường (anomaly detection): hợp khi gần như chỉ có dữ liệu bình thường, còn lỗi thì hiếm và mỗi lần một kiểu, như máy hỏng, vết xước trên dây chuyền hay giao dịch gian lận."
     ]
    ]
   ]
@@ -14847,7 +14850,7 @@
     "3.7",
     "Mixed precision là lựa chọn số học",
     [
-     "Model không bị ép toàn bộ thành half, và bản trọng số mà optimizer cập nhật vẫn là FP32."
+     "Model không bị ép toàn bộ thành FP16, và bản trọng số mà optimizer cập nhật vẫn là FP32."
     ]
    ]
   ]
@@ -15061,7 +15064,7 @@
     "3.9",
     "Mask bỏ vị trí nào?",
     [
-     "Nếu một hàng bị cấm mọi key, softmax không còn phân phối hợp lệ; tránh câu rỗng hoặc chọn quy tắc special token rõ."
+     "Nếu một hàng bị cấm mọi key, softmax không còn phân phối hợp lệ; tránh câu rỗng hoặc chọn quy tắc rõ cho trường hợp ấy."
     ]
    ]
   ]
@@ -16116,7 +16119,7 @@
     "3.9",
     "Một encoder block nhỏ",
     [
-     "Attention tạo output cùng chiều token, residual cộng input để giữ đường thông tin trực tiếp, LayerNorm chuẩn hóa theo feature trong từng token."
+     "LayerNorm (bài 3.6) chuẩn hóa theo feature trong từng token."
     ]
    ]
   ]
@@ -16696,7 +16699,7 @@
     "Chuỗi dài: gradient tắt dần và LSTM",
     [
      "Đây là lý do chính khiến RNN “quên” đầu chuỗi: trạng thái có thể đủ chỗ chứa điều cần nhớ, nhưng gradient quá nhỏ để dạy model giữ lại nó.",
-     "Đường trực tiếp từ $\\mathbf c_{t-1}$ tới $\\mathbf c_t$ chỉ nhân với $\\mathbf f_t$: khi cổng quên gần 1, gradient đi qua nhiều bước mà không bị nhân nhỏ dần, cùng ý với residual connection ở bài 3.6."
+     "Đường trực tiếp từ $\\mathbf c_{t-1}$ tới $\\mathbf c_t$ chỉ nhân với $\\mathbf f_t$: khi cổng quên gần 1, gradient đi qua nhiều bước mà không bị nhân nhỏ dần, cùng ý với kết nối residual ở bài 3.9."
     ]
    ]
   ]
@@ -17644,7 +17647,7 @@
     "3.7",
     "Tìm lỗi theo điểm xuất hiện đầu tiên",
     [
-     "Với NaN, kiểm lần lượt input, activation, logits, loss rồi gradient để tìm phép đầu tiên tạo giá trị không hữu hạn; torch.isfinite phát hiện cả NaN lẫn vô cùng. Một nan ở cuối có thể bắt đầu từ một phép chia cho 0 rất sớm."
+     "NaN: kiểm lần lượt input, activation, logits, loss rồi gradient để tìm phép đầu tiên tạo giá trị không hữu hạn; torch.isfinite phát hiện cả NaN lẫn vô cùng."
     ]
    ]
   ]
@@ -19256,7 +19259,8 @@
     "3.8",
     "RNN đọc theo thứ tự, nhưng phải dừng đúng chỗ",
     [
-     "Vì vậy RNN và LSTM không cần mã hóa vị trí như Transformer ở bài 3.9. nn.RNN của PyTorch lưu hai bias bias_ih, bias_hh (tổng của chúng đóng vai $\\mathbf b$), nên với $d=2$, $H=3$ có $3\\cdot2+3\\cdot3+3+3=21$ tham số."
+     "Trạng thái sau token cuối là một bản tóm tắt có thứ tự: đổi chỗ hai token là đổi thứ tự cập nhật, kết quả khác.",
+     "Vì vậy RNN và LSTM không cần mã hóa vị trí như Transformer ở bài 3.9."
     ]
    ],
    [
@@ -20485,7 +20489,7 @@
     "3.7",
     "Hết bộ nhớ: microbatch và gradient accumulation",
     [
-     "Mạng cũng không được có lớp tính thống kê theo batch: BatchNorm chuẩn hóa theo từng microbatch 8 mẫu, nên accumulation không tái tạo được thống kê của batch 32."
+     "Mạng không có lớp tính thống kê theo batch: BatchNorm chuẩn hóa theo từng microbatch 8 mẫu, nên accumulation không tái tạo được thống kê của batch 32."
     ]
    ],
    [
