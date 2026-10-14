@@ -7614,7 +7614,7 @@
     "7.2",
     "Trước model: một clip có mấy nhãn?",
     [
-     "Audio classification dự đoán nhãn từ một clip. Nếu mỗi clip chỉ có một lớp trong $C$ lớp, model trả logits shape (B,C), nhãn là số nguyên shape (B,), và dùng cross-entropy."
+     "Audio classification dự đoán nhãn từ một clip ($B$ là số clip trong batch, không phải số frame):"
     ]
    ]
   ]
@@ -8641,7 +8641,7 @@
     "7.2",
     "Trước model: một clip có mấy nhãn?",
     [
-     "Nếu một clip vừa có tiếng xe vừa có tiếng nói, đó có thể là multi-label: mỗi lớp một biến có/không, logits và nhãn shape (B,C), dùng BCEWithLogitsLoss."
+     "Nhiều nhãn (multi-label), như clip vừa có tiếng xe vừa có tiếng nói: mỗi lớp một biến có/không, logits và nhãn shape (B,C), dùng BCEWithLogitsLoss."
     ]
    ],
    [
@@ -11753,7 +11753,7 @@
     "7.2",
     "Trước model: một clip có mấy nhãn?",
     [
-     "Audio classification dự đoán nhãn từ một clip."
+     "Audio classification dự đoán nhãn từ một clip ($B$ là số clip trong batch, không phải số frame):"
     ]
    ]
   ]
@@ -19438,7 +19438,7 @@
     "7.4",
     "VLM: hỏi đáp ảnh cần cả ảnh và câu hỏi",
     [
-     "Một số VLM không ghép visual tokens vào chuỗi mà cho language model đọc chúng qua cross-attention, query từ chữ, key và value từ ảnh."
+     "Cross-attention (bài 6.5): giữ chuỗi chữ như cũ và chèn thêm các lớp cross-attention, query đến từ token chữ, key và value đến từ visual tokens, nên chữ “nhìn” được ảnh mà chuỗi không dài thêm; Flamingo theo hướng này."
     ]
    ]
   ]
