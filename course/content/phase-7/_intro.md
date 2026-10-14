@@ -17,5 +17,3 @@ Một bản ghi âm ba giây ở 16 kHz là 48 000 số; câu nói trong đó c
 | 7.4 — Multimodal | Nguồn nào thực sự giúp, và model làm gì khi thiếu một nguồn? |
 
 Chương dùng lại CNN của chương 5, attention và sequence của chương 3 và 6. Code trong bài chạy offline trên CPU với tín hiệu tổng hợp có cấu trúc biết trước, nên mỗi phép biến đổi và mỗi con số đều kiểm được bằng tay: tần số giả sinh ra khi lấy mẫu thưa, bảng α của CTC, WER của một câu. Recipe của chương đưa cùng quy trình sang bản ghi thật với checkpoint HuBERT, wav2vec2 hay Whisper có sẵn trên máy, chấm trên validation theo người nói và ghi lại phiên bản. Câu cuối bài ưu tiên đề thật có ghi nguồn; kho đề về âm thanh còn ít nên phần lớn câu được soạn theo đúng tình huống thi.
-
-Buổi kiểm tra khóa 3 khép chương: ôn cách làm hai bài thuộc hai lĩnh vực trong một buổi sáu giờ, từ đọc hợp đồng chấm điểm tới bài nộp hợp lệ.

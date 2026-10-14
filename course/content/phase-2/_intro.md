@@ -18,7 +18,7 @@ Chương này đi qua bốn họ mô hình:
 | Dựa trên cây | 2.5–2.7 | Hỏi liên tiếp các câu có/không, rồi gộp nhiều cây. |
 | Không giám sát | 2.9–2.10 | Không có nhãn: tìm hướng quan trọng hoặc tìm nhóm. |
 
-Bài 2.11 nói về thứ quyết định kết quả nhiều hơn cả việc chọn mô hình: đặc trưng (features), và thời điểm mỗi đặc trưng thật sự có sẵn. Buổi kiểm tra khóa 1 khép chương bằng một bài dữ liệu bảng đi trọn từ đọc đề, chọn split, baseline đến file nộp.
+Bài 2.11 nói về thứ quyết định kết quả nhiều hơn cả việc chọn mô hình: đặc trưng (features), và thời điểm mỗi đặc trưng thật sự có sẵn.
 
 Xuyên suốt chương là một câu hỏi: mô hình sai vì quá đơn giản (**bias** cao) hay vì quá nhạy với dữ liệu huấn luyện (**variance** cao)? Regularization, chọn $k$ trong kNN, độ sâu của cây, số cây trong rừng, $C$ trong SVM đều là những cái núm để vặn sự cân bằng đó. Hiểu điều này rồi thì gặp mô hình mới cũng biết nên chỉnh gì trước.
 

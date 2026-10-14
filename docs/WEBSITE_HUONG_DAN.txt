@@ -3,7 +3,7 @@ AI CANUC80K — WEBSITE
 Giải nén gói và mở AI_Canuc80k/START_HERE.html bằng Chrome hoặc Edge. Website đọc được khi không có mạng;
 chỉ các liên kết LQDOJ và nguồn ngoài cần Internet.
 
-- Lộ trình: 4 khóa, 10 phase, 63 bài và 4 bài kiểm tra. Bài có tài liệu gồm bốn mục Bài học, Slide, Code, Bài tập;
+- Lộ trình: 4 khóa, 10 phase, 63 bài. Bài có tài liệu gồm bốn mục Bài học, Slide, Code, Bài tập;
   bài ghi "Đang soạn" sẽ được bổ sung dần.
 - Khung giáo trình và hướng dẫn học nằm ở mục Tài liệu.
 - Tìm bài: gõ tiếng Việt có hoặc không dấu; phím / đưa con trỏ vào ô tìm.

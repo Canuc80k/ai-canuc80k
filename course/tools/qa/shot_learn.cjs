@@ -111,7 +111,7 @@ async function checkAll(browser) {
     }
     // trang xem lại bài kiểm tra: mọi câu có nối đều hiện dòng Ôn lại
     await page.goto(`${BASE}/START_HERE.html#/quiz/max`, { waitUntil: 'networkidle' });
-    await page.click('[data-action="ex-start"][data-n="20"]');
+    await page.click('[data-action="ex-start"]');
     await page.click('[data-action="ex-submit"]');
     await page.waitForTimeout(400);
     const ex = await page.$$eval('.ex-review', cs => [cs.length, cs.filter(c => c.querySelector('.quiz-learn')).length]);

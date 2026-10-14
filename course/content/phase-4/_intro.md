@@ -21,4 +21,4 @@ Bốn bài đầu đi dần từ ít đến nhiều tham số được cập nh�
 
 Chương dùng lại tensor, backpropagation, `train()`/`eval()` và training loop của chương 3. Code trong bài chạy offline trên CPU với các model nhỏ dựng ngay trong bài, để từng cơ chế (nạp, trích embedding, cập nhật, chèn LoRA, chấm zero-shot) hiện ra rõ và kiểm được bằng số. [Recipe của chương](recipes/README.md) đưa các bước ấy sang model công bố thật: kiểm môi trường, tải đúng revision khi được phép, lưu hash, nạp lại offline rồi mới thực nghiệm. Câu cuối bài ưu tiên đề thật từ NOAI, USA-NA-AIO và đề luyện của CMU, MIT, có ghi nguồn dưới mỗi câu.
 
-Sau chương này, mỗi lựa chọn model phải trả lời được bốn câu: nó học trước từ đâu, nhận đầu vào thế nào, phần nào được cập nhật, và chất lượng đã được đo trên validation nào. Buổi kiểm tra khóa 2 khép chương bằng một bài đi trọn quy trình của chương 3 và 4.
+Sau chương này, mỗi lựa chọn model phải trả lời được bốn câu: nó học trước từ đâu, nhận đầu vào thế nào, phần nào được cập nhật, và chất lượng đã được đo trên validation nào.

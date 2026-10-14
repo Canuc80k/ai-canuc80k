@@ -3,7 +3,7 @@
 - **Đối tượng:** Học sinh THCS/THPT đã biết lập trình thi đấu, chưa học AI.
 - **Mục tiêu:** VOAI → IOAI; APOAI, IAIO.
 - **Máy học:** GPU T4 trên Colab hoặc Kaggle.
-- **Quy mô:** 63 bài, 4 bài kiểm tra, 4 khóa.
+- **Quy mô:** 63 bài, 4 khóa.
 
 ## Khóa 1 — Học máy
 
@@ -42,7 +42,6 @@
 | 2.9 | Dimensionality reduction | Nén dữ liệu xuống ít chiều. |
 | 2.10 | Clustering | Chia nhóm dữ liệu khi không có nhãn. |
 | 2.11 | Feature engineering | Biến dữ liệu thô thành đặc trưng tốt. |
-| Kiểm tra | **Kiểm tra khóa 1** | Một bài dữ liệu bảng trọn vẹn, có giới hạn giờ. |
 
 ## Khóa 2 — Học sâu
 
@@ -70,7 +69,6 @@
 | 4.3 | Fine-tuning | Huấn luyện tiếp model có sẵn. |
 | 4.4 | LoRA | Fine-tune model lớn trên GPU nhỏ. |
 | 4.5 | Zero-shot | Giải bài khi không có dữ liệu huấn luyện. |
-| Kiểm tra | **Kiểm tra khóa 2** | Dựng mạng neural và dùng model có sẵn, có giới hạn giờ. |
 
 ## Khóa 3 — Ảnh, chữ và âm thanh
 
@@ -87,7 +85,6 @@
 | 5.7 | Self-supervised và CLIP | Tìm ảnh bằng câu chữ. |
 | 5.8 | GAN và diffusion | Sinh ảnh mới. |
 | 5.9 | Phân tích hành vi model | Tìm chỗ model nhìn sai. |
-| Kiểm tra | **Kiểm tra thị giác máy tính** | Một bài thị giác máy tính, có giới hạn giờ. |
 
 ### Phase 6 — Xử lý ngôn ngữ
 
@@ -108,7 +105,6 @@
 | 7.2 | Audio classification | Phân loại âm thanh. |
 | 7.3 | Speech recognition | Chuyển giọng nói thành chữ. |
 | 7.4 | Multimodal | Kết hợp ảnh, chữ và âm thanh. |
-| Kiểm tra | **Kiểm tra khóa 3** | Hai bài thuộc hai lĩnh vực trong 6 giờ. |
 
 ## Khóa 4 — Luyện thi
 

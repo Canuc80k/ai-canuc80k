@@ -1143,13 +1143,6 @@
     [
      "Ví dụ mask dự đoán 30 pixel, mask thật 20, chung 15 cho Dice $30/50 = 0.6$; còn IoU 0.6 ứng với Dice $1.2/1.6 = 0.75$."
     ]
-   ],
-   [
-    "kt3",
-    "Đọc câu hỏi trước khi đọc tên model",
-    [
-     "Metric đi theo dạng đầu ra: log loss chấm xác suất của từng lớp nên cần nộp xác suất chứ không nộp nhãn; accuracy của một classifier không chọn được score threshold cho bài đếm; Dice tính trên mask không thay được scorer detection vốn ghép box theo IoU."
-    ]
    ]
   ]
  },
@@ -5303,10 +5296,10 @@
   "q": "cross_val_score(model, X, y, cv=5, scoring=\"neg_mean_squared_error\") …",
   "to": [
    [
-    "kt1",
-    "Baseline và mô hình trên cùng dữ liệu",
+    "1.4",
+    "Cùng Pipeline, fit lại trong mỗi fold",
     [
-     "Dấu trừ trong scoring là quy ước của scikit-learn: score càng lớn càng tốt, nên negative MAE đổi trở lại thành MAE dương trước khi báo."
+     "Hàm chấm của scikit-learn theo quy ước điểm càng lớn càng tốt, nên MAE được đưa vào dưới tên neg_mean_absolute_error, tức MAE mang dấu âm; lấy -scores để đọc lại MAE."
     ]
    ]
   ]
@@ -7463,13 +7456,6 @@
     [
      "Nói gọn, phân loại trả một nhãn cho cả ảnh; phát hiện vật thể (object detection) trả mỗi vật một khung chữ nhật bao quanh (bounding box) kèm nhãn và độ tin cậy, nên khi gán nhãn dữ liệu, mỗi vật cần một box và một lớp."
     ]
-   ],
-   [
-    "kt3",
-    "Đọc câu hỏi trước khi đọc tên model",
-    [
-     "Classification thường nộp logits, xác suất hoặc nhãn; detection nộp class, box, score; segmentation nộp mask hoặc RLE; retrieval nộp thứ hạng."
-    ]
    ]
   ]
  },
@@ -8600,13 +8586,6 @@
     [
      "Trong scikit-learn, huấn luyện là model.fit(X_train, y_train), dự đoán là model.predict(X_new); gọi fit lần nữa là học lại từ đầu."
     ]
-   ],
-   [
-    "kt1",
-    "Fit, dự đoán và kiểm đầu ra",
-    [
-     "Sau khi đã chọn cấu hình trên phần train/CV, ta fit lại trên toàn bộ phần train rồi chấm test một lần."
-    ]
    ]
   ]
  },
@@ -9458,10 +9437,11 @@
   "q": "Bộ ảnh được xếp vào hai thư mục `meo/` và `cho/`. Khi nạp dữ liệu, tê…",
   "to": [
    [
-    "kt2",
-    "Đọc kết quả rồi tải lại",
+    "0.3",
+    "Ngày giờ, chuỗi và dữ liệu không phải bảng",
     [
-     "Cuối cùng tải checkpoint vào một process mới, nạp processor và bảng nhãn đã lưu, đặt chế độ suy luận, chạy vài mẫu và so với output trước khi lưu."
+     "Đề ảnh, văn bản, âm thanh thì cho một thư mục tệp kèm bảng nhãn.",
+     "Đọc ảnh theo cột file của labels.csv: ảnh thứ i luôn đi với nhãn thứ i."
     ]
    ]
   ]
@@ -10363,10 +10343,10 @@
   "q": "Hai mô hình cho kết quả như nhau trên tập validation. Một mô hình rất…",
   "to": [
    [
-    "kt3",
-    "Khi chữa bài: đọc kết quả để chọn việc luyện tiếp",
+    "2.5",
+    "Dùng thư viện",
     [
-     "Nếu hai cấu hình chênh nhỏ, xem độ ổn định theo fold hoặc seed trong ngân sách cho phép."
+     "Cây nông bốn tầng dễ đọc như một bộ luật ở trên, nên là lựa chọn tự nhiên khi điểm ngang nhau."
     ]
    ]
   ]
@@ -13023,13 +13003,6 @@
     [
      "So hai mô hình phải chấm trên cùng một tập."
     ]
-   ],
-   [
-    "kt1",
-    "Baseline và mô hình trên cùng dữ liệu",
-    [
-     "Cả hai mô hình dùng đúng cùng fold, vì vậy chênh lệch không lẫn với việc một mô hình được chia tập dễ hơn."
-    ]
    ]
   ]
  },
@@ -13675,13 +13648,6 @@
     "Chưa cần GPU để kiểm mạng biết học",
     [
      "Với dữ liệu không có nhãn mâu thuẫn và mạng đủ capacity, train loss thường có thể giảm rất sâu. Nếu chưa làm được, đừng vội tăng dataset: có thể loss ghép sai, nhãn lệch mẫu, optimizer thiếu tham số hoặc graph bị cắt."
-    ]
-   ],
-   [
-    "kt2",
-    "Debug một batch trước khi tăng ngân sách",
-    [
-     "Thử học thuộc một tập cực nhỏ có nhãn nhất quán giúp kiểm đường training; thành công trên tập nhỏ chưa chứng minh generalization."
     ]
    ]
   ]
@@ -18249,17 +18215,10 @@
   "q": "Bài phân loại 10 lớp. Loss trên train giảm đều xuống 0,01, nhưng accu…",
   "to": [
    [
-    "kt2",
-    "Đọc kết quả rồi tải lại",
+    "4.5",
+    "Bẫy cài đặt",
     [
-     "Sau đó dự đoán toàn bộ input cần nộp, kiểm số hàng/ID/nhãn hợp lệ."
-    ]
-   ],
-   [
-    "kt1",
-    "Khi kết quả bất thường",
-    [
-     "Shape sai, ID đổi thứ tự và metric sai hướng có thể làm mọi lựa chọn model phía sau vô nghĩa."
+     "Thứ tự tên lớp phải khớp thứ tự cột output."
     ]
    ]
   ]

@@ -343,16 +343,6 @@
       ]
     },
     {
-      "id": "kt1",
-      "phase": 2,
-      "kind": "checkpoint",
-      "title": "Kiểm tra khóa 1",
-      "summary": "Một bài dữ liệu bảng trọn vẹn, có giới hạn giờ.",
-      "outcome": "Làm một bài dữ liệu bảng mới trong giới hạn thời gian, nộp qua scorer có validation riêng.",
-      "syllabus": "",
-      "legacy": []
-    },
-    {
       "id": "3.1",
       "phase": 3,
       "title": "Tensor và autograd",
@@ -507,16 +497,6 @@
       "legacy": []
     },
     {
-      "id": "kt2",
-      "phase": 4,
-      "kind": "checkpoint",
-      "title": "Kiểm tra khóa 2",
-      "summary": "Dựng mạng neural và dùng model có sẵn, có giới hạn giờ.",
-      "outcome": "Tự dựng và debug một mạng neural; giải một bài mới bằng embedding hoặc fine-tune trên T4 trong giới hạn thời gian.",
-      "syllabus": "",
-      "legacy": []
-    },
-    {
       "id": "5.1",
       "phase": 5,
       "title": "Convolution và pooling",
@@ -612,16 +592,6 @@
       "summary": "Tìm chỗ model nhìn sai.",
       "outcome": "Tìm ví dụ làm model sai, so sánh hai model, xem vùng ảnh model chú ý — dạng bài từng xuất hiện ở IOAI 2026.",
       "syllabus": "—",
-      "legacy": []
-    },
-    {
-      "id": "kt3",
-      "phase": 5,
-      "kind": "checkpoint",
-      "title": "Kiểm tra thị giác máy tính",
-      "summary": "Một bài thị giác máy tính, có giới hạn giờ.",
-      "outcome": "Giải một bài thị giác mới trên T4 trong giới hạn thời gian và runtime.",
-      "syllabus": "",
       "legacy": []
     },
     {
@@ -734,16 +704,6 @@
       "legacy": [
         "6.4"
       ]
-    },
-    {
-      "id": "kt4",
-      "phase": 7,
-      "kind": "checkpoint",
-      "title": "Kiểm tra khóa 3",
-      "summary": "Hai bài thuộc hai lĩnh vực trong 6 giờ.",
-      "outcome": "Giải hai bài mới thuộc hai lĩnh vực khác nhau trong 6 giờ.",
-      "syllabus": "",
-      "legacy": []
     },
     {
       "id": "8.1",
