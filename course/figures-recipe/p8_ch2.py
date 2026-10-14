@@ -57,7 +57,7 @@ def projection21():
     s.label(yv[0] + 10, yv[1], 'y', 15, 'start', TEXT, 600)
     s.label(yh[0] + 12, yh[1] + 10, 'ŷ', 15, 'start', CLAY, 600)
     s.label(yv[0] + 10, 95, 'phần dư ⟂ mặt phẳng', 12.5, 'start', MUTED)
-    s.save('2-1-projection', 'Least squares chiếu y vuông góc xuống mặt phẳng các dự đoán; phần dư vuông góc với mọi cột.')
+    s.save('2-1-projection', 'Least squares chiếu y vuông góc xuống mặt phẳng các dự đoán.')
 
 
 def gd1d21():
@@ -102,7 +102,7 @@ def scaling21():
         s.circle(cx, cy, 5, BLUE)
         s.label(cx, 214, ['zigzag trong thung lũng hẹp', 'đi gần thẳng về đáy'][k_], 12.5, color=MUTED)
     s.line(320, 26, 320, 220, SOFT_LINE, 1)
-    s.save('2-1-scaling', 'Đặc trưng chênh thang đo làm mặt loss thành thung lũng hẹp; chuẩn hóa đưa nó về gần tròn.')
+    s.save('2-1-scaling', 'Chênh thang đo tạo thung lũng hẹp; chuẩn hóa đưa về gần tròn.')
 
 
 def lr21():
@@ -136,7 +136,7 @@ def resplots21():
         ax.dots(xs, ys, [GREEN, CLAY, SAND][k_], 2.3)
         s.label(x0 + 95, 14, title, 13.5, color=[GREEN, CLAY, SAND][k_], weight=600)
     s.label(320, 176, 'phần dư theo dự đoán', 12, color=FAINT)
-    s.save('2-1-residual-plots', 'Phần dư tốt nằm đều quanh 0; uốn cong báo thiếu quan hệ phi tuyến, loe dần báo nhiễu không đều.')
+    s.save('2-1-residual-plots', 'Phần dư tốt rải đều quanh 0; uốn cong hay loe dần là có vấn đề.')
 
 
 def loglog21():
@@ -161,7 +161,7 @@ def loglog21():
     s.circle(ax.X(L(2e5)), ax.Y(L(37.9)), 6, CLAY, PAPER, 2)
     s.label(ax.X(L(2e5)) - 10, ax.Y(L(37.9)), 'n = 2·10⁵: ~38 giây', 12, 'end', CLAY, 600)
     s.label(ax.X(4.05), ax.Y(-1.6), 'độ dốc ≈ 1.98', 12.5, 'start', CLAY)
-    s.save('2-1-loglog', 'Trên trục log–log, thời gian theo n là đường thẳng; độ dốc gần 2 nghĩa là O(n²).')
+    s.save('2-1-loglog', 'Trục log–log: độ dốc gần 2 nghĩa là thời gian tăng theo n².')
 
 
 def hand21():
@@ -177,7 +177,7 @@ def hand21():
     s.label(410, 80, 'nghiệm least squares, J = 0.056', 12, 'start', MUTED)
     s.mono(410, 120, 'ŷ = 1.53x + 0.67', 13, 'start', CLAY, 600)
     s.label(410, 140, 'sau 1 bước GD từ 0, J = 0.22', 12, 'start', MUTED)
-    s.save('2-1-hand', 'Ba điểm của ví dụ tính tay: nghiệm đóng và vị trí sau một bước gradient descent.')
+    s.save('2-1-hand', 'Ví dụ tính tay: nghiệm đóng và đường sau một bước gradient descent.')
 
 
 # ───────────────────────────── 2.2 ─────────────────────────────
@@ -274,7 +274,7 @@ def geometry22():
         if k_:
             s.label(ax.X(-.45), ax.Y(1.0), 'w₁ = 0', 12, 'end', CLAY, 600)
     s.line(320, 30, 320, 278, SOFT_LINE, 1)
-    s.save('2-2-geometry', 'Đường đồng mức của lỗi chạm hình tròn ở một điểm thường; chạm hình thoi ở góc, nơi w₁ = 0.')
+    s.save('2-2-geometry', 'Đường đồng mức chạm hình thoi ở góc, nơi w₁ = 0.')
 
 
 def shrink22():
@@ -312,7 +312,7 @@ def hand22():
             s.mono(ax.X(w), y - 12, mnum(w), 11.5, 'middle', col)
         s.label(x0 + 130, 16, title, 14, color=col, weight=600)
     s.line(320, 12, 320, 186, SOFT_LINE, 1)
-    s.save('2-2-hand', 'Ví dụ tính tay với z = (3, 0.5, −1.2) và λ = 1: vòng rỗng là z, chấm đặc là hệ số sau khi phạt.')
+    s.save('2-2-hand', 'Ví dụ tính tay: vòng rỗng là z, chấm đặc là hệ số sau khi phạt.')
 
 
 def collinear22():
@@ -335,7 +335,7 @@ def collinear22():
     s.circle(ax.X(.5), ax.Y(.5), 5.5, BLUE, PAPER, 2.2)
     s.label(ax.X(.5) + 10, ax.Y(.5) - 8, 'Ridge (0.5, 0.5)', 12, 'start', BLUE, 600)
     s.label(ax.X(-.1) - 6, ax.Y(1.1), 'w₁ + w₂ ≈ 1', 12, 'end', CLAY)
-    s.save('2-2-collinear', 'Hai đặc trưng gần trùng nhau: lỗi gần như không đổi dọc rãnh w₁ + w₂ ≈ 1; Ridge chọn điểm gần gốc nhất trên rãnh.')
+    s.save('2-2-collinear', 'Hai đặc trưng gần trùng nhau: Ridge chọn điểm gần gốc nhất trên rãnh.')
 
 
 def path22():
@@ -357,7 +357,7 @@ def path22():
     s.label(ax.X(-3) + 4, ax.Y(coefs[0][-1]) - 12, 'diện tích', 12.5, 'start', CLAY, 600)
     s.label(ax.X(-3) + 4, ax.Y(coefs[1][-1]) + 18, 'khoảng cách', 12.5, 'start', BLUE, 600)
     s.label(ax.X(-1.15), ax.Y(.32), '30 cột rác', 12, 'start', FAINT)
-    s.save('2-2-path', 'Hệ số Lasso khi mức phạt tăng: cột rác về 0 trước, khoảng cách rồi diện tích về 0 sau cùng.')
+    s.save('2-2-path', 'Phạt càng mạnh, cột rác về 0 trước, hai cột thật về 0 sau cùng.')
 
 
 def units22():
@@ -377,7 +377,7 @@ def units22():
     s.line(ax.X(ols), 14, ax.X(ols), 126, MUTED, 1.2, '4 3')
     s.label(ax.X(ols), 144, 'không phạt: −0.175', 11.5, color=MUTED)
     s.label(ax.X(0), 144, '0', 11.5, color=FAINT)
-    s.save('2-2-units', 'Cùng Ridge(alpha=1000), chỉ đổi đơn vị: tính theo m thì hệ số khoảng cách gần như không bị phạt.')
+    s.save('2-2-units', 'Cùng Ridge, chỉ đổi km sang m: hệ số gần như không còn bị phạt.')
 
 
 def enet22():
@@ -401,7 +401,7 @@ def enet22():
         R_ = sc / np.abs(P).max()
         s.path('M ' + ' L '.join(f'{cx + a * R_:.1f},{cy - b * R_:.1f}' for a, b in P) + ' Z', col, 1.8)
         s.label(cx, 188, title, 14, color=col, weight=600)
-    s.save('2-2-enet', 'Vùng ràng buộc của ba khoản phạt: Elastic Net vẫn có góc trên trục như Lasso nhưng cạnh cong như Ridge.')
+    s.save('2-2-enet', 'Elastic Net có góc như Lasso, cạnh cong như Ridge.')
 
 
 # ───────────────────────────── 2.3 ─────────────────────────────

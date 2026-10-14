@@ -186,8 +186,8 @@
     "2.1",
     "Hàm mất mát",
     [
-     "Nó trơn, có đạo hàm tại mọi điểm, nên có nghiệm đóng và tối ưu bằng gradient thuận lợi.",
-     "Cái giá phải trả là MSE rất nhạy với điểm ngoại lai (outlier): một căn bị nhập nhầm giá có thể kéo lệch cả đường thẳng."
+     "Nó trơn, có đạo hàm tại mọi điểm, nên có công thức nghiệm và dễ tối ưu bằng gradient.",
+     "Cái giá là MSE rất nhạy với điểm ngoại lai (outlier): một căn bị nhập nhầm giá có thể kéo lệch cả đường thẳng."
     ]
    ]
   ]
@@ -6569,7 +6569,7 @@
     "2.1",
     "Hàm mất mát",
     [
-     "Loss là con số đo dự đoán đang lệch đáp án bao nhiêu; học là làm loss giảm."
+     "$J$ là loss của bài này: một con số đo dự đoán đang lệch đáp án bao nhiêu; học là tìm $\\mathbf{w}, b$ làm loss nhỏ nhất."
     ]
    ]
   ]
@@ -7926,7 +7926,7 @@
     "2.1",
     "Dữ liệu và mô hình",
     [
-     "Đọc $w_j$ như sau: nếu $x_j$ tăng thêm một đơn vị trong khi mọi đặc trưng khác đứng yên, thì dự đoán tăng thêm $w_j$."
+     "Đọc $w_j$ như sau: nếu $x_j$ tăng thêm một đơn vị trong khi mọi đặc trưng khác giữ nguyên, thì dự đoán tăng thêm $w_j$."
     ]
    ],
    [
@@ -8172,7 +8172,7 @@
     "2.1",
     "Dữ liệu và mô hình",
     [
-     "Một nơ-ron ở chương 3 tính đúng tổng có trọng số này: đầu vào 2 và 3, trọng số 1 và 2, bias 0 cho $2\\cdot1+3\\cdot2=8$."
+     "Một nơ-ron ở chương 3 cũng tính đúng tổng có trọng số này: đầu vào 2 và 3, trọng số 1 và 2, bias 0 cho $2 \\cdot 1 + 3 \\cdot 2 = 8$."
     ]
    ],
    [
@@ -8193,7 +8193,7 @@
     "2.1",
     "Dữ liệu và mô hình",
     [
-     "$b$ dời kết quả lên hay xuống kể cả khi mọi đặc trưng bằng 0, và cũng được học như trọng số; mô hình có $d$ trọng số cộng 1 bias, tức $d+1$ tham số."
+     "$b$ là giá trị dự đoán khi mọi đặc trưng bằng 0, và cũng được học như trọng số; model có $d$ trọng số cộng 1 bias, tức $d + 1$ tham số."
     ]
    ]
   ]
@@ -8356,7 +8356,7 @@
     "2.1",
     "Gradient descent",
     [
-     "Với một tham số: $w=2$, gradient bằng 4, $\\eta=0.1$ thì $w$ mới $=2-0.1\\cdot4=1.6$."
+     "Ví dụ với một tham số: $w = 2$, gradient bằng 4, $\\eta = 0.1$ thì $w$ mới $= 2 - 0.1 \\cdot 4 = 1.6$."
     ]
    ],
    [
@@ -9805,7 +9805,7 @@
     "2.1",
     "Hàm mất mát",
     [
-     "Hồi quy đo độ lệch giữa hai con số, như MSE; phân loại đo xác suất mô hình dành cho nhãn đúng, như cross-entropy ở bài 2.3."
+     "Bài hồi quy đo độ lệch giữa hai con số, như MSE; bài phân loại đo xác suất model dành cho nhãn đúng, như cross-entropy ở bài 2.3."
     ]
    ],
    [
@@ -9833,7 +9833,7 @@
     "2.1",
     "Dữ liệu và mô hình",
     [
-     "$b$ dời kết quả lên hay xuống kể cả khi mọi đặc trưng bằng 0, và cũng được học như trọng số; mô hình có $d$ trọng số cộng 1 bias, tức $d+1$ tham số."
+     "$b$ là giá trị dự đoán khi mọi đặc trưng bằng 0, và cũng được học như trọng số; model có $d$ trọng số cộng 1 bias, tức $d + 1$ tham số."
     ]
    ]
   ]
@@ -10572,7 +10572,7 @@
     "2.1",
     "Hàm mất mát",
     [
-     "Hồi quy đo độ lệch giữa hai con số, như MSE; phân loại đo xác suất mô hình dành cho nhãn đúng, như cross-entropy ở bài 2.3."
+     "Bài hồi quy đo độ lệch giữa hai con số, như MSE; bài phân loại đo xác suất model dành cho nhãn đúng, như cross-entropy ở bài 2.3."
     ]
    ],
    [
@@ -12137,7 +12137,7 @@
     "2.1",
     "Tuyến tính theo tham số",
     [
-     "Dữ liệu hình chữ U khớp kém bằng đường thẳng thì thêm cột $x^2$ là đủ."
+     "Ví dụ dữ liệu hình chữ U thì đường thẳng khớp kém, thêm cột $x^2$ là đủ."
     ]
    ]
   ]
@@ -14543,7 +14543,7 @@
     "2.1",
     "Tuyến tính theo tham số",
     [
-     "Đặc trưng có thể biến đổi tùy ý: thêm $x^2, x^3$ là polynomial regression (hồi quy đa thức), thêm $\\log x$, $\\sqrt{x}$ hay tích $x_1 x_2$ cũng vậy, và tất cả vẫn giải bằng đúng code của bài này."
+     "Ta được tự do biến đổi đặc trưng: thêm cột $x^2, x^3$ là polynomial regression (hồi quy đa thức); thêm $\\log x$, $\\sqrt{x}$ hay tích $x_1 x_2$ cũng được."
     ]
    ],
    [
@@ -15664,7 +15664,8 @@
     "2.1",
     "Chuẩn hóa đặc trưng",
     [
-     "Đặc trưng chênh thang đo làm mặt loss thành thung lũng hẹp; chuẩn hóa đưa nó về gần tròn."
+     "Nguyên nhân làm thung lũng hẹp là thang đo.",
+     "Cách chữa là chuẩn hóa (standardization) mọi đặc trưng về trung bình 0, độ lệch chuẩn 1."
     ]
    ]
   ]
@@ -15811,7 +15812,7 @@
     "2.1",
     "Hàm mất mát",
     [
-     "Cái giá phải trả là MSE rất nhạy với điểm ngoại lai (outlier): một căn bị nhập nhầm giá có thể kéo lệch cả đường thẳng."
+     "Cái giá là MSE rất nhạy với điểm ngoại lai (outlier): một căn bị nhập nhầm giá có thể kéo lệch cả đường thẳng."
     ]
    ],
    [
@@ -17013,7 +17014,7 @@
     "2.1",
     "Tuyến tính theo tham số",
     [
-     "Thêm quá nhiều thì mô hình bắt đầu học thuộc cả nhiễu, đúng chuyện overfitting ở bài 1.2."
+     "Nhưng thêm quá nhiều thì model bắt đầu học thuộc nhiễu (overfitting, bài 1.2), và lỗi validation tăng."
     ]
    ],
    [
@@ -17367,7 +17368,7 @@
     "2.1",
     "Tuyến tính theo tham số",
     [
-     "Thêm quá nhiều thì mô hình bắt đầu học thuộc cả nhiễu, đúng chuyện overfitting ở bài 1.2."
+     "Nhưng thêm quá nhiều thì model bắt đầu học thuộc nhiễu (overfitting, bài 1.2), và lỗi validation tăng."
     ]
    ]
   ]
@@ -17436,7 +17437,7 @@
     "2.1",
     "Gradient descent",
     [
-     "Gradient descent dùng cả tập ở mỗi bước nên thứ tự mẫu không đổi gradient; xáo trộn chỉ quan trọng khi mỗi bước chỉ thấy một phần dữ liệu (bài 3.5)."
+     "Mỗi bước ở đây dùng cả tập dữ liệu, nên thứ tự các mẫu không ảnh hưởng gì; thứ tự chỉ quan trọng khi mỗi bước chỉ dùng một phần dữ liệu (bài 3.5)."
     ]
    ],
    [
@@ -18778,7 +18779,7 @@
     "2.1",
     "Tuyến tính theo tham số",
     [
-     "Đặc trưng có thể biến đổi tùy ý: thêm $x^2, x^3$ là polynomial regression (hồi quy đa thức), thêm $\\log x$, $\\sqrt{x}$ hay tích $x_1 x_2$ cũng vậy, và tất cả vẫn giải bằng đúng code của bài này."
+     "Ta được tự do biến đổi đặc trưng: thêm cột $x^2, x^3$ là polynomial regression (hồi quy đa thức); thêm $\\log x$, $\\sqrt{x}$ hay tích $x_1 x_2$ cũng được."
     ]
    ]
   ]
@@ -18792,7 +18793,7 @@
     "2.1",
     "Tuyến tính theo tham số",
     [
-     "Với least squares có bias, thêm đặc trưng không bao giờ làm lỗi train tăng, vì mô hình luôn có thể đặt trọng số mới bằng 0; lỗi validation thì có thể tăng."
+     "Thêm đặc trưng không bao giờ làm lỗi train tăng, vì model luôn có thể đặt trọng số của cột mới bằng 0."
     ]
    ]
   ]

@@ -1,25 +1,21 @@
 # Học máy cổ điển
 
-Trước khi có mạng neural, người ta đã giải rất nhiều bài toán thật bằng những mô hình gọn gàng: một đường thẳng, một cây câu hỏi, vài trăm cây cộng lại. Đến giờ chúng vẫn là thứ chạy nhanh nhất, dễ hiểu nhất, và với dữ liệu dạng bảng thì thường vẫn thắng.
+Trước khi có mạng neural, người ta đã giải rất nhiều bài toán thật bằng những model gọn: một đường thẳng, một cây câu hỏi, vài trăm cây cộng lại. Đến nay chúng vẫn chạy nhanh nhất, dễ hiểu nhất, và với dữ liệu dạng bảng thì thường vẫn thắng. Chương này học các model đó.
 
-::: goal Mục tiêu của chương
-- Cài và đọc các mô hình kinh điển: hồi quy tuyến tính, regularization, logistic và softmax, kNN, cây, rừng, boosting, SVM, PCA và phân cụm.
-- Chẩn đoán bias hay variance, rồi chọn đúng núm điều chỉnh của từng họ mô hình.
-- Tính tay một ví dụ nhỏ cho mỗi mô hình trước khi gọi thư viện, và đối chiếu hai kết quả.
-- Tạo đặc trưng đúng thời điểm, kiểm từng nhóm đặc trưng trên cùng fold.
-:::
-
-Chương này đi qua bốn họ mô hình:
-
-| Họ | Bài | Ý tưởng một câu |
+| Bài | Nội dung | Dùng để |
 |---|---|---|
-| Tuyến tính | 2.1–2.3, 2.8 | Cộng các đặc trưng với trọng số rồi quyết định. |
-| Dựa trên láng giềng | 2.4 | Giống ai thì đoán như người đó. |
-| Dựa trên cây | 2.5–2.7 | Hỏi liên tiếp các câu có/không, rồi gộp nhiều cây. |
-| Không giám sát | 2.9–2.10 | Không có nhãn: tìm hướng quan trọng hoặc tìm nhóm. |
+| 2.1 | Linear regression | Đoán một số bằng tổng có trọng số; tìm trọng số bằng công thức và bằng gradient descent. |
+| 2.2 | Regularization | Phạt trọng số lớn để model bớt học thuộc: Ridge, Lasso. |
+| 2.3 | Logistic regression, softmax | Phân loại bằng xác suất; học bằng cross-entropy. |
+| 2.4 | k-Nearest Neighbors | Đoán theo các mẫu giống nhất; vì sao phải chuẩn hóa. |
+| 2.5 | Cây quyết định | Chuỗi câu hỏi if–else học từ dữ liệu. |
+| 2.6 | Random forest | Gộp nhiều cây khác nhau cho dự đoán ổn định hơn. |
+| 2.7 | Gradient boosting | Mỗi cây mới sửa phần sai của các cây trước; thường mạnh nhất với dữ liệu bảng. |
+| 2.8 | SVM | Đường phân chia có lề rộng nhất; kernel cho đường cong. |
+| 2.9 | Giảm chiều | PCA; vẽ dữ liệu nhiều chiều bằng t-SNE, UMAP. |
+| 2.10 | Phân cụm | Chia nhóm khi không có nhãn: K-Means, DBSCAN. |
+| 2.11 | Feature engineering | Tạo đặc trưng tốt, chỉ dùng thông tin có lúc dự đoán. |
 
-Bài 2.11 nói về thứ quyết định kết quả nhiều hơn cả việc chọn mô hình: đặc trưng (features), và thời điểm mỗi đặc trưng thật sự có sẵn.
+Với mỗi model, bài đều trả lời cùng một câu: model sai vì quá đơn giản (bias cao, bài 1.2) hay vì quá nhạy với dữ liệu train (variance cao)? Mỗi model có một vài tham số để chỉnh cân bằng đó: mức phạt của regularization, $k$ của kNN, độ sâu của cây, số cây, $C$ của SVM.
 
-Xuyên suốt chương là một câu hỏi: mô hình sai vì quá đơn giản (**bias** cao) hay vì quá nhạy với dữ liệu huấn luyện (**variance** cao)? Regularization, chọn $k$ trong kNN, độ sâu của cây, số cây trong rừng, $C$ trong SVM đều là những cái núm để vặn sự cân bằng đó. Hiểu điều này rồi thì gặp mô hình mới cũng biết nên chỉnh gì trước.
-
-Chương này dùng lại quy trình của chương 1: chia dữ liệu có lý do, baseline trước, so mô hình trên cùng fold, đưa tiền xử lý vào Pipeline. Mỗi mô hình được tính tay trên một ví dụ nhỏ trước khi gọi thư viện, để con số in ra từ máy luôn có thứ để đối chiếu. Câu cuối bài ưu tiên đề thật từ NOAI, USA-NA-AIO và đề luyện của các khóa học máy đại học, có ghi nguồn dưới mỗi câu.
+Chương này dùng lại cách làm của chương 1: chia dữ liệu đúng, có baseline, so các model trên cùng fold, đưa tiền xử lý vào Pipeline. Mỗi model được tính tay trên một ví dụ nhỏ trước khi gọi thư viện, để có số đối chiếu.
