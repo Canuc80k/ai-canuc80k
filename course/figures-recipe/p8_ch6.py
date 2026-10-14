@@ -39,7 +39,7 @@ def levels61():
         else:
             end = chips(s, 134, y, toks, col, op=.2 if col != FAINT else .2)
     s.label(330, 220, 'cùng một câu, số token tùy đơn vị tokenizer chọn', 11.5, color=MUTED)
-    s.save('6-1-token-levels', 'Câu “học sinh học máy” ở bốn mức: 16 ký tự, 4 âm tiết, 2 từ (sau tách từ), hoặc các mảnh subword; cùng một câu, số token tùy tokenizer.')
+    s.save('6-1-token-levels', 'Cùng một câu tách theo ký tự, âm tiết, từ hay subword cho số token khác nhau.')
 
 
 def nfc61():
@@ -59,7 +59,7 @@ def nfc61():
     s.arrow(400, 116, 470, 60, GREEN, 1.4)
     s.label(500, 50, 'NFC gộp lại', 12, 'start', GREEN, 600)
     s.label(500, 70, 'vẫn giữ dấu', 12, 'start', MUTED)
-    s.save('6-1-nfc', 'Hai chuỗi cùng hiện là “học”: bản gõ sẵn có 3 ký tự, bản dấu rời có 4 (chữ o rồi dấu nặng U+0323); NFC gộp bản thứ hai về bản thứ nhất mà vẫn giữ dấu.')
+    s.save('6-1-nfc', 'Hai chuỗi cùng hiện là “học” nhưng khác số ký tự; NFC đưa về một dạng.')
 
 
 def bpe61():
@@ -91,7 +91,7 @@ def bpe61():
     for r, (w, n) in enumerate(words):
         s.label(108, 40 + r * 44 + 13, f'{w} × {n}', 12, 'end', MUTED)
     s.label(330, 200, 'tần suất có trọng số: l,o có trong low (3) và lower (2), cộng 5', 11.5, color=MUTED)
-    s.save('6-1-bpe', 'BPE trên corpus của bài: low ×3, lower ×2, new ×1. Bước một gộp l,o (5 lần), bước hai gộp lo,w (5 lần), nên low thành một token.')
+    s.save('6-1-bpe', 'BPE gộp dần cặp hay gặp nhất: l,o rồi lo,w, nên “low” thành một token.')
 
 
 def wordpiece61():
@@ -105,7 +105,7 @@ def wordpiece61():
     s.mono(80, 140, '→', 14, 'start', MUTED)
     chips(s, 106, 126, ['[UNK]'], CLAY, op=.3)
     s.label(200, 140, 'tham lam lấy mảnh dài nhất, không quay lui thử un + ##able', 12, 'start', MUTED)
-    s.save('6-1-wordpiece', 'WordPiece mã hóa tham lam: lấy “una”, mảnh dài nhất khớp đầu từ; phần “ble” không khớp mảnh nào nên cả từ thành token UNK, dù cách cắt un + ##able có tồn tại.')
+    s.save('6-1-wordpiece', 'WordPiece lấy mảnh dài nhất trước; phần còn lại không khớp nên cả từ thành UNK.')
 
 
 def pipeline61():
@@ -126,7 +126,7 @@ def pipeline61():
     s.path('M 420,84 L 420,120 L 260,120', GREEN, 1.4, dash='4 3')
     s.label(330, 140, 'vocabulary và IDF chỉ fit trên 12 câu train', 12, color=GREEN)
     s.label(330, 168, 'validation chỉ transform; từ chưa gặp như “không” bị bỏ', 11.5, color=MUTED)
-    s.save('6-1-text-pipeline', 'Pipeline baseline: chuẩn hóa văn bản, TF-IDF với vocabulary và IDF fit trên train (69 cột), rồi logistic regression cho xác suất tích cực.')
+    s.save('6-1-text-pipeline', 'Chuẩn hóa văn bản, TF-IDF fit trên train, rồi logistic regression.')
 
 
 def coef61():
@@ -148,7 +148,7 @@ def coef61():
     s.line(320, 16, 320, 262, LINE, 1)
     s.label(200, 272, '← kéo về tiêu cực', 11.5, color=CLAY)
     s.label(440, 272, 'kéo về tích cực →', 11.5, color=GREEN)
-    s.save('6-1-coef', 'Sáu đặc trưng có trọng số âm nhất và sáu dương nhất của logistic regression trên TF-IDF (học từ 12 câu train của bài): toàn từ khen, chê trực tiếp; không có cột nào cho “không”.')
+    s.save('6-1-coef', 'Các từ có trọng số lớn nhất đều là từ khen, chê trực tiếp; không có cột nào cho “không”.')
 
 
 def valid61():
@@ -169,7 +169,7 @@ def valid61():
     s.label(572, 70, 'tích cực thật', 11.5, 'start', GREEN)
     s.label(572, 90, 'tiêu cực thật', 11.5, 'start', CLAY)
     s.label(572, 120, 'viền: sai', 11.5, 'start', MUTED)
-    s.save('6-1-valid', 'Xác suất tích cực baseline gán cho sáu câu validation (số từ code bài): hai câu sai đều chứa “không”, từ chưa có trong vocabulary, nên model chỉ còn thấy “hay” hoặc “tệ”.')
+    s.save('6-1-valid', 'Hai câu sai chứa “không”, từ chưa có trong vocabulary.')
 
 
 def confusion61():
@@ -184,7 +184,7 @@ def confusion61():
     s.line(396, 75, 466, 70, FAINT, 1, '3 3')
     s.line(396, 131, 466, 126, FAINT, 1, '3 3')
     s.label(320, 186, 'accuracy 4/6 = 0.667, macro-F1 0.667', 11.5, color=MUTED)
-    s.save('6-1-confusion', 'Confusion matrix của baseline trên sáu câu validation (số từ code bài): hai ô lệch là hai câu chứa “không”, mỗi câu đoán ngược một chiều.')
+    s.save('6-1-confusion', 'Hai câu đoán sai đều chứa “không”.')
 
 
 def pattern61():
@@ -235,7 +235,7 @@ def cosine62():
         s.label(450, y, nm, 12, 'end', TEXT)
         s.mono(480, y, v, 12.5, 'start', col, 600)
     s.label(470, 196, 'cosine chỉ nhìn hướng, không nhìn độ dài', 11.5, color=MUTED)
-    s.save('6-2-cosine', 'Query (1, 1) và ba tài liệu của code bài: (2, 2) cùng hướng nên cosine 1 dù dài gấp đôi; (1, 0) lệch 45° cho 0.707; (−1, −1) ngược hướng cho −1.')
+    s.save('6-2-cosine', 'Cùng hướng cho cosine 1 dù dài gấp đôi; lệch 45° cho 0.707; ngược hướng cho −1.')
 
 
 def dotcos62():
@@ -257,7 +257,7 @@ def dotcos62():
         s.mono(hx[2], y, c, 12.5, 'middle', TEXT, 600 if nm == 'B' else 400)
     s.label(hx[1], 150, 'A thắng: dài', 11.5, color=CLAY)
     s.label(hx[2], 150, 'B thắng: cùng hướng', 11.5, color=GREEN)
-    s.save('6-2-dotcos', 'Query (1, 1): tích vô hướng thô xếp A = (3, 0) trên vì A dài, cosine xếp B = (1, 1) trên vì cùng hướng; sau chuẩn hóa hai cách xếp trùng nhau.')
+    s.save('6-2-dotcos', 'Tích vô hướng ưu ái vector dài; cosine chỉ xét hướng.')
 
 
 def pooling62():
@@ -275,7 +275,7 @@ def pooling62():
     s.mono(548, 84, '(1, 1)', 13, 'start', GREEN, 600)
     s.mono(320, 150, 'Σ mᵢ hᵢ / Σ mᵢ = ((2, 0) + (0, 2)) / 2', 12.5, 'middle', TEXT)
     s.label(320, 182, 'padding không được giả định bằng 0: hidden state ở đó có thể là bất cứ gì', 11.5, color=MUTED)
-    s.save('6-2-masked-pooling', 'Mean pooling trên hidden state đặt tay của bài: hai token thật (2, 0), (0, 2) và hai vị trí padding (9, 9); có mask ra (1, 1), lấy trung bình cả padding bị kéo về (5, 5).')
+    s.save('6-2-masked-pooling', 'Có mask ra (1, 1); lấy trung bình cả PAD bị kéo về (5, 5).')
 
 
 def scores62():
@@ -296,7 +296,7 @@ def scores62():
             for i, nm in enumerate(q):
                 s.label(x0 - 10, 56 + i * 38 + 17, nm, 11.5, 'end', MUTED)
     s.label(400, 206, 'hàng: query; cột: tài liệu; đường chéo là gold', 11.5, color=MUTED)
-    s.save('6-2-scores', 'Ma trận điểm query × tài liệu (số từ code bài): TF-IDF chỉ khớp được “mượn sách”, hai hàng còn lại toàn 0; embedding nhỏ học từ nhãn chủ đề đưa tài liệu mật khẩu lên đầu cho “quên truy_cập” với 0.845.')
+    s.save('6-2-scores', 'TF-IDF chỉ khớp được câu trùng từ; embedding tìm đúng cả câu khác từ.')
 
 
 def words62():
@@ -315,7 +315,7 @@ def words62():
     s.label(500, 88, 'thư viện, lịch học', 11.5, 'start', MUTED)
     s.label(500, 130, 'phần dư triệt tiêu', 11.5, 'start', GREEN)
     s.label(500, 148, 'trong câu train', 11.5, 'start', GREEN)
-    s.save('6-2-words', 'Vector ba chiều của “quên” và “mật_khẩu” sau khi học (số từ code bài): chiều hai, ba đối dấu nhau nên trung bình rơi đúng (1, 0, 0); MSE chỉ ràng buộc trung bình câu, không ràng buộc từng từ.')
+    s.save('6-2-words', 'Hai vector từ đối dấu nhau ở hai chiều nên trung bình rơi đúng (1, 0, 0).')
 
 
 def ranks62():
@@ -336,7 +336,7 @@ def ranks62():
         s.mono(500, y + 16.5, r1, 12.5, 'middle', col, 600)
         s.mono(570, y + 16.5, mrr, 12.5, 'middle', col, 600)
     s.label(320, 166, 'hạng 1 của TF-IDF ở “quên truy_cập” chỉ nhờ phá hòa khi cả hàng bằng 0', 11.5, color=CLAY)
-    s.save('6-2-ranks', 'Thứ hạng của tài liệu đúng cho ba query (số từ code bài): TF-IDF được hạng 1, 1, 3, trong đó lần trúng đầu chỉ nhờ phá hòa; embedding nhỏ đạt hạng 1 cả ba.')
+    s.save('6-2-ranks', 'Hạng của tài liệu đúng: TF-IDF 1, 1, 3; embedding 1 cả ba.')
 
 
 def inbatch62():
@@ -363,7 +363,7 @@ def inbatch62():
     s.label(440, 104, 'ô khác: in-batch negative', 12, 'start', BLUE)
     s.label(440, 128, 'cột thêm: hard negative', 12, 'start', CLAY)
     s.label(440, 160, 'mỗi hàng là softmax B + 1 lớp', 11.5, 'start', MUTED)
-    s.save('6-2-inbatch', 'Contrastive loss với in-batch negatives: mỗi query q_i phải chấm tài liệu của chính cặp mình cao hơn tài liệu của các cặp khác trong batch và cao hơn một hard negative được thêm cho hàng ấy.')
+    s.save('6-2-inbatch', 'Mỗi query phải chấm tài liệu của cặp mình cao hơn tài liệu của các cặp khác trong batch.')
 
 
 def chunks62():
@@ -378,7 +378,7 @@ def chunks62():
     s.label(ax.X(41) + 8, ax.Y(sc.mean()), f'trung bình {sc.mean():.2f}', 11.5, 'start', MUTED)
     s.label(ax.X(41) + 8, ax.Y(.82), 'max 0.82', 11.5, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'cosine với query', 11.5, 'start', FAINT)
-    s.save('6-2-chunks', 'Minh họa tài liệu 40 đoạn trong câu hỏi, chỉ đoạn 17 trả lời query: điểm lớn nhất giữ được tín hiệu của đoạn ấy, còn trung bình bị 39 đoạn không liên quan pha loãng.')
+    s.save('6-2-chunks', 'Lấy điểm lớn nhất giữ được đoạn trả lời; lấy trung bình bị 39 đoạn khác pha loãng.')
 
 
 def guess62():
@@ -395,7 +395,7 @@ def guess62():
         s.box(560, 50 + k * 22, 12, 12, 'none', col, r=2, width=0, opacity=.5)
         s.label(578, 56 + k * 22, nm, 11.5, 'start', MUTED)
     s.label(330, 196, 'mỗi thanh: cosine dự đoán ± 0.05; chỉ G3 có ba khoảng rời nhau', 11.5, color=MUTED)
-    s.save('6-2-guess', 'Bốn từ đoán trong câu hỏi, mỗi ứng viên là một khoảng cosine ± 0.05: chỉ với G3 ba khoảng rời nhau, nên một phản hồi đủ chỉ ra đúng một ứng viên.')
+    s.save('6-2-guess', 'Chỉ với G3, ba khoảng cosine rời nhau.')
 
 
 FIGS62 = {'6-2-cosine': cosine62, '6-2-dotcos': dotcos62, '6-2-masked-pooling': pooling62, '6-2-scores': scores62,
@@ -434,7 +434,7 @@ def masks63():
                 s.mono(x0 - 6, 50 + i * (c + 3) + c / 2, t, 9.5, 'end', MUTED)
         n = sum(allow(1, j) for j in range(5))
         s.mono(x0 + 80, 230, f'hàng t2: {n} key', 11.5, 'middle', GREEN)
-    s.save('6-3-attention-masks', 'Ma trận attention cho 3 token thật và 2 PAD (hàng là query, cột là key; ô xanh được phép): encoder chỉ chặn cột PAD nên t2 đọc 3 key; causal còn chặn key tương lai nên t2 chỉ đọc 2.')
+    s.save('6-3-attention-masks', 'Encoder chỉ chặn cột PAD; causal mask còn chặn key tương lai.')
 
 
 def mlm63():
@@ -453,7 +453,7 @@ def mlm63():
             x += w + 6
         s.mono(x + 14, y + 14.5, '→ đoán “đọc”', 12, 'start', GREEN)
     s.label(320, 200, 'nhãn luôn là token gốc; vị trí không được chọn mang -100', 11.5, color=MUTED)
-    s.save('6-3-mlm', 'Masked language modeling của BERT gốc: 15% vị trí được chọn; trong số đó 80% thay bằng [MASK], 10% thay token ngẫu nhiên, 10% giữ nguyên, và nhãn luôn là token gốc.'.replace('[MASK]', 'token MASK'))
+    s.save('6-3-mlm', 'BERT chọn 15% vị trí: 80% thay MASK, 10% thay token ngẫu nhiên, 10% giữ nguyên.'.replace('[MASK]', 'token MASK'))
 
 
 def heads63():
@@ -481,7 +481,7 @@ def heads63():
     s.label(550, 120, 'head trích đoạn', 11.5, color=TEXT, weight=600)
     s.mono(550, 140, '(B, L, 2)', 11.5, 'middle', TEXT)
     s.label(550, 158, 'softmax theo L', 11, color=MUTED)
-    s.save('6-3-two-heads', 'Ba cách đặt head trên cùng hidden states (B, L, d): head câu đọc CLS cho (B, C), head token cho một nhãn mỗi vị trí (B, L, C), head trích đoạn cho điểm bắt đầu và kết thúc (B, L, 2).')
+    s.save('6-3-two-heads', 'Ba cách đặt head: đọc CLS cho cả câu, mỗi token một nhãn, hoặc điểm đầu và cuối của đoạn.')
 
 
 def attn63():
@@ -512,7 +512,7 @@ def attn63():
                     s.mono(x0 - 4, 64 + i * (c + 2) + c / 2, t, 8.5, 'end', MUTED)
         s.label(64 + si * 316 + 124, 24, f'“{sent}”', 12.5, color=TEXT, weight=600)
     s.label(320, 242, 'hàng CLS của hai câu gần như trùng nhau: head đọc CLS không thấy khác biệt hay/tệ', 11.5, color=MUTED)
-    s.save('6-3-attn', 'Trọng số attention thật của encoder nhỏ đã train (code bài, seed 63) trên hai câu khác nhãn: hàng CLS ở cả hai head gần như giống hệt, nên head phân loại nhận gần cùng một vector.')
+    s.save('6-3-attn', 'Hàng CLS gần như giống hệt ở hai câu khác nhãn.')
 
 
 def probs63():
@@ -531,7 +531,7 @@ def probs63():
     s.label(ax.X(.5), 262, 'P(nhãn 1)', 11.5, color=FAINT)
     s.label(600, 100, 'nhãn 1', 11.5, 'start', GREEN)
     s.label(600, 120, 'nhãn 0', 11.5, 'start', CLAY)
-    s.save('6-3-probs', 'Xác suất nhãn 1 cho mười câu train sau 100 bước (seed 63, số từ code bài): bốn câu “không hay”, “không tệ” với “bài”, “ví_dụ” đứng ở 0.50, model chưa tách được hai cặp đối nhau.')
+    s.save('6-3-probs', 'Sau 100 bước, bốn câu “không hay”, “không tệ” vẫn đứng ở 0.5.')
 
 
 def seeds63():
@@ -548,7 +548,7 @@ def seeds63():
         for x, v in zip(hx, row):
             s.mono(x, y + 1, v, 12, 'middle', TEXT)
     s.label(330, 236, 'kẹt ở 0.4 ln 2 hoặc học thuộc train; validation chỉ là may rủi trên hai câu', 11.5, color=MUTED)
-    s.save('6-3-seeds', 'Cùng recipe với sáu seed (số từ output bài): hai seed kẹt ở loss gần 0.4 ln 2, bốn seed học thuộc train nhưng validation hai câu dao động từ 0/2 đến 2/2.')
+    s.save('6-3-seeds', 'Cùng cách train, sáu seed cho kết quả rất khác nhau.')
 
 
 def ner63():
@@ -568,7 +568,7 @@ def ner63():
     s.label(80, 46, 'word_id', 10.5, 'end', FAINT)
     s.label(80, 114, 'nhãn', 10.5, 'end', FAINT)
     s.label(320, 160, '4 vị trí góp loss; ##Nội cùng word_id 2 với Hà nên nhận -100', 11.5, color=MUTED)
-    s.save('6-3-ner-alignment', 'Căn nhãn NER theo subword đầu (số từ code bài): Hà và ##Nội cùng word_id 2, chỉ Hà mang B-LOC; CLS, SEP và ##Nội nhận -100 nên chỉ 4 vị trí góp loss.')
+    s.save('6-3-ner-alignment', 'Chỉ subword đầu của mỗi từ mang nhãn; CLS, SEP và subword tiếp nối nhận −100.')
 
 
 def bio63():
@@ -588,7 +588,7 @@ def bio63():
         else:
             s.box(228, y - 4, 186, 40, GREEN, 'none', r=7, width=1.4)
         s.label(440, y + 16, f'{n} thực thể', 12.5, 'start', CLAY if n == 2 else GREEN, 600)
-    s.save('6-3-bio', 'Đọc BIO ở mức subword: hai B-LOC liền nhau là hai thực thể “Hà” và “Nội”, đều sai biên; subword tiếp nối phải mang I-LOC thì “Hà Nội” mới thành một thực thể.')
+    s.save('6-3-bio', 'Hai B-LOC liền nhau là hai thực thể; subword tiếp nối phải mang I-LOC.')
 
 
 def window63():
@@ -604,7 +604,7 @@ def window63():
         s.mono(40 + (a + b) / 2 * sc, y + 14.5, f'cửa sổ {k + 1}: {a}–{b}', 11.5, 'middle', TEXT)
     s.rect(40 + 188 * sc, 86, (512 - 188) * sc, 32, GREEN, 'none', 3, 1, 1.4)
     s.label(40 + 350 * sc, 184, 'vùng chồng lấp: giữ dự đoán của cửa sổ mà từ nằm gần giữa hơn', 11.5, color=GREEN)
-    s.save('6-3-window', 'Hồ sơ 700 subword vượt 512 vị trí: chia hai cửa sổ 512 chồng lấp nhau, căn nhãn và ghép dự đoán theo word_ids; ở vùng chồng lấp, giữ dự đoán của cửa sổ mà từ nằm gần giữa hơn.')
+    s.save('6-3-window', 'Văn bản dài chia thành các cửa sổ chồng lấp; mỗi từ lấy dự đoán từ cửa sổ mà nó gần giữa hơn.')
 
 
 FIGS63 = {'6-3-attention-masks': masks63, '6-3-mlm': mlm63, '6-3-two-heads': heads63, '6-3-attn': attn63,
@@ -629,7 +629,7 @@ def shift64():
     s.label(500, 55, 'ids[:, :-1]', 11.5, 'start', BLUE)
     s.label(500, 135, 'ids[:, 1:]', 11.5, 'start', CLAY)
     s.label(270, 182, 'vị trí i chỉ đọc tiền tố đến i, dự đoán token i + 1', 11.5, color=MUTED)
-    s.save('6-4-causal-shift', 'Next-token prediction trên chuỗi của bài: input bỏ token cuối, label bỏ token đầu, nên vị trí i đọc tiền tố đến i và dự đoán token i + 1.')
+    s.save('6-4-causal-shift', 'Input bỏ token cuối, label bỏ token đầu: vị trí i dự đoán token i + 1.')
 
 
 def counts64():
@@ -647,7 +647,7 @@ def counts64():
     for i, r in enumerate(rows):
         s.mono(130, 50 + i * 29 + 13, r, 11, 'end', MUTED)
     s.label(330, 244, 'ô trống: chưa gặp, xác suất 0 nếu không làm trơn', 11.5, color=MUTED)
-    s.save('6-4-counts', 'Số đếm bigram trên năm câu train của bài (hàng: token trước, cột: token sau): hầu hết các ô bằng 0, nên một cặp chưa gặp có xác suất 0 nếu không làm trơn.')
+    s.save('6-4-counts', 'Bảng đếm bigram gần như toàn 0.')
 
 
 def smooth64():
@@ -668,7 +668,7 @@ def smooth64():
     s.box(540, 84, 12, 12, 'none', CLAY, r=2, width=0, opacity=.7)
     s.label(558, 90, 'add-1', 11.5, 'start', MUTED)
     s.label(ax.x - 8, ax.y - 12, 'p(· | em)', 11.5, 'start', FAINT)
-    s.save('6-4-smooth', 'Phân phối token sau “em” (số từ code bài): không làm trơn, “học” chiếm 2/3 và bảy token còn lại bằng 0; add-1 hạ “học” xuống 0.25 và cho mọi token một phần xác suất.')
+    s.save('6-4-smooth', 'Không làm trơn, nhiều token có xác suất 0; add-1 chia cho mọi token một phần.')
 
 
 def nll64():
@@ -690,7 +690,7 @@ def nll64():
         s.label(160, y - 6, t, 12, 'end', TEXT)
         s.mono(160, y + 10, f'PPL {np.exp(nll):.3f}', 10.5, 'end', MUTED)
     s.label(350, 226, 'mỗi đoạn là −log p của một token đích (cả EOS); cả thanh là tổng NLL', 11.5, color=MUTED)
-    s.save('6-4-nll', 'NLL từng token của ba câu probe dưới bigram add-1 (số từ code bài): “em học toán” có PPL 3.785; đảo trật tự thành “em sách học” lên 8.629; từ lạ “robot” bị đổi thành UNK cho 6.557.')
+    s.save('6-4-nll', 'Đảo trật tự hay gặp từ lạ đều làm perplexity tăng.')
 
 
 def temperature64():
@@ -708,7 +708,7 @@ def temperature64():
             s.mono(ax.X(j), ax.y + ax.h + 14, f'z={lg[j]:g}', 10, 'middle', MUTED)
         s.label(x0 + 75, 22, f'T = {T:g}', 12.5, color=TEXT, weight=600)
     s.label(320, 206, 'thứ tự không đổi; T nhỏ làm nhọn, T lớn làm phẳng', 11.5, color=MUTED)
-    s.save('6-4-temperature', 'Cùng logits (2, 1, 0) qua softmax với ba temperature (số từ code bài): T = 0.5 cho 0.867 ở token đầu, T = 2 hạ xuống 0.506; thứ tự xác suất giữ nguyên.')
+    s.save('6-4-temperature', 'Temperature nhỏ làm phân phối nhọn, lớn làm phẳng; thứ tự giữ nguyên.')
 
 
 def topp64():
@@ -724,7 +724,7 @@ def topp64():
             s.mono(x0 + v * 200 + 8, y + 12, f'{v:g}', 11, 'start', TEXT if keep[j] else FAINT)
         s.label(x0 + 100, 30, f'{nm}: giữ {int(keep.sum())}', 12.5, color=TEXT, weight=600)
     s.label(320, 200, 'top-p 0.9 giữ token cho tới khi tổng dồn đạt 0.9, kể cả token vượt ngưỡng', 11.5, color=MUTED)
-    s.save('6-4-topp', 'Top-p 0.9 trên hai phân phối của câu hỏi: bước nhọn chỉ cần giữ 1 token (0.97), bước phẳng phải giữ cả 4 token mới đạt tổng 0.9.')
+    s.save('6-4-topp', 'Top-p 0.9: bước nhọn giữ 1 token, bước phẳng giữ cả 4.')
 
 
 def greedy64():
@@ -744,7 +744,7 @@ def greedy64():
     s.label(486, 60, 'greedy đi nhánh này', 11.5, 'start', BLUE)
     s.label(486, 170, 'chuỗi tốt hơn', 11.5, 'start', CLAY)
     s.label(320, 220, 'beam 2 giữ cả A lẫn B nên tìm ra B EOS', 11.5, color=MUTED)
-    s.save('6-4-greedy-paths', 'Greedy chọn A (0.6) ở bước đầu nên được A EOS với xác suất 0.30; chuỗi B EOS có 0.4 · 0.95 = 0.38 cao hơn, và beam độ rộng 2 giữ cả hai nhánh nên tìm ra nó.')
+    s.save('6-4-greedy-paths', 'Greedy chọn A trước nên lỡ chuỗi B EOS có xác suất cao hơn; beam 2 tìm ra nó.')
 
 
 def beamx64():
@@ -759,7 +759,7 @@ def beamx64():
     s.label(ax.X(1) + 8, ax.Y(.3), 'A EOS: 0.30', 12, 'start', BLUE, 600)
     s.label(ax.X(1) + 8, ax.Y(.4), 'B EOS: 0.4x', 12, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'xác suất cả chuỗi', 11.5, 'start', FAINT)
-    s.save('6-4-beamx', 'Greedy luôn trả A EOS với xác suất 0.30; chuỗi B EOS có 0.4x, nên greedy không kém chỉ khi x ≤ 0.75.')
+    s.save('6-4-beamx', 'Greedy chỉ không kém khi x ≤ 0.75.')
 
 
 FIGS64 = {'6-4-causal-shift': shift64, '6-4-counts': counts64, '6-4-smooth': smooth64, '6-4-nll': nll64,
@@ -804,7 +804,7 @@ def encdec65():
     s.label(305, 162, 'vẫn mask PAD nguồn', 11, color=MUTED)
     s.arrow(505, 96, 505, 64, LINE, 1.1)
     s.mono(505, 52, 'p(y_t | y_<t, x)', 12, 'middle', TEXT)
-    s.save('6-5-encoder-decoder', 'Ba chỗ dùng attention trong transformer encoder–decoder: self-attention của encoder mask PAD nguồn, self-attention của decoder có causal mask, cross-attention lấy query từ đích và key, value từ nguồn, vẫn mask PAD nguồn.')
+    s.save('6-5-encoder-decoder', 'Ba chỗ dùng attention: self-attention của encoder, self-attention có causal mask của decoder, cross-attention.')
 
 
 def teacher65():
@@ -828,7 +828,7 @@ def teacher65():
     s.label(110, 95, 'decoder input', 12, 'end', MUTED)
     s.label(110, 165, 'label', 12, 'end', MUTED)
     s.label(320, 200, 'label bước trước thành input bước sau', 11.5, color=GREEN)
-    s.save('6-5-teacher-forcing', 'Teacher forcing cho cặp A B của bài (ID từ code): decoder input BOS B A, label B A EOS; token đúng của bước trước được đưa làm input bước sau.')
+    s.save('6-5-teacher-forcing', 'Teacher forcing: token đúng của bước trước làm input cho bước sau.')
 
 
 def loss65():
@@ -844,7 +844,7 @@ def loss65():
     s.label(ax.X(220) + 8, ax.Y(np.log10(h[-1])), f'train {h[-1]:.4f}', 11.5, 'start', BLUE, 600)
     s.label(ax.X(220) + 8, ax.Y(np.log10(v)), f'validation {v:.4f}', 11.5, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'loss (teacher forcing)', 11.5, 'start', FAINT)
-    s.save('6-5-loss', 'Train loss của GRU seq2seq qua 220 bước (số từ code bài, trục log) xuống 0.0003, trong khi validation teacher-forced loss trên hai cặp chưa thấy vẫn là 1.2613.')
+    s.save('6-5-loss', 'Train loss xuống gần 0, validation loss vẫn cao.')
 
 
 def nll65():
@@ -863,7 +863,7 @@ def nll65():
     s.mono(500, 92, 'A 0.994  C 0.001', 12, 'start', CLAY)
     s.label(500, 120, 'tiền tố đúng vẫn chọn A', 11.5, 'start', MUTED)
     s.label(320, 190, 'trung bình sáu ô bằng 1.2613; riêng 6.804 chiếm gần 90% tổng', 11.5, color=MUTED)
-    s.save('6-5-nll', 'NLL từng vị trí trên hai cặp validation (số từ code bài): lỗi dồn vào vị trí thứ hai của C C, nơi model đặt 0.994 vào A dù được cho tiền tố đúng BOS C.')
+    s.save('6-5-nll', 'Lỗi dồn vào vị trí thứ hai của C C.')
 
 
 def beam65():
@@ -880,7 +880,7 @@ def beam65():
             s.mono(x0 + 50, y + 14.5, c, 12, 'end', TEXT)
             s.mono(x0 + 64 + w, y + 14.5, f'{v:g}', 11, 'start', MUTED)
     s.label(320, 196, 'tổng log-prob; C C không có trong top 3: beam chỉ tìm lỗi model tin chắc', 11.5, color=MUTED)
-    s.save('6-5-beam', 'Beam rộng 3 trên hai nguồn validation (số từ output bài): C B ra đúng B C với −0.759; C C ra C A với −0.009, còn đáp án C C không lọt vào top 3.')
+    s.save('6-5-beam', 'Beam 3: C B ra đúng B C; C C ra C A, đáp án đúng không lọt vào top 3.')
 
 
 def crossattn65():
@@ -897,7 +897,7 @@ def crossattn65():
     s.mono(300, 116, '0.67·(2, 0) + 0.33·(0, 2)', 12.5, 'start', MUTED)
     s.mono(300, 144, 'context (1.34, 0.66)', 13, 'start', CLAY, 600)
     s.label(400, 186, 'vector đọc được là tổ hợp có trọng số của các value', 11.5, color=MUTED)
-    s.save('6-5-cross-attention', 'Phép tính tay của bài: query (1, 0) gần key thứ nhất hơn, softmax cho trọng số 0.67 và 0.33, context là tổ hợp (1.34, 0.66) của hai value (2, 0) và (0, 2).')
+    s.save('6-5-cross-attention', 'Trọng số 0.67 và 0.33 trộn hai value thành context (1.34, 0.66).')
 
 
 def padctx65():
@@ -914,7 +914,7 @@ def padctx65():
             s.mono(245 + j * 100, y + 20.5, f'{v:.2f}', 12, 'middle', TEXT)
         s.mono(510, y + 20.5, ctx, 12.5, 'start', col, 600)
     s.label(320, 180, 'value của PAD kéo context đi xa khi mask bị quên', 11.5, color=MUTED)
-    s.save('6-5-padctx', 'Câu hỏi về mask PAD: điểm (0, ln 3, ln 3) cho trọng số (0.25, 0.75) khi mask key PAD, context (1, 4.5); quên mask thì trọng số (1, 3, 3)/7 và context bị kéo tới khoảng (4.43, 6.43).')
+    s.save('6-5-padctx', 'Quên mask PAD thì context bị kéo lệch.')
 
 
 def bleu65():
@@ -932,7 +932,7 @@ def bleu65():
             s.mono(x, y, f'{v:.3f}', 12, 'middle', CLAY if x == hx[3] else TEXT, 600 if x == hx[3] else 400)
     s.box(530, 136, 42, 22, CLAY, 'none', r=5, width=1.4)
     s.label(320, 200, 'câu sai thứ bảy được điểm cao hơn câu đúng: overlap n-gram không kiểm sự thật', 11.5, color=MUTED)
-    s.save('6-5-bleu', 'BLEU-2 của ba câu (số từ output bài): clipping đưa câu lặp “họp” về 0; câu đúng nhưng thiếu “vào” bị brevity penalty còn 0.757; câu sai thứ bảy vẫn được 0.845.')
+    s.save('6-5-bleu', 'Câu lặp từ bị clipping về 0; câu đúng mà ngắn bị phạt; câu sai vẫn có thể được điểm cao.')
 
 
 def t5shift65():
@@ -974,7 +974,7 @@ def stages66():
             s.arrow(x - g + 2, 88, x - 2, 88, LINE, 1.1)
     s.label(330, 160, 'post-training', 12, color=CLAY, weight=600)
     s.path('M 268,140 L 268,148 L 494,148 L 494,140', CLAY, 1.2)
-    s.save('6-6-stages', 'Từ base model đến instruct model: pretraining dạy đoán token kế tiếp; post-training gồm SFT trên cặp chỉ dẫn – trả lời mẫu rồi thường tối ưu theo ưu tiên bằng RLHF hoặc DPO.')
+    s.save('6-6-stages', 'Base model học đoán token; post-training (SFT, RLHF, DPO) biến nó thành instruct model.')
 
 
 def checks66():
@@ -992,7 +992,7 @@ def checks66():
         s.label(414, y + 13, reason.replace('Students phải là số nguyên không âm hoặc null', 'students sai kiểu'), 11.5, 'start', GREEN if ok else CLAY)
     s.label(30, 20, 'chuỗi model trả về', 11.5, 'start', MUTED)
     s.label(414, 20, 'validate_answer', 11.5, 'start', MUTED)
-    s.save('6-6-checks', 'Năm chuỗi kiểm validator của bài (kết quả từ code): chỉ chuỗi đầu hợp schema; số dạng chuỗi, boolean, lời dẫn trước JSON và khóa thừa đều bị từ chối.')
+    s.save('6-6-checks', 'Validator chỉ nhận chuỗi đầu; bốn chuỗi còn lại bị từ chối.')
 
 
 def levels66():
@@ -1007,7 +1007,7 @@ def levels66():
         s.mono(290, y + 22, fail, 11, 'start', MUTED)
     s.label(290, 16, 'ví dụ trượt ở mức này', 11.5, 'start', FAINT)
     s.label(320, 206, 'qua mức trên chưa chắc qua mức dưới: prompt injection qua được cả hai mức đầu', 11.5, color=MUTED)
-    s.save('6-6-levels', 'Ba mức kiểm output của LLM: cú pháp JSON, schema (khóa, kiểu, miền) và nội dung so với gold; qua mức trên chưa chắc qua mức dưới.')
+    s.save('6-6-levels', 'Ba mức kiểm output: cú pháp JSON, schema, nội dung.')
 
 
 def messages66():
@@ -1026,7 +1026,7 @@ def messages66():
         s.mono(142, y + 15.5, c, 10.5, 'start', TEXT)
     s.path('M 620,64 L 626,64 L 626,182 L 620,182', MUTED, 1.2)
     s.label(600, 270, 'hai cặp few-shot rồi thông báo cần trích', 11.5, 'end', MUTED)
-    s.save('6-6-messages', 'Danh sách message do make_messages dựng (từ code bài): một system chỉ dẫn, hai cặp user – assistant few-shot, rồi user chứa thông báo cần trích, bọc trong JSON.')
+    s.save('6-6-messages', 'Prompt gồm một system, hai cặp ví dụ, rồi thông báo cần trích.')
 
 
 def grid66():
@@ -1046,7 +1046,7 @@ def grid66():
             val = '✓' if x == hx[1] else str(ans['date' if x == hx[2] else 'students'])
             s.mono(x, y + 15.5, '✓' if (x == hx[1] and ok) else (val if good or x != hx[1] else '✗'), 11, 'middle', TEXT)
     s.label(320, 236, 'hợp schema 4/4, exact 2/4: lỗi nội dung, không phải lỗi JSON', 11.5, color=MUTED)
-    s.save('6-6-extraction-grid', 'Baseline regex trên bốn ca dev (kết quả từ code bài): hợp schema cả bốn nhưng ca “7 em” mất số học sinh và ca kế hoạch bị đổi lấy nhầm ngày 20/10 với 25 học sinh.')
+    s.save('6-6-extraction-grid', 'Regex hợp schema cả bốn ca nhưng sai nội dung ở hai ca.')
 
 
 def rag66():
@@ -1063,7 +1063,7 @@ def rag66():
     s.label(50, 117, 'đọc', 11.5, 'end', MUTED)
     s.label(320, 170, 'recall@3 = 0.6 là trần của cả hệ; tầng đọc đúng 57/60', 12, color=TEXT)
     s.label(320, 192, 'sửa retriever trước', 11.5, color=CLAY, weight=600)
-    s.save('6-6-rag', 'Hệ RAG của câu hỏi tách theo hai tầng: retriever chỉ đưa đoạn đúng vào top-3 ở 60/100 câu, còn khi có đoạn đúng thì LLM trả đúng 57/60; nút thắt là retriever.')
+    s.save('6-6-rag', 'Nút thắt là retriever: chỉ 60/100 câu có đoạn đúng trong top-3.')
 
 
 def memory66():
@@ -1077,7 +1077,7 @@ def memory66():
         s.rect(220, y, v / 100 * 340, 28, 'none', col, 3, .55, 0)
         s.mono(226 + v / 100 * 340, y + 14.5, f'{v:g} MiB', 12, 'start', col, 600)
     s.mono(320, 150, 'KV bytes ≈ 2·B·L·n·h·d_h·b  (n = 24, d_h = 64, b = 2)', 12, 'middle', MUTED)
-    s.save('6-6-memory-budget', 'KV cache theo công thức 2·B·L·n·h·d_h·b của config nhỏ trong bài: 12 MiB với một chuỗi 1024 token; batch 4 và độ dài 2048 thành 96 MiB, gấp 8 lần.')
+    s.save('6-6-memory-budget', 'KV cache tăng tuyến tính theo batch và độ dài: 12 MiB thành 96 MiB.')
 
 
 def leftpad66():
