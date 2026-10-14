@@ -26,7 +26,7 @@ def flow41():
     s.mono(400, 120, 'W z + b', 11.5, 'middle', MUTED)
     s.mono(560, 120, 'argmax = 0', 11.5, 'middle', MUTED)
     s.label(320, 156, 'thiếu hay lệch một phần nào, chương trình vẫn chạy mà trả lời sai', 11.5, color=MUTED)
-    s.save('4-1-flow', 'Một mẫu đi qua ba phần của gói: processor đổi (12, 8) thành (1, −1), trọng số cho logits (2, −2, 0.25), bảng nhãn đổi chỉ số 0 thành tên.')
+    s.save('4-1-flow', 'Một mẫu qua ba phần của gói: processor, trọng số, bảng nhãn.')
 
 
 def batches41():
@@ -44,7 +44,7 @@ def batches41():
     s.label(20, 132, 'kết quả', 12, 'start', MUTED)
     s.tiles(90, 116, [[str(i) for i in ids]], 70, 32, GREEN, 8, size=13)
     s.label(320, 178, 'batch 2, 2, 1 nối lại đúng thứ tự; giữ id theo từng hàng', 11.5, color=MUTED)
-    s.save('4-1-batches', 'Năm mẫu chia batch 2, 2, 1: batch cuối thiếu mẫu vẫn phải chạy, và kết quả nối lại theo đúng thứ tự id ban đầu.')
+    s.save('4-1-batches', 'Năm mẫu chia batch 2, 2, 1; kết quả nối lại theo đúng thứ tự id.')
 
 
 def transfer41():
@@ -65,7 +65,7 @@ def transfer41():
     s.line(472, 130, 612, 130, CLAY, 1.6)
     s.label(542, 148, 'phải thay', 12, color=CLAY, weight=600)
     s.label(235, 34, 'tầng nông → tầng sâu', 11.5, color=MUTED)
-    s.save('4-1-transfer', 'Các tầng của mạng ImageNet học đặc trưng chung (cạnh, kết cấu, hình dạng, bộ phận) dùng lại được; chỉ head cuối gắn với 1000 lớp cũ.')
+    s.save('4-1-transfer', 'Các tầng đầu học đặc trưng chung dùng lại được; chỉ head cuối gắn với 1000 lớp cũ.')
 
 
 def processor41():
@@ -84,7 +84,7 @@ def processor41():
         s.label(x + w / 2, 18, title, 12.5, color=col, weight=600)
     s.mono(434 + w / 2, 34 + h / 2, 'mọi giá trị ≤ 1/255', 11.5, 'middle', '#d8d4c8')
     s.label(320, 206, 'shape, dtype đều đúng: không có lỗi nào báo ra', 11.5, color=MUTED)
-    s.save('4-1-processor', 'Cùng một ảnh thật đưa vào processor RGB: đọc bằng cv2 thì đỏ và lam bị đảo; chia 255 trước khi processor chia lần nữa thì mọi pixel gần 0, mạng thấy gần như một màu.')
+    s.save('4-1-processor', 'Đọc bằng cv2 thì đỏ và lam bị đảo; chia 255 hai lần thì ảnh gần như một màu.')
 
 
 def memory41():
@@ -98,7 +98,7 @@ def memory41():
         s.label(210, y + 13, nm, 12, 'end', TEXT)
         s.mono(220 + max(w, 2) + 8, y + 13, f'{v:g} MiB', 12, 'start', TEXT, 600)
     s.label(320, 188, 'chưa tính activation, gradient, optimizer và bộ nhớ dự trữ', 11.5, color=MUTED)
-    s.save('4-1-memory', 'Bộ nhớ thô của trọng số và của tensor input: gấp đôi batch và gấp đôi cạnh ảnh làm input gấp 8, từ 9.19 lên 73.5 MiB.')
+    s.save('4-1-memory', 'Gấp đôi batch và gấp đôi cạnh ảnh thì input gấp 8 lần.')
 
 
 FIGS41 = {'4-1-flow': flow41, '4-1-batches': batches41, '4-1-transfer': transfer41, '4-1-processor': processor41, '4-1-memory': memory41}
@@ -141,7 +141,7 @@ def reuse42():
         s.box(466, y, 154, 28, 'none', GREEN, r=6, width=0, opacity=.14)
         s.label(474, y + 14, nm, 12, 'start', TEXT)
         s.mono(612, y + 14, v, 11, 'end', MUTED)
-    s.save('4-2-reuse', 'Encoder PCA đứng yên biến mỗi ảnh 8 × 8 thành 16 số; cùng ma trận ấy dùng cho linear probe, kNN, tìm kiếm và phân cụm (số từ code bài).')
+    s.save('4-2-reuse', 'Một encoder đứng yên cho embedding; dùng lại cho phân loại, kNN, tìm kiếm, phân cụm.')
 
 
 def scatter42():
@@ -160,7 +160,7 @@ def scatter42():
         s.mono(ax.X(m[0]), ax.Y(m[1]) + .5, str(d), 12, 'middle', pal[d], 600)
     s.label(520, 120, 'hai tọa độ đầu', 12, 'start', MUTED)
     s.label(520, 138, 'trong 16 của z', 12, 'start', MUTED)
-    s.save('4-2-scatter', '540 ảnh validation theo hai tọa độ đầu của embedding PCA (số là trung vị từng chữ số): cùng chữ số tụ lại gần nhau, dù chỉ nhìn 2 trên 16 chiều.')
+    s.save('4-2-scatter', 'Hai tọa độ đầu của embedding: cùng chữ số tụ lại gần nhau.')
 
 
 def cosine42():
@@ -182,7 +182,7 @@ def cosine42():
     s.label(425, 14, 'sau chuẩn hóa: trùng nhau', 12.5, color=TEXT, weight=600)
     s.mono(560, 110, 'cos = 1', 13, 'start', GREEN, 600)
     s.mono(560, 132, 'Euclid = 5', 13, 'start', MUTED)
-    s.save('4-2-cosine', 'Hai vector (3, 4) và (6, 8) cùng hướng: cosine bằng 1 dù Euclid bằng 5; chuẩn hóa về độ dài 1 thì cả hai thành (0.6, 0.8).')
+    s.save('4-2-cosine', '(3, 4) và (6, 8) cùng hướng nên cosine bằng 1, dù khoảng cách Euclid là 5.')
 
 
 def results42():
@@ -199,7 +199,7 @@ def results42():
         s.mono(x + 36, 132, f'{sim[idx]:.3f}', 11.5, 'middle', TEXT)
     s.label(400, 26, '5 ảnh train gần nhất theo cosine', 12, color=MUTED)
     s.label(400, 156, 'đều là chữ số 0', 11.5, color=GREEN)
-    s.save('4-2-results', 'Ảnh validation đầu tiên (chữ số 0) và 5 ảnh train gần nhất theo cosine trên embedding 16 chiều: cả năm đều là chữ số 0, cosine từ 0.972 giảm dần.')
+    s.save('4-2-results', 'Năm ảnh train gần nhất với một chữ số 0 theo cosine: cả năm đều là 0.')
 
 
 def scores42():
@@ -213,7 +213,7 @@ def scores42():
         s.label(240, y + 13, nm, 12, 'end', TEXT)
         s.mono(250 + w + 8, y + 13, f'{v:.4f}', 12, 'start', TEXT, 600)
     s.label(320, 146, 'trục bắt đầu từ 0.94; 0.0019 ≈ đúng một ảnh trên 540', 11.5, color=MUTED)
-    s.save('4-2-scores', 'Accuracy trên cùng 540 ảnh validation: kNN trên 16 tọa độ PCA gần bằng kNN trên đủ 64 pixel (chênh một ảnh); linear probe thấp hơn.')
+    s.save('4-2-scores', 'kNN trên 16 tọa độ PCA gần bằng kNN trên đủ 64 pixel.')
 
 
 def clusters42():
@@ -240,7 +240,7 @@ def clusters42():
     s.label(470, 90, 'ARI 0.636', 13, 'start', TEXT, 600)
     s.label(470, 112, 'số cụm ≠ chữ số:', 11.5, 'start', MUTED)
     s.label(470, 128, 'so thẳng chỉ 0.107', 11.5, 'start', MUTED)
-    s.save('4-2-clusters', 'Bảng đếm chữ số thật × cụm KMeans trên validation (cột đã xếp lại): phần lớn khối nằm trên đường chéo, nhưng vài chữ số tách đôi hoặc dồn chung một cụm.')
+    s.save('4-2-clusters', 'Chữ số thật × cụm KMeans: phần lớn nằm trên đường chéo, vài chữ số bị tách hoặc gộp.')
 
 
 FIGS42 = {'4-2-reuse': reuse42, '4-2-scatter': scatter42, '4-2-cosine': cosine42, '4-2-results': results42,
@@ -276,7 +276,7 @@ def unfreeze43():
     s.label(260, 192, 'đóng băng', 11.5, 'start', MUTED)
     s.box(340, 186, 14, 12, 'none', CLAY, r=3, width=0, opacity=.3)
     s.label(360, 192, 'được học', 11.5, 'start', MUTED)
-    s.save('4-3-unfreeze', 'Ba mức mở tham số, thử theo thứ tự: chỉ head, thêm block cuối, rồi toàn bộ encoder.')
+    s.save('4-3-unfreeze', 'Ba mức mở tham số: chỉ head, thêm block cuối, rồi toàn bộ encoder.')
 
 
 def validation43():
@@ -292,7 +292,7 @@ def validation43():
     s.label(ax.X(60) + 8, ax.Y(h[-1, 0]) + 6, 'train', 12, 'start', BLUE, 600)
     s.label(ax.X(60) + 8, ax.Y(h[-1, 1]) - 6, 'validation', 12, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 10, 'loss', 11.5, 'start', FAINT)
-    s.save('4-3-validation', 'Head-only (số từ code bài): train loss giảm tới epoch 60, validation thấp nhất 0.2247 ở epoch 36 rồi nhích lên, nên checkpoint giữ epoch 36.')
+    s.save('4-3-validation', 'Chỉ học head: validation loss thấp nhất ở epoch 36, nên lưu checkpoint ở đó.')
 
 
 def transfer43():
@@ -306,7 +306,7 @@ def transfer43():
         s.circle(ax.X(ep), ax.Y(best), 4.5, col, PAPER, 2)
         s.label(ax.X(60) + 8, ax.Y(h[-1, 1]) + (8 if opened else -8), nm, 12, 'start', col, 600)
     s.label(ax.x - 8, ax.y - 10, 'validation loss', 11.5, 'start', FAINT)
-    s.save('4-3-transfer', 'Validation loss của hai cách (số từ code bài, chấm tròn là checkpoint): mở encoder với learning rate nhỏ xuống 0.157 và còn đang giảm ở epoch 60; head-only dừng ở 0.2247.')
+    s.save('4-3-transfer', 'Mở encoder với learning rate nhỏ cho validation loss thấp hơn chỉ học head.')
 
 
 def hand43():
@@ -327,7 +327,7 @@ def hand43():
     s.mono(190, 148, '× a', 11.5, 'middle', CLAY)
     s.mono(40, 172, '∂L/∂w = −2, η 0.01 → w = 2.02', 11.5, 'start', BLUE)
     s.mono(330, 172, '∂L/∂a = −4, η 0.1 → a = 1.4', 11.5, 'start', CLAY)
-    s.save('4-3-hand', 'Ví dụ tính tay ŷ = a(wx): gradient về encoder phải nhân qua a của head; với learning rate 0.1 cho head và 0.01 cho encoder, a lên 1.4 còn w chỉ nhích tới 2.02.')
+    s.save('4-3-hand', 'Learning rate 0.1 cho head, 0.01 cho encoder: a lên 1.4, w chỉ nhích tới 2.02.')
 
 
 def params43():
@@ -341,7 +341,7 @@ def params43():
         s.label(160, y + 15, nm, 12.5, 'end', TEXT)
         s.mono(170 + max(w, 3) + 8, y + 15, f'{cnt} tham số · val acc {acc:.3f}', 12, 'start', TEXT)
     s.label(320, 150, 'đúng thêm 11 trên 306 ảnh validation; mỗi tham số mở kèm gradient và hai moment Adam', 11.5, color=MUTED)
-    s.save('4-3-params', 'Số tham số được học và accuracy validation ở checkpoint (số từ code bài): mở encoder tăng từ 66 lên 2146 tham số, accuracy từ 0.902 lên 0.938.')
+    s.save('4-3-params', 'Mở encoder: tham số học từ 66 lên 2146, accuracy từ 0.902 lên 0.938.')
 
 
 def bn43():
@@ -361,7 +361,7 @@ def bn43():
     s.mono(508, 44, 'eval()', 11, 'middle', GREEN)
     s.mono(538, 57.5, 'giữ nguyên', 12, 'start', GREEN)
     s.label(320, 160, 'mọi tham số đã requires_grad=False, đang trong no_grad(), mà buffer vẫn đổi', 11.5, color=MUTED)
-    s.save('4-3-bn', 'BatchNorm đã đóng băng hết tham số vẫn cập nhật running_mean khi chạy ở train(): từ (0, 0) thành (1.5, 3); chỉ eval() giữ buffer đứng yên.')
+    s.save('4-3-bn', 'Đóng băng tham số nhưng ở train(), BatchNorm vẫn cập nhật running_mean.')
 
 
 FIGS43 = {'4-3-unfreeze': unfreeze43, '4-3-validation': validation43, '4-3-transfer': transfer43, '4-3-hand': hand43,
@@ -421,7 +421,7 @@ def path44():
     s.mono(462, 70, 'A · 2×8', 13, 'middle', TEXT)
     s.label(190, 180, 'cố định · 48 số', 12, color=BLUE)
     s.label(439, 180, 'được học · 12 + 16 = 28 số', 12, color=CLAY)
-    s.save('4-4-path', 'LoRA giữ W₀ cố định và học phần sửa (α/r)·BA từ hai ma trận mỏng: với lớp 6×8 và r = 2, B có 12 số, A có 16 số.')
+    s.save('4-4-path', 'LoRA giữ W₀ cố định, chỉ học hai ma trận mỏng B và A.')
 
 
 def rank44():
@@ -452,7 +452,7 @@ def rank44():
         else:
             s.mono(x + 10, y + 4, f'W₀x{i} không đổi', 11.5, 'start', GREEN)
     s.label(480, 226, 'output: chỉ sửa dọc hướng b', 12, color=MUTED)
-    s.save('4-4-rank1', 'LoRA rank 1: adapter đo aᵀx rồi đẩy output dọc đúng một hướng b, tỉ lệ với con số ấy; input vuông góc với a đi qua như model gốc.')
+    s.save('4-4-rank1', 'LoRA rank 1 chỉ đẩy output dọc một hướng b.')
 
 
 def count44():
@@ -491,7 +491,7 @@ def grad44():
         s.mono(x0 + 200, 52, '∂L/∂B', 11.5, 'start', MUTED)
         heat(x0 + 200, 60, B, mb)
         s.label(x0 + 222, 206, 'cỡ 10⁻²', 11.5, color=MUTED)
-    s.save('4-4-grad', 'Gradient ở bước đầu (số từ code bài): ∂L/∂A chứa B = 0 nên bằng 0, ∂L/∂B thì không; sau một bước, A bắt đầu nhận gradient. Màu theo dấu, đậm theo độ lớn trong từng ma trận.')
+    s.save('4-4-grad', 'Bước đầu, B = 0 nên gradient của A bằng 0; từ bước sau A mới học.')
 
 
 def curves44():
@@ -508,7 +508,7 @@ def curves44():
         s.label(ax.X(250) + 8, ax.Y(h[-1]), nm, 12, 'start', col, 600)
     s.mono(ax.X(250) + 8, ax.Y(np.log10(C['rank 1'][-1])) + 16, '0.00204', 11, 'start', CLAY)
     s.label(ax.x - 8, ax.y - 10, 'validation MSE', 11.5, 'start', FAINT)
-    s.save('4-4-curves', 'Validation MSE theo bước (số từ code bài, trục log): full về 3·10⁻¹⁴; rank 2 có lúc xuống dưới 10⁻⁹ nhưng dao động, dừng ở 5·10⁻⁶; rank 1 nằm ở sàn 0.00204 từ khoảng bước 40.')
+    s.save('4-4-curves', 'Rank 1 dừng ở một mức sàn; rank 2 và full update xuống gần 0.')
 
 
 def spectrum44():
@@ -528,7 +528,7 @@ def spectrum44():
     s.label(420, 70, 'rank 1 giữ σ₁, bỏ σ₂', 12.5, 'start', TEXT, 600)
     s.mono(420, 98, 'σ₂² / 6 = 0.108² / 6', 12, 'start', MUTED)
     s.mono(420, 120, '≈ 0.0019', 12, 'start', CLAY)
-    s.save('4-4-spectrum', 'Giá trị kỳ dị của phần sửa thật (số từ code bài): chỉ hai giá trị khác 0. Rank 1 giữ σ₁, phần σ₂ bị bỏ góp khoảng 0.108²/6 ≈ 0.0019 vào MSE.')
+    s.save('4-4-spectrum', 'Phần sửa thật có hai giá trị kỳ dị khác 0; rank 1 chỉ giữ được một.')
 
 
 def adapters44():
@@ -543,7 +543,7 @@ def adapters44():
         s.label(325, y + 41, f'A, B và head {nm}', 11.5, color=MUTED)
         s.arrow(414, y + 28, 470, y + 28, LINE, 1.3)
         s.label(478, y + 28, task, 12.5, 'start', TEXT)
-    s.save('4-4-adapters', 'Một base, mỗi nhiệm vụ một adapter kèm head riêng: đổi adapter là đổi nhiệm vụ, không merge hai adapter vào cùng một W₀.')
+    s.save('4-4-adapters', 'Một model gốc, mỗi nhiệm vụ một adapter riêng.')
 
 
 def distil44():
@@ -565,7 +565,7 @@ def distil44():
     s.label(x0 + aw / 2, y + 48, 'adapter A, B', 11.5, color=CLAY)
     s.label(x0 + aw / 2, y + 64, '73 728', 11.5, color=CLAY)
     s.label(x0 + aw + (W - aw) / 2, y + 15, 'head mới · 592 130', 12, color=TEXT)
-    s.save('4-4-distil', 'Phần được học khi chèn LoRA rank 4 vào q_lin, v_lin của DistilBERT (số từ output bài): khoảng 1% tổng tham số, trong đó head mới gấp tám lần adapter.')
+    s.save('4-4-distil', 'LoRA trên DistilBERT chỉ học khoảng 1% tham số.')
 
 
 FIGS44 = {'4-4-path': path44, '4-4-rank1': rank44, '4-4-count': count44, '4-4-grad': grad44, '4-4-curves': curves44,
@@ -600,7 +600,7 @@ def contrastive45():
                 s.box(x, y, cw, ch, 'none', BLUE, r=8, width=0, opacity=.08)
                 s.label(x + cw / 2, y + ch / 2, 'đẩy xuống', 11.5, color=FAINT)
     s.label(x0 + 1.5 * cw + g, 280, 'mỗi hàng: ảnh chọn đúng caption · mỗi cột: caption chọn đúng ảnh', 11.5, color=MUTED)
-    s.save('4-5-contrastive', 'Một batch ba cặp ảnh–caption: pretraining kéo điểm của cặp đúng trên đường chéo lên và đẩy mọi ô khác xuống, theo cả hàng lẫn cột.')
+    s.save('4-5-contrastive', 'Pretraining kéo điểm cặp ảnh–caption đúng lên, đẩy mọi cặp khác xuống.')
 
 
 def shots45():
@@ -617,7 +617,7 @@ def shots45():
         s.box(x, 108, 190, 40, 'none', col, r=7, width=0, opacity=.16 if col == BLUE else .3)
         s.label(x + 95, 128, wlab, 12, color=TEXT)
         s.label(x + 95, 174, note, 11.5, color=MUTED if k == 0 else (BLUE if k == 1 else CLAY))
-    s.save('4-5-shots', 'Ba cách dùng ví dụ có nhãn của nhiệm vụ mới: zero-shot không dùng, few-shot đặt vài ví dụ vào prompt, fine-tuning dùng chúng để cập nhật trọng số.')
+    s.save('4-5-shots', 'Zero-shot không dùng ví dụ, few-shot đặt ví dụ vào prompt, fine-tuning học từ ví dụ.')
 
 
 def angles45():
@@ -644,7 +644,7 @@ def angles45():
         s.mono(hx[1], y, mnum(cos[r], '{:.1f}'), 12.5, 'middle', TEXT)
         s.mono(hx[2], y, mnum(lg[r], '{:g}'), 12.5, 'middle', TEXT)
         s.mono(hx[3], y, f'{pr[r]:.4f}', 12.5, 'middle', CLAY if r == 0 else TEXT, 600 if r == 0 else 400)
-    s.save('4-5-angles', 'Ảnh 1 (0.8, 0.6) so với ba vector lớp dài 1 (số từ code bài): cosine 0.8, 0.6, −0.8; nhân scale 5 rồi softmax cho “bàn” 0.7309.')
+    s.save('4-5-angles', 'Cosine với ba lớp là 0.8, 0.6, −0.8; qua softmax, “bàn” được 0.73.')
 
 
 def matrix45():
@@ -667,7 +667,7 @@ def matrix45():
                 s.label(x0 - 10, 56 + i * 40 + 17, f'ảnh {i + 1}', 11.5, 'end', MUTED)
         s.mono(x0 + 101, 196, f'loss {loss:.4f}', 12, 'middle', CLAY)
     s.label(320, 224, 'loss = trung bình −log của ba ô đường chéo', 11.5, color=MUTED)
-    s.save('4-5-matrix', 'Cùng ma trận logits, softmax theo hàng và theo cột cho hai phân phối khác nhau (số từ code bài): loss ảnh tìm chữ 0.2114, chữ tìm ảnh 0.2135.')
+    s.save('4-5-matrix', 'Softmax theo hàng (ảnh tìm chữ) và theo cột (chữ tìm ảnh) cho hai loss khác nhau.')
 
 
 def candidates45():
@@ -691,7 +691,7 @@ def candidates45():
                 s.label(x + w / 2, y - 9, f'{names[k]} {p:.3f}', 11.5, color=MUTED)
             x += w
     s.label(x0 + W / 2, 180, 'ảnh và ba vector cũ không đổi; chỉ mẫu số có thêm một ứng viên', 11.5, color=MUTED)
-    s.save('4-5-candidates', 'Softmax của ảnh 1 trước và sau khi thêm một lớp trùng hướng ảnh (số từ code bài): “bàn” từ 0.731 xuống 0.245, lớp mới thắng với 0.665.')
+    s.save('4-5-candidates', 'Thêm một lớp gần ảnh hơn, xác suất của “bàn” tụt từ 0.73 xuống 0.25.')
 
 
 def ranking45():
@@ -724,7 +724,7 @@ def ranking45():
     s.label(cx[2], 140, 'B', 12.5, color=CLAY, weight=600)
     s.label(cx[1], 172, 'điểm cuối', 11.5, color=MUTED)
     s.label(cx[2], 172, 'độ dốc', 11.5, color=MUTED)
-    s.save('4-5-ranking', 'Log-probability tích lũy qua từng token của hai ứng viên (số từ code bài): tổng log là điểm cuối nên chọn A; mean log là độ dốc từ gốc nên chọn B.')
+    s.save('4-5-ranking', 'Tổng log-prob chọn A; trung bình log-prob chọn B.')
 
 
 def tokens45():
@@ -742,7 +742,7 @@ def tokens45():
         s.mono(x0 + W + 16, y + 16.5, f'mean log {frac}', 12, 'start', MUTED)
         s.mono(x0 + W + 150, y + 16.5, f'PPL {ppl}', 12, 'start', TEXT, 600)
     s.label(320, 156, 'cùng một câu, cùng tổng log −6: chỉ mẫu số khác nhau', 11.5, color=MUTED)
-    s.save('4-5-tokens', 'Cùng một câu và cùng tổng log-probability −6, tokenizer tách 3 hay 6 token cho PPL 7.39 hay 2.72: PPL chỉ so được trong cùng một tokenizer.')
+    s.save('4-5-tokens', 'Cùng tổng log-prob, tách 3 hay 6 token cho perplexity khác nhau.')
 
 
 def shift45():
@@ -762,7 +762,7 @@ def shift45():
     s.label(175, 46, 'prompt: không chấm', 12, color=MUTED)
     s.label(462, 46, 'ứng viên: chỉ chấm hai token này', 12, color=CLAY)
     s.label(320, 176, 'logits ở vị trí j dự đoán token j + 1, nên nhãn dịch đi một vị trí', 11.5, color=MUTED)
-    s.save('4-5-shift', 'Chấm một ứng viên bằng causal language model: logits ở vị trí j dự đoán token j + 1; chỉ cộng log-prob của các token thuộc ứng viên.')
+    s.save('4-5-shift', 'Logits ở vị trí j dự đoán token j + 1; chỉ cộng log-prob của ứng viên.')
 
 
 FIGS45 = {'4-5-contrastive': contrastive45, '4-5-shots': shots45, '4-5-angles': angles45, '4-5-matrix': matrix45,
