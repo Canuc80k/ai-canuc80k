@@ -9,7 +9,6 @@
 
   const ICONS = {
     route: '<path d="M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M8 17h7.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H16"/>',
-    pencil: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
     book: '<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/>',
     quiz: '<rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="m8.5 12.2 2.5 2.5 4.5-5"/>',
     practice: '<rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="m7.5 10 2.5 2.25-2.5 2.25M12.5 14.5h4"/>',
@@ -103,7 +102,6 @@
     theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
     side: saved.side === 'closed' ? 'closed' : 'open',
     wrap: false,
-    filter: 'all',
     // Nhóm đang mở trên thanh bên chỉ sống trong một lần mở trang; mở lại thì chỉ phase của bài đang xem được mở.
     open: new Set()
   };
@@ -190,7 +188,6 @@
 
     $('#side-nav').innerHTML = [
       ['home', 'route', 'Lộ trình', '#/'],
-      ['exercises', 'pencil', 'Bài tập', '#/exercises'],
       ['quiz', 'quiz', 'Trắc nghiệm', '#/quiz'],
       ['practice', 'practice', 'Thực hành', '#/practice'],
       ['resources', 'book', 'Tài liệu', '#/resources']
@@ -228,7 +225,6 @@
     const crumbs = [a('#/', 'Lộ trình', 'data-nav')];
     if (activePhase !== null && D.phases[activePhase]) crumbs.push(a(`#/phase/${activePhase}`, `Phase ${activePhase}`, 'data-nav'));
     if (lesson) crumbs.push(`<span aria-current="page">${nameLabel(lesson)}</span>`);
-    if (r.type === 'exercises') crumbs.splice(0, 1, '<span aria-current="page">Bài tập</span>');
     if (r.type === 'resources') crumbs.splice(0, 1, '<span aria-current="page">Tài liệu</span>');
     if (r.type === 'resource') crumbs.splice(0, 1, a('#/resources', 'Tài liệu', 'data-nav'), `<span aria-current="page">${esc((D.resources.find(x => x.id === r.id) || {}).title || '')}</span>`);
     if (r.type === 'quiz') crumbs.splice(0, crumbs.length, ...quizCrumbs(r));
@@ -270,15 +266,6 @@
         <header class="page-head"><h1>Kết quả tìm kiếm</h1><p class="lead">${hits.length} bài học khớp với “${esc(S.q.trim())}”.</p></header>
         <div class="rows">${hits.map(lessonRow).join('') || empty()}</div>${footer()}</div>`;
     }
-    const firstOpen = D.lessons.find(l => ready(l) && !S.done.has(l.id));
-    const last = findLesson(S.last);
-    const resume = last && ready(last) && !S.done.has(last.id) ? last : firstOpen;
-    const started = S.done.size > 0 || S.last;
-    const resumeBlock = resume ? a(lessonHref(resume.id),
-      `<span class="resume-label">${started ? 'Học tiếp' : 'Bắt đầu'}</span>
-       <span class="resume-title"><span class="resume-id">${resume.id}</span>${esc(resume.title)}</span>
-       ${icon('arrow')}`,
-      'class="resume" data-nav') : '';
     const phaseRow = p => {
       const n = doneIn(p.id);
       return a(`#/phase/${p.id}`,
@@ -291,7 +278,6 @@
       </section>`).join('');
     return `<div class="page page-home">
       <h1 class="home-title">AI Canuc80k</h1>
-      ${resumeBlock}
       <div class="courses" id="roadmap">${courses}</div>
       ${footer()}</div>`;
   }
@@ -610,24 +596,6 @@
   window.addEventListener('resize', () => { clearTimeout(fitTick); fitTick = setTimeout(fitMath, 120); });
   function wrapTables(root) {
     $$(`${root} table`).forEach(t => { if (!t.parentElement.classList.contains('table-wrap')) { const w = document.createElement('div'); w.className = 'table-wrap'; t.replaceWith(w); w.appendChild(t); } });
-  }
-
-  function renderExercises() {
-    const lessons = D.lessons.filter(l => hasHomework(l) && (S.filter === 'all' || String(l.phase) === S.filter) && matches(l));
-    const chips = [['all', 'Tất cả'], ...D.phases.filter(p => D.lessons.some(l => l.phase === p.id && hasHomework(l))).map(p => [String(p.id), `Phase ${p.id}`])]
-      .map(([key, label]) => `<button class="chip${S.filter === key ? ' is-active' : ''}" data-action="filter" data-phase="${key}" aria-pressed="${S.filter === key}">${label}</button>`).join('');
-    const item = (l, k) => (h, i) => a(lessonHref(l.id, 'homework', i + 1, k),
-      `<span class="ex-num">Bài ${i + 1}</span><span class="ex-name">${esc(h.title)}</span>${icon('arrow')}`,
-      'class="ex" data-nav');
-    const groups = lessons.map(l => `<section class="ex-group">
-        <h2 class="ex-head">${a(lessonHref(l.id), `<span class="row-id">${l.id}</span>${esc(l.title)}`, 'data-nav')}</h2>
-        ${l.homework?.length ? `<div class="ex-list">${l.homework.map(item(l, 0)).join('')}</div>`
-          : l.parts.map((m, k) => `${l.parts.length > 1 ? `<p class="ex-part">${esc(m.title)}</p>` : ''}<div class="ex-list">${m.homework.map(item(l, k)).join('')}</div>`).join('')}
-      </section>`).join('');
-    return `<div class="page">
-      <header class="page-head"><h1>Bài tập</h1></header>
-      <div class="chips" role="group" aria-label="Lọc theo phase">${chips}</div>
-      ${groups || empty()}${footer()}</div>`;
   }
 
   function renderResources() {
@@ -949,20 +917,9 @@
         <div class="qz-subs" id="qzl-${lv.id}"${open ? '' : ' hidden'}><div class="qz-subs-grid">${subs}</div></div>
       </section>`;
     }).join('');
-    const byLesson = D.phases.map(p => {
-      const ls = phaseLessons(p.id).filter(l => (LINKS[l.id] || {}).quiz);
-      if (!ls.length) return '';
-      return `<div class="qz-lessons-row"><span class="qz-lessons-phase">${p.id}</span><div class="qz-lessons-chips">${ls.map(l => {
-        const st = QS[`L-${l.id}`], done = st ? Object.keys(st.answers).length : 0, n = LINKS[l.id].quiz;
-        return a(`#/quiz/L-${l.id}`, `<b>${idLabel(l) || 'KT'}</b><span>${n}</span>${done ? `<i style="width:${Math.min(100, Math.round(100 * done / n))}%"></i>` : ''}`,
-          `class="qz-lchip" data-nav title="${esc(nameLabel(l))} · ${esc(l.title)}: ${n} câu"`);
-      }).join('')}</div></div>`;
-    }).join('');
     return `<div class="page">
       <header class="page-head"><h1>Trắc nghiệm</h1></header>
       <div class="phases qz-levels">${levels}</div>
-      <section class="block"><h2 class="block-title">Theo bài</h2>
-        <div class="qz-lessons">${byLesson}</div></section>
       ${footer()}</div>`;
   }
   function renderQuizSet(s) {
@@ -1279,6 +1236,7 @@
   render.token = 0;
   function render() {
     const r = route();
+    if (r.type === 'exercises') { location.replace('#/'); return; }
     const wait = needs(r);
     if (wait.length) {
       const token = ++render.token;
@@ -1296,7 +1254,7 @@
     ++render.token;
     renderChrome(r);
     const view = {home: renderHome, phase: () => renderPhase(r.id), lesson: () => renderLesson(r),
-      exercises: renderExercises, quiz: () => renderQuiz(r), exam: () => renderExam(r), practice: () => renderPractice(r), resources: renderResources, resource: () => renderResource(r.id)}[r.type];
+      quiz: () => renderQuiz(r), exam: () => renderExam(r), practice: () => renderPractice(r), resources: renderResources, resource: () => renderResource(r.id)}[r.type];
     spyHeads = []; spyLinks = [];
     $('#main').innerHTML = view ? view() : notFound();
     const l = r.type === 'lesson' ? findLesson(r.id) : null;
@@ -1459,7 +1417,7 @@
   $('#q').addEventListener('input', e => {
     S.q = e.target.value;
     const r = route();
-    if (['home', 'phase', 'exercises'].includes(r.type)) { render(); $('#q').focus(); return; }
+    if (['home', 'phase'].includes(r.type)) { render(); $('#q').focus(); return; }
     const hits = D.lessons.filter(matches).slice(0, 8);
     $('#search-pop').innerHTML = S.q.trim()
       ? hits.map(l => a(lessonHref(l.id), `<span class="row-id">${idLabel(l)}</span><span>${esc(l.title)}</span>`, 'class="hit" data-nav')).join('') || '<p class="hit-none">Không có kết quả.</p>'
@@ -1468,7 +1426,7 @@
   $('#q').addEventListener('keydown', e => {
     if (e.key === 'Escape') { $('#search-pop').innerHTML = ''; e.target.blur(); }
     if (e.key === 'ArrowDown') { const first = $('#search-pop .hit'); if (first) { e.preventDefault(); first.focus(); } }
-    if (e.key === 'Enter' && !['home', 'phase', 'exercises'].includes(route().type)) {
+    if (e.key === 'Enter' && !['home', 'phase'].includes(route().type)) {
       const first = D.lessons.find(matches);
       if (first) { setQuery(''); location.hash = lessonHref(first.id); }
     }
@@ -1572,7 +1530,6 @@
         sec.querySelector('.quiz')?.scrollIntoView({behavior: 'smooth', block: 'center'});
         break;
       }
-      case 'filter': S.filter = S.filter === act.dataset.phase ? 'all' : act.dataset.phase; render(); break;
       case 'pr-done': {
         const code = act.dataset.code;
         PS.has(code) ? PS.delete(code) : PS.add(code);
