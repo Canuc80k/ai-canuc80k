@@ -3,7 +3,10 @@
 ## Thể thức
 
 - Olympiad khu vực dưới IOAI, thi trực tuyến.
-- Kỳ đầu 13–20/06/2026, chủ nhà Trung Quốc; 129 thí sinh, 18 nước.
+
+## Các kỳ
+
+- 2026 · Trung Quốc, trực tuyến · Việt Nam: 1 vàng
 
 ## Luyện
 

@@ -9,7 +9,7 @@
 ## Các kỳ
 
 - 2024 · Riyadh
-- 2026 · Ljubljana
+- 2026 · Ljubljana · Việt Nam: 2 bạc, 1 đồng
 - 2027 · Việt Nam, 25/02–02/03
 
 ## Luyện
@@ -21,3 +21,4 @@
 
 - [Thể thức IAIO 2026](https://iaio-official.org/competition2026/)
 - [IAIO 2024](https://iaio-official.org/olympiad-2024/)
+- [VietNamNet: IAIO 2026](https://vietnamnet.vn/hoc-sinh-viet-nam-gianh-3-huy-chuong-ngay-lan-dau-tham-du-olympic-ai-quoc-te-2493477.html)
