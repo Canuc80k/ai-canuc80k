@@ -11900,7 +11900,7 @@
    ],
    [
     "0.1",
-    "Kiểm tra đầu vào và nhịp cú pháp",
+    "Cú pháp cơ bản",
     [
      "return nằm trong thân hàm nhưng ngoài vòng for, nên ta thu đủ kết quả trước khi trả về. range(1, 5) có bốn giá trị; quy ước đầu đóng, cuối mở xuất hiện lại trong slicing và NumPy."
     ]
