@@ -11666,7 +11666,8 @@
     "8.2",
     "Mẫu trùng không chỉ là hai hàng giống hệt",
     [
-     "Với dữ liệu thật, có thể chuẩn hóa khoảng trắng rồi băm văn bản, băm bytes ảnh để tìm trùng chính xác, hoặc so embedding để đề xuất cặp gần trùng."
+     "Chuẩn hóa khoảng trắng rồi băm (hash) văn bản.",
+     "So embedding để đề xuất cặp gần trùng."
     ]
    ],
    [
@@ -12554,7 +12555,8 @@
     "8.2",
     "Đường tắt và rò rỉ",
     [
-     "Một đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm. Ví dụ ảnh lớp 1 phần lớn chụp bằng một camera có viền đỏ, và model học viền."
+     "Đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm.",
+     "Ví dụ ảnh lớp 1 phần lớn chụp bằng một camera có viền đỏ, và model học viền."
     ]
    ],
    [
@@ -15151,7 +15153,7 @@
     "8.2",
     "Đường tắt và rò rỉ",
     [
-     "Một đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm."
+     "Đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm."
     ]
    ]
   ]
@@ -17844,7 +17846,7 @@
     "8.2",
     "Đường tắt và rò rỉ",
     [
-     "Một đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm."
+     "Đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm."
     ]
    ]
   ]
@@ -21560,7 +21562,7 @@
     "8.2",
     "Đường tắt và rò rỉ",
     [
-     "Một đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm."
+     "Đường tắt (shortcut) là tín hiệu dễ học, tương quan với nhãn trong dữ liệu đang có, nhưng không phải cơ chế ta muốn model nắm."
     ]
    ]
   ]

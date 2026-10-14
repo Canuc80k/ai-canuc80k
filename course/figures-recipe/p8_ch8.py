@@ -44,7 +44,7 @@ def runtime81():
     for m in range(0, 9):
         s.mono(x0 + m * 60 * sc, 150, f'{m}', 10, 'middle', FAINT)
     s.mono(x0 + 480 * sc + 8, 150, 'phút', 10, 'start', FAINT)
-    s.save('8-1-runtime', 'Máy chấm chạy lại cả notebook: đọc dữ liệu, nạp asset và train 6 phút đã vượt giới hạn 5 phút trước khi tới predict 40 giây mà đội đã bấm giờ.')
+    s.save('8-1-runtime', 'Máy chấm chạy lại cả notebook: đọc dữ liệu, nạp model và train đã vượt 5 phút trước khi tới bước dự đoán.')
 
 
 def logloss81():
@@ -52,7 +52,7 @@ def logloss81():
     ax = s.axes(100, 30, 420, 140, (0, 3), (0, 4.2), xticks=[], yticks=[0, 1, 2, 3, 4], grid=False)
     bars(s, ax, [('nhãn cứng 0/1', 3.45, CLAY), ('hằng 0.5', math.log(2), BLUE), ('0.9 cho lớp đoán', -(.9 * math.log(.9) + .1 * math.log(.1)), GREEN)], fmt='{:.3f}')
     s.label(ax.x - 8, ax.y - 12, 'log loss, 100 mẫu, đúng 90', 11, 'start', FAINT)
-    s.save('8-1-logloss', 'Cùng 90/100 mẫu đúng: nộp nhãn cứng 0/1 bị cắt ở 10⁻¹⁵ nên mỗi mẫu sai tốn 34.5, log loss 3.45, tệ hơn nộp hằng 0.5 (0.693); nộp xác suất 0.9 cho lớp đoán (đúng 90%) tốn 0.325.')
+    s.save('8-1-logloss', 'Nộp nhãn cứng 0/1 cho log loss 3.45; nộp xác suất 0.9 chỉ tốn 0.325.')
 
 
 def normalize81():
@@ -72,7 +72,7 @@ def normalize81():
         s.circle(X(raw), y + 11, 4.5, col, col)
         s.mono(X(raw), y - 10, f'{raw:.2f} → {n:.1f}', 11.5, 'middle', col, 600)
     s.label(320, 192, 'N(s) = 100 (s − b) / (u − b): cùng mức accuracy, khoảng chuẩn hóa khác nhau', 11, color=MUTED)
-    s.save('8-1-normalize', 'Hai bài với baseline khác nhau (số từ code bài): accuracy 0.70 ở A thành 37.5 điểm, 0.75 ở B thành 50 điểm; đạt đúng baseline cho 0, đạt mốc u = 0.90 cho 100.')
+    s.save('8-1-normalize', 'Cùng thang điểm chuẩn hóa: accuracy 0.70 ở bài A được 37.5 điểm, 0.75 ở bài B được 50.')
 
 
 def plans81():
@@ -90,7 +90,7 @@ def plans81():
     s.mono(ax.X(130) + 12, ax.Y(40) + 10, 'duyệt hết: 40', 11, 'start', CLAY, 600)
     s.mono(ax.X(125) - 12, ax.Y(30) - 4, 'tham lam: 30', 11, 'end', TEXT)
     s.label(ax.x - 8, ax.y - 12, 'điểm dự kiến', 11, 'start', FAINT)
-    s.save('8-1-plans', 'Mỗi chấm là một trong 27 kế hoạch (từ code bài); đường bậc thang là điểm tối đa trong từng ngân sách. Ở 130 phút, duyệt hết đạt 40 điểm, tham lam dừng ở 30.')
+    s.save('8-1-plans', 'Điểm tối đa theo ngân sách: ở 130 phút, duyệt hết đạt 40 điểm, tham lam dừng ở 30.')
 
 
 def priority81():
@@ -104,7 +104,7 @@ def priority81():
         s.mono(146 + 300 * v / .72 + 8, y + 14.5, f'{v:.2f}', 12, 'start', TEXT, 600)
         s.mono(146 + 300 * v / .72 + 52, y + 14.5, f'= {p} × {g} / {t}', 10.5, 'start', MUTED)
     s.label(146, 186, 'điểm dự kiến mỗi phút V = p·ΔN / t', 11, 'start', FAINT)
-    s.save('8-1-priority', 'Xếp ba thí nghiệm theo V = p·ΔN/t (số từ code bài): sửa schema 0.72 điểm dự kiến mỗi phút, model mới 0.15, thêm seed 0.07.')
+    s.save('8-1-priority', 'Xếp ba việc theo điểm dự kiến mỗi phút: sửa schema 0.72, model mới 0.15, thêm seed 0.07.')
 
 
 def xyz81():
@@ -126,7 +126,7 @@ def xyz81():
     for m in (0, 15, 30):
         s.mono(x0 + m * sc, 160, f'{m}', 10, 'middle', FAINT)
     s.mono(x0 + 30 * sc + 14, 160, 'phút', 10, 'start', FAINT)
-    s.save('8-1-xyz', 'Ngân sách 30 phút: chọn X vì V cao nhất còn thừa 10 phút không đủ cho việc nào, được 20 điểm dự kiến; làm Y rồi Z dùng đủ 30 phút, được 24.')
+    s.save('8-1-xyz', 'Chọn X vì hiệu quả nhất lại thừa 10 phút vô ích; làm Y rồi Z được nhiều điểm hơn.')
 
 
 def noise81():
@@ -155,7 +155,7 @@ def noise81():
         s.line(ax.X(.01), ax.y, ax.X(.01), ax.y + ax.h, SAND, 1.2, '4 4')
         s.label(ax.x + 120, 16, f'public {n} dòng', 12, color=TEXT, weight=600)
         s.mono(ax.x + 120, 222, f'A ≥ B: {np.mean(G[n] <= 0):.2f} · std {G[n].std():.3f}', 11, 'middle', CLAY, 600)
-    s.save('8-1-noise', 'Chênh accuracy public của B so với A qua 5000 lần rút (từ code bài); vạch đậm là 0, vạch đứt là chênh thật 0.01. Phần cam là những lần public xếp A ngang hoặc hơn B: 33% với 200 dòng, 5% với 1000 dòng.')
+    s.save('8-1-noise', 'Với 200 dòng public, 33% số lần xếp nhầm A ngang hoặc hơn B; với 1000 dòng còn 5%.')
 
 
 FIGS81 = {'8-1-runtime': runtime81, '8-1-logloss': logloss81, '8-1-normalize': normalize81, '8-1-plans': plans81,
@@ -195,7 +195,7 @@ def table82():
     s.label(500, 259, 'id 003 lặp', 11, 'start', CLAY)
     s.label(500, 140, 'signal thiếu', 11, 'start', CLAY)
     s.label(500, 229, 'doc-b: nhãn 0 và 1', 11, 'start', SAND)
-    s.save('8-2-table', 'Bảng tám dòng của bài: id 003 xuất hiện hai lần, một ô signal bị thiếu, và nhóm doc-b (dải vàng) cùng đặc trưng nhưng mang cả nhãn 0 lẫn 1.')
+    s.save('8-2-table', 'Bảng tám dòng: một id lặp, một ô thiếu, một nhóm mang cả hai nhãn.')
 
 
 def hash82():
@@ -218,7 +218,7 @@ def hash82():
     s.label(300, 30, 'lower, gộp khoảng trắng', 10.5, color=MUTED)
     s.label(130, 166, 'hai hash khác nhau', 11, color=CLAY)
     s.label(470, 166, 'cùng một hash', 11, color=GREEN)
-    s.save('8-2-hash', 'Hai bài chỉ khác chữ hoa đầu câu và một dấu cách thừa (··): băm bytes gốc cho hai hash khác nhau; hạ chữ thường và gộp khoảng trắng trước khi băm thì ra cùng một hash.')
+    s.save('8-2-hash', 'Hạ chữ thường và gộp khoảng trắng trước khi băm thì hai bản gần trùng ra cùng hash.')
 
 
 def groups82():
@@ -239,7 +239,7 @@ def groups82():
                 s.box(x, y0 + j * 11, 7.5, 9.5, 'none', CLAY if inval[r] else BLUE, r=1.5, width=0, opacity=.55 if inval[r] else .2)
         s.mono(620, y0 + 22, f'chung {len(both)}', 11, 'end', CLAY if both else GREEN, 600)
     s.label(320, 220, 'mỗi cột là một tài liệu, bốn ô là bốn đoạn; cam là validation', 11, color=MUTED)
-    s.save('8-2-groups', 'Split của bài trên 60 tài liệu × 4 đoạn (từ code): chia ngẫu nhiên theo dòng để 39 tài liệu có đoạn ở cả hai phía; chia theo tài liệu giữ mỗi cột trọn ở một phía.')
+    s.save('8-2-groups', 'Chia ngẫu nhiên theo dòng để nhiều tài liệu nằm ở cả hai phía; chia theo tài liệu thì không.')
 
 
 def sizes82():
@@ -257,7 +257,7 @@ def sizes82():
     s.line(112 + 145, 28, 112 + 145, 136, FAINT, 1, '4 4')
     s.mono(112 + 145, 152, '25% số dòng = 145', 10.5, 'middle', FAINT)
     s.label(320, 178, 'cùng 10 tài liệu validation; tài liệu dài 100 đoạn, ngắn 5 đoạn', 11, color=MUTED)
-    s.save('8-2-sizes', 'GroupShuffleSplit chọn 10 trong 40 tài liệu: nếu cả 10 là tài liệu ngắn thì validation có 50 dòng; nếu gồm 4 tài liệu dài và 6 ngắn thì có 430 dòng, xa mốc 145 dòng.')
+    s.save('8-2-sizes', 'Chia theo tài liệu dài ngắn khác nhau làm số dòng validation dao động rất mạnh.')
 
 
 def domains82():
@@ -275,7 +275,7 @@ def domains82():
             ax.dots(X[:n][m, 0], jy[m], col, 2.2, col, .55)
         s.label(ax.x + 115, 18, nm, 11.5, color=TEXT, weight=600)
     s.label(40, 30, 'shortcut', 10.5, 'start', FAINT)
-    s.save('8-2-domains', 'Dữ liệu tự sinh của bài (300 điểm mỗi miền, cam là nhãn 1): signal tách hai lớp như nhau ở cả hai miền; shortcut (±1, rải dọc cho dễ nhìn) trùng nhãn ở miền nguồn nhưng bị đảo ở miền mới.')
+    s.save('8-2-domains', 'Shortcut trùng nhãn ở miền nguồn nhưng bị đảo ở miền mới; signal thì giữ nguyên.')
 
 
 def shift82():
@@ -294,7 +294,7 @@ def shift82():
     s.box(530, 84, 12, 12, 'none', CLAY, r=2, width=0, opacity=.5)
     s.label(548, 90, 'miền mới', 11, 'start', TEXT)
     s.label(ax.x - 8, ax.y - 12, 'accuracy', 11, 'start', FAINT)
-    s.save('8-2-shift', 'Ablation của bài (số từ output): dùng cả shortcut đạt 0.970 trong miền nhưng rơi còn 0.383 khi quan hệ bị đảo; chỉ dùng signal đạt 0.830 và giữ 0.863 ở miền mới.')
+    s.save('8-2-shift', 'Dùng shortcut đạt 0.97 trong miền nhưng chỉ 0.38 ở miền mới; chỉ dùng signal giữ 0.86.')
 
 
 def slices82():
@@ -314,7 +314,7 @@ def slices82():
     s.mono(490, 146, 'trung bình', 11, 'start', MUTED)
     s.mono(490, 162, 'hai miền 0.55', 11, 'start', MUTED)
     s.label(250, 186, 'ô đặc là đoán đúng; hàng cuối, khung cam là 10 ảnh camera mới', 11, color=MUTED)
-    s.save('8-2-validation-slices', 'Mỗi ô là một mẫu validation, ô đặc là đúng: camera cũ đúng 81/90, camera mới (khung cam) chỉ 2/10; accuracy chung 0.83 che khuất nhóm 0.20.')
+    s.save('8-2-validation-slices', 'Camera cũ đúng 81/90, camera mới chỉ 2/10; accuracy chung 0.83 che khuất nhóm yếu.')
 
 
 def se82():
@@ -328,7 +328,7 @@ def se82():
         s.circle(ax.X(p), ax.Y(y), 5, col, col)
         s.label(ax.x - 10, ax.Y(y), nm, 11.5, 'end', TEXT)
         s.mono(ax.X(hi) + 8, ax.Y(y) - 12, f'{p:.2f} ± {2 * se:.2f}', 11, 'start', col, 600)
-    s.save('8-2-se', 'Khoảng accuracy ± 2 sai số chuẩn: camera cũ 0.90 ± 0.06 với 90 mẫu, camera mới 0.20 ± 0.25 với 10 mẫu, trải từ gần 0 đến khoảng 0.45.')
+    s.save('8-2-se', 'Nhóm 10 mẫu có khoảng sai số rất rộng: 0.20 ± 0.25.')
 
 
 FIGS82 = {'8-2-table': table82, '8-2-hash': hash82, '8-2-groups': groups82, '8-2-sizes': sizes82, '8-2-domains': domains82,
@@ -370,7 +370,7 @@ def partition83():
     s.label(70 + 1 * 70, 118, 'A gần hơn: 0, 1, 2', 11, color=BLUE)
     s.label(70 + 3 * 70, 138, 'hòa: 3', 11, color=SAND)
     s.label(70 + 5.5 * 70, 118, 'B gần hơn: 4, 5, 6, 7', 11, color=CLAY)
-    s.save('8-3-partition', 'So A tại 0 với B tại 6 trên biểu diễn public (từ code bài): trung điểm 3 cho hòa, ba ứng viên 0, 1, 2 nghiêng về A, bốn ứng viên 4 đến 7 nghiêng về B.')
+    s.save('8-3-partition', 'So A với B chia các ứng viên thành hai phía theo trung điểm.')
 
 
 def split83():
@@ -390,7 +390,7 @@ def split83():
                 x += n[r] * 40
         s.mono(124 + 8 * 40 + 20, y + 13.5, f'E = {e:.2f}', 12, 'start', CLAY if q == 6 else TEXT, 600 if q == 6 else 400)
     s.label(124 + 160, 210, 'ba nhóm phản hồi: A thắng, hòa, B thắng (champion 0)', 11, color=MUTED)
-    s.save('8-3-split', 'Champion 0, tám ứng viên đồng xác suất (từ code bài): đề xuất 1 chia thành 1 và 7 nên còn 6.25 ứng viên kỳ vọng; đề xuất 6 chia 3, 1, 4, còn 3.25.')
+    s.save('8-3-split', 'Đề xuất chia đều các ứng viên thì loại được nhiều hơn.')
 
 
 def turns83():
@@ -404,7 +404,7 @@ def turns83():
     ax.hline(np.mean(t), CLAY, 1.2, '4 4')
     s.mono(ax.X(8) + 8, ax.Y(np.mean(t)), f'mean {np.mean(t):.3f}', 11, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'số lượt', 11, 'start', FAINT)
-    s.save('8-3-turns', 'Player nhỏ của bài chơi đủ tám hidden khi public trùng judge (từ code): mọi ván đều giải được trong 1 đến 3 lượt, trung bình 2.375.')
+    s.save('8-3-turns', 'Player giải mọi ván trong 1 đến 3 lượt, trung bình 2.375.')
 
 
 def mismatch83():
@@ -422,7 +422,7 @@ def mismatch83():
     s.label(110 + 6 * 64, 176, 'hidden 6', 11, color=CLAY)
     s.label(110 + 2 * 64, 86, 'lọc cứng giữ 0–4', 11, color=BLUE)
     s.label(110 + 6.5 * 64, 86, 'bị loại', 11, color=FAINT)
-    s.save('8-3-mismatch', 'Judge đổi chỗ 4 và 5 so với public (từ code bài): judge thấy A = 4 gần hidden 6 hơn nên trả “A thắng”; public dự đoán ngược lại, nên lọc cứng chỉ giữ 0 đến 4 và loại mất hidden 6.')
+    s.save('8-3-mismatch', 'Judge khác biểu diễn public một chút, nên lọc cứng loại mất đáp án đúng.')
 
 
 def penalty83():
@@ -438,7 +438,7 @@ def penalty83():
     s.mono(ax.X(6.5), ax.Y(1) - 12, 'hidden', 10.5, 'middle', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'penalty', 11, 'start', FAINT)
     s.label(300, 176, 'hidden bị phạt 1 nhưng vẫn còn trong ranking', 11, color=MUTED)
-    s.save('8-3-penalty', 'Ràng buộc mềm sau phản hồi “A thắng” (từ code bài, m = 0): ứng viên 5, 6, 7 bị phạt 1 thay vì bị xóa, nên hidden 6 vẫn có thể được hỏi ở lượt sau.')
+    s.save('8-3-penalty', 'Lọc mềm chỉ phạt ứng viên mâu thuẫn thay vì xóa, nên đáp án đúng vẫn còn.')
 
 
 def ablation83():
@@ -453,7 +453,7 @@ def ablation83():
         s.mono(154 + sc * 70 + 8, y + 14.5, f'{sc:.2f}', 12, 'start', TEXT, 600)
         s.mono(610, y + 14.5, f'{solved / 2400:.0%}', 11.5, 'end', CLAY if solved < 2400 else MUTED)
     s.line(154 + 4.5 * 70, 32, 154 + 4.5 * 70, 222, FAINT, 1, '3 3')
-    s.save('8-3-ablation', 'Bảng ablation của bài trên 2400 ván (số từ output): lọc cứng với truy vấn cân đối chỉ giải 60% ván và đạt 4.92, tệ hơn quét 4.50; chỉ khi có cả lọc mềm lẫn truy vấn cân đối điểm mới xuống 2.84.')
+    s.save('8-3-ablation', 'Chỉ khi có cả lọc mềm lẫn truy vấn cân đối, số lượt mới giảm rõ.')
 
 
 def field83():
@@ -493,7 +493,7 @@ def field83():
     s.mono(440, 162, 'xanh: kéo vào', 11, 'start', BLUE)
     s.mono(440, 196, f'ước lượng ({est[0]:.2f}, {est[1]:.2f})', 11, 'start', CLAY, 600)
     s.mono(440, 214, 'nguồn thật (0.35, −0.20)', 11, 'start', MUTED)
-    s.save('8-3-field', 'Trường lực tự sinh của bài với f(r) = sin 5r (vẽ thưa, mỗi mũi tên cùng độ dài): lực đổi chiều theo khoảng cách nhưng mọi mũi tên vẫn nằm trên đường qua nguồn; bình phương tối thiểu tìm lại nguồn (0.35, −0.20).')
+    s.save('8-3-field', 'Mọi mũi tên lực nằm trên đường qua nguồn; bình phương tối thiểu tìm lại nguồn.')
 
 
 FIGS83 = {'8-3-partition': partition83, '8-3-split': split83, '8-3-turns': turns83, '8-3-mismatch': mismatch83,
@@ -536,7 +536,7 @@ def voting84():
         s.mono(xh + 205, y + ch / 2 + .5, str(soft[i]), 13, 'middle', CLAY if diff else TEXT, 600 if diff else 400)
     s.box(x0 - 70, 36 - 3, 3 * (cw + g) + 70 + 230, ch + 6, CLAY, 'none', r=6, width=1.2, dash='4 4')
     s.label(320, 214, 'ô cam: nghiêng về lớp 1; mẫu 1 là chỗ hai cách gộp khác nhau', 11, color=MUTED)
-    s.save('8-4-voting', 'Bảng bốn mẫu của bài (từ code): ở mẫu 1, hai model hơi nghiêng về lớp 1 nên hard voting chọn 1, nhưng model thứ ba rất chắc lớp 0 kéo trung bình xác suất xuống 0.343.')
+    s.save('8-4-voting', 'Bỏ phiếu chọn lớp 1; trung bình xác suất chọn lớp 0 vì một model rất chắc.')
 
 
 def logit84():
@@ -556,7 +556,7 @@ def logit84():
     s.mono(ax.X(6) + 8, ax.Y(pbar), f'mean p = {pbar:.3f}', 11, 'start', GREEN, 600)
     s.mono(ax.X(5), ax.Y(sig(5)) + 16, '+5', 10.5, 'middle', BLUE)
     s.mono(ax.X(-2), ax.Y(sig(-2)) - 14, '−2, −2', 10.5, 'middle', BLUE)
-    s.save('8-4-logit', 'Ba logit +5, −2, −2: trung bình logit là 1/3, qua sigmoid được 0.583 (lớp 1); trung bình ba xác suất 0.993, 0.119, 0.119 là 0.411 (lớp 0), vì sigmoid ép logit +5 về gần 1.')
+    s.save('8-4-logit', 'Trung bình logit và trung bình xác suất có thể cho hai lớp khác nhau.')
 
 
 def rank84():
@@ -579,7 +579,7 @@ def rank84():
             s.circle(x, yy, 6, col, col, 0, .7)
         s.mono(x0 + W + 16, yy + .5, f'AUC {auc}', 11.5, 'start', GREEN if r == 3 else TEXT, 600 if r == 3 else 400)
     s.label(x0 + W / 2, 236, 'xanh: mẫu âm, cam: mẫu dương; mỗi dòng dùng thang riêng của nó', 11, color=MUTED)
-    s.save('8-4-rank', 'Sáu mẫu của bài trên bốn thang điểm: A và B mỗi model sai một cặp; trung bình điểm thô để B lấn át nên vẫn sai cặp của B; trung bình hạng tách hẳn ba mẫu dương khỏi ba mẫu âm, AUC 1.000.')
+    s.save('8-4-rank', 'Trung bình điểm thô để một model lấn át; trung bình hạng thì không.')
 
 
 def correlation84():
@@ -592,7 +592,7 @@ def correlation84():
         ax.hline(rho, col, .8, '3 3') if rho else None
         s.mono(ax.X(20) + 8, ax.Y(ratio[-1]), f'ρ = {rho:g}', 11, 'start', col, 600)
     s.label(ax.x - 8, ax.y - 12, 'Var(trung bình) / σ²', 11, 'start', FAINT)
-    s.save('8-4-correlation', 'Phương sai của sai số trung bình theo số model, theo công thức của bài: ρ = 0 giảm như 1/K; ρ = 0.5 và ρ = 0.9 dừng ở mức ρ (vạch đứt) dù thêm bao nhiêu model.')
+    s.save('8-4-correlation', 'Thêm model chỉ kéo phương sai sai số về mức sàn ρ; muốn thấp hơn phải giảm tương quan.')
 
 
 def vote84():
@@ -608,7 +608,7 @@ def vote84():
         s.mono(ax.X(15) + 8, ax.Y(v[-1]), f'p = {p}: {v[-1]:.3f}', 11, 'start', col, 600)
     s.mono(ax.X(3) + 8, ax.Y(maj(.7, 3)) + 14, '0.784', 10.5, 'start', GREEN)
     s.label(ax.x - 8, ax.y - 12, 'accuracy của bỏ phiếu đa số', 11, 'start', FAINT)
-    s.save('8-4-vote', 'Bỏ phiếu đa số của K model sai độc lập: mỗi model đúng 70% thì 3 model đạt 0.784, 15 model đạt 0.950; mỗi model chỉ đúng 45% thì thêm model làm bỏ phiếu tệ đi, 15 model còn 0.346.')
+    s.save('8-4-vote', 'Model đúng 70%: càng nhiều model, bỏ phiếu càng tốt. Model đúng 45%: càng tệ.')
 
 
 def moons84():
@@ -622,7 +622,7 @@ def moons84():
             ax.dots(X[m, 0], X[m, 1], col, 2.2 if k == 0 else 2.8, col, .6)
         s.label(ax.x + 90, 20, nm, 12, color=TEXT, weight=600)
     s.label(320, 236, 'cùng make_moons, chia một lần: tune chọn trọng số, audit chỉ mở cho phương án đã khóa', 11, color=MUTED)
-    s.save('8-4-moons', 'Dữ liệu make_moons của bài (từ code): 360 mẫu để fit model, 120 mẫu tune để chọn trọng số, 120 mẫu audit giữ riêng; hai bán nguyệt chồng lên nhau ở giữa, nơi mọi model đều dễ sai.')
+    s.save('8-4-moons', 'Dữ liệu chia ba phần: fit model, chọn trọng số, và giữ riêng để đánh giá.')
 
 
 def tune84():
@@ -649,7 +649,7 @@ def tune84():
     s.mono(480, 118, 'tune 0.169 · audit 0.211', 10.5, 'start', CLAY)
     s.mono(480, 152, 'đều (1/3, 1/3, 1/3)', 11, 'start', TEXT)
     s.mono(480, 170, 'tune 0.219 · audit 0.238', 10.5, 'start', MUTED)
-    s.save('8-4-tune-audit', 'Lưới 15 bộ trọng số của bài trên tam giác ba model (đỉnh là model đơn); số dưới mỗi chấm là log loss tune, chấm đậm hơn là thấp hơn. Bộ được chọn (0, 0.25, 0.75) đạt 0.169 trên tune và 0.211 trên audit.')
+    s.save('8-4-tune-audit', 'Trọng số chọn trên tập tune đạt 0.169, trên tập giữ riêng 0.211.')
 
 
 def extreme84():
@@ -672,7 +672,7 @@ def extreme84():
     wrong &= (p >= .5) != y
     s.mono(ax.X(.5), 226, f'{int(((p == 0) | (p == 1)).sum())} / 120 xác suất đúng 0 hoặc 1; {int(wrong.sum())} trong số đó sai', 11, 'middle', CLAY)
     s.label(ax.x - 8, ax.y - 12, 'số mẫu', 11, 'start', FAINT)
-    s.save('8-4-extreme', 'Xác suất lớp 1 của kNN (15 hàng xóm) trên 120 mẫu tune, từ code bài: 71 mẫu nhận đúng 0 hoặc 1, và một mẫu tự tin sai một mình góp khoảng 36 trên tổng 50.4 của log loss.')
+    s.save('8-4-extreme', 'kNN cho nhiều xác suất đúng 0 hoặc 1; một mẫu tự tin sai chiếm phần lớn log loss.')
 
 
 def seeds84():
@@ -694,7 +694,7 @@ def seeds84():
     for t in (.20, .21, .22, .23, .24):
         s.mono(X(t), 172, f'{t:.2f}', 10, 'middle', FAINT)
     s.mono(x0 + W / 2, 192, 'log loss tune', 10, 'middle', FAINT)
-    s.save('8-4-seeds', 'Log loss tune của năm seed forest (số từ output bài) trải 0.031, lớn hơn sáu lần mức chênh 0.005 giữa equal weights và forest; trung bình năm seed 0.219 nằm sát trung bình các bản đơn.')
+    s.save('8-4-seeds', 'Chênh lệch giữa các seed lớn hơn chênh lệch giữa hai cách gộp.')
 
 
 def stacking84():
@@ -716,7 +716,7 @@ def stacking84():
     s.label(548, 110, 'OOF', 11, 'start', TEXT)
     s.mono(548, 126, 'tune 0.176', 10.5, 'start', MUTED)
     s.label(ax.x - 8, ax.y - 14, 'hệ số của meta-model', 11, 'start', FAINT)
-    s.save('8-4-stacking', 'Hệ số của meta-model logistic regression (số từ output bài): học trên dự đoán in-sample, cây quyết định đúng 100% trên train nhận hệ số 4.85; học trên OOF, hệ số của cây còn 1.73 và log loss tune tốt hơn.')
+    s.save('8-4-stacking', 'Meta-model học trên dự đoán in-sample tin quá mức vào cây quyết định; học trên OOF thì không.')
 
 
 FIGS84 = {'8-4-voting': voting84, '8-4-logit': logit84, '8-4-rank': rank84, '8-4-correlation': correlation84, '8-4-vote': vote84,
@@ -746,7 +746,7 @@ def pipeline85():
         if i < 5:
             s.arrow(x + w + 1, 66, x + w + g - 1, 66, MUTED, 1.2)
     s.label(320, 122, 'tiến trình mới không thấy biến nào trong RAM của notebook', 11, color=CLAY)
-    s.save('8-5-pipeline', 'Đường chạy của bài: fit pipeline, lưu artifact, nạp ở một tiến trình mới, dự đoán với cột chọn theo tên, ghi CSV rồi đọc lại, cuối cùng ghi hash của đúng file sẽ nộp.')
+    s.save('8-5-pipeline', 'Fit, lưu, nạp ở tiến trình mới, dự đoán, ghi CSV, đọc lại, ghi hash file nộp.')
 
 
 def colorder85():
@@ -758,7 +758,7 @@ def colorder85():
         s.box(152, y, 400 * v, 26, 'none', GREEN if k == 0 else BLUE, r=4, width=0, opacity=.45 if k == 0 else .25)
         s.mono(152 + 400 * v + 8, y + 13.5, f'{v:.3f}', 11.5, 'start', TEXT, 600 if k == 0 else 400)
     s.label(352, 256, 'cùng model, cùng ma trận (30, 3); chỉ đổi thứ tự cột', 11, color=MUTED)
-    s.save('8-5-column-order', 'Accuracy validation của cùng một model theo sáu thứ tự cột (số từ output bài): chỉ thứ tự x0, x1, x2 lúc fit cho 0.933; các thứ tự khác không báo lỗi nhưng tụt tới 0.633.')
+    s.save('8-5-column-order', 'Đổi thứ tự cột không báo lỗi nhưng accuracy tụt từ 0.93 xuống 0.63.')
 
 
 def refit85():
@@ -781,7 +781,7 @@ def refit85():
             s.circle(x, y, 6, col, col, 0, .7)
             s.mono(x, y - 14, ids[i], 10, 'middle', MUTED)
             s.mono(x, y + 16, f'{v:+.2f}', 10, 'middle', col)
-    s.save('8-5-refit', 'Ba dòng test của bài: chuẩn hóa x0 bằng thống kê train (đã lưu trong pipeline) và bằng thống kê tính lại trên chính ba dòng test cho các giá trị khác hẳn, nên cùng một mẫu nhận đầu vào khác.')
+    s.save('8-5-refit', 'Chuẩn hóa test bằng thống kê của chính test cho đầu vào khác hẳn.')
 
 
 def pickle85():
@@ -803,7 +803,7 @@ def pickle85():
     s.mono(436, 104, "AttributeError:", 10.5, 'start', CLAY, 600)
     s.mono(436, 122, "no 'clip_log'", 10.5, 'start', CLAY)
     s.label(320, 182, 'pickle ghi tên hàm, không ghi thân hàm', 11.5, color=MUTED)
-    s.save('8-5-pickle', 'Pickle của FunctionTransformer(clip_log) chỉ chứa tên __main__.clip_log, không chứa thân hàm; tiến trình máy chấm không có hàm ấy nên dừng với AttributeError.')
+    s.save('8-5-pickle', 'Pickle chỉ lưu tên hàm, không lưu thân hàm; máy chấm không có hàm ấy nên lỗi.')
 
 
 def hash85():
@@ -821,7 +821,7 @@ def hash85():
         s.mono(200, y + 22, h[:32], 11, 'start', col)
         s.mono(200, y + 40, h[32:], 11, 'start', col)
     s.label(320, 186, 'hash khác hẳn dù file chỉ khác một chữ số', 11, color=MUTED)
-    s.save('8-5-hash', 'SHA-256 của CSV trong bài và của cùng file chỉ đổi chữ số cuối của xác suất cuối: hai hash khác hẳn nhau, nên hash nhận diện đúng từng byte của file đã kiểm, không nói gì về chất lượng.')
+    s.save('8-5-hash', 'Đổi một chữ số làm hash khác hẳn: hash nhận diện file, không đo chất lượng.')
 
 
 def seedsplit85():
@@ -840,7 +840,7 @@ def seedsplit85():
         sel = sorted(arr[va])
         s.mono(164, y + 44, 'validation: ' + ', '.join(sel), 10.5, 'start', CLAY)
     s.label(320, 190, 'cùng random_state = 85 chọn cùng vị trí; mẫu ở các vị trí ấy đã khác', 11, color=MUTED)
-    s.save('8-5-seedsplit', 'Mười mẫu đọc theo hai thứ tự, cùng train_test_split với random_state = 85: các vị trí được chọn giống nhau nhưng mẫu nằm ở đó khác, nên validation gồm những mẫu khác.')
+    s.save('8-5-seedsplit', 'Cùng random_state nhưng dữ liệu đọc theo thứ tự khác cho validation khác.')
 
 
 def sessions85():
@@ -865,7 +865,7 @@ def sessions85():
     for k, nm in enumerate(names):
         s.box(x0 + k * 100, 214, 12, 12, 'none', cols[k], r=2, width=0, opacity=.55)
         s.label(x0 + k * 100 + 18, 220, nm, 11, 'start', TEXT)
-    s.save('8-5-sessions', 'Ba lịch 360 phút từ bảng nhật ký của bài; tam giác là phút đóng thí nghiệm. Buổi 2 đóng ở phút 275 để chạy lại 70 phút; buổi 1 đóng ở phút 325, không chạy lại và dùng 35 phút cuối để sửa file.')
+    s.save('8-5-sessions', 'Buổi 2 đóng thí nghiệm sớm để kịp chạy lại; buổi 1 thì không.')
 
 
 def causes85():
@@ -878,7 +878,7 @@ def causes85():
         s.mono(184 + m * 9 + 8, y + 13.5, f'{m} phút', 11.5, 'start', TEXT, 600)
         s.label(184 + m * 9 + 70, y + 13, grp, 11, 'start', col)
     s.label(320, 172, 'quy trình 55 trên 60 phút: luyện nạp ở môi trường trống và readback trước', 11, color=MUTED)
-    s.save('8-5-causes', 'Ba lần mất giờ trong nhật ký: hai lỗi quy trình (35 và 20 phút) chiếm 55 trên 60 phút, lỗi kiến thức chỉ 5 phút; việc luyện tiếp nên bắt đầu từ quy trình.')
+    s.save('8-5-causes', 'Lỗi quy trình chiếm 55 trên 60 phút mất; lỗi kiến thức chỉ 5 phút.')
 
 
 FIGS85 = {'8-5-pipeline': pipeline85, '8-5-column-order': colorder85, '8-5-refit': refit85, '8-5-pickle': pickle85,
