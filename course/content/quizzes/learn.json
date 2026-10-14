@@ -356,7 +356,8 @@
     "1.3",
     "Group split: kiểm giao của tập người",
     [
-     "GroupKFold nhận thêm mảng groups và bảo đảm mỗi nhóm, như mọi ảnh của một bệnh nhân hay mọi bản ghi của một học sinh, chỉ nằm ở một phía."
+     "GroupKFold nhận thêm mảng groups và bảo đảm mỗi nhóm chỉ nằm ở một phía.",
+     "Nhóm có thể là mọi ảnh của một bệnh nhân, mọi bản ghi của một học sinh."
     ]
    ]
   ]
@@ -1842,7 +1843,8 @@
     "1.4",
     "Cùng Pipeline, fit lại trong mỗi fold",
     [
-     "Muốn dò tham số của một bước trong Pipeline, gọi bằng tên bước, hai dấu gạch dưới, rồi tên tham số, như regressor__fit_intercept; make_pipeline tự đặt tên bước theo tên lớp viết thường, nên tham số C của SVC là svc__C."
+     "Muốn chỉnh tham số của một bước bên trong Pipeline, ghi tên bước, hai dấu gạch dưới, rồi tên tham số, như regressor__fit_intercept.",
+     "Nếu tạo Pipeline bằng make_pipeline, tên bước là tên lớp viết thường, nên tham số C của SVC là svc__C."
     ]
    ]
   ]
@@ -1856,7 +1858,7 @@
     "1.4",
     "Đọc trạng thái đã học và thử danh mục mới",
     [
-     "handle_unknown='ignore' đưa danh mục chưa thấy thành toàn số 0 trong nhóm cột ấy.",
+     "Còn buổi 'toi' chưa từng có trong train: nhờ handle_unknown='ignore', nó được mã hóa thành toàn số 0 ở hai cột one-hot.",
      "Không đặt tham số này thì OneHotEncoder báo lỗi khi gặp danh mục lạ."
     ]
    ]
@@ -1878,7 +1880,9 @@
     "1.4",
     "Đọc trạng thái đã học và thử danh mục mới",
     [
-     "Gọi pd.get_dummies riêng cho train và test còn tệ hơn: train có city_HN, city_HCM, city_DN, test có city_HN, city_HUE, hai bảng lệch cột; hãy fit một bộ mã hóa trên train rồi transform test."
+     "Một lỗi hay gặp khác là gọi pd.get_dummies riêng cho train và test.",
+     "Train có các thành phố HN, HCM, DN, test có HN, HUE, nên hai bảng ra hai bộ cột khác nhau.",
+     "Cách đúng là học một bộ mã hóa trên train rồi dùng nó để biến đổi test."
     ]
    ]
   ]
@@ -3278,7 +3282,7 @@
     "1.3",
     "Stratified split giữ lớp, không giữ người",
     [
-     "Stratified split cố gắng giữ tỉ lệ lớp ở các phần; với train_test_split chỉ cần thêm stratify=y."
+     "Stratified split chia sao cho tỉ lệ các lớp ở mỗi phần gần bằng tỉ lệ của cả bảng; với train_test_split chỉ cần thêm stratify=y."
     ]
    ]
   ]
@@ -3292,14 +3296,14 @@
     "1.4",
     "Tiền xử lý cũng là một phần của mô hình",
     [
-     "Trong scikit-learn: scaler.fit_transform(X_train) rồi scaler.transform(X_test); gọi fit_transform trên test là học lại μ, σ từ chính test."
+     "Trong scikit-learn: scaler.fit_transform(X_train) rồi scaler.transform(X_test); gọi fit_transform trên test là học lại $\\mu$, $\\sigma$ từ chính test."
     ]
    ],
    [
     "1.4",
     "Data leakage: thông tin vượt qua ranh giới",
     [
-     "Một phép biến đổi dùng feature của test, dù không dùng nhãn, vẫn có thể làm sai phép đánh giá: lúc dùng thật, dữ liệu mới chưa tồn tại khi fit."
+     "Dùng feature của test để học bước tiền xử lý, dù không đụng tới nhãn, vẫn làm sai phép đánh giá: lúc dùng thật, dữ liệu mới chưa có khi ta học."
     ]
    ]
   ]
@@ -4843,7 +4847,7 @@
     "1.4",
     "Cùng Pipeline, fit lại trong mỗi fold",
     [
-     "Hàm chấm của scikit-learn theo quy ước điểm càng lớn càng tốt, nên MAE được đưa vào dưới tên neg_mean_absolute_error, tức MAE mang dấu âm; lấy -scores để đọc lại MAE."
+     "Như ở bài 1.2, scikit-learn trả MAE mang dấu âm (neg_mean_absolute_error), nên lấy -scores để đọc."
     ]
    ]
   ]
@@ -6495,7 +6499,7 @@
     "1.3",
     "Group split: kiểm giao của tập người",
     [
-     "Để người đã thấy lẫn vào validation thì điểm cao hơn thực tế, vì mô hình nhận ra người quen chứ chưa chắc làm tốt với người lạ."
+     "Nếu để người đã thấy lẫn vào validation, điểm sẽ cao hơn thực tế: model nhận ra người quen chứ chưa chắc làm tốt với người lạ."
     ]
    ]
   ]
@@ -6509,7 +6513,7 @@
     "1.3",
     "Thời gian: quá khứ học, tương lai chấm",
     [
-     "Xáo trộn có thể cho train chứa tháng sau validation. Mô hình khi ấy được học từ một tương lai mà lúc sử dụng chưa tồn tại."
+     "Nếu xáo trộn rồi chia, train có thể chứa các tuần nằm sau validation: model được học từ tương lai, điều không thể có lúc dùng thật."
     ]
    ]
   ]
@@ -7145,7 +7149,7 @@
     "1.3",
     "Group split: kiểm giao của tập người",
     [
-     "Khung hình liền nhau của một video gần như giống hệt nhau, nên chia theo video chứ không xáo từng khung."
+     "Các khung hình liền nhau của một video gần như giống hệt nhau: chia theo video, không xáo từng khung."
     ]
    ]
   ]
@@ -9466,7 +9470,7 @@
     "1.3",
     "K-fold và dự đoán out-of-fold",
     [
-     "Vì mỗi mẫu đều được chấm một lần, ước lượng ổn định hơn chia một lần, nhất là khi dữ liệu ít; đổi lại phải huấn luyện $K$ lần, nên với mô hình lớn và dữ liệu nhiều người ta thường chỉ chia một lần."
+     "Đổi lại phải huấn luyện $K$ lần; với model lớn và dữ liệu nhiều, người ta thường chỉ chia một lần."
     ]
    ]
   ]
@@ -9540,7 +9544,8 @@
     "1.3",
     "Stratified split giữ lớp, không giữ người",
     [
-     "Dữ liệu xếp sẵn theo lớp, như 800 dòng lớp A rồi 200 dòng lớp B, mà cắt theo vị trí thì train không có mẫu lớp B nào; khi không có yếu tố thời gian, phải xáo trộn trước khi chia."
+     "Tệ hơn nữa là dữ liệu xếp sẵn theo lớp, như 800 dòng lớp A rồi 200 dòng lớp B: cắt theo vị trí thì một phía không có lớp B nào.",
+     "Vì vậy, khi dữ liệu không có yếu tố thời gian, phải xáo trộn trước khi chia."
     ]
    ]
   ]
@@ -13144,7 +13149,7 @@
     "1.3",
     "K-fold và dự đoán out-of-fold",
     [
-     "Tại đây mục tiêu là kiểm chỉ số và tạo dự đoán out-of-fold (OOF), tức dự đoán mỗi mẫu từ một mô hình chưa học mẫu đó."
+     "Ghép dự đoán của ba vòng lại được một dự đoán cho mỗi mẫu, đều do model chưa học mẫu đó tạo ra; gọi là dự đoán out-of-fold (OOF)."
     ]
    ],
    [
@@ -15365,8 +15370,9 @@
     "1.3",
     "K-fold và dự đoán out-of-fold",
     [
-     "Với các mẫu độc lập, K-fold chia dữ liệu thành $K$ phần. Mỗi vòng học trên $K-1$ phần rồi chấm phần còn lại.",
-     "Vì mỗi mẫu đều được chấm một lần, ước lượng ổn định hơn chia một lần, nhất là khi dữ liệu ít; đổi lại phải huấn luyện $K$ lần, nên với mô hình lớn và dữ liệu nhiều người ta thường chỉ chia một lần."
+     "K-fold cross-validation chia dữ liệu thành $K$ phần bằng nhau, gọi là fold.",
+     "Làm $K$ vòng: mỗi vòng giữ một fold để chấm và học trên $K - 1$ fold còn lại.",
+     "So với chia một lần, kết quả ổn định hơn vì dùng hết dữ liệu để chấm, nhất là khi dữ liệu ít."
     ]
    ]
   ]
@@ -15380,14 +15386,15 @@
     "1.4",
     "Data leakage: thông tin vượt qua ranh giới",
     [
-     "Bước nào học từ nhãn cũng phải nằm trong từng fold: chọn 50 đặc trưng tương quan nhất với nhãn trên toàn bảng rồi mới kiểm định chéo có thể cho 92%, trong khi chọn lại bên trong từng fold chỉ còn 78%."
+     "Bước nào học từ nhãn càng phải làm lại trong từng fold.",
+     "Ví dụ chọn 50 feature tương quan mạnh nhất với nhãn trên cả bảng rồi mới cross-validation có thể cho 92%, trong khi chọn lại trong từng fold chỉ còn 78%."
     ]
    ],
    [
     "1.4",
     "Cùng Pipeline, fit lại trong mỗi fold",
     [
-     "Công cụ tạo bản mô hình mới và fit từ train của từng fold."
+     "Ở mỗi fold, hàm này tạo một bản Pipeline mới và fit mọi bước chỉ trên train của fold đó."
     ]
    ]
   ]
@@ -15667,7 +15674,7 @@
     "1.4",
     "Data leakage: thông tin vượt qua ranh giới",
     [
-     "Một phép biến đổi dùng feature của test, dù không dùng nhãn, vẫn có thể làm sai phép đánh giá: lúc dùng thật, dữ liệu mới chưa tồn tại khi fit."
+     "Dùng feature của test để học bước tiền xử lý, dù không đụng tới nhãn, vẫn làm sai phép đánh giá: lúc dùng thật, dữ liệu mới chưa có khi ta học."
     ]
    ]
   ]
@@ -17145,7 +17152,7 @@
     "1.4",
     "Ghép ColumnTransformer với Pipeline",
     [
-     "Cột số có vài giá trị cực lớn, như thu nhập, thì trung vị an toàn hơn trung bình khi điền thiếu, và có thể chặn (clip) theo ngưỡng tính trên train trước khi chuẩn hóa."
+     "Nếu cột số có vài giá trị cực lớn, như thu nhập, thì nên điền bằng median thay vì trung bình, và có thể chặn (clip) giá trị theo ngưỡng tính trên train trước khi chuẩn hóa."
     ]
    ],
    [
@@ -18423,7 +18430,7 @@
     "1.3",
     "K-fold và dự đoán out-of-fold",
     [
-     "$K$ bằng số mẫu là leave-one-out (LOOCV): mỗi lượt để riêng đúng một mẫu, $n$ mẫu thì $n$ lượt."
+     "$K$ bằng số mẫu gọi là leave-one-out (LOOCV): mỗi vòng giữ riêng đúng một mẫu, $n$ mẫu thì $n$ vòng."
     ]
    ]
   ]
@@ -18819,7 +18826,7 @@
     "1.4",
     "Data leakage: thông tin vượt qua ranh giới",
     [
-     "Điểm tốt bất thường so với độ khó của bài, như 99,99% ở một bài nổi tiếng là khó, là tín hiệu kiểm leakage trước tiên, rồi kiểm xem lớp có lệch cực mạnh không."
+     "Khi điểm cao bất thường so với độ khó của bài, như 99,99% ở một bài nổi tiếng là khó, việc đầu tiên là tìm chỗ rò rỉ, rồi xem các lớp có lệch cực mạnh không."
     ]
    ],
    [
@@ -19996,7 +20003,7 @@
     "1.3",
     "K-fold và dự đoán out-of-fold",
     [
-     "$K$ bằng số mẫu là leave-one-out (LOOCV): mỗi lượt để riêng đúng một mẫu, $n$ mẫu thì $n$ lượt."
+     "$K$ bằng số mẫu gọi là leave-one-out (LOOCV): mỗi vòng giữ riêng đúng một mẫu, $n$ mẫu thì $n$ vòng."
     ]
    ]
   ]
