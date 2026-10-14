@@ -599,14 +599,13 @@
   }
 
   function renderResources() {
-    const text = d => d ? `<span class="res-text">${esc(d)}</span>` : '';
     const docs = D.resources.map(res => `<div class="res">
-        ${a(`#/resource/${res.id}`, `<span class="res-title">${esc(res.title)}</span>${text(res.description)}`, 'class="res-main" data-nav')}
+        ${a(`#/resource/${res.id}`, `<span class="res-title">${esc(res.title)}</span>`, 'class="res-main" data-nav')}
         ${a(res.path, `${icon('download')}<span class="sr">Tải ${esc(res.title)}</span>`, 'class="icon-btn" download title="Tải tệp"')}
       </div>`).join('');
     const groups = [...new Set(D.sources.map(s => s.group || 'Học thêm'))].map(g => `<section class="block"><h2 class="block-title">${esc(g)}</h2><div class="res-list">${
       D.sources.filter(s => (s.group || 'Học thêm') === g).map(s => a(s.url,
-        `<span class="res-title">${esc(s.title)}</span>${text(s.description)}${icon('external')}`,
+        `<span class="res-title">${esc(s.title)}</span>${icon('external')}`,
         'class="res-main res-ext" target="_blank" rel="noopener"')).join('')}</div></section>`).join('');
     return `<div class="page">
       <header class="page-head"><h1>Tài liệu</h1></header>
@@ -929,9 +928,10 @@
     const st = QS[s.id], all = qAll(s), tot = qStats(s, all);
     const cur = st.ids.length ? qStats(s, st.ids) : null;
     const resume = cur && cur.done && cur.todo
-      ? a(`#/quiz/${s.id}/play`, `Làm tiếp<span class="qz-n">${cur.done}/${st.ids.length}</span>`, 'class="btn is-primary" data-nav')
-      : tot.done ? '' : qBtn(s, 'all', 'Làm bài', 'btn is-primary');
-    const lead = resume + (s.lesson ? a(lessonHref(s.lesson), `${icon('book')}Đọc lại bài`, 'class="btn" data-nav') : '');
+      ? a(`#/quiz/${s.id}/play`, 'Làm tiếp', 'class="btn is-primary" data-nav')
+      : qBtn(s, tot.done && tot.todo ? 'todo' : 'all', tot.done ? (tot.todo ? 'Làm tiếp' : 'Làm lại') : 'Làm bài', 'btn is-primary');
+    const lead = resume + (s.lesson ? a(lessonHref(s.lesson), `${icon('book')}Đọc lại bài`, 'class="btn" data-nav') : '')
+      + (tot.done ? `<button class="btn qz-reset" type="button" data-action="qz-reset" data-set="${s.id}">Xóa kết quả</button>` : '');
     const topics = s.groups.map((g, k) => {
       const idx = qInGroup(s, g.id), t = qStats(s, idx);
       return qBtn(s, g.id,
@@ -939,18 +939,11 @@
          <span class="phase-body"><span class="phase-title">${esc(g.name)}</span></span>
          <span class="phase-meta">${t.done ? `<span class="phase-progress">${meter(t.done, idx.length)}${t.done}/${idx.length}</span>` : `${idx.length} câu`}</span>`, 'phase');
     }).join('');
-    const acts = tot.done ? [
-      qBtn(s, 'all', `Làm cả ${all.length} câu`),
-      tot.wrong ? qBtn(s, 'wrong', `Ôn câu sai <span class="qz-n">${tot.wrong}</span>`) : '',
-      tot.todo ? qBtn(s, 'todo', `Câu chưa làm <span class="qz-n">${tot.todo}</span>`) : '',
-      `<button class="btn qz-reset" type="button" data-action="qz-reset" data-set="${s.id}">Xóa kết quả</button>`
-    ].join('') : '';
     return `<div class="page">
       <header class="page-head"><p class="kicker">${a('#/quiz', 'Trắc nghiệm', 'data-nav')}</p><h1>${esc(s.title)}</h1>
         ${tot.done ? `<div class="page-meta"><span class="phase-progress">${meter(tot.done, all.length)}${tot.done}/${all.length} câu</span><span>${tot.right} đúng · ${tot.wrong} sai</span></div>` : ''}</header>
       ${lead ? `<div class="actions">${lead}</div>` : ''}
       <section class="block"><h2 class="block-title">${s.lesson ? 'Theo mức' : 'Chủ đề'}</h2><div class="phases">${topics}</div></section>
-      ${acts ? `<div class="actions qz-actions">${acts}</div>` : ''}
       ${exBlock(s)}
       ${footer()}</div>`;
   }
