@@ -104,7 +104,8 @@
     side: saved.side === 'closed' ? 'closed' : 'open',
     wrap: false,
     filter: 'all',
-    open: new Set((saved.open || []).filter(id => Number.isInteger(id)))
+    // Nhóm đang mở trên thanh bên chỉ sống trong một lần mở trang; mở lại thì chỉ phase của bài đang xem được mở.
+    open: new Set()
   };
   const systemDark = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const effectiveTheme = () => S.theme || (systemDark() ? 'dark' : 'light');
@@ -117,7 +118,7 @@
   applySide();
   function persist() {
     if (!canStore) return;
-    try { localStorage.setItem(KEY, JSON.stringify({done: [...S.done], last: S.last, theme: S.theme, open: [...S.open], side: S.side})); }
+    try { localStorage.setItem(KEY, JSON.stringify({done: [...S.done], last: S.last, theme: S.theme, side: S.side})); }
     catch (_) { canStore = false; }
   }
   const doneIn = phase => phaseLessons(phase).filter(l => !isCheck(l) && S.done.has(l.id)).length;
@@ -196,7 +197,7 @@
     ].map(([key, i, label, href]) => a(href, `${icon(i)}<span>${label}</span>`,
       `class="side-link${section === key ? ' is-active' : ''}" data-nav`)).join('');
 
-    if (activePhase !== null && renderChrome.lastPhase !== activePhase) S.open.add(activePhase);
+    if (renderChrome.lastPhase !== activePhase) S.open = new Set(activePhase === null ? [] : [activePhase]);
     renderChrome.lastPhase = activePhase;
     const phaseNav = p => {
       const open = S.open.has(p.id);
@@ -904,15 +905,10 @@
     if (r.sub === 'result') out.push(here('Kết quả'));
     return out;
   }
-  // Trang chủ trắc nghiệm gom các bộ theo mức (Light, Light 2, … → Light); mức đang mở được nhớ trong máy người xem.
-  const QLKEY = 'aicanuc80k.quizlevels.v1';
+  // Trang chủ trắc nghiệm gom các bộ theo mức (Light, Light 2, … → Light); mỗi lần mở trang các mức đều đóng, mở mức này thì đóng mức khác.
   const qLevelOf = id => id.replace(/\d+$/, '');
   let QL = new Set();
-  try { QL = new Set(JSON.parse(localStorage.getItem(QLKEY) || '[]')); } catch (_) { QL = new Set(); }
-  function qlSave() {
-    if (!canStore) return;
-    try { localStorage.setItem(QLKEY, JSON.stringify([...QL])); } catch (_) { canStore = false; }
-  }
+  try { localStorage.removeItem('aicanuc80k.quizlevels.v1'); } catch (_) {}
   function quizLevels() {
     const out = [];
     for (const s of QB.sets) {
@@ -970,7 +966,7 @@
       ${footer()}</div>`;
   }
   function renderQuizSet(s) {
-    if (!QL.has(qLevelOf(s.id))) { QL.add(qLevelOf(s.id)); qlSave(); }
+    QL = new Set([qLevelOf(s.id)]);
     const st = QS[s.id], all = qAll(s), tot = qStats(s, all);
     const cur = st.ids.length ? qStats(s, st.ids) : null;
     const resume = cur && cur.done && cur.todo
@@ -1454,7 +1450,6 @@
       try {
         const v = JSON.parse(e.newValue || '{}');
         S.done = new Set((v.done || []).filter(findLesson));
-        S.open = new Set((v.open || []).filter(id => Number.isInteger(id)));
         if (findLesson(v.last)) S.last = v.last;
       } catch (_) {}
     }
@@ -1512,11 +1507,15 @@
         break;
       }
       case 'toggle-phase': {
+        // Mở một phase thì đóng các phase khác, để thanh bên luôn gọn.
         const id = Number(act.dataset.phase), open = !S.open.has(id);
-        open ? S.open.add(id) : S.open.delete(id);
+        for (const o of S.open) if (o !== id) {
+          $(`.side-phase[data-phase="${o}"]`)?.setAttribute('aria-expanded', 'false');
+          const box = $(`#sp-${o}`); if (box) box.dataset.open = 'false';
+        }
+        S.open = new Set(open ? [id] : []);
         act.setAttribute('aria-expanded', open);
         $(`#sp-${id}`).dataset.open = open;
-        persist();
         break;
       }
       case 'menu-close': closeMenu(); break;
@@ -1590,7 +1589,12 @@
       case 'qz-level': {
         const id = act.dataset.level, sec = act.closest('.qz-level'), box = document.getElementById(`qzl-${id}`);
         const open = !QL.has(id);
-        open ? QL.add(id) : QL.delete(id); qlSave();
+        for (const o of QL) if (o !== id) {
+          const b = document.getElementById(`qzl-${o}`);
+          if (b) { b.hidden = true; b.closest('.qz-level')?.classList.remove('is-open'); }
+          $(`.qz-level-head[data-level="${o}"]`)?.setAttribute('aria-expanded', 'false');
+        }
+        QL = new Set(open ? [id] : []);
         act.setAttribute('aria-expanded', String(open)); sec.classList.toggle('is-open', open);
         if (box) box.hidden = !open;
         break;
@@ -1637,6 +1641,67 @@
     else if (e.key === 'ArrowRight') { e.preventDefault(); qMove(1); }
     else if (e.key === 'ArrowLeft' && qCurrent().st.index > 0) { e.preventDefault(); qMove(-1); }
   });
+
+  // ---------- cử chỉ trên điện thoại ----------
+  // Vuốt từ mép trái để mở thanh bên, vuốt sang trái để đóng; trang làm trắc nghiệm và kiểm tra vuốt ngang để chuyển câu.
+  (() => {
+    const side = $('#side'), scrim = $('#scrim'), root = document.documentElement;
+    const narrow = () => window.matchMedia('(max-width: 920px)').matches;
+    const inExam = () => exActive() && route().type === 'exam';
+    const hScroll = el => {
+      for (; el && el !== document.body; el = el.parentElement)
+        if (el.scrollWidth > el.clientWidth + 2 && /auto|scroll/.test(getComputedStyle(el).overflowX)) return true;
+      return false;
+    };
+    let t = null;
+    document.addEventListener('touchstart', e => {
+      t = null;
+      if (e.touches.length !== 1) return;
+      const p = e.touches[0], open = side.classList.contains('open');
+      let kind = null;
+      if (narrow() && !root.classList.contains('exam-lock')) {
+        if (open && (side.contains(e.target) || e.target === scrim)) kind = 'close';
+        else if (!open && p.clientX < 28) kind = 'open';
+      }
+      if (!kind && !open && (qCurrent() || inExam()) && !hScroll(e.target) && !e.target.closest('input, textarea, select')) kind = 'quiz';
+      if (kind) t = {kind, x: p.clientX, y: p.clientY, at: Date.now(), axis: null, dx: 0, w: side.offsetWidth || 280};
+    }, {passive: true});
+    document.addEventListener('touchmove', e => {
+      if (!t) return;
+      const p = e.touches[0], dx = p.clientX - t.x, dy = p.clientY - t.y;
+      if (!t.axis) {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+        t.axis = Math.abs(dx) > Math.abs(dy) * 1.2 ? 'x' : 'y';
+        if (t.axis === 'y') { t = null; return; }
+        if (t.kind !== 'quiz') { side.style.transition = scrim.style.transition = 'none'; scrim.classList.add('show'); }
+      }
+      t.dx = dx;
+      if (t.kind === 'quiz') { const card = $('.qz-card'); if (card) card.style.transform = `translateX(${dx * .25}px)`; return; }
+      const off = t.kind === 'open' ? Math.max(-t.w, Math.min(0, dx - t.w)) : Math.max(-t.w, Math.min(0, dx));
+      side.style.transform = `translateX(${off}px)`;
+      scrim.style.opacity = String(1 + off / t.w);
+    }, {passive: true});
+    const end = () => {
+      const g = t; t = null;
+      if (!g || g.axis !== 'x') return;
+      const dx = g.dx, fast = Math.abs(dx) / Math.max(1, Date.now() - g.at) > .5;
+      if (g.kind === 'quiz') {
+        const card = $('.qz-card');
+        if (card) { card.style.transition = 'transform .18s ease'; card.style.transform = ''; }
+        if (!(Math.abs(dx) > 70 || (fast && Math.abs(dx) > 30))) return;
+        const step = dx < 0 ? 1 : -1;
+        if (inExam()) { const i = EX.index + step; if (i >= 0 && i < EX.ids.length) exJump(i); }
+        else if (qCurrent() && (step > 0 || qCurrent().st.index > 0)) qMove(step);
+        document.activeElement?.blur?.();
+        return;
+      }
+      side.style.transition = scrim.style.transition = side.style.transform = scrim.style.opacity = '';
+      const pass = d => d > g.w / 3 || (fast && d > 20);
+      (g.kind === 'open' ? pass(dx) : !pass(-dx)) ? openMenu() : closeMenu();
+    };
+    document.addEventListener('touchend', end, {passive: true});
+    document.addEventListener('touchcancel', end, {passive: true});
+  })();
 
   window.addEventListener('beforeunload', e => { if (exActive()) { e.preventDefault(); e.returnValue = ''; } });
   initQuiz();
