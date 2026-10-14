@@ -5565,7 +5565,7 @@
     "4.3",
     "Ví dụ tính tay: vì sao encoder thường dùng bước nhỏ hơn?",
     [
-     "Nếu encoder đi bước lớn như head, nó có thể bị kéo xa chỉ để bù cho một head còn sai, làm hỏng những đặc trưng tốt đã học. Việc mô hình mất dần kiến thức nguồn khi được huấn luyện tiếp cho nhiệm vụ mới gọi là quên thảm khốc (catastrophic forgetting); bước lớn ở phần pretrained làm hiện tượng này đến nhanh hơn. Learning rate nhỏ cho encoder, hoặc học head-only vài epoch rồi mới mở encoder, hạn chế tác hại ấy."
+     "Nếu encoder đi bước lớn như head, nó có thể bị kéo xa chỉ để bù cho một head còn sai, làm hỏng những đặc trưng tốt đã học."
     ]
    ]
   ]
@@ -7004,7 +7004,7 @@
     "4.3",
     "Freeze, eval và BatchNorm là ba chuyện",
     [
-     "Quyết định có cập nhật thống kê miền mới hay không là một phần của fine-tuning; với encoder cần giữ cố định, ta giữ cả buffer bằng eval."
+     "Với encoder cần giữ cố định, ta giữ cả buffer bằng eval."
     ]
    ],
    [
@@ -10042,7 +10042,7 @@
     "4.2",
     "Vì sao cần một biểu diễn khác?",
     [
-     "Có encoder tốt, nhiều việc chỉ còn là so vector: tìm sản phẩm giống ảnh chụp đôi giày là tìm embedding gần nhất trong kho; mở khóa bằng khuôn mặt với đúng một ảnh đăng ký là so embedding ảnh mới với embedding đã lưu theo một ngưỡng."
+     "Tìm sản phẩm giống ảnh chụp đôi giày là tìm embedding gần nhất trong kho."
     ]
    ],
    [
@@ -17862,14 +17862,14 @@
     "4.2",
     "Vì sao cần một biểu diễn khác?",
     [
-     "Có encoder tốt, nhiều việc chỉ còn là so vector: tìm sản phẩm giống ảnh chụp đôi giày là tìm embedding gần nhất trong kho; mở khóa bằng khuôn mặt với đúng một ảnh đăng ký là so embedding ảnh mới với embedding đã lưu theo một ngưỡng."
+     "Mở khóa bằng khuôn mặt với đúng một ảnh đăng ký là so embedding ảnh mới với embedding đã lưu theo một ngưỡng."
     ]
    ],
    [
     "4.2",
     "Ví dụ tính tay: độ dài và hướng của vector",
     [
-     "Ảnh validation đầu tiên (chữ số 0) và 5 ảnh train gần nhất theo cosine trên embedding 16 chiều: cả năm đều là chữ số 0, cosine từ 0.972 giảm dần."
+     "Năm ảnh train gần nhất với một chữ số 0 theo cosine: cả năm đều là 0."
     ]
    ]
   ]
@@ -21384,7 +21384,7 @@
     "4.4",
     "Học phần thay đổi thay vì viết lại cả ma trận",
     [
-     "Giả thuyết này có cơ sở: đo trên mô hình lớn, phần thay đổi khi fine-tune thường có hạng nội tại thấp."
+     "Đo trên mô hình lớn, phần thay đổi khi fine-tune đúng là thường có hạng thấp."
     ]
    ]
   ]
