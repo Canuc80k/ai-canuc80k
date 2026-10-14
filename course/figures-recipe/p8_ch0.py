@@ -10,18 +10,21 @@ LOPC = {'10A1': BLUE, '10A2': GREEN, '10A3': CLAY, '10A4': SAND, 'A': BLUE, 'B':
 # ───────────────────────────── 0.1 Python ─────────────────────────────
 
 def notebook():
-    s = Fig(640, 168)
-    for x, title, p1, out, stale in [(52, 'Chỉ chạy lại ô đầu', '[3]', '6', True), (372, 'Restart & Run All', '[1]', '15', False)]:
-        s.label(x + 110, 18, title, 14, color=TEXT, weight=600)
-        s.cell(x, 40, 222, ['n = 5'], p1, size=13)
-        used = s.cell(x, 89, 222, ['total = sum(range(n + 1))'], '[2]', size=13)
-        oy = 89 + used + 20
-        col = SAND if stale else GREEN
-        s.mono(x + 12, oy, out, 15, color=col, weight=600)
+    s = Fig(668, 150)
+    steps = [('1. Chạy cả hai ô', '3', (True, True), '6', TEXT, False),
+             ('2. Sửa n, chỉ chạy ô trên', '5', (True, False), '6', SAND, True),
+             ('3. Chạy lại ô dưới', '5', (False, True), '15', GREEN, False)]
+    for i, (title, n, ran, out, col, stale) in enumerate(steps):
+        x = 6 + i * 224
+        s.label(x + 2, 16, title, 13.5, 'start', TEXT, 600)
+        s.cell(x, 34, 200, [f'n = {n}'], size=12, accent=BLUE if ran[0] else None)
+        used = s.cell(x, 76, 200, ['total = sum(range(n + 1))'], size=12, accent=BLUE if ran[1] else None)
+        oy = 76 + used + 20
+        txt = f'total = {out}'
+        s.mono(x + 12, oy, txt, 13, color=col, weight=600)
         if stale:
-            s.pill(x + 52, oy, 'cũ', SAND, 12)
-    s.line(320, 34, 320, 160, SOFT_LINE, 1)
-    s.save('0-1-notebook', 'Sửa n rồi chỉ chạy lại ô đầu: total vẫn giữ kết quả cũ.')
+            s.pill(x + 12 + s.mono_width(txt, 13) + 10, oy, 'cũ', SAND, 11.5, 'start')
+    s.save('0-1-notebook', 'Sửa n mà chưa chạy lại ô dưới thì total vẫn là 6.')
 
 
 def floordiv():

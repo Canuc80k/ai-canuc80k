@@ -4730,7 +4730,7 @@
     "0.1",
     "Đọc lỗi",
     [
-     "KeyError là tra khóa không có trong dict, hay tên cột không có trong bảng pandas."
+     "KeyError: tra khóa không có trong dict, hoặc tên cột không có trong bảng pandas."
     ]
    ],
    [
@@ -11527,7 +11527,7 @@
     "0.1",
     "list, tuple, dict, set",
     [
-     "Set bỏ phần tử trùng, nên len(set(\"con mèo đuổi con chuột\".split())) bằng 4."
+     "Set bỏ phần tử trùng, nên câu “con mèo đuổi con chuột” có 5 từ nhưng len(set(\"con mèo đuổi con chuột\".split())) bằng 4."
     ]
    ]
   ]
@@ -11874,7 +11874,8 @@
     "0.1",
     "list, tuple, dict, set",
     [
-     "Dấu + nối hai list: [1, 2] + [3, 4] là [1, 2, 3, 4]; muốn cộng từng phần tử thì dùng mảng NumPy ở bài 0.2."
+     "Dấu + nối hai list chứ không cộng từng phần tử: [1, 2] + [3, 4] là [1, 2, 3, 4].",
+     "Muốn cộng từng phần tử thì dùng mảng NumPy ở bài 0.2."
     ]
    ],
    [
@@ -11902,7 +11903,7 @@
     "0.1",
     "Cú pháp cơ bản",
     [
-     "return nằm trong thân hàm nhưng ngoài vòng for, nên ta thu đủ kết quả trước khi trả về. range(1, 5) có bốn giá trị; quy ước đầu đóng, cuối mở xuất hiện lại trong slicing và NumPy."
+     "return thụt lề ngang với for, nên nó chạy sau khi vòng lặp xong; nếu thụt thêm một mức vào trong vòng lặp, hàm sẽ trả về ngay ở lần lặp đầu. range(1, 5) lấy từ 1 đến 4, không lấy 5; cách lấy đầu, bỏ cuối này dùng chung cho slicing của list và NumPy."
     ]
    ]
   ]
@@ -12159,7 +12160,7 @@
     "0.1",
     "Đọc lỗi",
     [
-     "IndexError là chỉ số vượt độ dài."
+     "IndexError: chỉ số vượt quá độ dài list."
     ]
    ],
    [
@@ -12697,7 +12698,8 @@
     "0.1",
     "list, tuple, dict, set",
     [
-     "Giao A & B và hợp A | B của hai set cho độ giống của hai tập từ: len(A & B) / len(A | B)."
+     "Với hai set A, B, A & B là phần chung, A | B là hợp.",
+     "Tỉ số len(A & B) / len(A | B) thường dùng để đo hai câu giống nhau đến đâu theo các từ chúng có."
     ]
    ]
   ]

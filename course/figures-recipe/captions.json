@@ -5,7 +5,7 @@
   "0-1-grid": "Gán 9 vào ô đầu: bên trái cả ba hàng đổi, bên phải chỉ một hàng đổi.",
   "0-1-lookup": "List so từng phần tử; set nhảy thẳng tới một ngăn của bảng băm.",
   "0-1-names": "Gán chỉ dán thêm tên; copy() tạo list mới; int bất biến.",
-  "0-1-notebook": "Sửa n rồi chỉ chạy lại ô đầu: total vẫn giữ kết quả cũ.",
+  "0-1-notebook": "Sửa n mà chưa chạy lại ô dưới thì total vẫn là 6.",
   "0-1-speed": "Cùng một tổng của 500 000 số, đo trên một máy CPU.",
   "0-1-traceback": "Traceback thật của Python 3.13: đọc từ dòng cuối lên.",
   "0-2-axis": "Trục ghi trong axis là trục bị gộp và biến mất.",
