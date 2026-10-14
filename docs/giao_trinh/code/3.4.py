@@ -145,7 +145,6 @@ from PIL import Image
 from tempfile import TemporaryDirectory
 from torch.utils.data import Dataset
 
-
 class FolderDataset(Dataset):
     def __init__(self, root, table, size=8):
         self.root, self.table, self.size = Path(root), table.reset_index(drop=True), size
@@ -158,7 +157,6 @@ class FolderDataset(Dataset):
         image = Image.open(self.root / row["file"]).convert("L").resize((self.size, self.size))
         x = torch.from_numpy(np.asarray(image, dtype=np.float32) / 255).unsqueeze(0)   # (1, H, W)
         return x, int(row["label"])
-
 
 with TemporaryDirectory() as directory:
     root = Path(directory)
@@ -185,12 +183,10 @@ try:
 except RuntimeError as error:
     print("không có collate_fn:", str(error).split(" at entry")[0])
 
-
 def pad_collate(batch):
     seqs, labels = zip(*batch)
     lengths = torch.tensor([len(s) for s in seqs])
     return pad_sequence(seqs, batch_first=True, padding_value=0), lengths, torch.tensor(labels)
-
 
 for tokens, lengths, labels in DataLoader(pairs, batch_size=3, collate_fn=pad_collate):
     print(tokens)

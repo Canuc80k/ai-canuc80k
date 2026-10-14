@@ -229,12 +229,3 @@ class ShiftScaler(Scaler):
 
 f = ShiftScaler(2, 1)
 print(f([1, 2, 3]), f.factor, isinstance(f, Scaler))
-
-# Bước 24
-sum = 0
-try:
-    sum([1, 2, 3])
-except TypeError as e:
-    print("TypeError:", e)
-del sum                               # gỡ cái tên, sum dựng sẵn quay lại
-print(sum([1, 2, 3]))

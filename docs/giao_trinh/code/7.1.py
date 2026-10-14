@@ -15,8 +15,8 @@ waveform = np.where(
 duration = len(waveform) / sample_rate
 interval_ms = 1000 / sample_rate
 print(waveform.shape)
-print(f"thoi luong = {duration:.3f} s")
-print(f"khoang mau = {interval_ms:.3f} ms")
+print(f"thời lượng = {duration:.3f} s")
+print(f"khoảng mẫu = {interval_ms:.3f} ms")
 
 # Bước 2
 alias_rate = 1000
@@ -31,16 +31,16 @@ from scipy.signal import resample_poly
 half_rate = sample_rate // 2
 naive = waveform[::2]
 filtered = resample_poly(waveform, up=1, down=2)
-for name, signal in [("bo mau", naive), ("co loc", filtered)]:
+for name, signal in [("bỏ mẫu", naive), ("có lọc", filtered)]:
     tail = signal[len(signal) // 2:]
     amplitude = np.abs(np.fft.rfft(tail)) * 2 / len(tail)
     freqs = np.fft.rfftfreq(len(tail), d=1 / half_rate)
-    print(f"{name}: {len(signal)} mau, bien do o 400 Hz = {amplitude[freqs == 400][0]:.3f}")
+    print(f"{name}: {len(signal)} mẫu, biên độ ở 400 Hz = {amplitude[freqs == 400][0]:.3f}")
 
 # Bước 4
 new_rate = 4000
 resampled = resample_poly(waveform, up=2, down=1)
-print(f"doi metadata: {len(waveform) / new_rate:.3f} s")
+print(f"đổi metadata: {len(waveform) / new_rate:.3f} s")
 print(f"resample: {len(resampled) / new_rate:.3f} s")
 
 # Bước 5
@@ -92,4 +92,4 @@ tiny_wave = np.array([0.0, 0.2, -0.4, 0.2])
 normalized = peak_normalize(tiny_wave)
 print(normalized.round(2))
 print(peak_normalize(np.zeros(4)))
-print(f"RMS truoc = {np.sqrt(np.mean(tiny_wave ** 2)):.3f}")
+print(f"RMS trước = {np.sqrt(np.mean(tiny_wave ** 2)):.3f}")

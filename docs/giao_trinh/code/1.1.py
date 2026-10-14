@@ -79,12 +79,10 @@ print("Số hàng:", len(read_back))
 rng = np.random.default_rng(5)
 x_lo, x_hi, y_lo, y_hi = 20, 65, 30, 80                 # hình chữ nhật ẩn, chỉ dùng để sinh dữ liệu
 
-
 def make_points(n):
     points = rng.uniform(0, 100, size=(n, 2))
     inside = (points[:, 0] >= x_lo) & (points[:, 0] <= x_hi) & (points[:, 1] >= y_lo) & (points[:, 1] <= y_hi)
     return pd.DataFrame({"X": points[:, 0], "Y": points[:, 1], "label": inside.astype(int)})
-
 
 train_pts, test_pts = make_points(30), make_points(3000)
 pos = train_pts[train_pts["label"] == 1]

@@ -49,7 +49,7 @@ wrongly_paired_text = np.roll(
 wrong_fusion = (
     image_probability + wrongly_paired_text
 ) / 2
-print(f"sai cap: accuracy = {accuracy_score(toy_labels, wrong_fusion >= 0.5):.3f}")
+print(f"sai cặp: accuracy = {accuracy_score(toy_labels, wrong_fusion >= 0.5):.3f}")
 
 # Bước 4
 branch_probabilities = np.column_stack([image_probability, text_probability])
@@ -61,7 +61,7 @@ weight_sum = weights.sum(axis=1)
 assert np.all(weight_sum > 0)
 missing_fusion = (branch_probabilities * weights).sum(axis=1) / weight_sum
 print(missing_fusion[[3, 6]].round(2))
-print(f"thieu nguon: accuracy = {accuracy_score(toy_labels, missing_fusion >= 0.5):.3f}")
+print(f"thiếu nguồn: accuracy = {accuracy_score(toy_labels, missing_fusion >= 0.5):.3f}")
 
 # Bước 5
 align_rng = np.random.default_rng(7)
@@ -89,10 +89,10 @@ shuffled_pairs = align_rng.permutation(train_pairs)
 wrong_projection = fit_map(image_embeddings[train_pairs], text_embeddings[shuffled_pairs])
 valid_images, valid_texts = image_embeddings[valid_pairs], text_embeddings[valid_pairs]
 pair_cosine = np.sum(unit_rows(valid_images) * unit_rows(valid_texts), axis=1).mean()
-print(f"cosine cap dung, chua can chinh: {pair_cosine:.3f}")
-print(f"recall@1 chua can chinh: {recall_at_1(valid_images, valid_texts):.2f}")
-print(f"recall@1 sau khi hoc W: {recall_at_1(valid_images @ projection, valid_texts):.2f}")
-print(f"recall@1 khi hoc W tu cap bi xao: {recall_at_1(valid_images @ wrong_projection, valid_texts):.2f}")
+print(f"cosine cặp đúng, chưa căn chỉnh: {pair_cosine:.3f}")
+print(f"recall@1 chưa căn chỉnh: {recall_at_1(valid_images, valid_texts):.2f}")
+print(f"recall@1 sau khi học W: {recall_at_1(valid_images @ projection, valid_texts):.2f}")
+print(f"recall@1 khi học W từ cặp bị xáo: {recall_at_1(valid_images @ wrong_projection, valid_texts):.2f}")
 
 # Bước 6
 import json
@@ -100,10 +100,10 @@ import json
 def parse_count(text):
     answer = json.loads(text)
     if not isinstance(answer, dict) or set(answer) != {"count"}:
-        raise ValueError("can dung khoa count")
+        raise ValueError("cần đúng khóa count")
     count = answer["count"]
     if type(count) is not int or count < 0:
-        raise ValueError("count phai la so nguyen khong am")
+        raise ValueError("count phải là số nguyên không âm")
     return count
 
 for response in ['{"count": 3}', '{"count": true}', '{"count": "3"}']:

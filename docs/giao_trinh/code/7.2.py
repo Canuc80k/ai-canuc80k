@@ -44,7 +44,7 @@ features = np.array(features, dtype=np.float32)
 labels = np.array(labels)
 groups = np.array(groups)
 print(features.shape, labels.shape)
-print(f"thoi luong = {1024 / sample_rate:.2f} s")
+print(f"thời lượng = {1024 / sample_rate:.2f} s")
 
 # Bước 2
 from sklearn.model_selection import GroupShuffleSplit
@@ -130,8 +130,8 @@ def train_time_mean(kernel_size, padding):
                   for part in (train_indices, valid_indices)]
     return f"train {scores[0]:.3f}, valid {scores[1]:.3f}"
 
-print("3x3 roi mean thoi gian:", train_time_mean(3, 1))
-print("3x1 roi mean thoi gian:", train_time_mean((3, 1), (1, 0)))
+print("3x3 rồi mean thời gian:", train_time_mean(3, 1))
+print("3x1 rồi mean thời gian:", train_time_mean((3, 1), (1, 0)))
 
 # Bước 6
 hidden = np.array([

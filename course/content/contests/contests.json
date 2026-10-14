@@ -1,0 +1,157 @@
+{
+  "intro": "Sáu kỳ thi AI dành cho học sinh phổ thông mà khóa học hướng tới. Thể thức khác nhau khá nhiều: IOAI chấm notebook trên dữ liệu thật, IAIO có thêm vòng lý thuyết viết, NOAI Singapore mở đầu bằng 300 câu trắc nghiệm. Số liệu cập nhật đến 14/10/2026; mỗi trang ghi nguồn ở cuối.",
+  "columns": [
+    {
+      "key": "name",
+      "label": "Kỳ thi"
+    },
+    {
+      "key": "who",
+      "label": "Ai được thi"
+    },
+    {
+      "key": "format",
+      "label": "Thể thức"
+    },
+    {
+      "key": "next",
+      "label": "Kỳ tới"
+    }
+  ],
+  "contests": [
+    {
+      "id": "voai",
+      "short": "VOAI và VAIO",
+      "name": "Kỳ thi AI ở Việt Nam: chọn đội IOAI và VAIO",
+      "level": "Việt Nam",
+      "summary": "Hai con đường riêng: kỳ chọn đội đi IOAI, và VAIO 2027 chọn đội đi IAIO 2027.",
+      "links": [
+        [
+          "Thông báo VAIO 2027 (báo Đấu thầu)",
+          "https://baodauthau.vn/phat-dong-olympic-tri-tue-nhan-tao-viet-nam-2027-post203037.html"
+        ]
+      ],
+      "compare": {
+        "level": "Quốc gia",
+        "who": "Học sinh THCS, THPT",
+        "format": "Chọn đội IOAI: lập trình trên máy có GPU. VAIO: chưa công bố thể lệ",
+        "next": "VAIO sơ khảo 18/10/2026, chung kết 10/01/2027"
+      }
+    },
+    {
+      "id": "ioai",
+      "short": "IOAI",
+      "name": "IOAI · International Olympiad in Artificial Intelligence",
+      "level": "Quốc tế",
+      "summary": "Hai ngày thi cá nhân, mỗi ngày 6 giờ, nộp notebook trên dữ liệu thật; điểm chuẩn hóa theo baseline.",
+      "links": [
+        [
+          "ioai-official.org",
+          "https://ioai-official.org/"
+        ],
+        [
+          "Đề 2025",
+          "https://github.com/IOAI-official/IOAI-2025"
+        ],
+        [
+          "Đề 2026",
+          "https://github.com/IOAI-official/IOAI-2026"
+        ]
+      ],
+      "compare": {
+        "level": "Quốc tế",
+        "who": "Dưới 20 tuổi, đang học phổ thông; tối đa 4 người mỗi nước",
+        "format": "Thực hành notebook, 2 ngày × 6 giờ",
+        "next": "IOAI 2027, Singapore, 4–10/07/2027"
+      }
+    },
+    {
+      "id": "iaio",
+      "short": "IAIO",
+      "name": "IAIO · International Artificial Intelligence Olympiad",
+      "level": "Quốc tế",
+      "summary": "Kỳ thi khác IOAI: một vòng lý thuyết làm trên giấy và một vòng thực hành Python.",
+      "links": [
+        [
+          "iaio-official.org",
+          "https://www.iaio-official.org/"
+        ],
+        [
+          "Thể thức 2026",
+          "https://iaio-official.org/competition2026/"
+        ]
+      ],
+      "compare": {
+        "level": "Quốc tế",
+        "who": "Học sinh phổ thông, đội của các nước",
+        "format": "Lý thuyết viết + thực hành Python",
+        "next": "IAIO 2027, Việt Nam, 25/02–02/03/2027"
+      }
+    },
+    {
+      "id": "apoai",
+      "short": "APOAI",
+      "name": "APOAI · Asia-Pacific Olympiad in AI",
+      "level": "Khu vực",
+      "summary": "Olympiad khu vực châu Á – Thái Bình Dương dưới IOAI; kỳ đầu năm 2026, thi trực tuyến.",
+      "links": [
+        [
+          "Danh sách olympiad khu vực 2026",
+          "https://ioai-official.org/regional-olympiads-in-artificial-intelligence-2026/"
+        ]
+      ],
+      "compare": {
+        "level": "Khu vực",
+        "who": "Chưa có thông báo chính thức",
+        "format": "Trực tuyến, kiểu IOAI",
+        "next": "Chưa công bố"
+      }
+    },
+    {
+      "id": "noai",
+      "short": "NOAI Singapore",
+      "name": "NOAI · National Olympiad in AI (Singapore)",
+      "level": "Quốc gia (Singapore)",
+      "summary": "Vòng sơ loại 300 câu trắc nghiệm trong 3 giờ; vòng cuối có cả trắc nghiệm và lập trình.",
+      "links": [
+        [
+          "noai.aisingapore.org",
+          "https://noai.aisingapore.org/"
+        ],
+        [
+          "Đề sơ loại 2026 (PDF)",
+          "https://aisingapore.org/wp-content/uploads/2026/04/NOAI-2026-Preliminary-Round-Assessment-300-MCQs-Google-Forms.pdf"
+        ]
+      ],
+      "compare": {
+        "level": "Quốc gia",
+        "who": "Học sinh trường ở Singapore, dưới 20 tuổi",
+        "format": "300 câu trắc nghiệm; vòng cuối 20 câu + 3 bài lập trình",
+        "next": "Chọn đội cho IOAI 2027 (Singapore đăng cai)"
+      }
+    },
+    {
+      "id": "usaaio",
+      "short": "USA-NA-AIO",
+      "name": "USA-NA-AIO · USA–North America AI Olympiad",
+      "level": "Quốc gia (Mỹ, Canada)",
+      "summary": "Vòng 1 có phần không lập trình và phần lập trình trên Colab; đề các năm công khai dạng PDF.",
+      "links": [
+        [
+          "usaaio.org",
+          "https://www.usaaio.org/"
+        ],
+        [
+          "Đề các năm",
+          "https://www.usaaio.org/past-problems"
+        ]
+      ],
+      "compare": {
+        "level": "Quốc gia",
+        "who": "Học sinh K-12 ở Mỹ và Canada",
+        "format": "Vòng 1: 60 phút không lập trình + 75 phút lập trình",
+        "next": "Vòng 1: 19/02/2027"
+      }
+    }
+  ]
+}

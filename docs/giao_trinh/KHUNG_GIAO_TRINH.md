@@ -3,19 +3,23 @@
 - **Đối tượng:** Học sinh THCS/THPT đã biết lập trình thi đấu, chưa học AI.
 - **Mục tiêu:** VOAI → IOAI; APOAI, IAIO.
 - **Máy học:** GPU T4 trên Colab hoặc Kaggle.
-- **Quy mô:** 63 bài, 4 khóa.
+- **Quy mô:** 67 bài, 4 khóa.
 
 ## Khóa 1 — Học máy
 
-### Phase 0 — Python và dữ liệu
+### Chương 0 — Python, dữ liệu và toán
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
 | 0.1 | Python | Python cho người đã quen C++. |
 | 0.2 | NumPy | Tính trên cả mảng thay cho vòng lặp. |
 | 0.3 | Pandas và Matplotlib | Đọc, xử lý và vẽ dữ liệu bảng. |
+| 0.4 | Hàm số, mũ và log | Đổi điểm số thành xác suất và loss. |
+| 0.5 | Vector và ma trận | Tính trên nhiều số cùng lúc. |
+| 0.6 | Đạo hàm và gradient | Biết đổi tham số theo hướng nào. |
+| 0.7 | Xác suất và thống kê | Đọc độ không chắc chắn trong dữ liệu. |
 
-### Phase 1 — Nền tảng học máy
+### Chương 1 — Nền tảng học máy
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -27,7 +31,7 @@
 | 1.6 | Regression và ranking metrics | Đo mô hình hồi quy và xếp hạng. |
 | 1.7 | Hyperparameter tuning | Thử tham số có hệ thống. |
 
-### Phase 2 — Học máy cổ điển
+### Chương 2 — Học máy cổ điển
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -45,7 +49,7 @@
 
 ## Khóa 2 — Học sâu
 
-### Phase 3 — Mạng neural
+### Chương 3 — Mạng neural
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -60,7 +64,7 @@
 | 3.9 | Attention và Transformer | Hiểu và tự cài attention. |
 | 3.10 | Autoencoder | Nén rồi tái tạo dữ liệu, tìm mẫu bất thường. |
 
-### Phase 4 — Model pretrained
+### Chương 4 — Model pretrained
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -72,7 +76,7 @@
 
 ## Khóa 3 — Ảnh, chữ và âm thanh
 
-### Phase 5 — Thị giác máy tính
+### Chương 5 — Thị giác máy tính
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -86,7 +90,7 @@
 | 5.8 | GAN và diffusion | Sinh ảnh mới. |
 | 5.9 | Phân tích hành vi model | Tìm chỗ model nhìn sai. |
 
-### Phase 6 — Xử lý ngôn ngữ
+### Chương 6 — Xử lý ngôn ngữ
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -97,7 +101,7 @@
 | 6.5 | Encoder–decoder | Đọc một chuỗi, viết ra chuỗi khác. |
 | 6.6 | Large language model | Chạy và điều khiển LLM trên T4. |
 
-### Phase 7 — Âm thanh và đa phương thức
+### Chương 7 — Âm thanh và đa phương thức
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -108,7 +112,7 @@
 
 ## Khóa 4 — Luyện thi
 
-### Phase 8 — Luyện thi
+### Chương 8 — Luyện thi
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|
@@ -118,7 +122,7 @@
 | 8.4 | Ensemble | Gộp nhiều model để điểm ổn định. |
 | 8.5 | Thi thử | Thi thử đúng điều kiện thật. |
 
-### Phase 9 — Mở rộng
+### Chương 9 — Mở rộng
 
 | Bài | Tên bài | Nội dung |
 |---|---|---|

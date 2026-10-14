@@ -26,7 +26,7 @@ for path in product(range(2), repeat=3):
     probability = np.prod(frame_probabilities[np.arange(3), path])
     transcript = ctc_collapse(path)
     transcript_probabilities[transcript] = transcript_probabilities.get(transcript, 0) + probability
-print(f"P(rong) = {transcript_probabilities[()]:.3f}")
+print(f"P(rỗng) = {transcript_probabilities[()]:.3f}")
 print(f"P(a) = {transcript_probabilities[(1,)]:.3f}")
 print(f"P(aa) = {transcript_probabilities[(1, 1)]:.3f}")
 print(f"loss = {-np.log(transcript_probabilities[(1,)]):.4f}")
@@ -114,7 +114,7 @@ def edit_distance(reference_tokens, predicted_tokens):
 reference = word_tokens("em học AI hôm nay")
 prediction = word_tokens("em học toán nay")
 errors = edit_distance(reference, prediction)
-print(f"loi = {errors}, token tham chieu = {len(reference)}")
+print(f"lỗi = {errors}, token tham chiếu = {len(reference)}")
 print(f"WER = {errors / len(reference):.3f}")
 
 # Bước 7
@@ -133,6 +133,6 @@ reference_text = "mai thi ai"
 original_text = "mai thi ai"
 edited_text = "mai thi toán"
 reference_tokens = word_tokens(reference_text)
-for name, text in [("goc", original_text), ("sua", edited_text)]:
+for name, text in [("gốc", original_text), ("sửa", edited_text)]:
     error_count = edit_distance(reference_tokens, word_tokens(text))
     print(f"{name}: WER = {error_count / len(reference_tokens):.3f}")

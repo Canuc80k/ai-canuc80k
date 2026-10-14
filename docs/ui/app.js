@@ -11,6 +11,7 @@
     route: '<path d="M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M8 17h7.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H16"/>',
     book: '<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/>',
     quiz: '<rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="m8.5 12.2 2.5 2.5 4.5-5"/>',
+    trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1.5A3 3 0 0 0 8 10.5M16 6h3v1.5a3 3 0 0 1-3 3M12 13v4m-3.5 3h7"/>',
     practice: '<rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="m7.5 10 2.5 2.25-2.5 2.25M12.5 14.5h4"/>',
     search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
     arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
@@ -146,7 +147,7 @@
       </div>
       <nav class="side-nav" id="side-nav"></nav>
       <div class="side-scroll">
-        <nav id="phase-nav" aria-label="Các phase"></nav>
+        <nav id="phase-nav" aria-label="Các chương"></nav>
       </div>
     </aside>
     <button class="scrim" id="scrim" data-action="menu-close" aria-label="Đóng menu" tabindex="-1"></button>
@@ -190,6 +191,7 @@
       ['home', 'route', 'Lộ trình', '#/'],
       ['quiz', 'quiz', 'Trắc nghiệm', '#/quiz'],
       ['practice', 'practice', 'Thực hành', '#/practice'],
+      ['contests', 'trophy', 'Các cuộc thi', '#/contests'],
       ['resources', 'book', 'Tài liệu', '#/resources']
     ].map(([key, i, label, href]) => a(href, `${icon(i)}<span>${label}</span>`,
       `class="side-link${section === key ? ' is-active' : ''}" data-nav`)).join('');
@@ -223,13 +225,16 @@
     renderChrome.lastLesson = lesson ? lesson.id : null;
 
     const crumbs = [a('#/', 'Lộ trình', 'data-nav')];
-    if (activePhase !== null && D.phases[activePhase]) crumbs.push(a(`#/phase/${activePhase}`, `Phase ${activePhase}`, 'data-nav'));
+    if (activePhase !== null && D.phases[activePhase]) crumbs.push(a(`#/phase/${activePhase}`, `Chương ${activePhase}`, 'data-nav'));
     if (lesson) crumbs.push(`<span aria-current="page">${nameLabel(lesson)}</span>`);
     if (r.type === 'resources') crumbs.splice(0, 1, '<span aria-current="page">Tài liệu</span>');
     if (r.type === 'resource') crumbs.splice(0, 1, a('#/resources', 'Tài liệu', 'data-nav'), `<span aria-current="page">${esc((D.resources.find(x => x.id === r.id) || {}).title || '')}</span>`);
     if (r.type === 'quiz') crumbs.splice(0, crumbs.length, ...quizCrumbs(r));
     if (r.type === 'exam') crumbs.splice(0, crumbs.length, a('#/quiz', 'Trắc nghiệm', 'data-nav'), ...(exSet() ? [a(`#/quiz/${exSet().id}`, esc(exSet().title), 'data-nav'), '<span aria-current="page">Kiểm tra</span>'] : []));
     if (r.type === 'practice') crumbs.splice(0, crumbs.length, ...practiceCrumbs(r));
+    if (r.type === 'contests') crumbs.splice(0, crumbs.length, ...(r.id && CT.contests.some(c => c.id === r.id)
+      ? [a('#/contests', 'Các cuộc thi', 'data-nav'), `<span aria-current="page">${esc(CT.contests.find(c => c.id === r.id).short)}</span>`]
+      : ['<span aria-current="page">Các cuộc thi</span>']));
     $('#crumbs').innerHTML = crumbs.join('<span class="crumb-sep" aria-hidden="true">/</span>');
 
     $('#top-progress').innerHTML = S.done.size ? `${S.done.size}<span>/${LESSONS.length}</span>` : '';
@@ -288,7 +293,7 @@
     const n = doneIn(p.id);
     return `<div class="page">
       <header class="page-head">
-        <p class="kicker">Phase ${p.id}</p>
+        <p class="kicker">Chương ${p.id}</p>
         <h1>${esc(p.title)}</h1>
         ${n ? `<p class="page-meta"><span>${n}/${p.count} đã học</span>${meter(n, p.count)}</p>` : ''}
       </header>
@@ -297,7 +302,7 @@
   }
   function pagerPhase(p) {
     const prev = D.phases[p.id - 1], next = D.phases[p.id + 1];
-    return `<nav class="pager" aria-label="Phase liền kề">${prev ? a(`#/phase/${prev.id}`, `<small>${icon('back')} Phase ${prev.id}</small><span>${esc(prev.title)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/phase/${next.id}`, `<small>Phase ${next.id} ${icon('arrow')}</small><span>${esc(next.title)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>`;
+    return `<nav class="pager" aria-label="Chương liền kề">${prev ? a(`#/phase/${prev.id}`, `<small>${icon('back')} Chương ${prev.id}</small><span>${esc(prev.title)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/phase/${next.id}`, `<small>Chương ${next.id} ${icon('arrow')}</small><span>${esc(next.title)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>`;
   }
 
   function highlight(code) {
@@ -412,6 +417,7 @@
     const m = l.parts[pi];
     const th = theoryOf(l);
     const ce = codeExamplesOf(l);
+    const lk = LINKS[l.id] || {};
     if (m || th) { S.last = l.id; persist(); }
     const tabList = [['learn', 'Bài học'], ...(m || l.deck ? [['slides', 'Slide']] : []), ...(m || l.code || ce ? [['code', 'Code mẫu']] : []), ...(homeworkOf(l, m) ? [['homework', 'Bài tập']] : [])];
     const tab = tabList.some(([k]) => k === r.params.get('tab')) ? r.params.get('tab') : 'learn';
@@ -449,6 +455,7 @@
     }
     if (ownExamples) {
       body = `<div class="actions">
+          ${lk.kaggle ? a(lk.kaggle, `${icon('external')}Chạy trên Kaggle`, 'class="btn" target="_blank" rel="noopener"') : ''}
           ${ce.notebook ? a(ce.notebook, `${icon('download')}Notebook ví dụ`, 'class="btn" download') : ''}
           ${ce.codeFile ? a(ce.codeFile, `${icon('download')}Code mẫu .py`, 'class="btn" download') : ''}
         </div>
@@ -482,12 +489,20 @@
 
     const parts = m && l.parts.length > 1 && !(th && tab === 'learn') && !ownDeck && !ownCode && !ownExamples && !(tab === 'homework' && hw?.fresh) ? `<div class="parts" role="tablist" aria-label="Phần của bài">${l.parts.map((x, k) =>
       a(lessonHref(l.id, tab, 1, k), esc(x.title), `class="part${k === pi ? ' is-active' : ''}"${k === pi ? ' aria-current="true"' : ''}`)).join('')}</div>` : '';
+    // Mọi thứ đi kèm bài trên một hàng: trắc nghiệm theo bài, bài thực hành, notebook Kaggle, PDF.
+    const links = [
+      lk.quiz ? a(`#/quiz/L-${l.id}`, `${icon('quiz')}Trắc nghiệm <b>${lk.quiz}</b>`, 'data-nav') : '',
+      (lk.drill || []).length ? a(`#/practice/bai/${l.id}`, `${icon('practice')}Thực hành <b>${lk.drill.length}</b>`, 'data-nav') : '',
+      lk.kaggle ? a(lk.kaggle, `${icon('external')}Chạy trên Kaggle`, 'target="_blank" rel="noopener"') : '',
+      l.lessonPdf ? a(l.lessonPdf, `${icon('download')}PDF bài`, 'download') : '',
+    ].filter(Boolean).join('');
     const draft = `<p class="draft">${isCheck(l) ? 'Đề kiểm tra đang được soạn.' : 'Bài này đang được soạn.'}</p>`;
     return `<div class="page page-wide">
       <header class="lesson-head">
-        <p class="kicker">${a(`#/phase/${p.id}`, `Phase ${p.id}`, 'data-nav')}<span class="kicker-sep">·</span>${nameLabel(l)}</p>
+        <p class="kicker">${a(`#/phase/${p.id}`, `Chương ${p.id}`, 'data-nav')}<span class="kicker-sep">·</span>${nameLabel(l)}</p>
         <h1>${esc(l.title)}</h1>
         ${m || th ? `<button class="mark${done ? ' is-done' : ''}" data-action="complete" aria-pressed="${done}">${icon(done ? 'done' : 'circle')}<span>${done ? 'Đã học' : 'Đánh dấu đã học'}</span></button>` : ''}
+        ${links && (m || th) ? `<nav class="lesson-links" aria-label="Đi kèm bài">${links}</nav>` : ''}
       </header>
       ${m || th ? `${parts}${tabs ? `<nav class="tabs" aria-label="Nội dung bài">${tabs}</nav>` : ''}<div class="tab-body">${body}</div>` : draft}
       ${lessonPager(l)}${footer()}</div>`;
@@ -683,6 +698,41 @@
     return `<div class="page"><div class="empty"><p>Không tìm thấy trang này.</p>${a('#/', 'Về lộ trình', 'class="btn" data-nav')}</div></div>`;
   }
 
+  // ---------- các cuộc thi (dữ liệu: ui/contests.js, dựng bằng tools/build_contests.py) ----------
+  const CT = window.CONTESTS || {contests: [], pages: {}, columns: [], intro: ''};
+  function renderContests(r) {
+    if (r.id) {
+      const c = CT.contests.find(x => x.id === r.id), pg = CT.pages[r.id];
+      if (!c || !pg) return notFound();
+      const k = CT.contests.indexOf(c), prev = CT.contests[k - 1], next = CT.contests[k + 1];
+      return `<div class="page page-wide">
+        <header class="lesson-head">
+          <p class="kicker">${a('#/contests', 'Các cuộc thi', 'data-nav')}<span class="kicker-sep">·</span>${esc(c.level || '')}</p>
+          <h1>${esc(c.name)}</h1>
+          <nav class="lesson-links" aria-label="Liên kết">${(c.links || []).map(([label, url]) => a(url, `${icon('external')}${esc(label)}`, 'target="_blank" rel="noopener"')).join('')}</nav>
+        </header>
+        <div class="learn">
+          <article class="prose theory" id="lesson-doc">${pg.html}</article>
+          <aside class="toc" aria-label="Mục lục">${pg.headings.map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}</aside>
+        </div>
+        <nav class="pager" aria-label="Cuộc thi liền kề">${prev ? a(`#/contests/${prev.id}`, `<small>${icon('back')} ${esc(prev.short)}</small><span>${esc(prev.name)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/contests/${next.id}`, `<small>${esc(next.short)} ${icon('arrow')}</small><span>${esc(next.name)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>
+        ${footer()}</div>`;
+    }
+    const rows = CT.contests.map((c, k) => a(`#/contests/${c.id}`,
+      `<span class="phase-num">${k + 1}</span>
+       <span class="phase-body"><span class="phase-title">${esc(c.name)}</span><span class="phase-text">${esc(c.summary || '')}</span></span>
+       <span class="phase-meta">${esc(c.level || '')}</span>`, 'class="phase" data-nav')).join('');
+    const cols = CT.columns || [];
+    const table = cols.length ? `<section class="block"><h2 class="block-title">So sánh nhanh</h2><div class="table-wrap"><table>
+        <thead><tr>${cols.map(col => `<th>${esc(col.label)}</th>`).join('')}</tr></thead>
+        <tbody>${CT.contests.map(c => `<tr>${cols.map((col, j) => `<td>${j ? inlineMd(String((c.compare || {})[col.key] || '')) : a(`#/contests/${c.id}`, esc(c.short), 'data-nav')}</td>`).join('')}</tr>`).join('')}</tbody>
+      </table></div></section>` : '';
+    return `<div class="page">
+      <header class="page-head"><h1>Các cuộc thi</h1>${CT.intro ? `<p class="lead">${inlineMd(CT.intro)}</p>` : ''}</header>
+      <div class="phases">${rows}</div>
+      ${table}${footer()}</div>`;
+  }
+
   // ---------- thực hành (dữ liệu: ui/practice-bank.js, dựng bằng tools/build_practice.py) ----------
   const PB = window.PRACTICE_BANK || {tiers: []};
   const practiceTier = id => PB.tiers.find(t => t.id === id);
@@ -702,7 +752,7 @@
     .map(lid => a(lessonHref(lid), lid, 'data-nav')).join(', ')}</span>` : '';
   function practiceCrumbs(r) {
     const t = practiceTier(r.id), here = text => `<span aria-current="page">${esc(text)}</span>`;
-    if (r.id === 'ch') return [a('#/practice', 'Thực hành', 'data-nav'), here(`Phase ${r.sub}`)];
+    if (r.id === 'ch') return [a('#/practice', 'Thực hành', 'data-nav'), here(`Chương ${r.sub}`)];
     if (r.id === 'bai') return [a('#/practice', 'Thực hành', 'data-nav'), here(`Bài ${r.sub}`)];
     return t ? [a('#/practice', 'Thực hành', 'data-nav'), here(t.title)] : [here('Thực hành')];
   }
@@ -720,7 +770,7 @@
     return `<div class="page">
       <header class="page-head"><h1>Thực hành</h1></header>
       <div class="phases">${rows}</div>
-      <section class="block"><h2 class="block-title">Theo phase</h2><div class="qz-lessons-chips">${byCh}</div></section>${footer()}</div>`;
+      <section class="block"><h2 class="block-title">Theo chương</h2><div class="qz-lessons-chips">${byCh}</div></section>${footer()}</div>`;
   }
   function renderPracticeTier(t) {
     const d = pDone(t), n = t.tasks.length;
@@ -758,7 +808,7 @@
     if (!p) return notFound();
     const rows = PB.tiers.flatMap(t => t.tasks.filter(x => x.chapters.includes(ch)).map(x => ({...x, tier: t})));
     return `<div class="page">
-      <header class="page-head"><p class="kicker">${a('#/practice', 'Thực hành', 'data-nav')}</p><h1>Phase ${p.id} · ${esc(p.title)}</h1></header>
+      <header class="page-head"><p class="kicker">${a('#/practice', 'Thực hành', 'data-nav')}</p><h1>Chương ${p.id} · ${esc(p.title)}</h1></header>
       <div class="pr-list">${practiceList(rows) || empty()}</div>${footer()}</div>`;
   }
   function renderPracticeLesson(id) {
@@ -1239,7 +1289,7 @@
     ++render.token;
     renderChrome(r);
     const view = {home: renderHome, phase: () => renderPhase(r.id), lesson: () => renderLesson(r),
-      quiz: () => renderQuiz(r), exam: () => renderExam(r), practice: () => renderPractice(r), resources: renderResources, resource: () => renderResource(r.id)}[r.type];
+      quiz: () => renderQuiz(r), exam: () => renderExam(r), practice: () => renderPractice(r), contests: () => renderContests(r), resources: renderResources, resource: () => renderResource(r.id)}[r.type];
     spyHeads = []; spyLinks = [];
     $('#main').innerHTML = view ? view() : notFound();
     const l = r.type === 'lesson' ? findLesson(r.id) : null;
@@ -1248,8 +1298,10 @@
     document.documentElement.classList.toggle('exam-lock', exActive());
     if (r.type === 'exam' && exActive()) exTick.start(); else exTick.stop();
     document.title = l ? `${l.title} — AI Canuc80k` : r.type === 'exam' && exSet() ? `Kiểm tra ${exSet().title} — AI Canuc80k` : r.type === 'quiz' ? `Trắc nghiệm${qs ? ' ' + qs.title : ''} — AI Canuc80k`
-      : r.type === 'practice' ? `Thực hành${pt ? ' ' + pt.title : ''} — AI Canuc80k` : 'AI Canuc80k';
+      : r.type === 'practice' ? `Thực hành${pt ? ' ' + pt.title : ''} — AI Canuc80k`
+      : r.type === 'contests' ? `${(CT.contests.find(c => c.id === r.id) || {name: 'Các cuộc thi'}).name} — AI Canuc80k` : 'AI Canuc80k';
     if (l) { tidyLessonDoc(); renderChrome(r); spy(); }
+    if (r.type === 'contests' && r.id && CT.pages[r.id]) { tidyLessonDoc(); spy(); }
     window.Anim?.scan($('#main'));
   }
 

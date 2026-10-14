@@ -72,24 +72,3 @@ print(probabilities.tolist())
 print(round(hand_loss.item(), 6), round(correct_loss.item(), 6))
 print('softmax twice:', round(double_softmax_loss.item(), 6))
 print('prediction:', scores.argmax(dim=1).tolist())
-
-# Bước 6
-import warnings
-
-out = torch.tensor([[2.], [-1.], [0.5], [-3.]])     # (4, 1): đầu ra nn.Linear(h, 1)
-y = torch.tensor([1., 0., 1., 0.])                  # (4,), float
-
-def try_loss(name, call):
-    with warnings.catch_warnings(record=True) as caught:
-        warnings.simplefilter('always')         # đếm cảnh báo thay vì in ra
-        try:
-            value = call()
-        except (ValueError, RuntimeError) as err:
-            print(f'{name}: dừng, {type(err).__name__}')
-            return
-    print(f'{name}: chạy, loss {value.item():.4f}, {len(caught)} cảnh báo')
-
-try_loss('BCE (4,1) và (4,)', lambda: F.binary_cross_entropy_with_logits(out, y))
-try_loss('CE nhãn float    ', lambda: F.cross_entropy(torch.zeros(4, 3), y))
-try_loss('L1  (4,1) và (4,)', lambda: F.l1_loss(out, y))
-try_loss('BCE sau squeeze  ', lambda: F.binary_cross_entropy_with_logits(out.squeeze(1), y))

@@ -168,15 +168,3 @@ reference = "câu lạc bộ họp vào thứ sáu".split()
 for candidate in ["họp họp họp họp", "câu lạc bộ họp thứ sáu", "câu lạc bộ họp vào thứ bảy"]:
     (p1, p2), bp, score = bleu2(candidate.split(), reference)
     print(f"{candidate:27} p1={p1:.3f} p2={p2:.3f} BP={bp:.3f} BLEU-2={score:.3f}")
-
-# Bước 9
-from transformers import T5Config, T5ForConditionalGeneration
-
-config = T5Config(vocab_size=8, d_model=16, d_kv=8, d_ff=32, num_layers=1, num_heads=2,
-                  pad_token_id=0, eos_token_id=1, decoder_start_token_id=0)
-t5 = T5ForConditionalGeneration(config)
-labels = torch.tensor([[4, 3, 1, -100], [5, 1, -100, -100]])
-print("decoder input:", t5.prepare_decoder_input_ids_from_labels(labels=labels).tolist())
-print("vị trí tính loss:", int((labels != -100).sum()))
-labels_with_start = torch.tensor([[0, 4, 3, 1], [0, 5, 1, -100]])
-print("label đã có token mở đầu:", t5.prepare_decoder_input_ids_from_labels(labels=labels_with_start).tolist())

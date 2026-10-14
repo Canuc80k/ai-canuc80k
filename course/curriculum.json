@@ -50,9 +50,9 @@
   "phases": [
     {
       "id": 0,
-      "title": "Python và dữ liệu",
-      "short": "Python",
-      "description": "Công cụ làm việc với dữ liệu."
+      "title": "Python, dữ liệu và toán",
+      "short": "Python và toán",
+      "description": "Công cụ và toán nền cho học máy."
     },
     {
       "id": 1,
@@ -144,6 +144,42 @@
         "0.4",
         "0.5"
       ]
+    },
+    {
+      "id": "0.4",
+      "phase": 0,
+      "title": "Hàm số, mũ và log",
+      "summary": "Đổi điểm số thành xác suất và loss.",
+      "outcome": "Tính e^x, log, sigmoid, softmax và log-loss bằng tay và bằng NumPy; giải thích vì sao trừ max và cộng log.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "0.5",
+      "phase": 0,
+      "title": "Vector và ma trận",
+      "summary": "Tính trên nhiều số cùng lúc.",
+      "outcome": "Tính tích vô hướng, độ dài, khoảng cách, cosine; nhân ma trận và dự đoán shape; viết dự đoán của model tuyến tính bằng X @ w.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "0.6",
+      "phase": 0,
+      "title": "Đạo hàm và gradient",
+      "summary": "Biết đổi tham số theo hướng nào.",
+      "outcome": "Tính đạo hàm các hàm cơ bản, dùng quy tắc chuỗi, tính gradient của loss nhỏ, chạy gradient descent và kiểm gradient bằng sai phân.",
+      "syllabus": "P",
+      "legacy": []
+    },
+    {
+      "id": "0.7",
+      "phase": 0,
+      "title": "Xác suất và thống kê",
+      "summary": "Đọc độ không chắc chắn trong dữ liệu.",
+      "outcome": "Tính xác suất có điều kiện và Bayes, kỳ vọng, phương sai, độ lệch chuẩn, z-score; đọc sai số chuẩn của điểm validation.",
+      "syllabus": "P",
+      "legacy": []
     },
     {
       "id": "1.1",

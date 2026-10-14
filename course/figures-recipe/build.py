@@ -2,7 +2,7 @@
 from pathlib import Path
 import subprocess,sys,json,hashlib,xml.etree.ElementTree as ET,re,shutil
 R=Path(__file__).resolve().parent;C=R.parent
-EXPECTED=508  # số hình sau lượt 8; thêm hình mới thì tăng số này
+EXPECTED=523  # 508 sau lượt 8, +15 hình toán 0.4–0.7 (p10_math.py, 14/10/2026); thêm hình mới thì tăng số này
 PRUNED={'1-7-workflow','4-1-package','5-kt3-loop','6-6-llm-pipeline','7-kt4-loop','7-kt4-time','8-1-budget','8-5-reproduce','8-5-timeline','5-9-occlusion','2-7-boosting'}
 CAP={
 '0-2-speed':'Hai cách tính sigmoid cho cùng dãy đầu vào.',
@@ -106,7 +106,7 @@ CAP={
 '8-5-sessions':'Ba lịch 360 phút; tam giác đánh dấu phút đóng thí nghiệm. Buổi 2 đóng ở phút 275 để chừa 70 phút chạy lại; buổi 1 chưa chạy lại và dùng 35 phút cuối để sửa file.',
 }
 def regenerate():
-    scripts=['plots.py','scenes01.py','scenes34.py','scenes5.py','scenes67.py','scenes89.py','canary.py','supplement.py','experiments.py','extra8.py','tuning17.py','boost27.py','depth33.py','optim35.py','regul36.py','rnn38.py','ae310.py','pretrained41.py','kt2regions.py','kt3threshold.py','occlusion59.py','depth52.py','augment53.py','neighbors57.py','extract66.py','kt4score.py','kt4paired.py','ctcdp73.py','plans81.py','noise81.py','open83.py','mock85.py','p8_ch0.py','p8_ch1.py','p8_ch2.py','p8_ch3.py','p8_ch4.py','p8_ch5.py','p8_ch6.py','p8_ch7.py','p8_ch8.py','p8_ch9.py']  # lượt 8: hình vẽ lại hoặc thêm mới, chạy sau cùng để thay bản cũ
+    scripts=['plots.py','scenes01.py','scenes34.py','scenes5.py','scenes67.py','scenes89.py','canary.py','supplement.py','experiments.py','extra8.py','tuning17.py','boost27.py','depth33.py','optim35.py','regul36.py','rnn38.py','ae310.py','pretrained41.py','kt2regions.py','kt3threshold.py','occlusion59.py','depth52.py','augment53.py','neighbors57.py','extract66.py','kt4score.py','kt4paired.py','ctcdp73.py','plans81.py','noise81.py','open83.py','mock85.py','p8_ch0.py','p8_ch1.py','p8_ch2.py','p8_ch3.py','p8_ch4.py','p8_ch5.py','p8_ch6.py','p8_ch7.py','p8_ch8.py','p8_ch9.py','p10_math.py']  # lượt 8: hình vẽ lại hoặc thêm mới, chạy sau cùng để thay bản cũ
     for name in scripts:
         r=subprocess.run([sys.executable,'-B','-X','utf8',str(R/name)],capture_output=True,text=True,encoding='utf-8')
         if r.returncode:raise RuntimeError(name+'\n'+r.stdout+'\n'+r.stderr)

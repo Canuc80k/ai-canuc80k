@@ -23,4 +23,4 @@ Cả chương đi cùng một câu lạc bộ đang chuẩn bị các buổi sin
 
 Điểm nối với lập trình thi đấu là thói quen kiểm tra: đọc hợp đồng input/output, viết một phương án đơn giản trước, tính tay một ví dụ, rồi đối chiếu thư viện. Điểm mới là validation có nhiễu: một cải thiện nhỏ chưa chứng minh mô hình tốt hơn trong mọi tình huống.
 
-Nền tảng cần có là Python, shape của NumPy và đọc bảng bằng pandas ở chương 0; chưa cần đạo hàm hay mạng neural, ký hiệu mới được giải thích ngay khi gặp. Học xong chương, mỗi con số validation in ra đều phải trả lời được ba câu: đo trên dữ liệu nào, chia theo đơn vị nào, và so với baseline nào.
+Nền tảng cần có là Python, NumPy, pandas và phần toán ở chương 0: log-loss, vector, đạo hàm, xác suất. Chương này chưa dùng mạng neural; ký hiệu mới được giải thích ngay khi gặp. Học xong chương, mỗi con số validation in ra đều phải trả lời được ba câu: đo trên dữ liệu nào, chia theo đơn vị nào, và so với baseline nào.

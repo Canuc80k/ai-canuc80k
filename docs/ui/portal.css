@@ -834,3 +834,10 @@ html.exam-lock .top { justify-content: flex-end; }
 .pr-uses a { color: var(--text-2); }
 .pr-uses a:hover { color: var(--accent-ink); }
 .toc { max-height: calc(100vh - var(--top-h) - 100px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding-bottom: 8px; }
+
+/* Hàng liên kết đi kèm bài: trắc nghiệm, thực hành, Kaggle, PDF. */
+.lesson-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 14px; font-size: 14px; }
+.lesson-links a { display: inline-flex; align-items: center; gap: 6px; color: var(--text-2); }
+.lesson-links a:hover { color: var(--accent-ink); }
+.lesson-links b { font-weight: 500; color: var(--faint); font-variant-numeric: tabular-nums; }
+.lesson-links .i { width: 15px; height: 15px; }

@@ -119,12 +119,6 @@ print(np.allclose(full.coef_, w_cf), np.allclose(full.intercept_, b_cf))
 print(np.allclose(w_gd, w_cf), np.allclose(b_gd, b_cf))
 
 # Bước 12
-y_col = y.reshape(-1, 1)               # (200, 1), ví dụ khi đọc bằng df[["price"]]
-y_hat = predict(X, w_cf, b_cf)         # (200,)
-print((y_hat - y_col).shape)
-print(mse(y_hat, y), mse(y_hat, y_col))
-
-# Bước 13
 ns = np.array([1e3, 2e3, 5e3, 1e4, 2e4, 5e4])
 t = np.array([0.0011, 0.0042, 0.026, 0.098, 0.41, 2.47])    # giây, đo trên máy nhà
 k, c = np.polyfit(np.log(ns), np.log(t), 1)                  # least squares bậc 1

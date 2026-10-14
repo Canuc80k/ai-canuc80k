@@ -157,12 +157,3 @@ sk = LogisticRegression(C=1.0, max_iter=1000).fit(D_tr, t_tr)
 print("scikit-learn: accuracy test =", round(sk.score(D_te, t_te), 3))
 print("nhãn trùng nhau:", np.mean(sk.predict(D_te) == pred),
       "  xác suất lệch lớn nhất:", np.abs(sk.predict_proba(D_te) - softmax(D_te @ W + b)).max().round(3))
-
-# Bước 15
-p = np.array([1.0, 0.0])
-yy = np.array([0.0, 0.0])
-print(-np.mean(yy * np.log(p) + (1 - yy) * np.log(1 - p)))
-print(-np.mean(yy * np.log(np.clip(p, 1e-12, 1 - 1e-12)) + (1 - yy) * np.log(1 - np.clip(p, 1e-12, 1 - 1e-12))))
-
-# Bước 16
-print("nộp xác suất:", round(log_loss(y_te, p_te), 3), "  nộp nhãn:", round(log_loss(y_te, model.predict(X_te)), 3))

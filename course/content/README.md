@@ -19,7 +19,7 @@ Bài 2.1 là mẫu đầy đủ. Một bài là một buổi giảng, đọc t�
 4. Các mục giảng `##` theo đúng thứ tự dạy. Mỗi mục: vì sao cần → hình ảnh trực giác → công thức → code chạy được → đọc kết quả. Cuối mục quan trọng đặt một `::: quiz`.
 5. Với mô hình tự cài được: có bảng shape, code NumPy ngắn, kiểm gradient (nếu có đạo hàm), đối chiếu thư viện. Đây là một phần của bài, không phải trục chính; phần dùng thư viện đúng quy trình và đọc kết quả cũng quan trọng như vậy.
 6. Thí nghiệm có số liệu thật thay cho lời khẳng định (learning rate, chuẩn hóa, overfit...). Lý thuyết dự đoán trước, code xác nhận sau.
-7. `## Ví dụ tính tay`, `## Bẫy cài đặt` (nếu có), một mục ứng dụng gần với học sinh, rồi `## Khi đi thi`, `## Tóm tắt`, `## Kiểm tra cuối bài`, `## Đọc thêm`.
+7. `## Ví dụ tính tay`, một mục ứng dụng gần với học sinh, rồi `## Khi đi thi`, `## Tóm tắt`, `## Kiểm tra cuối bài`, `## Đọc thêm`. Từ 14/10/2026 không có mục Bẫy, hộp `::: trap`, ô Nhắc lại hay mục Tìm hiểu kỹ; không nhồi khái niệm chỉ để phủ syllabus. Bài ưu tiên đơn giản, thực dụng; dạy lại kiến thức cũ khi cần là tốt.
 8. `## Kiểm tra cuối bài`: mặc định 10 câu `::: quiz Câu 1` ... `::: quiz Câu 10`, bao quát cả bài, có câu tính toán nhỏ và câu đọc kết quả. Website tự chấm và hiện điểm.
 9. `## Đọc thêm`: tài liệu công khai, có link khi miễn phí, mỗi mục một câu nói đọc để làm gì. Không ghi tài liệu nội bộ.
 

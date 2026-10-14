@@ -62,6 +62,9 @@ def main():
         for lid in drill_map.get(code, []):
             drill_by_lesson.setdefault(lid, []).append(code)
 
+    # Notebook Kaggle đã chạy thật (kaggle/links.json).
+    kaggle_runs = {k: v for k, v in json.loads((ROOT / 'kaggle' / 'links.json').read_text(encoding='utf-8')).items() if k != '_'}
+
     out_dir = UI / 'data' / 'l'
     out_dir.mkdir(parents=True, exist_ok=True)
     keep = set()
@@ -82,15 +85,12 @@ def main():
         lite['hasCode'] = bool(l.get('code'))
         lite_lessons.append(lite)
 
-        nb = l.get('notebook')
-        nb_path = f'{SITE_DIR}/{nb}' if nb else None
         links[lid] = {
             'quiz': quiz_by_lesson.get(lid, 0),
             'homework': len(l.get('homework') or []) or sum(len(m.get('homework') or []) for m in l.get('parts') or []),
             'practice': practice_by_phase.get(l['phase'], []),
             'drill': drill_by_lesson.get(lid, []),
-            'colab': f'https://colab.research.google.com/github/{REPO}/blob/main/{nb_path}' if nb_path else None,
-            'kaggle': f'https://www.kaggle.com/kernels/welcome?src=https://github.com/{REPO}/blob/main/{nb_path}' if nb_path else None,
+            'kaggle': kaggle_runs.get(lid),
         }
 
     for old in out_dir.glob('*.js'):

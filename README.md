@@ -8,7 +8,7 @@ Website: https://ai-canuc80k.ai-web-deploy-20261010.workers.dev/
 
 | Khóa | Phase | Số bài |
 |---|---|---|
-| 1 · Học máy | 0 · Python và dữ liệu | 3 |
+| 1 · Học máy | 0 · Python, dữ liệu và toán | 7 |
 | 1 · Học máy | 1 · Nền tảng học máy | 7 |
 | 1 · Học máy | 2 · Học máy cổ điển | 11 |
 | 2 · Học sâu | 3 · Mạng neural | 10 |
