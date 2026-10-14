@@ -3369,7 +3369,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Trong unsupervised learning (học không giám sát), ta chưa có nhãn mục tiêu; ví dụ chia các buổi thành nhóm theo kiểu hoạt động."
+     "Khi dữ liệu không có nhãn, ta làm học không giám sát (unsupervised learning)."
     ]
    ]
   ]
@@ -5995,7 +5995,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Trong supervised learning (học có giám sát), mô hình học từ cặp $(\\mathbf{x}_i,y_i)$: đặc trưng và nhãn của mẫu thứ $i$."
+     "Phân loại và hồi quy đều là học có giám sát (supervised learning): model học từ các cặp $(\\mathbf{x}_i, y_i)$, tức đặc trưng và nhãn của mẫu thứ $i$."
     ]
    ]
   ]
@@ -6009,8 +6009,8 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Trong unsupervised learning (học không giám sát), ta chưa có nhãn mục tiêu; ví dụ chia các buổi thành nhóm theo kiểu hoạt động.",
-     "Khi không có nhãn, ta có phân cụm (gom khách hàng hay gom bài báo chưa có chủ đề) và phát hiện bất thường."
+     "Khi dữ liệu không có nhãn, ta làm học không giám sát (unsupervised learning).",
+     "Hai việc hay gặp là phân cụm (clustering), như gom khách hàng hay bài báo giống nhau thành nhóm, và phát hiện bất thường."
     ]
    ],
    [
@@ -6087,7 +6087,7 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Train để mô hình học."
+     "Train, 80 buổi đầu: để model học."
     ]
    ]
   ]
@@ -6101,7 +6101,7 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Validation để so sánh và chọn cấu hình, như số vòng huấn luyện hay độ mạnh regularization."
+     "Validation, 20 buổi tiếp: để so các model và chọn cái tốt nhất."
     ]
    ]
   ]
@@ -6115,7 +6115,8 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Test giữ riêng tới cuối và chỉ chấm một lần, nên điểm trên test gần với điểm trên dữ liệu mới; dùng test để chọn giữa nhiều phương án thì điểm báo cáo đẹp hơn thực tế."
+     "Test, 20 buổi cuối: giữ riêng đến cuối, chấm đúng một lần cho model đã chọn.",
+     "Test chỉ chấm một lần nên điểm test gần với điểm khi gặp dữ liệu mới."
     ]
    ]
   ]
@@ -7467,7 +7468,8 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Test giữ riêng tới cuối và chỉ chấm một lần, nên điểm trên test gần với điểm trên dữ liệu mới; dùng test để chọn giữa nhiều phương án thì điểm báo cáo đẹp hơn thực tế."
+     "Test, 20 buổi cuối: giữ riêng đến cuối, chấm đúng một lần cho model đã chọn.",
+     "Test chỉ chấm một lần nên điểm test gần với điểm khi gặp dữ liệu mới."
     ]
    ],
    [
@@ -7600,7 +7602,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Khi không có nhãn, ta có phân cụm (gom khách hàng hay gom bài báo chưa có chủ đề) và phát hiện bất thường."
+     "Hai việc hay gặp là phân cụm (clustering), như gom khách hàng hay bài báo giống nhau thành nhóm, và phát hiện bất thường."
     ]
    ]
   ]
@@ -7614,7 +7616,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Số lớp có thể nhiều hơn hai: đọc chữ số viết tay có 10 lớp từ 0 tới 9, nhận cảm xúc trên khuôn mặt có một lớp cho mỗi cảm xúc."
+     "Số lớp có thể nhiều hơn hai: đọc chữ số viết tay có 10 lớp, từ 0 tới 9; nhận cảm xúc trên khuôn mặt có một lớp cho mỗi cảm xúc."
     ]
    ],
    [
@@ -9126,8 +9128,9 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Nếu hỏi “có ít nhất 30 người đến hay không?”, output là một nhãn trong hai lớp: đây là classification (phân loại). Nếu hỏi “có bao nhiêu người đến?”, output là một số: đây là regression (hồi quy).",
-     "Khi không có nhãn, ta có phân cụm (gom khách hàng hay gom bài báo chưa có chủ đề) và phát hiện bất thường."
+     "Nếu hỏi “có ít nhất 30 người đến hay không?”, output là một nhãn trong hai lớp: đây là classification (phân loại).",
+     "Nếu hỏi “có bao nhiêu người đến?”, output là một số: đây là regression (hồi quy).",
+     "Hai việc hay gặp là phân cụm (clustering), như gom khách hàng hay bài báo giống nhau thành nhóm, và phát hiện bất thường."
     ]
    ],
    [
@@ -9155,7 +9158,8 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Train để mô hình học. Validation để so sánh và chọn cấu hình, như số vòng huấn luyện hay độ mạnh regularization. Test giữ riêng tới cuối và chỉ chấm một lần, nên điểm trên test gần với điểm trên dữ liệu mới; dùng test để chọn giữa nhiều phương án thì điểm báo cáo đẹp hơn thực tế."
+     "Validation, 20 buổi tiếp: để so các model và chọn cái tốt nhất.",
+     "Test, 20 buổi cuối: giữ riêng đến cuối, chấm đúng một lần cho model đã chọn."
     ]
    ]
   ]
@@ -9410,7 +9414,7 @@
     "1.1",
     "Từ câu chuyện đến một hàng dữ liệu",
     [
-     "Bảng có cột cố định, mỗi dòng một bản ghi, gọi là dữ liệu có cấu trúc."
+     "Bảng như trên, có cột cố định và mỗi dòng một mẫu, gọi là dữ liệu có cấu trúc."
     ]
    ],
    [
@@ -10425,7 +10429,7 @@
     "1.1",
     "Từ câu chuyện đến một hàng dữ liệu",
     [
-     "Theo loại dữ liệu đầu vào, ứng dụng AI hay chia ba mảng: dữ liệu bảng (khoa học dữ liệu, như gợi ý quảng cáo từ lịch sử mua hàng), ảnh và video (thị giác máy tính), chữ và lời nói (xử lý ngôn ngữ tự nhiên)."
+     "Theo loại dữ liệu, ứng dụng AI thường chia ba mảng: dữ liệu bảng (khoa học dữ liệu, như gợi ý quảng cáo từ lịch sử mua hàng), ảnh và video (thị giác máy tính), chữ và lời nói (xử lý ngôn ngữ tự nhiên)."
     ]
    ]
   ]
@@ -10451,7 +10455,7 @@
     "1.1",
     "Từ câu chuyện đến một hàng dữ liệu",
     [
-     "Theo loại dữ liệu đầu vào, ứng dụng AI hay chia ba mảng: dữ liệu bảng (khoa học dữ liệu, như gợi ý quảng cáo từ lịch sử mua hàng), ảnh và video (thị giác máy tính), chữ và lời nói (xử lý ngôn ngữ tự nhiên)."
+     "Theo loại dữ liệu, ứng dụng AI thường chia ba mảng: dữ liệu bảng (khoa học dữ liệu, như gợi ý quảng cáo từ lịch sử mua hàng), ảnh và video (thị giác máy tính), chữ và lời nói (xử lý ngôn ngữ tự nhiên)."
     ]
    ]
   ]
@@ -10535,7 +10539,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Phân loại và hồi quy là hai dạng chính của học có giám sát."
+     "Phân loại và hồi quy đều là học có giám sát (supervised learning): model học từ các cặp $(\\mathbf{x}_i, y_i)$, tức đặc trưng và nhãn của mẫu thứ $i$."
     ]
    ]
   ]
@@ -10583,7 +10587,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Trong supervised learning (học có giám sát), mô hình học từ cặp $(\\mathbf{x}_i,y_i)$: đặc trưng và nhãn của mẫu thứ $i$."
+     "Phân loại và hồi quy đều là học có giám sát (supervised learning): model học từ các cặp $(\\mathbf{x}_i, y_i)$, tức đặc trưng và nhãn của mẫu thứ $i$."
     ]
    ]
   ]
@@ -11246,7 +11250,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Số lớp có thể nhiều hơn hai: đọc chữ số viết tay có 10 lớp từ 0 tới 9, nhận cảm xúc trên khuôn mặt có một lớp cho mỗi cảm xúc."
+     "Số lớp có thể nhiều hơn hai: đọc chữ số viết tay có 10 lớp, từ 0 tới 9; nhận cảm xúc trên khuôn mặt có một lớp cho mỗi cảm xúc."
     ]
    ]
   ]
@@ -11370,7 +11374,7 @@
     "1.1",
     "Đầu ra quyết định loại bài toán",
     [
-     "Loại đầu vào không quyết định loại bài: đoán tuổi từ ảnh khuôn mặt vẫn là hồi quy."
+     "Loại bài do đầu ra quyết định, không do đầu vào: đoán tuổi từ ảnh khuôn mặt vẫn là hồi quy."
     ]
    ]
   ]
@@ -11723,7 +11727,8 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Validation để so sánh và chọn cấu hình, như số vòng huấn luyện hay độ mạnh regularization. Test giữ riêng tới cuối và chỉ chấm một lần, nên điểm trên test gần với điểm trên dữ liệu mới; dùng test để chọn giữa nhiều phương án thì điểm báo cáo đẹp hơn thực tế."
+     "Validation, 20 buổi tiếp: để so các model và chọn cái tốt nhất.",
+     "Test chỉ chấm một lần nên điểm test gần với điểm khi gặp dữ liệu mới."
     ]
    ]
   ]
@@ -11737,7 +11742,7 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "So hai mô hình phải chấm trên cùng một tập."
+     "Khi so hai model, phải chấm chúng trên cùng một tập."
     ]
    ]
   ]
@@ -15340,7 +15345,7 @@
     "1.1",
     "Ba phần dữ liệu, ba công việc",
     [
-     "Test giữ riêng tới cuối và chỉ chấm một lần, nên điểm trên test gần với điểm trên dữ liệu mới; dùng test để chọn giữa nhiều phương án thì điểm báo cáo đẹp hơn thực tế."
+     "Nếu dùng test để chọn giữa nhiều model, model thắng có phần may trên chính tập đó, và điểm báo cáo sẽ đẹp hơn thực tế."
     ]
    ]
   ]
