@@ -378,6 +378,8 @@ def stack_fig():
     px, py = 50, 40
     s.tiles(px, py, [[''] * 3] * 2, cw, ch, BLUE, g, opacity=.3)
     s.tiles(px, py + 2 * (ch + g) + 12, [[''] * 3] * 3, cw, ch, CLAY, g, opacity=.3)
+    s.mono(px - 8, py + ch + 1, '2', 12, 'end', BLUE)
+    s.mono(px - 8, py + 3.5 * (ch + g) + 12, '3', 12, 'end', CLAY)
     s.arrow(px + 92, py + 58, px + 128, py + 58, FAINT, 1.2)
     rx = px + 142
     s.tiles(rx, py + 6, [[''] * 3] * 2, cw, ch, BLUE, g, opacity=.3)
@@ -385,11 +387,12 @@ def stack_fig():
     s.mono(rx + 40, py + 5 * (ch + g) + 22, '(5, 3)', 12.5, 'middle')
     X = 360
     s.label(X + 120, 16, 'stack', 14, color=TEXT, weight=600)
-    for k, col in enumerate([CLAY, BLUE]):
-        ox, oy = X + 66 + (1 - k) * 26, 36 + k * 24
-        s.box(ox - 3, oy - 3, 3 * (cw + g) + 4, 5 * (ch + g) + 4, 'none', PAPER, r=4, width=0)
-        s.tiles(ox, oy, [[''] * 3] * 5, cw, ch, col, g, opacity=.3)
-    s.mono(X + 130, 172, '(2, 5, 3)', 12.5, 'middle')
+    for k, (col, name) in enumerate([(BLUE, 'buổi 1'), (CLAY, 'buổi 2')]):
+        ox = X + 30 + k * 104
+        s.label(ox + 41, 44, name, 12.5, color=col, weight=600)
+        s.tiles(ox, 56, [[''] * 3] * 5, cw, ch, col, g, opacity=.3)
+    s.box(X + 20, 30, 206, 134, SOFT_LINE, 'none', r=8, width=1.2, dash='4 3')
+    s.mono(X + 123, 184, '(2, 5, 3)', 12.5, 'middle')
     s.line(320, 12, 320, 186, SOFT_LINE, 1)
     s.save('0-2-stack', 'concatenate nối trục đã có; stack thêm một trục mới.')
 
@@ -508,14 +511,14 @@ def rng_fig():
     tape = [0, 7, 6, 4, 4, 8, 0, 6, 2, 0]
     cw, g = 30, 3
     x0 = 160
-    s.mono(x0 - 16, 40, 'seed 42', 12.5, 'end', MUTED)
+    s.mono(x0 - 16, 40, 'rng', 12.5, 'end', MUTED)
     s.tiles(x0, 24, [[str(v) for v in tape]], cw, 32, LINE, g, {(0, j): ((BLUE, .25) if j < 5 else (CLAY, .25)) for j in range(10)}, 14)
     s.label(x0 + 10 * (cw + g) + 6, 40, '…', 16, 'start')
     s.label(x0 + 2.5 * (cw + g), 74, 'a', 14, color=BLUE, weight=600)
     s.label(x0 + 7.5 * (cw + g), 74, 'b', 14, color=CLAY, weight=600)
-    s.mono(x0 - 16, 120, 'seed 42', 12.5, 'end', MUTED)
+    s.mono(x0 - 16, 120, 'rng2', 12.5, 'end', MUTED)
     s.tiles(x0, 104, [[str(v) for v in tape[:5]]], cw, 32, LINE, g, {(0, j): (BLUE, .25) for j in range(5)}, 14)
-    s.label(x0 + 5 * (cw + g) + 12, 120, 'bắt đầu lại', 13, 'start', BLUE)
+    s.label(x0 + 5 * (cw + g) + 12, 120, 'cùng seed 42: lại từ đầu dãy', 13, 'start', BLUE)
     s.save('0-2-rng', 'Seed cố định cả dãy; mỗi lần gọi lấy phần tiếp theo.')
 
 

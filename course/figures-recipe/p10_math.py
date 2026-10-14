@@ -33,7 +33,7 @@ def explog():
     s.label(ax.X(4.4), ax.Y(3.5), 'y = x', 12, 'end', FAINT)
     s.label(ax.X(0) - 8, ax.Y(1), '(0, 1)', 12, 'end', CLAY)
     s.label(ax.X(1), ax.Y(0) + 16, '(1, 0)', 12, 'middle', BLUE)
-    s.save('0-4-explog', 'eˣ và log x đối xứng qua đường y = x; log x chỉ có ở x > 0 và âm khi x < 1.')
+    s.save('0-4-explog', 'eˣ và log x đối xứng qua đường y = x.')
 
 
 def sigmoid04():
@@ -48,7 +48,7 @@ def sigmoid04():
         s.circle(ax.X(z), ax.Y(p), 4.5, CLAY)
         s.label(ax.X(z) + (10 if z >= 0 else -10), ax.Y(p) + (12 if z >= 0 else -12), f'{p:.2f}', 12.5, 'start' if z >= 0 else 'end', CLAY, 600)
     s.label(ax.X(7), ax.Y(1) - 12, 'σ(z)', 14, 'end', BLUE, 600)
-    s.save('0-4-sigmoid', 'Sigmoid đổi z bất kỳ thành số trong (0, 1); σ(0) = 0.5 và hai nửa đối xứng qua điểm ấy.')
+    s.save('0-4-sigmoid', 'Sigmoid đưa mọi z vào khoảng (0, 1); σ(0) = 0.5.')
 
 
 def softmax04():
@@ -72,7 +72,7 @@ def softmax04():
     for x in (196, 406):
         s.arrow(x, 110, x + 34, 110, MUTED, 1.4)
     s.label(530, 222, f'tổng = {e.sum():.2f} → 1', 12, color=FAINT)
-    s.save('0-4-softmax', 'Softmax: lấy mũ từng logit rồi chia cho tổng; logits 2, 1, 0 thành 0.67, 0.24, 0.09.')
+    s.save('0-4-softmax', 'Softmax: lấy mũ từng logit rồi chia cho tổng.')
 
 
 def logloss04():
@@ -136,7 +136,7 @@ def dot05():
         d = a[0] * b[0] + a[1] * b[1]
         s.label(x0 + 100, 166, name, 13.5, color=TEXT, weight=600)
         s.label(x0 + 100, 188, f'a · b = {d}'.replace('-', '−'), 13, color=[GREEN, MUTED, CLAY][k], weight=600)
-    s.save('0-5-dot', 'Tích vô hướng dương khi hai vector cùng hướng, bằng 0 khi vuông góc, âm khi ngược hướng.')
+    s.save('0-5-dot', 'a · b dương khi cùng hướng, bằng 0 khi vuông góc, âm khi ngược hướng.')
 
 
 def matmul05():
@@ -187,7 +187,7 @@ def transform05():
     s.label(ax.X(1), ax.Y(0) + 16, '(1, 0)', 12.5, 'middle', BLUE, 600)
     s.mono(500, 80, 'M = [[2, 1],', 13, 'start', TEXT)
     s.mono(500, 98, '     [0, 1]]', 13, 'start', TEXT)
-    s.save('0-5-transform', 'Ma trận đưa hình vuông đơn vị thành hình bình hành: hai cột của ma trận là ảnh của hai cạnh.')
+    s.save('0-5-transform', 'Cột của M là nơi (1, 0) và (0, 1) đi tới.')
 
 
 # ───────────────────────────── 0.6 Đạo hàm và gradient ─────────────────────────────

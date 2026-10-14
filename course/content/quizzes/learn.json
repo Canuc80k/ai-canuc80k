@@ -1620,7 +1620,7 @@
     "0.2",
     "Broadcasting",
     [
-     "Giá trị mới $z_{ij}=(x_{ij}-\\mu_j)/\\sigma_j$ không còn đơn vị điểm; nó cho biết một ô cách trung bình bao nhiêu độ lệch chuẩn."
+     "Mỗi ô của Z cho biết điểm đó cao hơn hay thấp hơn trung bình môn bao nhiêu lần độ lệch chuẩn, nên so được giữa các môn."
     ]
    ]
   ]
@@ -4593,13 +4593,6 @@
     [
      "Quy tắc: lát cắt bằng start:stop:step cho view; chỉ số bằng list hay mặt nạ bool cho bản sao."
     ]
-   ],
-   [
-    "0.2",
-    "Mảng và shape",
-    [
-     "Một mảng mới tạo thường nằm liền trong bộ nhớ; một lát cắt thì có thể dùng chung dữ liệu với mảng gốc và nhảy cách quãng."
-    ]
    ]
   ]
  },
@@ -4870,7 +4863,7 @@
     "0.3",
     "Ô trống",
     [
-     "Ở đây ta điền bằng trung vị (median) cùng lớp, và dùng trung vị chung khi gặp lớp chưa có trong train."
+     "Mỗi học sinh nhận trung vị giờ tự học của lớp mình; nếu gặp lớp không có trong train thì nhận trung vị chung."
     ]
    ]
   ]
@@ -5298,9 +5291,9 @@
   "to": [
    [
     "0.2",
-    "Mảng và shape",
+    "Chỉ số và lát cắt",
     [
-     "Khi bố trí bộ nhớ cho phép, kết quả là view; với một số mảng đã chuyển vị hoặc cắt, NumPy phải tạo bản sao."
+     "View giúp NumPy không tốn bộ nhớ khi cắt mảng lớn, nhưng nếu định sửa lát cắt mà không muốn đụng tới gốc thì phải gọi .copy(). reshape cũng thường trả về view; riêng khi mảng đã chuyển vị hay cắt cách quãng, NumPy phải chép ra bản sao."
     ]
    ]
   ]
@@ -5314,7 +5307,7 @@
     "0.2",
     "axis",
     [
-     "Muốn ghép dữ liệu, cũng phải nói rõ ý nghĩa trục. concatenate nối dọc một trục đã có; stack tạo một trục mới."
+     "Ghép hai mảng cũng phải chọn trục. concatenate nối hai mảng dọc theo một trục đã có, ví dụ ghép 2 học sinh đầu với 3 học sinh sau thành bảng 5 học sinh. stack thêm một trục mới, ví dụ xếp bảng điểm của hai buổi kiểm tra chồng lên nhau:"
     ]
    ]
   ]
@@ -6380,7 +6373,7 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "Trung bình (mean) là tổng chia cho số lượng; trung vị (median, dòng 50%) là giá trị đứng giữa khi xếp thứ tự; yếu vị (mode) là giá trị gặp nhiều nhất."
+     "Trung bình (mean) là tổng chia cho số lượng."
     ]
    ]
   ]
@@ -6423,7 +6416,7 @@
     "0.3",
     "Vẽ biểu đồ trả lời một câu hỏi",
     [
-     "Hai biến đi cùng nhau có thể do một nguyên nhân chung: ngày nóng bán được nhiều kem và cũng nhiều người đi bơi, nhưng ăn kem không làm người ta đi bơi."
+     "Hệ số này không phải “số điểm tăng thêm mỗi giờ”, và cũng không chứng minh cái này gây ra cái kia: ngày nóng bán được nhiều kem và cũng nhiều người đi bơi, nhưng ăn kem không làm người ta đi bơi."
     ]
    ]
   ]
@@ -6486,7 +6479,7 @@
     "0.3",
     "Ô trống",
     [
-     "Một ô trống không đồng nghĩa với số 0: “không khai giờ tự học” khác “không tự học”. Vì vậy trước hết cần biết vì sao ô bị thiếu rồi mới chọn cách xử lý. pandas có sẵn dropna() bỏ dòng hay cột có ô trống, fillna(...) điền một giá trị, interpolate() nội suy từ các giá trị xung quanh."
+     "Ô trống không có nghĩa là 0: “không khai giờ tự học” khác “không tự học giờ nào”. pandas có ba cách xử lý thường dùng: dropna() bỏ dòng có ô trống, fillna(...) điền một giá trị vào ô trống, interpolate() ước lượng từ các giá trị xung quanh."
     ]
    ]
   ]
@@ -7741,7 +7734,7 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "Ngoại lai kéo trung bình mạnh mà gần như không đổi trung vị: lương 8, 9, 10, 11 và 100 triệu có trung bình 27,6 nhưng trung vị 10."
+     "Ngoại lai kéo trung bình đi xa nhưng gần như không đổi trung vị: lương 8, 9, 10, 11 và 100 triệu có trung bình 27,6 nhưng trung vị 10."
     ]
    ]
   ]
@@ -7762,7 +7755,7 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "Một giá trị nằm rất xa phần còn lại gọi là ngoại lai (outlier), có thể là lỗi nhập như chiều cao 1700 cm, có thể là trường hợp hiếm có thật."
+     "Ngoại lai (outlier) là giá trị nằm rất xa phần còn lại: có thể là lỗi nhập, như chiều cao 1700 cm, cũng có thể là trường hợp hiếm có thật."
     ]
    ]
   ]
@@ -7776,14 +7769,15 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "Phương sai là trung bình bình phương độ lệch so với trung bình; độ lệch chuẩn (std) là căn của nó, cùng đơn vị với dữ liệu."
+     "Phương sai là trung bình của bình phương khoảng cách từ mỗi giá trị tới trung bình.",
+     "Độ lệch chuẩn (std) là căn bậc hai của phương sai, cùng đơn vị với dữ liệu."
     ]
    ],
    [
     "0.2",
     "Broadcasting",
     [
-     "Biểu thức trong căn là phương sai, trung bình bình phương độ lệch; lấy căn đưa về cùng đơn vị điểm. Các điểm càng trải xa trung bình thì độ lệch chuẩn càng lớn."
+     "sigma là độ lệch chuẩn của từng môn: điểm của môn càng trải xa trung bình thì sigma càng lớn (bài 0.7 sẽ học kỹ)."
     ]
    ]
   ]
@@ -7846,7 +7840,7 @@
     "0.3",
     "Ngày giờ, chuỗi và dữ liệu không phải bảng",
     [
-     "Cột giá ghi \"1.200.000 đ\" cũng là chuỗi nên mean() báo lỗi; .str.replace(r\"\\D\", \"\", regex=True) bỏ mọi ký tự không phải chữ số, rồi .astype(int) đổi thành 1200000."
+     "Cột giá ghi \"1.200.000 đ\" là chuỗi nên mean() báo lỗi. .str.replace(r\"\\D\", \"\", regex=True) bỏ mọi ký tự không phải chữ số, rồi .astype(int) đổi thành 1200000."
     ]
    ]
   ]
@@ -7860,7 +7854,7 @@
     "0.3",
     "Dữ liệu của đề",
     [
-     "Với mỗi dòng, id nhận diện học sinh; diem_toan là nhãn cần dự đoán; ba cột còn lại là dữ liệu đầu vào. id là khóa ghép bảng, chưa phải một đặc trưng có ý nghĩa về năng lực."
+     "Mỗi dòng là một học sinh: id là mã học sinh, diem_toan là nhãn cần dự đoán, ba cột còn lại là dữ liệu đầu vào. id chỉ dùng để ghép bảng và ghép đáp án, không dùng để dự đoán."
     ]
    ]
   ]
@@ -8210,7 +8204,7 @@
     "0.4",
     "Sigmoid: ép một số bất kỳ vào khoảng (0, 1)",
     [
-     "$z$ có thể là bất kỳ số thực nào, còn điều ta muốn là một xác suất nằm giữa 0 và 1.",
+     "$z$ có thể là bất kỳ số thực nào, còn điều ta muốn là xác suất thư là rác, một số nằm giữa 0 và 1.",
      "Đồ thị là một đường chữ S, không bao giờ chạm 0 hay 1."
     ]
    ],
@@ -9231,7 +9225,7 @@
     "0.2",
     "Đại số tuyến tính và số ngẫu nhiên",
     [
-     "Với hai vector cùng độ dài, a @ b (hay np.dot(a, b)) là tích vô hướng, tổng các tích từng cặp: $(1, 2, 3)\\cdot(4, 5, 6) = 4 + 10 + 18 = 32$, còn a * b là [4 10 18]."
+     "Với hai vector cùng độ dài, a @ b là tích vô hướng: $(1, 2, 3)\\cdot(4, 5, 6) = 4 + 10 + 18 = 32$."
     ]
    ]
   ]
@@ -9252,7 +9246,7 @@
     "0.2",
     "Đại số tuyến tính và số ngẫu nhiên",
     [
-     "Với hai ma trận, quy tắc là $(n,k)@(k,m)\\to(n,m)$: số cột bên trái phải bằng số hàng bên phải."
+     "Nhân hai ma trận theo quy tắc shape $(n, k) @ (k, m) \\to (n, m)$: số cột bên trái phải bằng số hàng bên phải."
     ]
    ]
   ]
@@ -9314,7 +9308,7 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "pd.read_csv đọc một file CSV (comma-separated values: mỗi dòng một bản ghi, các giá trị ngăn bởi dấu phẩy) thành một DataFrame: một bảng có tên cột, mỗi cột có một kiểu."
+     "pd.read_csv đọc một file CSV (mỗi dòng một bản ghi, các giá trị ngăn bởi dấu phẩy) thành một DataFrame: một bảng có tên cột, mỗi cột có một kiểu dữ liệu riêng."
     ]
    ]
   ]
@@ -9572,7 +9566,7 @@
     "0.3",
     "Vẽ biểu đồ trả lời một câu hỏi",
     [
-     "Hệ số tương quan nằm trong $[-1, 1]$: gần 1 là hai biến cùng tăng, gần $-1$ là biến này tăng thì biến kia giảm, gần 0 là không có quan hệ tuyến tính."
+     "Dòng corr() in hệ số tương quan giữa từng cặp cột, một số trong khoảng $[-1, 1]$: gần 1 là hai biến cùng tăng theo một đường thẳng, gần $-1$ là biến này tăng thì biến kia giảm, gần 0 là không có quan hệ kiểu đường thẳng."
     ]
    ]
   ]
@@ -10721,7 +10715,7 @@
     "0.2",
     "Đại số tuyến tính và số ngẫu nhiên",
     [
-     "Chuyển vị M.T đổi hàng thành cột, nên ma trận $(2, 3)$ thành $(3, 2)$."
+     "M.T: chuyển vị, đổi hàng thành cột; ma trận $(2, 3)$ thành $(3, 2)$."
     ]
    ]
   ]
@@ -10763,7 +10757,7 @@
     "0.3",
     "Ô trống",
     [
-     "Vì vậy trước hết cần biết vì sao ô bị thiếu rồi mới chọn cách xử lý. pandas có sẵn dropna() bỏ dòng hay cột có ô trống, fillna(...) điền một giá trị, interpolate() nội suy từ các giá trị xung quanh."
+     "Ô trống không có nghĩa là 0: “không khai giờ tự học” khác “không tự học giờ nào”. pandas có ba cách xử lý thường dùng: dropna() bỏ dòng có ô trống, fillna(...) điền một giá trị vào ô trống, interpolate() ước lượng từ các giá trị xung quanh."
     ]
    ]
   ]
@@ -10854,7 +10848,7 @@
     "0.2",
     "Broadcasting",
     [
-     "Giá trị mới $z_{ij}=(x_{ij}-\\mu_j)/\\sigma_j$ không còn đơn vị điểm; nó cho biết một ô cách trung bình bao nhiêu độ lệch chuẩn."
+     "Mỗi ô của Z cho biết điểm đó cao hơn hay thấp hơn trung bình môn bao nhiêu lần độ lệch chuẩn, nên so được giữa các môn."
     ]
    ]
   ]
@@ -11917,7 +11911,8 @@
     "0.2",
     "Đại số tuyến tính và số ngẫu nhiên",
     [
-     "Với hai vector cùng độ dài, a @ b (hay np.dot(a, b)) là tích vô hướng, tổng các tích từng cặp: $(1, 2, 3)\\cdot(4, 5, 6) = 4 + 10 + 18 = 32$, còn a * b là [4 10 18]."
+     "M * v: nhân từng ô, theo broadcasting: cột đầu nhân 1, cột sau nhân 2.",
+     "Với hai vector cùng độ dài, a @ b là tích vô hướng: $(1, 2, 3)\\cdot(4, 5, 6) = 4 + 10 + 18 = 32$."
     ]
    ]
   ]
@@ -12056,7 +12051,7 @@
     "0.3",
     "Vẽ biểu đồ trả lời một câu hỏi",
     [
-     "Biểu đồ hộp (boxplot) tóm tắt một biến theo nhóm: vạch giữa hộp là trung vị, hộp chứa một nửa số giá trị ở khoảng giữa, hai râu kéo ra phần còn lại, chấm rời là ngoại lai; nhờ vậy dễ so nhiều lớp cạnh nhau."
+     "Boxplot vẽ mỗi nhóm thành một hộp: vạch giữa là trung vị, hộp chứa một nửa số giá trị ở giữa, hai râu kéo ra phần còn lại, chấm rời là ngoại lai."
     ]
    ]
   ]
@@ -12181,7 +12176,7 @@
     "0.3",
     "Ngày giờ, chuỗi và dữ liệu không phải bảng",
     [
-     "Cột giá ghi \"1.200.000 đ\" cũng là chuỗi nên mean() báo lỗi; .str.replace(r\"\\D\", \"\", regex=True) bỏ mọi ký tự không phải chữ số, rồi .astype(int) đổi thành 1200000."
+     "Cột giá ghi \"1.200.000 đ\" là chuỗi nên mean() báo lỗi. .str.replace(r\"\\D\", \"\", regex=True) bỏ mọi ký tự không phải chữ số, rồi .astype(int) đổi thành 1200000."
     ]
    ]
   ]
@@ -17090,7 +17085,7 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "Với phân bố lệch phải như thu nhập hay giờ tự học, thứ tự thường gặp là trung bình > trung vị > yếu vị."
+     "Với phân bố lệch phải như thu nhập hay giờ tự học, thường gặp trung bình > trung vị > yếu vị."
     ]
    ]
   ]
@@ -18493,7 +18488,7 @@
     "0.3",
     "Đọc và nhìn dữ liệu",
     [
-     "Biết trung bình và số lượng là biết tổng: 50 giá trị có trung bình 40 thì tổng là 2000, thêm giá trị 142 thì trung bình mới là $2142/51 = 42$."
+     "Biết trung bình và số lượng là biết tổng: 50 số có trung bình 40 thì tổng là 2000; thêm số 142 thì trung bình mới là $2142/51 = 42$."
     ]
    ]
   ]
