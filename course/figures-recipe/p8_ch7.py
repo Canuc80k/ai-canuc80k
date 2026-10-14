@@ -49,7 +49,7 @@ def sampling71():
         ax.dots((n / fs - t0) * 1000, ns['waveform'][n], col, 3.2, col)
         s.label(x0 + 125, 20, f'{f} Hz: {fs // f if fs % f == 0 else round(fs / f, 2)} mẫu mỗi chu kỳ', 12, color=TEXT, weight=600)
     s.label(320, 220, 'mỗi chấm là một mẫu, cách nhau 0.5 ms (sample rate 2000 Hz)', 11.5, color=MUTED)
-    s.save('7-1-sampling', 'Waveform của bài lấy mẫu ở 2000 Hz, phóng 10 ms ở mỗi nửa: đoạn 200 Hz có 10 mẫu mỗi chu kỳ, đoạn 600 Hz chỉ khoảng 3.33 mẫu.')
+    s.save('7-1-sampling', 'Ở 2000 Hz, âm 200 Hz có 10 mẫu mỗi chu kỳ, âm 600 Hz chỉ khoảng 3.3 mẫu.')
 
 
 def alias71():
@@ -62,7 +62,7 @@ def alias71():
     s.label(ax.X(10) + 10, ax.Y(.4), '350 Hz', 12, 'start', BLUE, 600)
     s.label(ax.X(10) + 10, ax.Y(-.4), '650 Hz', 12, 'start', CLAY, 600)
     s.label(320, 214, 'lấy mẫu 1000 Hz: hai cosine đi qua đúng cùng các chấm, 650 = 1000 − 350', 11.5, color=MUTED)
-    s.save('7-1-alias', 'Aliasing: lấy mẫu 1000 Hz, cosine 350 Hz và cosine 650 Hz đi qua đúng cùng các chấm mẫu, nên từ dãy số không thể phân biệt hai âm.')
+    s.save('7-1-alias', 'Lấy mẫu 1000 Hz: cosine 350 Hz và 650 Hz đi qua đúng cùng các điểm mẫu.')
 
 
 def downsample71():
@@ -84,7 +84,7 @@ def downsample71():
         v = amp[fr == 400][0]
         s.mono(ax.X(400), ax.Y(max(v, .02)) - 10, f'400 Hz: {v:.3f}', 11, 'middle', col)
     s.label(320, 206, 'nửa sau chỉ có âm 600 Hz; ở 1000 Hz, Nyquist còn 500 Hz', 11.5, color=MUTED)
-    s.save('7-1-downsample', 'Phổ nửa sau sau khi hạ về 1000 Hz (số từ code bài): bỏ mẫu sinh âm giả 400 Hz biên độ 0.400, đúng bằng đoạn 600 Hz bị gập; resample_poly lọc trước nên ở 400 Hz bằng 0.')
+    s.save('7-1-downsample', 'Bỏ mẫu sinh âm giả 400 Hz; resample_poly lọc trước nên không có.')
 
 
 def frames71():
@@ -104,7 +104,7 @@ def frames71():
         s.box(ax.X(st / fs), 14 + j * 14, ax.X((st + 200) / fs) - ax.X(st / fs), 8, 'none', col, r=2, width=0, opacity=.5)
         s.mono(ax.X((st + 200) / fs) + 6, 18.5 + j * 14, f'frame {j}', 10.5, 'start', col)
     s.label(320, 214, 'window 200 mẫu (100 ms), hop 100 mẫu (50 ms): mỗi frame chồng nửa frame trước; đường cong là Hann', 11.5, color=MUTED)
-    s.save('7-1-frames', 'Chia waveform của bài thành frame cho STFT: window 200 mẫu (100 ms) nhân với cửa sổ Hann, frame sau bắt đầu sau 100 mẫu (50 ms) nên chồng nửa frame trước.')
+    s.save('7-1-frames', 'STFT chia waveform thành các frame chồng nửa nhau, nhân cửa sổ Hann.')
 
 
 def spectrogram71():
@@ -119,7 +119,7 @@ def spectrogram71():
     s.label(ax.X(1) + 10, ax.Y(1000), 'Hz theo trục dọc', 11, 'start', FAINT)
     s.label(ax.X(1) + 10, ax.Y(900), '0 dB', 11, 'start', CLAY)
     s.label(ax.X(1) + 10, ax.Y(100), '−80 dB', 11, 'start', FAINT)
-    s.save('7-1-spectrogram', 'Spectrogram 101 × 19 tính từ code bài (dB so với đỉnh): 200 Hz ở nửa giây đầu, 600 Hz ở nửa giây sau; các frame chứa ranh giới 0.5 s trải ra mọi tần số.')
+    s.save('7-1-spectrogram', 'Spectrogram: 200 Hz ở nửa giây đầu, 600 Hz ở nửa giây sau.')
 
 
 def tradeoff71():
@@ -140,7 +140,7 @@ def tradeoff71():
         heat(s, ax, db[keep], L / 2 / fs, 1 - L / 2 / fs, 0, 600 + fs / L / 2, lo=-40)
         s.label(x0 + 120, 22, f'window {L} mẫu ({L * 1000 // fs} ms)', 12, color=TEXT, weight=600)
     s.label(320, 252, 'tín hiệu: hai âm 300 Hz và 330 Hz, cộng một tiếng gõ ngắn ở 0.5 s', 11.5, color=MUTED)
-    s.save('7-1-tradeoff', 'Cùng tín hiệu gồm hai âm 300 Hz và 330 Hz cộng một tiếng gõ ở 0.5 s: window 20 ms định vị tiếng gõ sắc nhưng nhòe hai âm thành một dải; window 200 ms tách được hai âm nhưng tiếng gõ nhòe theo thời gian.')
+    s.save('7-1-tradeoff', 'Cửa sổ ngắn định vị tiếng gõ sắc nhưng nhòe tần số; cửa sổ dài thì ngược lại.')
 
 
 def mel71():
@@ -152,7 +152,7 @@ def mel71():
         ax.line(fr, W[b], CLAY if b % 2 == 0 else BLUE, 1.3)
     s.label(ax.x - 8, ax.y - 8, 'trọng số', 11.5, 'start', FAINT)
     s.label(320, 200, '20 tam giác đều theo mel: hẹp ở tần số thấp, rộng dần ở tần số cao', 11.5, color=MUTED)
-    s.save('7-1-mel', 'Hai mươi bộ lọc tam giác của bài trên trục 0–1000 Hz (tính từ code): mốc đều theo mel nên tam giác hẹp ở tần số thấp và rộng dần ở tần số cao.')
+    s.save('7-1-mel', 'Bộ lọc mel hẹp ở tần số thấp, rộng dần ở tần số cao.')
 
 
 def logmel71():
@@ -165,7 +165,7 @@ def logmel71():
     s.mono(ax.X(1) + 10, ax.Y(18), 'shape (20, 19)', 11.5, 'start', MUTED)
     s.mono(ax.X(1) + 10, ax.Y(15), 'min −112.1 dB', 11, 'start', FAINT)
     s.mono(ax.X(1) + 10, ax.Y(12), 'max 0 dB', 11, 'start', CLAY)
-    s.save('7-1-logmel', 'Log-mel 20 × 19 tính từ code bài, 0 dB là đỉnh của chính clip: năng lượng dồn vào band thấp ở nửa đầu (200 Hz) và band cao hơn ở nửa sau (600 Hz).')
+    s.save('7-1-logmel', 'Log-mel: năng lượng ở band thấp nửa đầu, band cao hơn nửa sau.')
 
 
 def peaknorm71():
@@ -181,7 +181,7 @@ def peaknorm71():
         s.label(x0 + 120, 24, title, 12, color=TEXT, weight=600)
     s.label(320, 212, 'cam: máy kẹt · xanh: máy bình thường', 11.5, color=TEXT)
     s.label(320, 232, 'minh họa: hai clip cùng dạng sóng, biên độ gấp 3; chuẩn hóa từng clip làm chúng trùng nhau', 11.5, color=MUTED)
-    s.save('7-1-peaknorm', 'Minh họa câu hỏi máy bơm: clip kẹt có cùng dạng sóng nhưng biên độ gấp 3 clip bình thường; peak normalize từng clip làm hai clip gần như trùng nhau, xóa khác biệt chính giữa hai lớp.')
+    s.save('7-1-peaknorm', 'Peak normalize từng clip xóa mất khác biệt biên độ giữa máy bơm kẹt và bình thường.')
 
 
 def specaug71():
@@ -201,7 +201,7 @@ def specaug71():
             s.box(ax.x, ax.Y(16), ax.w, ax.Y(12) - ax.Y(16), GREEN, 'none', r=0, width=1.4, dash='3 3')
         s.label(x0 + 120, 22, title, 12, color=TEXT, weight=600)
     s.label(320, 232, 'vùng che được điền một giá trị; điền gì phụ thuộc thang đang dùng (ở đây −80 dB)', 11.5, color=MUTED)
-    s.save('7-1-specaug', 'SpecAugment trên log-mel của bài: che một dải frame (time mask) và một dải mel band (frequency mask) trong lúc train để model bớt dựa vào một mảnh nhỏ.')
+    s.save('7-1-specaug', 'SpecAugment che một dải thời gian và một dải tần khi train.')
 
 
 FIGS71 = {'7-1-sampling': sampling71, '7-1-alias': alias71, '7-1-downsample': downsample71, '7-1-frames': frames71,
@@ -242,7 +242,7 @@ def task72():
             on = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0]
             for j, v in enumerate(on):
                 s.box(240 + j * 22, y + 36, 20, 18, 'none', col if v else FAINT, r=2, width=0, opacity=.5 if v else .12)
-    s.save('7-2-task', 'Ba dạng bài trên cùng một clip: một nhãn loại trừ cho cả clip, nhiều nhãn có/không độc lập (sigmoid, BCE), hoặc một dự đoán cho mỗi frame theo thời gian.')
+    s.save('7-2-task', 'Ba dạng bài: một nhãn cho clip, nhiều nhãn độc lập, hoặc nhãn cho từng frame.')
 
 
 def pair72():
@@ -256,7 +256,7 @@ def pair72():
         heat(s, ax, M - M.max(), 0, 8, 0, 24, lo=-40)
         s.line(ax.X(4), ax.y, ax.X(4), ax.y + ax.h, FAINT, 1, '3 3')
         s.label(x0 + 110, 20, f'nhãn {y[idx]}: ' + ('thấp → cao' if y[idx] == 1 else 'cao → thấp'), 12, color=TEXT, weight=600)
-    s.save('7-2-pair', 'Log-mel 24 × 8 của một cặp clip đầu tiên trong dữ liệu bài (từ code): nhãn 1 có âm thấp ở bốn frame đầu, nhãn 0 đảo lại; hai clip có cùng tập frame, chỉ khác thứ tự.')
+    s.save('7-2-pair', 'Hai lớp có cùng tập frame, chỉ khác thứ tự.')
 
 
 def split72():
@@ -272,7 +272,7 @@ def split72():
         s.mono(x + 12, 124, str(sess), 9.5, 'middle', MUTED)
     s.label(320, 22, 'mỗi cột là một phiên, bốn ô là bốn clip của phiên ấy', 11.5, color=MUTED)
     s.label(320, 152, 'validation (cam): 5 phiên, 20 clip; giao group với train bằng 0', 11.5, color=CLAY)
-    s.save('7-2-split', 'GroupShuffleSplit của bài (từ code): 5 trong 20 phiên vào validation, mỗi phiên giữ trọn bốn clip ở một phía, nên không phiên nào nằm ở cả train lẫn validation.')
+    s.save('7-2-split', 'Chia theo phiên ghi: mỗi phiên nằm trọn ở train hoặc validation.')
 
 
 def order72():
@@ -290,7 +290,7 @@ def order72():
         s.mono(x0 + 120, 92, f'delta {delta}', 12, 'start', col, 600)
     s.label(320, 170, 'mean theo thời gian bằng nhau: không hàm nào của mean tách được hai clip', 11.5, color=MUTED)
     s.label(320, 192, 'delta (frame sau trừ frame trước) đổi dấu khi đảo thứ tự', 11.5, color=MUTED)
-    s.save('7-2-order', 'Ví dụ tính tay: hai clip chỉ đổi thứ tự hai frame có cùng vector mean (1.5, 1.5), nên baseline gộp thời gian không tách được; trung bình delta đổi dấu từ (−3, 3) sang (3, −3).')
+    s.save('7-2-order', 'Đổi thứ tự hai frame không đổi trung bình; delta thì đổi dấu.')
 
 
 def confusion72():
@@ -307,7 +307,7 @@ def confusion72():
             s.label(x0 - 8, 78, 'thật 0', 10.5, 'end', MUTED)
             s.label(x0 - 8, 127, 'thật 1', 10.5, 'end', MUTED)
         s.mono(x0 + 66, 172, acc, 11.5, 'middle', CLAY if k == 0 else GREEN)
-    s.save('7-2-confusion', 'Confusion matrix trên 20 clip validation (số từ output bài): baseline gộp thời gian đoán lớp 0 cho mọi clip; CNN giữ vị trí tới head nên đúng cả 20.')
+    s.save('7-2-confusion', 'Baseline gộp thời gian đoán một lớp cho mọi clip; CNN đúng cả 20.')
 
 
 def pooling72():
@@ -324,7 +324,7 @@ def pooling72():
         s.label(x0 + 95, 26, title, 12, color=TEXT, weight=600)
         s.mono(x0 + 95, 200, res, 11.5, 'middle', col, 600)
     s.label(320, 228, 'kernel phải nhìn qua ranh giới frame 4 | 5 thì thứ tự mới còn sau bước gộp', 11.5, color=MUTED)
-    s.save('7-2-pooling', 'Mean theo thời gian đặt sau conv (số từ output bài): kernel 3×3 phủ ba frame kề nhau nên thấy chỗ chuyển thấp → cao, valid 0.950; kernel 3×1 xử lý từng frame riêng nên vẫn kẹt ở 0.500.')
+    s.save('7-2-pooling', 'Kernel 3×3 nhìn ba frame kề nhau nên thấy chỗ chuyển; kernel 3×1 thì không.')
 
 
 def windows72():
@@ -341,7 +341,7 @@ def windows72():
     s.label(500, 100, 'dưới 0.5: bỏ sót', 11.5, 'start', MUTED)
     s.mono(500, 136, 'max  0.920', 13, 'start', CLAY, 600)
     s.label(500, 156, 'một cửa sổ chắc là đủ', 11.5, 'start', MUTED)
-    s.save('7-2-windows', 'Ví dụ tính tay: năm cửa sổ của một clip cho xác suất có còi 0.05, 0.10, 0.92, 0.08, 0.06; trung bình 0.242 bỏ sót tiếng còi, max 0.92 bắt được.')
+    s.save('7-2-windows', 'Trung bình xác suất các cửa sổ bỏ sót tiếng còi; lấy max thì bắt được.')
 
 
 def maskpool72():
@@ -356,7 +356,7 @@ def maskpool72():
     s.mono(400, 82, 'chia cho 2:  (2, 3)', 12.5, 'start', GREEN, 600)
     s.label(320, 140, 'chia cho số bước đã pad thì embedding phụ thuộc clip nào được ghép cùng batch', 11.5, color=MUTED)
     s.mono(320, 170, 'z = Σ a_t h_t / Σ a_t', 12.5, 'middle', TEXT)
-    s.save('7-2-maskpool', 'Mean pooling có mask trên hidden states đặt tay của bài: clip đầu có hai bước thật (1, 2), (3, 4); chia cho 2 bước thật ra (2, 3), chia cho cả 4 bước đã pad ra (1, 1.5).')
+    s.save('7-2-maskpool', 'Chia cho 2 bước thật ra (2, 3); chia cho cả 4 bước đã pad ra (1, 1.5).')
 
 
 def timemask72():
@@ -371,7 +371,7 @@ def timemask72():
     s.mono(40, 104, '0', 10.5, 'start', FAINT)
     s.mono(40 + W, 104, '2 s', 10.5, 'end', FAINT)
     s.label(320, 146, 'mask rộng hơn sự kiện ngắn nhất có thể che trọn bằng chứng mà nhãn vẫn là “gõ cửa”', 11.5, color=MUTED)
-    s.save('7-2-timemask', 'Time mask 40 frame (0.4 s) so với tiếng gõ chỉ dài 5 frame: mask có thể che trọn sự kiện, sinh mẫu mang nhãn “gõ cửa” mà không còn tiếng gõ.')
+    s.save('7-2-timemask', 'Time mask dài hơn sự kiện có thể che trọn tiếng gõ mà nhãn vẫn là “gõ cửa”.')
 
 
 FIGS72 = {'7-2-task': task72, '7-2-pair': pair72, '7-2-split': split72, '7-2-order': order72, '7-2-confusion': confusion72,
@@ -413,7 +413,7 @@ def asr73():
         s.line(cx, 156, cx, 128, FAINT, 1, '2 3')
         if k < 4:
             s.arrow(cx + 32, 173, cx + 50, 173, MUTED, 1.2)
-    s.save('7-3-asr', 'Hai hướng ASR: CTC cho mỗi frame một nhãn (kể cả blank) rồi gộp thành chữ; encoder–decoder sinh từng token sau token trước, mỗi bước đọc toàn bộ hidden của encoder.')
+    s.save('7-3-asr', 'CTC cho mỗi frame một nhãn rồi gộp; encoder–decoder sinh từng token.')
 
 
 def align73():
@@ -431,7 +431,7 @@ def align73():
         s.line(x0 + t * sc, 132, x0 + t * sc, 137, FAINT, 1)
         s.mono(x0 + t * sc, 150, f'{t} s', 10.5, 'middle', FAINT)
     s.line(x0, 132, x0 + 3 * sc, 132, FAINT, 1)
-    s.save('7-3-align', 'Cùng câu “em học AI hôm nay” trong 3 giây: người nói ngừng giữa câu, nên chia đều thời gian cho năm từ gán nhãn “AI” vào khoảng lặng và lệch mọi từ phía sau.')
+    s.save('7-3-align', 'Người nói ngừng giữa câu, nên chia đều thời gian cho các từ sẽ lệch.')
 
 
 def ctc73():
@@ -466,7 +466,7 @@ def ctc73():
         s.box(384, cy - 14, 150, 28, 'none', cols[tr], r=5, width=0, opacity=.3)
         s.mono(396, cy + .5, tr or 'rỗng', 12, 'start', TEXT, 600)
         s.mono(522, cy + .5, f'{tot:.2f}', 12, 'end', TEXT, 600)
-    s.save('7-3-ctc', 'Ba frame với P(_, a) = (0.6, 0.4), (0.5, 0.5), (0.4, 0.6): tám path gộp thành ba transcript; rỗng 0.12, a 0.76 (sáu path), aa 0.12.')
+    s.save('7-3-ctc', 'Tám path gộp thành ba transcript; “a” gom sáu path, xác suất 0.76.')
 
 
 def greedy73():
@@ -485,7 +485,7 @@ def greedy73():
     s.mono(360, 102, 'a_ + _a + aa', 12, 'start', MUTED)
     s.mono(560, 102, '0.64', 12.5, 'end', CLAY, 600)
     s.line(300, 82, 560, 82, SOFT_LINE, 1)
-    s.save('7-3-greedy', 'Hai frame cùng P(_) = 0.6: greedy theo path tốt nhất __ (0.36) ra chuỗi rỗng, còn transcript a gom ba path a_, _a, aa nên có tổng 0.64.')
+    s.save('7-3-greedy', 'Path tốt nhất ra chuỗi rỗng, nhưng transcript “a” có tổng xác suất cao hơn.')
 
 
 def ctcdp73():
@@ -510,7 +510,7 @@ def ctcdp73():
             s.mono(X[t], Y[k] + .5, f'{v:.2f}', 12, 'middle', TEXT if v > 0 else FAINT, 600 if end else 400)
     s.mono(510, 146, '0.48 + 0.28', 12, 'start', CLAY)
     s.mono(510, 168, '= 0.76', 12.5, 'start', CLAY, 600)
-    s.save('7-3-ctc-dp', 'Lưới α của target a (từ code bài): mỗi ô cộng các ô được phép đi tới ở frame trước rồi nhân xác suất frame; hai ô cuối cộng ra 0.76, đúng tổng sáu path.')
+    s.save('7-3-ctc-dp', 'Quy hoạch động trên lưới α: hai ô cuối cộng ra 0.76.')
 
 
 def underflow73():
@@ -524,7 +524,7 @@ def underflow73():
     s.label(ax.x - 8, ax.y - 12, 'log₁₀ của tích', 11, 'start', FAINT)
     s.mono(ax.X(560), ax.Y(-200), 'log α ≈ −2303 ở frame 1000', 11, 'start', MUTED)
     s.mono(ax.X(560), ax.Y(-230), 'vẫn biểu diễn được', 11, 'start', MUTED)
-    s.save('7-3-underflow', 'Tích các xác suất cỡ 0.1 giảm mười lần mỗi frame: qua mức nhỏ nhất của float32 sau khoảng 38 frame, của float64 sau khoảng 308 frame; trong log-space, frame 1000 chỉ là −2303.')
+    s.save('7-3-underflow', 'Tích xác suất nhỏ dần về 0 sau vài chục frame; log-space thì không.')
 
 
 def repeat73():
@@ -558,7 +558,7 @@ def repeat73():
     lattice(150, 2, 'T = 2: không tới ô cuối')
     lattice(400, 3, 'T = 3: a _ a', path=[1, 2, 3])
     s.label(320, 222, 'khung đứt: hai ô path phải dừng ở frame cuối', 11, color=MUTED)
-    s.save('7-3-repeat', 'Target aa có chuỗi mở rộng _ a _ a _: với 2 frame, không ô nào trong hai ô cuối đi tới được (ô xanh là ô tới được); với 3 frame chỉ có path a _ a.')
+    s.save('7-3-repeat', 'Target “aa” cần blank chen giữa, nên 2 frame không đủ.')
 
 
 def whisper73():
@@ -582,7 +582,7 @@ def whisper73():
     s.mono(x + 36, 146.5, 'em học AI hôm nay', 12, 'start', CLAY, 600)
     s.curve(538, 76, 400, 128, .2, FAINT, 1.1, dash='3 3')
     s.label(320, 186, 'decoder bắt đầu bằng dãy token chọn ngôn ngữ và việc cần làm', 11, color=MUTED)
-    s.save('7-3-whisper', 'Whisper: audio 16 kHz được pad hoặc cắt về 30 giây, thành 3000 frame log-mel và 1500 vị trí encoder; decoder bắt đầu bằng token khởi đầu, token ngôn ngữ và token task.')
+    s.save('7-3-whisper', 'Whisper đưa audio về 30 giây, 3000 frame log-mel, 1500 vị trí encoder.')
 
 
 def wer73():
@@ -606,7 +606,7 @@ def wer73():
         if ops[j]:
             s.mono(x + w / 2, 132, ops[j], 12.5, 'middle', col, 600)
     s.mono(320, 166, 'WER = (S + D + I) / N = (1 + 1 + 0) / 5 = 0.4', 12, 'middle', TEXT)
-    s.save('7-3-wer', 'Reference em học ai hôm nay và prediction em học toán nay: một substitution (ai → toán), một deletion (hôm), WER 2/5 = 0.4.')
+    s.save('7-3-wer', 'Một thay thế, một xóa trên 5 từ: WER 0.4.')
 
 
 def werdp73():
@@ -639,7 +639,7 @@ def werdp73():
     s.label(x0 + 2.5 * (cw + g), 14, 'prediction', 11, color=FAINT)
     s.label(x0 - 60, y0 - 14, 'reference', 11, 'end', FAINT)
     s.mono(x0 + 5 * (cw + g) + 6, y0 + 5 * (ch + g) + ch / 2, '← distance 2', 11.5, 'start', CLAY)
-    s.save('7-3-wer-dp', 'Bảng edit distance của ví dụ: ô (i, j) là số phép ít nhất để biến i token đầu của reference thành j token đầu của prediction; đường tô màu là một alignment tối ưu, kết thúc ở 2.')
+    s.save('7-3-wer-dp', 'Bảng edit distance; đường tô màu là một cách ghép tối ưu.')
 
 
 def corpus73():
@@ -657,7 +657,7 @@ def corpus73():
     s.mono(470, 72, '1/11 = 0.091', 12.5, 'start', TEXT, 600)
     s.mono(470, 104, 'trung bình câu', 11.5, 'start', MUTED)
     s.mono(470, 124, '(1/3 + 0)/2 = 0.167', 12.5, 'start', TEXT, 600)
-    s.save('7-3-corpus', 'Một lỗi ở câu 3 token, câu 8 token đúng hết (số từ output bài): corpus WER chia tổng lỗi cho 11 token được 0.091, trung bình WER từng câu được 0.167.')
+    s.save('7-3-corpus', 'Corpus WER 0.091; trung bình WER từng câu 0.167.')
 
 
 def pad73():
@@ -672,7 +672,7 @@ def pad73():
             s.label(x0 + W * .55, y + 14, 'pad 27 s', 11, color=FAINT)
         s.mono(x0 + W + 20, y + 14.5, '1500 vị trí', 12, 'start', MUTED)
     s.label(320, 150, 'encoder làm cùng một lượng tính; chỉ decoder ngắn đi', 11.5, color=MUTED)
-    s.save('7-3-pad', 'Whisper pad clip 3 giây lên đủ cửa sổ 30 giây, nên encoder vẫn xử lý 1500 vị trí như clip 30 giây; thời gian mỗi clip ngắn giảm ít hơn nhiều so với tỉ lệ 1/10.')
+    s.save('7-3-pad', 'Clip 3 giây vẫn được pad lên 30 giây, nên thời gian chạy giảm ít.')
 
 
 def lengths73():
@@ -737,7 +737,7 @@ def fusion74():
     s.mono(446, 176.5, 'αp⁽ᵛ⁾+(1−α)p⁽ᵗ⁾', 10.5, 'middle', TEXT)
     s.arrow(510, 176, 540, 176, MUTED, 1.2)
     s.mono(548, 176.5, 'p', 13, 'start', CLAY, 600)
-    s.save('7-4-fusion', 'Early fusion nối vector hai nguồn thành một input cho một head; late fusion cho mỗi nguồn một head trên cùng các lớp, rồi gộp xác suất bằng trọng số α.')
+    s.save('7-4-fusion', 'Early fusion nối vector hai nguồn; late fusion gộp xác suất của hai head.')
 
 
 def join74():
@@ -762,7 +762,7 @@ def join74():
         s.mono(450, y + 12.5, f'id {a}' if a in caps else 'thiếu', 11, 'middle', TEXT if a in caps else CLAY)
     s.label(230, 196, 'từ hàng 3 trở đi lệch một bậc', 11, color=CLAY)
     s.label(450, 196, 'id 3 thiếu: đếm được', 11, color=MUTED)
-    s.save('7-4-join', 'Năm ảnh, bốn caption (thiếu id 3): ghép theo thứ tự hàng làm mọi hàng sau lệch một bậc mà shape vẫn đúng; join theo id giữ đúng cặp và để lộ chỗ thiếu.')
+    s.save('7-4-join', 'Ghép theo thứ tự hàng làm lệch cặp; join theo id giữ đúng cặp.')
 
 
 def sync74():
@@ -786,7 +786,7 @@ def sync74():
     s.mono(X(107 / 25) + sc / 50, 154, '4.28–4.32 s', 10.5, 'middle', MUTED)
     for t in (4.0, 4.2, 4.4):
         s.mono(X(t), 176, f'{t:.1f} s', 10, 'middle', FAINT)
-    s.save('7-4-sync', 'Hai nhịp khác nhau: âm 100 frame mỗi giây, video 25 khung mỗi giây. Frame âm 430 bắt đầu ở 4.30 s, rơi vào khung hình 107 (4.28 đến 4.32 s).')
+    s.save('7-4-sync', 'Âm 100 frame/giây, video 25 khung/giây: frame âm 430 rơi vào khung hình 107.')
 
 
 def xor74():
@@ -809,7 +809,7 @@ def xor74():
             ax.dots(X_[m, 0], X_[m, 1], col, 2.6, col)
         s.label(ax.x + 95, 20, nm, 12, color=TEXT, weight=600)
         s.mono(ax.x + 95, 236, acc, 11.5, 'middle', CLAY if k == 0 else GREEN, 600)
-    s.save('7-4-xor', 'Dữ liệu XOR của bài (từ code): 100 điểm validation, cam là lớp 1. Một đường thẳng chỉ chia mặt phẳng làm hai nửa nên logistic regression đạt 0.470; MLP 8 nút ẩn tách đúng bốn góc.')
+    s.save('7-4-xor', 'Logistic regression không tách được XOR; MLP 8 nút ẩn tách đúng bốn góc.')
 
 
 def late74():
@@ -830,7 +830,7 @@ def late74():
     for r, a in enumerate(['0.500', '0.500', '1.000']):
         s.mono(x0 + 8 * (cw + g) + 6, 38 + r * (ch + g) + ch / 2 + .5, a, 11.5, 'start', TEXT, 600 if r == 2 else 400)
     s.label(320, 180, 'xanh: đúng phía ngưỡng 0.5, cam: sai; hai nhánh sai ở những mẫu khác nhau', 11, color=MUTED)
-    s.save('7-4-late', 'Bảng tám mẫu của bài: nhánh ảnh sai bốn mẫu, nhánh chữ sai bốn mẫu khác, nên trung bình hai xác suất đúng cả tám (accuracy 0.5, 0.5 rồi 1.0).')
+    s.save('7-4-late', 'Mỗi nhánh sai bốn mẫu khác nhau; trung bình hai xác suất đúng cả tám.')
 
 
 def ablation74():
@@ -843,7 +843,7 @@ def ablation74():
         s.label(ax.X(k + .5), ax.y + ax.h + 16, nm, 11.5, color=TEXT)
     ax.hline(.5, FAINT, 1, '3 3')
     s.label(ax.x - 8, ax.y - 12, 'accuracy', 11, 'start', FAINT)
-    s.save('7-4-ablation', 'Ablation trên bảng tám mẫu (số từ output bài): mỗi nhánh riêng 0.500, ghép đúng cặp 1.000, dịch vòng caption bốn vị trí thì về 0.500 dù shape vẫn đúng.')
+    s.save('7-4-ablation', 'Mỗi nhánh riêng 0.5, ghép đúng cặp 1.0, ghép lệch cặp lại về 0.5.')
 
 
 def missing74():
@@ -857,7 +857,7 @@ def missing74():
         s.mono(176 + 8, y + 13.5, f, 10.5, 'start', TEXT)
     s.line(176 + 150, 22, 176 + 150, 180, FAINT, 1, '3 3')
     s.mono(176 + 150, 192, '0.5', 10, 'middle', FAINT)
-    s.save('7-4-missing', 'Một mẫu mất ảnh, nhánh chữ cho 0.8: điền 0 rồi chia 2 ra 0.4 (đổi cả đáp án), điền 0.5 kéo về 0.65, bỏ nhánh thiếu và chuẩn hóa lại trọng số giữ 0.8.')
+    s.save('7-4-missing', 'Thiếu ảnh: bỏ nhánh thiếu và chuẩn hóa lại trọng số giữ được 0.8.')
 
 
 def align74():
@@ -873,7 +873,7 @@ def align74():
         s.box(ax.x, ax.y, 160, 160, SOFT_LINE, 'none', r=0, width=1)
         s.label(ax.x + 80, 20, nm, 12, color=TEXT, weight=600)
         s.mono(ax.x + 80, 212, f'recall@1 {r1}', 11.5, 'middle', GREEN if k == 1 else CLAY, 600)
-    s.save('7-4-align', 'Cosine giữa 20 ảnh (hàng) và 20 caption (cột) validation, từ code bài: chưa căn chỉnh thì không có đường chéo; W học từ cặp đúng làm đường chéo sáng lên; W học từ cặp xáo thì không.')
+    s.save('7-4-align', 'Chưa căn chỉnh thì không có đường chéo; W học từ cặp đúng thì có.')
 
 
 def vlm74():
@@ -906,7 +906,7 @@ def vlm74():
     s.label(595, 112, 'model', 10.5, color=TEXT)
     s.mono(595, 150, '{"count": 3}', 10.5, 'middle', CLAY, 600)
     s.arrow(595, 128, 595, 140, MUTED, 1.2)
-    s.save('7-4-vlm', 'VLM kiểu LLaVA: image encoder rồi projector biến ảnh thành 576 visual tokens; chúng được nối với token câu hỏi và language model đọc cả chuỗi để sinh đáp án.')
+    s.save('7-4-vlm', 'VLM: ảnh thành 576 visual token, nối với token câu hỏi cho language model đọc.')
 
 
 def crossattn74():
@@ -929,7 +929,7 @@ def crossattn74():
     s.mono(x0 + W / 2, y0 + H + 16, '576 key, value từ ảnh', 11, 'middle', MUTED)
     s.mono(x0 + W / 2, y0 + H / 2 + .5, '(40, 576)', 13, 'middle', CLAY, 600)
     s.mono(x0 + W / 2, y0 + H + 40, 'chuỗi chữ vẫn dài 40', 11, 'middle', TEXT)
-    s.save('7-4-crossattn', 'Hai cách đọc ảnh: chèn 576 visual tokens trước 40 token câu hỏi thành chuỗi 616; cross-attention giữ chuỗi chữ 40 token, mỗi head có ma trận điểm 40 × 576 (query chữ, key ảnh).')
+    s.save('7-4-crossattn', 'Chèn visual token vào chuỗi, hoặc dùng cross-attention từ chữ sang ảnh.')
 
 
 FIGS74 = {'7-4-fusion': fusion74, '7-4-join': join74, '7-4-sync': sync74, '7-4-xor': xor74, '7-4-late': late74,

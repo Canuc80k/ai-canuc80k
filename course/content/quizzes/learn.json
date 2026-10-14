@@ -7572,7 +7572,7 @@
     "7.1",
     "Vì sao không lấy mẫu thưa tùy ý?",
     [
-     "Để phục hồi một tín hiệu lý tưởng chỉ có tần số dưới $f_{max}$, ta cần $f_s>2f_{max}$ và một quá trình lấy mẫu phù hợp."
+     "Để phục hồi một tín hiệu lý tưởng chỉ có tần số dưới $f_{max}$, ta cần $f_s>2f_{max}$."
     ]
    ]
   ]
@@ -21474,7 +21474,7 @@
     "7.1",
     "Vì sao không lấy mẫu thưa tùy ý?",
     [
-     "Hiện tượng này là aliasing."
+     "Hiện tượng này là aliasing (chồng phổ)."
     ]
    ]
   ]
