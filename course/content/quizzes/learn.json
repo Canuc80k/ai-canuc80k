@@ -850,7 +850,8 @@
     "5.2",
     "Từ block nhỏ đến ResNet-18 và ResNet-50",
     [
-     "Năm lần chia đôi cạnh là chia 32: ảnh 224 cho map $7 \\times 7$, ảnh 448 cho $14 \\times 14$."
+     "Cạnh ảnh giảm 32 lần (năm lần chia đôi) từ đầu vào đến layer4: ảnh 224 cho map $7 \\times 7$, ảnh 448 cho $14 \\times 14$.",
+     "Ở ResNet-50, layer2 trả (B, 512, 28, 28) và layer4 trả 2048 kênh; cả mạng có khoảng 25.6 triệu tham số, ResNet-18 khoảng 11.7 triệu."
     ]
    ]
   ]
@@ -899,7 +900,9 @@
     "5.5",
     "NMS: bỏ những box trùng dự đoán",
     [
-     "Non-maximum suppression (NMS) thường giữ box có score cao nhất, bỏ box score thấp hơn chồng quá ngưỡng, rồi lặp với phần còn lại."
+     "Giữ box có score cao nhất.",
+     "Bỏ mọi box còn lại chồng lên nó với IoU vượt ngưỡng.",
+     "Lặp với phần còn lại."
     ]
    ]
   ]
@@ -1025,7 +1028,8 @@
     "5.2",
     "Từ block nhỏ đến ResNet-18 và ResNet-50",
     [
-     "ResNet-18 dùng block cơ bản hai conv $3\\times3$; số 18 đếm các lớp có trọng số: conv stem, 16 conv trong 8 block và lớp linear cuối (projection không tính)."
+     "Số 18 đếm các lớp có trọng số: conv stem, 16 conv trong 8 block cơ bản (mỗi block hai conv $3\\times3$) và lớp linear cuối; projection không tính.",
+     "Một block cơ bản 64 kênh có $2 \\cdot 64 \\cdot 64 \\cdot 9 = 73\\,728$ trọng số conv cộng 256 tham số $\\gamma$, $\\beta$ của hai BatchNorm."
     ]
    ],
    [
@@ -1046,7 +1050,7 @@
     "5.2",
     "Từ block nhỏ đến ResNet-18 và ResNet-50",
     [
-     "ResNet-18 dùng block cơ bản hai conv $3\\times3$; số 18 đếm các lớp có trọng số: conv stem, 16 conv trong 8 block và lớp linear cuối (projection không tính)."
+     "Số 18 đếm các lớp có trọng số: conv stem, 16 conv trong 8 block cơ bản (mỗi block hai conv $3\\times3$) và lớp linear cuối; projection không tính."
     ]
    ],
    [
@@ -1109,7 +1113,7 @@
     "5.2",
     "Từ block nhỏ đến ResNet-18 và ResNet-50",
     [
-     "Từ stage thứ hai, block đầu của mỗi stage dùng stride 2 để chia đôi cạnh và nhân đôi số kênh; đường tắt của block ấy là projection: conv $1\\times1$ stride 2 kèm BatchNorm."
+     "Bốn stage: từ stage thứ hai, block đầu của mỗi stage dùng stride 2 để chia đôi cạnh và nhân đôi số kênh; đường tắt của block ấy là projection: conv $1\\times1$ stride 2 kèm BatchNorm."
     ]
    ]
   ]
@@ -1568,14 +1572,14 @@
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID càng thấp càng tốt, và lệch theo số mẫu: 500 ảnh mỗi model là quá ít để so, càng không so được với FID tính trên số mẫu khác."
+     "FID càng thấp càng tốt, nhưng cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so: 500 ảnh mỗi model là quá ít, và FID tính trên số mẫu khác nhau không so được với nhau."
     ]
    ],
    [
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID càng thấp càng tốt, và lệch theo số mẫu: 500 ảnh mỗi model là quá ít để so, càng không so được với FID tính trên số mẫu khác."
+     "FID càng thấp càng tốt, nhưng cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so: 500 ảnh mỗi model là quá ít, và FID tính trên số mẫu khác nhau không so được với nhau."
     ]
    ]
   ]
@@ -3844,7 +3848,9 @@
     "5.5",
     "NMS: bỏ những box trùng dự đoán",
     [
-     "Non-maximum suppression (NMS) thường giữ box có score cao nhất, bỏ box score thấp hơn chồng quá ngưỡng, rồi lặp với phần còn lại."
+     "Giữ box có score cao nhất.",
+     "Bỏ mọi box còn lại chồng lên nó với IoU vượt ngưỡng.",
+     "Lặp với phần còn lại."
     ]
    ],
    [
@@ -3921,7 +3927,7 @@
     "5.1",
     "Ví dụ tính tay",
     [
-     "Vài kernel cổ điển vẫn đáng nhớ: Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang, và tìm những chỗ như vậy gọi là phát hiện cạnh; kernel làm mờ $3 \\times 3$ có 9 ô đều bằng $1/9$, tổng bằng 1 để giữ nguyên độ sáng trung bình."
+     "Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang."
     ]
    ]
   ]
@@ -4175,7 +4181,8 @@
     "5.5",
     "AP và mAP nói gì?",
     [
-     "Con số này còn phụ thuộc ngưỡng IoU dùng khi ghép."
+     "Con số này còn phụ thuộc ngưỡng IoU dùng khi ghép:",
+     "AP50 (kiểu PASCAL VOC) chỉ cần IoU $\\ge0.5$."
     ]
    ]
   ]
@@ -5524,7 +5531,7 @@
     "5.3",
     "Dữ liệu nhiều hơn theo nghĩa nào?",
     [
-     "Thêm nhiễu Gaussian nhỏ dạy model bền với nhiễu cảm biến; Cutout (random erasing) buộc model dùng nhiều phần của vật thay vì bám vào một chi tiết."
+     "Che và trộn mẫu: Cutout (random erasing) xóa một ô chữ nhật và giữ nhãn, buộc model dùng nhiều phần của vật thay vì bám vào một chi tiết."
     ]
    ]
   ]
@@ -5895,7 +5902,8 @@
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật; nó cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so, nên không có nghĩa trên vài ảnh."
+     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật.",
+     "FID càng thấp càng tốt, nhưng cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so: 500 ảnh mỗi model là quá ít, và FID tính trên số mẫu khác nhau không so được với nhau."
     ]
    ],
    [
@@ -5909,7 +5917,8 @@
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật; nó cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so, nên không có nghĩa trên vài ảnh."
+     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật.",
+     "FID càng thấp càng tốt, nhưng cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so: 500 ảnh mỗi model là quá ít, và FID tính trên số mẫu khác nhau không so được với nhau."
     ]
    ]
   ]
@@ -5941,7 +5950,7 @@
     "5.7",
     "Tìm ảnh bằng câu chữ",
     [
-     "Retrieval giữ vector ảnh trong một index, encode query chữ rồi lấy top-k theo cosine."
+     "Tìm kiếm (retrieval) giữ vector ảnh trong một index, encode câu truy vấn (query) rồi lấy top-k theo cosine."
     ]
    ]
   ]
@@ -5997,7 +6006,7 @@
     "5.8",
     "Từ noise predictor đến model sinh có điều kiện",
     [
-     "Text-conditioned diffusion đưa embedding của prompt vào denoiser, thường qua cross-attention."
+     "Diffusion có điều kiện chữ đưa embedding của prompt vào denoiser, thường qua cross-attention."
     ]
    ]
   ]
@@ -6816,7 +6825,7 @@
     "5.1",
     "Một bộ dò đi qua nhiều vị trí",
     [
-     "Mỗi ô của lưới gọi là một điểm ảnh (pixel); ảnh xám có một kênh, mỗi pixel một số từ 0 (đen) tới 255 (trắng)."
+     "Mỗi ô của bảng gọi là một điểm ảnh (pixel), mang một số từ 0 (đen) tới 255 (trắng)."
     ]
    ]
   ]
@@ -6900,7 +6909,7 @@
     "5.6",
     "Mask trả lời một câu hỏi cho mỗi điểm",
     [
-     "Semantic segmentation cho lớp ở từng pixel, chẳng hạn nền, mực, giấy."
+     "Semantic: mỗi pixel một lớp, chẳng hạn nền, mực, giấy."
     ]
    ]
   ]
@@ -7067,7 +7076,7 @@
     "5.6",
     "Mask trả lời một câu hỏi cho mỗi điểm",
     [
-     "Semantic segmentation cho lớp ở từng pixel, chẳng hạn nền, mực, giấy."
+     "Semantic: mỗi pixel một lớp, chẳng hạn nền, mực, giấy."
     ]
    ]
   ]
@@ -7095,7 +7104,7 @@
     "5.1",
     "Một bộ dò đi qua nhiều vị trí",
     [
-     "Mỗi ô của lưới gọi là một điểm ảnh (pixel); ảnh xám có một kênh, mỗi pixel một số từ 0 (đen) tới 255 (trắng)."
+     "Ảnh xám có một kênh; ảnh màu có ba bảng như vậy, gọi là ba kênh RGB."
     ]
    ],
    [
@@ -8529,7 +8538,7 @@
     "5.5",
     "Một ảnh cho một danh sách dài ngắn khác nhau",
     [
-     "Gốc $(0, 0)$ ở góc trên trái."
+     "Box có ba cách ghi thường gặp, gốc $(0, 0)$ ở góc trên trái:"
     ]
    ]
   ]
@@ -8543,7 +8552,8 @@
     "5.1",
     "Một bộ dò đi qua nhiều vị trí",
     [
-     "Ảnh xám là bảng số $H\\times W$, thường biểu diễn cường độ sáng."
+     "Ảnh xám là bảng số $H\\times W$.",
+     "Mỗi ô của bảng gọi là một điểm ảnh (pixel), mang một số từ 0 (đen) tới 255 (trắng)."
     ]
    ],
    [
@@ -8616,7 +8626,7 @@
     "5.8",
     "Từ noise predictor đến model sinh có điều kiện",
     [
-     "Text-conditioned diffusion đưa embedding của prompt vào denoiser, thường qua cross-attention."
+     "Diffusion có điều kiện chữ đưa embedding của prompt vào denoiser, thường qua cross-attention."
     ]
    ]
   ]
@@ -9909,7 +9919,8 @@
     "5.1",
     "Ví dụ tính tay",
     [
-     "Vài kernel cổ điển vẫn đáng nhớ: Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang, và tìm những chỗ như vậy gọi là phát hiện cạnh; kernel làm mờ $3 \\times 3$ có 9 ô đều bằng $1/9$, tổng bằng 1 để giữ nguyên độ sáng trung bình."
+     "Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang.",
+     "Tìm những chỗ như vậy gọi là phát hiện cạnh."
     ]
    ]
   ]
@@ -9964,7 +9975,7 @@
     "5.1",
     "Pooling giữ điều gì, mất điều gì?",
     [
-     "Đây là phép tổng hợp cố định, không có trọng số cần học."
+     "Pooling gộp mỗi cửa sổ thành một số, và không có trọng số cần học:"
     ]
    ]
   ]
@@ -10049,7 +10060,7 @@
     "5.7",
     "Tìm ảnh bằng câu chữ",
     [
-     "Retrieval giữ vector ảnh trong một index, encode query chữ rồi lấy top-k theo cosine."
+     "Tìm kiếm (retrieval) giữ vector ảnh trong một index, encode câu truy vấn (query) rồi lấy top-k theo cosine."
     ]
    ]
   ]
@@ -11087,7 +11098,7 @@
     "5.2",
     "Vì sao một mạng sâu cần đường đi tắt?",
     [
-     "Mạng plain chỉ có tích $\\partial F_L/\\partial x\\cdots\\partial F_1/\\partial x$, nhỏ dần theo cấp số nhân khi mỗi thừa số nhỏ hơn 1."
+     "Mạng không có đường tắt (gọi là mạng plain) chỉ có tích $\\partial F_L/\\partial x\\cdots\\partial F_1/\\partial x$, nhỏ dần theo cấp số nhân khi mỗi thừa số nhỏ hơn 1."
     ]
    ]
   ]
@@ -12669,7 +12680,7 @@
     "5.9",
     "Tìm lỗi có hệ thống",
     [
-     "Một dạng tìm lỗi khác là ảnh adversarial: thay đổi nhỏ có chủ đích làm model đổi quyết định."
+     "Một dạng tìm lỗi khác là ảnh adversarial (ảnh đối kháng): thay đổi nhỏ có chủ đích làm model đổi quyết định."
     ]
    ]
   ]
@@ -13565,7 +13576,7 @@
     "5.2",
     "Vì sao một mạng sâu cần đường đi tắt?",
     [
-     "Chồng nhiều block, gradient nhân các thừa số $(I+\\partial F_k/\\partial x)$; khai triển tích ấy luôn có số hạng $I$, tức một đường đi về các lớp đầu mà không phải nhân qua đạo hàm của mọi nhánh. Mạng plain chỉ có tích $\\partial F_L/\\partial x\\cdots\\partial F_1/\\partial x$, nhỏ dần theo cấp số nhân khi mỗi thừa số nhỏ hơn 1."
+     "Chồng nhiều block, gradient nhân các thừa số $(I+\\partial F_k/\\partial x)$; khai triển tích ấy luôn có số hạng $I$, tức một đường đi về các lớp đầu mà không phải nhân qua đạo hàm của mọi nhánh."
     ]
    ],
    [
@@ -13767,7 +13778,8 @@
     "5.5",
     "AP và mAP nói gì?",
     [
-     "Average precision (AP) tóm tắt precision–recall khi thay đổi ngưỡng score. Trong cách all-points, ta lấy đường bao precision $p_{\\mathrm{interp}}(r)=\\max_{r'\\ge r}p(r')$, rồi cộng diện tích các đoạn recall tăng."
+     "Average precision (AP) tóm tắt đường precision–recall (bài 1.5) khi thay đổi ngưỡng score.",
+     "Trong cách all-points, ta lấy đường bao precision $p_{\\mathrm{interp}}(r)=\\max_{r'\\ge r}p(r')$, rồi cộng diện tích các đoạn recall tăng."
     ]
    ]
   ]
@@ -13809,7 +13821,7 @@
     "5.3",
     "Dữ liệu nhiều hơn theo nghĩa nào?",
     [
-     "Che và trộn mẫu: Cutout xóa một ô chữ nhật và giữ nhãn; Mixup lấy $\\tilde x=\\lambda x_i+(1-\\lambda)x_j$ và trộn hai nhãn one-hot thành $\\tilde y=\\lambda y_i+(1-\\lambda)y_j$, với $\\lambda\\in(0,1)$ rút ngẫu nhiên; CutMix dán một mảnh của ảnh này lên ảnh kia và trộn nhãn theo tỉ lệ diện tích. Với nhãn mềm $\\tilde y$, cross-entropy vẫn là $-\\sum_k \\tilde y_k\\log p_k$."
+     "Mixup lấy $\\tilde x=\\lambda x_i+(1-\\lambda)x_j$ và trộn hai nhãn one-hot thành $\\tilde y=\\lambda y_i+(1-\\lambda)y_j$, với $\\lambda\\in(0,1)$ rút ngẫu nhiên."
     ]
    ]
   ]
@@ -14928,7 +14940,8 @@
     "5.1",
     "Giả định và ứng dụng",
     [
-     "Với stride 1, dịch ảnh đi một ô thì feature map dịch theo đúng một ô, các giá trị giữ nguyên trừ vùng sát biên. Tính chất này gọi là đồng biến với phép dịch (translation equivariance). Bất biến, tức đầu ra không đổi khi ảnh dịch, chỉ xuất hiện khi về sau có phép gộp vị trí như global pooling; pooling cục bộ chỉ giảm nhạy với dịch nhỏ và vỡ khi đỉnh qua ranh giới cửa sổ, như cặp [4.0, 0.0] và [0.0, 4.0] ở trên."
+     "Với stride 1, dịch ảnh đi một ô thì feature map dịch theo đúng một ô, các giá trị giữ nguyên trừ vùng sát biên.",
+     "Tính chất này gọi là đồng biến với phép dịch (translation equivariance)."
     ]
    ]
   ]
@@ -15311,14 +15324,14 @@
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID càng thấp càng tốt, và lệch theo số mẫu: 500 ảnh mỗi model là quá ít để so, càng không so được với FID tính trên số mẫu khác."
+     "FID càng thấp càng tốt, nhưng cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so: 500 ảnh mỗi model là quá ít, và FID tính trên số mẫu khác nhau không so được với nhau."
     ]
    ],
    [
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID càng thấp càng tốt, và lệch theo số mẫu: 500 ảnh mỗi model là quá ít để so, càng không so được với FID tính trên số mẫu khác."
+     "FID càng thấp càng tốt, nhưng cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so: 500 ảnh mỗi model là quá ít, và FID tính trên số mẫu khác nhau không so được với nhau."
     ]
    ]
   ]
@@ -16230,7 +16243,7 @@
     "5.1",
     "Pooling giữ điều gì, mất điều gì?",
     [
-     "Max pool cửa sổ 2, stride 2 (số từ code bài): đỉnh 4 dịch một ô qua ranh giới hai cửa sổ thì đầu ra đổi từ (4, 0) thành (0, 4)."
+     "MaxPool2d(2) trên $7 \\times 7$ ra $3 \\times 3$ vì hàng, cột lẻ cuối bị bỏ; ceil_mode=True giữ cửa sổ thiếu nên ra $4 \\times 4$."
     ]
    ],
    [
@@ -16384,7 +16397,9 @@
     "5.5",
     "NMS: bỏ những box trùng dự đoán",
     [
-     "Non-maximum suppression (NMS) thường giữ box có score cao nhất, bỏ box score thấp hơn chồng quá ngưỡng, rồi lặp với phần còn lại."
+     "Non-maximum suppression (NMS) là một thuật toán tham lam:",
+     "Giữ box có score cao nhất.",
+     "Bỏ mọi box còn lại chồng lên nó với IoU vượt ngưỡng."
     ]
    ]
   ]
@@ -16412,7 +16427,7 @@
     "5.6",
     "Mask trả lời một câu hỏi cho mỗi điểm",
     [
-     "Ảnh thật có hai bông hoa: semantic mask gán cùng lớp “hoa” cho mọi pixel hoa; instance mask còn tách hai bông bằng hai ID riêng."
+     "Semantic mask gán cùng lớp “hoa”; instance mask tách từng bông."
     ]
    ]
   ]
@@ -16537,7 +16552,7 @@
     "5.5",
     "AP và mAP nói gì?",
     [
-     "Average precision (AP) tóm tắt precision–recall khi thay đổi ngưỡng score."
+     "Average precision (AP) tóm tắt đường precision–recall (bài 1.5) khi thay đổi ngưỡng score."
     ]
    ]
   ]
@@ -17903,7 +17918,7 @@
     "5.1",
     "Ví dụ tính tay",
     [
-     "Vài kernel cổ điển vẫn đáng nhớ: Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang, và tìm những chỗ như vậy gọi là phát hiện cạnh; kernel làm mờ $3 \\times 3$ có 9 ô đều bằng $1/9$, tổng bằng 1 để giữ nguyên độ sáng trung bình."
+     "Làm mờ $3 \\times 3$: 9 ô đều bằng $1/9$, tổng bằng 1 để giữ nguyên độ sáng trung bình."
     ]
    ]
   ]
@@ -17917,7 +17932,7 @@
     "5.5",
     "NMS: bỏ những box trùng dự đoán",
     [
-     "Hai người đứng sát nhau có box IoU 0.6 thì NMS ngưỡng 0.5 sẽ xóa một người."
+     "Trong đám đông, hai vật thật có thể chồng box: hai người đứng sát nhau có box IoU 0.6 thì NMS ngưỡng 0.5 sẽ xóa một người."
     ]
    ]
   ]
@@ -17966,7 +17981,8 @@
     "5.2",
     "Từ block nhỏ đến ResNet-18 và ResNet-50",
     [
-     "Bottleneck của ResNet-50 (layer1): conv 1×1 thu 256 kênh về 64, conv 3×3 chạy ở 64 kênh, conv 1×1 mở lại 256; 69 632 tham số so với 1 179 648 của hai conv 3×3 ở 256 kênh."
+     "ResNet-50 trở lên dùng bottleneck: conv $1\\times1$ thu hẹp số kênh, conv $3\\times3$ làm việc ở chiều hẹp, rồi conv $1\\times1$ mở rộng lại gấp 4.",
+     "Bottleneck: conv 1×1 thu kênh lại, conv 3×3 chạy ở ít kênh, conv 1×1 mở ra; ít tham số hơn 17 lần."
     ]
    ],
    [
@@ -19470,7 +19486,7 @@
     "5.2",
     "Từ block nhỏ đến ResNet-18 và ResNet-50",
     [
-     "Năm lần chia đôi cạnh là chia 32: ảnh 224 cho map $7 \\times 7$, ảnh 448 cho $14 \\times 14$."
+     "Cạnh ảnh giảm 32 lần (năm lần chia đôi) từ đầu vào đến layer4: ảnh 224 cho map $7 \\times 7$, ảnh 448 cho $14 \\times 14$."
     ]
    ]
   ]
@@ -19615,7 +19631,7 @@
     "5.6",
     "Mask trả lời một câu hỏi cho mỗi điểm",
     [
-     "Một cách phổ biến là Mask R-CNN: lấy detector hai giai đoạn Faster R-CNN của bài 5.5 (RPN đề xuất vùng từ các anchor, rồi phân loại và chỉnh box từng vùng) và thêm một nhánh dự đoán mask nhị phân nhỏ, cỡ $28\\times28$, bên trong mỗi box."
+     "Một cách phổ biến là Mask R-CNN: lấy detector hai giai đoạn Faster R-CNN của bài 5.5 và thêm một nhánh dự đoán mask nhị phân nhỏ, cỡ $28\\times28$, bên trong mỗi box."
     ]
    ]
   ]
@@ -21018,14 +21034,14 @@
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật; nó cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so, nên không có nghĩa trên vài ảnh."
+     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật."
     ]
    ],
    [
     "5.8",
     "Đánh giá model sinh",
     [
-     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật; nó cần hàng nghìn mẫu và cách tính nhất quán giữa các lần so, nên không có nghĩa trên vài ảnh."
+     "FID so phân phối feature (lấy từ một mạng phân loại pretrained) của ảnh sinh với ảnh thật."
     ]
    ]
   ]
@@ -21510,7 +21526,7 @@
     "5.6",
     "Mask trả lời một câu hỏi cho mỗi điểm",
     [
-     "Phân đoạn toàn cảnh (panoptic) gộp hai yêu cầu: mọi pixel có lớp, và những vật đếm được như người, xe còn có ID riêng."
+     "Panoptic (toàn cảnh): gộp hai yêu cầu, mọi pixel có lớp, và những vật đếm được như người, xe còn có ID riêng."
     ]
    ]
   ]
