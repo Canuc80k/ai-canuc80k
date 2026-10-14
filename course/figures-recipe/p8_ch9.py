@@ -68,7 +68,7 @@ def loop91():
     s.mono(320, 40, 'hành động A_t', 11.5, 'middle', CLAY, 600)
     s.curve(450, 120, 190, 120, -.18, GREEN, 1.6)
     s.mono(320, 172, 'thưởng R_{t+1}, trạng thái S_{t+1}', 11.5, 'middle', GREEN, 600)
-    s.save('9-1-loop', 'Vòng tương tác: agent chọn hành động theo trạng thái hiện tại; environment trả phần thưởng và trạng thái mới. Agent học khi trải nghiệm làm thay đổi Q hoặc policy.')
+    s.save('9-1-loop', 'Agent chọn hành động; environment trả phần thưởng và trạng thái mới.')
 
 
 def grid91():
@@ -87,7 +87,7 @@ def grid91():
     s.mono(500, 80, 'vào G +10, kết thúc', 11.5, 'start', TEXT)
     s.mono(500, 100, 'γ = 0.9', 11.5, 'start', TEXT)
     s.mono(500, 140, 'V*(S) = 3.122', 12, 'start', CLAY, 600)
-    s.save('9-1-grid', 'Grid world của bài với V* tính bằng value iteration (từ code) và một hành động tối ưu ở mỗi ô; ô đen bị chắn. Từ S cần 5 bước, V*(S) = 3.122.')
+    s.save('9-1-grid', 'Giá trị tối ưu V* của từng ô và một hành động tối ưu; từ S cần 5 bước.')
 
 
 def return91():
@@ -106,7 +106,7 @@ def return91():
     s.mono(530, 70, 'tổng thưởng 6', 11.5, 'start', MUTED)
     s.mono(530, 92, 'G₀ = 3.122', 12, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'thưởng (nhạt) và γᵗ · thưởng (đậm)', 11, 'start', FAINT)
-    s.save('9-1-return', 'Đường 5 bước của bài: bốn thưởng −1 rồi +10. Nhân mỗi thưởng với 0.9ᵗ, thưởng 10 đến sau bốn lần chiết khấu chỉ còn 6.56, và return G₀ = 3.122 trong khi tổng thưởng là 6.')
+    s.save('9-1-return', 'Thưởng càng xa càng bị chiết khấu: tổng thưởng 6 nhưng return chỉ 3.122.')
 
 
 def vi91():
@@ -121,7 +121,7 @@ def vi91():
         s.label(x0 + 72, 22, f'sau {rounds} vòng', 11.5, color=TEXT, weight=600)
         s.mono(x0 + 72, 166, f'S: {V[ns["start"]]:.3f}', 11, 'middle', CLAY, 600)
     s.label(320, 206, 'mỗi vòng đưa thông tin từ G lùi thêm một bước', 11, color=MUTED)
-    s.save('9-1-vi', 'Value iteration đồng bộ của bài từ V = 0 (tính lại bằng step của bài): sau 1 vòng S là −1, sau 2 vòng −1.9, và chỉ từ vòng 5 thưởng ở G mới lan tới S, cho 3.122.')
+    s.save('9-1-vi', 'Value iteration: phải tới vòng 5, thưởng ở G mới lan về tới S.')
 
 
 def egreedy91():
@@ -137,7 +137,7 @@ def egreedy91():
     s.label(518, 66, 'khai thác 0.8', 11, 'start', TEXT)
     s.box(500, 84, 12, 12, 'none', BLUE, r=2, width=0, opacity=.5)
     s.label(518, 90, 'explore 0.2 / 4', 11, 'start', TEXT)
-    s.save('9-1-egreedy', 'Epsilon-greedy với ε = 0.2 và 4 hành động: hành động tốt nhất nhận 0.8 từ nhánh khai thác cộng 0.05 từ nhánh chọn đều, tổng 0.85; mỗi hành động khác 0.05.')
+    s.save('9-1-egreedy', 'Epsilon-greedy 0.2 với 4 hành động: hành động tốt nhất được chọn 85% số lần.')
 
 
 def replay91():
@@ -156,7 +156,7 @@ def replay91():
         s.mono(120 + 4 * 84 + 84, y + 16.5, 'Q(S) = ' + ('0' if r == 0 else '3.122'), 11.5, 'start', CLAY if r else MUTED, 600 if r else 400)
     for i, nm in enumerate(['S', '', '', '', '→ G']):
         s.mono(155 + i * 84, 128 + 40, nm, 10.5, 'middle', FAINT)
-    s.save('9-1-replay', 'Năm transition của episode đầu, α = 1, Q khởi tạo 0: phát lại xuôi thì chỉ cặp cuối nhận thưởng 10; phát lại ngược thì mỗi cặp dùng giá trị vừa tính phía sau, Q tại S lên 3.122 sau một lượt.')
+    s.save('9-1-replay', 'Phát lại ngược đưa thưởng về S sau một lượt; phát lại xuôi thì không.')
 
 
 def learning91():
@@ -188,7 +188,7 @@ def learning91():
     ax.hline(3.122, CLAY, 1.2, '4 4')
     s.mono(ax.X(300) + 8, ax.Y(3.122), 'V*(S)', 11, 'start', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'max Q(S, ·)', 11, 'start', FAINT)
-    s.save('9-1-learning', 'Q-learning của bài (cùng seed 7, α = 0.3, ε = 0.2): giá trị lớn nhất của Q tại S qua 300 episode đầu tiến tới V*(S) = 3.122 mà value iteration đã tính.')
+    s.save('9-1-learning', 'Q-learning tiến dần tới giá trị V*(S) = 3.122 mà value iteration đã tính.')
 
 
 def bandit91():
@@ -207,7 +207,7 @@ def bandit91():
     s.mono(ax.X(400) + 8, ax.Y(ps[-1]), f'{ps[-1]:.4f}', 11, 'start', BLUE, 600)
     s.label(ax.x - 8, ax.y - 12, 'p(phải)', 11, 'start', FAINT)
     s.mono(ax.X(210), ax.Y(.55), 'gradient kỳ vọng 2p(1 − p) nhỏ dần khi p gần 1', 10.5, 'middle', MUTED)
-    s.save('9-1-bandit', 'REINFORCE với baseline 2 trên bandit của bài (seed 11): xác suất chọn phải tăng nhanh lúc đầu rồi chậm dần, đạt 0.9641 sau 400 mẫu, vì gradient kỳ vọng 2p(1 − p) nhỏ dần khi p gần 1.')
+    s.save('9-1-bandit', 'Xác suất chọn hành động tốt tăng nhanh lúc đầu rồi chậm dần khi gần 1.')
 
 
 FIGS91 = {'9-1-loop': loop91, '9-1-grid': grid91, '9-1-return': return91, '9-1-vi': vi91, '9-1-egreedy': egreedy91,
@@ -253,7 +253,7 @@ def search92():
     s.mono(500, 60, 'S–A–G: 4 giây', 11.5, 'start', GREEN, 600)
     s.mono(500, 200, 'S–B–G: 11 giây', 11.5, 'start', CLAY, 600)
     s.label(320, 236, 'cả hai đường đều 2 cạnh; BFS trả đường qua B', 11, color=MUTED)
-    s.save('9-2-search', 'Đồ thị của bài: hai đường từ S tới G đều có 2 cạnh, nhưng đường qua A tốn 4 giây còn đường qua B tốn 11 giây; BFS đếm cạnh nên trả đường qua B.')
+    s.save('9-2-search', 'BFS đếm cạnh nên chọn đường 11 giây thay vì đường 4 giây.')
 
 
 def frontier92():
@@ -271,7 +271,7 @@ def frontier92():
                 s.arrow(x - 64 + 19, y, x - 20, y, FAINT, 1.1)
         s.mono(470, y + .5, f'mở {len(seq)} · chi phí {cost}', 11.5, 'start', col, 600)
     s.label(320, 186, 'thứ tự lấy đỉnh ra khỏi heap', 11, color=MUTED)
-    s.save('9-2-astar-frontier', 'Thứ tự mở đỉnh trong code bài: Dijkstra mở S, B, A, G; A* với h đúng chỉ mở S, A, G; khi h(A) = 100, A* lấy G qua B ra trước và dừng ở chi phí 11 thay vì 4.')
+    s.save('9-2-astar-frontier', 'Heuristic tốt giúp A* mở ít đỉnh hơn Dijkstra; heuristic ước lượng quá làm A* trả đường sai.')
 
 
 def king92():
@@ -293,7 +293,7 @@ def king92():
         s.mono(270, y, nm, 11, 'start', TEXT)
         s.mono(450, y, f'{v:g}', 12, 'start', col, 600)
         s.label(490, y, note, 10.5, 'start', col)
-    s.save('9-2-king', 'Đi 8 hướng, mỗi bước 1, tới ô lệch (3, 3): chỉ cần 3 bước chéo. Manhattan cho 6 và Euclid 4.24 đều vượt chi phí thật; max(|Δx|, |Δy|) đúng bằng 3.')
+    s.save('9-2-king', 'Đi 8 hướng: Manhattan và Euclid ước lượng quá, max(|Δx|, |Δy|) đúng bằng 3.')
 
 
 def maps92():
@@ -331,7 +331,7 @@ def maps92():
         s.label(x0 + 90, 18, nm, 11.5, color=TEXT, weight=600)
         s.mono(x0 + 90, 30 + N * cs + 14, f'mở {len(seen)} · dài {cost}', 11, 'middle', CLAY, 600)
     s.label(320, 248, f'bản đồ seed 0 của bài; đường ngắn nhất dài {dist[START]}; ô đen là tường, ô cam là ô đã mở', 10.5, color=MUTED)
-    s.save('9-2-maps', 'Một bản đồ 30 × 30 trong thí nghiệm của bài (seed 0): Dijkstra mở gần như mọi ô tới được, A* Manhattan mở ít hơn nhiều mà vẫn tối ưu, weighted A* w = 2 mở ít nhất nhưng có thể trả đường dài hơn.')
+    s.save('9-2-maps', 'A* mở ít ô hơn Dijkstra mà vẫn tối ưu; weighted A* mở ít nhất nhưng có thể trả đường dài hơn.')
 
 
 def tree(s, x0, vals, prune=(), title=None):
@@ -365,7 +365,7 @@ def minimax92():
     s.label(xr + 30, 40, 'MAX', 10.5, 'start', CLAY)
     s.label(170 + 75 + 150 + 30, 120, 'MIN', 10.5, 'start', BLUE)
     s.label(320, 236, 'lá 9 lớn nhất cây nhưng MIN ở B chọn 2', 11, color=MUTED)
-    s.save('9-2-minimax', 'Cây minimax của bài: MIN ở A chọn 3, ở B chọn 2; MAX so hai giá trị bảo đảm 3 và 2 nên chọn A. Nhắm lá 9 là giả định đối thủ hợp tác.')
+    s.save('9-2-minimax', 'MIN chọn 3 ở A, 2 ở B; MAX chọn A.')
 
 
 def alphabeta92():
@@ -377,7 +377,7 @@ def alphabeta92():
         s.mono(95 + 75 + i * 150, 120.5, txt, 11.5, 'middle', TEXT, 600)
         s.label(95 + 75 + i * 150 - 26, 120, 'ABC'[i], 11, color=MUTED)
     s.label(320, 236, 'sau A, MAX đã có 4; lá 3 ở B đủ biết B không hơn 4, nên bỏ lá 8', 11, color=MUTED)
-    s.save('9-2-alphabeta', 'Alpha-beta trên cây A (6, 4), B (3, 8), C (5, 1): A cho 4; ở B, lá 3 đã không quá 4 nên bỏ lá 8; ở C, lá 5 còn hơn 4 nên phải đọc lá 1. Giá trị gốc vẫn là 4.')
+    s.save('9-2-alphabeta', 'Alpha-beta bỏ được lá 8 mà giá trị gốc vẫn là 4.')
 
 
 def constraints92():
@@ -395,7 +395,7 @@ def constraints92():
         s.label(x, y, n, 13, color=TEXT, weight=600)
         s.mono(x, y - 40, f'phòng {room[n]}', 11, 'middle', col, 600)
     s.mono(116, 90.5, 'A = 0', 10.5, 'end', MUTED)
-    s.save('9-2-constraints', 'CSP xếp phòng của bài: A khác B, B khác C, A ở phòng 0 buộc B ở phòng 1 và C ở phòng 0. A và C chung phòng được vì đề không cấm.')
+    s.save('9-2-constraints', 'A ở phòng 0 buộc B ở phòng 1 và C ở phòng 0.')
 
 
 def forward92():
@@ -413,7 +413,7 @@ def forward92():
             s.box(x0 + 40, y, 130, 28, 'none', CLAY if empty else BLUE, r=4, width=0, opacity=.4 if empty else .12)
             s.mono(x0 + 105, y + 14.5, dom[v], 12, 'middle', CLAY if empty else TEXT, 600 if empty else 400)
     s.label(320, 214, 'D khác A và khác B: hai phòng đã bị chiếm, domain của D rỗng trước khi gán C', 11, color=MUTED)
-    s.save('9-2-forward', 'Forward checking với nhóm D khác phòng với A và B: gán A = 0 loại 0 khỏi domain của B và D; gán B = 1 loại 1 khỏi C và D, nên D hết giá trị và nhánh bị bỏ ngay.')
+    s.save('9-2-forward', 'Forward checking phát hiện D hết giá trị nên bỏ nhánh ngay.')
 
 
 def models92():
@@ -436,7 +436,7 @@ def models92():
             s.mono(x, y + 13.5, '1' if v else '0', 12, 'middle', TEXT if v else FAINT, 600 if v else 400)
     s.mono(462, 38 + 5 * 30 + 13.5, 'model duy nhất: R đúng', 10.5, 'start', GREEN)
     s.mono(462, 38 + 2 * 30 + 13.5, 'phản ví dụ: R sai', 10.5, 'start', CLAY)
-    s.save('9-2-models', 'Bảng chân trị tám thế giới của P, Q, R (từ code bài): KB = P ∧ (P ⊕ Q) ∧ (Q ⊕ R) chỉ có một model và R đúng ở đó, nên KB ⊨ R; bỏ P thì có thêm model với R sai.')
+    s.save('9-2-models', 'KB chỉ có một model và R đúng ở đó, nên KB suy ra R.')
 
 
 FIGS92 = {'9-2-search': search92, '9-2-astar-frontier': frontier92, '9-2-king': king92, '9-2-maps': maps92,
@@ -471,7 +471,7 @@ def bayes93():
     s.label(466, 111, 'sạch: 882', 10.5, 'start', TEXT)
     s.mono(450, 150, 'P(lỗi | cảnh báo)', 11, 'start', MUTED)
     s.mono(450, 170, '= 18 / 116 ≈ 0.155', 11.5, 'start', CLAY, 600)
-    s.save('9-3-bayes', 'Một nghìn bài của ví dụ, mỗi ô một bài: 18 bài lỗi bị cảnh báo (cam đậm), 2 bài lỗi bị sót, 98 bài sạch bị cảnh báo nhầm (vàng). Trong 116 cảnh báo chỉ có 18 bài thật sự lỗi.')
+    s.save('9-3-bayes', 'Trong 116 cảnh báo chỉ có 18 bài thật sự lỗi.')
 
 
 def prior93():
@@ -486,7 +486,7 @@ def prior93():
     ax.hline(.9, FAINT, 1, '3 3')
     s.mono(ax.X(1) + 8, ax.Y(.9), 'recall 0.9', 10.5, 'start', FAINT)
     s.label(ax.x - 8, ax.y - 12, 'P(lỗi | cảnh báo)', 11, 'start', FAINT)
-    s.save('9-3-prior', 'Cùng detector (bắt 90% bài lỗi, báo nhầm 10% bài sạch): xác suất một cảnh báo là đúng tăng theo tỉ lệ lỗi, 0.155 khi 2% bài lỗi và 0.9 khi một nửa số bài lỗi.')
+    s.save('9-3-prior', 'Tỉ lệ lỗi càng thấp, phần cảnh báo đúng càng nhỏ.')
 
 
 def logloss93():
@@ -501,7 +501,7 @@ def logloss93():
         s.circle(ax.X(q), ax.Y(Lq), 5, col, col)
         s.mono(ax.X(q) + (10 if q < .1 else 0), ax.Y(Lq) + (14 if q < .1 else -18), f'q = {q}: {Lq:.3f}', 10.5, 'start' if q < .1 else 'middle', col, 600)
     s.label(ax.x - 8, ax.y - 12, 'kỳ vọng log-loss', 11, 'start', FAINT)
-    s.save('9-3-logloss', 'Kỳ vọng log-loss của một dự đoán cố định p khi tỉ lệ nhãn 1 là q: nhỏ nhất đúng tại p = q, bằng 0.098 khi q = 0.02 và 0.611 khi q = 0.3.')
+    s.save('9-3-logloss', 'Log loss kỳ vọng nhỏ nhất khi dự đoán đúng bằng tỉ lệ thật.')
 
 
 def null93():
@@ -516,7 +516,7 @@ def null93():
     s.mono(370, 96, 'X (2, −1) = (0, 0)', 11.5, 'start', TEXT)
     s.mono(370, 134, 'mọi w trên đường cam', 11, 'start', CLAY)
     s.mono(370, 152, 'cho cùng dự đoán Xw', 11, 'start', CLAY)
-    s.save('9-3-null', 'Ma trận có cột thứ hai gấp đôi cột thứ nhất (hạng 1): cộng t(2, −1) vào trọng số không đổi dự đoán, nên mọi điểm trên đường cam là một nghiệm như nhau và hệ số không duy nhất.')
+    s.save('9-3-null', 'Cột thứ hai gấp đôi cột thứ nhất nên hệ số không duy nhất.')
 
 
 def gradient93():
@@ -532,7 +532,7 @@ def gradient93():
     s.mono(210, 160, '∇_w L = (p − y)·x = (−0.5, −1)', 11, 'middle', CLAY)
     s.mono(210, 180, '∂L/∂b = −0.5', 11, 'middle', CLAY)
     s.mono(470, 172, 'bước η = 0.1: L → 0.554', 11, 'middle', GREEN, 600)
-    s.save('9-3-gradient', 'Một mẫu của bài với nhãn 1: lượt xuôi cho logit 0, xác suất 0.5, loss 0.693; lượt ngược dùng p − y = −0.5 nhân với từng feature, và một bước η = 0.1 hạ loss còn 0.554.')
+    s.save('9-3-gradient', 'Lượt xuôi cho loss 0.693; một bước gradient hạ còn 0.554.')
 
 
 def conv93():
@@ -550,7 +550,7 @@ def conv93():
     s.mono(440, 80, 'tham số', 11, 'start', MUTED)
     s.mono(440, 104, '2 × (3·3·3 + 1) = 56', 12, 'start', TEXT, 600)
     s.mono(440, 132, 'batch 4 không nhân vào', 10.5, 'start', MUTED)
-    s.save('9-3-conv', 'Conv2d của bài: input (4, 3, 8, 8), hai output channel, kernel 3, padding 1, stride 2 cho output (4, 2, 4, 4); mỗi output channel có 27 weight và 1 bias, tổng 56 tham số.')
+    s.save('9-3-conv', 'Conv2d: input (4, 3, 8, 8) ra (4, 2, 4, 4), 56 tham số.')
 
 
 def attention93():
@@ -572,7 +572,7 @@ def attention93():
             s.label(x0 - 10, 72 + i * 46, f'q{i + 1}', 10.5, 'end', MUTED)
             s.mono(x0 + 160, 72.5 + i * 46, '→ ' + out[i], 10.5, 'start', BLUE)
     s.label(320, 170, 'mỗi hàng là một phân phối trên key, nhân với value (2, 0) và (0, 4)', 11, color=MUTED)
-    s.save('9-3-attention', 'Trọng số attention của ví dụ (từ code bài): mỗi hàng cộng thành 1 và cho một vector value pha trộn; causal mask đặt score của key tương lai thành −∞ trước softmax nên query đầu chỉ lấy value (2, 0).')
+    s.save('9-3-attention', 'Mỗi hàng trọng số cộng thành 1; causal mask chặn key tương lai.')
 
 
 def confusion93():
@@ -590,7 +590,7 @@ def confusion93():
     s.mono(400, 114, 'accuracy 900/1000 = 0.900', 11.5, 'start', TEXT)
     s.mono(400, 138, 'F1 36/136 = 0.265', 11.5, 'start', TEXT)
     s.mono(400, 172, 'luôn đoán sạch: acc 0.98, recall 0', 10.5, 'start', MUTED)
-    s.save('9-3-confusion-metrics', 'Confusion matrix của detector: cột cảnh báo (khung đứt) có 18 đúng và 98 nhầm, nên precision chỉ 0.155 dù recall 0.9; baseline luôn đoán sạch có accuracy 0.98 mà không bắt được bài lỗi nào.')
+    s.save('9-3-confusion-metrics', 'Recall 0.9 nhưng precision chỉ 0.155; luôn đoán sạch vẫn có accuracy 0.98.')
 
 
 def se93():
@@ -603,7 +603,7 @@ def se93():
         s.circle(ax.X(n), ax.Y(v), 5, CLAY, CLAY)
         s.mono(ax.X(n) + (10 if n < 900 else -10), ax.Y(v) - 12, f'{v:.4f}', 11, 'start' if n < 900 else 'end', CLAY, 600)
     s.label(ax.x - 8, ax.y - 12, 'độ lệch chuẩn của accuracy (p = 0.9)', 11, 'start', FAINT)
-    s.save('9-3-se', 'Độ lệch chuẩn của accuracy đo được, √(0.9 · 0.1 / n): 0.03 với 100 mẫu và 0.0095 với 1000 mẫu; giảm số mẫu 10 lần làm nó tăng √10 lần.')
+    s.save('9-3-se', 'Giảm số mẫu 10 lần làm độ lệch chuẩn của accuracy tăng √10 lần.')
 
 
 FIGS93 = {'9-3-bayes': bayes93, '9-3-prior': prior93, '9-3-logloss': logloss93, '9-3-null': null93, '9-3-gradient': gradient93,

@@ -1831,7 +1831,7 @@
     "9.3",
     "Xác suất: điều kiện nằm ở phía nào?",
     [
-     "Naive Bayes (bài 6.1) dùng đúng giả định độc lập khi đã biết lớp, nên chỉ ước lượng từng $P(x_j \\mid y)$: $d$ đặc trưng nhị phân, hai lớp cần $2d + 1$ tham số, thay vì đếm mọi tổ hợp, mà tổ hợp đủ $n$ từ khóa của một thư mới thường không có thư nào trong train."
+     "Naive Bayes (bài 6.1) dùng đúng giả định độc lập khi đã biết lớp, nên chỉ ước lượng từng $P(x_j \\mid y)$: $d$ đặc trưng nhị phân, hai lớp cần $2d + 1$ tham số."
     ]
    ]
   ]
@@ -18998,7 +18998,8 @@
     "9.3",
     "Xác suất: điều kiện nằm ở phía nào?",
     [
-     "Naive Bayes (bài 6.1) dùng đúng giả định độc lập khi đã biết lớp, nên chỉ ước lượng từng $P(x_j \\mid y)$: $d$ đặc trưng nhị phân, hai lớp cần $2d + 1$ tham số, thay vì đếm mọi tổ hợp, mà tổ hợp đủ $n$ từ khóa của một thư mới thường không có thư nào trong train."
+     "Naive Bayes (bài 6.1) dùng đúng giả định độc lập khi đã biết lớp, nên chỉ ước lượng từng $P(x_j \\mid y)$: $d$ đặc trưng nhị phân, hai lớp cần $2d + 1$ tham số.",
+     "Nếu không có giả định này, ta phải đếm mọi tổ hợp, mà tổ hợp đủ $n$ từ khóa của một thư mới thường không có thư nào trong train."
     ]
    ],
    [
