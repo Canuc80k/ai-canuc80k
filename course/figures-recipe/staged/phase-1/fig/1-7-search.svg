@@ -1,1 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 236" width="640"   style="font-family:var(--serif, Lora, Georgia, serif);color:var(--text, #1f1e1c)"><title>Cùng 9 lượt: grid chỉ thử 3 giá trị của tham số quan trọng, random thử 9.</title><text x="160" y="14" fill="currentColor" text-anchor="middle" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="13.5" font-weight="600">Grid · 9 lượt</text><rect x="60" y="30" width="200" height="150" rx="6" fill="none" fill-opacity="1" stroke="var(--line-strong, #d3cebf)" stroke-width="1"/><circle cx="93.3333" cy="155" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 93.3333,186 L 93.3333,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="93.3333" cy="105" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 93.3333,186 L 93.3333,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="93.3333" cy="55" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 93.3333,186 L 93.3333,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="160" cy="155" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 160,186 L 160,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="160" cy="105" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 160,186 L 160,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="160" cy="55" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 160,186 L 160,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="226.667" cy="155" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 226.667,186 L 226.667,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="226.667" cy="105" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 226.667,186 L 226.667,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><circle cx="226.667" cy="55" r="4.5" fill="var(--t-n, #2f6587)" fill-opacity="1" stroke="var(--t-n, #2f6587)" stroke-width="1.4"/><path d="M 226.667,186 L 226.667,196" fill="none" stroke="var(--t-n, #2f6587)" stroke-width="1.6" stroke-linecap="round"/><text x="50" y="105" fill="var(--muted, #73716a)" text-anchor="end" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12.5" font-weight="400">B</text><text x="160" y="214" fill="var(--muted, #73716a)" text-anchor="middle" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12" font-weight="400">A (tham số quan trọng)</text><text x="268" y="191" fill="var(--t-n, #2f6587)" text-anchor="start" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12" font-weight="600">3 giá trị A</text><text x="460" y="14" fill="currentColor" text-anchor="middle" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="13.5" font-weight="600">Random · 9 lượt</text><rect x="360" y="30" width="200" height="150" rx="6" fill="none" fill-opacity="1" stroke="var(--line-strong, #d3cebf)" stroke-width="1"/><circle cx="482.017" cy="52.5678" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 482.017,186 L 482.017,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="508.521" cy="141.273" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 508.521,186 L 508.521,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="424.829" cy="55.6909" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 424.829,186 L 424.829,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="372.927" cy="62.5978" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 372.927,186 L 372.927,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="512.284" cy="109.233" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 512.284,186 L 512.284,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="425.334" cy="134.248" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 425.334,186 L 425.334,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="416.857" cy="112.25" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 416.857,186 L 416.857,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="460.8" cy="97.9383" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 460.8,186 L 460.8,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><circle cx="547.208" cy="66.3686" r="4.5" fill="var(--accent, #c2603e)" fill-opacity="1" stroke="var(--accent, #c2603e)" stroke-width="1.4"/><path d="M 547.208,186 L 547.208,196" fill="none" stroke="var(--accent, #c2603e)" stroke-width="1.6" stroke-linecap="round"/><text x="350" y="105" fill="var(--muted, #73716a)" text-anchor="end" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12.5" font-weight="400">B</text><text x="460" y="214" fill="var(--muted, #73716a)" text-anchor="middle" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12" font-weight="400">A (tham số quan trọng)</text><text x="568" y="191" fill="var(--accent, #c2603e)" text-anchor="start" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12" font-weight="600">9 giá trị A</text></svg>
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="450.99pt" height="213.266384pt" viewBox="0 0 450.99 213.266384" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 213.266384 
+L 450.99 213.266384 
+L 450.99 0 
+L 0 0 
+L 0 213.266384 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 24.15 189.116384 
+L 217.4 189.116384 
+L 217.4 24.125312 
+L 24.15 24.125312 
+L 24.15 189.116384 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="120.775" y="205.246071" transform="rotate(-0 120.775 205.246071)">Hyperparameter A</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.169688" y="106.620848" transform="rotate(-90 13.169688 106.620848)">Hyperparameter B</text>
+    </g>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="ma26dbf249a" d="M 0 2.645751 
+C 0.701661 2.645751 1.374679 2.366978 1.870829 1.870829 
+C 2.366978 1.374679 2.645751 0.701661 2.645751 0 
+C 2.645751 -0.701661 2.366978 -1.374679 1.870829 -1.870829 
+C 1.374679 -2.366978 0.701661 -2.645751 0 -2.645751 
+C -0.701661 -2.645751 -1.374679 -2.366978 -1.870829 -1.870829 
+C -2.366978 -1.374679 -2.645751 -0.701661 -2.645751 0 
+C -2.645751 0.701661 -2.366978 1.374679 -1.870829 1.870829 
+C -1.374679 2.366978 -0.701661 2.645751 0 2.645751 
+z
+" style="stroke: var(--t-n, #3b6ea8)"/>
+    </defs>
+    <g clip-path="url(#pf818bea3e1)">
+     <use xlink:href="#ma26dbf249a" x="53.1375" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="98.229167" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="143.320833" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="188.4125" y="164.367723" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="53.1375" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="98.229167" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="143.320833" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="188.4125" y="125.869807" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="53.1375" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="98.229167" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="143.320833" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="188.4125" y="87.37189" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="53.1375" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="98.229167" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="143.320833" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+     <use xlink:href="#ma26dbf249a" x="188.4125" y="48.873973" style="fill: var(--t-n, #3b6ea8); stroke: var(--t-n, #3b6ea8)"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 24.15 189.116384 
+L 24.15 24.125312 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 24.15 189.116384 
+L 217.4 189.116384 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="120.775" y="14.125312" transform="rotate(-0 120.775 14.125312)">Grid · mọi tổ hợp</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 252.7 189.116384 
+L 445.95 189.116384 
+L 445.95 24.125312 
+L 252.7 24.125312 
+L 252.7 189.116384 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="text_4">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="349.325" y="205.246071" transform="rotate(-0 349.325 205.246071)">Hyperparameter A</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="text_5">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="241.719687" y="106.620848" transform="rotate(-90 241.719687 106.620848)">Hyperparameter B</text>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m3e4f3d8897" d="M 0 2.645751 
+C 0.701661 2.645751 1.374679 2.366978 1.870829 1.870829 
+C 2.366978 1.374679 2.645751 0.701661 2.645751 0 
+C 2.645751 -0.701661 2.366978 -1.374679 1.870829 -1.870829 
+C 1.374679 -2.366978 0.701661 -2.645751 0 -2.645751 
+C -0.701661 -2.645751 -1.374679 -2.366978 -1.870829 -1.870829 
+C -2.366978 -1.374679 -2.645751 -0.701661 -2.645751 0 
+C -2.645751 0.701661 -2.366978 1.374679 -1.870829 1.870829 
+C -1.374679 2.366978 -0.701661 2.645751 0 2.645751 
+z
+" style="stroke: var(--accent, #c2603e)"/>
+    </defs>
+    <g clip-path="url(#p3ff9cc494d)">
+     <use xlink:href="#m3e4f3d8897" x="402.673563" y="151.369979" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="358.252307" y="124.033354" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="305.255028" y="121.69126" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="338.219232" y="91.924353" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="385.870256" y="170.599151" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="311.299725" y="92.874339" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="284.970693" y="40.919598" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+     <use xlink:href="#m3e4f3d8897" x="400.705711" y="167.762928" style="fill: var(--accent, #c2603e); stroke: var(--accent, #c2603e)"/>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 252.7 189.116384 
+L 252.7 24.125312 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 252.7 189.116384 
+L 445.95 189.116384 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="349.325" y="14.125312" transform="rotate(-0 349.325 14.125312)">Random · ngân sách hữu hạn</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf818bea3e1">
+   <rect x="24.15" y="24.125312" width="193.25" height="164.991071"/>
+  </clipPath>
+  <clipPath id="p3ff9cc494d">
+   <rect x="252.7" y="24.125312" width="193.25" height="164.991071"/>
+  </clipPath>
+ </defs>
+</svg>

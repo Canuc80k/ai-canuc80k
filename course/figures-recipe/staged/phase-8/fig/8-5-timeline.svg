@@ -3,8 +3,8 @@
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="fig-8-5-timeline-figure_1">
-  <g id="fig-8-5-timeline-patch_1">
+ <g id="figure_1">
+  <g id="patch_1">
    <path d="M 0 249.71881 
 L 479.306979 249.71881 
 L 479.306979 0 
@@ -13,8 +13,8 @@ L 0 249.71881
 z
 " style="fill: none"/>
   </g>
-  <g id="fig-8-5-timeline-axes_1">
-   <g id="fig-8-5-timeline-patch_2">
+  <g id="axes_1">
+   <g id="patch_2">
     <path d="M 13.245968 207.786154 
 L 474.266979 207.786154 
 L 474.266979 5.04 
@@ -23,157 +23,157 @@ L 13.245968 207.786154
 z
 " style="fill: none"/>
    </g>
-   <g id="fig-8-5-timeline-matplotlib.axis_1">
-    <g id="fig-8-5-timeline-xtick_1">
-     <g id="fig-8-5-timeline-line2d_1">
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
       <defs>
-       <path id="fig-8-5-timeline-m04e37d9cc8" d="M 0 0 
+       <path id="m04e37d9cc8" d="M 0 0 
 L 0 3 
 " style="stroke: currentColor; stroke-width: 0.65"/>
       </defs>
       <g>
-       <use xlink:href="#fig-8-5-timeline-m04e37d9cc8" x="25.314581" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="25.314581" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-8-5-timeline-text_1">
+     <g id="text_1">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="25.314581" y="221.958654" transform="rotate(-0 25.314581 221.958654)">0</text>
      </g>
     </g>
-    <g id="fig-8-5-timeline-xtick_2">
-     <g id="fig-8-5-timeline-line2d_2">
+    <g id="xtick_2">
+     <g id="line2d_2">
       <g>
-       <use xlink:href="#fig-8-5-timeline-m04e37d9cc8" x="61.520419" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="61.520419" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-8-5-timeline-text_2">
+     <g id="text_2">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="61.520419" y="221.958654" transform="rotate(-0 61.520419 221.958654)">30</text>
      </g>
     </g>
-    <g id="fig-8-5-timeline-xtick_3">
-     <g id="fig-8-5-timeline-line2d_3">
+    <g id="xtick_3">
+     <g id="line2d_3">
       <g>
-       <use xlink:href="#fig-8-5-timeline-m04e37d9cc8" x="152.035016" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="152.035016" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-8-5-timeline-text_3">
+     <g id="text_3">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="152.035016" y="221.958654" transform="rotate(-0 152.035016 221.958654)">105</text>
      </g>
     </g>
-    <g id="fig-8-5-timeline-xtick_4">
-     <g id="fig-8-5-timeline-line2d_4">
+    <g id="xtick_4">
+     <g id="line2d_4">
       <g>
-       <use xlink:href="#fig-8-5-timeline-m04e37d9cc8" x="387.372966" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="387.372966" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-8-5-timeline-text_4">
+     <g id="text_4">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="387.372966" y="221.958654" transform="rotate(-0 387.372966 221.958654)">300</text>
      </g>
     </g>
-    <g id="fig-8-5-timeline-xtick_5">
-     <g id="fig-8-5-timeline-line2d_5">
+    <g id="xtick_5">
+     <g id="line2d_5">
       <g>
-       <use xlink:href="#fig-8-5-timeline-m04e37d9cc8" x="459.784643" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="459.784643" y="207.786154" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-8-5-timeline-text_5">
+     <g id="text_5">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="459.784643" y="221.958654" transform="rotate(-0 459.784643 221.958654)">360</text>
      </g>
     </g>
-    <g id="fig-8-5-timeline-text_6">
+    <g id="text_6">
      <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="243.756473" y="241.698498" transform="rotate(-0 243.756473 241.698498)">Phút — cấu hình thi thử giả định</text>
     </g>
    </g>
-   <g id="fig-8-5-timeline-matplotlib.axis_2"/>
-   <g id="fig-8-5-timeline-patch_3">
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
     <path d="M 25.314581 119.315105 
 L 61.520419 119.315105 
 L 61.520419 84.295315 
 L 25.314581 84.295315 
 z
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: #b8892b; opacity: 0.24; stroke: #b8892b; stroke-linejoin: miter"/>
+" clip-path="url(#pb883d6cd26)" style="fill: #b8892b; opacity: 0.24; stroke: #b8892b; stroke-linejoin: miter"/>
    </g>
-   <g id="fig-8-5-timeline-patch_4">
+   <g id="patch_4">
     <path d="M 61.520419 119.315105 
 L 152.035016 119.315105 
 L 152.035016 84.295315 
 L 61.520419 84.295315 
 z
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: var(--t-n, #3b6ea8); opacity: 0.24; stroke: var(--t-n, #3b6ea8); stroke-linejoin: miter"/>
+" clip-path="url(#pb883d6cd26)" style="fill: var(--t-n, #3b6ea8); opacity: 0.24; stroke: var(--t-n, #3b6ea8); stroke-linejoin: miter"/>
    </g>
-   <g id="fig-8-5-timeline-patch_5">
+   <g id="patch_5">
     <path d="M 152.035016 119.315105 
 L 387.372966 119.315105 
 L 387.372966 84.295315 
 L 152.035016 84.295315 
 z
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: var(--t-n, #3b6ea8); opacity: 0.24; stroke: var(--t-n, #3b6ea8); stroke-linejoin: miter"/>
+" clip-path="url(#pb883d6cd26)" style="fill: var(--t-n, #3b6ea8); opacity: 0.24; stroke: var(--t-n, #3b6ea8); stroke-linejoin: miter"/>
    </g>
-   <g id="fig-8-5-timeline-patch_6">
+   <g id="patch_6">
     <path d="M 387.372966 119.315105 
 L 441.681724 119.315105 
 L 441.681724 84.295315 
 L 387.372966 84.295315 
 z
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: var(--accent, #c2603e); opacity: 0.24; stroke: var(--accent, #c2603e); stroke-linejoin: miter"/>
+" clip-path="url(#pb883d6cd26)" style="fill: var(--accent, #c2603e); opacity: 0.24; stroke: var(--accent, #c2603e); stroke-linejoin: miter"/>
    </g>
-   <g id="fig-8-5-timeline-patch_7">
+   <g id="patch_7">
     <path d="M 441.681724 119.315105 
 L 459.784643 119.315105 
 L 459.784643 84.295315 
 L 441.681724 84.295315 
 z
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: var(--accent, #c2603e); opacity: 0.24; stroke: var(--accent, #c2603e); stroke-linejoin: miter"/>
+" clip-path="url(#pb883d6cd26)" style="fill: var(--accent, #c2603e); opacity: 0.24; stroke: var(--accent, #c2603e); stroke-linejoin: miter"/>
    </g>
-   <g id="fig-8-5-timeline-line2d_6">
+   <g id="line2d_6">
     <path d="M 43.4175 83.373741 
 L 43.4175 55.726538 
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: none; stroke: #b8892b; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pb883d6cd26)" style="fill: none; stroke: #b8892b; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
-   <g id="fig-8-5-timeline-line2d_7">
+   <g id="line2d_7">
     <path d="M 106.777717 120.236678 
 L 106.777717 146.040734 
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pb883d6cd26)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
-   <g id="fig-8-5-timeline-line2d_8">
+   <g id="line2d_8">
     <path d="M 269.703991 83.373741 
 L 269.703991 55.726538 
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pb883d6cd26)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
-   <g id="fig-8-5-timeline-line2d_9">
+   <g id="line2d_9">
     <path d="M 414.527345 120.236678 
 L 414.527345 146.040734 
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pb883d6cd26)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
-   <g id="fig-8-5-timeline-line2d_10">
+   <g id="line2d_10">
     <path d="M 450.733184 83.373741 
 L 450.733184 55.726538 
-" clip-path="url(#fig-8-5-timeline-pb883d6cd26)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pb883d6cd26)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 0.8; stroke-linecap: square"/>
    </g>
-   <g id="fig-8-5-timeline-patch_8">
+   <g id="patch_8">
     <path d="M 13.245968 207.786154 
 L 474.266979 207.786154 
 " style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="fig-8-5-timeline-text_7">
+   <g id="text_7">
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(5.04 35.629084)">Đọc môi trường</text>
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(24.406758 48.138521)">30 phút</text>
    </g>
-   <g id="fig-8-5-timeline-text_8">
+   <g id="text_8">
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(242.093913 35.629084)">Thí nghiệm</text>
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(249.070671 48.138521)">195 phút</text>
    </g>
-   <g id="fig-8-5-timeline-text_9">
+   <g id="text_9">
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(395.239337 158.999337)">Chạy lại</text>
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(395.994025 171.508775)">45 phút</text>
    </g>
-   <g id="fig-8-5-timeline-text_10">
+   <g id="text_10">
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(429.229512 35.59217)">Kiểm file</text>
     <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; fill: currentColor" transform="translate(433.134199 47.934264)">15 phút</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="fig-8-5-timeline-pb883d6cd26">
+  <clipPath id="pb883d6cd26">
    <rect x="13.245968" y="5.04" width="461.021011" height="202.746154"/>
   </clipPath>
  </defs>

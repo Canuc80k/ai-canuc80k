@@ -224,7 +224,7 @@ def groups13():
         s.box(x, 224, 14, 12, 'none', col, r=3, width=0, opacity=op)
         s.label(x + 20, 230, lab, 12.5, 'start', MUTED)
     s.line(330, 30, 330, 210, SOFT_LINE, 1)
-    s.save('1-3-groups', 'Chia ngẫu nhiên: năm người có mặt ở cả hai phía. Group split: mỗi người một phía.')
+    s.save('1-3-groups', 'Chia ngẫu nhiên: năm người ở cả hai phía. Chia theo nhóm: mỗi người một phía.')
 
 
 def time13():

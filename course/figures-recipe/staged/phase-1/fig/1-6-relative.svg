@@ -1,1 +1,183 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 170" width="640"   style="font-family:var(--serif, Lora, Georgia, serif);color:var(--text, #1f1e1c)"><title>Cùng lỗi tuyệt đối 1, lỗi tương đối phụ thuộc độ lớn target.</title><text xml:space="preserve" style="font-variant-ligatures:none" x="30" y="34" fill="var(--muted, #73716a)" text-anchor="start" dominant-baseline="middle" font-family='var(--mono, "JetBrains Mono", Consolas, monospace)' font-size="12.5" font-weight="400">thật   1, đoán   2</text><rect x="220" y="22" width="300" height="24" rx="4" fill="var(--accent, #c2603e)" fill-opacity="0.75" stroke="none" stroke-width="0"/><text x="528" y="34" fill="var(--accent, #c2603e)" text-anchor="start" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="13" font-weight="600">100%</text><text xml:space="preserve" style="font-variant-ligatures:none" x="30" y="80" fill="var(--muted, #73716a)" text-anchor="start" dominant-baseline="middle" font-family='var(--mono, "JetBrains Mono", Consolas, monospace)' font-size="12.5" font-weight="400">thật  10, đoán  11</text><rect x="220" y="68" width="30" height="24" rx="4" fill="var(--accent, #c2603e)" fill-opacity="0.75" stroke="none" stroke-width="0"/><text x="258" y="80" fill="var(--accent, #c2603e)" text-anchor="start" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="13" font-weight="600">10%</text><text xml:space="preserve" style="font-variant-ligatures:none" x="30" y="126" fill="var(--muted, #73716a)" text-anchor="start" dominant-baseline="middle" font-family='var(--mono, "JetBrains Mono", Consolas, monospace)' font-size="12.5" font-weight="400">thật 100, đoán 101</text><rect x="220" y="114" width="3" height="24" rx="4" fill="var(--accent, #c2603e)" fill-opacity="0.75" stroke="none" stroke-width="0"/><text x="231" y="126" fill="var(--accent, #c2603e)" text-anchor="start" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="13" font-weight="600">1%</text><text x="30" y="156" fill="var(--faint, #a19e94)" text-anchor="start" dominant-baseline="middle" font-family='var(--sans, Inter, "Segoe UI", sans-serif)' font-size="12.5" font-weight="400">cùng sai 1 đơn vị</text></svg>
+<svg style="font-family:var(--serif,Lora,Georgia,serif);color:var(--text,#1f1e1c)" xmlns:xlink="http://www.w3.org/1999/xlink" width="429.692589pt" height="220.103571pt" viewBox="0 0 429.692589 220.103571" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 220.103571 
+L 429.692589 220.103571 
+L 429.692589 0 
+L -0 0 
+L -0 220.103571 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 46.141875 198.468571 
+L 424.652589 198.468571 
+L 424.652589 5.04 
+L 46.141875 5.04 
+L 46.141875 198.468571 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m04e37d9cc8" d="M 0 0 
+L 0 3 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#m04e37d9cc8" x="100.455801" y="198.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="100.455801" y="212.489665" transform="rotate(-0 100.455801 212.489665)">Target 1</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m04e37d9cc8" x="235.397232" y="198.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="235.397232" y="212.489665" transform="rotate(-0 235.397232 212.489665)">Target 10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m04e37d9cc8" x="370.338663" y="198.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="370.338663" y="212.489665" transform="rotate(-0 370.338663 212.489665)">Target 100</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <defs>
+       <path id="m9fce3a8e10" d="M 0 0 
+L -3 0 
+" style="stroke: currentColor; stroke-width: 0.65"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9fce3a8e10" x="46.141875" y="198.468571" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="202.054821" transform="rotate(-0 39.141875 202.054821)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m9fce3a8e10" x="46.141875" y="165.684068" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="169.270318" transform="rotate(-0 39.141875 169.270318)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m9fce3a8e10" x="46.141875" y="132.899564" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="136.485814" transform="rotate(-0 39.141875 136.485814)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m9fce3a8e10" x="46.141875" y="100.115061" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="103.701311" transform="rotate(-0 39.141875 103.701311)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m9fce3a8e10" x="46.141875" y="67.330557" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="70.916807" transform="rotate(-0 39.141875 70.916807)">0.8</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m9fce3a8e10" x="46.141875" y="34.546053" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="39.141875" y="38.132303" transform="rotate(-0 39.141875 38.132303)">1.0</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="14.027344" y="101.754286" transform="rotate(-90 14.027344 101.754286)">Lỗi tương đối · cùng lỗi tuyệt đối 1</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 63.346907 198.468571 
+L 137.564695 198.468571 
+L 137.564695 34.546053 
+L 63.346907 34.546053 
+z
+" clip-path="url(#pd42fb9987a)" style="fill: var(--accent, #c2603e)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 198.288339 198.468571 
+L 272.506126 198.468571 
+L 272.506126 182.07632 
+L 198.288339 182.07632 
+z
+" clip-path="url(#pd42fb9987a)" style="fill: var(--t-n, #3b6ea8)"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 333.22977 198.468571 
+L 407.447557 198.468571 
+L 407.447557 196.829346 
+L 333.22977 196.829346 
+z
+" clip-path="url(#pd42fb9987a)" style="fill: #b8892b"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 46.141875 198.468571 
+L 46.141875 5.04 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 46.141875 198.468571 
+L 424.652589 198.468571 
+" style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="100.455801" y="30.44799" transform="rotate(-0 100.455801 30.44799)">100%</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="235.397232" y="177.978257" transform="rotate(-0 235.397232 177.978257)">10%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="370.338663" y="192.731283" transform="rotate(-0 370.338663 192.731283)">1%</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd42fb9987a">
+   <rect x="46.141875" y="5.04" width="378.510714" height="193.428571"/>
+  </clipPath>
+ </defs>
+</svg>

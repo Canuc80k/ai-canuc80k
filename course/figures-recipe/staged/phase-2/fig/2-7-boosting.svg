@@ -3,8 +3,8 @@
  <defs>
   <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
  </defs>
- <g id="fig-2-7-boosting-figure_1">
-  <g id="fig-2-7-boosting-patch_1">
+ <g id="figure_1">
+  <g id="patch_1">
    <path d="M 0 234.008081 
 L 465.545681 234.008081 
 L 465.545681 0 
@@ -13,8 +13,8 @@ L 0 234.008081
 z
 " style="fill: none"/>
   </g>
-  <g id="fig-2-7-boosting-axes_1">
-   <g id="fig-2-7-boosting-patch_2">
+  <g id="axes_1">
+   <g id="patch_2">
     <path d="M 44.677109 192.405424 
 L 460.505681 192.405424 
 L 460.505681 32.434139 
@@ -23,137 +23,137 @@ L 44.677109 192.405424
 z
 " style="fill: none"/>
    </g>
-   <g id="fig-2-7-boosting-matplotlib.axis_1">
-    <g id="fig-2-7-boosting-xtick_1">
-     <g id="fig-2-7-boosting-line2d_1">
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
       <defs>
-       <path id="fig-2-7-boosting-m04e37d9cc8" d="M 0 0 
+       <path id="m04e37d9cc8" d="M 0 0 
 L 0 3 
 " style="stroke: currentColor; stroke-width: 0.65"/>
       </defs>
       <g>
-       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="59.759964" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="59.759964" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_1">
+     <g id="text_1">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="59.759964" y="206.577924" transform="rotate(-0 59.759964 206.577924)">0</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-xtick_2">
-     <g id="fig-2-7-boosting-line2d_2">
+    <g id="xtick_2">
+     <g id="line2d_2">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="136.128848" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="136.128848" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_2">
+     <g id="text_2">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="136.128848" y="206.577924" transform="rotate(-0 136.128848 206.577924)">20</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-xtick_3">
-     <g id="fig-2-7-boosting-line2d_3">
+    <g id="xtick_3">
+     <g id="line2d_3">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="212.497731" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="212.497731" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_3">
+     <g id="text_3">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="212.497731" y="206.577924" transform="rotate(-0 212.497731 206.577924)">40</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-xtick_4">
-     <g id="fig-2-7-boosting-line2d_4">
+    <g id="xtick_4">
+     <g id="line2d_4">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="288.866615" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="288.866615" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_4">
+     <g id="text_4">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="288.866615" y="206.577924" transform="rotate(-0 288.866615 206.577924)">60</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-xtick_5">
-     <g id="fig-2-7-boosting-line2d_5">
+    <g id="xtick_5">
+     <g id="line2d_5">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="365.235498" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="365.235498" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_5">
+     <g id="text_5">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="365.235498" y="206.577924" transform="rotate(-0 365.235498 206.577924)">80</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-xtick_6">
-     <g id="fig-2-7-boosting-line2d_6">
+    <g id="xtick_6">
+     <g id="line2d_6">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m04e37d9cc8" x="441.604382" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m04e37d9cc8" x="441.604382" y="192.405424" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_6">
+     <g id="text_6">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="441.604382" y="206.577924" transform="rotate(-0 441.604382 206.577924)">100</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-text_7">
+    <g id="text_7">
      <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="252.591395" y="225.987768" transform="rotate(-0 252.591395 225.987768)">số cây</text>
     </g>
    </g>
-   <g id="fig-2-7-boosting-matplotlib.axis_2">
-    <g id="fig-2-7-boosting-ytick_1">
-     <g id="fig-2-7-boosting-line2d_7">
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
       <defs>
-       <path id="fig-2-7-boosting-m9fce3a8e10" d="M 0 0 
+       <path id="m9fce3a8e10" d="M 0 0 
 L -3 0 
 " style="stroke: currentColor; stroke-width: 0.65"/>
       </defs>
       <g>
-       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="164.626372" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m9fce3a8e10" x="44.677109" y="164.626372" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_8">
+     <g id="text_8">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="168.212622" transform="rotate(-0 37.677109 168.212622)">0.1</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-ytick_2">
-     <g id="fig-2-7-boosting-line2d_8">
+    <g id="ytick_2">
+     <g id="line2d_8">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="135.470124" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m9fce3a8e10" x="44.677109" y="135.470124" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_9">
+     <g id="text_9">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="139.056374" transform="rotate(-0 37.677109 139.056374)">0.2</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-ytick_3">
-     <g id="fig-2-7-boosting-line2d_9">
+    <g id="ytick_3">
+     <g id="line2d_9">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="106.313876" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m9fce3a8e10" x="44.677109" y="106.313876" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_10">
+     <g id="text_10">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="109.900126" transform="rotate(-0 37.677109 109.900126)">0.3</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-ytick_4">
-     <g id="fig-2-7-boosting-line2d_10">
+    <g id="ytick_4">
+     <g id="line2d_10">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="77.157628" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m9fce3a8e10" x="44.677109" y="77.157628" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_11">
+     <g id="text_11">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="80.743878" transform="rotate(-0 37.677109 80.743878)">0.4</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-ytick_5">
-     <g id="fig-2-7-boosting-line2d_11">
+    <g id="ytick_5">
+     <g id="line2d_11">
       <g>
-       <use xlink:href="#fig-2-7-boosting-m9fce3a8e10" x="44.677109" y="48.00138" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
+       <use xlink:href="#m9fce3a8e10" x="44.677109" y="48.00138" style="fill: currentColor; stroke: currentColor; stroke-width: 0.65"/>
       </g>
      </g>
-     <g id="fig-2-7-boosting-text_12">
+     <g id="text_12">
       <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: end; fill: currentColor" x="37.677109" y="51.58763" transform="rotate(-0 37.677109 51.58763)">0.5</text>
      </g>
     </g>
-    <g id="fig-2-7-boosting-text_13">
+    <g id="text_13">
      <text style="font-size: 11px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: middle; fill: currentColor" x="13.345" y="112.419781" transform="rotate(-90 13.345 112.419781)">MSE</text>
     </g>
    </g>
-   <g id="fig-2-7-boosting-line2d_12">
+   <g id="line2d_12">
     <path d="M 63.578408 46.901826 
 L 67.396852 69.836996 
 L 71.215296 88.510806 
@@ -254,9 +254,9 @@ L 430.14905 184.951292
 L 433.967494 184.981456 
 L 437.785938 185.005233 
 L 441.604382 185.134002 
-" clip-path="url(#fig-2-7-boosting-pd6c25b7f76)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
+" clip-path="url(#pd6c25b7f76)" style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
    </g>
-   <g id="fig-2-7-boosting-line2d_13">
+   <g id="line2d_13">
     <path d="M 63.578408 39.705561 
 L 67.396852 60.754021 
 L 71.215296 78.207313 
@@ -357,42 +357,42 @@ L 430.14905 160.354383
 L 433.967494 160.391005 
 L 437.785938 160.390736 
 L 441.604382 160.374809 
-" clip-path="url(#fig-2-7-boosting-pd6c25b7f76)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
+" clip-path="url(#pd6c25b7f76)" style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
    </g>
-   <g id="fig-2-7-boosting-patch_3">
+   <g id="patch_3">
     <path d="M 44.677109 192.405424 
 L 44.677109 32.434139 
 " style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="fig-2-7-boosting-patch_4">
+   <g id="patch_4">
     <path d="M 44.677109 192.405424 
 L 460.505681 192.405424 
 " style="fill: none; stroke: currentColor; stroke-width: 0.7; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="fig-2-7-boosting-legend_1">
-    <g id="fig-2-7-boosting-line2d_14">
+   <g id="legend_1">
+    <g id="line2d_14">
      <path d="M 159.910731 12.7125 
 L 169.910731 12.7125 
 L 179.910731 12.7125 
 " style="fill: none; stroke: var(--t-n, #3b6ea8); stroke-width: 2.2; stroke-linecap: square"/>
     </g>
-    <g id="fig-2-7-boosting-text_14">
+    <g id="text_14">
      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="187.910731" y="16.2125" transform="rotate(-0 187.910731 16.2125)">train MSE</text>
     </g>
-    <g id="fig-2-7-boosting-line2d_15">
+    <g id="line2d_15">
      <path d="M 251.55284 12.7125 
 L 261.55284 12.7125 
 L 271.55284 12.7125 
 " style="fill: none; stroke: var(--accent, #c2603e); stroke-width: 2.2; stroke-linecap: square"/>
     </g>
-    <g id="fig-2-7-boosting-text_15">
+    <g id="text_15">
      <text style="font-size: 9.5px; font-family: 'Lora', 'DejaVu Serif', 'DejaVu Sans'; text-anchor: start; fill: currentColor" x="279.55284" y="16.2125" transform="rotate(-0 279.55284 16.2125)">validation MSE</text>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="fig-2-7-boosting-pd6c25b7f76">
+  <clipPath id="pd6c25b7f76">
    <rect x="44.677109" y="32.434139" width="415.828571" height="159.971286"/>
   </clipPath>
  </defs>
