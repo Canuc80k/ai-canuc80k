@@ -501,7 +501,7 @@
     "3.3",
     "Nhiều lớp: mỗi hàng là một bộ logits",
     [
-     "CrossEntropyLoss nhận logits và target chỉ số lớp (B,) kiểu long; mặc định gộp log-softmax bên trong."
+     "CrossEntropyLoss nhận logits và target là chỉ số lớp (B,) kiểu long; nó đã gộp sẵn log-softmax bên trong."
     ]
    ],
    [
@@ -529,7 +529,7 @@
     "3.4",
     "Một bài nhỏ để kiểm toàn bộ quy trình",
     [
-     "Với shuffle=True, thứ tự được xáo lại ở đầu mỗi epoch; tập train xếp sẵn hết mèo rồi mới tới chó mà không xáo thì mỗi đoạn batch chỉ thấy một lớp, và mô hình bị kéo qua lại giữa hai lớp."
+     "Nếu tập train xếp sẵn hết mèo rồi mới tới chó mà không xáo, mỗi đoạn batch chỉ thấy một lớp, và mô hình bị kéo qua lại giữa hai lớp."
     ]
    ]
   ]
@@ -626,7 +626,7 @@
     "3.3",
     "Qua nhiều lớp: thang đo và khởi tạo",
     [
-     "Fan-in là số đầu vào của mỗi neuron: lớp tuyến tính 512 đầu vào theo He có $\\sigma_w = \\sqrt{2/512} = 0.0625$; lớp tích chập $3 \\times 3$ với 128 kênh vào có fan-in $9 \\cdot 128 = 1152$, nên $\\sigma_w = \\sqrt{2/1152} \\approx 0.042$."
+     "Lớp tích chập $3 \\times 3$ với 128 kênh vào (bài 5.1): fan-in $9 \\cdot 128 = 1152$, nên $\\sigma_w = \\sqrt{2/1152} \\approx 0.042$."
     ]
    ]
   ]
@@ -681,7 +681,8 @@
     "3.3",
     "Nhiều lớp: mỗi hàng là một bộ logits",
     [
-     "CrossEntropyLoss nhận logits và target chỉ số lớp (B,) kiểu long; mặc định gộp log-softmax bên trong. Loss này cũng nhận target là phân phối xác suất (B,C) kiểu float, dùng cho nhãn mềm; bài này dùng chỉ số lớp."
+     "CrossEntropyLoss nhận logits và target là chỉ số lớp (B,) kiểu long; nó đã gộp sẵn log-softmax bên trong.",
+     "(Loss này cũng nhận target là phân phối xác suất (B,C) kiểu float, dùng cho nhãn mềm; bài này dùng chỉ số lớp.)"
     ]
    ]
   ]
@@ -751,7 +752,7 @@
     "3.4",
     "Tự viết Dataset và collate_fn",
     [
-     "Chương 6 dùng khuôn này kèm attention mask. collate_fn cũng là chỗ gọn để bỏ mẫu hỏng: nếu __getitem__ trả None cho ảnh không đọc được, lọc các None trước khi gom batch; tốt hơn nữa là lọc danh sách tệp hỏng trước khi huấn luyện."
+     "collate_fn cũng là chỗ gọn để bỏ mẫu hỏng: nếu __getitem__ trả None cho ảnh không đọc được, lọc các None trước khi gom batch; tốt hơn nữa là lọc danh sách tệp hỏng trước khi huấn luyện."
     ]
    ]
   ]
@@ -793,7 +794,7 @@
     "3.3",
     "Nhị phân: đầu ra một logit",
     [
-     "Nhị phân thì lớp cuối là nn.Linear(d, 1); nn.Linear(d, 2) đi với CrossEntropyLoss, không đi với BCEWithLogitsLoss."
+     "nn.Linear(d, 2) đi với CrossEntropyLoss, không đi với BCEWithLogitsLoss."
     ]
    ]
   ]
@@ -1985,7 +1986,8 @@
     "3.3",
     "Nhiều thuộc tính cùng lúc",
     [
-     "Softmax sẽ ép các thuộc tính tranh nhau tổng xác suất 1, trái với ý nghĩa “cả hai đều đúng”. Khi suy luận, mỗi thuộc tính bật độc lập khi sigmoid của nó vượt ngưỡng; với ngưỡng 0.5, điều đó tương đương logit dương."
+     "Softmax sẽ ép các thuộc tính tranh nhau tổng xác suất 1, trái với ý nghĩa “cả hai đều đúng”.",
+     "Khi suy luận, mỗi thuộc tính bật độc lập khi sigmoid của nó vượt ngưỡng; với ngưỡng 0.5, điều đó tương đương logit dương."
     ]
    ],
    [
@@ -2379,7 +2381,7 @@
     "3.4",
     "Lưu đủ để suy luận lại",
     [
-     "Packet phục vụ suy luận; muốn tiếp tục training chính xác còn cần trạng thái optimizer, scheduler, số epoch và trạng thái RNG."
+     "Muốn tiếp tục training chính xác thì còn cần trạng thái optimizer, scheduler, số epoch và trạng thái bộ sinh số ngẫu nhiên."
     ]
    ]
   ]
@@ -3460,7 +3462,7 @@
     "3.4",
     "Loop là một chu trình trạng thái",
     [
-     "Mỗi batch đi đúng một vòng zero_grad → forward → loss → backward → step rồi mới sang batch tiếp theo."
+     "Mỗi batch đi qua năm bước theo đúng thứ tự:"
     ]
    ]
   ]
@@ -3474,7 +3476,7 @@
     "3.3",
     "Nhị phân: đầu ra một logit",
     [
-     "Vì vậy model train với BCEWithLogitsLoss không có sigmoid ở lớp cuối; sigmoid chỉ gọi lúc suy luận, khi cần xác suất."
+     "Lớp cuối là nn.Linear(d, 1), không có sigmoid; sigmoid chỉ gọi lúc suy luận, khi cần xác suất."
     ]
    ]
   ]
@@ -3488,7 +3490,7 @@
     "3.3",
     "Nhiều lớp: mỗi hàng là một bộ logits",
     [
-     "CrossEntropyLoss nhận logits và target chỉ số lớp (B,) kiểu long; mặc định gộp log-softmax bên trong."
+     "CrossEntropyLoss nhận logits và target là chỉ số lớp (B,) kiểu long; nó đã gộp sẵn log-softmax bên trong."
     ]
    ]
   ]
@@ -3650,7 +3652,7 @@
     "3.4",
     "Một bài nhỏ để kiểm toàn bộ quy trình",
     [
-     "Với shuffle=True, thứ tự được xáo lại ở đầu mỗi epoch; tập train xếp sẵn hết mèo rồi mới tới chó mà không xáo thì mỗi đoạn batch chỉ thấy một lớp, và mô hình bị kéo qua lại giữa hai lớp."
+     "Với shuffle=True, thứ tự được xáo lại ở đầu mỗi epoch."
     ]
    ],
    [
@@ -5950,7 +5952,7 @@
     "3.4",
     "Tái lập",
     [
-     "Bài đặt seed, dùng CPU một thread và deterministic algorithms, nên chạy lại trong cùng môi trường cho cùng số."
+     "Bài đặt seed, dùng CPU một thread và chế độ deterministic, nên chạy lại trong cùng môi trường cho cùng số."
     ]
    ]
   ]
@@ -6561,7 +6563,8 @@
     "3.4",
     "Loop là một chu trình trạng thái",
     [
-     "Forward dùng trọng số hiện tại để tạo logits, loss so logits với nhãn, backward tính gradient, step mới sửa trọng số."
+     "Forward dùng trọng số hiện tại để tạo logits.",
+     "Step sửa trọng số."
     ]
    ]
   ]
@@ -6617,7 +6620,7 @@
     "3.4",
     "Một bài nhỏ để kiểm toàn bộ quy trình",
     [
-     "Batch là một nhóm dùng cho một phép gradient; step là một lần cập nhật optimizer; epoch là một lần duyệt tập train."
+     "Epoch: một lần duyệt hết tập train."
     ]
    ],
    [
@@ -6638,7 +6641,7 @@
     "3.4",
     "Một bài nhỏ để kiểm toàn bộ quy trình",
     [
-     "Batch là một nhóm dùng cho một phép gradient; step là một lần cập nhật optimizer; epoch là một lần duyệt tập train."
+     "Batch: một nhóm mẫu dùng cho một lần tính gradient."
     ]
    ],
    [
@@ -6680,7 +6683,10 @@
     "3.4",
     "Loop là một chu trình trạng thái",
     [
-     "Forward dùng trọng số hiện tại để tạo logits, loss so logits với nhãn, backward tính gradient, step mới sửa trọng số."
+     "Forward dùng trọng số hiện tại để tạo logits.",
+     "Loss so logits với nhãn.",
+     "Backward tính gradient.",
+     "Step sửa trọng số."
     ]
    ]
   ]
@@ -8328,7 +8334,7 @@
     "3.3",
     "Nhiều lớp: mỗi hàng là một bộ logits",
     [
-     "CrossEntropyLoss nhận logits và target chỉ số lớp (B,) kiểu long; mặc định gộp log-softmax bên trong."
+     "CrossEntropyLoss nhận logits và target là chỉ số lớp (B,) kiểu long; nó đã gộp sẵn log-softmax bên trong."
     ]
    ]
   ]
@@ -8420,7 +8426,7 @@
     "3.4",
     "Lưu đủ để suy luận lại",
     [
-     "Packet checkpoint của bài: trọng số, mean và scale của train, cùng đầu vào kiểm và logits mong đợi; một tiến trình Python mới chỉ dùng packet mà vẫn cho cùng kết quả."
+     "Để suy luận lại ở một chương trình khác, ta lưu một gói (packet) gồm state_dict, mean/std và vài đầu vào kiểm tra kèm logits mong đợi, vào thư mục receipts/phase-3 cạnh notebook."
     ]
    ]
   ]
@@ -9757,7 +9763,8 @@
     "3.3",
     "Activation là một phép biến đổi có mục đích",
     [
-     "ReLU, tanh và sigmoid (nét liền) cùng đạo hàm của chúng (nét đứt): tanh và sigmoid có đạo hàm gần 0 ở hai đầu; ReLU có đạo hàm 0 hoặc 1."
+     "ReLU giữ phần dương, đặt phần âm về 0.",
+     "Tanh đưa số về khoảng $(-1,1)$; sigmoid đưa về $(0,1)$."
     ]
    ]
   ]
@@ -9821,7 +9828,7 @@
     "3.3",
     "Hồi quy: đo mức sai bằng đơn vị",
     [
-     "Đoán thời gian là hồi quy; đầu ra cuối thường để linear."
+     "Đoán thời gian là hồi quy; đầu ra cuối thường để linear, không qua activation nào."
     ]
    ]
   ]
@@ -11019,7 +11026,7 @@
     "3.4",
     "Loop là một chu trình trạng thái",
     [
-     "Optimizer được tạo từ model.parameters(), tức các trọng số và bias sẽ được chỉnh, và nó quyết định chỉnh theo cách nào (SGD, Adam ở bài 3.5)."
+     "Optimizer được tạo từ model.parameters(), tức các trọng số và bias sẽ được chỉnh; nó quyết định chỉnh theo cách nào (SGD, Adam ở bài 3.5)."
     ]
    ]
   ]
@@ -11144,7 +11151,7 @@
     "3.4",
     "Một bài nhỏ để kiểm toàn bộ quy trình",
     [
-     "DataLoader ghép các mẫu và quyết định thứ tự lấy."
+     "DataLoader ghép các mẫu thành batch và quyết định thứ tự lấy."
     ]
    ]
   ]
@@ -11158,7 +11165,7 @@
     "3.4",
     "Loop là một chu trình trạng thái",
     [
-     "Optimizer được tạo từ model.parameters(), tức các trọng số và bias sẽ được chỉnh, và nó quyết định chỉnh theo cách nào (SGD, Adam ở bài 3.5)."
+     "Optimizer được tạo từ model.parameters(), tức các trọng số và bias sẽ được chỉnh; nó quyết định chỉnh theo cách nào (SGD, Adam ở bài 3.5)."
     ]
    ]
   ]
@@ -12226,7 +12233,8 @@
     "3.4",
     "Loop là một chu trình trạng thái",
     [
-     "Mỗi batch đi đúng một vòng zero_grad → forward → loss → backward → step rồi mới sang batch tiếp theo."
+     "Backward tính gradient.",
+     "Step sửa trọng số."
     ]
    ]
   ]
@@ -12401,7 +12409,8 @@
     "3.3",
     "Hồi quy: đo mức sai bằng đơn vị",
     [
-     "Đoán thời gian là hồi quy; đầu ra cuối thường để linear. Nếu bắt đầu bằng sigmoid, ta ép số phút vào $(0,1)$ mà không có lý do."
+     "Đoán thời gian là hồi quy; đầu ra cuối thường để linear, không qua activation nào.",
+     "Thêm sigmoid ở cuối là ép số phút vào $(0,1)$ mà không có lý do."
     ]
    ]
   ]
@@ -13492,7 +13501,9 @@
     "3.4",
     "Một bài nhỏ để kiểm toàn bộ quy trình",
     [
-     "Batch là một nhóm dùng cho một phép gradient; step là một lần cập nhật optimizer; epoch là một lần duyệt tập train."
+     "Batch: một nhóm mẫu dùng cho một lần tính gradient.",
+     "Step: một lần optimizer cập nhật trọng số; mỗi batch một step.",
+     "Epoch: một lần duyệt hết tập train."
     ]
    ]
   ]
@@ -13590,7 +13601,7 @@
     "3.3",
     "Qua nhiều lớp: thang đo và khởi tạo",
     [
-     "Fan-in là số đầu vào của mỗi neuron: lớp tuyến tính 512 đầu vào theo He có $\\sigma_w = \\sqrt{2/512} = 0.0625$; lớp tích chập $3 \\times 3$ với 128 kênh vào có fan-in $9 \\cdot 128 = 1152$, nên $\\sigma_w = \\sqrt{2/1152} \\approx 0.042$."
+     "Lớp tuyến tính 512 đầu vào, theo He: $\\sigma_w = \\sqrt{2/512} = 0.0625$."
     ]
    ]
   ]
@@ -15905,7 +15916,7 @@
     "3.4",
     "Tái lập",
     [
-     "PyTorch không hứa kết quả giống từng bit giữa mọi phiên bản, nền tảng và GPU; vì vậy lưu phiên bản thư viện, split và cấu hình cùng điểm số."
+     "PyTorch không hứa kết quả giống từng bit giữa mọi phiên bản, nền tảng và GPU; vì vậy ghi lại phiên bản thư viện, cách chia và cấu hình cùng điểm số."
     ]
    ],
    [
@@ -17438,7 +17449,7 @@
     "3.3",
     "Nhị phân: đầu ra một logit",
     [
-     "Đặt ReLU ngay trước sigmoid ở đầu ra là lỗi: logit không bao giờ âm nên $p \\ge 0.5$, mô hình không thể đoán lớp 0."
+     "Không đặt ReLU ngay trước đầu ra: logit không bao giờ âm nên $p \\ge 0.5$, mô hình không thể đoán lớp 0."
     ]
    ]
   ]
