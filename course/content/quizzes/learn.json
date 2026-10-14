@@ -300,7 +300,8 @@
     "1.5",
     "Xác suất và nhiều lớp",
     [
-     "Macro-F1 lấy trung bình đều giữa các lớp; weighted-F1 lấy trung bình theo số mẫu thật của lớp; micro gộp TP/FP/FN trước khi tính."
+     "Macro-F1: trung bình đều F1 của các lớp; lớp hiếm nặng ngang lớp đông.",
+     "Micro-F1: cộng TP, FP, FN của mọi lớp rồi mới tính; khi mỗi mẫu có đúng một nhãn, micro-F1 bằng accuracy."
     ]
    ]
   ]
@@ -314,14 +315,14 @@
     "1.5",
     "Xác suất và nhiều lớp",
     [
-     "Với nhiều lớp, tính F1 từng lớp bằng cách coi lớp ấy là dương. Trong ma trận nhầm lẫn nhiều lớp (hàng là nhãn thật), precision của một lớp đọc theo cột của lớp ấy, recall đọc theo hàng."
+     "Trong confusion matrix nhiều lớp (hàng là nhãn thật, cột là dự đoán), precision của một lớp đọc theo cột của lớp ấy, recall đọc theo hàng."
     ]
    ],
    [
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Theo bốn ô: accuracy $=(TP+TN)/n$, precision $=TP/(TP+FP)$, recall $=TP/(TP+FN)$; specificity $=TN/(TN+FP)$ là recall của lớp âm."
+     "Precision hỏi: trong những buổi model đã báo cần, bao nhiêu buổi thật sự cần?"
     ]
    ]
   ]
@@ -335,7 +336,8 @@
     "1.5",
     "Threshold là một lựa chọn phải đánh giá",
     [
-     "Nếu xác suất $p$ đã được hiệu chỉnh tốt và biết giá hai loại lỗi, báo dương khi chi phí kỳ vọng $(1-p)\\,c_{FP}$ nhỏ hơn $p\\,c_{FN}$, tức $p > c_{FP}/(c_{FP}+c_{FN})$: bỏ sót đắt gấp 10 thì ngưỡng là $1/11\\approx0.09$."
+     "Nếu biết giá của hai loại lỗi và xác suất của model đáng tin, có một cách tính thẳng: báo dương khi chi phí kỳ vọng của việc không báo, $p \\cdot c_{FN}$, lớn hơn chi phí kỳ vọng của việc báo, $(1-p) \\cdot c_{FP}$.",
+     "Tức là báo dương khi $p > c_{FP}/(c_{FP} + c_{FN})$."
     ]
    ],
    [
@@ -2783,7 +2785,8 @@
     "1.6",
     "Ranking: một danh sách, không phải một số",
     [
-     "Khi độ liên quan có nhiều mức, $\\mathrm{DCG}=\\sum_r \\mathrm{rel}_r/\\log_2(r+1)$ cộng điểm giảm dần theo vị trí, còn nDCG chia DCG cho DCG của thứ tự lý tưởng để nằm trong $[0,1]$."
+     "nDCG: dùng khi độ phù hợp có nhiều mức.",
+     "$\\mathrm{DCG} = \\sum_r \\mathrm{rel}_r / \\log_2(r + 1)$ cộng điểm phù hợp, giảm dần theo vị trí; nDCG chia DCG cho DCG của thứ tự lý tưởng để ra một số trong $[0, 1]$."
     ]
    ]
   ]
@@ -3122,7 +3125,9 @@
     "1.5",
     "Xác suất và nhiều lớp",
     [
-     "Macro-F1 lấy trung bình đều giữa các lớp; weighted-F1 lấy trung bình theo số mẫu thật của lớp; micro gộp TP/FP/FN trước khi tính."
+     "Macro-F1: trung bình đều F1 của các lớp; lớp hiếm nặng ngang lớp đông.",
+     "Weighted-F1: trung bình có trọng số theo số mẫu của từng lớp.",
+     "Micro-F1: cộng TP, FP, FN của mọi lớp rồi mới tính; khi mỗi mẫu có đúng một nhãn, micro-F1 bằng accuracy."
     ]
    ]
   ]
@@ -3136,8 +3141,8 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Theo bốn ô: accuracy $=(TP+TN)/n$, precision $=TP/(TP+FP)$, recall $=TP/(TP+FN)$; specificity $=TN/(TN+FP)$ là recall của lớp âm.",
-     "Sàng lọc bệnh hay quét mã độc mà bỏ sót rất đắt, còn báo nhầm thì có người kiểm lại: ưu tiên recall."
+     "Recall hỏi: trong những buổi thật sự cần, model phát hiện được bao nhiêu?",
+     "Sàng lọc bệnh hay quét mã độc: bỏ sót rất đắt, còn báo nhầm thì đã có người kiểm lại, nên ưu tiên recall."
     ]
    ]
   ]
@@ -4688,7 +4693,7 @@
     "1.5",
     "Threshold là một lựa chọn phải đánh giá",
     [
-     "Hạ threshold làm nhiều mẫu được gọi dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
+     "Hạ threshold thì nhiều mẫu được báo dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
     ]
    ]
   ]
@@ -4702,7 +4707,7 @@
     "1.5",
     "Bốn ô trước một con số tổng",
     [
-     "Khi hai loại lỗi có giá khác nhau, nhân số lỗi với giá rồi so tổng chi phí: FP giá 1, FN giá 10 thì 20 FP và 30 FN tốn 320."
+     "Khi hai loại lỗi có giá khác nhau, nhân số lỗi với giá rồi so tổng: nếu một FP tốn 1 và một FN tốn 10, thì 20 FP và 30 FN tốn $20 + 300 = 320$."
     ]
    ]
   ]
@@ -4902,7 +4907,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Khi không có mẫu dự đoán dương, precision có mẫu số 0; khi không có dương thật, recall có mẫu số 0."
+     "Khi model không báo dương lần nào, precision có mẫu số 0; khi dữ liệu không có mẫu dương nào, recall có mẫu số 0."
     ]
    ]
   ]
@@ -5663,7 +5668,8 @@
     "1.6",
     "Ranking: một danh sách, không phải một số",
     [
-     "MRR lấy trung bình nghịch đảo hạng của đáp án đúng đầu tiên: ba câu hỏi có đáp án ở hạng 1, hạng 3 và không có cho $(1+1/3+0)/3\\approx0.44$."
+     "MRR: trung bình của $1/\\text{hạng}$ của đáp án đúng đầu tiên.",
+     "Ba câu hỏi có đáp án đúng ở hạng 1, hạng 3 và không có, cho MRR $= (1 + 1/3 + 0)/3 \\approx 0.44$."
     ]
    ]
   ]
@@ -6179,7 +6185,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Theo bốn ô: accuracy $=(TP+TN)/n$, precision $=TP/(TP+FP)$, recall $=TP/(TP+FN)$; specificity $=TN/(TN+FP)$ là recall của lớp âm."
+     "Accuracy đo tỉ lệ dự đoán đúng trên mọi mẫu:"
     ]
    ]
   ]
@@ -6193,7 +6199,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Precision hỏi: trong những buổi đã báo cần, bao nhiêu buổi thật sự cần?"
+     "Precision hỏi: trong những buổi model đã báo cần, bao nhiêu buổi thật sự cần?"
     ]
    ]
   ]
@@ -6207,7 +6213,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Recall hỏi: trong những buổi thật sự cần, bao nhiêu buổi được phát hiện?"
+     "Recall hỏi: trong những buổi thật sự cần, model phát hiện được bao nhiêu?"
     ]
    ]
   ]
@@ -6408,7 +6414,7 @@
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
      "F1 là trung bình điều hòa của precision $P$ và recall $R$:",
-     "Nếu một trong hai đại lượng rất thấp, F1 bị kéo thấp: $P=0.5$, $R=1$ cho $F_1=2\\cdot0.5\\cdot1/1.5\\approx0.67$, thấp hơn trung bình cộng 0.75."
+     "Chỉ cần một trong hai thấp là F1 bị kéo thấp: $P = 0.5$, $R = 1$ cho $F_1 = 2 \\cdot 0.5 \\cdot 1 / 1.5 \\approx 0.67$, thấp hơn trung bình cộng 0.75."
     ]
    ]
   ]
@@ -6436,14 +6442,15 @@
     "1.5",
     "Một validation nhỏ để tính và đối chiếu",
     [
-     "Accuracy 0.97, recall 0 và F1 0 theo quy ước đang dùng. Accuracy không sai; nó trả lời một câu hỏi ít phù hợp nếu mục tiêu là tìm lớp hiếm."
+     "Accuracy 0.97, nhưng recall và F1 đều bằng 0.",
+     "Accuracy không tính sai, chỉ là nó không đo điều ta cần: tìm ra lớp hiếm."
     ]
    ],
    [
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Recall hỏi: trong những buổi thật sự cần, bao nhiêu buổi được phát hiện?"
+     "Recall hỏi: trong những buổi thật sự cần, model phát hiện được bao nhiêu?"
     ]
    ]
   ]
@@ -6527,7 +6534,7 @@
     "1.5",
     "Threshold là một lựa chọn phải đánh giá",
     [
-     "Hạ threshold làm nhiều mẫu được gọi dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
+     "Hạ threshold thì nhiều mẫu được báo dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
     ]
    ],
    [
@@ -8073,7 +8080,8 @@
     "1.5",
     "Một validation nhỏ để tính và đối chiếu",
     [
-     "Trong ví dụ 100 buổi đầu bài, luôn dự đoán 0 cho TP=0, FN=3, FP=0, TN=97. Accuracy 0.97, recall 0 và F1 0 theo quy ước đang dùng."
+     "Quay lại ví dụ 100 buổi đầu bài: luôn đoán 0 cho TP = 0, FN = 3, FP = 0, TN = 97.",
+     "Accuracy 0.97, nhưng recall và F1 đều bằng 0."
     ]
    ]
   ]
@@ -8087,7 +8095,7 @@
     "1.5",
     "Bốn ô trước một con số tổng",
     [
-     "Hai ô trên đường chéo, TP và TN, là đoán đúng; các ô ngoài đường chéo cho biết mô hình nhầm lớp nào thành lớp nào."
+     "Bảng bốn ô này gọi là confusion matrix: hai ô trên đường chéo (TP, TN) là đoán đúng, hai ô còn lại cho biết model nhầm lớp nào thành lớp nào."
     ]
    ]
   ]
@@ -8115,7 +8123,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Sàng lọc bệnh hay quét mã độc mà bỏ sót rất đắt, còn báo nhầm thì có người kiểm lại: ưu tiên recall."
+     "Sàng lọc bệnh hay quét mã độc: bỏ sót rất đắt, còn báo nhầm thì đã có người kiểm lại, nên ưu tiên recall."
     ]
    ]
   ]
@@ -9403,7 +9411,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Lọc thư rác mà vứt nhầm thư công việc, hay ẩn nhầm bình luận bình thường: báo nhầm gây hại, ưu tiên precision."
+     "Lọc thư rác mà vứt nhầm thư công việc, hay ẩn nhầm bình luận bình thường: báo nhầm gây hại, nên ưu tiên precision."
     ]
    ]
   ]
@@ -10479,7 +10487,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Lọc thư rác mà vứt nhầm thư công việc, hay ẩn nhầm bình luận bình thường: báo nhầm gây hại, ưu tiên precision."
+     "Lọc thư rác mà vứt nhầm thư công việc, hay ẩn nhầm bình luận bình thường: báo nhầm gây hại, nên ưu tiên precision."
     ]
    ],
    [
@@ -10534,8 +10542,9 @@
     "1.5",
     "Bốn ô trước một con số tổng",
     [
-     "True positive (TP) là báo cần và thật sự cần. False positive (FP) là báo cần nhưng thật sự chưa cần.",
-     "Chữ dương, âm chỉ điều mô hình báo; chữ thật, giả cho biết báo đúng hay sai."
+     "True positive (TP) là báo cần và thật sự cần.",
+     "False positive (FP) là báo cần nhưng thật sự chưa cần.",
+     "Cách nhớ: chữ thứ hai (positive, negative) là điều model báo; chữ đầu (true, false) cho biết báo đúng hay sai."
     ]
    ]
   ]
@@ -12142,7 +12151,7 @@
     "1.5",
     "Xác suất và nhiều lớp",
     [
-     "Xác suất được calibration tốt nghĩa là trong nhiều mẫu được đoán gần 0.7, khoảng 70% thật sự dương; phải kiểm điều ấy trên dữ liệu mới, không suy ra chỉ từ một score của một mẫu."
+     "Xác suất của model gọi là hiệu chỉnh tốt (well-calibrated) khi nó khớp tần suất thật: trong các mẫu được đoán khoảng 0.7, có khoảng 70% thật sự dương."
     ]
    ]
   ]
@@ -12694,7 +12703,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Lọc thư rác mà vứt nhầm thư công việc, hay ẩn nhầm bình luận bình thường: báo nhầm gây hại, ưu tiên precision."
+     "Lọc thư rác mà vứt nhầm thư công việc, hay ẩn nhầm bình luận bình thường: báo nhầm gây hại, nên ưu tiên precision."
     ]
    ]
   ]
@@ -14362,7 +14371,7 @@
     "1.5",
     "Xác suất và nhiều lớp",
     [
-     "Nếu trong 100 ca được đoán 0.9 chỉ có 60 ca dương thì mô hình quá tự tin."
+     "Nếu trong 100 ca được đoán 0.9 mà chỉ 60 ca dương thật, model đang quá tự tin."
     ]
    ]
   ]
@@ -14614,7 +14623,7 @@
     "1.6",
     "Loss học và metric chấm có thể khác nhau",
     [
-     "Với dự đoán hằng số, MSE được tối ưu bằng mean, MAE bằng median."
+     "Nếu chỉ được đoán một hằng số, MSE nhỏ nhất khi đoán bằng trung bình (mean), còn MAE nhỏ nhất khi đoán bằng trung vị (median)."
     ]
    ]
   ]
@@ -15408,7 +15417,8 @@
     "1.5",
     "Một validation nhỏ để tính và đối chiếu",
     [
-     "Accuracy 0.97, recall 0 và F1 0 theo quy ước đang dùng. Accuracy không sai; nó trả lời một câu hỏi ít phù hợp nếu mục tiêu là tìm lớp hiếm."
+     "Accuracy 0.97, nhưng recall và F1 đều bằng 0.",
+     "Accuracy không tính sai, chỉ là nó không đo điều ta cần: tìm ra lớp hiếm."
     ]
    ],
    [
@@ -15429,7 +15439,8 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Theo bốn ô: accuracy $=(TP+TN)/n$, precision $=TP/(TP+FP)$, recall $=TP/(TP+FN)$; specificity $=TN/(TN+FP)$ là recall của lớp âm."
+     "Precision hỏi: trong những buổi model đã báo cần, bao nhiêu buổi thật sự cần?",
+     "Recall hỏi: trong những buổi thật sự cần, model phát hiện được bao nhiêu?"
     ]
    ],
    [
@@ -15450,7 +15461,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Nếu một trong hai đại lượng rất thấp, F1 bị kéo thấp: $P=0.5$, $R=1$ cho $F_1=2\\cdot0.5\\cdot1/1.5\\approx0.67$, thấp hơn trung bình cộng 0.75."
+     "Chỉ cần một trong hai thấp là F1 bị kéo thấp: $P = 0.5$, $R = 1$ cho $F_1 = 2 \\cdot 0.5 \\cdot 1 / 1.5 \\approx 0.67$, thấp hơn trung bình cộng 0.75."
     ]
    ]
   ]
@@ -15464,14 +15475,14 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Sàng lọc bệnh hay quét mã độc mà bỏ sót rất đắt, còn báo nhầm thì có người kiểm lại: ưu tiên recall."
+     "Sàng lọc bệnh hay quét mã độc: bỏ sót rất đắt, còn báo nhầm thì đã có người kiểm lại, nên ưu tiên recall."
     ]
    ],
    [
     "1.5",
     "Threshold là một lựa chọn phải đánh giá",
     [
-     "Hạ threshold làm nhiều mẫu được gọi dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
+     "Hạ threshold thì nhiều mẫu được báo dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
     ]
    ]
   ]
@@ -15505,7 +15516,7 @@
     "1.5",
     "ROC-AUC: thứ tự trước khi cắt ngưỡng",
     [
-     "AUC bằng 0.5 là xếp hạng không hơn đoán ngẫu nhiên, bằng 1 là hoàn hảo; nó không phải accuracy."
+     "AUC bằng 0.5 là xếp hạng không hơn đoán bừa, bằng 1 là hoàn hảo."
     ]
    ]
   ]
@@ -16486,7 +16497,7 @@
     "1.5",
     "Threshold là một lựa chọn phải đánh giá",
     [
-     "Hạ threshold làm nhiều mẫu được gọi dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
+     "Hạ threshold thì nhiều mẫu được báo dương hơn: recall không bao giờ giảm, còn precision lên hay xuống tùy mẫu mới được thêm vào là dương thật hay âm thật."
     ]
    ],
    [
@@ -16988,7 +16999,7 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Mô hình luôn đoán dương có recall 1 nhưng precision chỉ bằng tỉ lệ dương trong dữ liệu."
+     "Model luôn báo “cần” có recall bằng 1, nhưng precision chỉ bằng tỉ lệ buổi cần trong dữ liệu."
     ]
    ]
   ]
@@ -18466,14 +18477,14 @@
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
      "Accuracy đo tỉ lệ dự đoán đúng trên mọi mẫu:",
-     "Precision hỏi: trong những buổi đã báo cần, bao nhiêu buổi thật sự cần?"
+     "Precision hỏi: trong những buổi model đã báo cần, bao nhiêu buổi thật sự cần?"
     ]
    ],
    [
     "1.5",
     "Xác suất và nhiều lớp",
     [
-     "Trong ma trận nhầm lẫn nhiều lớp (hàng là nhãn thật), precision của một lớp đọc theo cột của lớp ấy, recall đọc theo hàng."
+     "Trong confusion matrix nhiều lớp (hàng là nhãn thật, cột là dự đoán), precision của một lớp đọc theo cột của lớp ấy, recall đọc theo hàng."
     ]
    ]
   ]
@@ -19134,7 +19145,9 @@
     "1.6",
     "Loss học và metric chấm có thể khác nhau",
     [
-     "Loss học còn phải cho gradient dùng được: accuracy là lỗi 0-1, nhích trọng số một chút thường không đổi nhãn nào nên đạo hàm gần như luôn bằng 0. Vì vậy bộ phân loại học bằng cross-entropy (bài 2.3) rồi mới chấm bằng accuracy."
+     "Loss còn phải có đạo hàm dùng được (bài 0.6).",
+     "Accuracy thì không: nhích trọng số một chút thường không đổi nhãn nào, nên đạo hàm gần như luôn bằng 0.",
+     "Vì vậy bộ phân loại học bằng cross-entropy (bài 2.3) rồi mới chấm bằng accuracy."
     ]
    ],
    [
@@ -20023,7 +20036,7 @@
     "1.5",
     "ROC-AUC: thứ tự trước khi cắt ngưỡng",
     [
-     "Vì AUC chỉ phụ thuộc thứ tự, mọi biến đổi đồng biến của score, như $\\sigma(3s-1)$, giữ nguyên AUC."
+     "Biến đổi score mà giữ nguyên thứ tự, như $\\sigma(3s - 1)$, không đổi AUC."
     ]
    ]
   ]
@@ -21796,7 +21809,8 @@
     "1.5",
     "Precision, recall và F1 nhìn những nhóm khác nhau",
     [
-     "Precision hỏi: trong những buổi đã báo cần, bao nhiêu buổi thật sự cần? Recall hỏi: trong những buổi thật sự cần, bao nhiêu buổi được phát hiện?"
+     "Precision hỏi: trong những buổi model đã báo cần, bao nhiêu buổi thật sự cần?",
+     "Recall hỏi: trong những buổi thật sự cần, model phát hiện được bao nhiêu?"
     ]
    ]
   ]

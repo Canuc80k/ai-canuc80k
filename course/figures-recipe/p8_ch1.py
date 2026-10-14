@@ -551,7 +551,7 @@ def r2_16():
             x += max(side, 12) + 16
         s.mono(x0, base + 40, total, 12.5, 'start', col, 600)
     s.mono(320, 222, 'R² = 1 − 17 / 200 = 0.915', 13.5, 'middle', TEXT, 600)
-    s.save('1-6-r2', 'Mỗi ô vuông là một lỗi bình phương: tổng 17 của model so với 200 của mốc trung bình.')
+    s.save('1-6-r2', 'Tổng lỗi bình phương: model 17, đoán trung bình 200.')
 
 
 def relative16():
