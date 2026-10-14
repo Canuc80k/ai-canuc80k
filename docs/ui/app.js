@@ -930,8 +930,8 @@
     const resume = cur && cur.done && cur.todo
       ? a(`#/quiz/${s.id}/play`, 'Làm tiếp', 'class="btn is-primary" data-nav')
       : qBtn(s, tot.done && tot.todo ? 'todo' : 'all', tot.done ? (tot.todo ? 'Làm tiếp' : 'Làm lại') : 'Làm bài', 'btn is-primary');
-    const lead = resume + (s.lesson ? a(lessonHref(s.lesson), `${icon('book')}Đọc lại bài`, 'class="btn" data-nav') : '')
-      + (tot.done ? `<button class="btn qz-reset" type="button" data-action="qz-reset" data-set="${s.id}">Xóa kết quả</button>` : '');
+    const lead = (s.lesson ? a(lessonHref(s.lesson), `${icon('book')}Đọc lại bài`, 'class="btn" data-nav') : '') + resume + exBtn(s);
+    const reset = tot.done ? `<button class="qz-reset" type="button" data-action="qz-reset" data-set="${s.id}">Xóa kết quả</button>` : '';
     const topics = s.groups.map((g, k) => {
       const idx = qInGroup(s, g.id), t = qStats(s, idx);
       return qBtn(s, g.id,
@@ -940,11 +940,9 @@
          <span class="phase-meta">${t.done ? `<span class="phase-progress">${meter(t.done, idx.length)}${t.done}/${idx.length}</span>` : `${idx.length} câu`}</span>`, 'phase');
     }).join('');
     return `<div class="page">
-      <header class="page-head"><p class="kicker">${a('#/quiz', 'Trắc nghiệm', 'data-nav')}</p><h1>${esc(s.title)}</h1>
-        ${tot.done ? `<div class="page-meta"><span class="phase-progress">${meter(tot.done, all.length)}${tot.done}/${all.length} câu</span><span>${tot.right} đúng · ${tot.wrong} sai</span></div>` : ''}</header>
-      ${lead ? `<div class="actions">${lead}</div>` : ''}
+      <header class="page-head"><p class="kicker">${a('#/quiz', 'Trắc nghiệm', 'data-nav')}</p><div class="qz-title-row"><h1>${esc(s.title)}</h1><div class="actions">${lead}</div></div>
+        ${tot.done ? `<div class="page-meta"><span class="phase-progress">${meter(tot.done, all.length)}${tot.done}/${all.length} câu</span><span>${tot.right} đúng · ${tot.wrong} sai</span>${reset}</div>` : ''}</header>
       <section class="block"><h2 class="block-title">${s.lesson ? 'Theo mức' : 'Chủ đề'}</h2><div class="phases">${topics}</div></section>
-      ${exBlock(s)}
       ${footer()}</div>`;
   }
   function renderQuizPlay(s) {
@@ -1194,16 +1192,11 @@
     if (exActive()) return renderExamPlay();
     return EX && exSet() ? renderExamResult() : notFound();
   }
-  function exBlock(s) {
-    const log = EXLOG[s.id] || [], lastRun = log[log.length - 1];
-    const sizes = EX_SIZES.filter(n => n <= s.questions.length);
-    if (!sizes.length && s.questions.length >= 5) sizes.push(s.questions.length);
-    if (!sizes.length) return '';
-    const btns = sizes.map(n =>
-      `<button class="btn" type="button" data-action="ex-start" data-set="${s.id}" data-n="${n}">${n} câu<span class="qz-n">${exMinutes(s, n)} phút</span></button>`).join('');
-    return `<section class="block"><h2 class="block-title">Kiểm tra</h2>
-      <div class="actions ex-sizes">${btns}</div>
-      ${lastRun ? `<p class="ex-last">Lần gần nhất: ${lastRun.right}/${lastRun.n} câu đúng · ${clock(lastRun.secs)}</p>` : ''}</section>`;
+  // Một nút Kiểm tra cạnh nút Làm bài: đề 100 câu (bộ ít hơn thì lấy cả bộ), giờ làm theo mức.
+  function exBtn(s) {
+    const n = s.questions.length >= EX_SIZES[0] ? EX_SIZES[0] : s.questions.length;
+    if (n < 5) return '';
+    return `<button class="btn" type="button" data-action="ex-start" data-set="${s.id}" data-n="${n}" title="${n} câu · ${exMinutes(s, n)} phút">Kiểm tra</button>`;
   }
 
   let spyHeads = [], spyLinks = [];
