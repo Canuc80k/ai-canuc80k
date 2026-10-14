@@ -270,7 +270,7 @@ CV = [
     ('MNIST',
      'Bộ dữ liệu kinh điển nào gồm ảnh xám 28 × 28 của chữ số viết tay từ 0 đến 9?',
      'MNIST', ['ImageNet', 'COCO', 'CIFAR-10'],
-     'MNIST có 6  ảnh để học và 1  ảnh để kiểm tra. Bộ này nhỏ và dễ dùng, nên thường là bài đầu tiên khi học mạng xử lý ảnh.'),
+     'MNIST có 60 000 ảnh để học và 10 000 ảnh để kiểm tra. Bộ này nhỏ và dễ dùng, nên thường là bài đầu tiên khi học mạng xử lý ảnh.'),
     ('Top-5',
      'Bài phân loại có 1000 lớp. Với chỉ số top-5 accuracy, một ảnh được tính là đoán đúng khi nào?',
      'Nhãn thật nằm trong 5 lớp có xác suất cao nhất',

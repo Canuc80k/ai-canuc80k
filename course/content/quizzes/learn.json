@@ -10231,10 +10231,10 @@
    ]
   ]
  },
- "6099d31c5614": {
+ "4fb0b6cff9ec": {
   "set": "light3",
   "ref": "LC022",
-  "q": "Một công ty chia 10\u0001 \u0002 ảnh cho rất nhiều người trên mạng, mỗi người g…",
+  "q": "Một công ty chia 100 000 ảnh cho rất nhiều người trên mạng, mỗi người…",
   "to": [
    [
     "1.1",
@@ -20448,10 +20448,10 @@
    ]
   ]
  },
- "17195d240ee2": {
+ "74e877a6ae11": {
   "set": "medium2",
   "ref": "MB085",
-  "q": "Tăng bộ từ vựng của tokenizer từ 3\u0001 \u0002 lên 12\u0001 \u0002 token. Điều gì thường…",
+  "q": "Tăng bộ từ vựng của tokenizer từ 32 000 lên 128 000 token. Điều gì th…",
   "to": [
    [
     "6.1",
@@ -20639,10 +20639,10 @@
    ]
   ]
  },
- "e3452103e854": {
+ "93ce0ea1ef7c": {
   "set": "medium2",
   "ref": "MB096",
-  "q": "Đoạn ghi âm mono 10 giây, tần số lấy mẫu 1\u0001 \u0002 Hz, mỗi mẫu 16 bit. Dữ …",
+  "q": "Đoạn ghi âm mono 10 giây, tần số lấy mẫu 16 000 Hz, mỗi mẫu 16 bit. D…",
   "to": [
    [
     "7.1",
@@ -20801,10 +20801,10 @@
    ]
   ]
  },
- "8de3ba0f9ea5": {
+ "96a8988b76ce": {
   "set": "medium3",
   "ref": "MC006",
-  "q": "Thu nhập có nhỏ nhất 4\u0001 \u0002, lớn nhất 17\u0001 \u0002, trung bình 9\u0001 \u0002, độ lệch c…",
+  "q": "Thu nhập có nhỏ nhất 46 000, lớn nhất 170 000, trung bình 96 000, độ …",
   "to": [
    [
     "2.1",
@@ -21959,10 +21959,10 @@
   "q": "Tại một pixel, bộ lọc Sobel cho gradient theo x là 3 và theo y là 4. …",
   "to": []
  },
- "9b75649252ce": {
+ "e53a18e061d1": {
   "set": "medium3",
   "ref": "MC075",
-  "q": "Ảnh tiêu bản giải phẫu bệnh có kích thước 10\u0001 \u0002 × 10\u0001 \u0002 pixel, không …",
+  "q": "Ảnh tiêu bản giải phẫu bệnh có kích thước 100 000 × 100 000 pixel, kh…",
   "to": [
    [
     "5.1",
@@ -22177,10 +22177,10 @@
    ]
   ]
  },
- "348ce76ea9f5": {
+ "66a69974e311": {
   "set": "medium3",
   "ref": "MC089",
-  "q": "Có 1\u0001 \u0002 bài báo chưa gán chủ đề. Muốn tự tìm ra các chủ đề, mỗi chủ đ…",
+  "q": "Có 10 000 bài báo chưa gán chủ đề. Muốn tự tìm ra các chủ đề, mỗi chủ…",
   "to": [
    [
     "6.1",
@@ -22254,7 +22254,7 @@
    ]
   ]
  },
- "187d034ab633": {
+ "8f50c966cdd4": {
   "set": "medium3",
   "ref": "MC094",
   "q": "Theo định luật Zipf, tần suất của một từ tỉ lệ nghịch với thứ hạng củ…",
@@ -22268,10 +22268,10 @@
    ]
   ]
  },
- "d1266a0196db": {
+ "622f57a1363c": {
   "set": "medium3",
   "ref": "MC095",
-  "q": "Mô hình ngôn ngữ hay tính sai phép cộng các số dài, như 4\u0001 \u0002 + \u0001 \u0002. M…",
+  "q": "Mô hình ngôn ngữ hay tính sai phép cộng các số dài, như 48 213 + 37 9…",
   "to": [
    [
     "6.1",
@@ -22296,10 +22296,10 @@
    ]
   ]
  },
- "5e2d7ed038a5": {
+ "1f9acdde6858": {
   "set": "medium3",
   "ref": "MC097",
-  "q": "Tần số lấy mẫu 1\u0001 \u0002 Hz, cửa sổ FFT dài 512 mẫu. Khoảng cách giữa hai …",
+  "q": "Tần số lấy mẫu 16 000 Hz, cửa sổ FFT dài 512 mẫu. Khoảng cách giữa ha…",
   "to": [
    [
     "7.1",
