@@ -91,9 +91,10 @@
    ],
    [
     "2.10",
-    "Một vòng Lloyd trên giấy và máy",
+    "Cài một vòng Lloyd",
     [
-     "Mỗi điểm vào tâm gần nhất, nên nhóm trái gồm 0,1 và nhóm phải gồm 5,6. Tâm mới là 0.5 và 5.5."
+     "Mỗi điểm vào tâm gần nhất, nên nhóm trái gồm 0, 1 và nhóm phải gồm 5, 6.",
+     "Tâm mới là 0.5 và 5.5."
     ]
    ]
   ]
@@ -129,7 +130,7 @@
     "2.5",
     "Thế nào là một câu hỏi tốt",
     [
-     "Ba lớp với số mẫu 6, 2, 2 cho Gini $1 - 0.6^2 - 0.2^2 - 0.2^2 = 0.56$."
+     "Ba lớp với số mẫu 6, 2, 2: Gini $= 1 - 0.6^2 - 0.2^2 - 0.2^2 = 0.56$."
     ]
    ]
   ]
@@ -408,7 +409,8 @@
     "2.8",
     "Chi phí và giới hạn",
     [
-     "Huấn luyện SVM có kernel tốn khoảng $O(n^2)$ đến $O(n^3)$ với chi phí phụ thuộc dữ liệu và solver; bộ nhớ còn phụ thuộc cơ chế cache."
+     "Huấn luyện SVM có kernel tốn khoảng $O(n^2)$ đến $O(n^3)$ theo số mẫu.",
+     "Quá vài chục nghìn mẫu là bắt đầu đuối."
     ]
    ],
    [
@@ -1873,7 +1875,7 @@
   "to": [
    [
     "2.11",
-    "Một pipeline xử lý cột chưa từng gặp",
+    "Giá trị mới ở test",
     [
      "Quan trọng là không fit_transform lại trên từng tập: như vậy số cột và ý nghĩa cột có thể đổi, chưa kể thống kê validation bị dùng để học phép biến đổi."
     ]
@@ -3018,9 +3020,10 @@
    ],
    [
     "2.10",
-    "Một vòng Lloyd trên giấy và máy",
+    "Cài một vòng Lloyd",
     [
-     "Mỗi điểm vào tâm gần nhất, nên nhóm trái gồm 0,1 và nhóm phải gồm 5,6. Tâm mới là 0.5 và 5.5."
+     "Mỗi điểm vào tâm gần nhất, nên nhóm trái gồm 0, 1 và nhóm phải gồm 5, 6.",
+     "Tâm mới là 0.5 và 5.5."
     ]
    ]
   ]
@@ -3034,7 +3037,8 @@
     "2.5",
     "Thế nào là một câu hỏi tốt",
     [
-     "Ví dụ nút có 4 mẫu “Đạt” và 2 mẫu “Trượt”: entropy là $-\\tfrac46\\log_2\\tfrac46 - \\tfrac26\\log_2\\tfrac26 \\approx 0.92$ bit (dùng log tự nhiên sẽ ra $0.64$, sai đơn vị)."
+     "Nút có 4 mẫu “Đạt”, 2 mẫu “Trượt”: entropy là $-\\tfrac46\\log_2\\tfrac46 - \\tfrac26\\log_2\\tfrac26 \\approx 0.92$ bit.",
+     "(Dùng log tự nhiên thì ra $0.64$, sai đơn vị.)"
     ]
    ],
    [
@@ -3238,14 +3242,14 @@
     "K-Means",
     [
      "Nhưng nó chỉ dừng ở một cực tiểu địa phương: khởi tạo khác cho kết quả khác.",
-     "Thư viện còn chạy nhiều lần (n_init) và giữ kết quả có $J$ nhỏ nhất."
+     "Chạy nhiều lần (n_init) và giữ kết quả có $J$ nhỏ nhất."
     ]
    ],
    [
     "2.10",
     "Dùng thư viện",
     [
-     "Kết quả minh họa đúng cái bẫy ở trên: DBSCAN khớp nhãn hoàn toàn theo ARI, nhưng silhouette lại chấm K-Means cao hơn."
+     "DBSCAN khớp nhãn hoàn toàn theo ARI, nhưng silhouette lại chấm K-Means cao hơn: đúng điều mục Đánh giá cụm đã cảnh báo."
     ]
    ]
   ]
@@ -4754,7 +4758,7 @@
     "2.11",
     "Giá trị thiếu",
     [
-     "Điền cũng làm cột trông ổn định hơn thật: 2, 4, 8 cùng hai ô điền bằng trung bình $14/3$ thì phương sai giảm từ $6.22$ xuống $3.73$."
+     "Điền trung bình còn làm cột trông ít biến động hơn thực tế: cột 2, 4, 8 cùng hai ô trống điền bằng trung bình $14/3$ thì phương sai giảm từ $6.22$ xuống $3.73$."
     ]
    ]
   ]
@@ -7884,7 +7888,7 @@
     "2.11",
     "Mỗi mô hình cần một kiểu đặc trưng",
     [
-     "Tạo đặc trưng (feature engineering) là biến dữ liệu thô thành thông tin mô hình dùng dễ hơn, như tính tuổi từ ngày sinh."
+     "Ví dụ đơn giản nhất của tạo đặc trưng là tính tuổi từ ngày sinh."
     ]
    ],
    [
@@ -9516,9 +9520,10 @@
   "to": [
    [
     "2.11",
-    "Từ giả thuyết đến bằng chứng",
+    "Làm có kiểm chứng",
     [
-     "Một đặc trưng nên có hai câu giải thích: nó được biết lúc nào, và vì sao có thể liên quan target."
+     "Mỗi đặc trưng nên trả lời được hai câu: nó được biết lúc nào, và vì sao có thể liên quan target.",
+     "Ví dụ “giờ cuối tuần” có thể đổi nhu cầu thật; còn “mã đơn” có thể chỉ vô tình tăng theo thời gian."
     ]
    ]
   ]
@@ -9713,7 +9718,7 @@
     "2.11",
     "Mỗi mô hình cần một kiểu đặc trưng",
     [
-     "Học máy cổ điển cần người làm việc này; mạng học sâu ở các phase sau tự học đặc trưng từ ảnh, chữ, âm thanh."
+     "Học máy cổ điển cần người làm việc này; mạng học sâu ở các chương sau tự học đặc trưng từ ảnh, chữ, âm thanh."
     ]
    ],
    [
@@ -11814,7 +11819,7 @@
     "2.5",
     "Dùng thư viện",
     [
-     "Cây độ sâu 2 học trên bộ breast cancer (569 mẫu): mỗi lá ghi số mẫu ác tính và lành tính rơi vào đó."
+     "Cây độ sâu 2 trên bộ breast cancer; mỗi lá ghi số mẫu ác tính, lành tính."
     ]
    ]
   ]
@@ -11850,7 +11855,9 @@
     "2.10",
     "K-Means",
     [
-     "Khởi tạo k-means++ chọn tâm đầu tiên ngẫu nhiên, rồi chọn mỗi tâm tiếp theo với xác suất tỉ lệ với bình phương khoảng cách từ điểm đến tâm gần nhất đã có, nên các tâm ban đầu thường nằm xa nhau. Thư viện còn chạy nhiều lần (n_init) và giữ kết quả có $J$ nhỏ nhất."
+     "Nhưng nó chỉ dừng ở một cực tiểu địa phương: khởi tạo khác cho kết quả khác.",
+     "k-means++: chọn tâm đầu tiên ngẫu nhiên, rồi chọn mỗi tâm tiếp theo với xác suất tỉ lệ với bình phương khoảng cách từ điểm đến tâm gần nhất đã có.",
+     "Chạy nhiều lần (n_init) và giữ kết quả có $J$ nhỏ nhất."
     ]
    ]
   ]
@@ -12045,9 +12052,9 @@
    ],
    [
     "2.10",
-    "Một vòng Lloyd trên giấy và máy",
+    "Cài một vòng Lloyd",
     [
-     "Mỗi điểm vào tâm gần nhất, nên nhóm trái gồm 0,1 và nhóm phải gồm 5,6."
+     "Mỗi điểm vào tâm gần nhất, nên nhóm trái gồm 0, 1 và nhóm phải gồm 5, 6."
     ]
    ]
   ]
@@ -12089,7 +12096,8 @@
     "2.5",
     "Độ quan trọng đặc trưng",
     [
-     "Cộng dồn $\\Delta$ (có trọng số theo số mẫu) của mọi phép chia dùng đặc trưng $j$ ta được impurity-based importance."
+     "Impurity importance: cộng dồn $\\Delta$ (có trọng số theo số mẫu) của mọi phép chia dùng đặc trưng $j$.",
+     "Cách này nhanh nhưng thiên vị các đặc trưng có nhiều giá trị khác nhau, như ID hay số thực."
     ]
    ]
   ]
@@ -14396,9 +14404,9 @@
    ],
    [
     "2.10",
-    "Một vòng Lloyd trên giấy và máy",
+    "Cài một vòng Lloyd",
     [
-     "Inertia trước cập nhật là 2; sau cập nhật là 1."
+     "Inertia trước cập nhật là 2, sau cập nhật là 1."
     ]
    ]
   ]
@@ -14424,10 +14432,10 @@
    ],
    [
     "2.10",
-    "DBSCAN: một cụm không cần tròn",
+    "DBSCAN trên năm điểm",
     [
-     "Một điểm core có ít nhất min_samples điểm trong bán kính eps, tính cả chính nó trong quy ước của scikit-learn.",
-     "Một điểm border ít hàng xóm vẫn có thể thuộc cụm."
+     "Trong scikit-learn, số điểm trong bán kính eps được đếm tính cả chính nó.",
+     "Vì vậy điểm border ít hàng xóm vẫn thuộc cụm; bản cài chỉ giữ các điểm đủ ngưỡng sẽ biến mọi border thành noise, và đó đã là một thuật toán khác."
     ]
    ]
   ]
@@ -15721,14 +15729,14 @@
     "2.10",
     "K-Means",
     [
-     "Vẽ $J$ theo $K$ rồi tìm “khuỷu tay” (elbow method), hoặc chọn $K$ có hệ số silhouette trung bình cao nhất."
+     "Vẽ $J$ theo $K$ rồi tìm “khuỷu tay” (elbow method), hoặc chọn $K$ có hệ số silhouette trung bình cao nhất (mục Đánh giá cụm)."
     ]
    ],
    [
     "2.10",
-    "Đánh giá cần đúng câu hỏi",
+    "Đánh giá cụm",
     [
-     "Inertia tối ưu không tăng khi $K$ tăng, nên “chọn $K$ có inertia nhỏ nhất” luôn đẩy về rất nhiều cụm. Elbow là một gợi ý hình học, không phải định lý về $K$ thật."
+     "Inertia lại càng không dùng được để chọn $K$: inertia tối ưu không tăng khi $K$ tăng, nên “chọn $K$ có inertia nhỏ nhất” luôn đẩy về rất nhiều cụm."
     ]
    ]
   ]
@@ -15747,9 +15755,9 @@
    ],
    [
     "2.10",
-    "DBSCAN: một cụm không cần tròn",
+    "DBSCAN trên năm điểm",
     [
-     "eps = 0.16, min_samples = 3: 0.1 và 0.2 là core (đoạn ngang là bán kính quanh chúng); 0 và 0.35 là border, vẫn vào cụm; 3 là noise."
+     "0.1 và 0.2 là core; 0 và 0.35 là border, vẫn vào cụm; 3 là noise."
     ]
    ]
   ]
@@ -15763,7 +15771,8 @@
     "2.9",
     "Lưu ý khi dùng PCA",
     [
-     "PCA không biết nhãn. Hướng phương sai nhỏ có thể lại là hướng phân biệt các lớp."
+     "PCA không biết nhãn.",
+     "Hướng phương sai nhỏ có thể lại là hướng phân biệt các lớp (hình dưới)."
     ]
    ],
    [
@@ -18600,7 +18609,7 @@
     "2.8",
     "Lề lớn nhất",
     [
-     "Các điểm nằm đúng trên biên lề là vector hỗ trợ (support vectors). Trong biểu diễn đối ngẫu, các điểm có hệ số khác 0 đóng góp vào hàm quyết định; với soft margin chúng có thể nằm trong lề hoặc bị phân loại sai."
+     "Các điểm nằm đúng trên biên lề là vector hỗ trợ (support vectors): chỉ chúng quyết định vị trí vạch, bỏ các điểm khác đi thì vạch không đổi."
     ]
    ],
    [
@@ -21045,8 +21054,8 @@
     "2.5",
     "Độ quan trọng đặc trưng",
     [
-     "Cực đoan nhất là cột mã học sinh, mỗi mẫu một giá trị: chia theo nó cho toàn lá thuần, information gain đạt tối đa mà chẳng học được gì.",
-     "C4.5 chia gain cho entropy của chính phép chia (gain ratio) để hãm chuyện này."
+     "Cực đoan nhất là cột mã học sinh, mỗi mẫu một giá trị: chia theo nó cho toàn lá thuần, information gain tối đa mà chẳng học được gì.",
+     "(Thuật toán C4.5 chia gain cho entropy của chính phép chia, gọi là gain ratio, để hãm chuyện này.)"
     ]
    ],
    [
@@ -21085,7 +21094,7 @@
     "2.5",
     "Độ quan trọng đặc trưng",
     [
-     "Cách này nhanh nhưng thiên vị các đặc trưng có nhiều giá trị khác nhau, như ID hay số thực liên tục."
+     "Cách này nhanh nhưng thiên vị các đặc trưng có nhiều giá trị khác nhau, như ID hay số thực."
     ]
    ]
   ]

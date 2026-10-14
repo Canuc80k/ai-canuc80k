@@ -177,7 +177,7 @@ def bootstrap():
     s.text(78,57,'Gốc',19);s.text(78,152,'Rút',19)
     s.matrix(143,30,[[0,1,2,3,4]],65,BLUE);s.matrix(143,123,[[0,0,2,3,3]],65,CLAY)
     s.text(305,226,'OOB',19);s.rect(365,200,112,51,BLUE,BLUE,3,.08);s.text(421,226,'1, 4',23)
-    s.save('2-6-bootstrap','Bootstrap rút có lặp; các mẫu 1 và 4 nằm ngoài lượt rút này.')
+    s.save('2-6-bootstrap','Một lượt bootstrap: mẫu 3, 4 lặp hai lần; mẫu 0, 1 không được rút nên là OOB.')
 
 def density():
     s=SVG(640,190)

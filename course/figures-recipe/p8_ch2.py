@@ -443,7 +443,7 @@ def linfail23():
     ax.hline(.5, FAINT, 1, '2 4')
     s.label(ax.X(xl) - 10, ax.Y(1.3), '300 email gốc', 12, 'end', BLUE, 600)
     s.label(ax.X(19.5), ax.Y(.78), '+ 20 siêu spam', 12, 'middle', CLAY, 600)
-    s.save('2-3-linfail', 'Linear regression trên nhãn 0/1: thêm 20 email siêu spam làm đường thoải xuống, ngưỡng 0.5 dịch từ 3.1 lên 6 link.')
+    s.save('2-3-linfail', 'Thêm 20 email siêu spam, ngưỡng của linear regression dịch từ 3.1 lên 6 link.')
 
 
 def sigmoid23():
@@ -475,7 +475,7 @@ def boundary23():
         s.label(ax.X(xr) + 6, ax.Y(-1.5) - 8, f'p = {p}', 11.5, 'start', TEXT if p == .5 else MUTED, 600 if p == .5 else 400)
     s.label(ax.x + ax.w + 14, ax.y + 30, 'spam', 12.5, 'start', CLAY, 600)
     s.label(ax.x + ax.w + 14, ax.y + 50, 'thư thường', 12.5, 'start', BLUE, 600)
-    s.save('2-3-boundary', 'Các mức xác suất của logistic regression là những đường thẳng song song; p = 0.5 là ranh giới.')
+    s.save('2-3-boundary', 'Các mức xác suất là những đường thẳng song song; p = 0.5 là ranh giới.')
 
 
 def loss23():
@@ -491,7 +491,7 @@ def loss23():
     for x0 in (50, 370):
         s.label(x0 + 250, 44, 'cross-entropy', 12, 'end', CLAY, 600)
         s.label(x0 + 250, 62, 'bình phương', 12, 'end', BLUE, 600)
-    s.save('2-3-loss', 'Với email spam bị đoán p nhỏ: cross-entropy phạt nặng và cho gradient lớn; bình phương cho gradient gần 0.')
+    s.save('2-3-loss', 'Spam bị đoán p nhỏ: cross-entropy cho gradient lớn, bình phương gần 0.')
 
 
 def odds23():
@@ -511,7 +511,7 @@ def odds23():
     s.label(ax.X(2) + 8, ax.Y((pt[0] + pt[1]) / 2), f'+{pt[1] - pt[0]:.2f}', 12.5, 'start', TEXT, 600)
     s.label(ax.X(8) + 8, ax.Y(pt[3]) + 16, f'+{pt[3] - pt[2]:.2f}', 12.5, 'start', TEXT, 600)
     s.label(ax.X(4.6), ax.Y(.2), 'mỗi link: odds × 3.08', 12.5, 'start', MUTED)
-    s.save('2-3-odds', 'Mỗi link nhân odds lên khoảng 3 lần, nhưng xác suất tăng nhiều ở giữa và gần như đứng yên khi đã gần 1.')
+    s.save('2-3-odds', 'Mỗi link nhân odds lên 3 lần, nhưng xác suất tăng chậm dần khi gần 1.')
 
 
 def threshold23():
@@ -529,7 +529,7 @@ def threshold23():
     for t, lab in [(.3, '0.3'), (.5, '0.5'), (.9, '0.9')]:
         s.line(ax.X(t), ax.y, ax.X(t), ax.y + ax.h, TEXT if t == .5 else FAINT, 1.4 if t == .5 else 1.1, None if t == .5 else '4 3')
         s.label(ax.X(t), ax.y + 2 - 8, lab, 11.5, color=TEXT if t == .5 else MUTED)
-    s.save('2-3-threshold', '100 email test theo xác suất dự đoán: email bên phải ngưỡng bị chặn; dời ngưỡng là đổi số thư thật bị chặn nhầm lấy số spam lọt.')
+    s.save('2-3-threshold', 'Dời ngưỡng là đổi số thư thật bị chặn nhầm lấy số spam lọt qua.')
 
 
 def weights23():
@@ -557,7 +557,7 @@ def weights23():
         s.box(x0, 28, side, side, SOFT_LINE, 'none', r=2, width=.8)
         s.box(x0, 104, side, side, SOFT_LINE, 'none', r=2, width=.8)
     s.label(320, 172, 'xanh: nét mực ở đây tăng điểm lớp · cam: giảm điểm', 11.5, color=MUTED)
-    s.save('2-3-weights', 'Hàng trên: ảnh trung bình của mỗi chữ số. Hàng dưới: 64 trọng số của lớp đó xếp thành ảnh 8 × 8.')
+    s.save('2-3-weights', 'Trên: ảnh trung bình mỗi chữ số. Dưới: 64 trọng số của lớp đó.')
 
 
 def softmax23():
@@ -618,7 +618,7 @@ def k24():
         for lab, col in [(0, BLUE), (1, CLAY)]:
             ax.dots(X[y == lab, 0], X[y == lab, 1], col, 2.4)
         s.label(x0 + 145, 12, f'k = {k}', 14, color=TEXT, weight=600)
-    s.save('2-4-k', 'Cùng 200 điểm: k = 1 vẽ ranh giới bám từng điểm nhiễu; k = 15 cho ranh giới mượt.')
+    s.save('2-4-k', 'k = 1 bám từng điểm nhiễu; k = 15 cho ranh giới mượt.')
 
 
 def vote24():
@@ -645,7 +645,7 @@ def vote24():
     s.label(500, 92, 'xanh: C, D, E', 13, 'start', BLUE, 600)
     s.label(500, 130, 'k = 3: B, E, A', 13, 'start', TEXT)
     s.label(500, 150, '→ đỏ thắng 2–1', 13, 'start', CLAY, 600)
-    s.save('2-4-knn-vote', 'Truy vấn q = (2, 2), số trên nét đứt là d²: ba láng giềng gần nhất B, E, A; đỏ thắng 2–1.')
+    s.save('2-4-knn-vote', 'Ba láng giềng gần q nhất là B, E, A; đỏ thắng 2–1.')
 
 
 def units24():
@@ -671,7 +671,7 @@ def units24():
         s.circle(cx, cy, 6, TEXT, PAPER, 2)
         s.label(cx - 10, cy + 16, 'q', 13, 'end', TEXT, 600)
     s.line(320, 30, 320, 220, SOFT_LINE, 1)
-    s.save('2-4-units', 'Cùng ba hồ sơ, chỉ đổi giờ sang phút: B từ cách q một đơn vị thành cách 60, nên A thành láng giềng duy nhất.')
+    s.save('2-4-units', 'Đổi giờ sang phút: B từ cách q 1 thành cách 60.')
 
 
 def metrics24():
@@ -697,7 +697,7 @@ def metrics24():
             s.arrow(cx, cy, cx - .2 * sc, cy - .9 * sc, MUTED, 1.4)
             s.label(cx - .2 * sc - 6, cy - .9 * sc, 'C', 12.5, 'end', MUTED, 600)
         s.label(cx, 192, title, 14, color=col, weight=600)
-    s.save('2-4-metrics', 'Euclid và Manhattan: các điểm cách gốc đúng 1. Cosine chỉ xét hướng: A = 2B có khoảng cách 0 tới B, còn C khác hướng thì xa.')
+    s.save('2-4-metrics', 'Các điểm cách gốc đúng 1 theo Euclid, Manhattan; cosine chỉ xét hướng.')
 
 
 def curse24():
@@ -712,7 +712,7 @@ def curse24():
         s.circle(ax.X(x), ax.Y(v), 4.5, CLAY, PAPER, 2)
         s.mono(ax.X(x) + dx, ax.Y(v) + dy, f'{v:g}', 12, anc, TEXT)
     s.label(ax.x - 8, ax.y - 18, 'cạnh khối chứa 10% dữ liệu', 11.5, 'start', FAINT)
-    s.save('2-4-curse', 'Muốn gom 10% dữ liệu rải đều, cạnh của khối lân cận dài 0.1 ở 1 chiều nhưng 0.98 ở 100 chiều.')
+    s.save('2-4-curse', 'Gom 10% dữ liệu: cạnh khối dài 0.1 ở 1 chiều, 0.98 ở 100 chiều.')
 
 
 def wine24():
@@ -734,7 +734,7 @@ def wine24():
             if k_ == 0:
                 s.mono(x0 - 12, y, names[j], 11.5, 'end', TEXT)
     s.label(320, 218, 'phần của mỗi cột trong bình phương khoảng cách (6 cột lớn nhất trên 13)', 11.5, color=MUTED)
-    s.save('2-4-wine', 'Bộ wine: chưa chuẩn hóa, proline chiếm 99.8% bình phương khoảng cách; sau StandardScaler mỗi cột góp như nhau.')
+    s.save('2-4-wine', 'Chưa chuẩn hóa, cột proline chiếm 99.8% khoảng cách.')
 
 
 FIGS24 = {'2-4-k': k24, '2-4-knn-vote': vote24, '2-4-units': units24, '2-4-metrics': metrics24, '2-4-curse': curse24,
@@ -771,7 +771,7 @@ def partition25():
         for lab, col in [(0, BLUE), (1, CLAY)]:
             ax.dots(X[y == lab, 0], X[y == lab, 1], col, 2.4)
         s.label(x0 + 145, 12, f'max_depth = {dpt}', 14, color=TEXT, weight=600)
-    s.save('2-5-partition', 'Cây chia mặt phẳng thành các hộp có cạnh song song với trục; sâu 8 thì hộp nhỏ dần để ôm từng điểm nhiễu.')
+    s.save('2-5-partition', 'Cây chia mặt phẳng thành các hộp; càng sâu, hộp càng ôm từng điểm nhiễu.')
 
 
 def tree25():
@@ -796,7 +796,7 @@ def tree25():
         mal, ben = int(round(v[0])), int(round(v[1]))
         lab, col = ('lành tính', GREEN) if ben > mal else ('ác tính', CLAY)
         leaf(s, *pos[i], lab, f'{mal} ác · {ben} lành', col)
-    s.save('2-5-tree', 'Cây độ sâu 2 học trên bộ breast cancer (569 mẫu): mỗi lá ghi số mẫu ác tính và lành tính rơi vào đó.')
+    s.save('2-5-tree', 'Cây độ sâu 2 trên bộ breast cancer; mỗi lá ghi số mẫu ác tính, lành tính.')
 
 
 def gini25():
@@ -810,7 +810,7 @@ def gini25():
     s.circle(ax.X(.25), ax.Y(.375), 4.5, CLAY, PAPER, 2)
     s.mono(ax.X(.25) + 4, ax.Y(.375) + 18, '0.375', 11.5, 'start', CLAY)
     s.label(ax.X(1) + 12, ax.Y(0) - 4, 'nút thuần', 12, 'start', MUTED)
-    s.save('2-5-gini', 'Gini và entropy của nút hai lớp: bằng 0 khi nút thuần, lớn nhất khi hai lớp chia đều; 3 mẫu lớp 0, 1 mẫu lớp 1 cho Gini 0.375.')
+    s.save('2-5-gini', 'Gini và entropy bằng 0 khi nút thuần, lớn nhất khi hai lớp chia đều.')
 
 
 def splits25():
@@ -829,7 +829,7 @@ def splits25():
             s.mono(x0 + 2, y + 30, f'Gini {g:g}', 11.5, 'start', MUTED)
         s.mono(560, y, f'Δ = {delta:g}', 14, 'end', CLAY if r == 0 else MUTED, 600 if r == 0 else 400)
     s.label(560, 20, 'cha: 5+, 5−, Gini 0.5', 11.5, 'end', FAINT)
-    s.save('2-5-splits', 'Hai cách chia cùng nút 5+, 5−: B có một lá thuần nhưng chỉ 2 mẫu; A giảm Gini nhiều hơn.')
+    s.save('2-5-splits', 'B có một lá thuần nhưng chỉ 2 mẫu; A giảm Gini nhiều hơn.')
 
 
 def stump25():
@@ -845,7 +845,7 @@ def stump25():
         s.mono(ax.X(4.4) + 30, y, f'giảm Gini {g:g}', 12.5, 'start', CLAY if t_ == 2.5 else MUTED, 600 if t_ == 2.5 else 400)
     for xv in (1, 2, 3, 4):
         s.mono(ax.X(xv), 188, str(xv), 11.5, 'middle', FAINT)
-    s.save('2-5-stump', 'Ba ngưỡng trên bốn mẫu x = 1, 2, 3, 4 (nhãn 0, 0, 1, 1): chỉ t = 2.5 cho hai lá thuần.')
+    s.save('2-5-stump', 'Trong ba ngưỡng, chỉ t = 2.5 cho hai lá thuần.')
 
 
 def stumptree25():
@@ -875,7 +875,7 @@ def staircase25():
         s.line(ax.X(0), ax.Y(0), ax.X(1), ax.Y(1), TEXT, 1.4, '5 4')
         s.box(ax.x, ax.y, ax.w, ax.h, LINE, 'none', r=0, width=1)
         s.label(x0 + 95, 14, f'max_depth = {dpt} · {m.get_n_leaves()} lá', 13.5, color=TEXT, weight=600)
-    s.save('2-5-staircase', 'Ranh giới thật là đường chéo x₂ = x₁ (nét đứt): cây chỉ xấp xỉ được bằng bậc thang, càng sát càng nhiều lá.')
+    s.save('2-5-staircase', 'Cây chỉ xấp xỉ được đường chéo bằng bậc thang.')
 
 
 def xor25():
@@ -892,7 +892,7 @@ def xor25():
             s.line(ax.x, ax.Y(.5), ax.x + ax.w, ax.Y(.5), TEXT, 1.4, '5 4')
         s.label(x0 + 70, 14, title, 13.5, color=TEXT, weight=600)
         s.mono(x0 + 70, 188, 'giảm Gini = 0', 12, 'middle', CLAY)
-    s.save('2-5-xor', 'XOR: chia ở gốc theo x₁ hay x₂ đều để mỗi bên một mẫu mỗi lớp, nên giảm Gini bằng 0 dù tầng sau tách được hết.')
+    s.save('2-5-xor', 'XOR: chia ở gốc theo trục nào Gini cũng không giảm.')
 
 
 def extrap25():
@@ -912,7 +912,7 @@ def extrap25():
     ax.step(xs, t.predict(xs[:, None]), CLAY, 2.2)
     s.label(ax.X(15) + 6, ax.Y(w * 15 + b), 'tuyến tính', 12, 'start', BLUE, 600)
     s.label(ax.X(15) + 6, ax.Y(t.predict([[15]])[0]), 'cây', 12, 'start', CLAY, 600)
-    s.save('2-5-extrapolate', 'Cây hồi quy là hằng số từng khúc: ra ngoài vùng train nó giữ nguyên giá trị lá cuối, còn đường thẳng kéo dài xu hướng.')
+    s.save('2-5-extrapolate', 'Ngoài vùng train, cây giữ nguyên giá trị lá cuối; đường thẳng kéo dài xu hướng.')
 
 
 FIGS25 = {'2-5-partition': partition25, '2-5-tree': tree25, '2-5-gini': gini25, '2-5-splits': splits25, '2-5-stump': stump25,
@@ -930,7 +930,7 @@ def variance26():
         ax.hline(rho, col, 1, '4 4')
         s.label(ax.X(100) + 8, ax.Y(rho + (1 - rho) / 100), f'ρ = {rho}', 12.5, 'start', col, 600)
     s.label(ax.X(52), ax.Y(.5) - 10, 'sàn ρσ²', 11.5, 'start', MUTED)
-    s.save('2-6-variance', 'Phương sai của trung bình B cây (σ² = 1): thêm cây chỉ kéo về mức sàn ρσ²; giảm tương quan mới hạ được sàn.')
+    s.save('2-6-variance', 'Thêm cây chỉ kéo phương sai về mức sàn ρσ²; giảm tương quan mới hạ được sàn.')
 
 
 def bootstrap26():
@@ -950,7 +950,7 @@ def bootstrap26():
         s.mono(x + 22, 164, '×' + str(cnt[i]), 11.5, 'middle', MUTED)
     s.label(400, 120, 'OOB của cây này', 13, 'start', CLAY, 600)
     s.mono(400, 140, ', '.join(str(i) for i in range(5) if cnt[i] == 0), 13, 'start', CLAY)
-    s.save('2-6-bootstrap', f'Một lượt bootstrap từ code bài: rút {", ".join(map(str, draw))}; mẫu 3 và 4 lặp hai lần, mẫu 0 và 1 không được rút nên là OOB.')
+    s.save('2-6-bootstrap', 'Một lượt bootstrap: mẫu 3, 4 lặp hai lần; mẫu 0, 1 không được rút nên là OOB.')
 
 
 def oobtable26():
@@ -970,7 +970,7 @@ def oobtable26():
             else:
                 s.box(x, y, 52, 36, CLAY, 'none', r=6, width=1.5, dash='4 3')
                 s.mono(x + 26, y + 18.5, 'OOB', 12, 'middle', CLAY)
-    s.save('2-6-oob-table', 'Ví dụ tính tay: ba tập bootstrap trên 5 mẫu; ô nét đứt là mẫu cây đó chưa thấy, dùng để chấm OOB.')
+    s.save('2-6-oob-table', 'Ô nét đứt là mẫu cây đó chưa thấy, dùng để chấm OOB.')
 
 
 def vote26():
@@ -991,7 +991,7 @@ def vote26():
     s.line(ax.X(.5), ax.y - 4, ax.X(.5), ax.y + ax.h, FAINT, 1.2, '4 3')
     s.label(470, ax.Y(2), 'bỏ phiếu: 1 trên 3', 12.5, 'start', BLUE, 600)
     s.label(470, ax.Y(2) + 20, '→ lớp 0', 12.5, 'start', BLUE, 600)
-    s.save('2-6-vote', 'Ba cây cho xác suất 0.9, 0.4, 0.4: trung bình xác suất chọn lớp 1, bỏ phiếu chọn lớp 0.')
+    s.save('2-6-vote', 'Trung bình xác suất chọn lớp 1; bỏ phiếu chọn lớp 0.')
 
 
 def trees26():
@@ -1010,7 +1010,7 @@ def trees26():
         for lab, col in [(0, BLUE), (1, CLAY)]:
             ax.dots(X[y == lab, 0], X[y == lab, 1], col, 2, opacity=.85)
         s.label(x0 + 140, y0 - 13, title, 13, color=TEXT, weight=600 if k_ == 3 else 400)
-    s.save('2-6-trees', 'Ba cây trong cùng một rừng, mỗi cây học một tập bootstrap nên ranh giới khác nhau; trung bình 200 cây cho ranh giới mượt hơn.')
+    s.save('2-6-trees', 'Mỗi cây học một tập bootstrap nên ranh giới khác nhau; trung bình 200 cây mượt hơn.')
 
 
 def ntrees26():
@@ -1033,7 +1033,7 @@ def ntrees26():
         k = 7 if mf else 9
         s.label(ax.X(Bs[k]), ax.Y(acc[k]) + (-12 if mf else 16), lab, 12, 'middle', col, 600)
     s.label(ax.x - 8, ax.y - 12, 'OOB accuracy', 11.5, 'start', FAINT)
-    s.save('2-6-ntrees', 'Breast cancer: OOB accuracy theo số cây. Với √d feature mỗi nút, sau khoảng 80 cây đường gần như đứng yên; bagging thuần cần nhiều cây hơn mới bắt kịp.')
+    s.save('2-6-ntrees', 'OOB accuracy theo số cây: sau khoảng 80 cây gần như đứng yên.')
 
 
 FIGS26 = {'2-6-variance': variance26, '2-6-bootstrap': bootstrap26, '2-6-oob-table': oobtable26, '2-6-vote': vote26,
@@ -1058,7 +1058,7 @@ def fitstages27():
         ax.line(xs, np.sin(xs), MUTED, 1, '4 3')
         ax.step(xs, stages[M - 1], CLAY, 2)
         s.label(x0 + 95, 12, f'{M} cây', 13.5, color=TEXT, weight=600)
-    s.save('2-7-fit-stages', 'Cộng dần các stump: 1 cây chỉ là một bậc, 10 cây đã theo dáng sóng, 100 cây bám sát đường cong (nét đứt là hàm thật).')
+    s.save('2-7-fit-stages', '1 cây là một bậc, 10 cây theo dáng sóng, 100 cây bám sát đường cong.')
 
 
 def stages27():
@@ -1076,7 +1076,7 @@ def stages27():
         s.label(ax.X(3.2) + 8, ax.Y(tgt), f'{lab}: target {tgt}', 12, 'start', col, 600)
     for i, e in enumerate(mse):
         s.mono(ax.X(i), ax.y + ax.h + 30, f'MSE {e:g}', 11.5, 'middle', MUTED)
-    s.save('2-7-stages', 'Bốn mẫu target 1, 1, 3, 3, learning rate 0.5: mỗi cây sửa một nửa phần còn thiếu, MSE giảm 1 → 0.25 → 0.0625 → 0.015625.')
+    s.save('2-7-stages', 'Mỗi cây sửa một nửa phần còn thiếu; MSE giảm 4 lần sau mỗi cây.')
 
 
 def hand27():
@@ -1097,7 +1097,7 @@ def hand27():
     s.mono(500, 90, '−3  −2  2  3', 12, 'start', BLUE)
     s.label(500, 130, 'MSE', 12, 'start', MUTED)
     s.mono(500, 150, '6.5 → 1.81', 12.5, 'start', TEXT)
-    s.save('2-7-hand', 'Ví dụ tính tay: F₀ = 4, stump chia ở 2.5 khớp phần dư; cộng một nửa bản sửa cho F₁, MSE từ 6.5 xuống 1.81.')
+    s.save('2-7-hand', 'Ví dụ tính tay: sau một cây, MSE từ 6.5 xuống 1.81.')
 
 
 def rfboost27():
@@ -1123,7 +1123,7 @@ def rfboost27():
     s.label(495, 110, 'mỗi cây sửa phần dư của tổng trước nó', 11.5, color=MUTED)
     s.label(495, 160, 'nối tiếp, cây nông', 12, color=MUTED)
     s.label(495, 180, 'giảm bias', 12, color=CLAY, weight=600)
-    s.save('2-7-rf-vs-boost', 'Random forest học các cây độc lập rồi lấy trung bình; boosting học các cây nối tiếp, cây sau sửa lỗi của tổng trước nó.')
+    s.save('2-7-rf-vs-boost', 'Random forest: cây độc lập rồi lấy trung bình. Boosting: cây sau sửa lỗi cây trước.')
 
 
 def pseudo27():
@@ -1138,7 +1138,7 @@ def pseudo27():
         else:
             ax.line(r, f, col, 2.4)
         s.label(x0 + 120, 14, title, 13, color=col, weight=600)
-    s.save('2-7-pseudo', 'Pseudo-residual mà cây phải khớp: với bình phương là chính phần dư; với trị tuyệt đối chỉ còn ±1, nên outlier lệch xa không có tiếng nói lớn hơn.')
+    s.save('2-7-pseudo', 'Với trị tuyệt đối, phần cây phải khớp chỉ còn ±1, nên outlier không lấn át.')
 
 
 def earlystop27():
@@ -1155,7 +1155,7 @@ def earlystop27():
     s.label(ax.X(300) + 8, ax.Y(va[-1]), f'validation {va[-1]:.2f}', 12, 'start', CLAY, 600)
     s.label(ax.X(300) + 8, ax.Y(tr[-1]) - 6, f'train {tr[-1]:.2f}', 12, 'start', BLUE, 600)
     s.label(ax.x - 8, ax.y - 12, 'MSE', 11.5, 'start', FAINT)
-    s.save('2-7-early-stop', 'Friedman1 nhiễu 4, cây sâu 3: MSE train giảm mãi; MSE validation thấp nhất ở vòng 31 rồi tăng lại.')
+    s.save('2-7-early-stop', 'MSE train giảm mãi; MSE validation thấp nhất ở vòng 31.')
 
 
 def lr27():
@@ -1183,7 +1183,7 @@ def lr27():
         xl = 12 if lr == .1 else 120
         s.label(ax.X(L(xl)) + 8, ax.Y(v[xl]) - 6, f'η = {lr}', 12.5, 'start', col, 600)
     s.label(ax.x - 8, ax.y - 12, 'MSE validation', 11.5, 'start', FAINT)
-    s.save('2-7-lr', 'Friedman1, cây sâu 3: learning rate 0.01 cần nhiều cây hơn hẳn 0.1 mới tới đáy (chấm tròn là vòng tốt nhất).')
+    s.save('2-7-lr', 'Learning rate 0.01 cần nhiều cây hơn hẳn 0.1 mới tới đáy.')
 
 
 def oof27():
@@ -1239,7 +1239,7 @@ def margin28():
     s.label(500, 92, 'f(x) = ±1 (nét đứt)', 12.5, 'start', MUTED)
     s.label(500, 130, 'khoanh: support vector', 12.5, 'start', MUTED)
     s.mono(500, 160, f'lề = 2/‖w‖ = {2 / np.linalg.norm(w):.2f}', 12.5, 'start', TEXT)
-    s.save('2-8-margin', 'SVM lề cứng: vạch f = 0 nằm giữa hai đường lề; chỉ các điểm khoanh tròn trên lề quyết định vị trí vạch.')
+    s.save('2-8-margin', 'Chỉ các điểm nằm trên lề (khoanh tròn) quyết định vị trí vạch.')
 
 
 def hinge28():
@@ -1253,7 +1253,7 @@ def hinge28():
     s.label(ax.X(-1.6), ax.Y(2.9) + 4, 'hinge', 12.5, 'start', CLAY, 600)
     s.label(ax.X(3) + 8, ax.Y(np.log1p(np.exp(-3)) / math.log(2)) - 8, 'log loss', 12, 'start', BLUE, 600)
     s.label(ax.X(3) + 8, ax.Y(0) + 6, 'hinge = 0', 12, 'start', CLAY, 600)
-    s.save('2-8-hinge', 'Hinge loss bằng đúng 0 khi y·f(x) ≥ 1; log loss (chia ln 2 để cùng mốc) thì luôn dương, nên mọi điểm đều có tiếng nói.')
+    s.save('2-8-hinge', 'Hinge loss bằng 0 khi y·f(x) ≥ 1; log loss thì luôn dương.')
 
 
 def c28():
@@ -1275,7 +1275,7 @@ def c28():
             s.circle(ax.X(X[i, 0]), ax.Y(X[i, 1]), 6.5, TEXT, 'none', 1)
         s.label(x0 + 130, 14, f'C = {C:g} · {len(m.support_)} support vector', 13, color=TEXT, weight=600)
     s.line(320, 20, 320, 276, SOFT_LINE, 1)
-    s.save('2-8-c', 'Cùng dữ liệu chồng nhau: C nhỏ chịu nhiều vi phạm, lề rộng, nhiều support vector; C lớn ép lề hẹp quanh vùng chồng lấn.')
+    s.save('2-8-c', 'C nhỏ: lề rộng, chịu nhiều vi phạm. C lớn: lề hẹp.')
 
 
 def gamma28():
@@ -1295,7 +1295,7 @@ def gamma28():
         for lab, col in [(0, BLUE), (1, CLAY)]:
             ax.dots(X[y == lab, 0], X[y == lab, 1], col, 2)
         s.label(x0 + 95, 12, f'γ = {g:g}', 13.5, color=TEXT, weight=600)
-    s.save('2-8-gamma', 'SVM RBF, C = 1: γ nhỏ cho ranh giới gần thẳng; γ = 1 theo dáng hai mặt trăng; γ = 100 khoanh từng điểm, dấu hiệu overfit.')
+    s.save('2-8-gamma', 'γ nhỏ: gần thẳng; γ = 1: theo dáng dữ liệu; γ = 100: khoanh từng điểm.')
 
 
 def kernel28():
@@ -1318,7 +1318,7 @@ def kernel28():
     ax2.hline(1.6 ** 2 / 1.0 * .6 + .4, TEXT, 1.6, '6 4')
     s.label(490, 18, 'sau φ(x) = (x, x²): một đường ngang', 12.5, color=TEXT, weight=600)
     s.mono(490, 210, '(x, x²)', 12, 'middle', MUTED)
-    s.save('2-8-kernel', 'Hai lớp xen kẽ trên một trục không tách được bằng một ngưỡng; thêm tọa độ x² thì một đường thẳng tách được ngay.')
+    s.save('2-8-kernel', 'Thêm tọa độ x² thì một đường thẳng tách được hai lớp.')
 
 
 def hand28():
@@ -1334,7 +1334,7 @@ def hand28():
     s.label(480, 124, '(3, 2): ngoài lề, hinge 0', 12, 'start', GREEN, 600)
     s.label(480, 146, '(2, 1.1): trong lề, hinge 0.6', 12, 'start', CLAY, 600)
     s.label(480, 168, '(2, 1): ngay trên vạch', 12, 'start', MUTED, 600)
-    s.save('2-8-hand', 'Ví dụ tính tay: vạch 3x₁ + 4x₂ = 10 và hai đường lề; điểm (2, 1.1) đúng phía nhưng nằm trong lề nên vẫn chịu hinge 0.6.')
+    s.save('2-8-hand', 'Điểm (2, 1.1) đúng phía nhưng nằm trong lề nên vẫn chịu hinge 0.6.')
 
 
 FIGS28 = {'2-8-margin': margin28, '2-8-hinge': hinge28, '2-8-c': c28, '2-8-gamma': gamma28, '2-8-kernel': kernel28, '2-8-hand': hand28}
@@ -1367,7 +1367,7 @@ def pca29():
         e = u * 2 * math.sqrt(lam)
         s.arrow(ax.X(0), ax.Y(0), ax.X(e[0]), ax.Y(e[1]), col, 2.4)
         s.label(500, 90 if lab == 'PC1' else 114, f'{lab} · λ = {lam:.2f}', 12.5, 'start', col, 600)
-    s.save('2-9-pca', 'Đám mây đã trừ trung bình: PC1 theo hướng trải dài nhất, PC2 vuông góc; nét mảnh là phép chiếu xuống PC1.')
+    s.save('2-9-pca', 'PC1 theo hướng trải dài nhất, PC2 vuông góc với nó.')
 
 
 def hand29():
@@ -1387,7 +1387,7 @@ def hand29():
     s.label(490, 120, 'λ₁ ≈ 3.427 · λ₂ ≈ 0.073', 12, 'start', TEXT)
     s.label(490, 142, 'PC1 giữ 97.9%', 12, 'start', CLAY, 600)
     s.label(490, 172, 'vòng rỗng: điểm tái tạo', 11.5, 'start', MUTED)
-    s.save('2-9-hand', 'Ví dụ tính tay: bốn điểm gần một đường thẳng; chiếu xuống PC1 rồi tái tạo, mỗi điểm chỉ lệch một đoạn ngắn.')
+    s.save('2-9-hand', 'Chiếu xuống PC1 rồi tái tạo, mỗi điểm chỉ lệch một đoạn ngắn.')
 
 
 def label29():
@@ -1412,7 +1412,7 @@ def label29():
             k = lab == c_
             for val, j in zip(v[k], jit(k.sum(), 9 + c_ + r, 7)):
                 s.circle(490 + val / sc * 125, y0 + j + (-9 if c_ == 0 else 9) * r, 2.2, col, None, 0, .75)
-    s.save('2-9-label', 'PCA không biết nhãn: PC1 chọn hướng nhiễu trải rộng nên hai lớp trộn lẫn; hướng phương sai nhỏ PC2 mới tách được chúng.')
+    s.save('2-9-label', 'Hướng phương sai lớn PC1 trộn hai lớp; PC2 mới tách được.')
 
 
 def scree29():
@@ -1432,7 +1432,7 @@ def scree29():
         s.mono(ax.X(k) + 5, ax.y + ax.h - 10, f'{k}', 11.5, 'start', col)
         s.label(ax.X(64) + 8, ax.Y(c[-1]) + (-8 if name == 'thô' else 8), name, 12.5, 'start', col, 600)
     s.label(ax.x - 8, ax.y - 12, 'phương sai giữ lại (tích lũy)', 11.5, 'start', FAINT)
-    s.save('2-9-scree', 'Digits: giữ 95% phương sai cần 29 thành phần trên dữ liệu thô nhưng 40 sau khi chuẩn hóa từng pixel.')
+    s.save('2-9-scree', 'Giữ 95% phương sai: 29 thành phần trên dữ liệu thô, 40 sau khi chuẩn hóa.')
 
 
 def recon29():
@@ -1448,7 +1448,7 @@ def recon29():
         for j, k in enumerate(ks):
             img = X[r] if k == 64 else PCA(k).fit(X).inverse_transform(PCA(k).fit(X).transform(X[r:r + 1]))[0]
             gray_img(s, 132 + j * 100, 30 + i * 66, img.reshape(8, 8), 7)
-    s.save('2-9-recon', 'Ảnh chữ số 8 × 8 tái tạo từ k thành phần chính: 2 thành phần chỉ còn vệt mờ, 10 đã đọc được, 29 gần như ảnh gốc.')
+    s.save('2-9-recon', 'Tái tạo từ 2, 10, 29 thành phần chính.')
 
 
 def tsne29():
@@ -1470,7 +1470,7 @@ def tsne29():
             s.mono(ax.X(m[0]), ax.Y(m[1]) + .5, str(d), 12, 'middle', CLAY, 600)
         s.label(x0 + 135, 14, title, 13.5, color=TEXT, weight=600)
     s.line(320, 20, 320, 260, SOFT_LINE, 1)
-    s.save('2-9-tsne', 'Digits xuống 2 chiều: PCA để các chữ số chồng lên nhau, t-SNE tách thành cụm; khoảng cách giữa các cụm t-SNE không mang nghĩa.')
+    s.save('2-9-tsne', 'PCA để các chữ số chồng lên nhau; t-SNE tách thành cụm.')
 
 
 FIGS29 = {'2-9-pca': pca29, '2-9-hand': hand29, '2-9-label': label29, '2-9-scree': scree29, '2-9-recon': recon29, '2-9-tsne': tsne29}
@@ -1504,7 +1504,7 @@ def assign210():
             cross(s, X(c_), y - 20, col)
             s.mono(X(c_), y - 36, f'{c_:g}', 11, 'middle', col)
         s.mono(500, y, f'inertia {J}', 12.5, 'start', TEXT if r else MUTED, 600 if r else 400)
-    s.save('2-10-kmeans-assign', 'Một vòng Lloyd trên bốn điểm 0, 1, 5, 6: gán theo tâm gần nhất, rồi dời tâm (dấu ×) về trung bình nhóm; inertia từ 2 xuống 1.')
+    s.save('2-10-kmeans-assign', 'Một vòng Lloyd: gán điểm về tâm gần nhất, rồi dời tâm về trung bình nhóm.')
 
 
 def lloyd210():
@@ -1521,7 +1521,7 @@ def lloyd210():
         for c_, col in zip(cen, [BLUE, CLAY]):
             cross(s, X(c_), y - 20, col, 5)
         s.mono(530, y, f'J = {J:g}', 12.5, 'start', TEXT if r == 3 else MUTED)
-    s.save('2-10-lloyd', 'Ví dụ tính tay với khởi tạo tệ (tâm 1 và 2): sau hai vòng điểm 2 đổi cụm, J giảm 194 → 50 → 15 → 2.5.')
+    s.save('2-10-lloyd', 'Khởi tạo tệ: sau hai vòng điểm 2 đổi cụm, J giảm từ 194 xuống 2.5.')
 
 
 def moons210():
@@ -1541,7 +1541,7 @@ def moons210():
         s.label(x0 + 135, 12, name, 13.5, color=TEXT, weight=600)
         s.mono(x0 + 135, 28, f'ARI {ari:.2f} · silhouette {sil:.2f}', 11.5, 'middle', MUTED)
     s.line(320, 10, 320, 230, SOFT_LINE, 1)
-    s.save('2-10-moons', 'Hai trăng khuyết (code bài): K-Means cắt theo tâm nên trộn hai trăng; DBSCAN theo mật độ tách đúng, dù silhouette chấm thấp hơn.')
+    s.save('2-10-moons', 'K-Means trộn hai trăng khuyết; DBSCAN tách đúng theo mật độ.')
 
 
 def density210():
@@ -1564,7 +1564,7 @@ def density210():
         s.circle(x, y, 7, col)
         s.mono(x, y + 22, f'{v:g}', 11.5, 'middle', MUTED)
         s.label(x, y + 44, nm, 12.5, color=col, weight=600)
-    s.save('2-10-density', 'eps = 0.16, min_samples = 3: 0.1 và 0.2 là core (đoạn ngang là bán kính quanh chúng); 0 và 0.35 là border, vẫn vào cụm; 3 là noise.')
+    s.save('2-10-density', '0.1 và 0.2 là core; 0 và 0.35 là border, vẫn vào cụm; 3 là noise.')
 
 
 def elbow210():
@@ -1586,7 +1586,7 @@ def elbow210():
         b = 4
         s.circle(ax.X(b), ax.Y(v[b - 2]), 6.5, TEXT, 'none', 1.4)
         s.label(x0 - 8, 16, title, 13, 'start', col, 600)
-    s.save('2-10-elbow', 'Bốn cụm sinh sẵn: inertia giảm mãi theo K nhưng gãy khúc ở K = 4; silhouette cao nhất cũng ở K = 4.')
+    s.save('2-10-elbow', 'Inertia gãy khúc ở K = 4; silhouette cũng cao nhất ở K = 4.')
 
 
 def linkage210():
@@ -1598,7 +1598,7 @@ def linkage210():
     s.label((X(1) + X(3)) / 2, 128, 'single: 2', 12.5, color=GREEN, weight=600)
     s.curve(X(0), 98, X(10), 98, -.3, SAND, 1.8, head=False)
     s.label((X(0) + X(10)) / 2, 18, 'complete: 10', 12.5, color=SAND, weight=600)
-    s.save('2-10-linkage', 'Hai cụm {0, 1} và {3, 10}: single linkage đo cặp gần nhất (2), complete linkage đo cặp xa nhất (10).')
+    s.save('2-10-linkage', 'Single linkage đo cặp gần nhất (2), complete linkage đo cặp xa nhất (10).')
 
 
 def circles210():
@@ -1619,7 +1619,7 @@ def circles210():
         a = adjusted_rand_score(y, lab)
         s.mono(x0 + 105, 28, f'ARI {abs(a) if abs(a) < .005 else a:.2f}', 11.5, 'middle', MUTED)
     s.line(320, 10, 320, 240, SOFT_LINE, 1)
-    s.save('2-10-circles', 'Hai vòng đồng tâm: K-Means cắt đôi theo một đường thẳng; spectral clustering trên đồ thị láng giềng tách đúng từng vòng.')
+    s.save('2-10-circles', 'K-Means cắt đôi hai vòng tròn; spectral clustering tách đúng từng vòng.')
 
 
 FIGS210 = {'2-10-kmeans-assign': assign210, '2-10-lloyd': lloyd210, '2-10-moons': moons210, '2-10-density': density210,
@@ -1654,7 +1654,7 @@ def cyclic211():
     s.mono(cx + 40, cy - R - 12, '0–23: 0.26', 11.5, 'start', CLAY)
     s.mono(cx + 8, cy + 30, '0–12: 2', 11.5, 'start', BLUE)
     s.label(cx, 14, '(sin, cos) trên vòng tròn', 13, color=TEXT, weight=600)
-    s.save('2-11-cyclic', 'Số giờ thô đặt 23 giờ xa 0 giờ nhất; mã hóa (sin, cos) đặt chúng cạnh nhau trên vòng tròn.')
+    s.save('2-11-cyclic', 'Mã hóa (sin, cos) đặt 23 giờ cạnh 0 giờ trên vòng tròn.')
 
 
 def time211():
@@ -1674,7 +1674,7 @@ def time211():
         s.line(x0, y - 6, x0, y + 6, col, 2); s.line(x1, y - 6, x1, y + 6, col, 2)
         s.mono(470, y, lab, 12, 'start', TEXT)
         s.label(110, y, note, 12, 'end', col, 600)
-    s.save('2-11-time', 'Dự đoán giờ 3 của cửa hàng A: lag và rolling sau shift(1) chỉ dùng giờ 1–2; rolling thẳng ôm luôn doanh số giờ 3 cần dự đoán.')
+    s.save('2-11-time', 'Sau shift(1), lag và rolling chỉ dùng giờ trước giờ cần dự đoán.')
 
 
 def log211():
@@ -1688,7 +1688,7 @@ def log211():
         for h, a, b in zip(hist, edges[:-1], edges[1:]):
             s.rect(ax.X(a) + .5, ax.Y(h), max(ax.X(b) - ax.X(a) - 1, .5), ax.Y(0) - ax.Y(h), 'none', col, 1, .75, 0)
         s.label(x0 + 130, 14, title, 13, color=col, weight=600)
-    s.save('2-11-log', 'Cùng 3000 giá trị thu nhập: phân phối gốc dồn sát 0 với đuôi dài; sau log(1 + x) gần cân đối, hợp với mô hình tuyến tính và kNN.')
+    s.save('2-11-log', 'Thu nhập dồn sát 0 với đuôi dài; sau log(1 + x) gần cân đối.')
 
 
 def te211():
@@ -1704,7 +1704,7 @@ def te211():
         s.circle(ax.X(nc), ax.Y(v), 5, col, PAPER, 2)
         s.mono(ax.X(nc) + (-8 if nm == 'A' else 0), ax.Y(v) + (-16 if nm == 'A' else -16), f'{nm}: {v:.2f}', 11.5, 'end' if nm == 'A' else 'middle', col)
     s.label(ax.X(60) + 8, ax.Y(.3), 'tỉ lệ chung 0.3', 11.5, 'start', FAINT)
-    s.save('2-11-te', 'Target encoding làm mượt với m = 10: giá trị ít mẫu bị kéo về tỉ lệ chung 0.3, nhiều mẫu thì tiến dần về trung bình riêng.')
+    s.save('2-11-te', 'Giá trị ít mẫu bị kéo về tỉ lệ chung; nhiều mẫu thì gần trung bình riêng.')
 
 
 FIGS211 = {'2-11-cyclic': cyclic211, '2-11-time': time211, '2-11-log': log211, '2-11-te': te211}
