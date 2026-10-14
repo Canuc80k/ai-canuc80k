@@ -13593,7 +13593,7 @@
     "4.1",
     "Batch phải giữ nguyên ý nghĩa và thứ tự",
     [
-     "model.eval() và torch.inference_mode() giải quyết hai việc. eval() đặt các tầng như Dropout và BatchNorm vào chế độ đánh giá; nó không tắt autograd. inference_mode() bỏ theo dõi gradient và một số bookkeeping để suy luận gọn hơn; nó không tự gọi eval()."
+     "eval() đặt các tầng như Dropout và BatchNorm vào chế độ đánh giá; nó không tắt autograd."
     ]
    ]
   ]
