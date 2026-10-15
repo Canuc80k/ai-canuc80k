@@ -177,7 +177,7 @@ def hand21():
     s.label(410, 80, 'nghiệm least squares, J = 0.056', 12, 'start', MUTED)
     s.mono(410, 120, 'ŷ = 1.53x + 0.67', 13, 'start', CLAY, 600)
     s.label(410, 140, 'sau 1 bước GD từ 0, J = 0.22', 12, 'start', MUTED)
-    s.save('2-1-hand', 'Ví dụ tính tay: nghiệm đóng và đường sau một bước gradient descent.')
+    s.save('2-1-hand', 'Ba điểm: nghiệm đóng và đường sau một bước gradient descent.')
 
 
 # ───────────────────────────── 2.2 ─────────────────────────────
@@ -312,7 +312,7 @@ def hand22():
             s.mono(ax.X(w), y - 12, mnum(w), 11.5, 'middle', col)
         s.label(x0 + 130, 16, title, 14, color=col, weight=600)
     s.line(320, 12, 320, 186, SOFT_LINE, 1)
-    s.save('2-2-hand', 'Ví dụ tính tay: vòng rỗng là z, chấm đặc là hệ số sau khi phạt.')
+    s.save('2-2-hand', 'Vòng rỗng là z, chấm đặc là hệ số sau khi phạt.')
 
 
 def collinear22():
@@ -1097,7 +1097,7 @@ def hand27():
     s.mono(500, 90, '−3  −2  2  3', 12, 'start', BLUE)
     s.label(500, 130, 'MSE', 12, 'start', MUTED)
     s.mono(500, 150, '6.5 → 1.81', 12.5, 'start', TEXT)
-    s.save('2-7-hand', 'Ví dụ tính tay: sau một cây, MSE từ 6.5 xuống 1.81.')
+    s.save('2-7-hand', 'Sau một cây, MSE từ 6.5 xuống 1.81.')
 
 
 def rfboost27():

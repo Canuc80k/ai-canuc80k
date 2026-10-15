@@ -13,7 +13,7 @@
    ],
    [
     "2.4",
-    "Ví dụ tính tay",
+    "Thuật toán",
     [
      "Ba láng giềng gần nhất là $B$, $E$, $A$: hai đỏ, một xanh, nên dự đoán đỏ."
     ]
@@ -114,7 +114,7 @@
    ],
    [
     "2.5",
-    "Ví dụ tính tay",
+    "Thế nào là một câu hỏi tốt",
     [
      "Dùng entropy cũng ra cùng kết luận: gain của A là 0.278, của B là 0.236."
     ]
@@ -270,10 +270,9 @@
    ],
    [
     "2.3",
-    "Ví dụ tính tay",
+    "Gradient và tự cài bằng NumPy",
     [
-     "Gradient theo $w$: $(p - y)\\,x = (0.731 - 1)\\cdot 2 = -0.538$.",
-     "Một bước gradient descent với learning rate $0.5$ cho $w = 1 + 0.5 \\cdot 0.538 = 1.269$: mô hình tự tin hơn vào nhãn đúng."
+     "Gradient theo $w$ là $(p - y)\\,x = (0.731 - 1)\\cdot 2 = -0.538$. Gradient âm nghĩa là tăng $w$ sẽ giảm loss: một bước với learning rate $0.5$ cho $w = 1 + 0.5 \\cdot 0.538 = 1.269$, và mô hình tự tin hơn vào nhãn đúng."
     ]
    ]
   ]
@@ -1683,7 +1682,7 @@
   "to": [
    [
     "2.10",
-    "Ví dụ tính tay",
+    "Khởi tạo tệ: tự sửa hay kẹt?",
     [
      "Trong hai chiều cũng vậy: ba điểm $A(0, 2)$, $B(0, 1)$, $C(1, 0)$ với tâm đầu đặt ở $A$ và $B$ dừng ở $\\{A\\}$, $\\{B, C\\}$ với $J = 1$, trong khi $\\{A, B\\}$, $\\{C\\}$ chỉ có $J = 0.5$."
     ]
@@ -3008,7 +3007,7 @@
    ],
    [
     "2.4",
-    "Ví dụ tính tay",
+    "Thuật toán",
     [
      "Ba láng giềng gần nhất là $B$, $E$, $A$: hai đỏ, một xanh, nên dự đoán đỏ."
     ]
@@ -3052,7 +3051,7 @@
    ],
    [
     "2.5",
-    "Ví dụ tính tay",
+    "Thế nào là một câu hỏi tốt",
     [
      "Dùng entropy cũng ra cùng kết luận: gain của A là 0.278, của B là 0.236."
     ]
@@ -3734,9 +3733,9 @@
    ],
    [
     "2.3",
-    "Ví dụ tính tay",
+    "Nhiều lớp: softmax regression",
     [
-     "Softmax với $\\mathbf{z} = (2, 1, 0)$: trừ max được $(0, -1, -2)$; lấy mũ được $(1,\\ 0.368,\\ 0.135)$; tổng là $1.503$; chia ra được $\\mathbf{p} = (0.665,\\ 0.245,\\ 0.090)$."
+     "Dòng đầu tính tay được: trừ max được $(0, -1, -2)$, lấy mũ được $(1,\\ 0.368,\\ 0.135)$, tổng là $1.503$, chia ra được $(0.665,\\ 0.245,\\ 0.090)$."
     ]
    ]
   ]
@@ -4853,10 +4852,10 @@
    ],
    [
     "2.1",
-    "Ví dụ tính tay",
+    "Gradient descent",
     [
-     "Giờ thử một bước gradient descent, xuất phát từ $w = b = 0$ với $\\eta = 0.1$.",
-     "Sau một bước: $w = 1.53$, $b = 0.67$, mất mát giảm từ $12.67$ xuống $0.22$."
+     "Thử một bước trên ba điểm $(1, 2)$, $(2, 3)$, $(3, 5)$ của mục trước, xuất phát từ $w = b = 0$ với $\\eta = 0.1$.",
+     "Sau một bước: $w = 1.53$, $b = 0.67$, mất mát giảm từ $12.67$ xuống $0.22$, đã gần nghiệm đóng $w = 1.5$, $b = \\tfrac13$."
     ]
    ]
   ]
@@ -6363,7 +6362,7 @@
     "2.8",
     "Lề lớn nhất",
     [
-     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$, và cực đại lề tương đương"
+     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$; chẳng hạn $\\mathbf{w} = (3, 4)$ có $\\lVert\\mathbf{w}\\rVert = 5$, nên lề rộng $2/5 = 0.4$."
     ]
    ]
   ]
@@ -11868,7 +11867,7 @@
    ],
    [
     "2.4",
-    "Ví dụ tính tay",
+    "Thuật toán",
     [
      "Ba láng giềng gần nhất là $B$, $E$, $A$: hai đỏ, một xanh, nên dự đoán đỏ."
     ]
@@ -13105,7 +13104,7 @@
   "to": [
    [
     "2.9",
-    "Ví dụ tính tay",
+    "PCA: hướng có phương sai lớn nhất",
     [
      "Vector riêng tương ứng có thể chọn $\\mathbf{u}_1 \\approx (0.851,\\ 0.526)$; hướng ngược lại cũng biểu diễn cùng một trục."
     ]
@@ -13299,7 +13298,7 @@
     "2.8",
     "Lề lớn nhất",
     [
-     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$, và cực đại lề tương đương"
+     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$; chẳng hạn $\\mathbf{w} = (3, 4)$ có $\\lVert\\mathbf{w}\\rVert = 5$, nên lề rộng $2/5 = 0.4$."
     ]
    ]
   ]
@@ -18804,14 +18803,14 @@
     "2.8",
     "Lề lớn nhất",
     [
-     "Vì nhân $\\mathbf{w}$ và $b$ với cùng một số dương không đổi siêu phẳng, ta chuẩn hóa sao cho các điểm gần nhất thỏa $y_i(\\mathbf{w}^\\top\\mathbf{x}_i + b) = 1$. Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$, và cực đại lề tương đương"
+     "Vì nhân $\\mathbf{w}$ và $b$ với cùng một số dương không đổi siêu phẳng, ta chuẩn hóa sao cho các điểm gần nhất thỏa $y_i(\\mathbf{w}^\\top\\mathbf{x}_i + b) = 1$. Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$; chẳng hạn $\\mathbf{w} = (3, 4)$ có $\\lVert\\mathbf{w}\\rVert = 5$, nên lề rộng $2/5 = 0.4$."
     ]
    ],
    [
     "2.8",
-    "Ví dụ tính tay",
+    "Lề lớn nhất",
     [
-     "Siêu phẳng $\\mathbf{w} = (3, 4)$, $b = -10$, nên $\\lVert\\mathbf{w}\\rVert = 5$ và độ rộng lề $2/5 = 0.4$."
+     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$; chẳng hạn $\\mathbf{w} = (3, 4)$ có $\\lVert\\mathbf{w}\\rVert = 5$, nên lề rộng $2/5 = 0.4$."
     ]
    ]
   ]
@@ -18982,9 +18981,9 @@
    ],
    [
     "2.1",
-    "Ví dụ tính tay",
+    "Nghiệm đóng",
     [
-     "Với một đặc trưng, nghiệm least squares có công thức gọn:"
+     "Với một đặc trưng, hệ phương trình chuẩn rút gọn thành công thức tính được trên giấy:"
     ]
    ]
   ]
@@ -21081,7 +21080,7 @@
     "2.8",
     "Lề lớn nhất",
     [
-     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$, và cực đại lề tương đương"
+     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$; chẳng hạn $\\mathbf{w} = (3, 4)$ có $\\lVert\\mathbf{w}\\rVert = 5$, nên lề rộng $2/5 = 0.4$."
     ]
    ]
   ]
@@ -21187,7 +21186,7 @@
     "2.8",
     "Lề lớn nhất",
     [
-     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$, và cực đại lề tương đương"
+     "Khi đó độ rộng lề (margin) giữa hai phía là $2/\\lVert\\mathbf{w}\\rVert$; chẳng hạn $\\mathbf{w} = (3, 4)$ có $\\lVert\\mathbf{w}\\rVert = 5$, nên lề rộng $2/5 = 0.4$."
     ]
    ]
   ]
