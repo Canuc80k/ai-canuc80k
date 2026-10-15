@@ -3073,7 +3073,7 @@
    ],
    [
     "1.6",
-    "Ví dụ tính tay rồi đối chiếu thư viện",
+    "R²: so với mốc đoán trung bình",
     [
      "Phần dư là $(2,-2,-3)$, nên MAE $=7/3\\approx2.333$, MSE $=17/3\\approx5.667$, RMSE $=\\sqrt{17/3}\\approx2.380$."
     ]
@@ -4937,7 +4937,7 @@
   "to": [
    [
     "1.6",
-    "Ví dụ tính tay rồi đối chiếu thư viện",
+    "R²: so với mốc đoán trung bình",
     [
      "$R^2$ so tổng bình phương lỗi với phương án dự đoán trung bình của tập đang chấm:"
     ]
@@ -9334,7 +9334,7 @@
   "to": [
    [
     "1.6",
-    "Ví dụ tính tay rồi đối chiếu thư viện",
+    "R²: so với mốc đoán trung bình",
     [
      "$R^2$ so tổng bình phương lỗi với phương án dự đoán trung bình của tập đang chấm:"
     ]
