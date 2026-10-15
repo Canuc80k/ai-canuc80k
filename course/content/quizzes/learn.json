@@ -428,7 +428,7 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Với bảng chỉ một mẫu trong train, không có gì để gộp và PyTorch báo lỗi; batch rất nhỏ thì thống kê nhiễu tới mức làm hỏng huấn luyện."
     ]
@@ -470,9 +470,9 @@
    ],
    [
     "3.5",
-    "Ví dụ tính tay và tự cài một bước",
+    "Adam điều chỉnh từng tọa độ",
     [
-     "Adam bước đầu với $\\beta_1=0.9,\\beta_2=0.999$ có $m=-0.2,v=0.004$, sau bias correction $\\hat m=-2,\\hat v=4$; bước có độ lớn gần 0.1 nên $w$ gần 2.1. Không phải Adam tính sai đạo hàm: như mục trước, bước đầu của Adam dài cỡ $\\eta$ dù gradient là $-2$ hay $-200$."
+     "Adam bước đầu với $\\beta_1=0.9,\\beta_2=0.999$ có $m=-0.2,v=0.004$, sau bias correction $\\hat m=-2,\\hat v=4$; bước có độ lớn gần 0.1 nên $w$ gần 2.1. Không phải Adam tính sai đạo hàm: như đã nói ở trên, bước đầu của Adam dài cỡ $\\eta$ dù gradient là $-2$ hay $-200$."
     ]
    ]
   ]
@@ -561,7 +561,7 @@
    ],
    [
     "3.2",
-    "Ví dụ tính tay",
+    "Từ loss về lớp đầu",
     [
      "Forward có $z_1=1,h=1,p=2,J=4$."
     ]
@@ -582,7 +582,7 @@
    ],
    [
     "3.1",
-    "Ví dụ tính tay",
+    "Autograd lưu đường đi của phép tính",
     [
      "Nếu tăng $w$ một lượng rất nhỏ, $u$ tăng ba lần lượng đó."
     ]
@@ -609,7 +609,7 @@
    ],
    [
     "3.4",
-    "Ví dụ tính tay: trung bình đúng theo mẫu",
+    "Loop là một chu trình trạng thái",
     [
      "Trung bình hai số bằng 0.5, nhưng trung bình theo 24 mẫu là $(16\\cdot0.2+8\\cdot0.8)/24=0.4$."
     ]
@@ -1354,7 +1354,7 @@
   "to": [
    [
     "3.9",
-    "Ví dụ tính tay",
+    "Một attention trên hai key",
     [
      "Softmax cho $a_1=e/(e+1)\\approx0.731$, $a_2=1/(e+1)\\approx0.269$.",
      "Khi trọng số đã có, đầu ra chỉ là trung bình có trọng số: $(0.5, 0.3, 0.2)$ trên các value 2, 4, 10 cho $1 + 1.2 + 2 = 4.2$."
@@ -2088,7 +2088,7 @@
    ],
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Khi chỉ chứa được vài ảnh mỗi batch, như phân đoạn ảnh lớn, thay bằng GroupNorm; khi tinh chỉnh mạng đã học sẵn với batch nhỏ, giữ các lớp BatchNorm ở chế độ eval để đóng băng thống kê cũ."
     ]
@@ -2116,7 +2116,7 @@
   "to": [
    [
     "3.4",
-    "Ví dụ tính tay: trung bình đúng theo mẫu",
+    "Loop là một chu trình trạng thái",
     [
      "CrossEntropyLoss mặc định bỏ qua nhãn $-100$ (ignore_index) và chia cho số nhãn còn lại."
     ]
@@ -2193,7 +2193,7 @@
    ],
    [
     "3.1",
-    "Ví dụ tính tay",
+    "Autograd lưu đường đi của phép tính",
     [
      "Tensor trung gian như u không giữ .grad, nhưng đạo hàm vẫn đi qua nó bình thường."
     ]
@@ -2312,7 +2312,7 @@
    ],
    [
     "3.4",
-    "Ví dụ tính tay: trung bình đúng theo mẫu",
+    "Loop là một chu trình trạng thái",
     [
      "Đổi reduction='mean' sang 'sum' với batch 64 mà giữ learning rate của SGD là nhân bước đi lên 64 lần."
     ]
@@ -3100,7 +3100,7 @@
   "to": [
    [
     "3.1",
-    "Ví dụ tính tay",
+    "Autograd lưu đường đi của phép tính",
     [
      "Với nhiều biến, gradient gom các đạo hàm riêng: $f = x^2y + 3y$ tại $(1, 2)$ có gradient $(2xy,\\ x^2 + 3) = (4, 4)$."
     ]
@@ -3698,7 +3698,7 @@
    ],
    [
     "3.7",
-    "Ví dụ tính tay: batch giảm thì phần nào giảm?",
+    "Bộ nhớ có nhiều phần",
     [
      "Với MLP, weight không đổi khi giảm batch 64 xuống 32; activation dạng (B,h) thường giảm khoảng một nửa."
     ]
@@ -4317,7 +4317,7 @@
   "to": [
    [
     "3.9",
-    "Ví dụ tính tay",
+    "Một attention trên hai key",
     [
      "Khi trọng số đã có, đầu ra chỉ là trung bình có trọng số: $(0.5, 0.3, 0.2)$ trên các value 2, 4, 10 cho $1 + 1.2 + 2 = 4.2$."
     ]
@@ -5124,7 +5124,7 @@
    ],
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "LayerNorm tính mean/variance trên các feature của một mẫu, nên không phụ thuộc batch, giống nhau ở train và eval, và không có running statistics; Transformer dùng nó."
     ]
@@ -7327,7 +7327,7 @@
   "to": [
    [
     "3.8",
-    "Ví dụ tính tay: mất thứ tự",
+    "Mean pooling mất thứ tự",
     [
      "Phép cộng giao hoán nên mean pooling mất thứ tự."
     ]
@@ -13376,7 +13376,7 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Tensor (B, T, C) qua nn.LayerNorm(C) được chuẩn hóa trên chiều $C$, riêng cho từng cặp $(b, t)$; nhân cả vector đầu vào với một số dương thì đầu ra không đổi."
     ]
@@ -14007,7 +14007,7 @@
    ],
    [
     "3.8",
-    "Ví dụ tính tay: mất thứ tự",
+    "Mean pooling mất thứ tự",
     [
      "Self-attention không có tín hiệu vị trí rồi mean cuối cũng giữ tính bất biến hoán vị."
     ]
@@ -14784,7 +14784,7 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Thống kê của BatchNorm tính trên batch mà layer thật sự thấy."
     ]
@@ -14805,7 +14805,7 @@
    ],
    [
     "3.7",
-    "Ví dụ tính tay: batch giảm thì phần nào giảm?",
+    "Bộ nhớ có nhiều phần",
     [
      "Với MLP, weight không đổi khi giảm batch 64 xuống 32; activation dạng (B,h) thường giảm khoảng một nửa."
     ]
@@ -14921,7 +14921,7 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Khi chỉ chứa được vài ảnh mỗi batch, như phân đoạn ảnh lớn, thay bằng GroupNorm; khi tinh chỉnh mạng đã học sẵn với batch nhỏ, giữ các lớp BatchNorm ở chế độ eval để đóng băng thống kê cũ."
     ]
@@ -16126,7 +16126,7 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "LayerNorm tính mean/variance trên các feature của một mẫu, nên không phụ thuộc batch, giống nhau ở train và eval, và không có running statistics; Transformer dùng nó."
     ]
@@ -19115,7 +19115,7 @@
    ],
    [
     "3.2",
-    "Ví dụ tính tay",
+    "Từ loss về lớp đầu",
     [
      "Truyền về hidden cho $dJ/dh=4w_2=8$; ReLU đang mở vì $z_1>0$, nên $dJ/dw_1=8x=16$, $dJ/db_1=8$."
     ]
@@ -20258,7 +20258,7 @@
   "to": [
    [
     "3.2",
-    "Ví dụ tính tay",
+    "Từ loss về lớp đầu",
     [
      "Bắt đầu từ đầu ra: $dJ/dp=4$, nên $dJ/dw_2=4h=4$ và $dJ/db_2=4$. Truyền về hidden cho $dJ/dh=4w_2=8$; ReLU đang mở vì $z_1>0$, nên $dJ/dw_1=8x=16$, $dJ/db_1=8$."
     ]
@@ -20363,16 +20363,10 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
-    [
-     "Khi $\\gamma=2$, $\\beta=1$ và bỏ qua $\\varepsilon$ để tính trên giấy, hai đầu ra là $-1$ và $3$."
-    ]
-   ],
-   [
-    "3.6",
     "BatchNorm có trạng thái riêng",
     [
-     "BatchNorm chuẩn hóa các activation theo thống kê một batch trong train, rồi học hệ số scale $\\gamma$ và shift $\\beta$."
+     "BatchNorm chuẩn hóa các activation theo thống kê một batch trong train, rồi học hệ số scale $\\gamma$ và shift $\\beta$.",
+     "Khi $\\gamma=2$, $\\beta=1$ và bỏ qua $\\varepsilon$ để tính trên giấy, hai đầu ra là $-1$ và $3$."
     ]
    ]
   ]
@@ -20384,7 +20378,7 @@
   "to": [
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Tensor (B, T, C) qua nn.LayerNorm(C) được chuẩn hóa trên chiều $C$, riêng cho từng cặp $(b, t)$; nhân cả vector đầu vào với một số dương thì đầu ra không đổi."
     ]
@@ -20514,7 +20508,7 @@
    ],
    [
     "3.6",
-    "Ví dụ tính tay và giới hạn batch nhỏ",
+    "Batch nhỏ, LayerNorm và GroupNorm",
     [
      "Tích lũy gradient 8 bước batch 32 cũng cho gradient như batch 256 nhưng BatchNorm vẫn chỉ thấy 32 mẫu mỗi lượt."
     ]
@@ -20784,7 +20778,7 @@
   "to": [
    [
     "3.9",
-    "Ví dụ tính tay",
+    "Một attention trên hai key",
     [
      "Nếu mọi key giống hệt nhau thì mọi score bằng nhau, và đầu ra là trung bình cộng các value, query là gì cũng vậy."
     ]
