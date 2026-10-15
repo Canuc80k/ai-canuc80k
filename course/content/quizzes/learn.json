@@ -14348,7 +14348,7 @@
     "5.8",
     "Diffusion: học sửa ảnh ở nhiều mức nhiễu",
     [
-     "Với $x_0=2$, $\\bar\\alpha_t=0.64$, $\\epsilon=0.5$, ta có $x_t=0.8\\cdot2+0.6\\cdot0.5=1.9$."
+     "Ví dụ: với $x_0=2$, $\\bar\\alpha_t=0.64$, $\\epsilon=0.5$, ta có $x_t=0.8\\cdot2+0.6\\cdot0.5=1.9$."
     ]
    ]
   ]
