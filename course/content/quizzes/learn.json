@@ -1068,7 +1068,7 @@
   "to": [
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Sau lật ngang, khoảng $[x_1,x_2]$ thành $[W-x_2,W-x_1]$."
     ]
@@ -2499,7 +2499,7 @@
   "to": [
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Khi crop cắt gần hết một vật, như box chỉ còn 10% diện tích trong vùng cắt, thường bỏ hẳn box ấy thay vì giữ một box gần như không còn vật."
     ]
@@ -2569,7 +2569,7 @@
   "to": [
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Với tensor (C, H, W), lật ngang là img.flip(-1)."
     ]
@@ -3444,7 +3444,7 @@
   "to": [
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Trong CNN, giá trị kernel không đặt tay mà được học từ dữ liệu."
     ]
@@ -3925,7 +3925,7 @@
    ],
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang."
     ]
@@ -3947,7 +3947,7 @@
    ],
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Ô trên trái là $1\\cdot1+2\\cdot0+0\\cdot0+1\\cdot2=3$."
     ]
@@ -4081,7 +4081,7 @@
   "to": [
    [
     "5.2",
-    "Ví dụ tính tay và kiểm bằng code",
+    "Vì sao một mạng sâu cần đường đi tắt?",
     [
      "Với $x=(2,-1)$ và $F(x)=(0.3,0.4)$, phép cộng ra $(2.3,-0.6)$."
     ]
@@ -6949,7 +6949,7 @@
    ],
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Kernel này được đặt tay cho dễ tính, nhưng đã cho thấy cách một bộ dò hoạt động: nó chỉ có trọng số dương trên đường chéo chính, nên cửa sổ có số lớn trên đường chéo ấy, $\\begin{bmatrix}2&0\\\\1&3\\end{bmatrix}$, cho giá trị lớn nhất là 8."
     ]
@@ -8734,7 +8734,7 @@
    ],
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Ô trên trái là $1\\cdot1+2\\cdot0+0\\cdot0+1\\cdot2=3$."
     ]
@@ -9917,7 +9917,7 @@
   "to": [
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Sobel $\\begin{bmatrix}-1&0&1\\\\-2&0&2\\\\-1&0&1\\end{bmatrix}$ phản ứng mạnh ở cạnh dọc, nơi độ sáng đổi đột ngột theo chiều ngang.",
      "Tìm những chỗ như vậy gọi là phát hiện cạnh."
@@ -11279,7 +11279,7 @@
   "to": [
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Crop và xoay phải dùng cùng tham số hình học cho ảnh và nhãn."
     ]
@@ -17864,7 +17864,7 @@
    ],
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Sau lật ngang, khoảng $[x_1,x_2]$ thành $[W-x_2,W-x_1]$."
     ]
@@ -17919,7 +17919,7 @@
   "to": [
    [
     "5.1",
-    "Ví dụ tính tay",
+    "Một bộ dò đi qua nhiều vị trí",
     [
      "Làm mờ $3 \\times 3$: 9 ô đều bằng $1/9$, tổng bằng 1 để giữ nguyên độ sáng trung bình."
     ]
@@ -19473,7 +19473,7 @@
   "to": [
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Nếu chỉ lật ảnh mà không lật mask, model sẽ bị yêu cầu tô vị trí không còn chứa vật thể.",
      "Crop và xoay phải dùng cùng tham số hình học cho ảnh và nhãn."
@@ -19529,7 +19529,7 @@
    ],
    [
     "5.3",
-    "Ví dụ tính tay: lật box và mask",
+    "Lật ảnh thì lật cả box và mask",
     [
      "Resize ảnh thường dùng bilinear; resize mask chứa ID lớp dùng nearest neighbor để không sinh ID phân số."
     ]
