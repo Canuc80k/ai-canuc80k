@@ -186,7 +186,8 @@ except RuntimeError as error:
 def pad_collate(batch):
     seqs, labels = zip(*batch)
     lengths = torch.tensor([len(s) for s in seqs])
-    return pad_sequence(seqs, batch_first=True, padding_value=0), lengths, torch.tensor(labels)
+    padded = pad_sequence(seqs, batch_first=True, padding_value=0)
+    return padded, lengths, torch.tensor(labels)
 
 for tokens, lengths, labels in DataLoader(pairs, batch_size=3, collate_fn=pad_collate):
     print(tokens)

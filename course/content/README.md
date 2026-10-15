@@ -19,7 +19,7 @@ Bài 2.1 là mẫu đầy đủ. Một bài là một buổi giảng, đọc t�
 4. Các mục giảng `##` theo đúng thứ tự dạy. Mỗi mục: vì sao cần → hình ảnh trực giác → công thức → code chạy được → đọc kết quả. Cuối mục quan trọng đặt một `::: quiz`.
 5. Với mô hình tự cài được: có bảng shape, code NumPy ngắn, kiểm gradient (nếu có đạo hàm), đối chiếu thư viện. Đây là một phần của bài, không phải trục chính; phần dùng thư viện đúng quy trình và đọc kết quả cũng quan trọng như vậy.
 6. Thí nghiệm có số liệu thật thay cho lời khẳng định (learning rate, chuẩn hóa, overfit...). Lý thuyết dự đoán trước, code xác nhận sau.
-7. `## Ví dụ tính tay`, một mục ứng dụng gần với học sinh, rồi `## Khi đi thi`, `## Tóm tắt`, `## Kiểm tra cuối bài`, `## Đọc thêm`. Từ 14/10/2026 không có mục Bẫy, hộp `::: trap`, ô Nhắc lại hay mục Tìm hiểu kỹ; không nhồi khái niệm chỉ để phủ syllabus. Bài ưu tiên đơn giản, thực dụng; dạy lại kiến thức cũ khi cần là tốt.
+7. Sau các mục giảng: `## Khi đi thi` (đúng 3 gạch, chỉ điều gắn với bài), `## Tóm tắt`, `## Kiểm tra cuối bài`, `## Đọc thêm`. Phép tính mẫu dạy ngay trong mục giảng tương ứng; từ 16/10/2026 không có mục riêng `## Ví dụ tính tay`. Từ 14/10/2026 không có mục Bẫy, hộp `::: trap`, ô Nhắc lại hay mục Tìm hiểu kỹ; không nhồi khái niệm chỉ để phủ syllabus. Bài ưu tiên đơn giản, thực dụng; dạy lại kiến thức cũ khi cần là tốt.
 8. `## Kiểm tra cuối bài`: mặc định 10 câu `::: quiz Câu 1` ... `::: quiz Câu 10`, bao quát cả bài, có câu tính toán nhỏ và câu đọc kết quả. Website tự chấm và hiện điểm.
 9. `## Đọc thêm`: tài liệu công khai, có link khi miễn phí, mỗi mục một câu nói đọc để làm gì. Không ghi tài liệu nội bộ.
 
@@ -76,6 +76,13 @@ Giọng học thuật nhưng có người dạy đứng sau: chặt chẽ, rõ r
 Mỗi slide cách nhau bởi dòng `---`. Dòng đầu chọn bố cục: `<!-- title -->` (bìa), `<!-- section 2 -->` (mở phần), `<!-- split -->` (hai cột, ngăn bởi `|||`), `<!-- figure -->` (một hình lớn), `<!-- center -->` (công thức lớn), `<!-- quiz -->` (câu hỏi bấm hiện đáp án). Không ghi là slide thường với tiêu đề `##`. Hình viết `../fig/x.svg`.
 
 Một slide một ý, chữ ít hơn bài học: câu ngắn, gạch đầu dòng được phép. Code trên slide là đoạn trích; khối output chép đúng kết quả thật của bài. Bộ dựng tự thu nhỏ chữ khi slide quá dài; nếu bị thu nhỏ thì nên tách slide.
+
+Thứ tự một deck (chuẩn từ 16/10/2026): bìa → một slide đặt vấn đề → `## Mục tiêu` (chép đúng khối `::: goal` của bài) → các phần `<!-- section k -->` theo mục giảng → `## Khi đi thi` (3 gạch ngắn) → `# Luyện đề` → `<!-- center -->` `## Chốt ý` (2 dòng) → `<!-- center -->` `## Sau giờ học` (dòng “Làm **10 câu kiểm tra cuối bài** trên trang bài học.” và một việc trên notebook). Không dùng hộp `::: note` trên slide.
+
+- Quiz trên slide là bản rút gọn của quiz trong bài: đổi câu, đáp án hay số liệu ở bài thì sửa cả slide.
+- Mỗi dòng code trên slide phải có trong code của bài: `python -B -X utf8 tools/check_slide_code.py <id>`.
+- Không dùng từ nội bộ (hợp đồng, receipt, asset, recipe, snapshot) trong chữ trên slide; tên tệp thì giữ.
+- Cột phải của `split` 2–3 dòng; hình tĩnh và hình động cùng một ý thì chỉ giữ một.
 
 ## Toán
 

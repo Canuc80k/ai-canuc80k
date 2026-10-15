@@ -1,5 +1,7 @@
 # Bản sao giáo trình — chuẩn bài 2.1
 
+> Bản giao việc lần đầu (05/10/2026), giữ để tra lịch sử. Chuẩn hiện hành nằm ở `content/README.md`; nhiều quy định dưới đây (câu hỏi xuyên suốt, slide Bẫy, deck 16–28 slide, “Ví dụ tính tay”) đã bỏ.
+
 ## Phạm vi và quyền ghi
 
 Trang cũ đã được sao chép nguyên vẹn vào `output/` và lưu vào `archive/TRANG_CU_TRUOC_KHI_CHINH.zip`, kiểm CRC và SHA-256 từng tệp. Không ghi link trang cũ. Không sửa bất kỳ tệp nào ngoài workspace này. Không upload, submit, rejudge, gọi Auto/AI LQDOJ; không sửa bài tập về nhà. CSS, app.js, font, khung trang giữ nguyên bytes. Chỉ tích hợp nội dung mới bằng dữ liệu và tài liệu bài học.

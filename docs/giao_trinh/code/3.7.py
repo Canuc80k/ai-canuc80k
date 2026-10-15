@@ -64,7 +64,9 @@ full_grad = gradient_vector(net).clone()
 accumulation_steps = 4
 for divide_loss in (True, False):
     net.zero_grad(set_to_none=True)
-    for x_part, y_part in zip(X_acc.chunk(accumulation_steps), y_acc.chunk(accumulation_steps)):
+    x_parts = X_acc.chunk(accumulation_steps)
+    y_parts = y_acc.chunk(accumulation_steps)
+    for x_part, y_part in zip(x_parts, y_parts):
         micro_loss = criterion(net(x_part), y_part)  # mỗi microbatch 8 mẫu
         if divide_loss:
             micro_loss = micro_loss / accumulation_steps
