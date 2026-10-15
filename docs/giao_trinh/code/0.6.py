@@ -63,6 +63,16 @@ print(descend(0.05, 30)[-1])
 print(descend(0.3, 6))
 
 # Bước 6
+xs = np.array([1.0, 2.0])
+ys = np.array([2.0, 5.0])
+w = 0.0
+for step in range(3):
+    err = w * xs - ys
+    grad = np.mean(2 * err * xs)
+    print(step, round(w, 4), round(np.mean(err ** 2), 4), round(grad, 4))
+    w -= 0.1 * grad
+
+# Bước 7
 rng = np.random.default_rng(0)
 X = rng.normal(size=(5, 3))
 y_vec = rng.normal(size=5)
@@ -78,13 +88,3 @@ rel = lambda a, b: np.linalg.norm(a - b) / np.linalg.norm(a + b)
 print(np.round(exact, 6))
 print(np.round(approx, 6))
 print(f"đúng: {rel(exact, approx):.1e}   quên số 2: {rel(wrong, approx):.1e}")
-
-# Bước 7
-xs = np.array([1.0, 2.0])
-ys = np.array([2.0, 5.0])
-w = 0.0
-for step in range(3):
-    err = w * xs - ys
-    grad = np.mean(2 * err * xs)
-    print(step, round(w, 4), round(np.mean(err ** 2), 4), round(grad, 4))
-    w -= 0.1 * grad

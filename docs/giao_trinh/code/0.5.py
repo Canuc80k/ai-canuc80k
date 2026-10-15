@@ -57,7 +57,3 @@ square = np.array([[0, 0], [1, 0], [1, 1], [0, 1]], dtype=float)   # mỗi hàng
 M = np.array([[2.0, 1.0],
               [0.0, 1.0]])
 print(square @ M.T)
-
-# Bước 7
-x1, x2 = X[1], X[3]
-print(round(np.linalg.norm(x1 - x2), 2), round(cosine(x1, x2), 2))

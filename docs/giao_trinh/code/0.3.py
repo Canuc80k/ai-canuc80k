@@ -88,26 +88,35 @@ print(fill_hours(unseen)["gio_tu_hoc"].tolist())
 print(train.groupby("lop")["diem_toan"].agg(["mean", "std", "count"]).round(2))
 
 # Bước 11
+hand = pd.DataFrame({
+    "lop": ["A", "A", "A", "B", "B", "B"],
+    "diem": pd.Series([6, 8, 7, 5, np.nan, 9], dtype="float64"),
+})
+print(hand.groupby("lop")["diem"].mean().to_dict())
+print(hand.groupby("lop")["diem"].agg(["count", "size"]).to_dict())
+print((hand["diem"] >= 7).mean(), (hand["diem"].dropna() >= 7).mean())
+
+# Bước 12
 agg = train.groupby("lop")["diem_toan"].mean()
 tf = train.groupby("lop")["diem_toan"].transform("mean")
 print(agg.shape, tf.shape)
 train["toan_tb_lop"] = tf
 print(train[["lop", "diem_toan", "toan_tb_lop"]].head(3).round(2))
 
-# Bước 12
+# Bước 13
 tiny = pd.DataFrame({"id": [101, 102, 103]}, index=[10, 20, 30])
 values = pd.Series([6.0, 7.0, 8.0], index=[30, 10, 20])
 tiny["score"] = values
 print(tiny["score"].tolist())
 
-# Bước 13
+# Bước 14
 lop_info = pd.read_csv(data_dir / "lop.csv", encoding="utf-8")
 merged = train.merge(lop_info, on="lop", how="left", validate="many_to_one")
 assert len(merged) == len(train)
 print(train.shape, merged.shape)
 print(merged.groupby("chuyen")["diem_toan"].mean().round(2))
 
-# Bước 14
+# Bước 15
 dup = pd.concat([lop_info, lop_info.iloc[[0]]])          # 10A1 xuất hiện hai lần
 print(train.merge(dup, on="lop", how="left").shape)
 try:
@@ -115,7 +124,7 @@ try:
 except pd.errors.MergeError as e:
     print("MergeError:", str(e).splitlines()[0])
 
-# Bước 15
+# Bước 16
 import matplotlib.pyplot as plt
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
@@ -131,7 +140,7 @@ plt.show()
 plt.close(fig)
 print(train[["gio_tu_hoc", "diem_hk1", "diem_toan"]].corr().round(2))
 
-# Bước 16
+# Bước 17
 mean_by_lop = train.groupby("lop")["diem_toan"].mean()
 pred_table = test[["id", "lop"]].iloc[::-1].copy()
 pred_table["diem_toan"] = pred_table["lop"].map(mean_by_lop).fillna(train["diem_toan"].mean())
@@ -152,15 +161,15 @@ assert np.isfinite(read_back["diem_toan"].to_numpy()).all()
 print(read_back.head(3).round(3))
 print("file:", read_back.shape, "OK")
 
-# Bước 17
+# Bước 18
 sub.to_csv(data_dir / "submission_bad.csv", encoding="utf-8")  # quên index=False
 print(pd.read_csv(data_dir / "submission_bad.csv").columns.tolist())
 
-# Bước 18
+# Bước 19
 demo_directory.cleanup()
 print(data_dir.exists())
 
-# Bước 19
+# Bước 20
 log = pd.DataFrame({"thoi_diem": ["2026-03-02 07:45", "2026-03-02 21:10", "2026-03-07 09:30"],
                     "ma_hs": [" hs001", "HS002 ", "hs003"]})
 log["thoi_diem"] = pd.to_datetime(log["thoi_diem"], format="%Y-%m-%d %H:%M")
@@ -170,7 +179,7 @@ log["ma_hs"] = log["ma_hs"].str.strip().str.upper()
 print(log)
 print(log["thoi_diem"].max() - log["thoi_diem"].min())
 
-# Bước 20
+# Bước 21
 from PIL import Image
 
 with TemporaryDirectory() as directory:
@@ -187,7 +196,7 @@ with TemporaryDirectory() as directory:
     print(X.shape, X.dtype, X.mean(axis=(1, 2)).round(3))
     print(labels["label"].tolist())
 
-# Bước 21
+# Bước 22
 import json, wave
 
 with TemporaryDirectory() as directory:
@@ -207,13 +216,3 @@ with TemporaryDirectory() as directory:
     with wave.open(str(root / "tone.wav"), "rb") as f:
         audio = np.frombuffer(f.readframes(f.getnframes()), dtype=np.int16)
         print(f.getframerate(), audio.shape, audio.dtype, round(float(np.abs(audio).max()) / 32768, 3))
-
-# Bước 22
-hand = pd.DataFrame({
-    "lop": ["A", "A", "A", "B", "B", "B"],
-    "diem": pd.Series([6, 8, 7, 5, np.nan, 9], dtype="float64"),
-})
-print(hand.groupby("lop")["diem"].mean().to_dict())
-print(hand.groupby("lop")["diem"].transform("max").tolist())
-print((hand["diem"] >= 7).mean(), (hand["diem"].dropna() >= 7).mean())
-print(hand.groupby("lop")["diem"].agg(["count", "size"]).to_dict())

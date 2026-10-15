@@ -48,6 +48,3 @@ for n in [200, 2000]:
     acc = rng.binomial(n, p_true, size=10_000) / n       # 10 000 bộ validation, mỗi bộ n ảnh
     lo, hi = np.percentile(acc, [2.5, 97.5])
     print(n, round(acc.std(), 4), round(np.sqrt(p_true * (1 - p_true) / n), 4), lo, hi)
-
-# Bước 7
-print(round(0.9 * 0.2 / (0.9 * 0.2 + 0.02 * 0.8), 3), round(np.sqrt(0.92 * 0.08 / 400), 4))

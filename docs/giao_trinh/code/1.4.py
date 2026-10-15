@@ -80,8 +80,3 @@ scores = cross_val_score(
 )
 print('Fold MAE:', np.round(-scores, 3))
 print(f'Mean CV MAE={-scores.mean():.3f}')
-
-# Bước 6
-hindsight_model = LinearRegression().fit(y_train.reshape(-1, 1), y_train)
-hindsight_prediction = hindsight_model.predict(y_valid.reshape(-1, 1))
-print(f'MAE dùng chính target làm feature, cách sai={mean_absolute_error(y_valid, hindsight_prediction):.6f}')
