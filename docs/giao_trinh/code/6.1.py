@@ -43,6 +43,14 @@ for word in word_counts:
     print(word, merge_pair(pieces[word], best_pair))
 
 # Bước 3
+raw = np.array([np.log(4 / 3) + 1, np.log(4 / 2) + 1])
+unit = raw / np.linalg.norm(raw)
+z_hand = unit @ np.array([1.0, -1.0])
+print("idf:", raw.round(3))
+print("tfidf:", unit.round(3))
+print("p:", round(1 / (1 + np.exp(-z_hand)), 3))
+
+# Bước 4
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -74,14 +82,14 @@ print("accuracy:", f"{accuracy_score(valid_labels, valid_pred):.3f}")
 print("macro-F1:", f"{f1_score(valid_labels, valid_pred, average='macro'):.3f}")
 print(confusion_matrix(valid_labels, valid_pred, labels=[0, 1]))
 
-# Bước 4
+# Bước 5
 positive_index = list(baseline["classifier"].classes_).index(1)
 positive_prob = baseline.predict_proba(valid_texts)[:, positive_index]
 for text, true, pred, prob in zip(valid_texts, valid_labels, valid_pred, positive_prob):
     print(f"thật={true} đoán={pred} p1={prob:.3f} | {text}")
 print("'không' có trong vocabulary:", "không" in baseline["tfidf"].vocabulary_)
 
-# Bước 5
+# Bước 6
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
@@ -92,11 +100,3 @@ naive_bayes = Pipeline([
 naive_bayes.fit(train_texts, train_labels)
 print("NB đoán:", naive_bayes.predict(valid_texts))
 print("thật:   ", valid_labels)
-
-# Bước 6
-raw = np.array([np.log(4 / 3) + 1, np.log(4 / 2) + 1])
-unit = raw / np.linalg.norm(raw)
-z_hand = unit @ np.array([1.0, -1.0])
-print("idf:", raw.round(3))
-print("tfidf:", unit.round(3))
-print("p:", round(1 / (1 + np.exp(-z_hand)), 3))

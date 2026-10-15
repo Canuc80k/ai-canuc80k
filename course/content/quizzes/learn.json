@@ -4303,7 +4303,7 @@
    ],
    [
     "6.1",
-    "Ví dụ tính tay",
+    "Từ chuỗi token đến TF-IDF",
     [
      "Mục “hay” xuất hiện trong hai câu nên IDF bằng $\\log(4/3)+1\\approx1.288$; “dễ” xuất hiện trong một câu nên bằng $\\log(4/2)+1\\approx1.693$."
     ]
@@ -16679,7 +16679,7 @@
    ],
    [
     "6.1",
-    "Ví dụ tính tay",
+    "Từ chuỗi token đến TF-IDF",
     [
      "Nếu “hay” có mặt ở cả ba câu, IDF của nó là $\\log(4/4)+1=1$: mục phổ biến chỉ bị giảm tương đối, không bị xóa khỏi biểu diễn."
     ]
@@ -18277,7 +18277,7 @@
   "to": [
    [
     "6.5",
-    "Cross-attention bằng một phép tính tay",
+    "Cross-attention: decoder đọc lại nguồn",
     [
      "GRU ở trên gửi sang decoder đúng một vector 24 số, dù nguồn dài bao nhiêu.",
      "Attention cho decoder đọc lại mọi vị trí nguồn ở từng bước sinh."
@@ -19431,7 +19431,7 @@
   "to": [
    [
     "6.5",
-    "Cross-attention bằng một phép tính tay",
+    "Cross-attention: decoder đọc lại nguồn",
     [
      "Attention cho decoder đọc lại mọi vị trí nguồn ở từng bước sinh."
     ]
