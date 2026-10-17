@@ -7,7 +7,7 @@ ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 OUT="$ROOT/05. AI Canuc80k/course/output"
 STAGE="$ROOT/04. Workspace/ai-web-deploy"
 # Lõi chung (tools/site-kit) phải khớp trước khi đưa lên
-python -B -X utf8 "$ROOT/tools/site-kit/sync.py" --check
+if [ -f "$ROOT/tools/site-kit/sync.py" ]; then python -B -X utf8 "$ROOT/tools/site-kit/sync.py" --check; fi
 python -B -X utf8 "$ROOT/05. AI Canuc80k/course/tools/split_site.py"
 rm -rf "$STAGE/site" && mkdir -p "$STAGE/site"
 # Không đưa phần riêng của giáo viên và tệp vận hành nội bộ
