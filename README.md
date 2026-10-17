@@ -2,7 +2,7 @@
 
 Giáo trình AI hướng VOAI và IOAI cho học sinh lập trình thi đấu.
 
-Website: https://ai-canuc80k.ai-web-deploy-20261010.workers.dev/
+Website: https://ai-canuc80k.pages.dev/
 
 ## Lộ trình
 

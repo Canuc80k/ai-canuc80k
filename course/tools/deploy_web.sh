@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Đưa website (course/output) lên Cloudflare: https://ai-canuc80k.ai-web-deploy-20261010.workers.dev
+# Đưa website (course/output) lên Cloudflare: https://ai-canuc80k.pages.dev (Cloudflare Pages)
 # Chạy từ bất kỳ đâu: bash "05. AI Canuc80k/course/tools/deploy_web.sh"
 # Lần đầu trên máy mới: npx wrangler@4 login
 set -euo pipefail
@@ -15,12 +15,7 @@ rm -rf "$STAGE/site" && mkdir -p "$STAGE/site"
   --exclude=./HUONG_DAN_GIAO_VIEN.txt --exclude=./KE_HOACH_CONTEST.txt \
   --exclude=./ui/kit.lock.json --exclude=./ui/theory.js --exclude=./ui/course-data.js --exclude=./ui/code-examples.js -cf - .) | (cd "$STAGE/site" && tar -xf -)
 cp "$STAGE/site/START_HERE.html" "$STAGE/site/index.html"
-cat > "$STAGE/wrangler.jsonc" <<'EOF'
-{
-  "name": "ai-canuc80k",
-  "compatibility_date": "2026-10-06",
-  "assets": { "directory": "site" }
-}
-EOF
-cd "$STAGE" && npx -y wrangler@4.150.0 deploy
+# Link cũ *.workers.dev do Worker chuyển hướng tools/site-kit/redirect-worker lo
+rm -f "$STAGE/wrangler.jsonc"
+cd "$STAGE" && npx -y wrangler@4.150.0 pages deploy site --project-name ai-canuc80k --branch main --commit-dirty=true
 rm -rf "$STAGE/site"

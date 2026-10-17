@@ -18,7 +18,7 @@ OUT = COURSE / 'output'
 ROOT = COURSE.parent.parent  # D:/Project/Canuc80k Problemset
 REPO_DIR = ROOT / '04. Workspace' / 'ai-canuc80k-repo'
 REMOTE = 'https://github.com/Canuc80k/ai-canuc80k.git'
-LIVE = 'https://ai-canuc80k.ai-web-deploy-20261010.workers.dev/'
+LIVE = 'https://ai-canuc80k.pages.dev/'
 PAGES = 'https://canuc80k.github.io/ai-canuc80k/'
 
 SITE_SKIP_TOP = {'teacher_private', 'current', 'smoke-final.pptx', 'HUONG_DAN_GIAO_VIEN.txt', 'KE_HOACH_CONTEST.txt'}
