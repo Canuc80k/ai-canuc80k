@@ -2,44 +2,8 @@
   'use strict';
 
   const D = window.COURSE_DATA;
-  const $ = selector => document.querySelector(selector);
-  const $$ = selector => [...document.querySelectorAll(selector)];
-  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const fold = value => String(value).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+  const {$, $$, esc, words, icon, a, meter, pager, loadScript, highlightPy: highlight, compactJSON, looksJSON, looksPython, wrapTables} = window.Kit;
 
-  const ICONS = {
-    route: '<path d="M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M8 17h7.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H16"/>',
-    book: '<path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/>',
-    quiz: '<rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="m8.5 12.2 2.5 2.5 4.5-5"/>',
-    trophy: '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1.5A3 3 0 0 0 8 10.5M16 6h3v1.5a3 3 0 0 1-3 3M12 13v4m-3.5 3h7"/>',
-    practice: '<rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="m7.5 10 2.5 2.25-2.5 2.25M12.5 14.5h4"/>',
-    search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
-    arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
-    back: '<path d="M19 12H5m5-5-5 5 5 5"/>',
-    external: '<path d="M14 4h6v6m0-6-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
-    check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
-    circle: '<circle cx="12" cy="12" r="8.5"/>',
-    done: '<circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.2 2.5 2.5 4.5-5"/>',
-    download: '<path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5M5 20h14"/>',
-    copy: '<rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5V6a1.5 1.5 0 0 0-1.5-1.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/>',
-    wrap: '<path d="M4 7h16M4 12h13a3 3 0 0 1 0 6h-4m2-2-2 2 2 2M4 17h5"/>',
-    expand: '<path d="M4 9V4h5m6 0h5v5M4 15v5h5m6 0h5v-5"/>',
-    menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
-    chev: '<path d="m9.5 6.5 5.5 5.5-5.5 5.5"/>',
-    panel: '<rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M9.5 4.5v15"/>',
-    up: '<path d="M12 19V5m-6 6 6-6 6 6"/>',
-    close: '<path d="m6 6 12 12M18 6 6 18"/>',
-    moon: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/>',
-    sun: '<circle cx="12" cy="12" r="3.75"/><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/>',
-    play: '<path d="M8 5.8v12.4a.8.8 0 0 0 1.2.7l10-6.2a.8.8 0 0 0 0-1.4l-10-6.2A.8.8 0 0 0 8 5.8z"/>',
-    replay: '<path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v3.8h3.8"/>',
-    notebook: '<rect x="5" y="3.5" width="14" height="17" rx="2.5"/><path d="M9 3.5v17M12.5 8h3M12.5 11.5h3"/>',
-    flag: '<path d="M5.5 21V4.5m0 0h11l-2 4 2 4h-11"/>'
-  };
-  // Logo: cá nục Canuc80k.
-  const MARK = `<svg class="logo" viewBox="-29.72 -11 40.73 37.48" aria-hidden="true"><defs><mask id="lg0" maskUnits="userSpaceOnUse" x="-29.72" y="-11" width="40.73" height="37.48"><rect x="-29.72" y="-11" width="40.73" height="37.48" fill="#fff"/><path transform="translate(0 0) rotate(-26) scale(0.6 0.5) translate(-50 -32)" d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2C47.5 31 47.5 33 46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#000" stroke="#000" stroke-width="5" stroke-linejoin="round"/><path transform="translate(0 0) rotate(-46) scale(0.6 0.5) translate(-50 -32)" d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2C47.5 31 47.5 33 46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#000" stroke="#000" stroke-width="5" stroke-linejoin="round"/></mask><mask id="lg1" maskUnits="userSpaceOnUse" x="-29.72" y="-11" width="40.73" height="37.48"><rect x="-29.72" y="-11" width="40.73" height="37.48" fill="#fff"/><path transform="translate(0 0) rotate(-46) scale(0.6 0.5) translate(-50 -32)" d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2C47.5 31 47.5 33 46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#000" stroke="#000" stroke-width="5" stroke-linejoin="round"/></mask></defs><g mask="url(#lg0)"><g transform="translate(0 0) rotate(-6) scale(0.6 0.5) translate(-50 -32)"><path d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2C47.5 31 47.5 33 46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#D97757"/><ellipse cx="12.4" cy="30.4" rx="4.3" ry="5.16" fill="#FAF9F5"/><ellipse cx="11.8" cy="30.6" rx="2.2" ry="2.64" fill="#1F1E1C"/></g></g><g mask="url(#lg1)"><g transform="translate(0 0) rotate(-26) scale(0.6 0.5) translate(-50 -32)"><path d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2C47.5 31 47.5 33 46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#D97757"/><ellipse cx="12.4" cy="30.4" rx="4.3" ry="5.16" fill="#FAF9F5"/><ellipse cx="11.8" cy="30.6" rx="2.2" ry="2.64" fill="#1F1E1C"/></g></g><g><g transform="translate(0 0) rotate(-46) scale(0.6 0.5) translate(-50 -32)"><path d="M3 32C9 25.5 16 23 24 23c9 0 16.5 3.6 22.5 7.2L58.8 18c1-.9 2.6-.1 2.3 1.2L56 32l5.1 12.8c.3 1.3-1.3 2.1-2.3 1.2L46.5 33.8C40.5 37.4 33 41 24 41 16 41 9 38.5 3 32z" fill="#D97757"/><ellipse cx="12.4" cy="30.4" rx="4.3" ry="5.16" fill="#FAF9F5"/><ellipse cx="11.8" cy="30.6" rx="2.2" ry="2.64" fill="#1F1E1C"/></g></g></svg>`;
-  const icon = name => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
-  const a = (href, html, attrs = '') => `<a href="${esc(href)}" ${attrs}>${html}</a>`;
   const lessonHref = (id, tab = 'learn', task = 1, part = 0) => {
     const q = [];
     if (part) q.push(`part=${part}`);
@@ -60,16 +24,6 @@
   // ---------- nạp dữ liệu theo nhu cầu ----------
   // Trang chủ chỉ cần ui/data/index.js (mục lục). Nội dung một bài (ui/data/l/<id>.js) và kho trắc nghiệm
   // (ui/quiz-bank.js) được nạp khi cần. Khi chạy với bản đầy đủ (theory.js…), mọi thứ đã có sẵn.
-  const scriptCache = new Map();
-  function loadScript(src) {
-    if (!scriptCache.has(src)) scriptCache.set(src, new Promise((ok, fail) => {
-      const s = document.createElement('script');
-      s.src = src; s.async = true;
-      s.onload = ok; s.onerror = () => { scriptCache.delete(src); fail(new Error(src)); };
-      document.head.appendChild(s);
-    }));
-    return scriptCache.get(src);
-  }
   const lessonReady = id => { const t = T.lessons[id]; return !t || !t.lazy; };
   window.__lessonChunk = c => {
     if (c.theory) T.lessons[c.id] = c.theory;
@@ -91,37 +45,13 @@
   const LESSONS = D.lessons.filter(l => !isCheck(l));
   const INTERNAL = 'Tham khảo';  // ghi chú nguồn nội bộ của bài cũ, không hiển thị
 
-  // ---------- state ----------
-  const KEY = 'aicanuc80k.portal.v2';
-  let saved = {};
-  let canStore = true;
-  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (_) { canStore = false; }
-  const S = {
-    q: '',
-    done: new Set((saved.done || []).filter(findLesson)),
-    last: findLesson(saved.last) ? saved.last : null,
-    theme: saved.theme === 'dark' || saved.theme === 'light' ? saved.theme : null,
-    side: saved.side === 'closed' ? 'closed' : 'open',
-    wrap: false,
-    // Nhóm đang mở trên thanh bên chỉ sống trong một lần mở trang; mở lại thì chỉ phase của bài đang xem được mở.
-    open: new Set()
-  };
-  const systemDark = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const effectiveTheme = () => S.theme || (systemDark() ? 'dark' : 'light');
-  function applyTheme() {
-    if (S.theme) document.documentElement.dataset.theme = S.theme;
-    else delete document.documentElement.dataset.theme;
-  }
-  applyTheme();
-  const applySide = () => { document.documentElement.dataset.side = S.side; };
-  applySide();
-  function persist() {
-    if (!canStore) return;
-    try { localStorage.setItem(KEY, JSON.stringify({done: [...S.done], last: S.last, theme: S.theme, side: S.side})); }
-    catch (_) { canStore = false; }
-  }
+  // ---------- state: khung trang, thanh bên, tìm kiếm, sự kiện chung nằm trong ui/kit.js ----------
+  const K = window.Kit.create({
+    key: 'aicanuc80k.portal.v2', sub: 'AI', search: 'Tìm bài học', navLabel: 'Các chương',
+    copyFail: 'Không sao chép được, hãy tải tệp về', findLesson, nameLabel
+  });
+  const {S, route, toast, render, chrome, spy, persist} = K;
   const doneIn = phase => phaseLessons(phase).filter(l => !isCheck(l) && S.done.has(l.id)).length;
-  const words = text => fold(text).replace(/[-_/,;:()]+/g, ' ').split(/\s+/).filter(Boolean);
   const haystack = new Map();
   const matches = l => {
     const q = words(S.q);
@@ -130,123 +60,46 @@
     const text = haystack.get(l.id);
     return q.every(w => text.includes(w));
   };
-  function route() {
-    const [path, query = ''] = location.hash.replace(/^#/, '').split('?');
-    const bits = (path || '/').split('/').filter(Boolean);
-    return {type: bits[0] || 'home', id: bits[1], sub: bits[2], params: new URLSearchParams(query)};
-  }
-
-  // ---------- shell ----------
-  $('#app').innerHTML = `
-    <a class="skip" href="#main" data-scroll="main">Đến nội dung chính</a>
-    <aside class="side" id="side" aria-label="Điều hướng">
-      <div class="side-head">
-        <a class="wordmark" href="#/" data-nav>${MARK}Canuc80k<span class="wordmark-sub">AI</span></a>
-        <button class="icon-btn side-collapse" data-action="sidebar" aria-label="Ẩn thanh bên" title="Ẩn thanh bên">${icon('panel')}</button>
-        <button class="icon-btn side-close" data-action="menu-close" aria-label="Đóng menu">${icon('close')}</button>
-      </div>
-      <nav class="side-nav" id="side-nav"></nav>
-      <div class="side-scroll">
-        <nav id="phase-nav" aria-label="Các chương"></nav>
-      </div>
-    </aside>
-    <button class="scrim" id="scrim" data-action="menu-close" aria-label="Đóng menu" tabindex="-1"></button>
-    <div class="shell">
-      <header class="top">
-        <button class="icon-btn menu-btn" id="menu-btn" data-action="menu" aria-expanded="false" aria-controls="side" aria-label="Mở menu">${icon('menu')}</button>
-        <button class="icon-btn side-open" data-action="sidebar" aria-label="Hiện thanh bên" title="Hiện thanh bên">${icon('panel')}</button>
-        <nav class="crumbs" id="crumbs" aria-label="Vị trí"></nav>
-        <div class="top-tools">
-          <div class="search">
-            <label class="search-box">${icon('search')}<input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Tìm bài học" aria-label="Tìm bài học"></label>
-            <div class="search-pop" id="search-pop" role="listbox"></div>
-          </div>
-          <span class="top-progress" id="top-progress"></span>
-          <button class="icon-btn" id="theme-btn" data-action="theme"></button>
-        </div>
-      </header>
-      <main class="main" id="main" tabindex="-1"></main>
-    </div>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>`;
-  const NO_MOTION = !!navigator.webdriver || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
-
-  let toastTimer;
-  function toast(text) {
-    const box = $('#toast');
-    box.textContent = text;
-    box.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => box.classList.remove('show'), 2200);
-  }
-  function openMenu() { $('#side').classList.add('open'); $('#scrim').classList.add('show'); $('#menu-btn').setAttribute('aria-expanded', 'true'); }
-  function closeMenu() { $('#side').classList.remove('open'); $('#scrim').classList.remove('show'); $('#menu-btn').setAttribute('aria-expanded', 'false'); }
-  function setQuery(value) { S.q = value; $('#q').value = value; $('#search-pop').innerHTML = ''; }
-
-  function renderChrome(r) {
-    const lesson = r.type === 'lesson' ? findLesson(r.id) : null;
-    const activePhase = lesson ? lesson.phase : r.type === 'phase' ? Number(r.id) : null;
-    const section = ['home', 'phase', 'lesson'].includes(r.type) ? 'home' : r.type === 'resource' ? 'resources' : r.type;
-
-    $('#side-nav').innerHTML = [
+  Object.assign(K.hooks, {
+    nav: [
       ['home', 'route', 'Lộ trình', '#/'],
       ['quiz', 'quiz', 'Trắc nghiệm', '#/quiz'],
       ['practice', 'practice', 'Thực hành', '#/practice'],
       ['contests', 'trophy', 'Các cuộc thi', '#/contests'],
       ['resources', 'book', 'Tài liệu', '#/resources']
-    ].map(([key, i, label, href]) => a(href, `${icon(i)}<span>${label}</span>`,
-      `class="side-link${section === key ? ' is-active' : ''}" data-nav`)).join('');
-
-    if (renderChrome.lastPhase !== activePhase) S.open = new Set(activePhase === null ? [] : [activePhase]);
-    renderChrome.lastPhase = activePhase;
-    const phaseNav = p => {
-      const open = S.open.has(p.id);
-      const items = phaseLessons(p.id).map(l => {
-        const cur = lesson && l.id === lesson.id;
-        return a(lessonHref(l.id),
-          `<span class="side-lesson-id">${idLabel(l)}</span><span class="side-lesson-name">${esc(l.title)}</span>${S.done.has(l.id) ? `<span class="side-lesson-done">${icon('check')}</span>` : ''}`,
-          `class="side-lesson${cur ? ' is-active' : ''}${ready(l) ? '' : ' is-draft'}" title="${esc(l.title)}"${cur ? ' aria-current="page"' : ''} data-nav`);
-      }).join('');
-      return `<div class="side-group${activePhase === p.id ? ' is-current' : ''}">
-        <button class="side-phase" type="button" data-action="toggle-phase" data-phase="${p.id}" aria-expanded="${open}" aria-controls="sp-${p.id}">
-          <span class="side-phase-num">${p.id}</span><span class="side-phase-name">${esc(p.short)}</span>${icon('chev')}
-        </button>
-        <div class="side-lessons" id="sp-${p.id}" data-open="${open}"><div class="side-lessons-inner">
-          ${items}
-        </div></div>
-      </div>`;
-    };
-    $('#phase-nav').innerHTML = D.courses.map(k =>
-      `<div class="side-label" title="${esc(k.title)}">Khóa ${k.id.slice(1)}</div>` + k.phases.map(id => phaseNav(D.phases[id])).join('')).join('');
-    const activeLink = $('.side-lesson.is-active');
-    if (activeLink && renderChrome.lastLesson !== lesson.id) {
-      const box = $('.side-scroll'), r1 = activeLink.getBoundingClientRect(), r2 = box.getBoundingClientRect();
-      if (r1.top < r2.top || r1.bottom > r2.bottom) box.scrollTop += r1.top - r2.top - r2.height / 3;
-    }
-    renderChrome.lastLesson = lesson ? lesson.id : null;
-
-    const crumbs = [a('#/', 'Lộ trình', 'data-nav')];
-    if (activePhase !== null && D.phases[activePhase]) crumbs.push(a(`#/phase/${activePhase}`, `Chương ${activePhase}`, 'data-nav'));
-    if (lesson) crumbs.push(`<span aria-current="page">${nameLabel(lesson)}</span>`);
-    if (r.type === 'resources') crumbs.splice(0, 1, '<span aria-current="page">Tài liệu</span>');
-    if (r.type === 'resource') crumbs.splice(0, 1, a('#/resources', 'Tài liệu', 'data-nav'), `<span aria-current="page">${esc((D.resources.find(x => x.id === r.id) || {}).title || '')}</span>`);
-    if (r.type === 'quiz') crumbs.splice(0, crumbs.length, ...quizCrumbs(r));
-    if (r.type === 'exam') crumbs.splice(0, crumbs.length, a('#/quiz', 'Trắc nghiệm', 'data-nav'), ...(exSet() ? [a(`#/quiz/${exSet().id}`, esc(exSet().title), 'data-nav'), '<span aria-current="page">Kiểm tra</span>'] : []));
-    if (r.type === 'practice') crumbs.splice(0, crumbs.length, ...practiceCrumbs(r));
-    if (r.type === 'contests') crumbs.splice(0, crumbs.length, ...(r.id && CT.contests.some(c => c.id === r.id)
-      ? [a('#/contests', 'Các cuộc thi', 'data-nav'), `<span aria-current="page">${esc(CT.contests.find(c => c.id === r.id).short)}</span>`]
-      : ['<span aria-current="page">Các cuộc thi</span>']));
-    $('#crumbs').innerHTML = crumbs.join('<span class="crumb-sep" aria-hidden="true">/</span>');
-
-    $('#top-progress').innerHTML = S.done.size ? `${S.done.size}<span>/${LESSONS.length}</span>` : '';
-    $('#top-progress').title = `${S.done.size}/${LESSONS.length} bài đã học`;
-    const dark = effectiveTheme() === 'dark';
-    $('#theme-btn').innerHTML = icon(dark ? 'sun' : 'moon');
-    $('#theme-btn').setAttribute('aria-label', dark ? 'Chuyển sang nền sáng' : 'Chuyển sang nền tối');
-    $('#theme-btn').title = dark ? 'Nền sáng' : 'Nền tối';
-  }
+    ],
+    section: r => ['home', 'phase', 'lesson'].includes(r.type) ? 'home' : r.type === 'resource' ? 'resources' : r.type,
+    tree(r) {
+      const lesson = r.type === 'lesson' ? findLesson(r.id) : null;
+      return {
+        phase: lesson ? lesson.phase : r.type === 'phase' ? Number(r.id) : null,
+        lesson: lesson ? lesson.id : null,
+        sections: D.courses.map(k => ({label: `Khóa ${k.id.slice(1)}`, title: k.title, phases: k.phases.map(id => D.phases[id]).map(p => ({
+          id: p.id, short: p.short,
+          items: phaseLessons(p.id).map(l => ({href: lessonHref(l.id), id: l.id, label: idLabel(l), title: l.title, done: S.done.has(l.id), draft: !ready(l)}))
+        }))}))
+      };
+    },
+    crumbs(r) {
+      const lesson = r.type === 'lesson' ? findLesson(r.id) : null;
+      const activePhase = lesson ? lesson.phase : r.type === 'phase' ? Number(r.id) : null;
+      const crumbs = [a('#/', 'Lộ trình', 'data-nav')];
+      if (activePhase !== null && D.phases[activePhase]) crumbs.push(a(`#/phase/${activePhase}`, `Chương ${activePhase}`, 'data-nav'));
+      if (lesson) crumbs.push(`<span aria-current="page">${nameLabel(lesson)}</span>`);
+      if (r.type === 'resources') crumbs.splice(0, 1, '<span aria-current="page">Tài liệu</span>');
+      if (r.type === 'resource') crumbs.splice(0, 1, a('#/resources', 'Tài liệu', 'data-nav'), `<span aria-current="page">${esc((D.resources.find(x => x.id === r.id) || {}).title || '')}</span>`);
+      if (r.type === 'quiz') crumbs.splice(0, crumbs.length, ...quizCrumbs(r));
+      if (r.type === 'exam') crumbs.splice(0, crumbs.length, a('#/quiz', 'Trắc nghiệm', 'data-nav'), ...(exSet() ? [a(`#/quiz/${exSet().id}`, esc(exSet().title), 'data-nav'), '<span aria-current="page">Kiểm tra</span>'] : []));
+      if (r.type === 'practice') crumbs.splice(0, crumbs.length, ...practiceCrumbs(r));
+      if (r.type === 'contests') crumbs.splice(0, crumbs.length, ...(r.id && CT.contests.some(c => c.id === r.id)
+        ? [a('#/contests', 'Các cuộc thi', 'data-nav'), `<span aria-current="page">${esc(CT.contests.find(c => c.id === r.id).short)}</span>`]
+        : ['<span aria-current="page">Các cuộc thi</span>']));
+      return crumbs;
+    },
+    progress: () => ({html: S.done.size ? `${S.done.size}<span>/${LESSONS.length}</span>` : '', title: `${S.done.size}/${LESSONS.length} bài đã học`})
+  });
 
   // ---------- shared pieces ----------
-  const meter = (n, total) => `<span class="meter" aria-hidden="true"><i style="width:${total ? n / total * 100 : 0}%"></i></span>`;
   function footer() {
     return `<footer class="foot"><span>AI Canuc80k</span><nav>${a('#/resource/guide', 'Hướng dẫn', 'data-nav')}${a('#/resource/framework', 'Khung giáo trình', 'data-nav')}</nav></footer>`;
   }
@@ -302,26 +155,9 @@
   }
   function pagerPhase(p) {
     const prev = D.phases[p.id - 1], next = D.phases[p.id + 1];
-    return `<nav class="pager" aria-label="Chương liền kề">${prev ? a(`#/phase/${prev.id}`, `<small>${icon('back')} Chương ${prev.id}</small><span>${esc(prev.title)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/phase/${next.id}`, `<small>Chương ${next.id} ${icon('arrow')}</small><span>${esc(next.title)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>`;
+    return pager('Chương liền kề', prev && {href: `#/phase/${prev.id}`, label: `Chương ${prev.id}`, title: prev.title}, next && {href: `#/phase/${next.id}`, label: `Chương ${next.id}`, title: next.title});
   }
 
-  function highlight(code) {
-    code = code.normalize('NFC');
-    const pattern = /#.*?$|'''[\s\S]*?'''|"""[\s\S]*?"""|"(?:\\.|[^"\\\n])*"|'(?:\\.|[^'\\\n])*'|\b(?:def|return|import|from|for|in|if|else|elif|class|True|False|None|with|as|assert|try|except|finally|raise|lambda|and|or|not|is|while|pass|break|continue|yield|global|nonlocal)\b|\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/gm;
-    let html = '', cursor = 0;
-    for (const m of code.matchAll(pattern)) {
-      html += esc(code.slice(cursor, m.index));
-      const t = m[0];
-      const type = t.startsWith('#') ? 'c' : (t[0] === '"' || t[0] === "'") ? 's' : /^\d/.test(t) ? 'n' : 'k';
-      html += `<span class="t-${type}">${esc(t)}</span>`;
-      cursor = m.index + t.length;
-    }
-    return html + esc(code.slice(cursor));
-  }
-  // Gộp các mảng trong cùng (không lồng) về một dòng; chỉ bỏ xuống dòng + thụt lề, không đổi giá trị.
-  const compactJSON = text => text.replace(/\[([^\[\]{}]*)\]/g, (m, inner) => inner.includes('\n') ? `[${inner.replace(/\n\s*/g, ' ').trim()}]` : m);
-  const looksJSON = text => /^\s*[\[{]/.test(text);
-  const looksPython = text => /^(import |from |def |class |print\(|#|for |[A-Za-z_][\w]*\s*=)/m.test(text) && !looksJSON(text);
   function codeBlock(code, filename, l, kind = 'main', index = 0) {
     return `<figure class="code">
       <figcaption class="code-head"><span class="code-name">${esc(filename)}</span>
@@ -405,7 +241,7 @@
   }
   function lessonPager(l) {
     const i = D.lessons.indexOf(l), prev = D.lessons[i - 1], next = D.lessons[i + 1];
-    return `<nav class="pager" aria-label="Bài học liền kề">${prev ? a(lessonHref(prev.id), `<small>${icon('back')} ${nameLabel(prev)}</small><span>${esc(prev.title)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(lessonHref(next.id), `<small>${nameLabel(next)} ${icon('arrow')}</small><span>${esc(next.title)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>`;
+    return pager('Bài học liền kề', prev && {href: lessonHref(prev.id), label: nameLabel(prev), title: prev.title}, next && {href: lessonHref(next.id), label: nameLabel(next), title: next.title});
   }
 
   const practiceTask = code => { for (const t of PB.tiers) { const x = t.tasks.find(y => y.code === code); if (x) return {...x, tier: t}; } return null; };
@@ -525,24 +361,10 @@
       h.remove();
     });
     $$('#lesson-doc h2').forEach((h, i) => { h.id = `sec-${i}`; });
-    $$('#lesson-doc.theory pre > code.language-output').forEach(code => {
-      const pre = code.parentElement;
-      pre.className = 'out';
-      pre.insertAdjacentHTML('afterbegin', '<span class="out-label" aria-hidden="true">Kết quả</span>');
-    });
+    K.ioBlocks('#lesson-doc.theory', {out: 'Kết quả', in: 'Input'});
     // ```py: đoạn code ngắn trong câu hỏi; tô màu tại chỗ, không chạy, không vào notebook.
     $$('#lesson-doc.theory pre > code.language-py').forEach(code => { code.innerHTML = highlight(code.textContent); code.parentElement.classList.add('snip'); });
-    $$('#lesson-doc.theory pre > code.language-python').forEach(code => {
-      const pre = code.parentElement, fig = document.createElement('figure');
-      fig.className = 'code t-code';
-      fig.innerHTML = `<figcaption class="code-head"><span class="code-name">Python</span><span class="code-tools">
-        <button class="tool" data-action="copy-block" title="Sao chép" aria-label="Sao chép">${icon('copy')}</button>${doc.classList.contains('code-examples') ? `<button class="tool" data-action="wrap" title="Ngắt dòng" aria-label="Ngắt dòng" aria-pressed="${S.wrap}">${icon('wrap')}</button>` : ''}</span></figcaption>`;
-      pre.replaceWith(fig);
-      pre.className = `code-body${doc.classList.contains('code-examples') && S.wrap ? ' is-wrap' : ''}`;
-      code.innerHTML = highlight(code.textContent);
-      fig.appendChild(pre);
-      if (fig.nextElementSibling?.classList.contains('out')) { fig.classList.add('has-out'); prepRun(fig); }
-    });
+    $$('#lesson-doc.theory pre > code.language-python').forEach(code => K.linkRun(K.codeFigure(code, 'Python', highlight, doc.classList.contains('code-examples'))));
     $$('#lesson-doc pre:not(.out):not(.code-body)').forEach(pre => {
       const text = pre.textContent;
       if (looksJSON(text)) pre.textContent = compactJSON(text);
@@ -559,33 +381,8 @@
       }
     });
     $$('#lesson-doc.theory a[href^="http"]').forEach(x => { x.target = '_blank'; x.rel = 'noopener'; });
-    fitMath();
+    window.Kit.fitMath();
   }
-  // ---------- nút Chạy: kết quả đã chạy thật lúc soạn bài, bấm Chạy thì in ra ----------
-  const sleep = ms => new Promise(ok => setTimeout(ok, ms));
-  function prepRun(fig) {
-    const out = fig.nextElementSibling, code = out.querySelector('code');
-    if (!code || NO_MOTION) return;
-    fig.classList.add('can-run');
-    out.dataset.text = code.textContent.replace(/\n$/, '');
-    out.hidden = true;
-    fig.querySelector('.code-tools').insertAdjacentHTML('afterbegin', `<button class="run-btn" data-action="run">${icon('play')}Chạy</button>`);
-  }
-  async function runBlock(fig) {
-    if (!fig || fig.classList.contains('is-running')) return;
-    const out = fig.nextElementSibling, code = out.querySelector('code');
-    fig.classList.add('is-running');
-    out.hidden = false; code.textContent = '';
-    await sleep(180);
-    const rows = out.dataset.text.split('\n'), per = Math.min(40, 400 / rows.length);
-    for (let k = 0; k < rows.length; k++) {
-      if (!code.isConnected) return;
-      code.textContent += (k ? '\n' : '') + rows[k];
-      if (per >= 4) await sleep(per);
-    }
-    fig.classList.remove('is-running');
-  }
-
   function quizScore(sec) {
     const all = [...sec.querySelectorAll('.quiz')], done = all.filter(q => q.classList.contains('is-answered'));
     const right = done.filter(q => q.querySelector('.quiz-opt.is-right.is-chosen')).length;
@@ -595,21 +392,6 @@
     box.querySelector('span').textContent = done.length === all.length
       ? `Kết quả: ${right}/${all.length} câu đúng.` : `Đã làm ${done.length}/${all.length} câu.`;
   }
-  // Công thức dài trên màn hình hẹp: thu nhỏ vừa khung (tối đa còn 66%), quá nữa thì cuộn ngang.
-  function fitMath() {
-    $$('.theory .katex-display > .katex').forEach(k => {
-      k.style.fontSize = '';
-      const box = k.parentElement, ratio = box.clientWidth / box.scrollWidth;
-      if (ratio < 1) k.style.fontSize = `${Math.max(.66, ratio * .98) * parseFloat(getComputedStyle(k).fontSize)}px`;
-    });
-  }
-  if (document.fonts) { document.fonts.ready.then(fitMath); document.fonts.addEventListener?.('loadingdone', fitMath); }
-  let fitTick = 0;
-  window.addEventListener('resize', () => { clearTimeout(fitTick); fitTick = setTimeout(fitMath, 120); });
-  function wrapTables(root) {
-    $$(`${root} table`).forEach(t => { if (!t.parentElement.classList.contains('table-wrap')) { const w = document.createElement('div'); w.className = 'table-wrap'; t.replaceWith(w); w.appendChild(t); } });
-  }
-
   function renderResources() {
     const docs = D.resources.map(res => `<div class="res">
         ${a(`#/resource/${res.id}`, `<span class="res-title">${esc(res.title)}</span>`, 'class="res-main" data-nav')}
@@ -694,9 +476,7 @@
         <div class="actions">${a(res.path, `${icon('download')}Tải tệp`, 'class="btn" download')}</div></header>
       ${content}${footer()}</div>`;
   }
-  function notFound() {
-    return `<div class="page"><div class="empty"><p>Không tìm thấy trang này.</p>${a('#/', 'Về lộ trình', 'class="btn" data-nav')}</div></div>`;
-  }
+  const notFound = K.notFound;
 
   // ---------- các cuộc thi (dữ liệu: ui/contests.js, dựng bằng tools/build_contests.py) ----------
   const CT = window.CONTESTS || {contests: [], pages: {}, columns: [], intro: ''};
@@ -715,7 +495,7 @@
           <article class="prose theory" id="lesson-doc">${pg.html}</article>
           <aside class="toc" aria-label="Mục lục">${pg.headings.map((h, i) => `<a href="#sec-${i}" data-scroll="sec-${i}">${esc(h)}</a>`).join('')}</aside>
         </div>
-        <nav class="pager" aria-label="Cuộc thi liền kề">${prev ? a(`#/contests/${prev.id}`, `<small>${icon('back')}</small><span>${esc(prev.name)}</span>`, 'class="pager-link" data-nav') : '<span></span>'}${next ? a(`#/contests/${next.id}`, `<small>${icon('arrow')}</small><span>${esc(next.name)}</span>`, 'class="pager-link is-next" data-nav') : ''}</nav>
+        ${pager('Cuộc thi liền kề', prev && {href: `#/contests/${prev.id}`, label: '', title: prev.name}, next && {href: `#/contests/${next.id}`, label: '', title: next.name})}
         ${footer()}</div>`;
     }
     const rows = CT.contests.map((c, k) => a(`#/contests/${c.id}`,
@@ -740,10 +520,7 @@
   const PCODES = new Set(PB.tiers.flatMap(t => t.tasks.map(x => x.code)));
   let PS = new Set();
   try { const raw = JSON.parse(localStorage.getItem(PKEY) || '[]'); if (Array.isArray(raw)) PS = new Set(raw.filter(c => PCODES.has(c))); } catch (_) { PS = new Set(); }
-  function pSave() {
-    if (!canStore) return;
-    try { localStorage.setItem(PKEY, JSON.stringify([...PS])); } catch (_) { canStore = false; }
-  }
+  const pSave = () => K.store(PKEY, [...PS]);
   const pDone = t => t.tasks.filter(x => PS.has(x.code)).length;
   // Mã đề -> các bài học dùng nhiều nhất (đảo từ LESSON_LINKS[bài].drill).
   const DRILL_OF = {};
@@ -880,10 +657,7 @@
     qInit(set);
     return set;
   }
-  function qSave() {
-    if (!canStore) return;
-    try { localStorage.setItem(QKEY, JSON.stringify({...QRAW, ...QS})); } catch (_) { canStore = false; }
-  }
+  const qSave = () => K.store(QKEY, {...QRAW, ...QS});
   const qAll = s => s.questions.map((_, i) => i);
   const qInGroup = (s, gid) => qAll(s).filter(i => s.questions[i].group === gid);
   function qStats(s, idx) {
@@ -1120,10 +894,7 @@
   } catch (_) { EX = null; }
   }
   try { EXLOG = JSON.parse(localStorage.getItem(ELOG) || '{}') || {}; } catch (_) { EXLOG = {}; }
-  function exSave() {
-    if (!canStore) return;
-    try { localStorage.setItem(EKEY, JSON.stringify(EX)); localStorage.setItem(ELOG, JSON.stringify(EXLOG)); } catch (_) { canStore = false; }
-  }
+  function exSave() { K.store(EKEY, EX); K.store(ELOG, EXLOG); }
   const exActive = () => !!(EX && !EX.done);
   const exSet = () => EX && exPool(quizSet(EX.set));
   function exShuffle(arr) {
@@ -1246,93 +1017,52 @@
     return `<button class="btn" type="button" data-action="ex-start" data-set="${s.id}" data-n="${n}" title="${n} câu · ${exMinutes(s, n)} phút">Kiểm tra</button>`;
   }
 
-  let spyHeads = [], spyLinks = [];
-  function spyUpdate() {
-    if (!spyHeads.length) return;
-    const line = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top-h')) + 90;
-    let cur = spyHeads[0];
-    for (const h of spyHeads) { if (h.getBoundingClientRect().top <= line) cur = h; else break; }
-    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) cur = spyHeads[spyHeads.length - 1];
-    spyLinks.forEach(x => x.classList.toggle('is-active', x.dataset.scroll === cur.id));
-  }
-  function spy() { spyHeads = $$('#lesson-doc h2'); spyLinks = $$('.toc a'); spyUpdate(); }
-  let spyTick = false;
-  window.addEventListener('scroll', () => { if (!spyTick) { spyTick = true; requestAnimationFrame(() => { spyTick = false; spyUpdate(); }); } }, {passive: true});
   function needs(r) {
     const wait = [];
     if (r.type === 'lesson' && findLesson(r.id) && !lessonReady(r.id)) wait.push(ensureLesson(r.id));
     if (!quizReady() && (r.type === 'quiz' || r.type === 'exam' || (r.type === 'lesson' && r.params.get('q')))) wait.push(ensureQuiz());
     return wait;
   }
-  function skeleton() {
-    setTimeout(() => { const x = $('#main .loading'); if (x) x.hidden = false; }, 400);
-    return '<div class="page" aria-busy="true"><p class="loading" hidden>Đang tải…</p></div>';
-  }
-  render.token = 0;
-  function render() {
-    const r = route();
-    if (r.type === 'exercises') { location.replace('#/'); return; }
-    const wait = needs(r);
-    if (wait.length) {
-      const token = ++render.token;
-      renderChrome(r);
-      $('#main').innerHTML = skeleton();
-      Promise.all(wait).then(() => {
-        if (token !== render.token) return;
-        render();
-        goSection(route());
-      }, () => {
-        if (token === render.token) $('#main').innerHTML = `<div class="page"><div class="empty"><p>Không tải được nội dung. Kiểm tra mạng rồi thử lại.</p><button class="btn" data-action="reload">Thử lại</button></div></div>`;
-      });
-      return;
-    }
-    ++render.token;
-    renderChrome(r);
-    const view = {home: renderHome, phase: () => renderPhase(r.id), lesson: () => renderLesson(r),
-      quiz: () => renderQuiz(r), exam: () => renderExam(r), practice: () => renderPractice(r), contests: () => renderContests(r), resources: renderResources, resource: () => renderResource(r.id)}[r.type];
-    spyHeads = []; spyLinks = [];
-    $('#main').innerHTML = view ? view() : notFound();
-    const l = r.type === 'lesson' ? findLesson(r.id) : null;
-    const qs = r.type === 'quiz' ? quizSet(r.id) : null;
-    const pt = r.type === 'practice' ? practiceTier(r.id) : null;
-    document.documentElement.classList.toggle('exam-lock', exActive());
-    if (r.type === 'exam' && exActive()) exTick.start(); else exTick.stop();
-    document.title = l ? `${l.title} — AI Canuc80k` : r.type === 'exam' && exSet() ? `Kiểm tra ${exSet().title} — AI Canuc80k` : r.type === 'quiz' ? `Trắc nghiệm${qs ? ' ' + qs.title : ''} — AI Canuc80k`
-      : r.type === 'practice' ? `Thực hành${pt ? ' ' + pt.title : ''} — AI Canuc80k`
-      : r.type === 'contests' ? `${(CT.contests.find(c => c.id === r.id) || {name: 'Các cuộc thi'}).name} — AI Canuc80k` : 'AI Canuc80k';
-    if (l) { tidyLessonDoc(); renderChrome(r); spy(); }
-    if (r.type === 'contests' && r.id && CT.pages[r.id]) { tidyLessonDoc(); spy(); }
-    window.Anim?.scan($('#main'));
-  }
-
-  function goSection(r) {
-    const k = r.type === 'lesson' && !r.params.get('tab') ? r.params.get('sec') : null;
-    const h = k !== null && $(`#sec-${Number(k)}`);
-    if (!h) return false;
-    const sec = h.closest('.t-sec') || h;
-    const marks = learnSpot(sec, r.id, Number(k), r.params.get('q'));
-    if (!marks.length) {
-      h.scrollIntoView({block: 'start'});
-      sec.classList.remove('is-target'); void sec.offsetWidth; sec.classList.add('is-target');
+  Object.assign(K.hooks, {
+    needs,
+    views: {home: renderHome, phase: r => renderPhase(r.id), lesson: renderLesson,
+      quiz: renderQuiz, exam: renderExam, practice: renderPractice, contests: renderContests, resources: renderResources, resource: r => renderResource(r.id)},
+    before(r) { if (r.type === 'exercises') { location.replace('#/'); return true; } },
+    after(r) {
+      const l = r.type === 'lesson' ? findLesson(r.id) : null;
+      const qs = r.type === 'quiz' ? quizSet(r.id) : null;
+      const pt = r.type === 'practice' ? practiceTier(r.id) : null;
+      document.documentElement.classList.toggle('exam-lock', exActive());
+      if (r.type === 'exam' && exActive()) exTick.start(); else exTick.stop();
+      document.title = l ? `${l.title} — AI Canuc80k` : r.type === 'exam' && exSet() ? `Kiểm tra ${exSet().title} — AI Canuc80k` : r.type === 'quiz' ? `Trắc nghiệm${qs ? ' ' + qs.title : ''} — AI Canuc80k`
+        : r.type === 'practice' ? `Thực hành${pt ? ' ' + pt.title : ''} — AI Canuc80k`
+        : r.type === 'contests' ? `${(CT.contests.find(c => c.id === r.id) || {name: 'Các cuộc thi'}).name} — AI Canuc80k` : 'AI Canuc80k';
+      if (l) { tidyLessonDoc(); chrome(r); spy(); }
+      if (r.type === 'contests' && r.id && CT.pages[r.id]) { tidyLessonDoc(); spy(); }
+      window.Anim?.scan($('#main'));
+    },
+    // Mở bài từ “Ôn lại” (&q=): tô câu cần đọc và đặt câu đó ở khoảng một phần ba màn hình.
+    spot(r, sec, h, k) {
+      const marks = learnSpot(sec, r.id, k, r.params.get('q'));
+      if (!marks.length) return false;
+      // Câu cần đọc nằm ở khoảng một phần ba màn hình; câu gần đầu mục thì giữ cả tiêu đề mục trong khung nhìn.
+      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+      const place = () => {
+        const pad = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+        const y = el => el.getBoundingClientRect().top + window.scrollY;
+        const top = y(marks[0]) - y(h) < window.innerHeight * .45 ? y(h) - pad : y(marks[0]) - Math.max(pad + 24, window.innerHeight * .32);
+        window.scrollTo(0, Math.max(0, top));
+      };
+      place();
+      // Phông chữ và ảnh nạp xong có thể đẩy chữ xuống: đặt lại một lần, nếu người đọc chưa tự cuộn.
+      let moved = false;
+      for (const ev of ['wheel', 'touchstart', 'keydown', 'mousedown']) window.addEventListener(ev, () => { moved = true; }, {once: true, passive: true});
+      const loaded = document.readyState === 'complete' ? null : new Promise(ok => window.addEventListener('load', ok, {once: true}));
+      Promise.all([document.fonts && document.fonts.ready, loaded]).then(() => { if (!moved && marks[0].isConnected) place(); });
+      requestAnimationFrame(() => marks.forEach(m => m.classList.add('is-on')));
       return true;
     }
-    // Câu cần đọc nằm ở khoảng một phần ba màn hình; câu gần đầu mục thì giữ cả tiêu đề mục trong khung nhìn.
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-    const place = () => {
-      const pad = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
-      const y = el => el.getBoundingClientRect().top + window.scrollY;
-      const top = y(marks[0]) - y(h) < window.innerHeight * .45 ? y(h) - pad : y(marks[0]) - Math.max(pad + 24, window.innerHeight * .32);
-      window.scrollTo(0, Math.max(0, top));
-    };
-    place();
-    // Phông chữ và ảnh nạp xong có thể đẩy chữ xuống: đặt lại một lần, nếu người đọc chưa tự cuộn.
-    let moved = false;
-    for (const ev of ['wheel', 'touchstart', 'keydown', 'mousedown']) window.addEventListener(ev, () => { moved = true; }, {once: true, passive: true});
-    const loaded = document.readyState === 'complete' ? null : new Promise(ok => window.addEventListener('load', ok, {once: true}));
-    Promise.all([document.fonts && document.fonts.ready, loaded]).then(() => { if (!moved && marks[0].isConnected) place(); });
-    requestAnimationFrame(() => marks.forEach(m => m.classList.add('is-on')));
-    return true;
-  }
+  });
 
   // ---------- câu cần đọc ----------
   // Chữ của một phần tử, đúng như quiz_learn.learn_text: công thức KaTeX viết thành $mã TeX$, khoảng trắng gộp một dấu cách.
@@ -1420,142 +1150,35 @@
     return marks;
   }
 
-  // ---------- events ----------
-  let prevRoute = route();
-  window.addEventListener('hashchange', () => {
+  // ---------- events: phần chung trong ui/kit.js ----------
+  Object.assign(K.hooks, {
     // Đang làm bài kiểm tra thì không rời trang được, phải nộp bài trước.
-    if (exActive() && route().type !== 'exam') { location.replace('#/exam'); toast('Đang làm bài kiểm tra, nộp bài rồi mới rời được'); return; }
-    const next = route();
-    const sameLesson = prevRoute.type === 'lesson' && next.type === 'lesson' && prevRoute.id === next.id;
-    const keepY = window.scrollY;
-    closeMenu(); $('#search-pop').innerHTML = ''; render();
-    if (goSection(next)) { prevRoute = next; return; }
-    if (sameLesson) {
-      const tabs = $('.tabs');
-      const top = tabs ? tabs.getBoundingClientRect().top + window.scrollY - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--top-h')) : 0;
-      window.scrollTo(0, Math.min(keepY, top));
-    } else window.scrollTo(0, 0);
-    prevRoute = next;
-  });
-  // Tab khác (ví dụ tab bài mở từ “Ôn lại”) vừa ghi tiến độ: đọc lại để lần ghi sau của tab này không đè mất.
-  window.addEventListener('storage', e => {
-    if (e.key === QKEY) qLoad();
-    else if (e.key === KEY) {
-      try {
-        const v = JSON.parse(e.newValue || '{}');
-        S.done = new Set((v.done || []).filter(findLesson));
-        if (findLesson(v.last)) S.last = v.last;
-      } catch (_) {}
-    }
-  });
-  if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => { if (!S.theme) renderChrome(route()); });
-
-  $('#q').addEventListener('input', e => {
-    S.q = e.target.value;
-    const r = route();
-    if (['home', 'phase'].includes(r.type)) { render(); $('#q').focus(); return; }
-    const hits = D.lessons.filter(matches).slice(0, 8);
-    $('#search-pop').innerHTML = S.q.trim()
-      ? hits.map(l => a(lessonHref(l.id), `<span class="row-id">${idLabel(l)}</span><span>${esc(l.title)}</span>`, 'class="hit" data-nav')).join('') || '<p class="hit-none">Không có kết quả.</p>'
-      : '';
-  });
-  $('#q').addEventListener('keydown', e => {
-    if (e.key === 'Escape') { $('#search-pop').innerHTML = ''; e.target.blur(); }
-    if (e.key === 'ArrowDown') { const first = $('#search-pop .hit'); if (first) { e.preventDefault(); first.focus(); } }
-    if (e.key === 'Enter' && !['home', 'phase'].includes(route().type)) {
-      const first = D.lessons.find(matches);
-      if (first) { setQuery(''); location.hash = lessonHref(first.id); }
-    }
-  });
-
-  async function copyText(text) {
-    try {
-      if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
-      else {
-        const t = document.createElement('textarea');
-        t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
-        document.body.appendChild(t); t.select();
-        const ok = document.execCommand('copy'); t.remove();
-        if (!ok) throw new Error('copy');
-      }
-      toast('Đã sao chép');
-    } catch (_) { toast('Không sao chép được, hãy tải tệp về'); }
-  }
-
-  document.addEventListener('click', async e => {
-    if (!e.target.closest('.search')) $('#search-pop').innerHTML = '';
-    const nav = e.target.closest('[data-nav]');
-    if (nav) { setQuery(''); closeMenu(); if (nav.getAttribute('href') === location.hash) render(); }
-    const scroll = e.target.closest('[data-scroll]');
-    if (scroll) { e.preventDefault(); const el = document.getElementById(scroll.dataset.scroll); if (el) { el.scrollIntoView({behavior: 'smooth', block: 'start'}); if (el.id === 'main') el.focus({preventScroll: true}); } return; }
-    const act = e.target.closest('[data-action]');
-    if (!act) return;
-    const r = route(), l = findLesson(r.id);
-    switch (act.dataset.action) {
-      case 'menu': $('#side').classList.contains('open') ? closeMenu() : openMenu(); break;
-      case 'sidebar': {
-        const root = document.documentElement;
-        root.classList.add('side-anim');
-        S.side = S.side === 'open' ? 'closed' : 'open'; applySide(); persist();
-        clearTimeout(window.__sideAnim); window.__sideAnim = setTimeout(() => root.classList.remove('side-anim'), 320);
-        break;
-      }
-      case 'toggle-phase': {
-        // Mở một phase thì đóng các phase khác, để thanh bên luôn gọn.
-        const id = Number(act.dataset.phase), open = !S.open.has(id);
-        for (const o of S.open) if (o !== id) {
-          $(`.side-phase[data-phase="${o}"]`)?.setAttribute('aria-expanded', 'false');
-          const box = $(`#sp-${o}`); if (box) box.dataset.open = 'false';
-        }
-        S.open = new Set(open ? [id] : []);
-        act.setAttribute('aria-expanded', open);
-        $(`#sp-${id}`).dataset.open = open;
-        break;
-      }
-      case 'menu-close': closeMenu(); break;
-      case 'reload': render(); break;
-      case 'run': runBlock(act.closest('figure.t-code')); break;
-      case 'theme': {
-        S.theme = effectiveTheme() === 'dark' ? 'light' : 'dark'; applyTheme(); persist(); renderChrome(r);
-        const f = $('#slide-frame');
-        if (f) try { f.contentDocument.documentElement.dataset.theme = S.theme; } catch (_) { f.src = f.src.split('#')[0] + '#theme=' + S.theme; }
-        break;
-      }
-      case 'clear-search': setQuery(''); render(); break;
-      case 'complete': if (l) {
-        const now = !S.done.has(l.id);
-        now ? S.done.add(l.id) : S.done.delete(l.id);
-        persist(); render();
-        toast(now ? `Đã đánh dấu ${nameLabel(l)} là đã học` : `Đã bỏ đánh dấu ${nameLabel(l)}`);
-      } break;
-      case 'wrap': S.wrap = !S.wrap; $$('.code-body').forEach(x => x.classList.toggle('is-wrap', S.wrap)); $$('[data-action="wrap"]').forEach(x => x.setAttribute('aria-pressed', S.wrap)); break;
-      case 'copy': {
-        if (act.dataset.kind === 'lesson' && l?.code) { await copyText(l.code); break; }
+    guard() { if (exActive() && route().type !== 'exam') { location.replace('#/exam'); toast('Đang làm bài kiểm tra, nộp bài rồi mới rời được'); return true; } },
+    // Tab khác (ví dụ tab bài mở từ “Ôn lại”) vừa ghi kết quả trắc nghiệm: đọc lại để lần ghi sau của tab này không đè mất.
+    storage(e) { if (e.key === QKEY) qLoad(); },
+    onTheme() {
+      const f = $('#slide-frame');
+      if (f) try { f.contentDocument.documentElement.dataset.theme = S.theme; } catch (_) { f.src = f.src.split('#')[0] + '#theme=' + S.theme; }
+    },
+    onQuiz(quiz) { const sec = quiz.closest('.is-check'); if (sec) quizScore(sec); },
+    live: ['home', 'phase'],
+    pop() {
+      const hits = D.lessons.filter(matches).slice(0, 8);
+      return S.q.trim()
+        ? hits.map(l => a(lessonHref(l.id), `<span class="row-id">${idLabel(l)}</span><span>${esc(l.title)}</span>`, 'class="hit" data-nav')).join('') || '<p class="hit-none">Không có kết quả.</p>'
+        : '';
+    },
+    enter() { const first = D.lessons.find(matches); return first ? lessonHref(first.id) : null; },
+    actions: {
+      async copy(act, r) {
+        const l = findLesson(r.id);
+        if (act.dataset.kind === 'lesson' && l?.code) { await K.copyText(l.code); return; }
         const m = l && l.parts[Math.min(Number(r.params.get('part') || 0), l.parts.length - 1)];
         const hw = l && act.dataset.kind === 'starter' ? homeworkOf(l, m) : null;
-        if (hw) { await copyText(hw.tasks[+act.dataset.index].starter); break; }
-        if (m) await copyText(act.dataset.kind === 'extra' ? m.extra[+act.dataset.index].code : act.dataset.kind === 'starter' ? m.homework[+act.dataset.index].starter : m.code);
-        break;
-      }
-      case 'copy-block': await copyText(act.closest('figure').querySelector('pre').textContent); break;
-      case 'quiz': {
-        const quiz = act.closest('.quiz');
-        if (quiz.classList.contains('is-answered')) break;
-        quiz.classList.add('is-answered');
-        quiz.querySelectorAll('.quiz-opt').forEach(b => {
-          if (b === act) b.classList.add('is-chosen');
-          if (b.dataset.correct === '1') b.classList.add('is-right');
-          else if (b === act) b.classList.add('is-wrong');
-          b.setAttribute('aria-disabled', 'true');
-        });
-        const why = quiz.querySelector('.quiz-why');
-        why.hidden = false;
-        why.insertAdjacentHTML('afterbegin', `<p class="quiz-verdict">${act.dataset.correct === '1' ? 'Chính xác.' : 'Chưa đúng.'}</p>`);
-        const sec = quiz.closest('.is-check');
-        if (sec) quizScore(sec);
-        break;
-      }
-      case 'quiz-reset': {
+        if (hw) { await K.copyText(hw.tasks[+act.dataset.index].starter); return; }
+        if (m) await K.copyText(act.dataset.kind === 'extra' ? m.extra[+act.dataset.index].code : act.dataset.kind === 'starter' ? m.homework[+act.dataset.index].starter : m.code);
+      },
+      'quiz-reset'(act) {
         const sec = act.closest('.is-check');
         [...sec.querySelectorAll('.quiz')].forEach(q => {
           q.classList.remove('is-answered');
@@ -1564,22 +1187,20 @@
         });
         quizScore(sec);
         sec.querySelector('.quiz')?.scrollIntoView({behavior: 'smooth', block: 'center'});
-        break;
-      }
-      case 'pr-done': {
+      },
+      'pr-done'(act) {
         const code = act.dataset.code;
         PS.has(code) ? PS.delete(code) : PS.add(code);
         pSave(); render();
         $(`[data-action="pr-done"][data-code="${code}"]`)?.focus({preventScroll: true});
-        break;
-      }
-      case 'ex-start': { const s = quizSet(act.dataset.set); if (s) exStart(s, Number(act.dataset.n)); break; }
-      case 'ex-pick': exPick(Number(act.dataset.choice)); break;
-      case 'ex-prev': exJump(EX.index - 1, '.qz-nav [data-action="ex-prev"]'); break;
-      case 'ex-next': exJump(EX.index + 1, '.qz-nav [data-action="ex-next"]'); break;
-      case 'ex-jump': exJump(Number(act.dataset.index), `.qz-cell[data-index="${act.dataset.index}"]`); break;
-      case 'ex-submit': exAskSubmit(); break;
-      case 'qz-level': {
+      },
+      'ex-start'(act) { const s = quizSet(act.dataset.set); if (s) exStart(s, Number(act.dataset.n)); },
+      'ex-pick'(act) { exPick(Number(act.dataset.choice)); },
+      'ex-prev'() { exJump(EX.index - 1, '.qz-nav [data-action="ex-prev"]'); },
+      'ex-next'() { exJump(EX.index + 1, '.qz-nav [data-action="ex-next"]'); },
+      'ex-jump'(act) { exJump(Number(act.dataset.index), `.qz-cell[data-index="${act.dataset.index}"]`); },
+      'ex-submit'() { exAskSubmit(); },
+      'qz-level'(act) {
         const id = act.dataset.level, sec = act.closest('.qz-level'), box = document.getElementById(`qzl-${id}`);
         const open = !QL.has(id);
         for (const o of QL) if (o !== id) {
@@ -1590,118 +1211,63 @@
         QL = new Set(open ? [id] : []);
         act.setAttribute('aria-expanded', String(open)); sec.classList.toggle('is-open', open);
         if (box) box.hidden = !open;
-        break;
-      }
-      case 'qz-start': { const s = quizSet(act.dataset.set); if (s) qStart(s, act.dataset.mode); break; }
-      case 'qz-answer': if (act.getAttribute('aria-disabled') !== 'true') qAnswer(Number(act.dataset.choice)); break;
-      case 'qz-prev': qMove(-1); break;
-      case 'qz-next': qMove(1); break;
-      case 'qz-jump': qJump(Number(act.dataset.index), `.qz-cell[data-index="${act.dataset.index}"]`); break;
-      case 'qz-reset': {
+      },
+      'qz-start'(act) { const s = quizSet(act.dataset.set); if (s) qStart(s, act.dataset.mode); },
+      'qz-answer'(act) { if (act.getAttribute('aria-disabled') !== 'true') qAnswer(Number(act.dataset.choice)); },
+      'qz-prev'() { qMove(-1); },
+      'qz-next'() { qMove(1); },
+      'qz-jump'(act) { qJump(Number(act.dataset.index), `.qz-cell[data-index="${act.dataset.index}"]`); },
+      'qz-reset'(act) {
         const s = quizSet(act.dataset.set);
         if (s && window.confirm(`Xóa mọi câu trả lời của bộ ${s.title}?`)) {
           QS[s.id] = {answers: {}, mode: null, ids: [], index: 0};
           qSave(); render(); toast(`Đã xóa kết quả bộ ${s.title}`);
         }
-        break;
-      }
-      case 'fullscreen': {
+      },
+      async fullscreen() {
         const f = $('#slide-frame');
         try { await f.requestFullscreen(); f.contentWindow?.focus(); } catch (_) { toast('Trình duyệt chặn toàn màn hình, hãy dùng “Mở tab mới”'); }
-        break;
       }
-    }
-  });
-  $('#search-pop').addEventListener('keydown', e => {
-    const hits = $$('#search-pop .hit'), i = hits.indexOf(document.activeElement);
-    if (e.key === 'ArrowDown' && i < hits.length - 1) { e.preventDefault(); hits[i + 1].focus(); }
-    if (e.key === 'ArrowUp') { e.preventDefault(); i > 0 ? hits[i - 1].focus() : $('#q').focus(); }
-  });
-  document.addEventListener('keydown', e => {
-    if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) { e.preventDefault(); $('#q').focus(); }
-    if (e.key === 'Escape') { closeMenu(); $('#search-pop').innerHTML = ''; }
+    },
     // Trang làm trắc nghiệm và kiểm tra: 1–4 hoặc A–D để chọn, mũi tên trái/phải để chuyển câu.
-    if (!(e.ctrlKey || e.metaKey || e.altKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) && exActive() && route().type === 'exam') {
+    keys(e) {
+      if (!(e.ctrlKey || e.metaKey || e.altKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) && exActive() && route().type === 'exam') {
+        const k = '1234'.indexOf(e.key) >= 0 ? '1234'.indexOf(e.key) : 'abcd'.indexOf(e.key.toLowerCase());
+        if (e.key.length === 1 && k >= 0) { e.preventDefault(); exPick(k); }
+        else if (e.key === 'ArrowRight' && EX.index < EX.ids.length - 1) { e.preventDefault(); exJump(EX.index + 1); }
+        else if (e.key === 'ArrowLeft' && EX.index > 0) { e.preventDefault(); exJump(EX.index - 1); }
+        return;
+      }
+      if (e.ctrlKey || e.metaKey || e.altKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || !qCurrent()) return;
       const k = '1234'.indexOf(e.key) >= 0 ? '1234'.indexOf(e.key) : 'abcd'.indexOf(e.key.toLowerCase());
-      if (e.key.length === 1 && k >= 0) { e.preventDefault(); exPick(k); }
-      else if (e.key === 'ArrowRight' && EX.index < EX.ids.length - 1) { e.preventDefault(); exJump(EX.index + 1); }
-      else if (e.key === 'ArrowLeft' && EX.index > 0) { e.preventDefault(); exJump(EX.index - 1); }
-      return;
-    }
-    if (e.ctrlKey || e.metaKey || e.altKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName) || !qCurrent()) return;
-    const k = '1234'.indexOf(e.key) >= 0 ? '1234'.indexOf(e.key) : 'abcd'.indexOf(e.key.toLowerCase());
-    if (e.key.length === 1 && k >= 0) { e.preventDefault(); qAnswer(k); }
-    else if (e.key === 'ArrowRight') { e.preventDefault(); qMove(1); }
-    else if (e.key === 'ArrowLeft' && qCurrent().st.index > 0) { e.preventDefault(); qMove(-1); }
-  });
-
-  // ---------- cử chỉ trên điện thoại ----------
-  // Vuốt từ mép trái để mở thanh bên, vuốt sang trái để đóng; trang làm trắc nghiệm và kiểm tra vuốt ngang để chuyển câu.
-  (() => {
-    const side = $('#side'), scrim = $('#scrim'), root = document.documentElement;
-    const narrow = () => window.matchMedia('(max-width: 920px)').matches;
-    const inExam = () => exActive() && route().type === 'exam';
-    const hScroll = el => {
-      for (; el && el !== document.body; el = el.parentElement)
-        if (el.scrollWidth > el.clientWidth + 2 && /auto|scroll/.test(getComputedStyle(el).overflowX)) return true;
-      return false;
-    };
-    let t = null;
-    document.addEventListener('touchstart', e => {
-      t = null;
-      if (e.touches.length !== 1) return;
-      const p = e.touches[0], open = side.classList.contains('open');
-      let kind = null;
-      if (narrow() && !root.classList.contains('exam-lock')) {
-        if (open && (side.contains(e.target) || e.target === scrim)) kind = 'close';
-        else if (!open && p.clientX < 28) kind = 'open';
-      }
-      if (!kind && !open && (qCurrent() || inExam()) && !hScroll(e.target) && !e.target.closest('input, textarea, select')) kind = 'quiz';
-      if (kind) t = {kind, x: p.clientX, y: p.clientY, at: Date.now(), axis: null, dx: 0, w: side.offsetWidth || 280};
-    }, {passive: true});
-    document.addEventListener('touchmove', e => {
-      if (!t) return;
-      const p = e.touches[0], dx = p.clientX - t.x, dy = p.clientY - t.y;
-      if (!t.axis) {
-        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
-        t.axis = Math.abs(dx) > Math.abs(dy) * 1.2 ? 'x' : 'y';
-        if (t.axis === 'y') { t = null; return; }
-        if (t.kind !== 'quiz') { side.style.transition = scrim.style.transition = 'none'; scrim.classList.add('show'); }
-      }
-      t.dx = dx;
-      if (t.kind === 'quiz') { const card = $('.qz-card'); if (card) card.style.transform = `translateX(${dx * .25}px)`; return; }
-      const off = t.kind === 'open' ? Math.max(-t.w, Math.min(0, dx - t.w)) : Math.max(-t.w, Math.min(0, dx));
-      side.style.transform = `translateX(${off}px)`;
-      scrim.style.opacity = String(1 + off / t.w);
-    }, {passive: true});
-    const end = () => {
-      const g = t; t = null;
-      if (!g || g.axis !== 'x') return;
-      const dx = g.dx, fast = Math.abs(dx) / Math.max(1, Date.now() - g.at) > .5;
-      if (g.kind === 'quiz') {
+      if (e.key.length === 1 && k >= 0) { e.preventDefault(); qAnswer(k); }
+      else if (e.key === 'ArrowRight') { e.preventDefault(); qMove(1); }
+      else if (e.key === 'ArrowLeft' && qCurrent().st.index > 0) { e.preventDefault(); qMove(-1); }
+    },
+    // Trên điện thoại, trang làm trắc nghiệm và kiểm tra vuốt ngang để chuyển câu; đang kiểm tra thì khóa thanh bên.
+    locked: () => document.documentElement.classList.contains('exam-lock'),
+    swipe: {
+      when: () => qCurrent() || (exActive() && route().type === 'exam'),
+      move(dx) { const card = $('.qz-card'); if (card) card.style.transform = `translateX(${dx * .25}px)`; },
+      end(dx, fast) {
         const card = $('.qz-card');
         if (card) { card.style.transition = 'transform .18s ease'; card.style.transform = ''; }
         if (!(Math.abs(dx) > 70 || (fast && Math.abs(dx) > 30))) return;
         const step = dx < 0 ? 1 : -1;
-        if (inExam()) { const i = EX.index + step; if (i >= 0 && i < EX.ids.length) exJump(i); }
+        if (exActive() && route().type === 'exam') { const i = EX.index + step; if (i >= 0 && i < EX.ids.length) exJump(i); }
         else if (qCurrent() && (step > 0 || qCurrent().st.index > 0)) qMove(step);
         document.activeElement?.blur?.();
-        return;
       }
-      side.style.transition = scrim.style.transition = side.style.transform = scrim.style.opacity = '';
-      const pass = d => d > g.w / 3 || (fast && d > 20);
-      (g.kind === 'open' ? pass(dx) : !pass(-dx)) ? openMenu() : closeMenu();
-    };
-    document.addEventListener('touchend', end, {passive: true});
-    document.addEventListener('touchcancel', end, {passive: true});
-  })();
+    }
+  });
 
   window.addEventListener('beforeunload', e => { if (exActive()) { e.preventDefault(); e.returnValue = ''; } });
   initQuiz();
+  K.listen();
   const boot = () => {
     if (exActive() && route().type !== 'exam') location.replace('#/exam');
     render();
-    goSection(route());
+    K.goSection(route());
     // Nạp sẵn kho trắc nghiệm lúc rảnh để trang Trắc nghiệm mở tức thì.
     const idle = window.requestIdleCallback || (f => setTimeout(f, 1500));
     idle(() => ensureQuiz().catch(() => {}));

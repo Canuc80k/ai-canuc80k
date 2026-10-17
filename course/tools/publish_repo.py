@@ -22,7 +22,7 @@ LIVE = 'https://ai-canuc80k.ai-web-deploy-20261010.workers.dev/'
 PAGES = 'https://canuc80k.github.io/ai-canuc80k/'
 
 SITE_SKIP_TOP = {'teacher_private', 'current', 'smoke-final.pptx', 'HUONG_DAN_GIAO_VIEN.txt', 'KE_HOACH_CONTEST.txt'}
-SITE_SKIP_FILES = {'ui/theory.js', 'ui/course-data.js', 'ui/code-examples.js'}
+SITE_SKIP_FILES = {'ui/theory.js', 'ui/course-data.js', 'ui/code-examples.js', 'ui/kit.lock.json'}
 COURSE_KEEP = ['content', 'figures-recipe', 'code-examples', 'exam-sources', 'tools', 'curriculum.json',
                'theory.json', 'AUTHORING_BRIEF.md', 'README.md']
 SKIP_NAMES = {'node_modules', '__pycache__', '.pytest_cache', 'build', 'verification'}

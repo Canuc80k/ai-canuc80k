@@ -7,7 +7,7 @@ Mọi lệnh dưới đây chạy trong thư mục `course/`, dùng `python -B -
 | Thư mục | Nội dung |
 |---|---|
 | `content/` | **Nguồn để sửa.** `phase-N/<id>.md` (bài học), `phase-N/slides/<id>.md` (slide), `phase-N/fig/*.svg` (hình), `phase-N/fig/*.anim.*` (hình động), `phase-N/_intro.md` (mở chương), `phase-N/homework/<id>/` (bài tập mới, khi có). Cú pháp: `content/README.md`; bài tập: `content/HOMEWORK.md`; mục Trắc nghiệm: `quizzes/<bộ>.py` (light, medium, high, extra, max, ultra), bảng nối câu với mục lý thuyết cần ôn `quizzes/learn.json` |
-| `output/` | Website đã dựng (`START_HERE.html`, `ui/`, `giao_trinh/`). Không sửa tay trừ `ui/` |
+| `output/` | Website đã dựng (`START_HERE.html`, `ui/`, `giao_trinh/`). Không sửa tay trừ `ui/`. Trong `ui/`, `kit.js`, `portal.css`, `fonts/`, `katex/`, logo là bản chép của lõi chung `tools/site-kit` dùng cho mọi trang Canuc80k: sửa ở đó rồi chạy `python -B -X utf8 tools/site-kit/sync.py` (từ gốc project); `app.js` là phần riêng của trang AI |
 | `tools/` | Dựng từng bài, kiểm code, kiểm nguồn, QA trình duyệt, xuất PDF, công cụ trắc nghiệm, tra đề |
 | `exam-sources/` | Văn bản trích từ đề NOAI 2025–2026, USAAIO 2026, đề luyện CMU/MIT; bản đồ câu theo bài ở `BANK.md` |
 | `figures-recipe/` | Script dựng lại các hình SVG; `figures-recipe/anim/` dựng 68 hình động (xem README ở đó) |

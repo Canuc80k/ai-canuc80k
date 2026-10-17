@@ -841,3 +841,16 @@ html.exam-lock .top { justify-content: flex-end; }
 .lesson-links a:hover { color: var(--accent-ink); }
 .lesson-links b { font-weight: 500; color: var(--faint); font-variant-numeric: tabular-nums; }
 .lesson-links .i { width: 15px; height: 15px; }
+
+/* Lõi chung (tools/site-kit): code C++ có chỉ thị tiền xử lý, khối input nằm giữa code và output, số đếm trên tab, gợi ý tìm kiếm không phải bài học. */
+.t-p { color: var(--t-n); }
+.tab b { margin-left: 4px; font-weight: 500; color: var(--faint); font-variant-numeric: tabular-nums; }
+.hit-p { display: inline-flex; justify-content: center; }
+.hit-p .i { width: 15px; height: 15px; color: var(--faint); }
+.theory pre.out.io-in { margin-bottom: 0; border-radius: 0; border-bottom: 0; }
+.theory pre.out.io-in:not(.io-mid) { margin: 0 0 1.6em; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); border-radius: 12px; }
+.theory .t-code + pre.out.io-in { border-top: 0; }
+.theory .t-code + pre.io-in.io-mid { border-radius: 0; border-bottom: 1px dashed var(--line); }
+.theory .t-code + pre.io-mid + pre.out[hidden] { display: none; }
+.theory .t-code.can-run + pre.io-mid { border-radius: 0 0 12px 12px; border-bottom: 1px solid var(--line); margin-bottom: 1.6em; }
+.theory .t-code.can-run.is-running + pre.io-mid, .theory .t-code.can-run + pre.io-mid:has(+ pre.out:not([hidden])) { border-radius: 0; border-bottom: 1px dashed var(--line); margin-bottom: 0; }
