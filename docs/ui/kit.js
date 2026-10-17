@@ -176,7 +176,7 @@
         }).join('');
         return `<div class="side-group${activePhase === id ? ' is-current' : ''}">
         <button class="side-phase" type="button" data-action="toggle-phase" data-phase="${id}" aria-expanded="${open}" aria-controls="sp-${id}">
-          <span class="side-phase-num">${p.id}</span><span class="side-phase-name">${esc(p.short)}</span>${icon('chev')}
+          <span class="side-phase-num">${p.num ?? p.id}</span><span class="side-phase-name">${esc(p.short)}</span>${icon('chev')}
         </button>
         <div class="side-lessons" id="sp-${id}" data-open="${open}"><div class="side-lessons-inner">
           ${items}
@@ -223,10 +223,10 @@
         pre.insertAdjacentHTML('afterbegin', `<span class="out-label" aria-hidden="true">${kind === 'in' ? labels.in : labels.out}</span>`);
       });
     }
-    // Nút Chạy: kết quả đã chạy thật lúc soạn bài, bấm Chạy thì in ra từng dòng.
+    // Nút Chạy: kết quả đã chạy thật lúc soạn bài, ẩn đi; bấm Chạy thì in ra từng dòng (giảm chuyển động thì in ngay).
     function prepRun(fig, out = fig.nextElementSibling) {
       const code = out.querySelector('code');
-      if (!code || NO_MOTION) return;
+      if (!code) return;
       fig.classList.add('can-run');
       out.dataset.text = code.textContent.replace(/\n$/, '');
       out.hidden = true;
@@ -246,6 +246,7 @@
       const code = out.querySelector('code');
       fig.classList.add('is-running');
       out.hidden = false; code.textContent = '';
+      if (NO_MOTION) { code.textContent = out.dataset.text; fig.classList.remove('is-running'); return; }
       await sleep(180);
       const rows = out.dataset.text.split('\n'), per = Math.min(40, 400 / rows.length);
       for (let k = 0; k < rows.length; k++) {
